@@ -6,10 +6,10 @@ export default {
   theme: {
     extend: {
       colors: {
-        "main-red": "#993333",
+        "main-red": "#C70009",
       },
       backgroundImage: {
-        home: "url('/img/cessna-outside-hangar-juarez-mx.webp')",
+        home: "url('/img/fromWIX/Screenshot2024-03-15 at 11.44_edited.jpg')",
         "two-cessna": "url('/img/two-cessna-red-arrow-KDNA-santa-teresa.webp')",
         "our-story": "url('/img/our-story/banner.webp')",
         "our-team": "url('/img/our-team/banner.webp')",
@@ -46,6 +46,7 @@ export default {
       },
       fontFamily: {
         serif: ["Urbanist Variable", ...defaultTheme.fontFamily.serif],
+        sans: ["Quicksand Variable", ...defaultTheme.fontFamily.sans],
       },
     },
   },
