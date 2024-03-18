@@ -2,48 +2,73 @@
 // You can import this data from anywhere in your site by using the `import` keyword.
 
 //Default SEO
-export const SITE_TITLE = "Red Arrow Flight Academy | El Paso, TX";
+export const SITE_TITLE = "Summit Flight Academy | Kansas , MO";
 export const SITE_DESCRIPTION =
-  "Red Arrow Flight Academy provides aviation training for the El Paso, Santa Teresa, and Las Cruces areas. Our flight school reflects our commitment to offering cost effective and secure pathways for aspiring pilots, including private pilot, instrument, commercial, and international student programs. Whether you're utilizing the GI Bill or pursuing a lifelong dream, we ensure a comprehensive and safe journey to earn your wings.";
-export const OG_IMAGE = "/red-arrow-logo.webp";
+  "Summit Flight Academy provides aviation training for the Kansas City area. Our flight school reflects our commitment to offering cost effective and secure pathways for aspiring pilots, including private pilot, instrument, commercial, and international student programs. Whether you're utilizing the GI Bill or pursuing a lifelong dream, we ensure a comprehensive and safe journey to earn your wings.";
+export const OG_IMAGE = "/img/fromWIX/SFA-logo.png";
 export const SITE_KEYWORDS =
-  "flight school el paso texas, pilot training santa teresa, KDNA flight school, las cruces flight school, Ft. Bliss Flight school, Ft. Bliss RTAG, Ft. Bliss pilot training, el paso pilot training, Juarez mexico international students, m1 m-1 visa international FAA pilot program,  Odessa Texas pilot school, Midland texas flight school  FAA certifications, purdue global aviation, M-1 Visa, foreign pilot licenses, aviation career, Part 141 flight school";
+  "flight school kansas city, pilot training kansas city, LXT flight school, kansas city flight school, Ft. Bliss Flight school, Ft. Bliss RTAG, Ft. Bliss pilot training, lee's summit flight school,FAA pilot program,  Odessa Texas pilot school, Midland texas flight school  FAA certifications, purdue global aviation, M-1 Visa, foreign pilot licenses, aviation career, Part 141 flight school";
 
 //Customer NAP info
-export const ADDRESS = "8063 Airport Rd";
+export const ADDRESS = "2751 NE Douglas St, Lee's Summit";
 export const ADDRESS2 = "";
-export const ADDRESS_CITY = "Santa Teresa";
-export const ADDRESS_STATE = "NM";
-export const ADDRESS_ZIP = "88008";
-export const PHONE_NUMBER = "(575) 201-6160";
-export const EMAIL_ADDRESS = "info@flyredarrow.com";
+export const ADDRESS_CITY = "Lee's Summit";
+export const ADDRESS_STATE = "MO";
+export const ADDRESS_ZIP = "64064";
+export const PHONE_NUMBER = "816-282-1500";
+export const EMAIL_ADDRESS = "info@summit-flight.com";
+
+//Social Media Links
+export const FACEBOOK_LINK = "https://www.facebook.com/summitflightacademy/";
+export const INSTAGRAM_LINK = "https://www.instagram.com/summitflightacademy/";
 
 export const flightPrograms = {
-  name: "Flight Programs",
+  name: "Private Training",
   className: "flight-programs",
   mobileClassName: "flight-programs-mobile",
   submenu: [
     {
-      name: "New to Flying?",
-      link: "/flight-programs/new-to-flying",
+      name: "Private Pilot Training", 
+      link: "/flight-programs/private-pilot-training",
     },
     {
-      name: "Training Courses",
-      link: "/flight-programs/training-courses",
+      name: "Instrument Rating", 
+      link: "/flight-programs/instrument-rating",
     },
     {
-      name: "University Program",
-      link: "/flight-programs/university-program",
+      name: "Private Pilot + Instrument Bundle", 
+      link: "/flight-programs/private-pilot-instrument-bundle",
     },
     {
-      name: "International Program",
-      link: "/flight-programs/international-program",
+      name: "Multi-Engine Rating", 
+      link: "/flight-programs/multi-engine-rating",
     },
     {
-      name: "Military / Rotor Transition",
-      link: "/flight-programs/military-rotor-transition",
+      name: "Flight Reviews & IPCs", 
+      link: "/flight-programs/fligh-reviews-ipcs",
     },
   ],
+};
+
+export const career = {
+  name: "Career",
+  className: "career",
+  mobileClassName: "career-mobile",
+  submenu: [
+    {
+      name: "Commercial Pilot Training", 
+      link: "/career/commercial-pilot-training",
+    },
+    {
+      name: "Instructor Training", 
+      link: "/career/instructor-training",
+    },
+    {
+      name: "Teach at Summit", 
+      link: "/career/teach-at-summit",
+    },
+  ],
+
 };
 
 export const resources = {
@@ -52,16 +77,20 @@ export const resources = {
   mobileClassName: "resources-mobile",
   submenu: [
     {
-      name: "FAA Exam Center",
-      link: "/resources/faa-exam-center",
-    },
-    {
       name: "Financing",
       link: "/resources/financing",
     },
     {
-      name: "Maintenance",
-      link: "/resources/maintenance",
+      name: "Insurance",
+      link: "/resources/insurance",
+    },
+    {
+      name: "Download Forms",
+      link: "/resources/download-forms",
+    },
+    {
+      name: "FAQs",
+      link: "/resources/faqs",
     },
   ],
 };
@@ -72,16 +101,16 @@ export const about = {
   mobileClassName: "about-mobile",
   submenu: [
     {
-      name: "Our Story",
-      link: "/about/our-story",
-    },
-    {
       name: "Our Team",
       link: "/about/our-team",
     },
     {
       name: "Our Fleet",
       link: "/about/our-fleet",
+    },
+    {
+      name: "Visit Us",
+      link: "/about/visit-us",
     },
     {
       name: "Blog",
