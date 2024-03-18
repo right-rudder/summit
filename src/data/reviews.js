@@ -1,32 +1,27 @@
 export const reviews = [
   {
     id: 1,
-    text: "Had a wonderful experience on my intro flight. The instructor was great. Got to actually fly, will never forget it. Would highly recommend it.",
-    author: "Ximena Rodriguez",
+    text: "Jami works the desk and she’s the nicest person I’ve ever met - super helpful.  My instructor, Hillary, has been nothing short of amazing to work with.  She has the perfect balance of patience and assertiveness to be a CFI.  They take great care of their planes here.  Come in and take a discovery flight - you won’t regret it.",
+    author: "Kyle Hattock",
   },
   {
     id: 2,
-    text: "I obtained my private pilot license at red arrow. It is by far the best aviation school in the southwest region. The staff is super knowledgeable and the instructors are superbly educated. I went to many additional schools before finishing here. Red Arrow is the perfect explanation on how a school can become a second home. Love it. Don’t look elsewhere.",
-    author: "DAVID ROJAS MEI",
+    text: "Great flight school! This is what the Kansas City area needed. Aircraft are in great shape, flight instructors are professional and getting setup there is super easy. After selling my last aircraft I have had no problems renting their Piper Archer to keep current. Can't wait till the Twin Comanche comes online! If you have always wanted to learn to fly, this is the first place you should be calling.",
+    author: "Grant Monnig",
   },
   {
     id: 3,
-    text: "Red Arrow Flight Academy has been an amazing experience, the staff is extremely helpful, and welcoming. The instructors are very experienced and knowledgeable. There is a structural and comprehensive curriculum, and the service is professional and personalized. I highly recommend this school to anyone pursuing any certificate in aviation!",
-    author: "Danielle Nelson",
+    text: "The best flight school around! Obtained my Private Pilots License in November and passed first try thanks to the amazing team at SFA. I have flown all of the planes other than their newest warrior and will have to say N6894W (Miss Whiskey) was an overall favorite. They planes are all hangared making it easy to fly in the winter and the instructors are the best around making sure they are focused on getting you check ride ready. Thanks for all the help Summit!",
+    author: "Kolby Cook",
   },
   {
     id: 4,
-    text: "Excellent experience from start to finish with this crew. No doubt the best facility, flight instructors, staff, airplane fleet, and training simulators in the area. I got my PPL (Private Pilot License) at this flight school and I couldn't have asked for a better introduction into the world of aviation.",
-    author: "Vanessa Martinez",
+    text: "Just passed my Commercial pilot checkride last week after working with Jeremy at SFA.  The culture at SFA is comfortable, not high intensity, which leads to better safety due to less stress and pressure. The planes are well maintained. Instructors are high quality and they like working there.I definitely recommend them for flight training in the KC area.",
+    author: "Christopher Eno",
   },
   {
     id: 5,
-    text: "Tomas and her staff are proffesionals and  makes you feel comfortable. The school is clean and has what you need.  ighly recomended for first time flyers or if you're trying to make a career of it.",
-    author: "Darisabel Roman",
-  },
-  {
-    id: 6,
-    text: "Top notch place to learn to fly. Started there with zero hours all the way through PPL. When and if I ever come back to El Paso, this is the only place I’ll go for flight training.",
-    author: "stoute64",
+    text: "I can honestly say that I 100% recommend each of the instructors I have met at Summit Flight Academy, without any reservation or hesitation.  A lifelong dream which the staff at Summit Flight Academy helped me accomplish!Thank you to everyone at Summit Flight Academy for helping me realize this dream!",
+    author: "Edward Seasholtz",
   },
 ];
