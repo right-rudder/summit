@@ -1,6 +1,6 @@
 import MobileNavBar from "./MobileNavBar";
 import NavLink from "./NavLink";
-import { flightPrograms, resources, about } from "../consts.ts";
+import { flightPrograms, career, resources, about } from "../consts.ts";
 import { useEffect, useState } from "react";
 
 const Navbar = ({ pathname }) => {
@@ -48,14 +48,24 @@ const Navbar = ({ pathname }) => {
             <div className="flex flex-1 items-center justify-between">
               <a href="/" className="flex flex-shrink-0 items-center">
                 <img
-                  src="/red-arrow-logo.webp"
-                  alt="Red Arrow Logo"
+                  src="/img/fromWIX/SFA-logo.png"
+                  alt="Summit Flight Academy Logo"
                   className={`${navBar ? "lg:h-14" : "lg:h-20"} h-14 w-auto transition-all`}
                   id="navbar-image"
                 />
               </a>
               <div className="hidden lg:ml-6 lg:block">
                 <div className="flex gap-5 xl:gap-10 items-center">
+                <div>
+                    <a
+                      href="/flight-programs/new-to-flying"
+                      className={`cursor-pointer text-xl text-white py-5 hover:border-b-2 border-main-red whitespace-nowrap ${
+                        pathname === "/discovery-flight" ? "border-b-2" : ""
+                      }`}
+                    >
+                      New to Flying?
+                    </a>
+                  </div>
                   <NavLink
                     pathname={pathname}
                     menuItem={flightPrograms}
@@ -64,8 +74,8 @@ const Navbar = ({ pathname }) => {
                   />
                   <NavLink
                     pathname={pathname}
-                    menuItem={resources}
-                    toggled={resources.name === openSubmenu}
+                    menuItem={career}
+                    toggled={career.name === openSubmenu}
                     onShow={handleMenuItemClick}
                   />
                   <NavLink
@@ -74,7 +84,13 @@ const Navbar = ({ pathname }) => {
                     toggled={about.name === openSubmenu}
                     onShow={handleMenuItemClick}
                   />
-                  <div>
+                  <NavLink
+                    pathname={pathname}
+                    menuItem={resources}
+                    toggled={resources.name === openSubmenu}
+                    onShow={handleMenuItemClick}
+                  />
+                  {/* <div>
                     <a
                       href="/discovery-flight"
                       className={`cursor-pointer text-xl text-white py-5 hover:border-b-2 border-main-red whitespace-nowrap ${
@@ -83,7 +99,7 @@ const Navbar = ({ pathname }) => {
                     >
                       Discovery Flight
                     </a>
-                  </div>
+                  </div> */}
                   <a
                     href="/discovery-flight-form"
                     target="_blank"
@@ -148,15 +164,15 @@ const Navbar = ({ pathname }) => {
         id="mobile-menu"
       >
         <div className="px-4 pb-3 pt-2 flex flex-col">
-          <MobileNavBar pathname={pathname} />
           <a
-            href="/discovery-flight"
+            href="/flight-programs/new-to-flying"
             className={`cursor-pointer text-xl text-white py-5 hover:border-b-2 border-main-red whitespace-nowrap ${
               pathname === "/discovery-flight" ? "border-b-2" : ""
             }`}
           >
-            Discovery Flight
+            New to Flying?
           </a>
+          <MobileNavBar pathname={pathname} />
           <a
             href="/discovery-flight-form"
             target="_blank"

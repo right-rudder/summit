@@ -1,4 +1,6 @@
 ---
+import { FACEBOOK_LINK, INSTAGRAM_LINK } from '../consts'
+
 const today = new Date();
 ---
 
@@ -13,20 +15,18 @@ const today = new Date();
         <a href="/">
           <img
             class="h-20 hover:brightness-125 duration-300 hover:scale-105 cursor-pointer"
-            src="/red-arrow-logo.webp"
+            src="/img/fromWIX/SFA-logo.png"
             alt="Red Arrow Logo"
           />
         </a>
         <p class="text-sm leading-6 text-gray-300 tracking-wider">
-          Red Arrow Flight Academy is the leading flight school in the greater
-          El Paso, TX area. As a Part 141 Cessna Pilot Center Flight School, we
-          take student pilots from zero flight experience and train them to
-          become safe and proficient pilots. Red Arrow Flight Academy is the
-          place to be if you're looking to fly.
+          Summit Flight Academy is a leading flight school in the greater Kansas
+          City area. With a full range of training options, a reliable fleet of
+          aircraft, and a warm, driven staff, choosing Summit is a no-brainer.
         </p>
         <div class="flex space-x-6">
           <a
-            href="https://www.facebook.com/redarrowflightacademy/"
+            href={FACEBOOK_LINK}
             target="_blank"
             rel="noopener"
             class="text-gray-500 hover:text-red-500 duration-300"
@@ -45,7 +45,7 @@ const today = new Date();
             </svg>
           </a>
           <a
-            href="https://www.instagram.com/flyredarrow/"
+            href={INSTAGRAM_LINK}
             target="_blank"
             rel="noopener"
             class="text-gray-500 hover:text-red-500 duration-300"
@@ -63,7 +63,7 @@ const today = new Date();
                 clip-rule="evenodd"></path>
             </svg>
           </a>
-          <a
+          <!-- <a
             href="https://www.linkedin.com/company/red-arrow-aviation/"
             target="_blank"
             rel="noopener"
@@ -81,7 +81,7 @@ const today = new Date();
                 d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z"
                 clip-rule="evenodd"></path>
             </svg>
-          </a>
+          </a> -->
         </div>
       </div>
       <div class="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
@@ -90,35 +90,42 @@ const today = new Date();
             <h3
               class="text-xl tracking-tight font-semibold leading-6 text-white"
             >
-              Flight Programs
+              Private Training
             </h3>
             <ul role="list" class="mt-6 space-y-4 tracking-wider">
               <li>
                 <a
-                  href="/flight-programs/new-to-flying"
+                  href="/flight-programs/private-pilot-training"
                   class="text-sm leading-6 text-gray-300 hover:text-red-500 duration-300"
-                  >New to Flying?</a
+                  >Private Pilot Training</a
                 >
               </li>
               <li>
                 <a
-                  href="/flight-programs/university-program"
+                  href="/flight-programs/instrument-rating"
                   class="text-sm leading-6 text-gray-300 hover:text-red-500 duration-300"
-                  >University Program</a
+                  >Instrument Rating</a
                 >
               </li>
               <li>
                 <a
-                  href="/flight-programs/international-program"
+                  href="/flight-programs/private-pilot-instrument-bundle"
                   class="text-sm leading-6 text-gray-300 hover:text-red-500 duration-300"
-                  >International Program</a
+                  >Private Pilot Bundle</a
                 >
               </li>
               <li>
                 <a
-                  href="/flight-programs/military-rotor-transition"
+                  href="/flight-programs/multi-engine-rating"
                   class="text-sm leading-6 text-gray-300 hover:text-red-500 duration-300"
-                  >Military/Rotor Transition</a
+                  >Multi-Engine Rating</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/flight-programs/fligh-reviews-ipcs"
+                  class="text-sm leading-6 text-gray-300 hover:text-red-500 duration-300"
+                  >Flight Reviews & IPCs</a
                 >
               </li>
             </ul>
@@ -127,35 +134,28 @@ const today = new Date();
             <h3
               class="text-xl tracking-tight font-semibold leading-6 text-white"
             >
-              Training Courses
+              Career
             </h3>
             <ul role="list" class="mt-6 space-y-4 tracking-wider">
               <li>
                 <a
-                  href="/flight-programs/training-courses#courseList"
+                  href="/career/commercial-pilot-training"
                   class="text-sm leading-6 text-gray-300 hover:text-red-500 duration-300"
-                  >Private Pilot</a
+                  >Commercial Pilot Training"</a
                 >
               </li>
               <li>
                 <a
-                  href="/flight-programs/training-courses#courseList"
+                  href="/career/instructor-training"
                   class="text-sm leading-6 text-gray-300 hover:text-red-500 duration-300"
-                  >Instrument Rating</a
+                  >Instructor Training</a
                 >
               </li>
               <li>
                 <a
-                  href="/flight-programs/training-courses#courseList"
+                  href="/career/teach-at-summit"
                   class="text-sm leading-6 text-gray-300 hover:text-red-500 duration-300"
-                  >Commercial Pilot</a
-                >
-              </li>
-              <li>
-                <a
-                  href="/flight-programs/training-courses#courseList"
-                  class="text-sm leading-6 text-gray-300 hover:text-red-500 duration-300"
-                  >CFI</a
+                  >Teach at Summit</a
                 >
               </li>
             </ul>
@@ -166,37 +166,37 @@ const today = new Date();
             <h3
               class="text-xl tracking-tight font-semibold leading-6 text-white"
             >
-              Contact Us
+              Resources
             </h3>
             <ul role="list" class="mt-6 space-y-4 tracking-wider">
               <li>
                 <a
-                  href="/enrollment"
+                  href="/resources/financing"
                   target="_blank"
                   class="text-sm leading-6 text-gray-300 hover:text-red-500 duration-300"
-                  >Enroll Today</a
+                  >Financing</a
                 >
               </li>
               <li>
                 <a
-                  href="/discovery-flight-form"
+                  href="/resources/insurance"
                   target="_blank"
                   class="text-sm leading-6 text-gray-300 hover:text-red-500 duration-300"
-                  >Discovery Flight</a
+                  >Insurance</a
                 >
               </li>
               <li>
                 <a
-                  href="#contactUs"
+                  href="/resources/download-forms"
                   class="text-sm leading-6 text-gray-300 hover:text-red-500 duration-300"
-                  >Visit School</a
+                  >Download Forms</a
                 >
               </li>
               <li>
                 <a
-                  href="#contactUs"
+                  href="/resources/faqs"
                   class="text-sm leading-6 text-gray-300 hover:text-red-500 duration-300"
-                  >Contact Form</a
+                  >FAQs</a
                 >
               </li>
             </ul>
@@ -210,13 +210,6 @@ const today = new Date();
             <ul role="list" class="mt-6 space-y-4 tracking-wider">
               <li>
                 <a
-                  href="/about/our-story"
-                  class="text-sm leading-6 text-gray-300 hover:text-red-500 duration-300"
-                  >Our Story</a
-                >
-              </li>
-              <li>
-                <a
                   href="/about/our-team"
                   class="text-sm leading-6 text-gray-300 hover:text-red-500 duration-300"
                   >Our Team</a
@@ -227,6 +220,13 @@ const today = new Date();
                   href="/about/our-fleet"
                   class="text-sm leading-6 text-gray-300 hover:text-red-500 duration-300"
                   >Our Fleet</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/about/visit-us"
+                  class="text-sm leading-6 text-gray-300 hover:text-red-500 duration-300"
+                  >Visit Us</a
                 >
               </li>
               <li>
@@ -244,9 +244,9 @@ const today = new Date();
     <div class="mt-16 border-t border-white/10 pt-8 sm:mt-20 lg:mt-24">
       <p class="text-xs leading-5 text-gray-400">
         &copy; {today.getFullYear()}
-        <a href="/">Red Arrow Flight Academy</a>. All rights reserved.
+        <a href="/">Summit Flight Academy</a>. All rights reserved.
       </p>
-      <a href="" class="text-xs leading-5 text-gray-400"
+      <a href="/privacy-policy-tos" class="text-xs leading-5 text-gray-400"
         >Privacy Policy and Terms of Service</a
       >
     </div>

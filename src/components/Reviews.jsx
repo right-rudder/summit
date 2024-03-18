@@ -38,8 +38,8 @@ const Reviews = () => {
             key={`${review.id}-${index}`}
             className="flex flex-col gap-2 justify-center min-w-64 p-4 text-center rounded-xl shadow-lg shadow-gray-500 text-black bg-gradient-to-bl from-gray-200 to-gray-300"
           >
-            <p className="text-gray-600">{review.text}</p>
-            <p className="font-medium">{review.author}</p>
+            <p className="text-gray-700">{review.text}</p>
+            <p className="font-bold">{review.author}</p>
             <div className="flex justify-center">
               <IoIosStar className="text-yellow-600 text-xl" />
               <IoIosStar className="text-yellow-600 text-xl" />

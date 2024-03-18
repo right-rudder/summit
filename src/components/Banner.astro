@@ -1,6 +1,6 @@
 ---
 import { Icon } from "astro-icon/components";
-import { PHONE_NUMBER } from "../consts";
+import { FACEBOOK_LINK, INSTAGRAM_LINK, PHONE_NUMBER } from "../consts";
 ---
 
 <div class="w-full bg-black z-50 relative h-10">
@@ -14,7 +14,7 @@ import { PHONE_NUMBER } from "../consts";
       >
       <div class="hidden lg:flex gap-2">
         <a
-          href="https://www.facebook.com/redarrowflightacademy/"
+          href={FACEBOOK_LINK}
           target="_blank"
           rel="noopener"
         >
@@ -24,7 +24,7 @@ import { PHONE_NUMBER } from "../consts";
           />
         </a>
         <a
-          href="https://www.instagram.com/flyredarrow/"
+          href={INSTAGRAM_LINK}
           target="_blank"
           rel="noopener"
         >
@@ -33,7 +33,7 @@ import { PHONE_NUMBER } from "../consts";
             class="text-white text-2xl hover:scale-110 cursor-pointer transition-all"
           />
         </a>
-        <a
+        <!-- <a
           href="https://www.linkedin.com/company/red-arrow-aviation/"
           target="_blank"
           rel="noopener"
@@ -42,7 +42,7 @@ import { PHONE_NUMBER } from "../consts";
             name="entypo-social:linkedin-with-circle"
             class="text-white text-2xl hover:scale-110 cursor-pointer transition-all"
           />
-        </a>
+        </a> -->
       </div>
     </div>
     <p class="text-white text-md lg:text-lg cursor-pointer">Student Log In</p>
