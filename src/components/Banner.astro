@@ -1,0 +1,50 @@
+---
+import { Icon } from "astro-icon/components";
+import { PHONE_NUMBER } from "../consts";
+---
+
+<div class="w-full bg-black z-50 relative h-10">
+  <div
+    class="mx-auto flex max-w-[80rem] items-center h-full justify-between px-4"
+  >
+    <div class="flex items-center gap-3">
+      <a
+        href=`tel:${PHONE_NUMBER}`
+        class="text-white text-lg lg:text-xl font-medium">{PHONE_NUMBER}</a
+      >
+      <div class="hidden lg:flex gap-2">
+        <a
+          href="https://www.facebook.com/redarrowflightacademy/"
+          target="_blank"
+          rel="noopener"
+        >
+          <Icon
+            name="entypo-social:facebook-with-circle"
+            class="text-white text-2xl hover:scale-110 cursor-pointer transition-all"
+          />
+        </a>
+        <a
+          href="https://www.instagram.com/flyredarrow/"
+          target="_blank"
+          rel="noopener"
+        >
+          <Icon
+            name="entypo-social:instagram-with-circle"
+            class="text-white text-2xl hover:scale-110 cursor-pointer transition-all"
+          />
+        </a>
+        <a
+          href="https://www.linkedin.com/company/red-arrow-aviation/"
+          target="_blank"
+          rel="noopener"
+        >
+          <Icon
+            name="entypo-social:linkedin-with-circle"
+            class="text-white text-2xl hover:scale-110 cursor-pointer transition-all"
+          />
+        </a>
+      </div>
+    </div>
+    <p class="text-white text-md lg:text-lg cursor-pointer">Student Log In</p>
+  </div>
+</div>

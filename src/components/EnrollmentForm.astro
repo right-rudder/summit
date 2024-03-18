@@ -1,0 +1,149 @@
+---
+
+---
+
+<form id="enrollment_form" method="POST" action="" data-astro-reload>
+  <div class="tab">
+    <p>
+      <input
+        required
+        placeholder="First name"
+        type="text"
+        name="first-name"
+        id="first-name"
+        autocomplete="given-name"
+      />
+    </p>
+    <p>
+      <input
+        required
+        placeholder="Last name"
+        type="text"
+        name="last-name"
+        id="last-name"
+        autocomplete="family-name"
+      />
+    </p>
+    <p>
+      <input
+        required
+        placeholder="E-mail"
+        type="email"
+        name="email"
+        id="email"
+        autocomplete="email"
+      />
+    </p>
+
+    <p class="ohno">
+      <label>
+        Don't fill this out if you're human: <input name="confirm-email" />
+      </label>
+    </p>
+
+    <p>
+      <input
+        required
+        placeholder="Phone"
+        type="tel"
+        name="phone-number"
+        id="phone-number"
+        autocomplete="tel"
+      />
+    </p>
+    <p>
+      <textarea
+        required
+        placeholder="What is your goal?"
+        name="goal"
+        id="goal"
+        rows="4"></textarea>
+    </p>
+  </div>
+
+  <div class="btn-red">
+    <button type="submit">Submit</button>
+  </div>
+</form>
+
+<script>
+  // Wait for the DOM content to be fully loaded
+  document.addEventListener("DOMContentLoaded", function () {
+    // Get the enrollment form element
+    const enrollmentForm = document.getElementById(
+      "enrollment_form",
+    ) as HTMLFormElement;
+
+    // Check if the enrollment form element exists
+    if (enrollmentForm !== null) {
+      // Add submit event listener to the enrollment form
+      enrollmentForm.addEventListener("submit", function (event) {
+        // Prevent the default form submission
+        event.preventDefault();
+
+        // Serialize the form data
+        const formData = new FormData(enrollmentForm);
+
+        // Check the value of the honeypot field
+        const confirmEmailValue = formData.get("confirm-email");
+        if (confirmEmailValue === "" || confirmEmailValue === null) {
+          // If the honeypot field is empty, it's a human
+          // Set the form action to the URL for processing the form and redirecting to thank you
+          enrollmentForm.action =
+            "https://services.leadconnectorhq.com/hooks/6Qxcfy0WWndWLURxYvBB/webhook-trigger/ed06f489-4a7d-41ac-947f-eddac0287574";
+        }
+
+        // Convert FormData to URLSearchParams
+        const urlSearchParams = new URLSearchParams();
+        for (const pair of formData.entries()) {
+          urlSearchParams.append(pair[0], pair[1] as string);
+        }
+
+        // Send an AJAX request to submit the form
+        const xhr = new XMLHttpRequest();
+        xhr.open("POST", enrollmentForm.action);
+        xhr.setRequestHeader(
+          "Content-Type",
+          "application/x-www-form-urlencoded",
+        );
+        xhr.onload = function () {
+          // Check if the request was successful (status 200)
+          if (xhr.status === 200) {
+            // Redirect the user after a successful form submission
+            window.location.href = "/enrollment-confirmation";
+          } else {
+            // Handle errors if any
+            console.error("Form submission failed:", xhr.statusText);
+          }
+        };
+        xhr.onerror = function () {
+          // Handle network errors
+          console.error("Network error occurred while submitting the form.");
+        };
+        xhr.send(urlSearchParams);
+      });
+    } else {
+      console.error("Enrollment form element not found.");
+    }
+  });
+</script>
+
+<style>
+  .ohno {
+    @apply hidden;
+  }
+
+  input,
+  textarea {
+    @apply my-3 border py-2 pl-3 rounded-md w-full ring-0 outline-none focus:border-main-red;
+  }
+
+  #enrollmentForm {
+    @apply m-0;
+  }
+
+  /* @layer components in the global css file not loading this class.. :/ */
+  .btn-red {
+    @apply w-min whitespace-nowrap text-center text-lg bg-main-red text-white px-5 py-3 rounded-md uppercase font-semibold hover:scale-105 hover:shadow-xl duration-200 hover:bg-red-800;
+  }
+</style>

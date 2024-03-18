@@ -1,0 +1,44 @@
+---
+const { bgColorRed = true } = Astro.props;
+---
+
+<section
+  class={` bg-gradient-to-br ${bgColorRed ? "from-main-red to-red-900 text-white" : "from-white to-gray-200 text-black"} `}
+>
+  <div
+    class="max-w-7xl mx-auto flex flex-col-reverse items-center px-10 lg:flex-row"
+  >
+    <div class="lg:w-1/2 flex flex-col items-center py-10 h-[30rem] w-full">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3388.202989003412!2d-106.70098032426517!3d31.873896774053986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86ddfb9c5519af0d%3A0x84f5ecbe927b654d!2sRed%20Arrow%20Flight%20Academy!5e0!3m2!1sen!2sar!4v1706029855988!5m2!1sen!2sar"
+        class="w-full h-full max-w-2xl"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="lg:w-1/2 flex flex-col items-center py-10">
+      <div class="max-w-2xl px-10 flex flex-col items-center">
+        <h2 class="text-3xl font-semibold text-center tracking-tight">
+          Our Location
+        </h2>
+        <h3 class="pt-10 text-xl italic text-center">
+          Located at Doña Ana Country International Jetport (KDNA) in Santa
+          Teresa, New Mexico, U.S.A.
+        </h3>
+        <div class="tracking-wider">
+          <p class="pt-10">
+            Red Arrow Flight Academy is the go-to flight school for pilot
+            training in the greater El Paso area. We have students from all over
+            the region visiting us to take part in our extensive training
+            programs. As the only Part 141 school in the area, we are poised to
+            be the premier training facility for Fort Bliss, Santa Teresa & Las
+            Cruces, NM, El Paso & Midland, TX, and Juarez, Mexico.
+          </p>
+        </div>
+        <a href="/discovery-flight" class="">
+          <div class="btn-black mt-10">Visit Us Today</div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

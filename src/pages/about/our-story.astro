@@ -1,0 +1,95 @@
+---
+import EnrollNowCTA from "../../components/EnrollNowCTA.astro";
+import ContactUs from "../../components/ContactUs.astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import OurStoryImage from "../../../public/img/our-story/our-story.webp";
+import Location from "../../components/Location.astro";
+import Section from "../../components/Section.astro";
+---
+
+<BaseLayout
+  pageTitle="Our Story | Red Arrow Flight Academy"
+  pageDescription="Find out why our students choose us at Red Arrow Flight Academy. We are located at Dona Ana County International Jetport (KDNA) in Santa Teresa, NM near El Paso, TX, and Fort Bliss. We can’t wait to meet you!"
+  pageKeywords="Flight school, pilot training, our story, history, Red Arrow Flight Academy, El Paso, Santa Teresa, Texas, New Mexico, background, KDNA"
+>
+  <header
+    class="relative h-screen-3/4 bg-our-story bg-cover bg-center bg-black flex flex-col items-center justify-center"
+  >
+    <div class="absolute bg-black/50 w-full h-full z-0"></div>
+    <div
+      class="text-white text-center z-10 flex flex-col items-center gap-4 px-5"
+    >
+      <h1 class="text-5xl font-bold tracking-tighter">The Red Arrow Story</h1>
+      <h2 class="text-3xl tracking-wide">
+        How we came to be who we are today.
+      </h2>
+      <a class="btn-red" href="#contactUs">Contact Us</a>
+    </div>
+  </header>
+
+  <Section reverse={false}>
+    <div slot="image" class="flex flex-col items-center justify-center gap-5">
+      <img
+        src={OurStoryImage.src}
+        alt="The tail of an airplane at Red Arrow Flight Academy with its logo"
+        class="h-96 lg:h-[550px] aspect-square object-cover"
+      />
+      <a href="/flight-programs/training-courses" class="">
+        <a href="/enrollment" target="_blank" class="btn-red">Join the Family</a
+        >
+      </a>
+    </div>
+    <div slot="content" class="max-w-2xl">
+      <h2 class="text-3xl font-semibold text-center tracking-tight">
+        About Red Arrow Flight Academy
+      </h2>
+      <div class="text-gray-800 tracking-wider">
+        <p class="pt-10">
+          Red Arrow Flight Academy began its journey in 2013, rooted in a
+          singular vision to transform aviation training. Initially founded with
+          just one instructor and a single airplane, the school confronted a
+          critical challenge in the local community and industry: balancing the
+          affordability of pilot training with uncompromising safety and
+          proficiency.
+        </p>
+        <p class="pt-5">
+          The founders of Red Arrow relentlessly questioned conventional
+          training methods, seeking innovative and efficient solutions. Their
+          comprehensive analysis spanned various elements, including the
+          academy's geographical location, the selection of training aircraft,
+          and the structuring of their educational programs.
+        </p>
+        <p class="pt-5">
+          This thorough approach led to creating a meticulously structured
+          training program, specifically designed to optimize every aspect of
+          the learning experience. The program's core philosophy centered on
+          providing an exceptionally safe and effective learning environment,
+          tailored to the needs of aspiring pilots.
+        </p>
+        <p class="pt-5">
+          The commitment to continual assessment and improvement became a
+          cornerstone of Red Arrow's ethos. This dedication ensured that the
+          academy did not just keep pace with industry standards but actively
+          contributed to elevating them. As a result, Red Arrow became
+          synonymous with high-quality aviation training, ensuring that each
+          student was fully equipped to achieve their aviation aspirations.
+        </p>
+        <p class="pt-5">
+          Today, Red Arrow Flight Academy has expanded significantly. From its
+          humble beginnings, it has grown to offer premier aviation training
+          services for the El Paso, Santa Teresa, Ft. Bliss, Las Cruces, and
+          Juarez areas. The academy's growth is a testament to its success in
+          answering the fundamental question it was founded upon, providing a
+          cost-effective yet thoroughly safe and proficient pathway for aspiring
+          pilots to earn their wings.
+        </p>
+      </div>
+    </div>
+  </Section>
+
+  <Location />
+
+  <EnrollNowCTA />
+
+  <ContactUs />
+</BaseLayout>

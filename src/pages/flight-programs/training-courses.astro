@@ -1,0 +1,153 @@
+---
+import DiscoveryFlightCTA from "../../components/DiscoveryFlightCTA.astro";
+import ContactUs from "../../components/ContactUs.astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import TrainingCourseList from "../../components/TrainingCourseList.jsx";
+---
+
+<BaseLayout
+  pageTitle="Training Courses | Red Arrow Flight Academy"
+  pageDescription="Explore a comprehensive range of pilot training courses at Red Arrow Flight Academy. From Private Pilot License (PPL) to Airline and Military programs, discover the perfect training path for your aviation goals. Flexible and accelerated options are available. Train with us and elevate your flight career."
+  pageKeywords="pilot training courses, aviation training programs, flight academy programs, PPL courses, Airline pilot training, Military pilot programs, accelerated pilot training, flexible pilot training, flight school courses, certified flight instructor, aviation career paths"
+>
+  <header
+    class="relative h-screen-3/4 bg-training-courses bg-cover bg-center bg-black flex flex-col items-center justify-center"
+  >
+    <div class="absolute bg-black/60 w-full h-full z-0"></div>
+
+    <div
+      class="text-white text-center z-10 flex flex-col items-center gap-4 px-5"
+    >
+      <h1 class="text-5xl font-bold tracking-tighter">
+        Our Pilot Training Courses
+      </h1>
+      <h2 class="text-3xl tracking-wide">
+        From PPL to advanced training, you’ll find it here with Red Arrow Flight
+        Academy
+      </h2>
+      <a href="/enrollment" target="_blank"
+        ><button class="btn-red">Train with Us</button></a
+      >
+    </div>
+  </header>
+
+  <section
+    class="flex flex-col items-center bg-gradient-to-br from-white to-gray-200 p-5 lg:p-10"
+  >
+    <h2 class="text-3xl font-semibold text-center tracking-tight">
+      Pilot Training Program Structure
+    </h2>
+    <h3 class="pt-10 text-xl italic text-center">
+      We offer both accelerated and flexible training programs to fit your
+      schedule and goals.
+    </h3>
+    <div
+      class="flex flex-col lg:flex-row gap-16 max-w-7xl lg:my-12 items-center lg:items-stretch"
+    >
+      <div class="lg:shadow-xl shadow-gray-400 py-10 px-5 lg:px-14 lg:bg-white">
+        <h4 class="text-2xl font-semibold p-5 pt-0 text-center uppercase">
+          Accelerated Track
+        </h4>
+        <ul class="list-disc flex flex-col gap-5">
+          <li>
+            <p class="font-medium text-xl pb-1">Full Time</p>
+            <p>
+              Are you ready to commit your days to becoming a pilot in the most
+              efficient way possible? This is the program for you then. Join us
+              daily for training sessions and learn to be a pilot fast.
+            </p>
+          </li>
+          <li>
+            <p class="font-medium text-xl pb-1">Fly Often</p>
+            <p>
+              We would like you to fly as often as we can get a plane in the air
+              on this accelerated learning path–weather and maintenance
+              permitting.
+            </p>
+          </li>
+          <li>
+            <p class="font-medium text-xl pb-1">Move Quickly</p>
+            <p>
+              If you can commit the required amount of hours to airtime, we’ve
+              had students complete private pilot training in as little as 8
+              weeks. Depending on weather conditions, we cannot guarantee this,
+              but we can certainly move as quickly as possible to get you into
+              the air.
+            </p>
+          </li>
+          <li>
+            <p class="font-medium text-xl pb-1">Intense, but Rewarding</p>
+            <p>
+              Pilot training isn’t easy; it takes serious commitment to study
+              and practice. That’s not to say it's out of reach for anyone
+              considering training. Our best-in-class training courses and CFIs
+              will take you under their wings as you delve deep into the world
+              of flight. The commitment is a strong one, but always rewarding in
+              the end.
+            </p>
+          </li>
+        </ul>
+      </div>
+      <div
+        class="lg:shadow-xl shadow-gray-400 pb-10 lg:py-10 px-5 lg:px-14 lg:bg-white"
+      >
+        <h4 class="text-2xl font-semibold p-5 pt-0 text-center uppercase">
+          Flexible Learning
+        </h4>
+        <ul class="list-disc flex flex-col gap-5">
+          <li>
+            <p class="font-medium text-xl pb-1">Flexible Hours</p>
+            <p>
+              We don’t expect pilot training to dominate all of our students’
+              days. If you’re not able to fly every day, we still have a program
+              that is as flexible as you want to make it.
+            </p>
+          </li>
+          <li>
+            <p class="font-medium text-xl pb-1">Fly When You Can</p>
+            <p>
+              Fly 1 to 3 times a week and take breaks as necessary. If
+              scheduling becomes an issue even then, we would be happy to
+              accommodate your personal and professional responsibilities to
+              ensure you’re still evoking valuable training from our flight
+              school.
+            </p>
+          </li>
+          <li>
+            <p class="font-medium text-xl pb-1">Longer Road to Completion</p>
+            <p>
+              The rule of thumb is the more you fly, the quicker you complete
+              your training. All training courses require a minimum number of
+              hours of practice, so if you don’t fly as often, it may take
+              longer to complete. That being said, we’ve had students complete
+              private pilot training from anywhere between 2 and 18 months.
+            </p>
+          </li>
+          <li>
+            <p class="font-medium text-xl pb-1">Less Intense</p>
+            <p>
+              The flexible learning route enables you to take however much time
+              is necessary to digest and practice your skills. While less
+              intense, this is also what may extend pilot training duration past
+              those in our accelerated programs.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section
+    class="flex flex-col items-center bg-gradient-to-br from-main-red to-red-900 text-white p-10"
+  >
+    <h2 class="text-3xl font-semibold text-center tracking-tight">
+      Our Training Courses
+    </h2>
+
+    <TrainingCourseList client:visible />
+  </section>
+
+  <DiscoveryFlightCTA />
+
+  <ContactUs />
+</BaseLayout>

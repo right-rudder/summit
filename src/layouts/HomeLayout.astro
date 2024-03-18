@@ -1,0 +1,26 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import FooterHome from "../components/FooterHome.astro";
+import "@fontsource-variable/urbanist";
+
+const { pageTitle, pageDescription, pageImage, pageKeywords } = Astro.props;
+---
+
+<html lang="en" class="scroll-smooth">
+  <head>
+    <BaseHead
+      title={pageTitle}
+      description={pageDescription}
+      image={pageImage}
+      keywords={pageKeywords}
+    />
+  </head>
+  <body class="relative font-serif">
+    <Header />
+    <main>
+      <slot />
+    </main>
+    <FooterHome />
+  </body>
+</html>

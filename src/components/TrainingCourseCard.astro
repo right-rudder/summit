@@ -1,0 +1,18 @@
+---
+const { image, description, alt, link } = Astro.props;
+---
+
+<a href={link}>
+  <div
+    class="flex bg-black text-white flex-col rounded-xl hover:scale-105 transition-[transform] duration-300 ease-in-out cursor-pointer shadow-lg"
+  >
+    <img
+      src={image.src}
+      alt={alt}
+      class="h-64 w-full object-cover rounded-t-xl"
+    />
+    <p class="text-xl font-medium text-center py-3 tracking-wider">
+      {description}
+    </p>
+  </div>
+</a>

@@ -1,0 +1,33 @@
+---
+const { teamMember } = Astro.props;
+---
+
+<div
+  class="flex flex-col p-5 gap-5 lg:flex-row my-10 rounded-lg shadow-lg shadow-gray-500 text-black bg-gradient-to-bl from-gray-200 to-gray-300"
+>
+  <div
+    class="flex flex-col rounded-lg overflow-hidden gap-3 max-w-md lg:w-64 lg:min-w-64"
+  >
+    <img
+      src={teamMember.image}
+      class="aspect-square object-cover w-full rounded-lg border-4 border-gray-700 bg-white"
+      alt={teamMember.alt}
+    />
+    <div
+      class="p-3 rounded-lg text-black bg-transparent border-4 border-gray-700"
+    >
+      <h3 class="text-xl font-semibold">{teamMember.name}</h3>
+      <p class="italic">{teamMember.title}</p>
+      <p class="text-sm">{teamMember.subtitle}</p>
+    </div>
+  </div>
+  <div class="max-w-md lg:max-w-3xl flex flex-col justify-between">
+    <div class="flex flex-col gap-2">
+      {teamMember.bio.map((paragraph) => <p class="text-sm">{paragraph}</p>)}
+    </div>
+    <div>
+      <p class="text-end font-semibold text-main-red">{teamMember.email}</p>
+      <p class="text-end font-semibold">{teamMember.phone}</p>
+    </div>
+  </div>
+</div>

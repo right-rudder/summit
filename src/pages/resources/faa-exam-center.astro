@@ -1,0 +1,94 @@
+---
+import ContactUs from "../../components/ContactUs.astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+---
+
+<BaseLayout
+  pageTitle="FAA Exam Center | Red Arrow Flight Academy"
+  pageDescription="Visit Red Arrow Flight Academy's authorized FAA Exam Center. Conveniently located at Doña Ana Airport (DNA), our secure facility offers a range of authorized FAA written exams. Schedule your test with confidence for a seamless aviation journey."
+  pageKeywords="aviation testing, FAA written exams, pilot certification, Red Arrow Flight Academy, aviation education, flight school exams, FAA Exam Center, aviation career, pilot training, Doña Ana Airport"
+>
+  <!-- Header -->
+  <header
+    class="relative h-screen-3/4 bg-faa-exam-center bg-cover bg-center bg-black flex flex-col items-center justify-center"
+  >
+    <!-- bg-overlay to darken -->
+    <div class="absolute bg-black/50 w-full h-full z-0"></div>
+    <!-- Text -->
+    <div
+      class="text-white text-center z-10 flex flex-col items-center gap-4 px-5"
+    >
+      <h1 class="text-5xl font-bold tracking-tight">
+        The Red Arrow FAA Exam Center
+      </h1>
+      <h2 class="text-3xl tracking-wide">
+        Take your most important exams on-site with us
+      </h2>
+      <a
+        class="btn-red"
+        href="https://faa.psiexams.com/faa/login"
+        rel="noopener noreferrer"
+        target="_blank">Start Now</a
+      >
+    </div>
+  </header>
+
+  <section
+    class="flex flex-col items-center bg-gradient-to-br from-white to-gray-200"
+  >
+    <div class="max-w-5xl px-10 lg:w-1/2 flex flex-col items-center py-10">
+      <h2 class="text-3xl font-semibold text-center tracking-tight">
+        About the FAA Exam Center
+      </h2>
+      <div class="tracking-wider">
+        <p class="pt-10">
+          At Red Arrow Flight Academy, we understand the importance of a
+          stress-free and accessible environment for FAA written tests. Our
+          dedicated FAA Exam Center provides a focused and secure space for
+          pilots and aspiring aviators to undertake various FAA written exams.
+        </p>
+        <p class="pt-10 font-semibold">
+          Why Choose Red Arrow's FAA Exam Center?
+        </p>
+        <ul class="list-disc pl-5">
+          <li>
+            Convenient Location: Located within Red Arrow Flight Academy at Doña
+            Ana Airport, our testing center ensures easy access for a seamless
+            testing experience.
+          </li>
+          <li>
+            Authorized Exams: We are authorized to administer a range of FAA
+            written tests, including but not limited to Airline Transport Pilot,
+            Aviation Maintenance
+          </li>
+          <li>
+            Secure Facility: Accessible through a security gate, our school
+            prioritizes your safety and the confidentiality of your testing
+            experience.
+          </li>
+        </ul>
+        <p class="pt-10 font-semibold">Scheduling Your FAA Test</p>
+        <p>
+          To schedule your FAA written test at Red Arrow Flight Academy's FAA
+          Exam Center, please visit the <a
+            href="https://faa.psiexams.com/faa/login"
+            rel="noreferrer noopener"
+            target="_blank"
+            class="underline hover:text-blue-500">PSI True Talent webpage</a
+          >. If you have any questions or need additional instructions, feel
+          free to contact us directly at (575) 201-6160. Our office hours are
+          Monday to Sunday, 8:00 AM to 1:00 PM.
+        </p>
+      </div>
+    </div>
+    <a
+      class="m-5 btn-red cursor-pointer"
+      href="https://faa.psiexams.com/faa/login"
+      rel="noopener noreferrer"
+      target="_blank">Schedule Now</a
+    >
+  </section>
+
+  <!-- Contact Us Form -->
+  <ContactUs />
+</BaseLayout>

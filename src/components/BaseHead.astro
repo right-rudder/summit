@@ -1,0 +1,118 @@
+---
+// Import the global.css file here so that it is included on
+// all pages through the use of the <BaseHead /> component.
+import "../styles/global.css";
+import {
+  SITE_TITLE,
+  SITE_DESCRIPTION,
+  OG_IMAGE,
+  SITE_KEYWORDS,
+} from "../consts.js";
+
+interface Props {
+  title: string;
+  description: string;
+  image: string;
+  keywords: string;
+}
+
+const { title, description, image, keywords } = Astro.props;
+
+let pageTitle = title;
+let pageDescription = description;
+let pageImage = image;
+let pageKeywords = keywords;
+
+// Custom Titles
+let holderTitle = SITE_TITLE;
+if (pageTitle != null) {
+  holderTitle = pageTitle;
+}
+const newTitle = holderTitle;
+
+// Custom Description
+let holderDesc = SITE_DESCRIPTION;
+if (pageDescription != null) {
+  holderDesc = pageDescription;
+}
+const newDesc = holderDesc;
+
+// Custom OG IMG
+let holderImage = OG_IMAGE;
+if (pageImage != null) {
+  holderImage = pageImage;
+}
+const newImage = holderImage;
+
+// Custom keywords
+let holderKeywords = SITE_KEYWORDS;
+if (pageKeywords != null) {
+  holderKeywords = pageKeywords;
+}
+const newKeywords = holderKeywords;
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+
+import { ViewTransitions } from "astro:transitions";
+---
+
+<!-- Site Created By:    
+       _____  _       _     _     _____           _     _           
+      |  __ \(_)     | |   | |   |  __ \         | |   | |          
+      | |__) |_  __ _| |__ | |_  | |__) |   _  __| | __| | ___ _ __ 
+      |  _  /| |/ _` | '_ \| __| |  _  / | | |/ _` |/ _` |/ _ \ '__|
+      | | \ \| | (_| | | | | |_  | | \ \ |_| | (_| | (_| |  __/ |   
+      |_|  \_\_|\__, |_| |_|\__| |_|  \_\__,_|\__,_|\__,_|\___|_|   
+      |  \/  |   __/ |  | |      | | (_)                            
+      | \  / | _|___/ __| | _____| |_ _ _ __   __ _                 
+      | |\/| |/ _` | '__| |/ / _ \ __| | '_ \ / _` |                
+      | |  | | (_| | |  |   <  __/ |_| | | | | (_| |                
+      |_|  |_|\__,_|_|  |_|\_\___|\__|_|_| |_|\__, |                
+                                               __/ |                
+                                              |___/                 
+
+    Nice to see you here.  Find new student pilots with Right Rudder Marketing.  https://rightruddermarketing.com/contact-us --><!-- Global Metadata -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link rel="icon" type="image/svg+xml" href="/red-arrow-logo.ico" />
+<meta name="generator" content={Astro.generator} />
+
+<!-- Canonical URL -->
+<link rel="canonical" href={canonicalURL} />
+
+<!-- Primary Meta Tags -->
+<title>{newTitle}</title>
+<meta name="title" content={newTitle} />
+<meta name="description" content={newDesc} />
+<meta name="keywords" content={newKeywords} />
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content={Astro.url} />
+<meta property="og:title" content={newTitle} />
+<meta property="og:description" content={newDesc} />
+<meta property="og:image" content={new URL(newImage, Astro.url)} />
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content={Astro.url} />
+<meta property="twitter:title" content={newTitle} />
+<meta property="twitter:description" content={newDesc} />
+<meta property="twitter:image" content={new URL(newImage, Astro.url)} />
+
+<!-- Google tag (gtag.js) -->
+<script
+  type="text/partytown"
+  async
+  src="https://www.googletagmanager.com/gtag/js?id=G-84N22Y2BJ1"></script>
+<script type="text/partytown">
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag("js", new Date());
+
+  gtag("config", "G-84N22Y2BJ1");
+</script>
+
+<ViewTransitions />

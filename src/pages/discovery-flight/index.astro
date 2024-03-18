@@ -1,0 +1,121 @@
+---
+import ContactUs from "../../components/ContactUs.astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import DiscoveryFlightImage from "../../../public/img/discovery-flight/discovery-flight-image-2.webp";
+import FlightOption from "../../components/FlightOption.astro";
+import SimulatorTestImage from "../../../public/img/discovery-flight/cfi.webp";
+import RecreationalFlight from "../../../public/img/discovery-flight/recreational-flight.webp";
+import EnrollNowCTA from "../../components/EnrollNowCTA.astro";
+---
+
+<BaseLayout
+  pageTitle="Discovery Flight | Red Arrow Flight Academy"
+  pageDescription="Learn the ropes of flying with Red Arrow Flight Academy through our Discovery Flight. Discover the joy of aviation as you take control of a flight simulator with our skilled instructors. Explore the skies above Texas and New Mexico, unveiling local landmarks and igniting your passion for flight. Book now for an unforgettable experience and an introduction to the world of flight!"
+  pageKeywords="Discovery Flight, aviation experience, flight training introduction, pilot experience, learn to fly, introductory flight, aviation passion, flight simulator test, recreational flight, Red Arrow Flight Academy, book aviation experience, Cessna 172 flight"
+>
+  <header
+    class="relative h-screen-3/4 bg-discovery-flight bg-cover bg-center bg-black flex flex-col items-center justify-center"
+  >
+    <div class="absolute bg-black/50 w-full h-full z-0"></div>
+
+    <div
+      class="text-white text-center z-10 flex flex-col items-center gap-4 px-5"
+    >
+      <h1 class="text-5xl font-bold tracking-tighter">Fly with Us</h1>
+      <h2 class="text-3xl tracking-wide">
+        Discover if flying is as exciting for you as it is for us!
+      </h2>
+      <a href="/discovery-flight-form" target="_blank"
+        ><button class="btn-red">Book Now</button></a
+      >
+    </div>
+  </header>
+
+  <section
+    class="flex flex-col items-center bg-gradient-to-br from-white to-gray-200"
+  >
+    <div class="max-w-5xl px-10 lg:w-1/2 flex flex-col items-center py-10">
+      <h2 class="text-3xl font-semibold text-center tracking-tight">
+        What is a Discovery Flight?
+      </h2>
+      <h3 class="pt-10 text-xl italic text-center">
+        Discover the thrill of flight with a Red Arrow Discovery Flight—an
+        exhilarating experience designed to give you a taste of life as a pilot.
+      </h3>
+      <div class="tracking-wider">
+        <p class="pt-5">
+          Take part in one of our discovery flights, designed to familiarize you
+          with the possibilities of pilot training and an introduction to the
+          intricacies of aviation to see if the prospect of being a pilot
+          resonates with you.
+        </p>
+        <p class="pt-5">
+          As you soar through the Texas skies with a Red Arrow instructor,
+          you’ll get the chance to see our local points of interest like the El
+          Paso Mountain Star, the volcanic crater known as the Kilbourne Hole,
+          Downtown El Paso from above, the expansive landscapes of West El Paso,
+          and even the distinctive landmarks like Canutillo High School's blue
+          football field. If you book during the fall, you can also enjoy the
+          seasonal La Union Corn Maze.
+        </p>
+        <p class="pt-5">
+          Come fly with us today and see the world from our perspective.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section
+    class="relative bg-cfi-and-student bg-top bg-cover bg-fixed bg-main-red text-white flex flex-col items-center"
+  >
+    <div class="absolute bg-main-red/60 w-full h-full z-10"></div>
+    <div
+      class="max-w-5xl px-10 lg:w-1/2 flex flex-col items-center py-20 relative z-20"
+    >
+      <h2 class="text-3xl font-semibold text-center tracking-tight">
+        How Much Does a Discovery Flight Cost?
+      </h2>
+      <div class="tracking-wider">
+        <p class="pt-10">
+          We value transparency at Red Arrow Flight Academy and offer the
+          following rates for our discovery and recreational flight options.
+          These prices are tied to the fuel and maintenance costs required to
+          take you up. It is our goal to make flight as accessible as possible
+          to our communities in Texas and New Mexico.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section
+    class="bg-gradient-to-br from-white to-gray-200 flex flex-col items-center py-10"
+  >
+    <FlightOption
+      image={DiscoveryFlightImage}
+      alt="The El Paso mountain range from outside a Red Arrow aircraft"
+      title="Discovery Flight ($200)"
+      description="Dip your toes into the flight training pond with an introduction to what it's like to be a pilot. Go up in the air with a Red Arrow instructor and see our local points of interest like the El Paso Mountain Star, the volcanic crater known as the Kilbourne Hole, Downtown and West El Paso, and more."
+      reverse={true}
+    />
+    <FlightOption
+      image={SimulatorTestImage}
+      alt="Student and CFI sit down in front of a Redbird flight simulator"
+      title="The Simulator Test ($250)"
+      description="Sit down at the Redbird full-motion flight simulator with one of our experienced CFIs and learn the ropes of flying. Following the session, you’ll have the chance to show off your skills and be assessed in your success in piloting a virtual flight."
+    />
+    <FlightOption
+      image={RecreationalFlight}
+      alt="El Paso couple completes a proposal post-discovery flight at KDNA"
+      title="Recreational Flight ($325)"
+      description="Are you or someone you know curious about what El Paso looks like from above? Be it a birthday, anniversary, or unique date, we would love to take you and your loved ones up for a bird’s eye view."
+      reverse={true}
+    />
+    <a href="/discovery-flight-form" target="_blank">
+      <div class="btn-red">Book a Flight</div>
+    </a>
+  </section>
+
+  <EnrollNowCTA />
+
+  <ContactUs />
+</BaseLayout>

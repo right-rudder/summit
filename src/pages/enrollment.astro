@@ -1,0 +1,41 @@
+---
+import FooterHome from "../components/FooterHome.astro";
+import EnrollmentForm from "../components/EnrollmentForm.astro";
+import BaseHead from "../components/BaseHead.astro";
+
+const { pageImage } = Astro.props;
+---
+
+<html lang="en" class="scroll-smooth">
+  <head>
+    <BaseHead
+      title="Enroll at Red Arrow Flight Academy"
+      description="Register your interest in Red Arrow today. Fill out our enrollment for to let us know you're interested in becoming a pilot. We will get back with you shortly."
+      image={pageImage}
+      keywords="Enrollment, form, submission, Red Arrow Flight Academy, flight training, pilot training"
+    />
+  </head>
+  <div
+    class="grid place-items-center py-10 px-5 lg:pb-24 bg-gradient-to-br from-black to-red-950 text-white"
+  >
+    <header class="grid place-items-center">
+      <h1 class="text-3xl text-center">
+        Start the enrollment process at <span class="text-red-400"
+          >Red Arrow</span
+        >
+      </h1>
+      <p class="italic text-center pt-5 text-gray-300">
+        Fill out the form below and let's start flying! A Red Arrow team member
+        will get in touch with you and walk you through the steps to become a
+        pilot.
+      </p>
+    </header>
+    <div class="bg-white text-black m-5 p-5 max-w-2xl w-full rounded-xl">
+      <div class="">
+        <EnrollmentForm />
+      </div>
+    </div>
+  </div>
+
+  <FooterHome />
+</html>

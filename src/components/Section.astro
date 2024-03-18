@@ -1,0 +1,18 @@
+---
+const { reverse = false, red = false } = Astro.props;
+---
+
+<section
+  class=`bg-gradient-to-br py-10 px-5 ${red ? "from-main-red to-red-900 text-white" : "from-white to-gray-200"}`
+>
+  <div
+    class=`flex ${reverse ? "flex-col-reverse lg:flex-row" : "flex-col-reverse lg:flex-row-reverse"} items-center max-w-7xl px-5 mx-auto lg:gap-10`
+  >
+    <div class="lg:w-1/2 flex flex-col items-center">
+      <slot name="image" />
+    </div>
+    <div class="lg:w-1/2 flex flex-col items-center">
+      <slot name="content" />
+    </div>
+  </div>
+</section>

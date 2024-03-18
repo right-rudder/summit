@@ -1,0 +1,88 @@
+---
+import DiscoveryFlightCTA from "../../components/DiscoveryFlightCTA.astro";
+import ContactUs from "../../components/ContactUs.astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Location from "../../components/Location.astro";
+import { fleet } from "../../data/fleet";
+import { simulators } from "../../data/simulators";
+import FleetCard from "../../components/FleetCard.astro";
+import SimulatorCard from "../../components/SimulatorCard.astro";
+---
+
+<BaseLayout
+  pageTitle="Our Fleet | Red Arrow Flight Academy"
+  pageDescription="Meet the Red Arrow fleet: the plane names, specs, and price per rental hour. These planes are used both for training and rental. Explore our aircraft today and get to know what you’ll be flying!"
+  pageKeywords="Aircraft, fleet, Red Arrow Flight Academy, rentals, book a flight, Cessna 172, Cessna 182, Piper, Flight training"
+>
+  <header
+    class="relative h-screen-3/4 bg-our-fleet bg-cover bg-center bg-black flex flex-col items-center justify-center"
+  >
+    <div class="absolute bg-black/20 w-full h-full z-0"></div>
+    <div
+      class="text-white text-center z-10 flex flex-col items-center gap-4 px-5"
+    >
+      <h1 class="text-5xl font-bold tracking-tighter">The Red Arrow Fleet</h1>
+      <h2 class="text-3xl tracking-wide">
+        Our extensive fleet available for flight training and rentals
+      </h2>
+      <a href="/discovery-flight-form" target="_blank" class="btn-red"
+        >Fly High</a
+      >
+    </div>
+  </header>
+
+  <section
+    class="flex flex-col items-center px-10 bg-gradient-to-br from-white to-gray-200 py-10"
+  >
+    <div class="max-w-2xl">
+      <h2 class="text-3xl font-semibold text-center tracking-tight">
+        Our Fleet
+      </h2>
+      <h3 class="pt-10 text-xl italic text-center">
+        All airplanes are subject to fuel surcharge. Prices may change, contact
+        us for current prices. Prices do not include tax.
+      </h3>
+    </div>
+
+    {fleet.map((plane) => <FleetCard plane={plane} />)}
+  </section>
+
+  <section
+    class="px-10 bg-gradient-to-br from-gray-800 to-black py-10 text-white"
+  >
+    <div class="flex flex-col gap-5 items-center max-w-2xl mx-auto">
+      <h2 class="text-3xl font-semibold text-center tracking-tight">
+        Renter Information
+      </h2>
+      <p class="text-center">
+        If you are NOT one of our current students and would like to rent one of
+        our planes, please download the RENTAL GUIDELINES.
+      </p>
+      <a
+        href="/files/rental-agreement.pdf"
+        download="rental-agreement.pdf"
+        class="btn-red self-center">Download</a
+      >
+    </div>
+  </section>
+
+  <section
+    class="flex flex-col items-center px-10 bg-gradient-to-br from-white to-gray-200 py-10"
+  >
+    <h2 class="text-3xl font-semibold text-center tracking-tight">
+      Our Simulators
+    </h2>
+    <h3 class="pt-10 text-xl italic">
+      Prices may change, contact us for current prices. Prices do not include
+      tax.
+    </h3>
+
+    {simulators.map((simulator) => <SimulatorCard simulator={simulator} />)}
+  </section>
+
+  <Location bgColorRed={true} />
+
+  <DiscoveryFlightCTA />
+
+  <ContactUs />
+</BaseLayout>

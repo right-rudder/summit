@@ -1,0 +1,342 @@
+---
+const startDate = new Date();
+startDate.setDate(startDate.getDate() + 5);
+
+const datesArray: Date[] = [];
+for (let i = 0; i < 15; i++) {
+  const currentDate = new Date(startDate);
+  currentDate.setDate(currentDate.getDate() + i);
+  datesArray.push(currentDate);
+}
+---
+
+<form id="discovery_form" method="POST" action="" data-astro-reload>
+  <div class="tab">
+    <p>
+      <input
+        required
+        placeholder="First name"
+        type="text"
+        name="first-name"
+        id="first-name"
+        autocomplete="given-name"
+      />
+    </p>
+    <p>
+      <input
+        required
+        placeholder="Last name"
+        type="text"
+        name="last-name"
+        id="last-name"
+        autocomplete="family-name"
+      />
+    </p>
+    <p>
+      <input
+        required
+        placeholder="E-mail"
+        type="email"
+        name="email"
+        id="email"
+        autocomplete="email"
+      />
+    </p>
+
+    <p class="ohno">
+      <label>
+        Don't fill this out if you're human: <input name="confirm-email" />
+      </label>
+    </p>
+
+    <p>
+      <input
+        required
+        placeholder="Phone"
+        type="tel"
+        name="phone-number"
+        id="phone-number"
+        autocomplete="tel"
+      />
+    </p>
+
+    <div class="pt-5">
+      <h2 class="text-sm font-medium leading-6 text-gray-900">
+        Select aviation goal
+      </h2>
+
+      <fieldset class="mt-2 relative">
+        <legend class="sr-only">Select aviation goal</legend>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+          <label
+            class="goallabels flex items-center relative justify-center rounded-md py-3 px-3 text-sm font-semibold uppercase sm:flex-1 cursor-pointer focus:outline-none ring-1 hover:ring-2 ring-main-red hover:ring-offset-2"
+          >
+            <input
+              type="radio"
+              name="goal-option"
+              value="Discovery Flight"
+              class="sr-only"
+              aria-labelledby="goal-option-0-label"
+              required
+            />
+            <span id="goal-option-0-label">Discovery Flight</span>
+          </label>
+
+          <label
+            class="goallabels flex items-center relative justify-center rounded-md py-3 px-3 text-sm font-semibold uppercase sm:flex-1 cursor-pointer focus:outline-none ring-1 hover:ring-2 ring-main-red hover:ring-offset-2"
+          >
+            <input
+              type="radio"
+              name="goal-option"
+              value="Recreational Flight"
+              class="sr-only"
+              aria-labelledby="goal-option-1-label"
+            />
+            <span id="goal-option-1-label">Recreational Flight</span>
+          </label>
+          <label
+            class="goallabels flex items-center relative justify-center rounded-md py-3 px-3 text-sm font-semibold uppercase sm:flex-1 cursor-pointer focus:outline-none ring-1 hover:ring-2 ring-main-red hover:ring-offset-2"
+          >
+            <input
+              type="radio"
+              name="goal-option"
+              value="Simulator"
+              class="sr-only"
+              aria-labelledby="goal-option-2-label"
+            />
+            <span id="goal-option-1-label">Simulator</span>
+          </label>
+        </div>
+      </fieldset>
+
+      <div class="pt-5">
+        <h2 class="text-sm font-medium leading-6 text-gray-900">
+          Select discovery flight date
+        </h2>
+
+        <fieldset class="mt-2 relative">
+          <legend class="sr-only">Select discovery flight date</legend>
+          <div class="grid grid-cols-3 gap-3 sm:grid-cols-5">
+            {
+              datesArray.map((date, index) => (
+                <label class="daylabels flex items-center relative justify-center rounded-md py-3 px-3 text-sm font-semibold uppercase sm:flex-1 cursor-pointer ring-1 focus:outline-none hover:ring-2 ring-main-red hover:ring-offset-2">
+                  <input
+                    type="radio"
+                    name="day-option"
+                    value={date.toLocaleDateString("en-US", {
+                      month: "short",
+                      day: "numeric",
+                    })}
+                    class="sr-only"
+                    aria-labelledby={`day-option-${index}-label`}
+                    required
+                  />
+                  <span id={`day-option-${index}-label`}>
+                    {date.toLocaleDateString("en-US", {
+                      month: "short",
+                      day: "numeric",
+                    })}
+                  </span>
+                </label>
+              ))
+            }
+          </div>
+        </fieldset>
+      </div>
+
+      <div class="pt-5">
+        <h2 class="text-sm font-medium leading-6 text-gray-900">
+          Select discovery flight time
+        </h2>
+
+        <fieldset class="mt-2 relative">
+          <legend class="sr-only">Select discovery flight time</legend>
+          <div class="grid grid-cols-2 gap-3 sm:grid-cols-4">
+            <label
+              class="timelabels flex items-center relative justify-center rounded-md py-3 px-3 text-sm font-semibold uppercase sm:flex-1 cursor-pointer focus:outline-none ring-1 hover:ring-2 ring-main-red hover:ring-offset-2"
+            >
+              <input
+                type="radio"
+                name="time-option"
+                value="7AM - 10AM"
+                class="sr-only"
+                aria-labelledby="time-option-0-label"
+                required
+              />
+              <span id="time-option-0-label">7AM - 10AM</span>
+            </label>
+
+            <label
+              class="timelabels flex items-center relative justify-center rounded-md py-3 px-3 text-sm font-semibold uppercase sm:flex-1 cursor-pointer focus:outline-none ring-1 hover:ring-2 ring-main-red hover:ring-offset-2"
+            >
+              <input
+                type="radio"
+                name="time-option"
+                value="10AM - 1PM"
+                class="sr-only"
+                aria-labelledby="time-option-1-label"
+              />
+              <span id="time-option-1-label">10AM - 1PM</span>
+            </label>
+            <label
+              class="timelabels flex items-center relative justify-center rounded-md py-3 px-3 text-sm font-semibold uppercase sm:flex-1 cursor-pointer focus:outline-none ring-1 hover:ring-2 ring-main-red hover:ring-offset-2"
+            >
+              <input
+                type="radio"
+                name="time-option"
+                value="1PM - 4PM"
+                class="sr-only"
+                aria-labelledby="time-option-2-label"
+              />
+              <span id="time-option-1-label">1PM - 4PM</span>
+            </label>
+            <label
+              class="timelabels flex items-center relative justify-center rounded-md py-3 px-3 text-sm font-semibold uppercase sm:flex-1 cursor-pointer focus:outline-none ring-1 hover:ring-2 ring-main-red hover:ring-offset-2"
+            >
+              <input
+                type="radio"
+                name="time-option"
+                value="4PM - 7PM"
+                class="sr-only"
+                aria-labelledby="time-option-3-label"
+              />
+              <span id="time-option-1-label">4PM - 7PM</span>
+            </label>
+          </div>
+        </fieldset>
+      </div>
+    </div>
+  </div>
+
+  <div class="btn-red mt-5 ml-auto">
+    <button type="submit">Submit</button>
+  </div>
+
+  <script>
+    // Wait for the DOM content to be fully loaded
+    document.addEventListener("DOMContentLoaded", function () {
+      // Get the discovery form element
+      const discoveryForm = document.getElementById(
+        "discovery_form",
+      ) as HTMLFormElement;
+
+      // Check if the discovery form element exists
+      if (discoveryForm !== null) {
+        // Add submit event listener to the discovery form
+        discoveryForm.addEventListener("submit", function (event) {
+          // Prevent the default form submission
+          event.preventDefault();
+
+          // Serialize the form data
+          const formData = new FormData(discoveryForm);
+
+          // Check the value of the honeypot field
+          const confirmEmailValue = formData.get("confirm-email");
+          if (confirmEmailValue === "" || confirmEmailValue === null) {
+            // If the honeypot field is empty, it's a human
+            // Set the form action to the URL for processing the form and redirecting to thank you
+            discoveryForm.action =
+              "https://services.leadconnectorhq.com/hooks/6Qxcfy0WWndWLURxYvBB/webhook-trigger/82224472-6bdb-4a5b-8bce-ac984d058d62";
+          }
+
+          // Convert FormData to URLSearchParams
+          const urlSearchParams = new URLSearchParams();
+          for (const pair of formData.entries()) {
+            urlSearchParams.append(pair[0], pair[1] as string);
+          }
+
+          // Send an AJAX request to submit the form
+          const xhr = new XMLHttpRequest();
+          xhr.open("POST", discoveryForm.action);
+          xhr.setRequestHeader(
+            "Content-Type",
+            "application/x-www-form-urlencoded",
+          );
+          xhr.onload = function () {
+            // Check if the request was successful (status 200)
+            if (xhr.status === 200) {
+              // Redirect the user after a successful form submission
+              window.location.href = "/discovery-confirmation";
+            } else {
+              // Handle errors if any
+              console.error("Form submission failed:", xhr.statusText);
+            }
+          };
+          xhr.onerror = function () {
+            // Handle network errors
+            console.error("Network error occurred while submitting the form.");
+          };
+          xhr.send(urlSearchParams);
+        });
+      } else {
+        console.error("Discovery form element not found.");
+      }
+    });
+
+    const dayRadioButtons = document.querySelectorAll(
+      'input[type="radio"][name="day-option"]',
+    );
+
+    dayRadioButtons.forEach((radioButton) => {
+      radioButton.addEventListener("change", function () {
+        const labels = document.querySelectorAll(".daylabels");
+        labels.forEach((label) => {
+          label.classList.remove("bg-red-200", "hover:bg-main-red");
+        });
+
+        const selectedLabel = this.parentNode;
+        selectedLabel.classList.add("bg-red-200", "hover:bg-main-red");
+      });
+    });
+
+    const timeRadioButtons = document.querySelectorAll(
+      'input[type="radio"][name="time-option"]',
+    );
+    timeRadioButtons.forEach((radioButton) => {
+      radioButton.addEventListener("change", function () {
+        const labels = document.querySelectorAll(".timelabels");
+        labels.forEach((label) => {
+          label.classList.remove("bg-red-200", "hover:bg-main-red");
+        });
+
+        const selectedLabel = this.parentNode;
+        selectedLabel.classList.add("bg-red-200", "hover:bg-main-red");
+      });
+    });
+
+    const goalRadioButtons = document.querySelectorAll(
+      'input[type="radio"][name="goal-option"]',
+    );
+    goalRadioButtons.forEach((radioButton) => {
+      radioButton.addEventListener("change", function () {
+        const labels = document.querySelectorAll(".goallabels");
+        labels.forEach((label) => {
+          label.classList.remove("bg-red-200", "hover:bg-main-red");
+        });
+
+        const selectedLabel = this.parentNode;
+        selectedLabel.classList.add("bg-red-200", "hover:bg-main-red");
+      });
+    });
+  </script>
+
+  <style>
+    .ohno {
+      @apply hidden;
+    }
+
+    input,
+    textarea {
+      @apply my-3 border py-2 pl-3 rounded-md w-full ring-0 outline-none focus:border-main-red;
+    }
+
+    #discoveryForm {
+      @apply m-0;
+    }
+
+    /* @layer components in the global css file not loading this class.. :/ */
+    .btn-red {
+      @apply w-min whitespace-nowrap text-center text-lg bg-main-red text-white px-5 py-3 rounded-md uppercase font-semibold hover:scale-105 hover:shadow-xl duration-200 hover:bg-red-800;
+    }
+  </style>
+</form>

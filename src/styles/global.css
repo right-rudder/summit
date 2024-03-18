@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn-red {
+    @apply w-min whitespace-nowrap text-center text-lg bg-main-red text-white px-5 py-3 rounded-md uppercase font-semibold hover:scale-105 hover:shadow-xl duration-200 hover:bg-red-800;
+  }
+  .btn-black {
+    @apply w-min whitespace-nowrap text-center text-lg bg-black text-white px-5 py-3 rounded-md uppercase font-semibold hover:scale-105 hover:shadow-xl duration-200 hover:bg-gray-950 cursor-pointer;
+  }
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  @apply text-main-red !important;
+}
+
+.swiper-pagination-bullet-active {
+  @apply bg-main-red !important;
+}
+
+.swiper-button-next {
+  @apply lg:right-24 xl:right-44 2xl:right-72 !important;
+}
+
+.swiper-button-prev {
+  @apply lg:left-24 xl:left-44 2xl:left-72 !important;
+}
+
+.swiper-pagination-bullet {
+  @apply w-5 h-5 text-white text-sm font-semibold text-center !important;
+}
+
+.swiper-slide {
+  @apply h-auto !important;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
