@@ -58,7 +58,7 @@ const Navbar = ({ pathname }) => {
                 <div className="flex gap-5 xl:gap-10 items-center">
                 <div>
                     <a
-                      href="/flight-programs/new-to-flying"
+                      href="/new-to-flying"
                       className={`cursor-pointer text-xl text-white py-5 hover:border-b-2 border-main-red whitespace-nowrap ${
                         pathname === "/discovery-flight" ? "border-b-2" : ""
                       }`}
@@ -165,7 +165,7 @@ const Navbar = ({ pathname }) => {
       >
         <div className="px-4 pb-3 pt-2 flex flex-col">
           <a
-            href="/flight-programs/new-to-flying"
+            href="/new-to-flying"
             className={`cursor-pointer text-xl text-white py-5 hover:border-b-2 border-main-red whitespace-nowrap ${
               pathname === "/discovery-flight" ? "border-b-2" : ""
             }`}
