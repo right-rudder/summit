@@ -3,6 +3,8 @@ import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import "@fontsource-variable/urbanist";
+import "@fontsource-variable/raleway";
+import "@fontsource-variable/montserrat";
 import "@fontsource-variable/quicksand";
 
 const { pageTitle, pageDescription, pageImage, pageKeywords } = Astro.props;
@@ -17,7 +19,7 @@ const { pageTitle, pageDescription, pageImage, pageKeywords } = Astro.props;
       keywords={pageKeywords}
     />
   </head>
-  <body class="relative font-serif">
+  <body class="relative font-sans">
     <Header />
     <main>
       <slot />

@@ -45,8 +45,14 @@ export default {
         moveReviews: "moveReviews 5s linear infinite",
       },
       fontFamily: {
-        serif: ["Urbanist Variable", ...defaultTheme.fontFamily.serif],
-        sans: ["Quicksand Variable", ...defaultTheme.fontFamily.sans],
+        serif: [
+          'Urbanist Variable',
+          ...defaultTheme.fontFamily.serif,
+        ],
+        sans: [
+          'Raleway Variable',
+          ...defaultTheme.fontFamily.sans,
+        ]
       },
     },
   },

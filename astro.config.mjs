@@ -9,8 +9,7 @@ import partytown from "@astrojs/partytown";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://right-rudder.github.io",
-  base: "https://github.com/right-rudder/summit",
+  site: "https://www.summitflightacademy.com/",
   integrations: [
     mdx(),
     sitemap(),

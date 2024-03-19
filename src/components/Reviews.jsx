@@ -28,15 +28,12 @@ const Reviews = () => {
   }, []);
 
   return (
-    <div className="overflow-hidden w-full bg-gradient-to-br from-white to-gray-200 py-10">
-      <h2 className="text-3xl lg:text-4xl font-bold text-center pt-5 px-5">
-        What Our Students Say
-      </h2>
-      <div className="flex py-10 gap-5" ref={reviewContainerRef}>
+    <div className="overflow-hidden w-full bg-main-red py-16">
+      <div className="flex py-16 gap-5" ref={reviewContainerRef}>
         {duplicatedReviews.map((review, index) => (
           <div
             key={`${review.id}-${index}`}
-            className="flex flex-col gap-2 justify-center min-w-64 p-4 text-center rounded-xl shadow-lg shadow-gray-500 text-black bg-gradient-to-bl from-gray-200 to-gray-300"
+            className="flex flex-col gap-2 justify-center min-w-96 p-4 text-center rounded text-black bg-gradient-to-bl from-gray-200 to-gray-300"
           >
             <p className="text-gray-700">{review.text}</p>
             <p className="font-bold">{review.author}</p>
