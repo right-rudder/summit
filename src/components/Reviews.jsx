@@ -33,17 +33,17 @@ const Reviews = () => {
         {duplicatedReviews.map((review, index) => (
           <div
             key={`${review.id}-${index}`}
-            className="flex flex-col gap-2 justify-center min-w-96 p-4 text-center rounded text-black bg-gradient-to-bl from-gray-200 to-gray-300"
+            className="flex flex-col gap-2 justify-center min-w-96 py-6 px-8 text-center text-black bg-gray-100"
           >
-            <p className="text-gray-700">{review.text}</p>
-            <p className="font-bold">{review.author}</p>
-            <div className="flex justify-center">
-              <IoIosStar className="text-yellow-600 text-xl" />
-              <IoIosStar className="text-yellow-600 text-xl" />
-              <IoIosStar className="text-yellow-600 text-xl" />
-              <IoIosStar className="text-yellow-600 text-xl" />
-              <IoIosStar className="text-yellow-600 text-xl" />
+            <div className="flex justify-center items-center">
+              <IoIosStar className="text-yellow-600 text-lg" />
+              <IoIosStar className="text-yellow-600 text-lg" />
+              <IoIosStar className="text-yellow-600 text-lg" />
+              <IoIosStar className="text-yellow-600 text-lg" />
+              <IoIosStar className="text-yellow-600 text-lg" />
             </div>
+            <p className="text-gray-800 text-base text-justify text-l px-5">{review.text}</p>
+            <p className="font-bold text-xl text-gray-600">{review.author}</p>
           </div>
         ))}
       </div>

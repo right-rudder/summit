@@ -1,33 +1,25 @@
 ---
 import { Icon } from "astro-icon/components";
-import { FACEBOOK_LINK, INSTAGRAM_LINK, PHONE_NUMBER } from "../consts";
+import { FACEBOOK_LINK, INSTAGRAM_LINK, PHONE_NUMBER, EMAIL_ADDRESS } from "../consts";
 ---
 
-<div class="w-full bg-black z-50 relative h-10">
+<div class="w-full bg-gray-700 z-50 relative h-10">
   <div
     class="mx-auto flex max-w-[80rem] items-center h-full justify-between px-4"
   >
     <div class="flex items-center gap-3">
       <a
         href=`tel:${PHONE_NUMBER}`
-        class="text-white text-lg lg:text-xl font-medium">{PHONE_NUMBER}</a
+        class="text-white text-sm lg:text-base font-medium">{PHONE_NUMBER}</a
       >
-      <div class="hidden lg:flex gap-2">
-        <a
-          href={FACEBOOK_LINK}
-          target="_blank"
-          rel="noopener"
-        >
+      <div class="hidden lg:flex gap-2 ml-4">
+        <a href={FACEBOOK_LINK} target="_blank" rel="noopener">
           <Icon
             name="entypo-social:facebook-with-circle"
             class="text-white text-2xl hover:scale-110 cursor-pointer transition-all"
           />
         </a>
-        <a
-          href={INSTAGRAM_LINK}
-          target="_blank"
-          rel="noopener"
-        >
+        <a href={INSTAGRAM_LINK} target="_blank" rel="noopener">
           <Icon
             name="entypo-social:instagram-with-circle"
             class="text-white text-2xl hover:scale-110 cursor-pointer transition-all"
@@ -45,6 +37,10 @@ import { FACEBOOK_LINK, INSTAGRAM_LINK, PHONE_NUMBER } from "../consts";
         </a> -->
       </div>
     </div>
-    <p class="text-white text-md lg:text-lg cursor-pointer">Student Log In</p>
+    <!-- <p class="text-white text-md lg:text-sm cursor-pointer">Student Log In</p> -->
+    <a
+      href=`mailto:${EMAIL_ADDRESS}`
+      class="text-white text-sm lg:text-base font-medium">{EMAIL_ADDRESS}</a
+    >
   </div>
 </div>

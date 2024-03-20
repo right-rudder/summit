@@ -10,13 +10,13 @@ export default {
       },
       backgroundImage: {
         home: "url('/img/fromWIX/Screenshot2024-03-15 at 11.44_edited.jpg')",
-        "two-cessna": "url('/img/two-cessna-red-arrow-KDNA-santa-teresa.webp')",
+        "two-cessna": "url('/img/fromWIX/AdobeStock_198399440.jpeg')",
         "our-story": "url('/img/our-story/banner.webp')",
         "our-team": "url('/img/our-team/banner.webp')",
         "our-fleet": "url('/img/our-fleet/banner.webp')",
         maintenance: "url('/img/maintenance/banner.webp')",
         military: "url('/img/military/banner.webp')",
-        "new-to-flying": "url('/img/new-to-flying/banner.webp')",
+        "new-to-flying": "url('/img/fromWIX/AdobeStock_139858404.jpeg')",
         "university-program": "url('/img/university-program/banner.webp')",
         "international-program":
           "url('/img/international-program/banner.webp')",
@@ -24,7 +24,7 @@ export default {
         financing: "url('/img/financing/banner.webp')",
         "training-courses": "url('/img/training-courses/banner.webp')",
         "discovery-flight":
-          "url('/img/discovery-flight/discovery-flight-banner.webp')",
+          "url('/img/fromWIX/IMG_2053 3_edited(1).jpg')",
         "cfi-and-student": "url('/img/discovery-flight/cfi-and-student.webp')",
       },
       height: (theme) => ({

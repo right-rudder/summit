@@ -38,7 +38,7 @@ const Navbar = ({ pathname }) => {
   return (
     <nav className="w-full h-0">
       <div
-        className={`${navBar || openMobile ? "bg-black" : "bg-transparent"} duration-300`}
+        className={`${navBar || openMobile ? "bg-gray-900" : "bg-transparent"} duration-300 ease-in-out`}
       >
         <div className="mx-auto max-w-7xl px-4">
           <div
@@ -46,11 +46,11 @@ const Navbar = ({ pathname }) => {
             id="navbar"
           >
             <div className="flex flex-1 items-center justify-between">
-              <a href="/" className="flex flex-shrink-0 items-center">
+              <a href="/" className="flex flex-shrink items-center">
                 <img
                   src="/img/fromWIX/SFA-logo.png"
                   alt="Summit Flight Academy Logo"
-                  className={`${navBar ? "lg:h-14" : "lg:h-20"} h-14 w-auto transition-all`}
+                  className={`${navBar ? "lg:h-14" : "lg:h-20"} object-contain h-14 w-auto transition-all`}
                   id="navbar-image"
                 />
               </a>
@@ -160,7 +160,7 @@ const Navbar = ({ pathname }) => {
       </div>
 
       <div
-        className={`${openMobile ? "max-h-[36rem]" : "max-h-0"} overflow-hidden transition-[max-height] duration-300 ease-in-out lg:hidden absolute w-full bg-black -z-10`}
+        className={`${openMobile ? "max-h-[36rem]" : "max-h-0"} overflow-hidden transition-[max-height] duration-300 ease-in-out lg:hidden absolute w-full bg-gray-900 bg-opacity-90 -z-10`}
         id="mobile-menu"
       >
         <div className="px-4 pb-3 pt-2 flex flex-col">
