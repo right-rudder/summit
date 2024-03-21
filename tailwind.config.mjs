@@ -9,14 +9,15 @@ export default {
         "main-red": "#C70009",
       },
       backgroundImage: {
-        home: "url('/img/fromWIX/Screenshot2024-03-15 at 11.44_edited.jpg')",
+        home: "url('/img/426427545_305195019212600_4002272771352048854_n.webp')",
         "two-cessna": "url('/img/fromWIX/AdobeStock_198399440.jpeg')",
         "our-story": "url('/img/our-story/banner.webp')",
         "our-team": "url('/img/our-team/banner.webp')",
         "our-fleet": "url('/img/our-fleet/banner.webp')",
         maintenance: "url('/img/maintenance/banner.webp')",
+        "private-pilot": "url('/img/c1b522_4a8105c7c387483691d1432b3866ac28~mv2.webp')",
         military: "url('/img/military/banner.webp')",
-        "new-to-flying": "url('/img/fromWIX/AdobeStock_139858404.jpeg')",
+        "new-to-flying": "url('/img/363431096_191721537226616_5859843225312776391_n.webp')",
         "university-program": "url('/img/university-program/banner.webp')",
         "international-program":
           "url('/img/international-program/banner.webp')",
