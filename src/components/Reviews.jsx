@@ -28,8 +28,10 @@ const Reviews = () => {
   }, []);
 
   return (
-    <div className="overflow-hidden w-full bg-main-red py-16">
-      <div className="flex py-16 gap-5" ref={reviewContainerRef}>
+    <div className="overflow-hidden w-full bg-main-red py-12 sm:py-24">
+      <h2 class="xl:text-5xl text-4xl font-bold tracking-tight text-white text-center">Praise for Summit Flight Academy</h2>
+      <p class="mt-2 text-xl leading-8 text-gray-100 text-center">Words from our valued students</p>
+      <div className="flex py-12 gap-5" ref={reviewContainerRef}>
         {duplicatedReviews.map((review, index) => (
           <div
             key={`${review.id}-${index}`}
