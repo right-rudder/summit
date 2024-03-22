@@ -1,4 +1,5 @@
 ---
+import PageHeader from "../components/PageHeader.astro";
 import DiscoveryFlightCTA from "../components/DiscoveryFlightCTA.astro";
 import ContactUs from "../components/ContactUs.astro";
 import SummitFleetImage from "../../public/img/fromWIX/IMG_3314.jpg";
@@ -16,21 +17,18 @@ import StartToday from "../components/StartToday.astro";
   pageDescription="Elevate your aviation aspirations with Summit Flight Academy's comprehensive pilot training programs. From PPL to advanced certifications, our expert CFIs guide you through every step. Discover career paths, budget considerations, and more. Start your journey today!"
   pageKeywords="aviation training, pilot certification, flight school programs, pilot career paths, flight training costs, commercial pilot license, certified flight instructor, aviation education, pilot training academy"
 >
-  <!-- Header -->
-  <header
-    class="relative h-screen-3/4 bg-new-to-flying bg-cover bg-center bg-black flex flex-col items-center justify-center"
-  >
-    <!-- bg-overlay to darken -->
-    <div class="absolute bg-gradient-to-b from-black/60 to-black/20 w-full h-full z-0"></div>
-    <!-- Text -->
-    <div
-      class="text-white w-3/4 text-center lg:text-left z-10 flex flex-col items-center lg:items-start gap-4 px-5 h-full justify-center lg:justify-end lg:mb-24"
-    >
-      <h1 class="text-5xl font-bold tracking-tight">Considering Pilot Training?</h1>
-      <h2 class="text-3xl tracking-wide">Learn why we fly in the first place</h2>
-      <a href="#contactUs" class="btn-red">Apply Now</a>
-    </div>
-  </header>
+  <PageHeader
+    title="Considering Pilot Training?"
+    subtitle="Learn why we fly in the first place"
+    headerImg="new-to-flying"
+    imgPosition="center"
+    imgStartOpacity="60"
+    imgEndOpacity="20"
+    btnText="Apply Now"
+    btnHref="/enrollment"
+    target="_blank"
+    btnColor="red"
+  />
 
   <UnderHeader
     title="Why Become a Pilot?"
