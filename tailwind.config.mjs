@@ -9,24 +9,26 @@ export default {
         "main-red": "#C70009",
       },
       backgroundImage: {
-        home: "url('/img/426427545_305195019212600_4002272771352048854_n.webp')",
+        home: "url('/img/424764052_300248556373913_8162742436028565876_n (1).jpg')",
         "two-cessna": "url('/img/fromWIX/AdobeStock_198399440.jpeg')",
         "our-story": "url('/img/our-story/banner.webp')",
         "our-team": "url('/img/our-team/banner.webp')",
         "our-fleet": "url('/img/our-fleet/banner.webp')",
         maintenance: "url('/img/maintenance/banner.webp')",
-        "private-pilot": "url('/img/c1b522_4a8105c7c387483691d1432b3866ac28~mv2.webp')",
-        "commercial-pilot": "url('/img/c1b522_cd01a849a7fe4b57965bbe0bee3986c8~mv2.webp')",
+        "private-pilot":
+          "url('/img/c1b522_4a8105c7c387483691d1432b3866ac28~mv2.webp')",
+        "commercial-pilot":
+          "url('/img/c1b522_cd01a849a7fe4b57965bbe0bee3986c8~mv2.webp')",
         military: "url('/img/military/banner.webp')",
-        "new-to-flying": "url('/img/363431096_191721537226616_5859843225312776391_n.webp')",
+        "new-to-flying":
+          "url('/img/363431096_191721537226616_5859843225312776391_n.webp')",
         "university-program": "url('/img/university-program/banner.webp')",
         "international-program":
           "url('/img/international-program/banner.webp')",
         "faa-exam-center": "url('/img/faa-exam-center/banner.webp')",
         financing: "url('/img/financing/banner.webp')",
         "training-courses": "url('/img/training-courses/banner.webp')",
-        "discovery-flight":
-          "url('/img/fromWIX/IMG_2053 3_edited(1).jpg')",
+        "discovery-flight": "url('/img/fromWIX/IMG_2053 3_edited(1).jpg')",
         "cfi-and-student": "url('/img/discovery-flight/cfi-and-student.webp')",
       },
       height: (theme) => ({
@@ -47,14 +49,8 @@ export default {
         moveReviews: "moveReviews 5s linear infinite",
       },
       fontFamily: {
-        serif: [
-          'Urbanist Variable',
-          ...defaultTheme.fontFamily.serif,
-        ],
-        sans: [
-          'Raleway Variable',
-          ...defaultTheme.fontFamily.sans,
-        ]
+        serif: ["Urbanist Variable", ...defaultTheme.fontFamily.serif],
+        sans: ["Raleway Variable", ...defaultTheme.fontFamily.sans],
       },
     },
   },
