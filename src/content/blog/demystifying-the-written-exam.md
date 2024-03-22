@@ -1,5 +1,5 @@
 ---
-description: "Getting your private pilot's license opens up a new world of freedom and adventure in the skies."
+description: "Getting your private pilot's license opens up a new world of freedom and adventure in the skies. But before you can take to the air solo, there are important steps including one major milestone. We know exams can cause pre-flight jitters, so we wanted to give you the full rundown on what to expect."
 pubDate: "Mar 22, 2024"
 heroImage: "/img/424955041_306482792417156_6883559221992042565_n.webp"
 author: Jami Heckman
@@ -39,10 +39,6 @@ The Private Pilot written exam covers a wide range of must-know aviation concept
 
 You'll need to take and pass this test after completing all your dual instruction flights and solo cross-country requirements during training with us or any other FAA-approved flight school. However, at Summit Flight Academy, our strong recommendation is to complete the written exam before you even start your in-air instruction.
 
-_Learn about these bells and whistles during your written study_
-
-_Alt: Instrument panel of a Piper II_
-
 ## Why Take It So Early?
 
 There are a few key reasons we advise taking the written exam right at the start of your training:
@@ -76,10 +72,6 @@ Having this depth of understanding thoroughly ingrained before starting hands-on
 ## Checkride Confidence
 
 Successful completion of the written exam is a required milestone for every prospective pilot. But it goes beyond just checking a box - it's powerful proof that you've taken command of essential aviation knowledge and information recall abilities. This boosts your confidence tremendously as you transition into further flight training and prepare for your final checkride exam with an FAA examiner.
-
-_Another successful checkride at Summit Flight Academy!_
-
-_Alt: Student pilot and CFI shake hands after completing a checkride_
 
 Trust us, having already mastered those fundamentals through your high written exam score makes the actual skills testing a much smoother process. You'll be able to clearly demonstrate an authoritative understanding of concepts like aerodynamics, aircraft performance, and regulations—not just rote memorization. This well-rounded proficiency is what defines a true airman.
 
