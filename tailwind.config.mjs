@@ -16,6 +16,7 @@ export default {
         "our-fleet": "url('/img/our-fleet/banner.webp')",
         maintenance: "url('/img/maintenance/banner.webp')",
         "private-pilot": "url('/img/c1b522_4a8105c7c387483691d1432b3866ac28~mv2.webp')",
+        "commercial-pilot": "url('/img/c1b522_cd01a849a7fe4b57965bbe0bee3986c8~mv2.webp')",
         military: "url('/img/military/banner.webp')",
         "new-to-flying": "url('/img/363431096_191721537226616_5859843225312776391_n.webp')",
         "university-program": "url('/img/university-program/banner.webp')",

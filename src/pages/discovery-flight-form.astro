@@ -1,12 +1,12 @@
 ---
-import FooterHome from "../components/FooterHome.astro";
+import FooterContent from "../components/FooterContent.astro";
 import DiscoveryForm from "../components/DiscoveryForm.astro";
 import BaseHead from "../components/BaseHead.astro";
 
 const { pageImage } = Astro.props;
 ---
 
-<html lang="en" class="scroll-smooth">
+<html lang="en" class="scroll-smooth font-sans">
   <head>
     <BaseHead
       title="Discovery Flight Form | Summit Flight Academy"
@@ -35,5 +35,5 @@ const { pageImage } = Astro.props;
     </div>
   </div>
 
-  <FooterHome />
+  <FooterContent />
 </html>

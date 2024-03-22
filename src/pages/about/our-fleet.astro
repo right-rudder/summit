@@ -10,18 +10,18 @@ import SimulatorCard from "../../components/SimulatorCard.astro";
 ---
 
 <BaseLayout
-  pageTitle="Our Fleet | Red Arrow Flight Academy"
-  pageDescription="Meet the Red Arrow fleet: the plane names, specs, and price per rental hour. These planes are used both for training and rental. Explore our aircraft today and get to know what you’ll be flying!"
-  pageKeywords="Aircraft, fleet, Red Arrow Flight Academy, rentals, book a flight, Cessna 172, Cessna 182, Piper, Flight training"
+  pageTitle="Our Fleet | Summit Flight Academy"
+  pageDescription="Meet the Summit fleet: the plane names, specs, and price per rental hour. These planes are used both for training and rental. Explore our aircraft today and get to know what you’ll be flying!"
+  pageKeywords="Aircraft, fleet, Summit Flight Academy, rentals, book a flight, Cessna 172, Cessna 182, Piper, Flight training"
 >
   <header
-    class="relative h-screen-3/4 bg-our-fleet bg-cover bg-center bg-black flex flex-col items-center justify-center"
+    class="relative h-screen-3/4 bg-commercial-pilot bg-cover bg-center bg-black flex flex-col items-center justify-center"
   >
     <div class="absolute bg-black/20 w-full h-full z-0"></div>
     <div
       class="text-white text-center z-10 flex flex-col items-center gap-4 px-5"
     >
-      <h1 class="text-5xl font-bold tracking-tighter">The Red Arrow Fleet</h1>
+      <h1 class="text-5xl font-bold tracking-tighter">The Summit Fleet</h1>
       <h2 class="text-3xl tracking-wide">
         Our extensive fleet available for flight training and rentals
       </h2>
@@ -31,7 +31,7 @@ import SimulatorCard from "../../components/SimulatorCard.astro";
     </div>
   </header>
 
-  <section
+  <!--   <section
     class="flex flex-col items-center px-10 bg-gradient-to-br from-white to-gray-200 py-10"
   >
     <div class="max-w-2xl">
@@ -80,7 +80,7 @@ import SimulatorCard from "../../components/SimulatorCard.astro";
     {simulators.map((simulator) => <SimulatorCard simulator={simulator} />)}
   </section>
 
-  <Location bgColorRed={true} />
+  <Location bgColorRed={true} /> -->
 
   <DiscoveryFlightCTA />
 
