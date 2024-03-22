@@ -10,6 +10,7 @@ export default {
       },
       backgroundImage: {
         home: "url('/img/424764052_300248556373913_8162742436028565876_n (1).jpg')",
+        blog: "url('/img/c1b522_8c1a8368eb464ce4bcae7b7dda097168~mv2.webp')",
         "two-cessna": "url('/img/fromWIX/AdobeStock_198399440.jpeg')",
         "our-story": "url('/img/our-story/banner.webp')",
         "our-team": "url('/img/our-team/banner.webp')",
@@ -18,7 +19,7 @@ export default {
         "private-pilot":
           "url('/img/c1b522_4a8105c7c387483691d1432b3866ac28~mv2.webp')",
         "commercial-pilot":
-          "url('/img/c1b522_cd01a849a7fe4b57965bbe0bee3986c8~mv2.webp')",
+          "url('/img/425867522_303524629379639_309923734982898779_n.webp')",
         military: "url('/img/military/banner.webp')",
         "new-to-flying":
           "url('/img/363431096_191721537226616_5859843225312776391_n.webp')",

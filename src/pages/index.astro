@@ -37,7 +37,7 @@ import Partners from "../components/Partners.astro";
   >
     <!-- bg-overlay to darken -->
     <div
-      class="absolute bg-gradient-to-b from-black/50 to-black/10 w-full h-full z-0"
+      class="absolute bg-gradient-to-b from-black/30 to-black/5 w-full h-full z-0"
     >
     </div>
     <!-- Text -->
@@ -50,7 +50,7 @@ import Partners from "../components/Partners.astro";
       <h2 class="text-3xl tracking-wide">
         Your Leading Flight School in Kansas City at Lee's Summit Airport
       </h2>
-      <a href="#contactUs" class="btn-white">Enroll Today</a>
+      <a href="#contactUs" class="btn-red">Enroll Today</a>
     </div>
     <!-- <Partners /> -->
   </header>
@@ -60,45 +60,7 @@ import Partners from "../components/Partners.astro";
   <GettingStarted />
 
   <WhySummit />
-  <img
-    slot="image"
-    src={WeAreSummitImage.src}
-    alt="The Summit Academy Team at Dona Ana County International Jetport (KDNA)"
-    class="object-cover h-80 object-center lg:h-[500px] rounded"
-    loading="lazy"
-  />
-  <div slot="content" class="max-w-2xl flex flex-col items-center">
-    <h2 class="text-3xl font-semibold text-center tracking-tight">
-      We Are Summit Flight Academy
-    </h2>
-    <h3 class="pt-5 text-xl italic text-center">
-      Come get to know our elite team of CFIs and staff.
-    </h3>
-    <div class="text-gray-800 tracking-wider">
-      <p class="pt-5">
-        Pursuing a career as a pilot is a dream for many, offering a unique
-        blend of excitement, freedom, and personal growth. At Summit Flight
-        Academy, we understand the allure of taking to the skies and are
-        committed to helping you embark on this rewarding journey. ​ As a pilot,
-        you'll experience the exhilaration of commanding an aircraft, navigating
-        through the skies with precision and skill. Every flight is an
-        adventure, filled with breathtaking views and a sense of accomplishment
-        that few careers can match. Beyond the thrill of flight, this career
-        path cultivates invaluable qualities such as decision-making,
-        problem-solving, and teamwork, contributing to your personal growth.
-      </p>
-      <p class="pt-5">
-        The world of aviation offers a multitude of opportunities, from
-        commercial airline pilot to corporate aviator or even an instructor.
-        With a pilot's license, you'll have the freedom to explore diverse
-        roles, travel to new destinations, and embark on exciting adventures
-        that few professions can match.
-      </p>
-    </div>
-    <a href="/about/our-story" class="w-fit">
-      <div class="btn-red my-10">Why Summit?</div>
-    </a>
-  </div>
+
   <Reviews client:visible />
 
   <GuideDownload />

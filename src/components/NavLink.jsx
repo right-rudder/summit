@@ -5,7 +5,7 @@ const NavLink = ({ menuItem, pathname, toggled, onShow }) => {
       <a
         id={menuItem.name}
         onClick={onShow}
-        className={`cursor-pointer text-lg text-white py-5 hover:border-b-2 border-main-red whitespace-nowrap ${
+        className={`cursor-pointer text-lg text-white py-3 hover:border-b-2 border-main-red whitespace-nowrap ${
           isActive ? "border-b-2" : ""
         }`}
       >
@@ -14,13 +14,13 @@ const NavLink = ({ menuItem, pathname, toggled, onShow }) => {
       <div
         className={`overflow-hidden text-white ${
           toggled ? "max-h-96" : "max-h-0"
-        } transition-[max-height] duration-300 ease-in-out absolute bg-gray-900 bg-opacity-80 flex flex-col whitespace-nowrap top-12`}
+        } transition-[max-height] duration-300 ease-out absolute bg-gray-900 bg-opacity-90 flex flex-col whitespace-nowrap top-12`}
       >
         {menuItem.submenu.map((item) => (
           <a
             key={item.name}
             href={item.link}
-            className={`${item.link === pathname ? "bg-main-red" : ""} px-5 py-3 border border-black hover:bg-main-red`}
+            className={`${item.link === pathname ? "bg-main-red" : ""} px-5 py-3 hover:bg-main-red`}
           >
             {item.name}
           </a>

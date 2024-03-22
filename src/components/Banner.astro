@@ -11,7 +11,7 @@ import {
 } from "../consts";
 ---
 
-<div class="w-full bg-gray-700 z-50 relative h-10">
+<div class="w-full bg-gray-900 z-50 relative h-10">
   <div
     class="mx-auto flex max-w-[80rem] items-center h-full justify-between px-4"
   >
@@ -50,10 +50,7 @@ import {
         href=`tel:${PHONE_NUMBER}`
         class="lg:ml-9 text-white text-sm lg:text-base font-normal flex hover:scale-105 cursor-pointer transition-all"
       >
-        <Icon
-          name="tabler:phone-call"
-          class="text-white mr-2 text-2xl"
-        />
+        <Icon name="tabler:phone-call" class="text-white mr-2 text-2xl" />
         {PHONE_NUMBER}</a
       >
     </div>
@@ -62,15 +59,13 @@ import {
       href="https://maps.app.goo.gl/xDfAv52BGnFRQWSb9"
       target="_blank"
       rel="noopener noreferrer"
-      class="text-white text-sm lg:text-base font-normal flex hover:scale-105 cursor-pointer transition-all">
-      <Icon
-          name="tabler:map-pin"
-          class="text-white mr-2 text-2xl"
-        />
-        <p class="hidden md:flex">
-          {ADDRESS}, {ADDRESS_STATE} {ADDRESS_ZIP}
-        </p>
-      </a
+      class="text-white text-sm lg:text-base font-normal flex hover:scale-105 cursor-pointer transition-all"
     >
+      <Icon name="tabler:map-pin" class="text-white mr-2 text-2xl" />
+      <p class="hidden md:flex">
+        {ADDRESS}, {ADDRESS_STATE}
+        {ADDRESS_ZIP}
+      </p>
+    </a>
   </div>
 </div>

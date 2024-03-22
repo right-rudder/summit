@@ -38,7 +38,7 @@ const Navbar = ({ pathname }) => {
   return (
     <nav className="w-full h-0">
       <div
-        className={`${navBar || openMobile ? "bg-gray-900" : "bg-transparent"} duration-300 ease-in-out`}
+        className={`${navBar || openMobile ? "bg-gray-900" : "bg-gradient-to-b from-black/40 to-black/0"} duration-300 ease-in`}
       >
         <div className="mx-auto max-w-7xl px-4">
           <div
@@ -56,11 +56,11 @@ const Navbar = ({ pathname }) => {
               </a>
               <div className="hidden lg:ml-6 lg:block">
                 <div className="flex gap-5 xl:gap-10 items-center">
-                <div>
+                  <div>
                     <a
                       href="/new-to-flying"
-                      className={`cursor-pointer text-xl text-white py-5 hover:border-b-2 border-main-red whitespace-nowrap ${
-                        pathname === "/discovery-flight" ? "border-b-2" : ""
+                      className={`cursor-pointer text-lg text-white py-3 hover:border-b-2 border-main-red whitespace-nowrap ${
+                        pathname === "/new-to-flying" ? "border-b-2" : ""
                       }`}
                     >
                       New to Flying?
@@ -166,7 +166,7 @@ const Navbar = ({ pathname }) => {
         <div className="px-4 pb-3 pt-2 flex flex-col">
           <a
             href="/new-to-flying"
-            className={`cursor-pointer text-xl text-white py-5 hover:border-b-2 border-main-red whitespace-nowrap ${
+            className={`cursor-pointer text-lg text-white py-5 hover:border-b-2 border-main-red whitespace-nowrap ${
               pathname === "/discovery-flight" ? "border-b-2" : ""
             }`}
           >
