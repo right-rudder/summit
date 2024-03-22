@@ -1,0 +1,56 @@
+---
+import DiscoveryFlightCTA from "../../components/DiscoveryFlightCTA.astro";
+import ContactUs from "../../components/ContactUs.astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import TrainingCourseList from "../../components/TrainingCourseList.jsx";
+import UnderHeader from "../../components/UnderHeader.astro";
+import CommercialRoadmap from "../../components/CommercialRoadmap.astro";
+import WhatsNext from "../../components/WhatsNext.astro";
+import CommercialPackage from "../../components/CommercialPackage.astro";
+import { imageConfig } from "astro:assets";
+import CommercialPilotFAQs from "../../components/CommercialPilotFAQs.astro";
+---
+
+<BaseLayout
+  pageTitle="Training Courses | Red Arrow Flight Academy"
+  pageDescription="Explore a comprehensive range of pilot training courses at Red Arrow Flight Academy. From Private Pilot License (PPL) to Airline and Military programs, discover the perfect training path for your aviation goals. Flexible and accelerated options are available. Train with us and elevate your flight career."
+  pageKeywords="pilot training courses, aviation training programs, flight academy programs, PPL courses, Airline pilot training, Military pilot programs, accelerated pilot training, flexible pilot training, flight school courses, certified flight instructor, aviation career paths"
+>
+  <header
+    class="relative h-screen-3/4 bg-commercial-pilot bg-cover bg-top bg-black flex flex-col items-center justify-center"
+  >
+    <div
+      class="absolute bg-gradient-to-b from-black/60 to-black/20 w-full h-full z-0"
+    >
+    </div>
+
+    <div
+      class="text-white text-center z-10 flex flex-col items-center gap-4 px-5"
+    >
+      <h1 class="text-5xl font-bold tracking-tighter">
+        Become a Commercial Pilot
+      </h1>
+      <h2 class="text-3xl tracking-wide">Get paid to fly!</h2>
+      <a href="/enrollment" target="_blank"
+        ><button class="btn-white">Apply Now</button></a
+      >
+    </div>
+  </header>
+
+  <UnderHeader
+    title="What is a Commercial Pilot Certificate?"
+    text1=`Obtaining a commercial pilot certificate is another milestone in an aviator's journey, opening doors to exciting professional opportunities within the aviation industry. At Summit Flight Academy, we understand the importance of this achievement and are dedicated to providing comprehensive training and support to help aspiring pilots earn their commercial pilot license (CPL). With this certification, pilots gain the authority to act as pilot in command (PIC) in commercial situations, receiving compensation for their services while ensuring safe and efficient flight operations.`
+  />
+
+  <CommercialRoadmap />
+
+  <WhatsNext />
+
+  <CommercialPackage />
+
+  <CommercialPilotFAQs />
+
+  <!-- <DiscoveryFlightCTA /> -->
+
+  <!-- <ContactUs /> -->
+</BaseLayout>
