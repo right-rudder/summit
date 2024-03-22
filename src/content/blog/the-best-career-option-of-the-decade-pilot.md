@@ -32,4 +32,4 @@ The aviation industry has a diverse line of work, but one thing sets these amazi
 
 _Are you interested in becoming a pilot?_
 
-The advantages to getting your pilot certificate are nothing short of life changing. Whether you want to fly as a hobby or you’re interested in a career in aviation, get a head start at Red Arrow Flight Academy. We offer exceptional flight training to safely and efficiently help you achieve your goals. Give us a call at (575) 201-6160, or contact us via our website.
+The advantages to getting your pilot certificate are nothing short of life changing. Whether you want to fly as a hobby or you’re interested in a career in aviation, get a head start at Summit Flight Academy. We offer exceptional flight training to safely and efficiently help you achieve your goals. Give us a call at (575) 201-6160, or contact us via our website.

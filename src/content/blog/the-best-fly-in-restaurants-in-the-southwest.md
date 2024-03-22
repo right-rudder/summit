@@ -86,4 +86,4 @@ The Mesa Grill offers views as gorgeous as its food is delicious. Situated oppos
 
 _Are you interested in becoming a pilot?_
 
-The advantages to getting your pilot certificate are nothing short of life changing. At Red Arrow Flight Academy, we offer exceptional flight training to safely and efficiently help you achieve your goals. Give us a call at (575) 201-6160, or contact us via our website.
+The advantages to getting your pilot certificate are nothing short of life changing. At Summit Flight Academy, we offer exceptional flight training to safely and efficiently help you achieve your goals. Give us a call at (575) 201-6160, or contact us via our website.

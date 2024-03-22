@@ -44,4 +44,4 @@ It’s clear at this point that there’s no lack of things to do in El Paso, bu
 
 Learn to fly a plane.
 
-Red Arrow Flight Academy offers two flight experience packages, which are designed to give guests a taste of pilotage. You’ll have the once-in-a-lifetime opportunity to hop in a Cessna 172 with a flight instructor to guide you along the controls.
+Summit Flight Academy offers two flight experience packages, which are designed to give guests a taste of pilotage. You’ll have the once-in-a-lifetime opportunity to hop in a Cessna 172 with a flight instructor to guide you along the controls.

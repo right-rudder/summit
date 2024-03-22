@@ -4,6 +4,7 @@ import { getCollection } from "astro:content";
 import FormattedDate from "../../components/FormattedDate.astro";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import { Icon } from "astro-icon/components";
+import PageHeader from "../../components/PageHeader.astro";
 
 const posts = (await getCollection("blog")).sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
@@ -11,6 +12,13 @@ const posts = (await getCollection("blog")).sort(
 ---
 
 <BaseLayout>
+  <PageHeader
+    title="Blog"
+    subtitle="Read our latest articles on health and wellness."
+    imgPosition="top"
+    imgStartOpacity="60"
+    imgEndOpacity="20"
+  />
   <section class="max-w-7xl mx-auto my-24 p-5">
     <ul class="grid gap-5 grid-cols-1 lg:grid-cols-2">
       {

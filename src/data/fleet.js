@@ -12,7 +12,7 @@ export const fleet = [
   {
     name: "Red Bird",
     image: RedBirdImage,
-    alt: "Red Bird Cessna 172N at Red Arrow Flight Academy",
+    alt: "Red Bird Cessna 172N at Summit Flight Academy",
     stats: {
       tallNumber: "N4909G",
       power: "180 HP",
@@ -27,7 +27,7 @@ export const fleet = [
   {
     name: "Skittles",
     image: SkittlesImage,
-    alt: "Skittles Cessna 172M at Red Arrow Flight Academy",
+    alt: "Skittles Cessna 172M at Summit Flight Academy",
     stats: {
       tallNumber: "N471PR",
       power: "160 HP",
@@ -42,7 +42,7 @@ export const fleet = [
   {
     name: "Echo",
     image: EchoImage,
-    alt: "Echo Cessna 172N at Red Arrow Flight Academy",
+    alt: "Echo Cessna 172N at Summit Flight Academy",
     stats: {
       tallNumber: "N8182E",
       power: "160 HP",
@@ -57,7 +57,7 @@ export const fleet = [
   {
     name: "5YX",
     image: A5YXImage,
-    alt: "5YX Cessna 172P at Red Arrow Flight Academy",
+    alt: "5YX Cessna 172P at Summit Flight Academy",
     stats: {
       tallNumber: "N5YX",
       power: "160 HP",
@@ -72,7 +72,7 @@ export const fleet = [
   {
     name: "Woodstock",
     image: WoodstockImage,
-    alt: "Woodstock Cessna 172K at Red Arrow Flight Academy",
+    alt: "Woodstock Cessna 172K at Summit Flight Academy",
     stats: {
       tallNumber: "N2OHT",
       power: "180 HP",
@@ -87,7 +87,7 @@ export const fleet = [
   {
     name: "N242TW",
     image: N242TWImage,
-    alt: "N242TW Cessna 172S at Red Arrow Flight Academy",
+    alt: "N242TW Cessna 172S at Summit Flight Academy",
     stats: {
       tallNumber: "N242TW",
       power: "180 HP",
@@ -102,7 +102,7 @@ export const fleet = [
   {
     name: "Chip",
     image: ChipImage,
-    alt: "Chip Piper Archer II (PA-28-181) at Red Arrow Flight Academy",
+    alt: "Chip Piper Archer II (PA-28-181) at Summit Flight Academy",
     stats: {
       tallNumber: "N2680M",
       power: "180 HP",
@@ -117,7 +117,7 @@ export const fleet = [
   {
     name: "Dale",
     image: DaleImage,
-    alt: "Dale Piper Archer II (PA-28-181) at Red Arrow Flight Academy",
+    alt: "Dale Piper Archer II (PA-28-181) at Summit Flight Academy",
     stats: {
       tallNumber: "N7689F",
       power: "180 HP",
@@ -132,7 +132,7 @@ export const fleet = [
   {
     name: "N3180U",
     image: N3180UImage,
-    alt: "N3180U Cessna 182F at Red Arrow Flight Academy",
+    alt: "N3180U Cessna 182F at Summit Flight Academy",
     stats: {
       tallNumber: "N3180U",
       power: "235 HP",

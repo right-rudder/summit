@@ -1,6 +1,6 @@
 ---
 title: "Welcome to Flight Training"
-description: "Welcome to the Red Arrow Flight Academy. We are delighted that you have taken an interest in the flight training programs that Red Arrow has to offer."
+description: "Welcome to the Summit Flight Academy. We are delighted that you have taken an interest in the flight training programs that Summit has to offer."
 pubDate: "Aug 19, 2020"
 heroImage: "/welcome-to-flight-training.webp"
 author: "Tomas Peralta"
@@ -10,9 +10,9 @@ tags: []
 
 Dear future pilot:
 
-Welcome to the Red Arrow Flight Academy. We are delighted that you have taken an interest in the flight training programs that Red Arrow has to offer.
+Welcome to the Summit Flight Academy. We are delighted that you have taken an interest in the flight training programs that Summit has to offer.
 
-Red Arrow is a top-of-the-line aviation school in El Paso, Texas; in-fact, The aviation industry has ranked us as the #1 flight school in the Southwestern region.
+Summit is a top-of-the-line aviation school in El Paso, Texas; in-fact, The aviation industry has ranked us as the #1 flight school in the Southwestern region.
 
 We are a Part-141 FAA-certified flight school and are recognized by the aviation industry as a Cessna Pilot Center. Being handpicked by the Cessna Aircraft Company means that we offer top-quality flight training and consistently meet higher standards than other flight training programs.
 
@@ -22,8 +22,8 @@ We are proud to say that our team of flight instructors boast a wide range of ce
 
 In addition to our flight programs, we will offer a series of blog posts to inform our future pilots on the ins-and-outs of the aviation industry. Our blog posts will seek to ensure that our pilots are accurately informed on the wide range of aviation careers, requirements, tips, and all other aviation updates.
 
-We are excited to have you onboard—whether you are an experienced pilot wishing to enhance your skills, or are experiencing flying for the very first time—Red Arrow is ready to help you achieve your aviation goals!
+We are excited to have you onboard—whether you are an experienced pilot wishing to enhance your skills, or are experiencing flying for the very first time—Summit is ready to help you achieve your aviation goals!
 
 See you in the sky!
 
-_**The Red Arrow Team**_
+_**The Summit Team**_

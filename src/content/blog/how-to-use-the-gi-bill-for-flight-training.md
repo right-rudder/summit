@@ -17,9 +17,9 @@ There are two types of the Montgomery Bill: the MGIB-AD and MGIB-SR. Both provid
 
 Flight training opens doors to diverse qualifications, including proficiency in rotary wing, B747-400, dual-engine, and flight engineering. These qualifications pave the way for various aviation career pathways, aligning with the aspirations of those seeking a profession in the skies.
 
-## Utilizing the GI Bill at Red Arrow Flight Academy
+## Utilizing the GI Bill at Summit Flight Academy
 
-Red Arrow Flight Academy, as a Part 141 flight school, provides structured and approved training programs. Understanding the intricacies and limitations of GI Bill usage at our school is fundamental. Recognizing the specific outlined limits for approved flight training programs is key, offering prospective pilots a roadmap for their educational journey.
+Summit Flight Academy, as a Part 141 flight school, provides structured and approved training programs. Understanding the intricacies and limitations of GI Bill usage at our school is fundamental. Recognizing the specific outlined limits for approved flight training programs is key, offering prospective pilots a roadmap for their educational journey.
 
 While the GI Bill covers several aspects of flight training, it's vital to note its restrictions, particularly its focus on advanced training. Notably, the GI Bill doesn’t cover the private pilot license unless it's part of an accredited four-year aviation degree program.
 
@@ -27,6 +27,6 @@ While the GI Bill covers several aspects of flight training, it's vital to note 
 
 Prospective pilots aiming to optimize their GI Bill benefits can explore two primary routes: a degree program or a vocational flight school. Enrolling in a four-year collegiate aviation program allows for GI Bill exchange for 12 months of flight training, accompanied by tax-free Military Housing Allowance. Alternatively, a two-year vocational school program, supplemented by VR&E benefits, can cover some costs. Planning for out-of-pocket expenses, including Private Pilot License (PPL) costs and yearly limits, is integral. Comparing program costs and understanding the financial landscape can aid prospective pilots in maximizing their benefits.
 
-Red Arrow also partners with the COOL Program, open to Army/Air Force. This assistance under the COOL Program provides financial support for education, empowering military students to pursue their aviation aspirations with grants ranging from $1,000 to $4,000 annually.
+Summit also partners with the COOL Program, open to Army/Air Force. This assistance under the COOL Program provides financial support for education, empowering military students to pursue their aviation aspirations with grants ranging from $1,000 to $4,000 annually.
 
-Navigating the landscape of GI Bill benefits for flight training necessitates strategic planning and comprehensive understanding. Red Arrow Flight Academy offers recommendations and assistance to prospective pilots to streamline their financial planning, ensuring they maximize their GI Bill benefits effectively. [Leverage your GI Bill benefits](https://red-arrow.rightrudder.marketing/flight-programs/military-rotor-transition/) at Red Arrow Flight Academy today!
+Navigating the landscape of GI Bill benefits for flight training necessitates strategic planning and comprehensive understanding. Summit Flight Academy offers recommendations and assistance to prospective pilots to streamline their financial planning, ensuring they maximize their GI Bill benefits effectively. [Leverage your GI Bill benefits](https://red-arrow.rightrudder.marketing/flight-programs/military-rotor-transition/) at Summit Flight Academy today!

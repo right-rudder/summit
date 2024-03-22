@@ -30,4 +30,4 @@ While all pilots learn to fly using visual observances (also known as Visual Fli
 
 ### Are you interested in becoming a pilot?
 
-The advantages of getting your pilot certificate are nothing short of life-changing. Whether you’re a casual flight-hobbyist or considering an aviation career, get a head start at Red Arrow Flight Academy. We offer exceptional flight training to safely and efficiently help you achieve your goals. Give us a call at (575) 201-6160, or contact us via our website.
+The advantages of getting your pilot certificate are nothing short of life-changing. Whether you’re a casual flight-hobbyist or considering an aviation career, get a head start at Summit Flight Academy. We offer exceptional flight training to safely and efficiently help you achieve your goals. Give us a call at (575) 201-6160, or contact us via our website.

@@ -148,7 +148,7 @@ const InternationProgramSteps = () => {
               and apply for training requests based on your chosen program.
             </li>
             <ol className="list-disc pl-5">
-              <li>Provider: Red Arrow Aviation, Santa Teresa, NM</li>
+              <li>Provider: Summit Aviation, Santa Teresa, NM</li>
               <li>Training request course names:</li>
               <ul className="list-decimal list-inside pl-5">
                 <li>Private Pilot (PPL01)</li>
@@ -165,8 +165,8 @@ const InternationProgramSteps = () => {
           </ol>
           <p>
             These specific details are crucial for a seamless TSA application
-            process, ensuring accurate enrollment with Red Arrow Flight Academy
-            for your chosen training program.
+            process, ensuring accurate enrollment with Summit Flight Academy for
+            your chosen training program.
           </p>
           <p>
             All training requests are valid for 365 days from the date the

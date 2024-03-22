@@ -20,7 +20,7 @@ That being said, there are a few factors that go into the cost of flying a plane
 
 - Airplane Rental Cost
 
-Assuming you don’t have your own aircraft, you’ll have to rent one. Here at Red Arrow, the cost of flying a plane averages to about $150 per hour, depending on which aircraft best suits your needs. If you’re having trouble figuring out the best planes to rent, call your local aircraft rental service and they’ll point you in the right direction.
+Assuming you don’t have your own aircraft, you’ll have to rent one. Here at Summit, the cost of flying a plane averages to about $150 per hour, depending on which aircraft best suits your needs. If you’re having trouble figuring out the best planes to rent, call your local aircraft rental service and they’ll point you in the right direction.
 
 - Travel Distance
 
@@ -52,4 +52,4 @@ Doubling as a pilot is a great opportunity for any business person. Your skills 
 
 _Are you interested in becoming a pilot?_
 
-The advantages to getting your pilot certificate are nothing short of life changing. At Red Arrow Flight Academy, we offer exceptional flight training to safely and efficiently help you achieve your goals. Give us a call at (575) 201-6160, or contact us via our website.
+The advantages to getting your pilot certificate are nothing short of life changing. At Summit Flight Academy, we offer exceptional flight training to safely and efficiently help you achieve your goals. Give us a call at (575) 201-6160, or contact us via our website.
