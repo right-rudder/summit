@@ -20,7 +20,7 @@ import Partners from "../components/Partners.astro";
   pageDescription="Join Summit Flight Academy for top-notch flight instruction. We welcome students ranging from those in the El Paso, La Cruces, and Santa Teresa areas, international students, and future military pilots. Get to know our M-1 visa programs for international students and the unique military programs we offer as a Part 141 school and Cessna Pilot Center. As the premier flight school in the region, we hold ourselves to the highest standards so that our students can be up in the air in no time."
   pageKeywords="flight school el paso texas, pilot training santa teresa, KDNA flight school, las cruces flight school, Ft. Bliss Flight school, Ft. Bliss RTAG, Ft. Bliss pilot training, el paso pilot training, Juarez mexico international students, m1 m-1 visa international FAA pilot program,  Odessa Texas pilot school, Midland texas flight school  FAA certifications, purdue global aviation, M-1 Visa, foreign pilot licenses, aviation career, Part 141 flight school"
 >
-  <PageHeader
+  <!-- <PageHeader
     title="Become a Pilot with Summit"
     subtitle="Your Leading Flight School in Kansas City at Lee's Summit Airport"
     headerImg="home"
@@ -28,7 +28,32 @@ import Partners from "../components/Partners.astro";
     imgStartOpacity="60"
     imgEndOpacity="20"
     btnText="Enroll Today"
-  />
+    headerSize="4/5"
+  /> -->
+
+  <!-- Header -->
+  <header
+    class="relative top-0 h-screen-4/5 bg-home bg-cover bg-center bg-black flex flex-col items-center justify-center"
+  >
+    <!-- bg-overlay to darken -->
+    <div
+      class="absolute bg-gradient-to-b from-black/50 to-black/10 w-full h-full z-0"
+    >
+    </div>
+    <!-- Text -->
+    <div
+      class="text-white text-center lg:text-left z-10 flex flex-col items-center lg:items-start gap-4 px-5 h-full justify-center lg:justify-end lg:mb-24"
+    >
+      <h1 class="text-5xl font-bold tracking-tight">
+        Become a Pilot with Summit
+      </h1>
+      <h2 class="text-3xl tracking-wide">
+        Your Leading Flight School in Kansas City at Lee's Summit Airport
+      </h2>
+      <a href="#contactUs" class="btn-white">Enroll Today</a>
+    </div>
+    <!-- <Partners /> -->
+  </header>
 
   <TryFlyingCTA />
 
