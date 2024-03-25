@@ -1,28 +1,38 @@
 ---
 import { Icon } from "astro-icon/components";
-import { FACEBOOK_LINK, INSTAGRAM_LINK, PHONE_NUMBER, EMAIL_ADDRESS } from "../consts";
+import {
+  FACEBOOK_LINK,
+  INSTAGRAM_LINK,
+  PHONE_NUMBER,
+  EMAIL_ADDRESS,
+  ADDRESS,
+  ADDRESS_STATE,
+  ADDRESS_ZIP,
+} from "../consts";
 ---
 
-<div class="w-full bg-gray-700 z-50 relative h-10">
+<div class="w-full bg-gray-900 z-50 relative h-10">
   <div
     class="mx-auto flex max-w-[80rem] items-center h-full justify-between px-4"
   >
     <div class="flex items-center gap-3">
-      <a
-        href=`tel:${PHONE_NUMBER}`
-        class="text-white text-sm lg:text-base font-medium">{PHONE_NUMBER}</a
-      >
-      <div class="hidden lg:flex gap-2 ml-4">
+      <div class="hidden lg:flex gap-2">
         <a href={FACEBOOK_LINK} target="_blank" rel="noopener">
           <Icon
             name="entypo-social:facebook-with-circle"
-            class="text-white text-2xl hover:scale-110 cursor-pointer transition-all"
+            class="text-white text-2xl hover:scale-105 cursor-pointer transition-all"
           />
         </a>
         <a href={INSTAGRAM_LINK} target="_blank" rel="noopener">
           <Icon
             name="entypo-social:instagram-with-circle"
-            class="text-white text-2xl hover:scale-110 cursor-pointer transition-all"
+            class="text-white text-2xl hover:scale-105 cursor-pointer transition-all"
+          />
+        </a>
+        <a href=`mailto:${EMAIL_ADDRESS}` target="_blank" rel="noopener">
+          <Icon
+            name="tabler:mail-filled"
+            class="text-white text-2xl hover:scale-105 cursor-pointer transition-all"
           />
         </a>
         <!-- <a
@@ -32,15 +42,30 @@ import { FACEBOOK_LINK, INSTAGRAM_LINK, PHONE_NUMBER, EMAIL_ADDRESS } from "../c
         >
           <Icon
             name="entypo-social:linkedin-with-circle"
-            class="text-white text-2xl hover:scale-110 cursor-pointer transition-all"
+            class="text-white text-2xl hover:scale-105 cursor-pointer transition-all"
           />
         </a> -->
       </div>
+      <a
+        href=`tel:${PHONE_NUMBER}`
+        class="lg:ml-9 text-white text-sm lg:text-base font-normal flex hover:scale-105 cursor-pointer transition-all"
+      >
+        <Icon name="tabler:phone-call" class="text-white mr-2 text-2xl" />
+        {PHONE_NUMBER}</a
+      >
     </div>
     <!-- <p class="text-white text-md lg:text-sm cursor-pointer">Student Log In</p> -->
     <a
-      href=`mailto:${EMAIL_ADDRESS}`
-      class="text-white text-sm lg:text-base font-medium">{EMAIL_ADDRESS}</a
+      href="https://maps.app.goo.gl/xDfAv52BGnFRQWSb9"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="text-white text-sm lg:text-base font-normal flex hover:scale-105 cursor-pointer transition-all"
     >
+      <Icon name="tabler:map-pin" class="text-white mr-2 text-2xl" />
+      <p class="hidden md:flex">
+        {ADDRESS}, {ADDRESS_STATE}
+        {ADDRESS_ZIP}
+      </p>
+    </a>
   </div>
 </div>

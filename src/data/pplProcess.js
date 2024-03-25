@@ -37,7 +37,7 @@ export const pplProcess = [
   {
     title: "8. Checkride",
     content:
-      "Undergo a checkride with a Red Arrow instructor. This test assesses your ability to apply theoretical knowledge and execute practical flying skills.",
+      "Undergo a checkride with a Summit instructor. This test assesses your ability to apply theoretical knowledge and execute practical flying skills.",
   },
   {
     title: "9. Private Pilot License (PPL)",

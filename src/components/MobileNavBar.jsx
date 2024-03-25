@@ -15,15 +15,15 @@ const MobileNavBar = ({ pathname }) => {
   return (
     <>
       <MobileNavLink
-        menuItem={career}
-        pathname={pathname}
-        toggled={career.name === open}
-        onShow={handleClick}
-      />
-      <MobileNavLink
         menuItem={flightPrograms}
         pathname={pathname}
         toggled={flightPrograms.name === open}
+        onShow={handleClick}
+      />
+      <MobileNavLink
+        menuItem={career}
+        pathname={pathname}
+        toggled={career.name === open}
         onShow={handleClick}
       />
       <MobileNavLink

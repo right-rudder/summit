@@ -1,0 +1,38 @@
+---
+const {
+  headerSize = "4/5",
+  headerImg = "commercial-pilot",
+  imgStartOpacity = "50",
+  imgEndOpacity = "10",
+  imgPosition = "center",
+  title = "Welcome to Summit",
+  subtitle = "Dare to fly",
+  btnText = "Enroll Today",
+  btnHref = "#contactUs",
+  btnColor = "white",
+  target = "_self",
+} = Astro.props;
+---
+
+<header
+  class=`relative top-0 h-screen-${headerSize} bg-${headerImg} bg-cover bg-${imgPosition} bg-black flex flex-col items-center justify-center`
+>
+  <!-- bg-overlay to darken -->
+  <div
+    class=`absolute bg-gradient-to-b from-black/${imgStartOpacity} to-black/${imgEndOpacity} w-full h-full z-0`
+  >
+  </div>
+  <!-- Text -->
+  <div
+    class="text-white w-3/4 text-center lg:text-left z-10 flex flex-col items-center lg:items-start gap-4 px-5 h-full justify-center lg:justify-end lg:mb-24"
+  >
+    <h1 class="text-5xl font-bold tracking-tight">
+      {title}
+    </h1>
+    <h2 class="text-3xl tracking-wide">
+      {subtitle}
+    </h2>
+    <a href={btnHref} target={target} class=`btn-${btnColor}`>{btnText}</a>
+  </div>
+  <!-- <Partners /> -->
+</header>

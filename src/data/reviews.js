@@ -24,4 +24,19 @@ export const reviews = [
     text: "I can honestly say that I 100% recommend each of the instructors I have met at Summit Flight Academy, without any reservation or hesitation.  A lifelong dream which the staff at Summit Flight Academy helped me accomplish!Thank you to everyone at Summit Flight Academy for helping me realize this dream!",
     author: "Edward Seasholtz",
   },
+  {
+    id: 6,
+    text: "The quality and experience of their CFIs and the team Jeremy has put together is phenomenal.  At any time, you are welcome to talk to any available CFI to have access to any knowledge that is on hand. The multiple levels of experience at a student's disposal are hands down the best you can ask for!! SFA instructors will go out of their way to communicate and accommodate your schedule and speed of learning. In addition, the location of the school in Lee’s Summit provides a great opportunity to learn how to fly in numerous types of airspace.",
+    author: "William Burkhart",
+  },
+  {
+    id: 7,
+    text: "Went to Summit Flight Academy for my discovery flight. I had a great experience, and any question I had got answered. Overall a great experience and I would recommend it to anyone wanting to see if flying is for you.",
+    author: "David D.",
+  },
+  {
+    id: 8,
+    text: "Extremely friendly and helpful staff paired with very well-maintained planes. This is the place to be for flight training!",
+    author: "Deion Whitney",
+  },
 ];

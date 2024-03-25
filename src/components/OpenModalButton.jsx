@@ -53,48 +53,48 @@ const OpenModalButton = () => {
       </button>
 
       {showModal && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-          <div className="bg-white p-8 max-w-sm m-4 text-black relative rounded-md">
+        <div className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50">
+          <div className="bg-white p-12 max-w-md m-4 text-black relative rounded-md">
             {!formSubmitted && (
               <>
-                <h2 className="text-2xl font-bold mb-4">Get the free guide</h2>
+                <h2 className="text-2xl font-bold mb-1">Get the free guide</h2>
                 <p className="mb-4">
                   Fill out the form below to get the free guide.
                 </p>
                 <form onSubmit={handleSubmit}>
                   <div className="mb-4">
-                    <label htmlFor="name" className="block mb-2">
+                    <label htmlFor="name" className="block mb-1">
                       Name
                     </label>
                     <input
                       type="text"
                       id="name"
                       name="name"
-                      className="w-full p-2 border border-gray-300 rounded"
+                      className="w-full p-2 border bg-gray-100 border-gray-400 rounded"
                       required
                     />
                   </div>
                   <div className="mb-4">
-                    <label htmlFor="phone" className="block mb-2">
+                    <label htmlFor="phone" className="block mb-1">
                       Phone
                     </label>
                     <input
                       type="text"
                       id="phone"
                       name="phone"
-                      className="w-full p-2 border border-gray-300 rounded"
+                      className="w-full p-2 border bg-gray-100 border-gray-400 rounded"
                       required
                     />
                   </div>
                   <div className="mb-4">
-                    <label htmlFor="email" className="block mb-2">
+                    <label htmlFor="email" className="block mb-1">
                       Email
                     </label>
                     <input
                       type="email"
                       id="email"
                       name="email"
-                      className="w-full p-2 border border-gray-300 rounded"
+                      className="w-full p-2 border bg-gray-100 border-gray-400 rounded"
                       required
                     />
                   </div>
@@ -106,7 +106,7 @@ const OpenModalButton = () => {
                     </label>
                   </p>
 
-                  <button type="submit" className="btn-red w-full">
+                  <button type="submit" className="btn-red w-full mt-8">
                     Get the guide
                   </button>
                 </form>
@@ -130,7 +130,7 @@ const OpenModalButton = () => {
               className="bg-main-red p-1 rounded-full absolute top-2 right-2"
               onClick={toggleModal}
             >
-              <IoMdClose className="text-2xl text-white" />
+              <IoMdClose className="text-xl text-white" />
             </button>
           </div>
         </div>
