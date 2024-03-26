@@ -1,14 +1,9 @@
 ---
-import PageHeader from "../../components/PageHeader.astro";
-import DiscoveryFlightCTA from "../../components/DiscoveryFlightCTA.astro";
-import ContactUs from "../../components/ContactUs.astro";
 import BaseLayout from "../../layouts/BaseLayout.astro";
-import TrainingCourseList from "../../components/TrainingCourseList.jsx";
 import UnderHeader from "../../components/UnderHeader.astro";
-import CommercialRoadmap from "../../components/CommercialRoadmap.astro";
-import WhatsNext from "../../components/WhatsNext.astro";
-import CommercialPackage from "../../components/CommercialPackage.astro";
-import { imageConfig } from "astro:assets";
+import CFIRoadmap from "../../components/CFIRoadmap.astro";
+import EnrollNowCTA from "../../components/EnrollNowCTA.astro";
+import CFITypes from "../../components/CFITypes.astro";
 import FAQs from "../../components/FAQs";
 import { commercialPilotFAQs } from "../../data/commercialPilotFAQs";
 ---
@@ -43,9 +38,11 @@ import { commercialPilotFAQs } from "../../data/commercialPilotFAQs";
       class="text-white text-center z-10 flex flex-col items-center gap-4 px-5"
     >
       <h1 class="text-5xl font-bold tracking-tighter">
-        Become a Commercial Pilot
+        Become a Certified Instructor
       </h1>
-      <h2 class="text-3xl tracking-wide">Get paid to fly!</h2>
+      <h2 class="text-3xl tracking-wide">
+        Teach the next generation of pilots
+      </h2>
       <a href="/enrollment" target="_blank"
         ><button class="btn-red">Apply Now</button></a
       >
@@ -53,15 +50,15 @@ import { commercialPilotFAQs } from "../../data/commercialPilotFAQs";
   </header>
 
   <UnderHeader
-    title="What is a Commercial Pilot Certificate?"
-    text1=`Obtaining a commercial pilot certificate is another milestone in an aviator's journey, opening doors to exciting professional opportunities within the aviation industry. At Summit Flight Academy, we understand the importance of this achievement and are dedicated to providing comprehensive training and support to help aspiring pilots earn their commercial pilot license (CPL). With this certification, pilots gain the authority to act as pilot in command (PIC) in commercial situations, receiving compensation for their services while ensuring safe and efficient flight operations.`
+    title="What is a CFI?"
+    text1=`At Summit Flight Academy, we take immense pride in nurturing the next generation of aviation professionals through our comprehensive Certified Flight Instructor (CFI) training programs. Certified Flight Instructors play a pivotal role in shaping the skills and knowledge of aspiring pilots, serving as mentors, guides, and educators. Our CFI training courses are designed to equip you with the necessary expertise to become an influential and respected instructor, capable of imparting invaluable knowledge and instilling a culture of safety, proficiency, and excellence in your students.`
   />
 
-  <CommercialRoadmap />
+  <CFIRoadmap />
 
-  <WhatsNext />
+  <CFITypes />
 
-  <CommercialPackage />
+  <EnrollNowCTA />
 
   <FAQs faqs={commercialPilotFAQs} client:visible />
 
