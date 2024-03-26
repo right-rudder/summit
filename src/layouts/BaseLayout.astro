@@ -7,7 +7,13 @@ import "@fontsource-variable/raleway";
 import "@fontsource-variable/montserrat";
 import "@fontsource-variable/quicksand";
 
-const { pageTitle, pageDescription, pageImage, pageKeywords } = Astro.props;
+const {
+  pageTitle,
+  pageDescription,
+  pageImage,
+  pageKeywords,
+  mainBg = "bg-white",
+} = Astro.props;
 ---
 
 <html lang="en" class="scroll-smooth">
@@ -19,7 +25,7 @@ const { pageTitle, pageDescription, pageImage, pageKeywords } = Astro.props;
       keywords={pageKeywords}
     />
   </head>
-  <body class="relative font-sans">
+  <body class=`relative font-sans ${mainBg}`>
     <Header />
     <main>
       <slot />
