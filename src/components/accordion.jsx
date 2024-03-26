@@ -1,6 +1,6 @@
 import { FaPlus, FaMinus } from "react-icons/fa6";
 
-const Accordion = ({ step, toggled, onShow }) => {
+const Accordion = ({ step, toggled, onShow, index }) => {
   return (
     <div className="flex flex-col items-start p-7 bg-gradient-to-br from-gray-200 to-gray-300">
       <button
@@ -8,6 +8,9 @@ const Accordion = ({ step, toggled, onShow }) => {
         onClick={onShow}
         className={`w-full flex items-center justify-between text-black py-2`}
       >
+        <span className="font-serif mr-4 text-lg lg:text-5xl font-semibold w-20 lg:w-24 text-gray-50 tracking-tight overflow-hidden text-left">
+          {index + 1}
+        </span>
         <p className="text-xl font-medium w-full text-center lg:text-left">
           {step.title}
         </p>

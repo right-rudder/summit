@@ -1,6 +1,11 @@
 ---
 import { Icon } from "astro-icon/components";
 import { FACEBOOK_LINK, INSTAGRAM_LINK } from "../consts";
+
+const {
+  title = "What's Next",
+  body = "Reach out to us and schedule a call to explore your flight training options with Summit Flight Academy.",
+} = Astro.props;
 ---
 
 <section
@@ -10,16 +15,15 @@ import { FACEBOOK_LINK, INSTAGRAM_LINK } from "../consts";
   <div class="absolute bg-black/20 w-full h-full z-0"></div>
   <div class="flex flex-col items-center z-10 py-24">
     <div
-      class="px-5 py-12 max-w-2xl bg-white rounded flex flex-col items-center"
+      class="px-5 py-12 max-w-none md:max-w-2xl bg-white/90 lg:bg-white rounded-none md:rounded flex flex-col items-center"
     >
       <h2
         class="mb-4 text-5xl font-semibold text-center tracking-tight text-gray-900"
       >
-        What's Next?
+        {title}
       </h2>
       <p class="px-24 font-light text-lg text-center text-gray-600">
-        Reach out to us and schedule a call to explore your flight training
-        options with Summit Flight Academy.
+        {body}
       </p>
       <a href="/" target="_blank" class="mt-9 btn-red"> Contact Us </a>
       <div class="mt-8 flex justify-center items-center flex-wrap">

@@ -38,7 +38,7 @@ const Navbar = ({ pathname }) => {
   return (
     <nav className="w-full h-0">
       <div
-        className={`${navBar || openMobile ? "bg-gray-900" : "bg-gradient-to-b from-black/40 to-black/0"} duration-300 ease-in`}
+        className={`${navBar || openMobile ? "bg-gray-900" : "bg-gradient-to-b from-gray-900/50 to-gray-100/0"} duration-300 ease-in`}
       >
         <div className="mx-auto max-w-7xl px-4">
           <div
