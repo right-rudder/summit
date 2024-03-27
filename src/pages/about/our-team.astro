@@ -6,6 +6,7 @@ import { leadershipTeam, flightTeam } from "../../data/team.js";
 import Location from "../../components/Location.astro";
 import EnrollNowCTA from "../../components/EnrollNowCTA.astro";
 import FlightTeamMember from "../../components/FlightTeamMember.astro";
+import UnderHeader from "../../components/UnderHeader.astro";
 ---
 
 <BaseLayout
@@ -30,6 +31,11 @@ import FlightTeamMember from "../../components/FlightTeamMember.astro";
     </div>
   </header>
 
+  <UnderHeader
+    title="Finding Inspiration in Every Flight!"
+    text1="Summit Flight was founded in 2022 with the goal of providing a full service, professional flight school at the Lee's Summit Airport.​ Our mission is to provide excellence in flight training, the highest levels of service and the upmost focus on safety and student growth to help each pilot meet their aviation goals!"
+  />
+
   <!-- <section
     class="flex flex-col items-center px-10 bg-gradient-to-br from-white to-gray-200 py-10"
   >
@@ -52,11 +58,12 @@ import FlightTeamMember from "../../components/FlightTeamMember.astro";
     <a href="/flight-programs/training-courses" class="">
       <div class="btn-red">Get in Touch</div>
     </a>
-  </section>
+  </section> -->
 
-  <Location /> -->
+  <!-- <Location /> -->
 
   <EnrollNowCTA />
 
   <ContactUs />
 </BaseLayout>
+../../components/carouselReviews.jsx

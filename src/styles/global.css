@@ -4,16 +4,16 @@
 
 @layer components {
   .btn-red {
-    @apply w-min whitespace-nowrap text-center text-lg bg-main-red text-white px-5 py-3 capitalize font-semibold hover:scale-105 hover:shadow-xl duration-200 hover:bg-red-800;
+    @apply w-min whitespace-nowrap text-center text-lg bg-main-red text-white px-5 py-3 font-semibold hover:scale-105 hover:shadow-xl duration-200 hover:bg-red-800;
   }
   .btn-black {
-    @apply w-min whitespace-nowrap text-center text-lg bg-black text-white px-5 py-3 capitalize font-semibold hover:scale-105 hover:shadow-xl duration-200 hover:bg-gray-900 cursor-pointer;
+    @apply w-min whitespace-nowrap text-center text-lg bg-black text-white px-5 py-3 font-semibold hover:scale-105 hover:shadow-xl duration-200 hover:bg-gray-900 cursor-pointer;
   }
   .btn-white {
-    @apply w-min whitespace-nowrap text-center text-lg bg-gray-100 text-black px-5 py-3 capitalize font-semibold hover:scale-105 hover:shadow-xl duration-200 hover:bg-gray-300 hover:text-gray-800 cursor-pointer;
+    @apply w-min whitespace-nowrap text-center text-lg bg-gray-100 text-black px-5 py-3 font-semibold hover:scale-105 hover:shadow-xl duration-200 hover:bg-gray-300 hover:text-gray-800 cursor-pointer;
   }
   .btn-gray {
-    @apply w-min whitespace-nowrap text-center text-lg bg-gray-600 text-white px-5 py-3 capitalize font-semibold hover:scale-105 hover:shadow-xl duration-200 hover:bg-gray-900 hover:text-gray-100 cursor-pointer;
+    @apply w-min whitespace-nowrap text-center text-lg bg-gray-600 text-white px-5 py-3 font-semibold hover:scale-105 hover:shadow-xl duration-200 hover:bg-gray-900 hover:text-gray-100 cursor-pointer;
   }
 }
 

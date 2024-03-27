@@ -57,8 +57,10 @@ const OpenModalButton = () => {
           <div className="bg-white p-12 max-w-md m-4 text-black relative rounded-md">
             {!formSubmitted && (
               <>
-                <h2 className="text-2xl font-bold mb-1">Get the free guide</h2>
-                <p className="mb-4">
+                <h2 className="text-2xl text-center font-bold mb-1">
+                  Get the free guide
+                </h2>
+                <p className="mb-4 text-center">
                   Fill out the form below to get the free guide.
                 </p>
                 <form onSubmit={handleSubmit}>

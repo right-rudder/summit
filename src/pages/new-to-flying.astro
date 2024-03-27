@@ -10,6 +10,8 @@ import UnderHeader from "../components/UnderHeader.astro";
 import BecomePilot from "../components/BecomePilot.astro";
 import QuizCTA from "../components/QuizCTA.astro";
 import StartToday from "../components/StartToday.astro";
+import FAQs from "../components/FAQs";
+import { GeneralFAQs } from "../data/generalFAQs1";
 ---
 
 <BaseLayout
@@ -36,7 +38,7 @@ import StartToday from "../components/StartToday.astro";
   >
     <!-- bg-overlay to darken -->
     <div
-      class="absolute bg-gradient-to-b from-black/30 to-black/10 w-full h-full z-0"
+      class="absolute bg-gradient-to-b from-black/50 to-black/20 w-full h-full z-0"
     >
     </div>
     <!-- Text -->
@@ -277,6 +279,9 @@ import StartToday from "../components/StartToday.astro";
 
   <!-- Call to Action Banner -->
   <DiscoveryFlightCTA />
+
+  <!-- FAQs -->
+  <FAQs faqs={GeneralFAQs} type="General" client:visible />
 
   <!-- Contact Us Form -->
   <!-- <ContactUs /> -->
