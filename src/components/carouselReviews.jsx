@@ -20,7 +20,7 @@ export default function Carousel({ reviews }) {
     let slider = setInterval(() => {
       if (current === reviews.length - 1) setCurrent(0);
       else setCurrent(current + 1);
-    }, 3000);
+    }, 6300);
 
     return () => {
       clearInterval(slider);
@@ -31,7 +31,7 @@ export default function Carousel({ reviews }) {
     <section id="reviews" class="w-full m-auto">
       <div className="overflow-hidden relative">
         <div
-          className={`flex transition ease-out duration-40`}
+          className={`flex transition ease-out duration-500`}
           style={{
             transform: `translateX(-${current * 100}%)`,
           }}
@@ -39,7 +39,9 @@ export default function Carousel({ reviews }) {
           {reviews.map((r) => {
             return (
               <div className="bg-main-red flex items-center align-middle min-w-full px-0 py-24 lg:py-16 lg:px-8">
-                <figure className="flex-auto mx-auto px-9 lg:px-36">
+                <figure
+                  className={`flex-auto mx-auto px-9 lg:px-36 ${current + 1 === r.id ? "opacity-100" : "opacity-0"} transition-opacity duration-1000 ease-out`}
+                >
                   <p className="sr-only">5 out of 5 stars</p>
                   <div class="flex justify-center align-middle gap-x-1 text-yellow-300">
                     <svg
@@ -103,11 +105,11 @@ export default function Carousel({ reviews }) {
                       />
                     </svg>
                   </div>
-                  <blockquote className="mt-10 p-0 text-xl text-center font-light leading-8 tracking-tight text-white sm:text-2xl sm:leading-9">
+                  <blockquote className="mt-10 p-0 text-xl text-center font-light leading-4 tracking-tight text-white sm:text-2xl sm:leading-9">
                     <p>{r.text}</p>
                   </blockquote>
                   <figcaption className="w-full p-0 mt-10 flex items-center justify-center gap-x-6">
-                    <p className="text-3xl leading-6 text-center flex-1 font-bold text-gray-300">
+                    <p className="text-3xl leading-6 italic text-center flex-1 font-bold text-gray-50">
                       {r.author}
                     </p>
                   </figcaption>
