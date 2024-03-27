@@ -8,7 +8,7 @@ const Accordion = ({ step, toggled, onShow, index }) => {
         onClick={onShow}
         className={`w-full flex items-center justify-between text-black py-2`}
       >
-        <span className="font-serif mr-4 text-lg lg:text-5xl font-semibold w-20 lg:w-24 text-gray-50 tracking-tight overflow-hidden text-left">
+        <span className="font-mono mr-4 text-lg lg:text-5xl font-semibold w-20 lg:w-24 text-gray-800 tracking-tight overflow-hidden text-left">
           {index + 1}
         </span>
         <p className="text-xl font-semibold w-full text-center lg:text-left">
@@ -21,9 +21,9 @@ const Accordion = ({ step, toggled, onShow, index }) => {
         )}
       </button>
       <div
-        className={`overflow-hidden text-black font-medium w-full ${
-          toggled ? "max-h-max p-4 bg-white" : "max-h-0 px-4 pt-0 bg-gray-200"
-        } transition-all duration-300 ease-in }`}
+        className={`overflow-hidden px-9 text-black font-medium w-full ${
+          toggled ? "max-h-max p-9 bg-white text-black" : "max-h-0 bg-gray-100"
+        } transition-all duration-200 ease-in`}
       >
         <p className="mt-3 text-lg text-justify">{step.content}</p>
         <ul className="mt-3 list-disc">
