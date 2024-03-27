@@ -59,7 +59,7 @@ const Navbar = ({ pathname }) => {
                   <div>
                     <a
                       href="/new-to-flying"
-                      className={`cursor-pointer text-lg text-white py-3 hover:border-b-2 border-main-red whitespace-nowrap ${
+                      className={`cursor-pointer text-lg text-white py-2 hover:border-b-2 border-main-red whitespace-nowrap ${
                         pathname === "/new-to-flying" ? "border-b-2" : ""
                       }`}
                     >
