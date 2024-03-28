@@ -1,12 +1,10 @@
 ---
 import ContactUs from "../../components/ContactUs.astro";
 import BaseLayout from "../../layouts/BaseLayout.astro";
-import TeamMemberCard from "../../components/TeamMemberCard.astro";
-import { leadershipTeam, flightTeam } from "../../data/team.js";
-import Location from "../../components/Location.astro";
 import EnrollNowCTA from "../../components/EnrollNowCTA.astro";
-import FlightTeamMember from "../../components/FlightTeamMember.astro";
 import UnderHeader from "../../components/UnderHeader.astro";
+import TermsThatWork from "../../components/TermsThatWork.astro";
+import Team from "../../components/Team";
 ---
 
 <BaseLayout
@@ -36,31 +34,9 @@ import UnderHeader from "../../components/UnderHeader.astro";
     text1="Summit Flight was founded in 2022 with the goal of providing a full service, professional flight school at the Lee's Summit Airport.​ Our mission is to provide excellence in flight training, the highest levels of service and the upmost focus on safety and student growth to help each pilot meet their aviation goals!"
   />
 
-  <!-- <section
-    class="flex flex-col items-center px-10 bg-gradient-to-br from-white to-gray-200 py-10"
-  >
-    <h2 class="text-4xl font-semibold text-center tracking-tight">
-      Leadership Team
-    </h2>
+  <TermsThatWork />
 
-    {leadershipTeam.map((member) => <TeamMemberCard teamMember={member} />)}
-    <hr class="bg-black w-full h-2 rounded-xl max-w-4xl my-14" />
-    <h2 class="text-4xl font-semibold text-center tracking-tight">
-      Flight Team
-    </h2>
-
-    <div
-      class="grid grid-cols-1 lg:grid-cols-2 gap-5 py-10 justify-items-center"
-    >
-      {flightTeam.map((member) => <FlightTeamMember teamMember={member} />)}
-    </div>
-
-    <a href="/flight-programs/training-courses" class="">
-      <div class="btn-red">Get in Touch</div>
-    </a>
-  </section> -->
-
-  <!-- <Location /> -->
+  <Team client:visible />
 
   <EnrollNowCTA />
 
