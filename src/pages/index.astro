@@ -7,12 +7,13 @@ import TrainingProgramImage from "../../public/img/fromWIX/IMG_3281_edited.png";
 import DiscoveryFlightImage from "../../public/img/fromWIX/turboprop Single.jpeg";
 import WeAreSummitImage from "../../public/img/fromWIX/AdobeStock_139858404.jpeg";
 import Section from "../components/Section.astro";
-import Reviews from "../components/Reviews";
 import TryFlyingCTA from "../components/TryFlyingCTA.astro";
 import GettingStarted from "../components/GettingStarted.astro";
 import OurTop from "../components/OurTop.astro";
 import WhySummit from "../components/WhySummit.astro";
 import Partners from "../components/Partners.astro";
+import Carousel from "../components/carouselReviews.jsx";
+import { reviews } from "../data/reviews";
 ---
 
 <HomeLayout
@@ -37,12 +38,12 @@ import Partners from "../components/Partners.astro";
   >
     <!-- bg-overlay to darken -->
     <div
-      class="absolute bg-gradient-to-b from-black/30 to-black/5 w-full h-full z-0"
+      class="absolute bg-gradient-to-b from-black/50 to-black/10 w-full h-full z-0"
     >
     </div>
     <!-- Text -->
     <div
-      class="text-white text-center lg:text-left z-10 flex flex-col items-center lg:items-start gap-4 px-5 h-full justify-center lg:justify-end lg:mb-24"
+      class="text-white text-center lg:text-left z-10 flex flex-col items-center gap-4 px-5 h-full justify-center lg:mb-24"
     >
       <h1 class="text-5xl font-bold tracking-tight">
         Become a Pilot with Summit
@@ -59,13 +60,13 @@ import Partners from "../components/Partners.astro";
 
   <GettingStarted />
 
+  <Carousel reviews={reviews} client:visible />
+
   <WhySummit />
 
-  <Reviews client:visible />
+  <OurTop />
 
   <GuideDownload />
-
-  <OurTop />
 
   <!-- Contact Us Form -->
   <ContactUs />

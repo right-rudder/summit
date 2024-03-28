@@ -1,16 +1,11 @@
 ---
-import PageHeader from "../../components/PageHeader.astro";
-import DiscoveryFlightCTA from "../../components/DiscoveryFlightCTA.astro";
-import ContactUs from "../../components/ContactUs.astro";
 import BaseLayout from "../../layouts/BaseLayout.astro";
-import TrainingCourseList from "../../components/TrainingCourseList.jsx";
 import UnderHeader from "../../components/UnderHeader.astro";
-import InstrumentRoadmap from "../../components/InstrumentRoadmap.astro";
+import CFIRoadmap from "../../components/CFIRoadmap.astro";
 import EnrollNowCTA from "../../components/EnrollNowCTA.astro";
-import InstrumentPackages from "../../components/InstrumentPackages.astro";
-import { imageConfig } from "astro:assets";
+import CFITypes from "../../components/CFITypes.astro";
 import FAQs from "../../components/FAQs";
-import { instrumentFAQs } from "../../data/instrumentFAQs";
+import { commercialPilotFAQs } from "../../data/commercialPilotFAQs";
 ---
 
 <BaseLayout
@@ -19,11 +14,11 @@ import { instrumentFAQs } from "../../data/instrumentFAQs";
   pageKeywords="pilot training courses, aviation training programs, flight academy programs, PPL courses, Airline pilot training, Military pilot programs, accelerated pilot training, flexible pilot training, flight school courses, certified flight instructor, aviation career paths"
 >
   <!-- <PageHeader
-    title="How to Become a Private Pilot"
-    subtitle="The starting point in all pilot journeys"
-    headerImg="private-pilot"
-    imgPosition="center"
-    imgStartOpacity="50"
+    title="Become a Commercial Pilot"
+    subtitle="Get paid to fly!"
+    headerImg="commercial-pilot"
+    imgPosition="top"
+    imgStartOpacity="60"
     imgEndOpacity="20"
     btnText="Apply Now"
     btnHref="/enrollment"
@@ -43,27 +38,29 @@ import { instrumentFAQs } from "../../data/instrumentFAQs";
       class="text-white text-center z-10 flex flex-col items-center gap-4 px-5"
     >
       <h1 class="text-5xl font-bold tracking-tighter">
-        How to Get an Instrument Rating
+        Become a Certified Instructor
       </h1>
       <h2 class="text-3xl tracking-wide">
-        Navigate instrument conditions and expand your range
+        Teach the next generation of pilots
       </h2>
-      <a href="#" target="_blank"><button class="btn-red">Apply Now</button></a>
+      <a href="/enrollment" target="_blank"
+        ><button class="btn-red">Apply Now</button></a
+      >
     </div>
   </header>
 
   <UnderHeader
-    title="What is an Instrument Rating?"
-    text1="Obtaining an Instrument Rating is a significant milestone in a pilot's journey and allows for more complex flying. At Summit Flight Academy, we understand the importance of this rating and are dedicated to providing comprehensive training and support to help aspiring pilots achieve this goal. With an Instrument Rating, pilots gain the ability to navigate and operate aircraft safely under conditions of reduced visibility and adverse weather, expanding their capabilities and opening up new opportunities in the aviation industry."
+    title="What is a CFI?"
+    text1=`At Summit Flight Academy, we take immense pride in nurturing the next generation of aviation professionals through our comprehensive Certified Flight Instructor (CFI) training programs. Certified Flight Instructors play a pivotal role in shaping the skills and knowledge of aspiring pilots, serving as mentors, guides, and educators. Our CFI training courses are designed to equip you with the necessary expertise to become an influential and respected instructor, capable of imparting invaluable knowledge and instilling a culture of safety, proficiency, and excellence in your students.`
   />
 
-  <InstrumentRoadmap />
+  <CFIRoadmap />
+
+  <CFITypes />
 
   <EnrollNowCTA />
 
-  <InstrumentPackages />
-
-  <FAQs faqs={instrumentFAQs} type="Instrument Rating" client:visible />
+  <FAQs faqs={commercialPilotFAQs} type="Instructor Training" client:visible />
 
   <!-- <DiscoveryFlightCTA /> -->
 

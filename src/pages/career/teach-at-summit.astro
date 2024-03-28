@@ -1,16 +1,8 @@
 ---
-import PageHeader from "../../components/PageHeader.astro";
-import DiscoveryFlightCTA from "../../components/DiscoveryFlightCTA.astro";
-import ContactUs from "../../components/ContactUs.astro";
 import BaseLayout from "../../layouts/BaseLayout.astro";
-import TrainingCourseList from "../../components/TrainingCourseList.jsx";
 import UnderHeader from "../../components/UnderHeader.astro";
-import CommercialRoadmap from "../../components/CommercialRoadmap.astro";
+import JoinUsCTA from "../../components/JoinUsCTA.astro";
 import WhatsNext from "../../components/WhatsNext.astro";
-import CommercialPackage from "../../components/CommercialPackage.astro";
-import { imageConfig } from "astro:assets";
-import FAQs from "../../components/FAQs";
-import { commercialPilotFAQs } from "../../data/commercialPilotFAQs";
 ---
 
 <BaseLayout
@@ -43,9 +35,9 @@ import { commercialPilotFAQs } from "../../data/commercialPilotFAQs";
       class="text-white text-center z-10 flex flex-col items-center gap-4 px-5"
     >
       <h1 class="text-5xl font-bold tracking-tighter">
-        Become a Commercial Pilot
+        Teach at Summit Flight Academy
       </h1>
-      <h2 class="text-3xl tracking-wide">Get paid to fly!</h2>
+      <h2 class="text-3xl tracking-wide">Come instruct with us</h2>
       <a href="/enrollment" target="_blank"
         ><button class="btn-red">Apply Now</button></a
       >
@@ -53,19 +45,15 @@ import { commercialPilotFAQs } from "../../data/commercialPilotFAQs";
   </header>
 
   <UnderHeader
-    title="What is a Commercial Pilot Certificate?"
-    text1=`Obtaining a commercial pilot certificate is another milestone in an aviator's journey, opening doors to exciting professional opportunities within the aviation industry. At Summit Flight Academy, we understand the importance of this achievement and are dedicated to providing comprehensive training and support to help aspiring pilots earn their commercial pilot license (CPL). With this certification, pilots gain the authority to act as pilot in command (PIC) in commercial situations, receiving compensation for their services while ensuring safe and efficient flight operations.`
+    title="Lorem ipsum dolor sit amet?"
+    text1="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
   />
 
-  <CommercialRoadmap />
+  <JoinUsCTA />
 
-  <WhatsNext />
-
-  <CommercialPackage />
-
-  <FAQs faqs={commercialPilotFAQs} type="Commercial Pilot" client:visible />
-
-  <!-- <DiscoveryFlightCTA /> -->
-
-  <!-- <ContactUs /> -->
+  <WhatsNext
+    title="Come Visit Us"
+    body="Have more questions about our CFI openings and positions? Reach out to us with the form below."
+  />
 </BaseLayout>
+../../components/JoinUsCTA.jsx

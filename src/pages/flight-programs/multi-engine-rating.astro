@@ -5,7 +5,7 @@ import ContactUs from "../../components/ContactUs.astro";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import TrainingCourseList from "../../components/TrainingCourseList.jsx";
 import UnderHeader from "../../components/UnderHeader.astro";
-import InstrumentRoadmap from "../../components/InstrumentRoadmap.astro";
+import MultiEngineRoadmap from "../../components/MultiEngineRoadmap.astro";
 import EnrollNowCTA from "../../components/EnrollNowCTA.astro";
 import InstrumentPackages from "../../components/InstrumentPackages.astro";
 import { imageConfig } from "astro:assets";
@@ -43,27 +43,25 @@ import { instrumentFAQs } from "../../data/instrumentFAQs";
       class="text-white text-center z-10 flex flex-col items-center gap-4 px-5"
     >
       <h1 class="text-5xl font-bold tracking-tighter">
-        How to Get an Instrument Rating
+        Add-on Your Multi Engine Rating
       </h1>
       <h2 class="text-3xl tracking-wide">
-        Navigate instrument conditions and expand your range
+        Advance in your private training and fly complex aircraft
       </h2>
       <a href="#" target="_blank"><button class="btn-red">Apply Now</button></a>
     </div>
   </header>
 
   <UnderHeader
-    title="What is an Instrument Rating?"
-    text1="Obtaining an Instrument Rating is a significant milestone in a pilot's journey and allows for more complex flying. At Summit Flight Academy, we understand the importance of this rating and are dedicated to providing comprehensive training and support to help aspiring pilots achieve this goal. With an Instrument Rating, pilots gain the ability to navigate and operate aircraft safely under conditions of reduced visibility and adverse weather, expanding their capabilities and opening up new opportunities in the aviation industry."
+    title="What is a Multi Engine Rating?"
+    text1="A Multi-Engine Rating is a significant achievement that opens up new opportunities for pilots, granting them the privilege of acting as pilot in command (PIC) of multi-engine aircraft. At Summit Flight Academy, we understand the importance of this rating and are dedicated to providing comprehensive training to help aspiring pilots excel in the realm of multi-engine aviation. We ensure that you gain the necessary knowledge, skills, and experience to navigate the complexities of these high-performance aircraft with confidence and proficiency."
   />
 
-  <InstrumentRoadmap />
+  <MultiEngineRoadmap />
 
   <EnrollNowCTA />
 
-  <InstrumentPackages />
-
-  <FAQs faqs={instrumentFAQs} type="Instrument Rating" client:visible />
+  <!-- <FAQs faqs={instrumentFAQs} client:visible /> -->
 
   <!-- <DiscoveryFlightCTA /> -->
 

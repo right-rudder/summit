@@ -10,6 +10,8 @@ import UnderHeader from "../components/UnderHeader.astro";
 import BecomePilot from "../components/BecomePilot.astro";
 import QuizCTA from "../components/QuizCTA.astro";
 import StartToday from "../components/StartToday.astro";
+import FAQs from "../components/FAQs";
+import { GeneralFAQs } from "../data/generalFAQs1";
 ---
 
 <BaseLayout
@@ -36,12 +38,12 @@ import StartToday from "../components/StartToday.astro";
   >
     <!-- bg-overlay to darken -->
     <div
-      class="absolute bg-gradient-to-b from-black/30 to-black/10 w-full h-full z-0"
+      class="absolute bg-gradient-to-b from-black/50 to-black/20 w-full h-full z-0"
     >
     </div>
     <!-- Text -->
     <div
-      class="text-white w-3/4 text-center lg:text-left z-10 flex flex-col items-center lg:items-start gap-4 px-5 h-full justify-center lg:justify-end lg:mb-24"
+      class="text-white w-3/4 text-center z-10 flex flex-col items-center gap-4 px-5 h-full justify-center lg:mb-24"
     >
       <h1 class="text-5xl font-bold tracking-tight">
         Considering Pilot Training?
@@ -277,6 +279,9 @@ import StartToday from "../components/StartToday.astro";
 
   <!-- Call to Action Banner -->
   <DiscoveryFlightCTA />
+
+  <!-- FAQs -->
+  <FAQs faqs={GeneralFAQs} type="General" client:visible />
 
   <!-- Contact Us Form -->
   <!-- <ContactUs /> -->
