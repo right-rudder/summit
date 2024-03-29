@@ -10,7 +10,7 @@ export const SITE_KEYWORDS =
   "flight school kansas city, pilot training kansas city, LXT flight school, kansas city flight school, Ft. Bliss Flight school, Ft. Bliss RTAG, Ft. Bliss pilot training, lee's summit flight school,FAA pilot program,  Odessa Texas pilot school, Midland texas flight school  FAA certifications, purdue global aviation, M-1 Visa, foreign pilot licenses, aviation career, Part 141 flight school";
 
 //Customer NAP info
-export const ADDRESS = "2751 NE Douglas St, Lee's Summit";
+export const ADDRESS = "2751 NE Douglas St";
 export const ADDRESS2 = "";
 export const ADDRESS_CITY = "Lee's Summit";
 export const ADDRESS_STATE = "MO";
@@ -28,23 +28,23 @@ export const flightPrograms = {
   mobileClassName: "flight-programs-mobile",
   submenu: [
     {
-      name: "Private Pilot Training", 
+      name: "Private Pilot Training",
       link: "/flight-programs/private-pilot-training",
     },
     {
-      name: "Instrument Rating", 
+      name: "Instrument Rating",
       link: "/flight-programs/instrument-rating",
     },
     {
-      name: "Private Pilot + Instrument Bundle", 
+      name: "Private Pilot + Instrument Bundle",
       link: "/flight-programs/private-pilot-instrument-bundle",
     },
     {
-      name: "Multi-Engine Rating", 
+      name: "Multi-Engine Rating",
       link: "/flight-programs/multi-engine-rating",
     },
     {
-      name: "Flight Reviews & IPCs", 
+      name: "Flight Reviews & IPCs",
       link: "/flight-programs/fligh-reviews-ipcs",
     },
   ],
@@ -56,19 +56,18 @@ export const career = {
   mobileClassName: "career-mobile",
   submenu: [
     {
-      name: "Commercial Pilot Training", 
+      name: "Commercial Pilot Training",
       link: "/career/commercial-pilot-training",
     },
     {
-      name: "Instructor Training", 
+      name: "Instructor Training",
       link: "/career/instructor-training",
     },
     {
-      name: "Teach at Summit", 
+      name: "Teach at Summit",
       link: "/career/teach-at-summit",
     },
   ],
-
 };
 
 export const resources = {
