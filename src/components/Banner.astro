@@ -6,6 +6,7 @@ import {
   PHONE_NUMBER,
   EMAIL_ADDRESS,
   ADDRESS,
+  ADDRESS_CITY,
   ADDRESS_STATE,
   ADDRESS_ZIP,
 } from "../consts";
@@ -63,7 +64,8 @@ import {
     >
       <Icon name="tabler:map-pin" class="text-white mr-2 text-2xl" />
       <p class="hidden md:flex">
-        {ADDRESS}, {ADDRESS_STATE}
+        {ADDRESS} -
+        {ADDRESS_CITY}, {ADDRESS_STATE}
         {ADDRESS_ZIP}
       </p>
     </a>
