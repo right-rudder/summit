@@ -13,7 +13,6 @@ import OurTop from "../components/OurTop.astro";
 import WhySummit from "../components/WhySummit.astro";
 import Partners from "../components/Partners.astro";
 import Carousel from "../components/carouselReviews.jsx";
-import { reviews } from "../data/reviews";
 ---
 
 <HomeLayout
@@ -60,7 +59,7 @@ import { reviews } from "../data/reviews";
 
   <GettingStarted />
 
-  <Carousel reviews={reviews} client:visible />
+  <Carousel client:visible />
 
   <WhySummit />
 
