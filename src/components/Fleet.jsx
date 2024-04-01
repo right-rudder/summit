@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { IoMdClose } from "react-icons/io";
 import { fleet } from "../data/fleet";
+import CarouselImages from "./carouselImages";
 
 export default function Fleet() {
   const [showModal, setShowModal] = useState(false);
@@ -9,19 +10,9 @@ export default function Fleet() {
   return (
     <section id="summit-fleet" className="relative">
       {showModal && (
-        <div
-          className="fixed inset-0 bg-gray-900 bg-opacity-80 flex items-center justify-center z-50"
-          onClick={() => {
-            setShowModal(!showModal);
-            document.body.style.overflow = "auto";
-          }}
-        >
+        <div className="fixed inset-0 bg-gray-900 bg-opacity-80 flex items-center justify-center z-50">
           <div className="bg-white pt-6 pb-12 px-9 rounded-md text-center text-black h-[99%] w-full max-w-4xl overflow-y-auto">
-            <img
-              className="aspect-video w-full rounded object-cover"
-              src={fleet[selectedId].image}
-              alt={fleet[selectedId].alt}
-            />
+            <CarouselImages images={fleet[selectedId].images} />
             <h3 className="mt-6 text-xl font-bold leading-8 text-gray-900">
               {fleet[selectedId].name}
             </h3>
@@ -35,7 +26,7 @@ export default function Fleet() {
             <p className="text-base italic leading-7 text-gray-600">
               <strong>Avionics:</strong> {fleet[selectedId].stats.avionics}
             </p>
-            <div className="mt-6 rounded bg-red-700 grid grid-cols-1 lg:grid-cols-2">
+            <div className="mt-6 rounded text-left bg-red-700 grid grid-cols-1 lg:grid-cols-2">
               <div className="flex flex-col align-middle justify-center p-9">
                 <h4 className="text-xl text-gray-300 font-bold">
                   General Characteristics:
@@ -155,7 +146,7 @@ export default function Fleet() {
                   <div className="w-full lg:w-2/5 aspect-square md:aspect-video lg:aspect-square overflow-hidden rounded">
                     <img
                       className="object-cover w-full h-full hover:scale-110 hover:brightness-110 transition-all duration-700 ease-out"
-                      src={plane.image}
+                      src={plane.images[0].src}
                       alt={plane.alt}
                     />
                   </div>

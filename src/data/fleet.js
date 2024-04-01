@@ -2,7 +2,20 @@ export const fleet = [
   {
     id: 0,
     name: "Piper Archer II",
-    image: "/img/our-fleet/N4353L.png",
+    images: [
+      {
+        src: "/img/our-fleet/N4353L.png",
+        alt: "Red Bird Cessna 172N at Summit Flight Academy",
+      },
+      {
+        src: "/img/our-fleet/N425CB.png",
+        alt: "Red Bird Cessna 172N at Summit Flight Academy",
+      },
+      {
+        src: "/img/our-fleet/N4353L.png",
+        alt: "Red Bird Cessna 172N at Summit Flight Academy",
+      },
+    ],
     alt: "Red Bird Cessna 172N at Summit Flight Academy",
     desc: "The Piper PA-28 series, including the Cherokee, Warrior, and Archer is one of most popular single engine aircraft ever made. It is still in production today and is a favorite for flight training thanks to its safety record, good performance, and ease of operation.",
     stats: {
@@ -35,7 +48,20 @@ export const fleet = [
   {
     id: 1,
     name: "Piper Warrior",
-    image: "/img/our-fleet/N425CB.png",
+    images: [
+      {
+        src: "/img/our-fleet/N425CB.png",
+        alt: "Red Bird Cessna 172N at Summit Flight Academy",
+      },
+      {
+        src: "/img/our-fleet/N4353L.png",
+        alt: "Red Bird Cessna 172N at Summit Flight Academy",
+      },
+      {
+        src: "/img/our-fleet/N4353L.png",
+        alt: "Red Bird Cessna 172N at Summit Flight Academy",
+      },
+    ],
     alt: "Red Bird Cessna 172N at Summit Flight Academy",
     desc: "The Piper PA-28 series, including the Cherokee, Warrior, and Archer is one of most popular single engine aircraft ever made. It is still in production today and is a favorite for flight training thanks to its safety record, good performance, and ease of operation.",
     stats: {
@@ -68,7 +94,20 @@ export const fleet = [
   {
     id: 2,
     name: "Piper Cherokee",
-    image: "/img/our-fleet/N15283.png",
+    images: [
+      {
+        src: "/img/our-fleet/N4353L.png",
+        alt: "Red Bird Cessna 172N at Summit Flight Academy",
+      },
+      {
+        src: "/img/our-fleet/N4353L.png",
+        alt: "Red Bird Cessna 172N at Summit Flight Academy",
+      },
+      {
+        src: "/img/our-fleet/N4353L.png",
+        alt: "Red Bird Cessna 172N at Summit Flight Academy",
+      },
+    ],
     alt: "Red Bird Cessna 172N at Summit Flight Academy",
     desc: "The Piper PA-28 series, including the Cherokee, Warrior, and Archer is one of most popular single engine aircraft ever made. It is still in production today and is a favorite for flight training thanks to its safety record, good performance, and ease of operation.",
     stats: {
@@ -101,7 +140,20 @@ export const fleet = [
   {
     id: 3,
     name: "Piper Cherokee",
-    image: "/img/our-fleet/N15044.png",
+    images: [
+      {
+        src: "/img/our-fleet/N4353L.png",
+        alt: "Red Bird Cessna 172N at Summit Flight Academy",
+      },
+      {
+        src: "/img/our-fleet/N4353L.png",
+        alt: "Red Bird Cessna 172N at Summit Flight Academy",
+      },
+      {
+        src: "/img/our-fleet/N4353L.png",
+        alt: "Red Bird Cessna 172N at Summit Flight Academy",
+      },
+    ],
     alt: "Red Bird Cessna 172N at Summit Flight Academy",
     desc: "The Piper PA-28 series, including the Cherokee, Warrior, and Archer is one of most popular single engine aircraft ever made. It is still in production today and is a favorite for flight training thanks to its safety record, good performance, and ease of operation.",
     stats: {
