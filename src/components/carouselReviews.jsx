@@ -5,7 +5,7 @@ import {
 } from "react-icons/bs";
 import { reviews } from "../data/reviews";
 
-export default function Carousel() {
+export default function CarouselReviews() {
   let [current, setCurrent] = useState(0);
 
   let previousSlide = () => {
