@@ -43,10 +43,6 @@ export const flightPrograms = {
       name: "Multi-Engine Rating",
       link: "/flight-programs/multi-engine-rating",
     },
-    {
-      name: "Flight Reviews & IPCs",
-      link: "/flight-programs/fligh-reviews-ipcs",
-    },
   ],
 };
 
