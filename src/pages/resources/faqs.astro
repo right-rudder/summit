@@ -1,8 +1,6 @@
 ---
-import ContactUs from "../../components/ContactUs.astro";
 import HomeLayout from "../../layouts/HomeLayout.astro";
-import ScheduleCallCTA from "../../components/ScheduleCallCTA.astro";
-import FinancingTabs from "../../components/FinancingTabs";
+import FAQsTabs from "../../components/FAQsTabs";
 ---
 
 <HomeLayout
@@ -21,12 +19,13 @@ import FinancingTabs from "../../components/FinancingTabs";
       class="text-white text-center z-10 flex flex-col items-center gap-4 px-5"
     >
       <h1 class="text-5xl font-bold tracking-tight">
-        How to Access Financing at Summit
+        Frequently Asked Questions
       </h1>
-      <h2 class="text-3xl tracking-wide">Our partnership with Meritize</h2>
-      <a href="https://apply.meritize.com/" target="_blank" class="btn-red"
-        >Contact Financing</a
+      <h2 class="text-3xl tracking-wide">Lorem ipsum cuenat visites serts</h2>
+      <!-- <a href="#frecuently-asked-questions" target="_blank" class="btn-red"
+        >Get Answers</a -->
       >
     </div>
   </header>
+  <FAQsTabs client:load />
 </HomeLayout>
