@@ -3,7 +3,6 @@ import ContactUs from "../../components/ContactUs.astro";
 import HomeLayout from "../../layouts/HomeLayout.astro";
 import ScheduleCallCTA from "../../components/ScheduleCallCTA.astro";
 import FinancingTabs from "../../components/FinancingTabs";
-import EnrollNowCTA from "../../components/EnrollNowCTA.astro";
 ---
 
 <HomeLayout
@@ -30,22 +29,4 @@ import EnrollNowCTA from "../../components/EnrollNowCTA.astro";
       >
     </div>
   </header>
-  <section id="flight-school-reach" class="w-full py-20 bg-gray-300">
-    <h2 class="text-4xl font-bold text-center mb-10 text-main-red">
-      Putting Flight School within Reach
-    </h2>
-    <p class="text-xl text-center max-w-3xl mx-auto text-gray-900">
-      Summit Flight Academy offers financing options through partnerships with
-      Stratus Financial, Flight Training Financing LLC, and AOPA Flight Training
-      Financing. These financing options make flight training affordable whether
-      you're pursuing a pilot career or a personal goal. Our team guides you to
-      the best financing choice for your training and budget needs. Don't let
-      costs hold you back - invest in your aviation goals through our financing
-      partners. Apply online to get started or contact us for further inquiries.
-    </p>
-  </section>
-
-  <FinancingTabs client:load />
-
-  <EnrollNowCTA />
 </HomeLayout>

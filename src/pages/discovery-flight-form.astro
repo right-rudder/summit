@@ -1,12 +1,16 @@
 ---
-import FooterContent from "../components/FooterContent.astro";
+import FooterHome from "../components/FooterHome.astro";
 import DiscoveryForm from "../components/DiscoveryForm.astro";
 import BaseHead from "../components/BaseHead.astro";
+import "@fontsource-variable/urbanist";
+import "@fontsource-variable/raleway";
+import "@fontsource-variable/montserrat";
+import "@fontsource-variable/quicksand";
 
 const { pageImage } = Astro.props;
 ---
 
-<html lang="en" class="scroll-smooth font-sans">
+<html lang="en">
   <head>
     <BaseHead
       title="Discovery Flight Form | Summit Flight Academy"
@@ -15,25 +19,31 @@ const { pageImage } = Astro.props;
       keywords="Discovery flight, form, submission, Summit Flight Academy, flight training, pilot training"
     />
   </head>
-  <div
-    class="grid place-items-center py-10 px-5 lg:pb-24 bg-gradient-to-br from-black to-red-950 text-white"
-  >
-    <header class="grid place-items-center">
-      <h1 class="text-3xl text-center">
-        Discovery flight at <span class="text-red-400">Summit</span>
-      </h1>
-      <p class="italic text-center pt-5 text-gray-300">
-        Fill out the form below and let's start flying! A Summit team member
-        will get in touch with you and walk you through the next steps on
-        getting you in the air.
-      </p>
-    </header>
-    <div class="bg-white text-black m-5 p-5 max-w-2xl w-full rounded-xl">
-      <div class="">
-        <DiscoveryForm />
+  <body class="scroll-smooth font-sans">
+    <div
+      class="grid place-items-center py-24 px-5 lg:pb-24 bg-gradient-to-b from-gray-900 to-gray-700 text-gray-50"
+    >
+      <header class="grid place-items-center">
+        <h1 class="text-5xl text-center font-semibold">
+          Discovery flight at <br /><span class="text-main-red text-6xl"
+            >Summit</span
+          >
+        </h1>
+        <p class="italic text-center pt-5 text-gray-300">
+          Fill out the form below and let's start flying! A Summit team member
+          will get in touch with you and walk you through the next steps on
+          getting you in the air.
+        </p>
+      </header>
+      <div
+        class="mt-20 bg-gray-50 text-black py-12 px-6 max-w-3xl w-full rounded"
+      >
+        <div class="">
+          <DiscoveryForm />
+        </div>
       </div>
     </div>
-  </div>
 
-  <FooterContent />
+    <FooterHome />
+  </body>
 </html>
