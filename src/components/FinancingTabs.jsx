@@ -9,7 +9,10 @@ const FinancingTabs = () => {
 
   const stratusFinancial = (
     <>
-      <section className="flex flex-col items-center bg-gradient-to-br from-white to-gray-200">
+      <section
+        id="financing-tabs"
+        className="flex flex-col items-center bg-gradient-to-br from-white to-gray-200"
+      >
         <div className="max-w-7xl px-10 flex flex-col items-center py-10">
           <div className="flex flex-col-reverse lg:flex-row items-center w-full justify-around py-10 gap-10">
             <div>
@@ -71,6 +74,15 @@ const FinancingTabs = () => {
                 </ol>
               </div>
             </div>
+            <div className="mt-12 flex justify-center md:flex-row w-full">
+              <a
+                href="https://stratus.finance/apply/summitflight1286120/"
+                target="_blank"
+                class="btn-red"
+              >
+                Apply Today
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -85,7 +97,7 @@ const FinancingTabs = () => {
           <div className="flex flex-col-reverse lg:flex-row items-center w-full justify-around py-10 gap-10">
             <div>
               <h2 className="text-5xl font-semibold text-center tracking-tight">
-                Finance with Flight Training Finance LLC
+                Finance with Flight Training Finance
               </h2>
               <h3 className="pt-3 text-2xl text-center">
                 Don’t let finances be the limiting factor
@@ -153,27 +165,15 @@ const FinancingTabs = () => {
               Flight Training Finance will help you get in the air with
               affordable financing options for your flight training.
             </p>
-            <p className="pt-10 font-semibold text-xl">Additional Resources</p>
-            <ul className="list-disc pl-10">
-              <li>
-                <a
-                  href="../../public/files/ftf-program-guide.pdf"
-                  download="ftf-program-guide.pdf"
-                  className="hover:text-blue-800 hover:underline text-blue-600"
-                >
-                  Program Guide
-                </a>
-              </li>
-              <li>
-                <a
-                  href="../../public/files/ftf-brochure.pdf"
-                  download="ftf-brochure.pdf"
-                  className="hover:text-blue-800 hover:underline text-blue-600"
-                >
-                  FTF Brochure
-                </a>
-              </li>
-            </ul>
+          </div>
+          <div className="mt-12 flex justify-center md:flex-row w-full">
+            <a
+              href="http://flighttrainingfinancellc.com/summit%20/"
+              target="_blank"
+              class="btn-red"
+            >
+              Apply Today
+            </a>
           </div>
         </div>
       </section>
@@ -205,8 +205,65 @@ const FinancingTabs = () => {
           <div className="tracking-wider">
             <p className="pt-5">
               AOPA's financing program works directly with students to finance
-              smaller scale training programs.
+              smaller scale training programs. Put your loan to work right now
+              and get on your way as a better trained, more proficient pilot.
             </p>
+            <div className="flex flex-col md:flex-row w-full gap-5">
+              <div className="flex-1">
+                <p className="pt-5 font-semibold text-center lg:text-left text-lg">
+                  Get Started Now
+                </p>
+                <p className="mt-2">
+                  Before you get started here’s a list of things you will need
+                  to complete the application process:
+                </p>
+                <ul className="mt-4 list-disc pl-10">
+                  <li>
+                    Complete street address, phone number and email address.
+                  </li>
+                  <li>Social Security Number.</li>
+                  <li>
+                    Copy of valid ID and proof of income (paystub, W-2 or signed
+                    tax returns)
+                  </li>
+                </ul>
+              </div>
+              <div className="flex-1">
+                <p className="mt-4 md:pt-5 font-semibold text-center lg:text-left text-lg">
+                  Do you want affordable?
+                </p>
+                <ul className="pl-10 list-decimal">
+                  <li>
+                    Private pilot's license for as little as $150-300 a month*
+                  </li>
+                  <li> Instrument rating for as little as $175 a month*</li>
+                  <li> Multi rating for as little as $75 a month*</li>
+                </ul>
+                <p className="mt-3">
+                  Our flight training loan is not a typical student loan. It is
+                  a line of credit that can be used for any flight training
+                  school or program. You can use the funds to pay the school
+                  directly as you make your way from private pilot to instrument
+                  pilot and beyond.
+                </p>
+              </div>
+            </div>
+            <p className="mt-5 text-sm italic">
+              *Payments are based on the following loan amounts; $6,000-12,000
+              PPL, $7,000 instrument rating and $3,000 multi rating. Flight
+              training costs vary by location, aircraft and other factors. These
+              are minimum required monthly payments based on the loan amounts
+              noted. $25 for every $1,000 borrowed.
+            </p>
+            <div className="mt-12 flex justify-center md:flex-row w-full">
+              <a
+                href="https://finance.aopa.org/flight-training-finance"
+                target="_blank"
+                class="btn-red"
+              >
+                Apply Today
+              </a>
+            </div>
           </div>
         </div>
       </section>

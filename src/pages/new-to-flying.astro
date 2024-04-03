@@ -1,23 +1,19 @@
 ---
-import PageHeader from "../components/PageHeader.astro";
 import DiscoveryFlightCTA from "../components/DiscoveryFlightCTA.astro";
-import ContactUs from "../components/ContactUs.astro";
-import SummitFleetImage from "../../public/img/fromWIX/IMG_3314.jpg";
 import BaseLayout from "../layouts/BaseLayout.astro";
-import Section from "../components/Section.astro";
-import PplProcess from "../components/PplProcess.jsx";
 import UnderHeader from "../components/UnderHeader.astro";
 import BecomePilot from "../components/BecomePilot.astro";
 import QuizCTA from "../components/QuizCTA.astro";
 import StartToday from "../components/StartToday.astro";
 import FAQs from "../components/FAQs";
 import { GeneralFAQs } from "../data/generalFAQs1";
+import EnrollNowCTA from "../components/EnrollNowCTA.astro";
 ---
 
 <BaseLayout
   pageTitle="New to Flying | Summit Flight Academy"
-  pageDescription="Elevate your aviation aspirations with Summit Flight Academy's comprehensive pilot training programs. From PPL to advanced certifications, our expert CFIs guide you through every step. Discover career paths, budget considerations, and more. Start your journey today!"
-  pageKeywords="aviation training, pilot certification, flight school programs, pilot career paths, flight training costs, commercial pilot license, certified flight instructor, aviation education, pilot training academy"
+  pageDescription="Explore the thrilling world of aviation at Summit Flight Academy. Discover why becoming a pilot is a rewarding journey, offering freedom, adventure, and personal growth. Get step-by-step guidance on how to obtain your pilot's license, from enrolling in our comprehensive training programs to passing exams and taking to the skies. Ignite your passion for flight today."
+  pageKeywords="pilot training, become a pilot, flight school, private pilot license, aviation career, discovery flight, flight training programs, commercial pilot certification, instrument rating, multi-engine training, aviation education"
 >
   <!-- <PageHeader
     title="Considering Pilot Training?"
@@ -43,7 +39,7 @@ import { GeneralFAQs } from "../data/generalFAQs1";
     </div>
     <!-- Text -->
     <div
-      class="text-white w-3/4 text-center z-10 flex flex-col items-center gap-4 px-5 h-full justify-center lg:mb-24"
+      class="text-white text-center lg:text-left z-10 flex flex-col items-center gap-4 px-5 h-full justify-end mb-12 lg:mb-24"
     >
       <h1 class="text-5xl font-bold tracking-tight">
         Considering Pilot Training?
@@ -51,7 +47,7 @@ import { GeneralFAQs } from "../data/generalFAQs1";
       <h2 class="text-3xl tracking-wide">
         Learn why we fly in the first place
       </h2>
-      <a href="#contactUs" class="btn-red">Apply Now</a>
+      <a href="/enrollment" target="_blank" class="btn-red">Apply Today</a>
     </div>
   </header>
 
@@ -68,217 +64,7 @@ import { GeneralFAQs } from "../data/generalFAQs1";
 
   <StartToday />
 
-  <!--   <Section reverse={true}>
-    <img
-      slot="image"
-      src="/img/new-to-flying/cessna-student.webp"
-      alt="Jet flying through clouds"
-      class="h-80 lg:h-[450px] object-cover"
-      loading="lazy"
-    />
-    <div slot="content" class="max-w-2xl flex flex-col items-center">
-      <h2 class="text-3xl font-semibold text-center tracking-tight">
-        Flight Training Overview
-      </h2>
-      <div class="text-gray-800 tracking-wider">
-        <p class="pt-5">
-          Allow Summit Flight Academy to guide you to becoming a pilot with
-          our renowned flight training. Our program is meticulously designed to
-          take aspiring pilots from the fundamentals to the heights of flight
-          capability. Guided by our expert CFIs, you'll experience a blend of
-          comprehensive ground school education and hands-on flying, ensuring a
-          well-rounded understanding of the art and science of aviation.
-        </p>
-        <p class="pt-5">
-          From the thrill of your first solo flight to mastering advanced
-          maneuvers, our step-by-step program instills confidence, knowledge,
-          and the skills necessary to fly safely and competently. We would love
-          to be the ones to make your flight dream a reality. Email us or stop
-          by if you’re interested.
-        </p>
-      </div>
-      <a href="/enrollment" target="_blank" class="">
-        <div class="btn-red my-10">Enroll Today</div>
-      </a>
-    </div>
-  </Section>
-
-  <section
-    class="bg-gradient-to-br py-10 px-5 from-main-red to-red-900 text-white"
-  >
-    <div
-      class="max-w-5xl px-10 lg:w-1/2 flex flex-col items-center py-10 mx-auto"
-    >
-      <h2 class="text-3xl font-semibold text-center tracking-tight">
-        It All Starts with Your PPL
-      </h2>
-
-      <h3 class="pt-10 text-xl italic text-center">
-        Becoming a certified pilot with Summit Flight Academy, like many
-        other achievements, has a process. Here's a breakdown of the key stages
-        in your path to obtaining a Private Pilot Certificate (PPL):
-      </h3>
-    </div>
-    <div
-      class="flex flex-col-reverse lg:flex-row-reverse max-w-7xl px-5 mx-auto gap-10"
-    >
-      <img
-        src="/img/new-to-flying/instrument-panel.webp"
-        alt="Student passes checkride at Summit Flight Academy"
-        class="h-80 lg:h-[530px] object-cover lg:flex-1 max-w-2xl mx-auto"
-      />
-
-      <div class="max-w-2xl flex flex-col items-center lg:flex-1 mx-auto">
-        <PplProcess client:visible />
-        <a href="/discovery-flight-form" target="_blank" class="">
-          <div class="btn-black mt-10">Book a Discovery Flight</div>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <Section reverse={true}>
-    <img
-      slot="image"
-      src="/img/new-to-flying/student-passes-checkride.webp"
-      alt="Instrument panel of a Cessna aircraft over El Paso, TX"
-      class="h-80 lg:h-[500px] object-cover"
-      loading="lazy"
-    />
-    <div slot="content" class="max-w-2xl flex flex-col items-center">
-      <h2 class="text-3xl font-semibold text-center tracking-tight">
-        Flight Training Overview
-      </h2>
-      <div class="text-gray-800 tracking-wider">
-        <p class="pt-5">
-          Our training course offering extends well beyond the PPL. No matter
-          where you're starting from, our courses cater to every aspiring
-          aviator's needs. We offer a range of ratings, including Private Pilot,
-          Instrument Rating, Commercial Pilot, and Certified Flight Instructor
-          (CFI). Tailor your training to your goals, and let us guide you to
-          success in the next evolution of your pilot journey.
-        </p>
-      </div>
-      <a href="/flight-programs/training-courses" class="">
-        <div class="btn-red my-10">Our Training Programs</div>
-      </a>
-    </div>
-  </Section>
-
-  <Section red={true}>
-    <img
-      slot="image"
-      src="/img/new-to-flying/aircraft-propeller.webp"
-      alt="Propeller of an aircraft in black and white"
-      class="h-80 lg:h-[550px] object-cover"
-      loading="lazy"
-    />
-    <div slot="content" class="max-w-2xl flex flex-col items-center">
-      <h2 class="text-3xl font-semibold text-center tracking-tight">
-        Budget Considerations
-      </h2>
-      <div class="text-gray-100 tracking-wider">
-        <p class="pt-5">
-          As you embark on your aviation journey, understanding budget
-          considerations is crucial. Summit Flight Academy operates on a
-          pay-as-you-go basis, eliminating the need for down payments or
-          long-term contracts. Whether pursuing a Private Pilot License or
-          advancing to a Commercial Pilot License, we would like to provide
-          color as much as we can into what it can cost to engage in flight
-          training. Please bear in mind that these are not always fixed prices
-          as it takes some students longer than others to advance through
-          training.
-        </p>
-        <p class="pt-5">Estimated Flight Training Costs:</p>
-        <ul class="list-disc ml-5 flex flex-col gap-1">
-          <li>
-            <span class="font-semibold">Private Pilot License:</span> Estimated $12,000
-            to $18,000
-          </li>
-          <li>
-            <span class="font-semibold"
-              >Commercial Pilot License (with no prior experience):</span
-            > Approximately $84,000 for Private Pilot License, Instrument Rating,
-            and Commercial License
-          </li>
-          <li>
-            <span class="font-semibold"
-              >Commercial Pilot License (with PPL):</span
-            > Estimated around $67,000 for Instrument and Commercial Ratings
-          </li>
-        </ul>
-        <p class="pt-5">
-          <span class="font-semibold">Financial Support:</span> As a Part 141 flight
-          school, Summit is uniquely positioned to accept those leveraging their
-          Post-9/11 GI Bills. We also have partnerships with the COOL Program (open
-          to Army/Air Force for financial sponsorship of up to $4,000) and Purdue
-          Global Universities for students looking to pursue flight as a career.
-          For other financing options, please take a look at our Financing page.
-        </p>
-      </div>
-      <a href="/resources/financing" class="">
-        <div class="btn-black my-10">Financing Options</div>
-      </a>
-    </div>
-  </Section>
-
-  <Section reverse={true}>
-    <img
-      slot="image"
-      src={SummitFleetImage.src}
-      alt="Summit fleet on the tarmac outside the school’s hangar"
-      class="h-80 lg:h-[700px] object-cover"
-      loading="lazy"
-    />
-    <div slot="content" class="max-w-2xl flex flex-col items-center">
-      <h2 class="text-3xl font-semibold text-center tracking-tight">
-        Pilot Career Paths
-      </h2>
-      <h3 class="pt-5 text-xl italic text-center">
-        If it’s a career in flight you’re after, then we stand ready at Red
-        Arrow to take you to those heights. Beyond the attainment of your
-        Private Pilot License, our training programs open doors to a multitude
-        of exciting career possibilities.
-      </h3>
-      <div class="text-gray-800 tracking-wider">
-        <p class="pt-5">
-          <span class="font-semibold">Commercial Pilot:</span> Elevate your aviation
-          career by pursuing a Commercial Pilot License. This certification gives
-          you the skills and qualifications necessary to fly for compensation or
-          hire. Whether you aspire to pilot commercial flights, work for airlines,
-          or engage in other commercial aviation roles, the Commercial Pilot License
-          is your gateway to a dynamic and lucrative career.
-        </p>
-        <p class="pt-5">
-          <span class="font-semibold">Flight Instructor:</span> Share your passion
-          for aviation and become a Certified Flight Instructor (CFI). With this
-          certification, you have the opportunity to guide and mentor new students
-          on their journey to becoming pilots. Summit Flight Academy values the
-          importance of experienced instructors, and achieving your CFI opens the
-          door to a fulfilling career in aviation education.
-        </p>
-        <p class="pt-5">
-          <span class="font-semibold">Specializations in Aviation:</span> Our training
-          programs lay the foundation for specialization in unique sectors of aviation.
-          Whether you're interested in aerial surveying, aerial photography, or other
-          specialized roles, Summit Flight Academy equips you with the skills
-          and certifications needed to excel in these distinct and exciting career
-          paths.
-        </p>
-        <p class="pt-5">
-          As you progress through our training programs, we are dedicated to
-          providing you with the knowledge, hands-on experience, and
-          certifications essential for pursuing your dream career.
-        </p>
-      </div>
-      <a href="/about/our-story" class="max-w-min">
-        <div class="btn-red my-10">Why Summit?</div>
-      </a>
-    </div>
-  </Section> -->
-
-  <!-- Call to Action Banner -->
-  <DiscoveryFlightCTA />
+  <EnrollNowCTA />
 
   <!-- FAQs -->
   <FAQs faqs={GeneralFAQs} type="General" client:visible />

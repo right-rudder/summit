@@ -32,7 +32,7 @@ export default function CarouselReviews() {
   return (
     <>
       {reviews && (
-        <section id="reviews" class="w-full m-auto">
+        <section id="reviews" className="w-full m-auto">
           <div className="overflow-hidden relative">
             <div
               className={`flex transition ease-out duration-500`}
@@ -47,9 +47,9 @@ export default function CarouselReviews() {
                       className={`flex-auto mx-auto px-9 lg:px-36 ${current + 1 === r.id ? "opacity-100" : "opacity-0"} transition-opacity duration-1000 ease-out`}
                     >
                       <p className="sr-only">5 out of 5 stars</p>
-                      <div class="flex justify-center align-middle gap-x-1 text-yellow-300">
+                      <div className="flex justify-center align-middle gap-x-1 text-yellow-300">
                         <svg
-                          class="h-5 w-5 flex-none"
+                          className="h-5 w-5 flex-none"
                           viewBox="0 0 20 20"
                           fill="currentColor"
                           aria-hidden="true"
@@ -61,7 +61,7 @@ export default function CarouselReviews() {
                           />
                         </svg>
                         <svg
-                          class="h-5 w-5 flex-none"
+                          className="h-5 w-5 flex-none"
                           viewBox="0 0 20 20"
                           fill="currentColor"
                           aria-hidden="true"
@@ -73,7 +73,7 @@ export default function CarouselReviews() {
                           />
                         </svg>
                         <svg
-                          class="h-5 w-5 flex-none"
+                          className="h-5 w-5 flex-none"
                           viewBox="0 0 20 20"
                           fill="currentColor"
                           aria-hidden="true"
@@ -85,7 +85,7 @@ export default function CarouselReviews() {
                           />
                         </svg>
                         <svg
-                          class="h-5 w-5 flex-none"
+                          className="h-5 w-5 flex-none"
                           viewBox="0 0 20 20"
                           fill="currentColor"
                           aria-hidden="true"
@@ -97,7 +97,7 @@ export default function CarouselReviews() {
                           />
                         </svg>
                         <svg
-                          class="h-5 w-5 flex-none"
+                          className="h-5 w-5 flex-none"
                           viewBox="0 0 20 20"
                           fill="currentColor"
                           aria-hidden="true"

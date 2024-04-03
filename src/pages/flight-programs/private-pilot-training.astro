@@ -1,22 +1,17 @@
 ---
-import PageHeader from "../../components/PageHeader.astro";
-import DiscoveryFlightCTA from "../../components/DiscoveryFlightCTA.astro";
-import ContactUs from "../../components/ContactUs.astro";
 import BaseLayout from "../../layouts/BaseLayout.astro";
-import TrainingCourseList from "../../components/TrainingCourseList.jsx";
 import UnderHeader from "../../components/UnderHeader.astro";
 import PilotRoadmap from "../../components/PilotRoadmap.astro";
 import EnrollNowCTA from "../../components/EnrollNowCTA.astro";
 import OurPackages from "../../components/OurPackages.astro";
-import { imageConfig } from "astro:assets";
 import FAQs from "../../components/FAQs";
 import { privatepilotFAQs } from "../../data/privatePilotFAQs";
 ---
 
 <BaseLayout
-  pageTitle="Training Courses | Summit Flight Academy"
-  pageDescription="Explore a comprehensive range of pilot training courses at Summit Flight Academy. From Private Pilot License (PPL) to Airline and Military programs, discover the perfect training path for your aviation goals. Flexible and accelerated options are available. Train with us and elevate your flight career."
-  pageKeywords="pilot training courses, aviation training programs, flight academy programs, PPL courses, Airline pilot training, Military pilot programs, accelerated pilot training, flexible pilot training, flight school courses, certified flight instructor, aviation career paths"
+  pageTitle="Career | Summit Flight Academy"
+  pageDescription="Embark on your aviation journey with Summit Flight Academy's private pilot training program. Discover the path to obtaining a coveted private pilot certificate, from medical exams and written tests to practical flight training. Our experienced instructors guide you through each step, ensuring you gain the knowledge and skills to safely operate aircraft for personal or recreational purposes. Start your flight training today and unlock the freedom of the skies."
+  pageKeywords="private pilot training, private pilot certificate, how to become a private pilot, flight training program, pilot medical exam, private pilot written exam, private pilot practical exam, pilot certification requirements, aviation training, learn to fly"
 >
   <!-- <PageHeader
     title="How to Become a Private Pilot"
@@ -40,7 +35,7 @@ import { privatepilotFAQs } from "../../data/privatePilotFAQs";
     </div>
 
     <div
-      class="text-white text-center z-10 flex flex-col items-center gap-4 px-5"
+      class="text-white text-center lg:text-left z-10 flex flex-col items-center gap-4 px-5 h-full justify-end mb-12 lg:mb-24"
     >
       <h1 class="text-5xl font-bold tracking-tighter">
         How to Become a Private Pilot
@@ -48,9 +43,7 @@ import { privatepilotFAQs } from "../../data/privatePilotFAQs";
       <h2 class="text-3xl tracking-wide">
         The starting point in all pilot journeys
       </h2>
-      <a href="/enrollment" target="_blank"
-        ><button class="btn-red">Apply Now</button></a
-      >
+      <a href="/enrollment" target="_blank" class="btn-red">Apply Today</a>
     </div>
   </header>
 

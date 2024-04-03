@@ -80,14 +80,14 @@ const Navbar = ({ pathname }) => {
                   />
                   <NavLink
                     pathname={pathname}
-                    menuItem={about}
-                    toggled={about.name === openSubmenu}
+                    menuItem={resources}
+                    toggled={resources.name === openSubmenu}
                     onShow={handleMenuItemClick}
                   />
                   <NavLink
                     pathname={pathname}
-                    menuItem={resources}
-                    toggled={resources.name === openSubmenu}
+                    menuItem={about}
+                    toggled={about.name === openSubmenu}
                     onShow={handleMenuItemClick}
                   />
                   {/* <div>
@@ -166,7 +166,7 @@ const Navbar = ({ pathname }) => {
         <div className="px-4 pb-3 pt-2 flex flex-col">
           <a
             href="/new-to-flying"
-            className={`cursor-pointer text-lg text-white py-5 hover:border-b-2 border-main-red whitespace-nowrap ${
+            className={`cursor-pointer text-xl text-white py-5 hover:border-b-2 border-main-red whitespace-nowrap ${
               pathname === "/discovery-flight" ? "border-b-2" : ""
             }`}
           >

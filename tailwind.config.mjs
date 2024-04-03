@@ -9,25 +9,20 @@ export default {
         "main-red": "#C70009",
       },
       backgroundImage: {
-        home: "url('/img/424764052_300248556373913_8162742436028565876_n (1).jpg')",
+        home: "url('/img/home-header.webp')",
         blog: "url('/img/c1b522_8c1a8368eb464ce4bcae7b7dda097168~mv2.webp')",
-        "two-cessna": "url('/img/fromWIX/AdobeStock_198399440.jpeg')",
-        "our-story": "url('/img/our-story/banner.webp')",
         "our-team": "url('/img/our-team/banner.webp')",
         "our-fleet": "url('/img/our-fleet/banner.webp')",
-        maintenance: "url('/img/maintenance/banner.webp')",
-        "private-pilot":
-          "url('/img/c1b522_4a8105c7c387483691d1432b3866ac28~mv2.webp')",
-        "commercial-pilot":
-          "url('/img/425867522_303524629379639_309923734982898779_n.webp')",
-        military: "url('/img/military/banner.webp')",
+        "private-pilot": "url('/img/private-pilot-header.webp')",
+        "instrument-rating": "url('/img/instrument-rating-header.webp')",
+        "pilot-bundle": "url('/img/pilot-bundle-header.webp')",
+        "commercial-pilot": "url('/img/commercial-pilot-header.webp')",
+        "instructor-training": "url('/img/cfi-header.webp')",
+        "teach-at": "url('/img/teach-at-summit-header.webp')",
         "new-to-flying":
           "url('/img/363431096_191721537226616_5859843225312776391_n.webp')",
-        "university-program": "url('/img/university-program/banner.webp')",
-        "international-program":
-          "url('/img/international-program/banner.webp')",
         "faa-exam-center": "url('/img/faa-exam-center/banner.webp')",
-        financing: "url('/img/financing/banner.webp')",
+        financing: "url('/img/financing-header.webp')",
         "training-courses": "url('/img/training-courses/banner.webp')",
         "discovery-flight": "url('/img/fromWIX/IMG_2053 3_edited(1).jpg')",
         "cfi-and-student": "url('/img/discovery-flight/cfi-and-student.webp')",

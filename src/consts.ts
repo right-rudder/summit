@@ -39,10 +39,10 @@ export const flightPrograms = {
       name: "Private Pilot + Instrument Bundle",
       link: "/flight-programs/private-pilot-instrument-bundle",
     },
-    {
+    /* {
       name: "Multi-Engine Rating",
       link: "/flight-programs/multi-engine-rating",
-    },
+    }, */
   ],
 };
 
@@ -80,8 +80,8 @@ export const resources = {
       link: "/resources/insurance",
     },
     {
-      name: "Download Forms",
-      link: "/resources/download-forms",
+      name: "Forms",
+      link: "/resources/forms",
     },
     {
       name: "FAQs",

@@ -1,22 +1,17 @@
 ---
-import PageHeader from "../../components/PageHeader.astro";
-import DiscoveryFlightCTA from "../../components/DiscoveryFlightCTA.astro";
-import ContactUs from "../../components/ContactUs.astro";
 import BaseLayout from "../../layouts/BaseLayout.astro";
-import TrainingCourseList from "../../components/TrainingCourseList.jsx";
 import UnderHeader from "../../components/UnderHeader.astro";
 import CommercialRoadmap from "../../components/CommercialRoadmap.astro";
 import WhatsNext from "../../components/WhatsNext.astro";
 import CommercialPackage from "../../components/CommercialPackage.astro";
-import { imageConfig } from "astro:assets";
 import FAQs from "../../components/FAQs";
 import { commercialPilotFAQs } from "../../data/commercialPilotFAQs";
 ---
 
 <BaseLayout
-  pageTitle="Training Courses | Summit Flight Academy"
-  pageDescription="Explore a comprehensive range of pilot training courses at Summit Flight Academy. From Private Pilot License (PPL) to Airline and Military programs, discover the perfect training path for your aviation goals. Flexible and accelerated options are available. Train with us and elevate your flight career."
-  pageKeywords="pilot training courses, aviation training programs, flight academy programs, PPL courses, Airline pilot training, Military pilot programs, accelerated pilot training, flexible pilot training, flight school courses, certified flight instructor, aviation career paths"
+  pageTitle="Career | Summit Flight Academy"
+  pageDescription="Take your aviation career to new heights with Summit Flight Academy's Commercial Pilot training program. Gain the expertise and flight experience required to obtain your coveted Commercial Pilot Certificate (CPL), enabling you to fly professionally and get paid for your services. From meeting flight hour requirements and passing written exams to mastering cross-country missions and acing the checkride, our experienced instructors guide you through every step, ensuring you emerge as a highly skilled and qualified commercial pilot."
+  pageKeywords="commercial pilot training, commercial pilot certificate, commercial pilot license (CPL), flight school training, aviation career path, pilot certification requirements, cross-country flight training, commercial pilot checkride, professional pilot opportunities, get paid to fly"
 >
   <!-- <PageHeader
     title="Become a Commercial Pilot"
@@ -40,15 +35,13 @@ import { commercialPilotFAQs } from "../../data/commercialPilotFAQs";
     </div>
 
     <div
-      class="text-white text-center z-10 flex flex-col items-center gap-4 px-5"
+      class="text-white text-center lg:text-left z-10 flex flex-col items-center gap-4 px-5 h-full justify-end mb-12 lg:mb-24"
     >
       <h1 class="text-5xl font-bold tracking-tighter">
         Become a Commercial Pilot
       </h1>
       <h2 class="text-3xl tracking-wide">Get paid to fly!</h2>
-      <a href="/enrollment" target="_blank"
-        ><button class="btn-red">Apply Now</button></a
-      >
+      <a href="/enrollment" target="_blank" class="btn-red">Apply Today</a>
     </div>
   </header>
 
