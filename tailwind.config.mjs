@@ -18,11 +18,13 @@ export default {
         "pilot-bundle": "url('/img/pilot-bundle-header.webp')",
         "commercial-pilot": "url('/img/commercial-pilot-header.webp')",
         "instructor-training": "url('/img/cfi-header.webp')",
+        "forms-library": "url('/img/forms-header.webp')",
         "teach-at": "url('/img/teach-at-summit-header.webp')",
         "new-to-flying":
           "url('/img/363431096_191721537226616_5859843225312776391_n.webp')",
         "faa-exam-center": "url('/img/faa-exam-center/banner.webp')",
         financing: "url('/img/financing-header.webp')",
+        "faqs-header": "url('/img/faqs-header.webp')",
         "training-courses": "url('/img/training-courses/banner.webp')",
         "discovery-flight": "url('/img/fromWIX/IMG_2053 3_edited(1).jpg')",
         "cfi-and-student": "url('/img/discovery-flight/cfi-and-student.webp')",

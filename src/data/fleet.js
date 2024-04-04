@@ -17,7 +17,7 @@ export const fleet = [
       },
     ],
     alt: "Red Bird Cessna 172N at Summit Flight Academy",
-    desc: "The Piper PA-28 series, including the Cherokee, Warrior, and Archer is one of most popular single engine aircraft ever made. It is still in production today and is a favorite for flight training thanks to its safety record, good performance, and ease of operation.",
+    desc: `Piper PA-28 Archer N4353L is a true gem in Summit Flight Academy's training fleet, offering the most utility of the fixed-gear PA-28 line and making it an ideal platform for instrument and commercial pilot training. This beautiful aircraft shines with its highly capable IFR panel, equipped with dual KX 155 NAV/COM radios, a Garmin GNX 375, and a G5 HSI, soon to be upgraded in February 2024 to a state-of-the-art G3X Touch 10.6" touchscreen glass panel, GTN 650, and GFC-500 Autopilot, transforming it into a cutting-edge Technically Advanced Aircraft (TAA). Beyond its impressive avionics, N4353L boasts an exquisite upgraded leather interior, providing a comfortable and stylish cabin environment perfect for cross-country adventures, ensuring an exceptional training experience as you hone your instrument skills or build experience for a commercial certificate.`,
     stats: {
       flightRules: "VFR/IFR",
       crew: 1,

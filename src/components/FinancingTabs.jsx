@@ -210,29 +210,10 @@ const FinancingTabs = () => {
             </p>
             <div className="flex flex-col md:flex-row w-full gap-5">
               <div className="flex-1">
-                <p className="pt-5 font-semibold text-center lg:text-left text-lg">
-                  Get Started Now
-                </p>
-                <p className="mt-2">
-                  Before you get started here’s a list of things you will need
-                  to complete the application process:
-                </p>
-                <ul className="mt-4 list-disc pl-10">
-                  <li>
-                    Complete street address, phone number and email address.
-                  </li>
-                  <li>Social Security Number.</li>
-                  <li>
-                    Copy of valid ID and proof of income (paystub, W-2 or signed
-                    tax returns)
-                  </li>
-                </ul>
-              </div>
-              <div className="flex-1">
                 <p className="mt-4 md:pt-5 font-semibold text-center lg:text-left text-lg">
                   Do you want affordable?
                 </p>
-                <ul className="pl-10 list-decimal">
+                <ul className="pl-10 list-disc">
                   <li>
                     Private pilot's license for as little as $150-300 a month*
                   </li>
@@ -246,6 +227,32 @@ const FinancingTabs = () => {
                   directly as you make your way from private pilot to instrument
                   pilot and beyond.
                 </p>
+              </div>
+              <div className="flex-1">
+                <p className="mt-4 md:pt-5 font-semibold text-center lg:text-left text-lg">
+                  Rates & Terms
+                </p>
+                <ul className="pl-10 list-disc">
+                  <li>Rates start at 13.49% and go up to 15.49% APR.</li>
+                  <li>Minimum credit score of 660</li>
+                  <li>
+                    Payments are $25 for every $1000 in outstanding balance
+                  </li>
+                  <li>There is no loan deferment at this time.</li>
+                  <li>
+                    Credit approval and interest rates are dependent upon the
+                    credit history, income and obligations of the applicant and
+                    co-borrower, if any.
+                  </li>
+                  <li>
+                    Rates are floating based on WSJ Prime rate. With a credit
+                    score of 740 or above it is Prime + 4.99%
+                  </li>
+                  <li>
+                    Total unsecured debt cannot exceed 30% of annual income
+                  </li>
+                  <li>Maximum DTI of 50%</li>
+                </ul>
               </div>
             </div>
             <p className="mt-5 text-sm italic">

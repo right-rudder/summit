@@ -23,7 +23,7 @@ export const FACEBOOK_LINK = "https://www.facebook.com/summitflightacademy/";
 export const INSTAGRAM_LINK = "https://www.instagram.com/summitflightacademy/";
 
 export const flightPrograms = {
-  name: "Private Training",
+  name: "Training",
   className: "flight-programs",
   mobileClassName: "flight-programs-mobile",
   submenu: [
@@ -47,7 +47,7 @@ export const flightPrograms = {
 };
 
 export const career = {
-  name: "Career",
+  name: "Career Track",
   className: "career",
   mobileClassName: "career-mobile",
   submenu: [
@@ -80,7 +80,7 @@ export const resources = {
       link: "/resources/insurance",
     },
     {
-      name: "Forms",
+      name: "Forms Library",
       link: "/resources/forms",
     },
     {

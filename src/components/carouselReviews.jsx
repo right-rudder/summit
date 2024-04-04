@@ -123,7 +123,7 @@ export default function CarouselReviews() {
               })}
             </div>
 
-            <div className="absolute top-0 h-full w-full justify-between items-end py-4 lg:items-center flex text-gray-900/45 px-10 text-5xl">
+            <div className="hidden lg:flex absolute top-0 h-full w-full justify-between items-end py-4 lg:items-center text-gray-900/45 px-10 text-5xl">
               <button onClick={previousSlide}>
                 <BsFillArrowLeftCircleFill />
               </button>

@@ -101,7 +101,7 @@ const Navbar = ({ pathname }) => {
                     </a>
                   </div> */}
                   <a
-                    href="/discovery-flight-form"
+                    href="https://www.flightcircle.com/shop/325431594e72/4000002368"
                     target="_blank"
                     className="btn-red"
                   >
@@ -174,7 +174,7 @@ const Navbar = ({ pathname }) => {
           </a>
           <MobileNavBar pathname={pathname} />
           <a
-            href="/discovery-flight-form"
+            href="https://www.flightcircle.com/shop/325431594e72/4000002368"
             target="_blank"
             className="btn-red place-self-center mt-5"
           >

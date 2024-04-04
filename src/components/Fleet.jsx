@@ -14,12 +14,14 @@ export default function Fleet() {
           <div className="bg-white pt-6 pb-12 px-9 rounded-md text-center text-black h-[99%] w-full max-w-4xl overflow-y-auto">
             <CarouselImages images={fleet[selectedId].images} />
             <h3 className="mt-6 text-xl font-bold leading-8 text-gray-900">
-              {fleet[selectedId].name}
+              {fleet[selectedId].stats.tallNumber}
+              <small> ({fleet[selectedId].name})</small>
             </h3>
-            <p className="text-base italic leading-7 text-gray-600">
+            <h5 className="text-sm italic">{fleet[selectedId].stats.model}</h5>
+            <p className="mt-8 text-base leading-6 text-gray-600 px-6">
               {fleet[selectedId].desc}
             </p>
-            <p className="text-base italic leading-7 text-gray-600">
+            <p className="mt-6 text-base italic leading-7 text-gray-600">
               <strong>Flight Rules:</strong>{" "}
               {fleet[selectedId].stats.flightRules}
             </p>
@@ -73,7 +75,7 @@ export default function Fleet() {
               </div>
               <div className="flex flex-col align-middle justify-center p-9">
                 <h4 className="text-xl text-gray-300 font-bold">
-                  Performance::
+                  Performance:
                 </h4>
                 <ul className="mt-4 list-disc list-inside text-gray-50">
                   <li>
@@ -122,8 +124,7 @@ export default function Fleet() {
               Our Fleet
             </h2>
             <p className="mt-2 text-lg leading-8 text-gray-600">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Temporibus, deserunt. Corrupti, veniam.
+              Click into each plane to view its specs and capabilities
             </p>
           </div>
           <ul
@@ -133,7 +134,7 @@ export default function Fleet() {
             {fleet.map((plane, index) => (
               <li
                 key={plane.id}
-                className="hover:shadow-2xl transition-shadow bg-gray-100 duration-300 ease-in py-4 rounded"
+                className="hover:shadow-xl transition-shadow bg-gray-100 duration-300 ease-in py-4 rounded"
               >
                 <a
                   className={`px-2 lg:px-6 cursor-pointer flex flex-wrap justify-between ${index % 2 === 0 ? "lg:flex-row" : "lg:flex-row-reverse"}`}
@@ -143,7 +144,7 @@ export default function Fleet() {
                     document.body.style.overflow = "hidden";
                   }}
                 >
-                  <div className="w-full lg:w-2/5 aspect-square md:aspect-video lg:aspect-square overflow-hidden rounded">
+                  <div className="w-full lg:w-3/5 aspect-square md:aspect-video lg:aspect-video overflow-hidden rounded">
                     <img
                       className="object-cover w-full h-full hover:scale-110 hover:brightness-110 transition-all duration-700 ease-out"
                       src={plane.images[0].src}
@@ -151,20 +152,18 @@ export default function Fleet() {
                     />
                   </div>
                   <div
-                    className={`w-full lg:w-3/5 lg:px-0 flex flex-col justify-start text-center ${index % 2 === 0 ? "lg:text-left" : "lg:text-right"}`}
+                    className={`w-full lg:w-2/5 lg:px-0 flex flex-col justify-center align-middle text-center ${index % 2 === 0 ? "lg:text-left" : "lg:text-right"}`}
                   >
                     <h3
                       className={`mt-6 ${index % 2 === 0 ? "m-0 lg:ml-6" : "m-0 lg:mr-9 pr-9"} w-full text-3xl font-bold leading-8 text-main-red`}
                     >
-                      {plane.name} {plane.stats.tallNumber}
+                      {plane.stats.tallNumber}
+                      <small> ({plane.name})</small>
                     </h3>
                     <p
                       className={`ml-0 ${index % 2 === 0 ? "m-0 lg:ml-6" : "m-0 lg:mr-9 pr-9"}  w-full mt-1 text-base italic leading-7 text-gray-600`}
                     >
                       {plane.stats.model}
-                    </p>
-                    <p className="ml-0 lg:ml-6 pr-0 lg:pr-12 w-full mt-2 text-base text-justify leading-7 text-gray-600">
-                      {plane.desc}
                     </p>
                     <p
                       className={`ml-0 ${index % 2 === 0 ? "m-0 lg:ml-6" : "m-0 lg:mr-9 pr-9"}  w-full mt-2 text-lg leading-7 text-main-red`}
