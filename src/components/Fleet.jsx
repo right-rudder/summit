@@ -10,98 +10,241 @@ export default function Fleet() {
   return (
     <section id="summit-fleet" className="relative">
       {showModal && (
-        <div className="fixed inset-0 bg-gray-900 bg-opacity-80 flex items-center justify-center z-50">
+        <div className="fixed inset-0 bg-gray-900 bg-opacity-90 flex items-center justify-center z-50">
           <div className="bg-white pt-6 pb-12 px-9 rounded-md text-center text-black h-[99%] w-full max-w-4xl overflow-y-auto">
             <CarouselImages images={fleet[selectedId].images} />
             <h3 className="mt-6 text-xl font-bold leading-8 text-gray-900">
-              {fleet[selectedId].stats.tallNumber}
+              {fleet[selectedId].tailNumber}
               <small> ({fleet[selectedId].name})</small>
             </h3>
-            <h5 className="text-sm italic">{fleet[selectedId].stats.model}</h5>
+            <h5 className="text-sm italic">{fleet[selectedId].model}</h5>
             <p className="mt-8 text-base leading-6 text-gray-600 px-6">
               {fleet[selectedId].desc}
             </p>
             <p className="mt-6 text-base italic leading-7 text-gray-600">
-              <strong>Flight Rules:</strong>{" "}
-              {fleet[selectedId].stats.flightRules}
+              <strong>Flight Rules:</strong> {fleet[selectedId].flightRules}
             </p>
             <p className="text-base italic leading-7 text-gray-600">
-              <strong>Avionics:</strong> {fleet[selectedId].stats.avionics}
+              <strong>Avionics:</strong> {fleet[selectedId].avionics}
             </p>
-            <div className="mt-6 rounded text-left bg-red-700 grid grid-cols-1 lg:grid-cols-2">
-              <div className="flex flex-col align-middle justify-center p-9">
-                <h4 className="text-xl text-gray-300 font-bold">
-                  General Characteristics:
-                </h4>
-                <ul className="mt-4 list-disc list-inside text-gray-50">
-                  <li>
-                    <strong>Crew:</strong> {fleet[selectedId].stats.crew}
-                  </li>
-                  <li>
-                    <strong>Capacity:</strong>{" "}
-                    {fleet[selectedId].stats.capacity}
-                  </li>
-                  <li>
-                    <strong>Length:</strong> {fleet[selectedId].stats.length}
-                  </li>
-                  <li>
-                    <strong>Wingspan:</strong>{" "}
-                    {fleet[selectedId].stats.wingspan}
-                  </li>
-                  <li>
-                    <strong>Height:</strong> {fleet[selectedId].stats.height}
-                  </li>
-                  <li>
-                    <strong>Empty Weight:</strong>{" "}
-                    {fleet[selectedId].stats.emptyWeight}
-                  </li>
-                  <li>
-                    <strong>Gross Weight:</strong>{" "}
-                    {fleet[selectedId].stats.grossWeight}
-                  </li>
-                  <li>
-                    <strong>Max Takeoff Weight:</strong>{" "}
-                    {fleet[selectedId].stats.maxTakeoffWeight}
-                  </li>
-                  <li>
-                    <strong>Powerplant:</strong>{" "}
-                    {fleet[selectedId].stats.powerplant}
-                  </li>
-                  <li>
-                    <strong>Propellers:</strong>{" "}
-                    {fleet[selectedId].stats.propellers}
-                  </li>
-                </ul>
-              </div>
-              <div className="flex flex-col align-middle justify-center p-9">
-                <h4 className="text-xl text-gray-300 font-bold">
-                  Performance:
-                </h4>
-                <ul className="mt-4 list-disc list-inside text-gray-50">
-                  <li>
-                    <strong>Max Speed:</strong>{" "}
-                    {fleet[selectedId].stats.maxSpeed}
-                  </li>
-                  <li>
-                    <strong>Cruise Speed:</strong>{" "}
-                    {fleet[selectedId].stats.cruiseSpeed}
-                  </li>
-                  <li>
-                    <strong>Stall Speed:</strong>{" "}
-                    {fleet[selectedId].stats.stallSpeed}
-                  </li>
-                  <li>
-                    <strong>Range:</strong> {fleet[selectedId].stats.range}
-                  </li>
-                  <li>
-                    <strong>Service Ceiling:</strong>{" "}
-                    {fleet[selectedId].stats.serviceCeiling}
-                  </li>
-                  <li>
-                    <strong>Rate of Climb:</strong>{" "}
-                    {fleet[selectedId].stats.climbRate}
-                  </li>
-                </ul>
+            <div className="p-8 mt-4 rounded text-left bg-red-700">
+              <h3 className="w-full text-center text-white text-2xl font-semibold">
+                Specifications
+              </h3>
+              <div className="mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
+                <div className="rounded flex flex-col align-middle items-center justify-center p-3 lg:p-9 bg-gray-50">
+                  <h4 className="text-xl text-gray-900 font-bold">Exterior:</h4>
+                  <ul className="mt-3 list-disc list-inside text-gray-700">
+                    <li
+                      className={`${fleet[selectedId].specifications.exterior.exteriorHeight ? "" : "hidden"}`}
+                    >
+                      <strong>Exterior Height:</strong>{" "}
+                      {fleet[selectedId].specifications.exterior.exteriorHeight}
+                    </li>
+                    <li
+                      className={`${fleet[selectedId].specifications.exterior.wingSpan ? "" : "hidden"}`}
+                    >
+                      <strong>Wing Span:</strong>{" "}
+                      {fleet[selectedId].specifications.exterior.wingSpan}
+                    </li>
+                    <li
+                      className={`${fleet[selectedId].specifications.exterior.length ? "" : "hidden"}`}
+                    >
+                      <strong>Length:</strong>{" "}
+                      {fleet[selectedId].specifications.exterior.length}
+                    </li>
+                  </ul>
+                </div>
+                <div className="rounded flex flex-col align-middle items-center justify-center p-3 lg:p-9 bg-gray-50">
+                  <h4 className="text-xl text-gray-900 font-bold">
+                    Occupancy:
+                  </h4>
+                  <ul className="mt-3 list-disc list-inside text-gray-700">
+                    <li
+                      className={`${fleet[selectedId].specifications.occupancy.crew ? "" : "hidden"}`}
+                    >
+                      <strong>Crew:</strong>{" "}
+                      {fleet[selectedId].specifications.occupancy.crew}
+                    </li>
+                    <li
+                      className={`${fleet[selectedId].specifications.occupancy.pax ? "" : "hidden"}`}
+                    >
+                      <strong>Passengers:</strong>{" "}
+                      {fleet[selectedId].specifications.occupancy.pax}
+                    </li>
+                  </ul>
+                </div>
+                <div className="rounded flex flex-col align-middle items-center justify-center p-3 lg:p-9 bg-gray-50">
+                  <h4 className="text-xl text-gray-900 font-bold">
+                    Operating Weights:
+                  </h4>
+                  <ul className="mt-3 list-disc list-inside text-gray-700">
+                    <li
+                      className={`${fleet[selectedId].specifications.weights.maxTakeoffWeight ? "" : "hidden"}`}
+                    >
+                      <strong>Max T/O Weight:</strong>{" "}
+                      {
+                        fleet[selectedId].specifications.weights
+                          .maxTakeoffWeight
+                      }
+                    </li>
+                    <li
+                      className={`${fleet[selectedId].specifications.weights.maxLandingWeight ? "" : "hidden"}`}
+                    >
+                      <strong>Max Landing Weight:</strong>{" "}
+                      {
+                        fleet[selectedId].specifications.weights
+                          .maxLandingWeight
+                      }
+                    </li>
+                    <li
+                      className={`${fleet[selectedId].specifications.weights.maxLandingWeight ? "" : "hidden"}`}
+                    >
+                      <strong>Max Landing Weight:</strong>{" "}
+                      {
+                        fleet[selectedId].specifications.weights
+                          .maxLandingWeight
+                      }
+                    </li>
+                    <li
+                      className={`${fleet[selectedId].specifications.weights.emptyWeight ? "" : "hidden"}`}
+                    >
+                      <strong>Empty Weight:</strong>{" "}
+                      {fleet[selectedId].specifications.weights.emptyWeight}
+                    </li>
+                    <li
+                      className={`${fleet[selectedId].specifications.weights.fuelCapacity ? "" : "hidden"}`}
+                    >
+                      <strong>Fuel Capacity:</strong>{" "}
+                      {fleet[selectedId].specifications.weights.fuelCapacity}
+                    </li>
+                    <li
+                      className={`${fleet[selectedId].specifications.weights.usefulPayload ? "" : "hidden"}`}
+                    >
+                      <strong>Payload Useful:</strong>{" "}
+                      {fleet[selectedId].specifications.weights.usefulPayload}
+                    </li>
+                    <li
+                      className={`${fleet[selectedId].specifications.weights.fullFuelPayload ? "" : "hidden"}`}
+                    >
+                      <strong>Payload W/Full Fuel:</strong>{" "}
+                      {fleet[selectedId].specifications.weights.fullFuelPayload}
+                    </li>
+                  </ul>
+                </div>
+                <div className="rounded flex flex-col align-middle items-center justify-center p-3 lg:p-9 bg-gray-50">
+                  <h4 className="text-xl text-gray-900 font-bold">
+                    Performance:
+                  </h4>
+                  <ul className="mt-3 list-disc list-inside text-gray-700">
+                    <li
+                      className={`${fleet[selectedId].specifications.performance.rateOfClimb ? "" : "hidden"}`}
+                    >
+                      <strong>Rate of Climb:</strong>{" "}
+                      {fleet[selectedId].specifications.performance.rateOfClimb}
+                    </li>
+                    <li
+                      className={`${fleet[selectedId].specifications.performance.maxSpeed ? "" : "hidden"}`}
+                    >
+                      <strong>Max Speed:</strong>{" "}
+                      {fleet[selectedId].specifications.performance.maxSpeed}
+                    </li>
+                    <li
+                      className={`${fleet[selectedId].specifications.performance.normalCruiseSpeed ? "" : "hidden"}`}
+                    >
+                      <strong>Normal Cruise:</strong>{" "}
+                      {
+                        fleet[selectedId].specifications.performance
+                          .normalCruiseSpeed
+                      }
+                    </li>
+                    <li
+                      className={`${fleet[selectedId].specifications.performance.economyCruiseSpeed ? "" : "hidden"}`}
+                    >
+                      <strong>Economy Cruise:</strong>{" "}
+                      {
+                        fleet[selectedId].specifications.performance
+                          .economyCruiseSpeed
+                      }
+                    </li>
+                  </ul>
+                </div>
+                <div className="rounded flex flex-col align-middle items-center justify-center p-3 lg:p-9 bg-gray-50">
+                  <h4 className="text-xl text-gray-900 font-bold">Range:</h4>
+                  <ul className="mt-3 list-disc list-inside text-gray-700">
+                    <li
+                      className={`${fleet[selectedId].specifications.range.maxRange ? "" : "hidden"}`}
+                    >
+                      <strong>Max Range:</strong>{" "}
+                      {fleet[selectedId].specifications.range.maxRange}
+                    </li>
+                    <li
+                      className={`${fleet[selectedId].specifications.range.serviceCeiling ? "" : "hidden"}`}
+                    >
+                      <strong>Service Ceiling:</strong>{" "}
+                      {fleet[selectedId].specifications.range.serviceCeiling}
+                    </li>
+                  </ul>
+                </div>
+                <div className="rounded flex flex-col align-middle items-center justify-center p-3 lg:p-9 bg-gray-50">
+                  <h4 className="text-xl text-gray-900 font-bold">
+                    Distances:
+                  </h4>
+                  <ul className="mt-3 list-disc list-inside text-gray-700">
+                    <li
+                      className={`${fleet[selectedId].specifications.distances.takeoffDistance ? "" : "hidden"}`}
+                    >
+                      <strong>Takeoff Distance:</strong>{" "}
+                      {
+                        fleet[selectedId].specifications.distances
+                          .takeoffDistance
+                      }
+                    </li>
+                    <li
+                      className={`${fleet[selectedId].specifications.distances.landingDistance ? "" : "hidden"}`}
+                    >
+                      <strong>Landing Distance:</strong>{" "}
+                      {
+                        fleet[selectedId].specifications.distances
+                          .landingDistance
+                      }
+                    </li>
+                  </ul>
+                </div>
+                <div className="rounded flex flex-col align-middle items-center justify-center p-3 lg:p-9 bg-gray-50">
+                  <h4 className="text-xl text-gray-900 font-bold">
+                    Powerplant:
+                  </h4>
+                  <ul className="mt-3 list-disc list-inside text-gray-700">
+                    <li
+                      className={`${fleet[selectedId].specifications.powerplant.engines ? "" : "hidden"}`}
+                    >
+                      <strong>Engines:</strong>{" "}
+                      {fleet[selectedId].specifications.powerplant.engines}
+                    </li>
+                    <li
+                      className={`${fleet[selectedId].specifications.powerplant.engineManufacturer ? "" : "hidden"}`}
+                    >
+                      <strong>Engine Manufacturer:</strong>{" "}
+                      {
+                        fleet[selectedId].specifications.powerplant
+                          .engineManufacturer
+                      }
+                    </li>
+                    <li
+                      className={`${fleet[selectedId].specifications.powerplant.engineModel ? "" : "hidden"}`}
+                    >
+                      <strong>Engine Model:</strong>{" "}
+                      {fleet[selectedId].specifications.powerplant.engineModel}
+                    </li>
+                    <li
+                      className={`${fleet[selectedId].specifications.powerplant.horsepower ? "" : "hidden"}`}
+                    >
+                      <strong>Engine Power:</strong>{" "}
+                      {fleet[selectedId].specifications.powerplant.horsepower}
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
             <button
@@ -157,19 +300,30 @@ export default function Fleet() {
                     <h3
                       className={`mt-6 ${index % 2 === 0 ? "m-0 lg:ml-6" : "m-0 lg:mr-9 pr-9"} w-full text-3xl font-bold leading-8 text-main-red`}
                     >
-                      {plane.stats.tallNumber}
+                      {plane.tailNumber}
                       <small> ({plane.name})</small>
                     </h3>
                     <p
                       className={`ml-0 ${index % 2 === 0 ? "m-0 lg:ml-6" : "m-0 lg:mr-9 pr-9"}  w-full mt-1 text-base italic leading-7 text-gray-600`}
                     >
-                      {plane.stats.model}
+                      {plane.model}
                     </p>
                     <p
                       className={`ml-0 ${index % 2 === 0 ? "m-0 lg:ml-6" : "m-0 lg:mr-9 pr-9"}  w-full mt-2 text-lg leading-7 text-main-red`}
                     >
-                      Rate: ${plane.stats.rentalPrice} <small>/hour</small>
+                      Rate: ${plane.rentalPrice} <small>/hour</small>
                     </p>
+                    <div
+                      className={`flex mt-6 justify-center ${index % 2 === 0 ? "lg:justify-start lg:ml-6" : "lg:justify-end m-0 lg:mr-6"}`}
+                    >
+                      <a
+                        href="https://forms.zohopublic.com/SummitFlight/form/SFARentalApplication/formperma/u_yUY7ZskEDNvEzx8P4BhNgX1rPaey6LAG_j3dhDnj0"
+                        target="_blank"
+                        className="btn-red"
+                      >
+                        Rent Now
+                      </a>
+                    </div>
                   </div>
                 </a>
               </li>
