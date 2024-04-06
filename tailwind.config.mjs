@@ -24,6 +24,7 @@ export default {
           "url('/img/363431096_191721537226616_5859843225312776391_n.webp')",
         "faa-exam-center": "url('/img/faa-exam-center/banner.webp')",
         financing: "url('/img/financing-header.webp')",
+        "insurance-header": "url('/img/insurance-header.webp')",
         "faqs-header": "url('/img/faqs-header.webp')",
         "training-courses": "url('/img/training-courses/banner.webp')",
         "discovery-flight": "url('/img/fromWIX/IMG_2053 3_edited(1).jpg')",
