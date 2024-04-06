@@ -26,6 +26,7 @@ export default {
         financing: "url('/img/financing-header.webp')",
         "insurance-header": "url('/img/insurance-header.webp')",
         "faqs-header": "url('/img/faqs-header.webp')",
+        "visit-us": "url('/img/visit-us-header.webp')",
         "training-courses": "url('/img/training-courses/banner.webp')",
         "discovery-flight": "url('/img/fromWIX/IMG_2053 3_edited(1).jpg')",
         "cfi-and-student": "url('/img/discovery-flight/cfi-and-student.webp')",

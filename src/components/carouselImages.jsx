@@ -46,7 +46,7 @@ export default function Carouselimages({ images }) {
                     className="flex items-center align-middle min-w-full p-4"
                   >
                     <img
-                      className="object-cover aspect-[4/3] lg:aspect-video"
+                      className="object-cover w-full aspect-[4/3] lg:aspect-video"
                       src={r.src}
                       alt={r.alt}
                     />
