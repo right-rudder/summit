@@ -7,6 +7,9 @@ const QuizModalButton = ({ btnStyle, btnText }) => {
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [userName, setUserName] = useState("");
 
+  const [pursue, setPursue] = useState(false);
+  const [guidance, setGuidance] = useState(false);
+
   const toggleModal = () => {
     console.log(btnStyle);
     setShowModal(!showModal);
@@ -70,7 +73,7 @@ const QuizModalButton = ({ btnStyle, btnText }) => {
             {!formSubmitted && (
               <div className="bg-white p-12 max-w-xl m-4 text-black rounded-md h-full overflow-y-auto">
                 <h2 className="text-2xl text-center font-bold mb-1">
-                  Flight Quiz
+                  Is Flight Training for You?
                 </h2>
                 <p className="text-center text-lg mb-4">
                   Please fill out the form below to get started.
@@ -191,13 +194,32 @@ const QuizModalButton = ({ btnStyle, btnText }) => {
                           className="mx-2"
                           id="other-pursue"
                           name="other-pursue"
+                          checked={pursue}
+                          onChange={() => setPursue(!pursue)}
                         />
                         <label htmlFor="other-pursue">
-                          Other (please specify)
+                          Other <small>(please specify)</small>
                         </label>
                       </div>
                     </fieldset>
                   </div>
+                  {pursue && (
+                    <div className="mb-4">
+                      <label
+                        htmlFor="pursue-other"
+                        className="mb-1 text-gray-800 font-semibold"
+                      >
+                        Please specify what inspires you to pursue a career as a
+                        pilot.
+                        <textarea
+                          id="pursue-other"
+                          name="pursue-other"
+                          rows={2}
+                          className="w-full p-2 border text-black bg-gray-100 border-gray-400 rounded"
+                        />
+                      </label>
+                    </div>
+                  )}
                   <div className="mb-4">
                     <label
                       htmlFor="goals"
@@ -430,13 +452,32 @@ const QuizModalButton = ({ btnStyle, btnText }) => {
                           className="mx-2"
                           id="other-guidance"
                           name="other-guidance"
+                          checked={guidance}
+                          onChange={() => setGuidance(!guidance)}
                         />
                         <label htmlFor="other-guidance">
-                          Other (please specify)
+                          Other <small>(please specify)</small>
                         </label>
                       </div>
                     </fieldset>
                   </div>
+                  {guidance && (
+                    <div className="mb-4">
+                      <label
+                        htmlFor="guidance-other"
+                        className="mb-1 text-gray-800 font-semibold"
+                      >
+                        Please specify the kind of guidance and support you
+                        would prefer from your flight instructor.
+                        <textarea
+                          id="guidance-other"
+                          name="guidance-other"
+                          rows={2}
+                          className="w-full p-2 border text-black bg-gray-100 border-gray-400 rounded"
+                        />
+                      </label>
+                    </div>
+                  )}
                   <div className="mb-4">
                     <label
                       htmlFor="winglift"
