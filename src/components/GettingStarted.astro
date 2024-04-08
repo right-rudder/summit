@@ -1,3 +1,7 @@
+---
+import ContactUsModalButton from "./ContactUsModalButton";
+---
+
 <div class="bg-gray-800 py-16 sm:py-32">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="mx-auto w-full lg:mx-0">
@@ -46,11 +50,16 @@
               our offerings for recreational and career pilot training.
             </p>
             <p class="mt-6">
-              <a
+              <!-- <a
                 href="#"
                 class="text-sm font-semibold leading-6 text-red-100 hover:text-red-500"
                 >Contact Us<span aria-hidden="true">→</span></a
-              >
+              > -->
+              <ContactUsModalButton
+                client:visible
+                btnStyle="text-sm font-semibold leading-6 text-red-100 hover:text-red-500"
+                btnText="→"
+              />
             </p>
           </dd>
         </div>
@@ -88,7 +97,7 @@
             </p>
             <p class="mt-6">
               <a
-                href="#"
+                href="/about/visit-us/"
                 class="text-sm font-semibold leading-6 text-red-100 hover:text-red-500"
                 >Visit Us<span aria-hidden="true">→</span></a
               >
@@ -129,7 +138,7 @@
             </p>
             <p class="mt-6">
               <a
-                href="#"
+                href="/flight-programs/private-pilot-training/"
                 class="text-sm font-semibold leading-6 text-red-100 hover:text-red-500"
                 >Our Training<span aria-hidden="true">→</span></a
               >
@@ -169,7 +178,8 @@
             </p>
             <p class="mt-6">
               <a
-                href="#"
+                href="enrollment"
+                target="_blank"
                 class="text-sm font-semibold leading-6 text-red-100 hover:text-red-500"
                 >Enroll Now<span aria-hidden="true">→</span></a
               >

@@ -1,3 +1,7 @@
+---
+import ContactUsModalButton from "./ContactUsModalButton";
+---
+
 <div class="bg-gray-800 py-16 sm:py-32">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="mx-auto w-full lg:mx-0">
@@ -147,9 +151,11 @@
     <div
       class="mx-auto mt-16 max-w-2xl sm:mt-12 lg:mt-16 lg:max-w-none flex justify-center align-middle"
     >
-      <a href="/enrollment" target="_blank" class="btn-red"
-        >Contact Us for More Information</a
-      >
+      <ContactUsModalButton
+        btnStyle="btn-red"
+        btnText="for More Information"
+        client:load
+      />
     </div>
   </div>
 </div>

@@ -36,7 +36,7 @@ const Navbar = ({ pathname }) => {
   }, []);
 
   return (
-    <nav className="w-full h-0">
+    <nav className="w-full h-0 z-0">
       <div
         className={`${navBar || openMobile ? "bg-gray-900" : "bg-gradient-to-b from-gray-900/50 to-gray-100/0"} duration-300 ease-in`}
       >

@@ -4,8 +4,6 @@ import UnderHeader from "../../components/UnderHeader.astro";
 import CFIRoadmap from "../../components/CFIRoadmap.astro";
 import EnrollNowCTA from "../../components/EnrollNowCTA.astro";
 import CFITypes from "../../components/CFITypes.astro";
-import FAQs from "../../components/FAQs";
-import { commercialPilotFAQs } from "../../data/commercialPilotFAQs";
 ---
 
 <BaseLayout
@@ -58,10 +56,4 @@ import { commercialPilotFAQs } from "../../data/commercialPilotFAQs";
   <CFITypes />
 
   <EnrollNowCTA />
-
-  <FAQs faqs={commercialPilotFAQs} type="Instructor Training" client:visible />
-
-  <!-- <DiscoveryFlightCTA /> -->
-
-  <!-- <ContactUs /> -->
 </BaseLayout>

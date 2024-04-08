@@ -1,6 +1,7 @@
 ---
 import { Icon } from "astro-icon/components";
 import { FACEBOOK_LINK, INSTAGRAM_LINK } from "../consts";
+import ContactUsModalButton from "./ContactUsModalButton";
 
 const {
   title = "What's Next",
@@ -25,7 +26,7 @@ const {
       <p class="px-24 font-light text-lg text-center text-gray-600">
         {body}
       </p>
-      <a href="/" target="_blank" class="mt-9 btn-red"> Contact Us </a>
+      <ContactUsModalButton btnStyle="mt-9 btn-red" btnText="" client:load />
       <div class="mt-8 flex justify-center items-center flex-wrap">
         <p class="text-black w-full text-center">Follow us on social media</p>
         <div class="mt-2 flex justify-center gap-4">
