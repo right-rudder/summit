@@ -1,3 +1,7 @@
+---
+import QuizModalButton from "./QuizModalButton";
+---
+
 <div class="relative bg-gray-900">
   <div
     class="relative h-80 overflow-hidden bg-red-600 md:absolute md:left-0 md:h-full md:w-1/2 lg:w-1/2"
@@ -54,7 +58,11 @@
         insights into whether a future in aviation aligns with your aspirations.
       </p>
       <div class="mt-8">
-        <a href="#" class="btn-red">Take The Quiz</a>
+        <QuizModalButton
+          btnStyle="btn-red"
+          btnText="Take the Quiz"
+          client:visible
+        />
       </div>
     </div>
   </div>

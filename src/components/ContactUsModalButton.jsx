@@ -60,7 +60,7 @@ const ContactUsModalButton = ({ btnStyle, btnText }) => {
         {btnText && <span aria-hidden="true">{btnText}</span>}
       </button>
       {showModal && (
-        <div className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50">
+        <div className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50 overflow-y-auto">
           <div className="bg-white p-12 max-w-md m-4 text-black relative rounded-md">
             {!formSubmitted && (
               <>
