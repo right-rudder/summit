@@ -42,7 +42,10 @@ export default function CarouselReviews() {
             >
               {reviews.map((r) => {
                 return (
-                  <div className="bg-main-red flex items-center align-middle min-w-full px-0 py-24 lg:py-16 lg:px-8">
+                  <div
+                    key={r.id}
+                    className="bg-main-red flex items-center align-middle min-w-full px-0 py-24 lg:py-16 lg:px-8"
+                  >
                     <figure
                       className={`flex-auto mx-auto px-9 lg:px-36 ${current + 1 === r.id ? "opacity-100" : "opacity-0"} transition-opacity duration-1000 ease-out`}
                     >
