@@ -29,7 +29,9 @@ const QuizModalButton = ({ btnStyle, btnText }) => {
     const name = formData.get("firstName");
     setUserName(name);
 
-    const url = "";
+    const url =
+      "https://services.leadconnectorhq.com/hooks/U9ULEEpmYvsaAGJyX7Wn/webhook-trigger/b9535408-58fd-48e1-8de7-0f311dab6fb2";
+
     fetch(url, {
       method: "POST",
       body: new URLSearchParams(formData),
@@ -68,8 +70,8 @@ const QuizModalButton = ({ btnStyle, btnText }) => {
         {btnText}
       </button>
       {showModal && (
-        <div id="quiz-modal" className="relative">
-          <div className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50">
+        <div id="quiz-modal" className="relative z-50">
+          <div className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center">
             {!formSubmitted && (
               <div className="bg-white p-12 max-w-xl m-4 text-black rounded-md h-full overflow-y-auto">
                 <h2 className="text-2xl text-center font-bold mb-1">

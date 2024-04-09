@@ -24,7 +24,9 @@ const ContactUsModalButton = ({ btnStyle, btnText }) => {
     const name = formData.get("firstName");
     setUserName(name);
 
-    const url = "";
+    const url =
+      "https://services.leadconnectorhq.com/hooks/U9ULEEpmYvsaAGJyX7Wn/webhook-trigger/VAPtgklteM3FyxMATB6b";
+
     fetch(url, {
       method: "POST",
       body: new URLSearchParams(formData),
@@ -60,10 +62,12 @@ const ContactUsModalButton = ({ btnStyle, btnText }) => {
         {btnText && <span aria-hidden="true">{btnText}</span>}
       </button>
       {showModal && (
-        <div className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50 overflow-y-auto">
-          <div className="bg-white p-12 max-w-md m-4 text-black relative rounded-md">
+        <div className="fixed h-screen inset-0 bg-black bg-opacity-70 flex items-center justify-center">
+          <div
+            className={`relative bg-white p-12 max-w-xl m-4 text-black rounded-md h-full ${window.scrollY >= 60 ? "lg:h-3/4" : "lg:h-3/5"} overflow-y-auto`}
+          >
             {!formSubmitted && (
-              <>
+              <div>
                 <h2 className="text-2xl text-center font-bold mb-1">
                   Contact Us
                 </h2>
@@ -157,7 +161,7 @@ const ContactUsModalButton = ({ btnStyle, btnText }) => {
                     Submit
                   </button>
                 </form>
-              </>
+              </div>
             )}
 
             {formSubmitted && (
@@ -190,7 +194,6 @@ const ContactUsModalButton = ({ btnStyle, btnText }) => {
                 </p>
               </div>
             )}
-
             <button
               className="bg-main-red p-1 rounded-full absolute top-2 right-2"
               onClick={() => {
