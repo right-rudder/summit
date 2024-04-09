@@ -1,0 +1,50 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { SITE_DESCRIPTION, OG_IMAGE, SITE_KEYWORDS } from "../consts";
+import "@fontsource-variable/urbanist";
+import "@fontsource-variable/raleway";
+---
+
+<html lang="en" class="h-ful scroll-smooth">
+  <head>
+    <BaseHead
+      title="Page Not Found | Summit Flight Academy"
+      description={SITE_DESCRIPTION}
+      image={OG_IMAGE}
+      keywords={SITE_KEYWORDS}
+    />
+  </head>
+  <body class="relative font-sans bg-white h-full">
+    <Header />
+    <main class="relative isolate min-h-screen bg-404 bg-cover bg-center">
+      <!-- bg-overlay to darken -->
+      <div
+        class="absolute bg-gradient-to-b from-black/50 to-black/10 w-full h-full -z-10"
+      >
+      </div>
+      <div
+        class="flex justify-center align-middle mx-auto max-w-7xl px-6 py-32 text-center sm:py-40 lg:px-8 z-50"
+      >
+        <div>
+          <p class="text-8xl font-semibold leading-8 text-white/30">404</p>
+          <h1
+            class="mt-8 text-2xl font-bold tracking-tight text-white sm:text-5xl"
+          >
+            Page not found
+          </h1>
+          <p class="mt-2 text-xl text-white/70 sm:mt-6">
+            Sorry, we couldn’t find the page you’re looking for.
+          </p>
+          <div class="mt-10 flex justify-center">
+            <a href="/" class="btn-red"
+              ><span aria-hidden="true">&larr;</span> Back to home</a
+            >
+          </div>
+        </div>
+      </div>
+    </main>
+    <Footer />
+  </body>
+</html>

@@ -10,6 +10,7 @@ export default {
       },
       backgroundImage: {
         home: "url('/img/home-header.webp')",
+        404: "url('https://source.unsplash.com/random/?clouds/1280x720')",
         blog: "url('/img/c1b522_8c1a8368eb464ce4bcae7b7dda097168~mv2.webp')",
         "our-team": "url('/img/our-team/banner.webp')",
         "our-fleet": "url('/img/our-fleet/banner.webp')",
