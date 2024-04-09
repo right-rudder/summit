@@ -1,5 +1,4 @@
 ---
-import DiscoveryFlightCTA from "../components/DiscoveryFlightCTA.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import UnderHeader from "../components/UnderHeader.astro";
 import BecomePilot from "../components/BecomePilot.astro";
@@ -8,6 +7,7 @@ import StartToday from "../components/StartToday.astro";
 import FAQs from "../components/FAQs";
 import { GeneralFAQs } from "../data/generalFAQs1";
 import EnrollNowCTA from "../components/EnrollNowCTA.astro";
+import EnrollmentModalButton from "../components/enrollmentModalButtom";
 ---
 
 <BaseLayout
@@ -47,7 +47,11 @@ import EnrollNowCTA from "../components/EnrollNowCTA.astro";
       <h2 class="text-3xl tracking-wide">
         Learn why we fly in the first place
       </h2>
-      <a href="/enrollment" target="_blank" class="btn-red">Apply Today</a>
+      <EnrollmentModalButton
+        client:visible
+        btnStyle={"btn-red"}
+        btnText={"Apply Today"}
+      />
     </div>
   </header>
 

@@ -4,6 +4,7 @@ import UnderHeader from "../../components/UnderHeader.astro";
 import CFIRoadmap from "../../components/CFIRoadmap.astro";
 import EnrollNowCTA from "../../components/EnrollNowCTA.astro";
 import CFITypes from "../../components/CFITypes.astro";
+import EnrollmentModalButton from "../../components/enrollmentModalButtom";
 ---
 
 <BaseLayout
@@ -41,7 +42,11 @@ import CFITypes from "../../components/CFITypes.astro";
       <h2 class="text-3xl tracking-wide">
         Teach the next generation of pilots
       </h2>
-      <a href="/enrollment" target="_blank" class="btn-red">Apply Today</a>
+      <EnrollmentModalButton
+        client:visible
+        btnStyle={"btn-red"}
+        btnText={"Apply Today"}
+      />
     </div>
   </header>
 

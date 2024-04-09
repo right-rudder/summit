@@ -1,6 +1,7 @@
 ---
 import HomeLayout from "../../layouts/HomeLayout.astro";
 import FAQsTabs from "../../components/FAQsTabs";
+import ContactUsModalButton from "../../components/ContactUsModalButton";
 ---
 
 <HomeLayout
@@ -24,9 +25,7 @@ import FAQsTabs from "../../components/FAQsTabs";
       <h2 class="text-3xl tracking-wide">
         The answers to your questions all in one place
       </h2>
-      <a href="#frecuently-asked-questions" target="_blank" class="btn-red"
-        >Contact Us</a
-      >
+      <ContactUsModalButton btnStyle={"btn-red"} btnText={""} client:visible />
     </div>
   </header>
   <FAQsTabs client:load />

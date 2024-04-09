@@ -6,6 +6,7 @@ import OurTop from "../components/OurTop.astro";
 import WhySummit from "../components/WhySummit.astro";
 import CarouselReviews from "../components/carouselReviews.jsx";
 import QuizCTA from "../components/QuizCTA.astro";
+import EnrollmentModalButton from "../components/enrollmentModalButtom";
 ---
 
 <HomeLayout
@@ -43,7 +44,12 @@ import QuizCTA from "../components/QuizCTA.astro";
       <h2 class="text-3xl tracking-wide">
         Your Leading Flight School in Kansas City at Lee's Summit Airport
       </h2>
-      <a href="/enrollment" target="_blank" class="btn-red">Apply Today</a>
+      <div></div>
+      <EnrollmentModalButton
+        client:visible
+        btnStyle={"btn-red"}
+        btnText={"Apply Today"}
+      />
     </div>
     <!-- <Partners /> -->
   </header>
