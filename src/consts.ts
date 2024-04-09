@@ -2,12 +2,12 @@
 // You can import this data from anywhere in your site by using the `import` keyword.
 
 //Default SEO
-export const SITE_TITLE = "Summit Flight Academy | Kansas , MO";
+export const SITE_TITLE = "Summit Flight Academy | Lee's Summit, MO";
 export const SITE_DESCRIPTION =
-  "Summit Flight Academy provides aviation training for the Kansas City area. Our flight school reflects our commitment to offering cost effective and secure pathways for aspiring pilots, including private pilot, instrument, commercial, and international student programs. Whether you're utilizing the GI Bill or pursuing a lifelong dream, we ensure a comprehensive and safe journey to earn your wings.";
+  "Summit Flight Academy is a leading flight school in Kansas City, offering a range of pilot training programs including private pilot, instrument rating, commercial pilot, and multi-engine rating. With well-maintained aircraft, experienced instructors, and a supportive environment, they provide quality aviation education for aspiring pilots.";
 export const OG_IMAGE = "/img/fromWIX/SFA-logo.png";
 export const SITE_KEYWORDS =
-  "flight school kansas city, pilot training kansas city, LXT flight school, kansas city flight school, Ft. Bliss Flight school, Ft. Bliss RTAG, Ft. Bliss pilot training, lee's summit flight school,FAA pilot program,  Odessa Texas pilot school, Midland texas flight school  FAA certifications, purdue global aviation, M-1 Visa, foreign pilot licenses, aviation career, Part 141 flight school";
+  "flight school kansas city, pilot training kansas city, private pilot training, instrument rating, commercial pilot training, multi-engine rating, aviation education, learn to fly, discovery flight, career pilot program";
 
 //Customer NAP info
 export const ADDRESS = "2751 NE Douglas St";
