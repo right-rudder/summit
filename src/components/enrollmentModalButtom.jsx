@@ -68,10 +68,10 @@ const EnrollmentModalButton = ({ btnStyle, btnText }) => {
             {!formSubmitted && (
               <div>
                 <h2 className="text-2xl text-center font-bold mb-1">
-                  First Step to Your Dream
+                  Enroll at Summit
                 </h2>
                 <p className="text-center text-lg mb-4">
-                  We'll get back to you as soon as possible.
+                  Please fill out the form below.
                 </p>
                 <form onSubmit={handleSubmit}>
                   <div className="mb-4">
@@ -145,6 +145,80 @@ const EnrollmentModalButton = ({ btnStyle, btnText }) => {
                         required
                       />
                     </label>
+                  </div>
+                  <div className="mb-4">
+                    <fieldset>
+                      <legend className="mb-2 text-gray-800 font-semibold">
+                        Training Program Interest?{" "}
+                        <small>(Check all that apply)</small>
+                      </legend>
+
+                      <div>
+                        <input
+                          type="checkbox"
+                          className="mx-2"
+                          id="private-pilot"
+                          name="private-pilot"
+                        />
+                        <label htmlFor="private-pilot">Private Pilot</label>
+                      </div>
+
+                      <div>
+                        <input
+                          type="checkbox"
+                          className="mx-2"
+                          id="instrument-rating"
+                          name="instrument-rating"
+                        />
+                        <label htmlFor="instrument-rating">
+                          Instrument Rating
+                        </label>
+                      </div>
+
+                      <div>
+                        <input
+                          type="checkbox"
+                          className="mx-2"
+                          id="instrument-pilot-bundle"
+                          name="instrument-pilot-bundle"
+                        />
+                        <label htmlFor="instrument-pilot-bundle">
+                          Private + Instrument Bundle
+                        </label>
+                      </div>
+
+                      <div>
+                        <input
+                          type="checkbox"
+                          className="mx-2"
+                          id="commercial-license"
+                          name="commercial-license"
+                        />
+                        <label htmlFor="commercial-license">
+                          Commercial License
+                        </label>
+                      </div>
+
+                      <div>
+                        <input
+                          type="checkbox"
+                          className="mx-2"
+                          id="cfi"
+                          name="cfi"
+                        />
+                        <label htmlFor="cfi">CFI</label>
+                      </div>
+
+                      <div>
+                        <input
+                          type="checkbox"
+                          className="mx-2"
+                          id="multiengine"
+                          name="multiengine"
+                        />
+                        <label htmlFor="multiengine">Multi Engine</label>
+                      </div>
+                    </fieldset>
                   </div>
                   <div className="mb-4">
                     <textarea

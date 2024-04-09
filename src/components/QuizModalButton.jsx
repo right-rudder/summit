@@ -295,17 +295,6 @@ const QuizModalButton = ({ btnStyle, btnText }) => {
                           Currently working towards completing a checkride
                         </label>
                       </div>
-
-                      <div>
-                        <input
-                          type="radio"
-                          className="mx-2"
-                          id="louie"
-                          name="experience"
-                          value="louie"
-                        />
-                        <label htmlFor="louie">Louie</label>
-                      </div>
                     </fieldset>
                   </div>
                   <div className="mb-4">
