@@ -30,7 +30,7 @@ const QuizModalButton = ({ btnStyle, btnText }) => {
     setUserName(name);
 
     const url =
-      "https://services.leadconnectorhq.com/hooks/U9ULEEpmYvsaAGJyX7Wn/webhook-trigger/b9535408-58fd-48e1-8de7-0f311dab6fb2";
+      "https://services.leadconnectorhq.com/hooks/U9ULEEpmYvsaAGJyX7Wn/webhook-trigger/51a045fe-f219-46c5-acb3-26a6344429e9";
 
     fetch(url, {
       method: "POST",
