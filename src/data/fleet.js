@@ -18,11 +18,11 @@ export const fleet = [
       },
     ],
     alt: "piper-archer-ii-at-summit-flight-academy",
-    desc: `Piper PA-28 Archer N4353L is a true gem in Summit Flight Academy's training fleet, offering the most utility of the fixed-gear PA-28 line and making it an ideal platform for instrument and commercial pilot training. This beautiful aircraft shines with its highly capable IFR panel, equipped with dual KX 155 NAV/COM radios, a Garmin GNX 375, and a G5 HSI, soon to be upgraded in February 2024 to a state-of-the-art G3X Touch 10.6" touchscreen glass panel, GTN 650, and GFC-500 Autopilot, transforming it into a cutting-edge Technically Advanced Aircraft (TAA). Beyond its impressive avionics, N4353L boasts an exquisite upgraded leather interior, providing a comfortable and stylish cabin environment perfect for cross-country adventures, ensuring an exceptional training experience as you hone your instrument skills or build experience for a commercial certificate.`,
+    desc: `Piper PA-28 Archer N4353L is a true gem in Summit Flight Academy's training fleet, offering the most utility of the fixed-gear PA-28 line and making it an ideal platform for instrument and commercial pilot training. This beautiful aircraft shines with its highly capable IFR panel and boasts an upgraded leather interior, providing a comfortable and stylish cabin environment perfect for cross-country adventures, ensuring an exceptional training experience as you hone your instrument skills or build experience for a commercial certificate.`,
     rentalPrice: 175,
     model: "PA-28-140",
     flightRules: "VFR/IFR",
-    avionics: "Dual NAV/COM, IFR GPS, ADS-B IN/OUT, Wing Leveler",
+    avionics: "Dual NAV/COM, IFR GPS, ADS-B IN/OUT",
     specifications: {
       exterior: {
         exteriorHeight: "7 ft 3 in",
@@ -320,22 +320,22 @@ export const fleet = [
   {
     id: 5,
     tailNumber: "N7664Y",
-    name: "Piper Twin Commanche",
+    name: "Piper Twin Comanche",
     images: [
       {
         src: "/img/our-fleet/N7664Y-1.webp",
-        alt: "piper-twin-commanche-at-summit-flight-academy",
+        alt: "piper-twin-comanche-at-summit-flight-academy",
       },
       {
         src: "/img/our-fleet/N7664Y-2.webp",
-        alt: "piper-twin-commanche-at-summit-flight-academy",
+        alt: "piper-twin-comanche-at-summit-flight-academy",
       },
       {
         src: "/img/our-fleet/N7664Y-3.webp",
-        alt: "piper-twin-commanche-at-summit-flight-academy",
+        alt: "piper-twin-comanche-at-summit-flight-academy",
       },
     ],
-    alt: "piper-twin-commanche-at-summit-flight-academy",
+    alt: "piper-twin-comanche-at-summit-flight-academy",
     desc: `Stay tuned for the arrival of N7664Y, a Piper Twin Comanche aircraft, set to join our fleet in Spring 2024. This addition promises advanced features and capabilities, allowing us to conduct more advanced training like our Multi-Engine Rating.`,
     model: "Coming Spring 2024!",
     /* rentalPrice: 160, */
