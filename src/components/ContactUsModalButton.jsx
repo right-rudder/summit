@@ -167,7 +167,7 @@ const ContactUsModalButton = ({ btnStyle, btnText, btnSymbol }) => {
             {formSubmitted && (
               <div className="text-center">
                 <h1 className="font-bold text-4xl py-10">
-                  Thank you for Contacting Us {userName}.
+                  Thank you for contacting us, {userName}.
                 </h1>
 
                 <div className="flex flex-row justify-center">

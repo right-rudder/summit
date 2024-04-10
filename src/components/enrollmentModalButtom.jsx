@@ -60,7 +60,7 @@ const EnrollmentModalButton = ({ btnStyle, btnText }) => {
       >
         {btnText}
       </button>
-      <div>
+      <div className="z-50">
         {showModal && (
           <div className="fixed z-50 inset-0 bg-black bg-opacity-80 flex items-center justify-center">
             <div

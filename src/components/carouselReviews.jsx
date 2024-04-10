@@ -32,7 +32,7 @@ export default function CarouselReviews() {
   return (
     <>
       {reviews && (
-        <section id="reviews" className="w-full m-auto">
+        <section id="reviews" className="w-full m-auto z-0">
           <div className="overflow-hidden relative">
             <div
               className={`flex transition ease-out duration-500`}
