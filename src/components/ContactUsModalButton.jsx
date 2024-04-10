@@ -2,7 +2,7 @@ import { useState } from "react";
 import { IoMdClose } from "react-icons/io";
 import { PHONE_NUMBER, EMAIL_ADDRESS } from "../consts";
 
-const ContactUsModalButton = ({ btnStyle, btnText }) => {
+const ContactUsModalButton = ({ btnStyle, btnText, btnSymbol }) => {
   const [showModal, setShowModal] = useState(false);
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [userName, setUserName] = useState("");
@@ -58,8 +58,8 @@ const ContactUsModalButton = ({ btnStyle, btnText }) => {
           document.body.style.overflow = "hidden";
         }}
       >
-        Contact Us
-        {btnText && <span aria-hidden="true">{btnText}</span>}
+        {btnText}
+        {btnSymbol && <span aria-hidden="true">{btnSymbol}</span>}
       </button>
       {showModal && (
         <div className="fixed h-screen inset-0 bg-black bg-opacity-70 flex items-center justify-center">

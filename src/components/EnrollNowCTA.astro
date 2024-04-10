@@ -1,5 +1,5 @@
 ---
-
+import EnrollmentModalButton from "./enrollmentModalButtom";
 ---
 
 <section
@@ -17,8 +17,11 @@
       <h3 class="mt-4 font-semibold text-3xl text-center">
         Submit your enrollment interest today
       </h3>
-      <a href="/enrollment" target="_blank" class="mt-6 btn-red">Enroll Today</a
-      >
+      <EnrollmentModalButton
+        btnStyle={"btn-red"}
+        btnText={"Enroll Today"}
+        client:visible
+      />
     </div>
   </div>
 </section>
