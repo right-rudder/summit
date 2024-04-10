@@ -15,7 +15,7 @@ export const ADDRESS2 = "";
 export const ADDRESS_CITY = "Lee's Summit";
 export const ADDRESS_STATE = "MO";
 export const ADDRESS_ZIP = "64064";
-export const PHONE_NUMBER = "816-282-1500";
+export const PHONE_NUMBER = "(816) 296-9892";
 export const EMAIL_ADDRESS = "info@summit-flight.com";
 
 //Social Media Links
