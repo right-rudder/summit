@@ -1,8 +1,8 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
-import UnderHeader from "../../components/UnderHeader.astro";
 import GetInTouch from "../../components/GetInTouch.astro";
 import Location from "../../components/Location.astro";
+import EnrollmentModalButton from "../../components/enrollmentModalButtom";
 ---
 
 <BaseLayout
@@ -21,6 +21,11 @@ import Location from "../../components/Location.astro";
         Visit Summit Flight Academy
       </h1>
       <h2 class="text-3xl tracking-wide">Stop by and see us in person</h2>
+      <EnrollmentModalButton
+        btnStyle={"btn-red"}
+        btnText={"Visit Us"}
+        client:load
+      />
       <!-- <a href="#contactUs" class="btn-red">Meet Summit</a> -->
     </div>
   </header>
