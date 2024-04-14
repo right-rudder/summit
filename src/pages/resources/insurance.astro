@@ -1,0 +1,143 @@
+---
+import HomeLayout from "../../layouts/HomeLayout.astro";
+import WhatsNext from "../../components/WhatsNext.astro";
+---
+
+<HomeLayout
+  pageTitle="Insurance | Summit Flight Academy"
+  pageDescription="Safeguard your aviation endeavors with Summit Flight Academy's reliable insurance solutions. As a responsible renter, obtaining non-owned aviation insurance is crucial for protecting yourself and our aircraft. We've partnered with trusted providers like Marsh McLennan Agency and Global Aerospace Insurance to offer affordable and hassle-free coverage options. Explore our required policy levels, including aircraft hull value, liability, and medical coverage, designed to provide peace of mind during your flights. Apply seamlessly online or contact us for personalized guidance on securing the necessary insurance for your aviation adventures."
+  pageKeywords="non-owned aviation insurance, renter's aircraft insurance, flight school insurance requirements, aircraft liability coverage, aircraft hull value insurance, medical coverage for pilots, affordable pilot insurance, online insurance application, trusted insurance partners, hassle-free policy binding"
+>
+  <!-- Header -->
+  <header
+    class="relative top-0 h-screen-4/5 bg-insurance-header bg-cover bg-center bg-black flex flex-col items-center justify-center"
+  >
+    <!-- bg-overlay to darken -->
+    <div
+      class="absolute bg-gradient-to-b from-black/60 to-black/20 w-full h-full z-0"
+    >
+    </div>
+    <!-- Text -->
+    <div
+      class="text-white text-center lg:text-left z-10 flex flex-col items-center gap-4 px-5 h-full lg:pt-28 justify-center"
+    >
+      <h1 class="text-5xl font-bold tracking-tight">Need insurance to rent?</h1>
+      <h2 class="text-3xl tracking-wide">Check out our partners below</h2>
+      <a href="#marsh-mclennan" class="btn-red">Apply Now</a>
+    </div>
+    <!-- <Partners /> -->
+  </header>
+
+  <section id="why-insurance" class="overflow-hidden bg-white py-16 sm:py-32">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <div
+        class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2"
+      >
+        <div class="lg:ml-auto lg:pl-4 lg:pt-4 text-center lg:text-left">
+          <div class="lg:max-w-lg">
+            <h2 class="text-base font-semibold leading-7 text-red-600">
+              Fly secured
+            </h2>
+            <p
+              class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
+            >
+              Why Do I Need Insurance?
+            </p>
+            <p class="mt-6 text-lg leading-8 text-gray-600">
+              When renting an aircraft, it's a lot like renting a car. Without
+              insurance, the renter is liable for anything and everything.
+            </p>
+            <p class="mt-3 text-lg leading-8 text-gray-600">
+              Similar to car rental agencies, we maintain commercial insurance
+              on our aircraft so they can be used for flight training and rental
+              purposes. However, our policies are intended to protect our
+              aircraft and business.
+            </p>
+            <p class="mt-3 text-lg leading-8 text-gray-600">
+              In the event of a pilot-caused incident, insurance companies will
+              often subrogate (initiate a reimbursement demand) to the
+              responsible party.
+            </p>
+            <p class="mt-3 text-lg leading-8 text-gray-600">
+              We have partnered with the Marsh McLennon Agency and their
+              insurance provider, Global Aerospace Insurance, to easily provide
+              non-owned aviation insurance to our students and renters.
+            </p>
+          </div>
+        </div>
+        <div class="flex items-center justify-center order-first align-middle">
+          <img
+            src="/img/why-insurance.webp"
+            alt="a-pilot-in-the-cockpit-with-hands-on-the-controls"
+            class="w-full lg:w-[40rem] max-w-none object-cover object-left rounded shadow-xl ring-1 ring-gray-400/10"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section
+    id="marsh-mclennan"
+    class="overflow-hidden bg-gray-100 py-24 lg:py-20"
+  >
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <div
+        class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2"
+      >
+        <div class="lg:mr-auto lg:pr-4 lg:pt-4 text-center lg:text-left">
+          <div class="lg:max-w-lg">
+            <h2 class="text-base font-semibold leading-7 text-red-600">
+              Proudly allied
+            </h2>
+            <p
+              class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
+            >
+              Our partnership with MarshMcLennan
+            </p>
+            <p class="mt-6 text-lg leading-8 text-gray-600">
+              Our flight school requires our renters to have a non-owned
+              aviation policy with the following coverage levels:
+            </p>
+            <ul class="mt-4 list-disc list-inside font-medium">
+              <li>Single Engine Land Aircraft Hull Value: $10,000</li>
+              <li>Liability Coverage: $100,00 per person/$500,00 per claim</li>
+              <li>Medical Coverage: $1000/person</li>
+            </ul>
+            <p class="mt-0 mb-4 text-sm leading-2 text-gray-800">
+              <small
+                >The above policy is available for less than the cost of a
+                couple of flight lessons, typically $350 or less depending on
+                the carrier.</small
+              >
+              <br />
+              <small>
+                Students enrolled in one of our flight training packaged
+                programs have the above level of insurance included at no
+                additional charge.
+              </small>
+            </p>
+            <p class="mt-3 text-lg leading-8 text-gray-600">
+              To apply, get a quote, and bind a policy within one business day,
+              please click below:
+            </p>
+            <a
+              href="https://marshmma.aero.insure/dtm/application/pno/us/applicant-information"
+              class="w-full flex justify-center lg:justify-start mt-4"
+            >
+              <div class="btn-red">Apply</div>
+            </a>
+          </div>
+        </div>
+        <div class="flex items-center justify-center align-middle">
+          <img
+            src="/img/marshLogo.png"
+            alt="Plane in the sky"
+            class="w-full lg:w-[40rem] max-w-none object-cover object-left rounded shadow-xl ring-1 ring-gray-400/10"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <WhatsNext />
+</HomeLayout>

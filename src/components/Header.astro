@@ -5,6 +5,6 @@ const { pathname } = Astro.url;
 ---
 
 <Banner />
-<div class="sticky top-0 z-50">
+<div class="sticky inset-0 z-20">
   <Navbar pathname={pathname} client:load />
 </div>

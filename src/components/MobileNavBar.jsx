@@ -27,15 +27,15 @@ const MobileNavBar = ({ pathname }) => {
         onShow={handleClick}
       />
       <MobileNavLink
-        menuItem={about}
-        pathname={pathname}
-        toggled={about.name === open}
-        onShow={handleClick}
-      />
-      <MobileNavLink
         menuItem={resources}
         pathname={pathname}
         toggled={resources.name === open}
+        onShow={handleClick}
+      />
+      <MobileNavLink
+        menuItem={about}
+        pathname={pathname}
+        toggled={about.name === open}
         onShow={handleClick}
       />
     </>

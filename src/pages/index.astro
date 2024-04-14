@@ -1,25 +1,18 @@
 ---
-import PageHeader from "../components/PageHeader.astro";
-import GuideDownload from "../components/GuideDownload.astro";
-import ContactUs from "../components/ContactUs.astro";
 import HomeLayout from "../layouts/HomeLayout.astro";
-import TrainingProgramImage from "../../public/img/fromWIX/IMG_3281_edited.png";
-import DiscoveryFlightImage from "../../public/img/fromWIX/turboprop Single.jpeg";
-import WeAreSummitImage from "../../public/img/fromWIX/AdobeStock_139858404.jpeg";
-import Section from "../components/Section.astro";
 import TryFlyingCTA from "../components/TryFlyingCTA.astro";
 import GettingStarted from "../components/GettingStarted.astro";
 import OurTop from "../components/OurTop.astro";
 import WhySummit from "../components/WhySummit.astro";
-import Partners from "../components/Partners.astro";
-import Carousel from "../components/carouselReviews.jsx";
-import { reviews } from "../data/reviews";
+import CarouselReviews from "../components/carouselReviews.jsx";
+import QuizCTA from "../components/QuizCTA.astro";
+import EnrollmentModalButton from "../components/enrollmentModalButtom";
 ---
 
 <HomeLayout
   pageTitle="Home | Summit Flight Academy"
-  pageDescription="Join Summit Flight Academy for top-notch flight instruction. We welcome students ranging from those in the El Paso, La Cruces, and Santa Teresa areas, international students, and future military pilots. Get to know our M-1 visa programs for international students and the unique military programs we offer as a Part 141 school and Cessna Pilot Center. As the premier flight school in the region, we hold ourselves to the highest standards so that our students can be up in the air in no time."
-  pageKeywords="flight school el paso texas, pilot training santa teresa, KDNA flight school, las cruces flight school, Ft. Bliss Flight school, Ft. Bliss RTAG, Ft. Bliss pilot training, el paso pilot training, Juarez mexico international students, m1 m-1 visa international FAA pilot program,  Odessa Texas pilot school, Midland texas flight school  FAA certifications, purdue global aviation, M-1 Visa, foreign pilot licenses, aviation career, Part 141 flight school"
+  pageDescription="Summit Flight Academy is a leading flight school in Kansas City, offering a range of pilot training programs including private pilot, instrument rating, commercial pilot, and multi-engine rating. With well-maintained aircraft, experienced instructors, and a supportive environment, they provide quality aviation education for aspiring pilots."
+  pageKeywords="flight school kansas city, pilot training kansas city, private pilot training, instrument rating, commercial pilot training, multi-engine rating, aviation education, learn to fly, discovery flight, career pilot program"
 >
   <!-- <PageHeader
     title="Become a Pilot with Summit"
@@ -43,7 +36,7 @@ import { reviews } from "../data/reviews";
     </div>
     <!-- Text -->
     <div
-      class="text-white text-center lg:text-left z-10 flex flex-col items-center gap-4 px-5 h-full justify-center lg:mb-24"
+      class="text-white text-center lg:text-left z-10 flex flex-col items-center gap-4 px-5 h-full lg:pt-28 justify-center"
     >
       <h1 class="text-5xl font-bold tracking-tight">
         Become a Pilot with Summit
@@ -51,7 +44,12 @@ import { reviews } from "../data/reviews";
       <h2 class="text-3xl tracking-wide">
         Your Leading Flight School in Kansas City at Lee's Summit Airport
       </h2>
-      <a href="#contactUs" class="btn-red">Enroll Today</a>
+      <div></div>
+      <EnrollmentModalButton
+        client:visible
+        btnStyle={"btn-red z-0"}
+        btnText={"Apply Today"}
+      />
     </div>
     <!-- <Partners /> -->
   </header>
@@ -60,14 +58,13 @@ import { reviews } from "../data/reviews";
 
   <GettingStarted />
 
-  <Carousel reviews={reviews} client:visible />
+  <CarouselReviews client:load />
 
   <WhySummit />
 
   <OurTop />
 
-  <GuideDownload />
+  <QuizCTA />
 
-  <!-- Contact Us Form -->
-  <ContactUs />
+  <!-- <GuideDownload /> -->
 </HomeLayout>

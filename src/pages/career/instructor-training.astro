@@ -1,17 +1,15 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
-import UnderHeader from "../../components/UnderHeader.astro";
 import CFIRoadmap from "../../components/CFIRoadmap.astro";
 import EnrollNowCTA from "../../components/EnrollNowCTA.astro";
 import CFITypes from "../../components/CFITypes.astro";
-import FAQs from "../../components/FAQs";
-import { commercialPilotFAQs } from "../../data/commercialPilotFAQs";
+import EnrollmentModalButton from "../../components/enrollmentModalButtom";
 ---
 
 <BaseLayout
-  pageTitle="Training Courses | Summit Flight Academy"
-  pageDescription="Explore a comprehensive range of pilot training courses at Summit Flight Academy. From Private Pilot License (PPL) to Airline and Military programs, discover the perfect training path for your aviation goals. Flexible and accelerated options are available. Train with us and elevate your flight career."
-  pageKeywords="pilot training courses, aviation training programs, flight academy programs, PPL courses, Airline pilot training, Military pilot programs, accelerated pilot training, flexible pilot training, flight school courses, certified flight instructor, aviation career paths"
+  pageTitle="Instructor Training | Summit Flight Academy"
+  pageDescription="Inspiring the next generation of pilots begins with exceptional flight instructors. At Summit Flight Academy, our Certified Flight Instructor (CFI) training program equips you with the skills and knowledge to become a highly effective and respected aviation educator. From meeting prerequisites and mastering ground instruction to undergoing practical flight training and acing the checkride, our experienced instructors guide you every step of the way. Unlock the rewarding path of shaping future aviators and join our team of passionate CFIs."
+  pageKeywords="certified flight instructor training, CFI certification program, flight instructor courses, aviation teaching methodologies, practical flight instruction, CFI checkride preparation, become a flight instructor, mentor aspiring pilots, aviation educator career, flight school instructor opportunities"
 >
   <!-- <PageHeader
     title="Become a Commercial Pilot"
@@ -27,7 +25,7 @@ import { commercialPilotFAQs } from "../../data/commercialPilotFAQs";
   /> -->
 
   <header
-    class="relative h-screen-3/4 bg-commercial-pilot bg-cover bg-center bg-black flex flex-col items-center justify-center"
+    class="relative h-screen-3/4 bg-instructor-training bg-cover bg-center bg-black flex flex-col items-center justify-center"
   >
     <div
       class="absolute bg-gradient-to-b from-black/60 to-black/20 w-full h-full z-0"
@@ -35,7 +33,7 @@ import { commercialPilotFAQs } from "../../data/commercialPilotFAQs";
     </div>
 
     <div
-      class="text-white text-center z-10 flex flex-col items-center gap-4 px-5"
+      class="text-white text-center lg:text-left z-10 flex flex-col items-center gap-4 px-5 h-full lg:pt-28 justify-center"
     >
       <h1 class="text-5xl font-bold tracking-tighter">
         Become a Certified Instructor
@@ -43,26 +41,55 @@ import { commercialPilotFAQs } from "../../data/commercialPilotFAQs";
       <h2 class="text-3xl tracking-wide">
         Teach the next generation of pilots
       </h2>
-      <a href="/enrollment" target="_blank"
-        ><button class="btn-red">Apply Now</button></a
-      >
+      <EnrollmentModalButton
+        client:visible
+        btnStyle={"btn-red"}
+        btnText={"Apply Today"}
+      />
     </div>
   </header>
 
-  <UnderHeader
-    title="What is a CFI?"
-    text1=`At Summit Flight Academy, we take immense pride in nurturing the next generation of aviation professionals through our comprehensive Certified Flight Instructor (CFI) training programs. Certified Flight Instructors play a pivotal role in shaping the skills and knowledge of aspiring pilots, serving as mentors, guides, and educators. Our CFI training courses are designed to equip you with the necessary expertise to become an influential and respected instructor, capable of imparting invaluable knowledge and instilling a culture of safety, proficiency, and excellence in your students.`
-  />
+  <section id="what-is-cfi" class="bg-gray-800">
+    <div class="lg:py-16 py-24">
+      <div class="flex items-center justify-center gap-9 md:gap-12 flex-wrap">
+        <div class="md:w-1/4">
+          <h2
+            class="mt-2 text-4xl font-bold tracking-tight leading-tighter text-gray-100 md:text-5xl lg:text-6xl text-center md:text-right px-3 md:px-0"
+          >
+            What is a CFI?
+          </h2>
+        </div>
+        <div class="md:w-1/3 font-extralight">
+          <p
+            class="text-base leading-tight text-white text-center md:text-left px-9 lg:px-0"
+          >
+            At Summit Flight Academy, we take immense pride in nurturing the
+            next generation of aviation professionals through our comprehensive
+            Certified Flight Instructor (CFI) training programs. Certified
+            Flight Instructors play a pivotal role in shaping the skills and
+            knowledge of aspiring pilots, serving as mentors, guides, and
+            educators. Our CFI training courses are designed to equip you with
+            the necessary expertise to become an influential and respected
+            instructor, capable of imparting invaluable knowledge and instilling
+            a culture of safety, proficiency, and excellence in your students.
+          </p>
+          <p
+            class=`mt-4 text-base leading-tight text-white text-center md:text-left px-9 lg:px-0`
+          >
+            We also hire from our CFI graduates on an as-needed basis. If
+            interested in applying to teach at Summit, <a
+              class="text-red-500 hover:text-red-300"
+              href="/career/teach-at-summit">click here</a
+            >.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <CFIRoadmap />
 
   <CFITypes />
 
   <EnrollNowCTA />
-
-  <FAQs faqs={commercialPilotFAQs} type="Instructor Training" client:visible />
-
-  <!-- <DiscoveryFlightCTA /> -->
-
-  <!-- <ContactUs /> -->
 </BaseLayout>

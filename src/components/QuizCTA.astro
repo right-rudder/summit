@@ -1,3 +1,7 @@
+---
+import QuizModalButton from "./QuizModalButton";
+---
+
 <div class="relative bg-gray-900">
   <div
     class="relative h-80 overflow-hidden bg-red-600 md:absolute md:left-0 md:h-full md:w-1/2 lg:w-1/2"
@@ -43,9 +47,8 @@
         Do You Have What It Takes To Be A Pilot?
       </p>
       <p class="mt-6 text-base leading-7 text-gray-200">
-        Are you fascinated by flying and aviation? Have you dreamed of exploring
-        the skies? Do you ever see an aircraft in the sky and wonder What if I
-        was flying that plane?
+        Are you fascinated by flying and aviation? "Have you dreamed of being a
+        pilot? Do you wonder what it takes to fly a plane?"
       </p>
       <p class="mt-6 text-base leading-7 text-gray-200">
         Begin your path to becoming a pilot with our brief quiz. Our quiz is
@@ -54,7 +57,11 @@
         insights into whether a future in aviation aligns with your aspirations.
       </p>
       <div class="mt-8">
-        <a href="#" class="btn-red">Take The Quiz</a>
+        <QuizModalButton
+          btnStyle="btn-red"
+          btnText="Take the Quiz"
+          client:visible
+        />
       </div>
     </div>
   </div>

@@ -1,22 +1,18 @@
 ---
-import PageHeader from "../../components/PageHeader.astro";
-import DiscoveryFlightCTA from "../../components/DiscoveryFlightCTA.astro";
-import ContactUs from "../../components/ContactUs.astro";
 import BaseLayout from "../../layouts/BaseLayout.astro";
-import TrainingCourseList from "../../components/TrainingCourseList.jsx";
 import UnderHeader from "../../components/UnderHeader.astro";
 import InstrumentRoadmap from "../../components/InstrumentRoadmap.astro";
 import EnrollNowCTA from "../../components/EnrollNowCTA.astro";
 import InstrumentPackages from "../../components/InstrumentPackages.astro";
-import { imageConfig } from "astro:assets";
 import FAQs from "../../components/FAQs";
 import { instrumentFAQs } from "../../data/instrumentFAQs";
+import EnrollmentModalButton from "../../components/enrollmentModalButtom";
 ---
 
 <BaseLayout
-  pageTitle="Training Courses | Summit Flight Academy"
-  pageDescription="Explore a comprehensive range of pilot training courses at Summit Flight Academy. From Private Pilot License (PPL) to Airline and Military programs, discover the perfect training path for your aviation goals. Flexible and accelerated options are available. Train with us and elevate your flight career."
-  pageKeywords="pilot training courses, aviation training programs, flight academy programs, PPL courses, Airline pilot training, Military pilot programs, accelerated pilot training, flexible pilot training, flight school courses, certified flight instructor, aviation career paths"
+  pageTitle="Instrument Rating | Summit Flight Academy"
+  pageDescription="Elevate your aviation skills with Summit Flight Academy's in-depth Instrument Rating training program. Learn to navigate challenging weather conditions and broaden your range with our experienced Certified Flight Instructor Instruments (CFII). From intensive flight training to written exams and cross-country flights, we guide you step-by-step to obtain this coveted rating. Enhance your capabilities, unlock new opportunities, and become a proficient instrument-rated pilot."
+  pageKeywords="instrument rating training, instrument rating requirements, instrument flight training, instrument flight rules (IFR), instrument pilot certification, aviation training program, CFII flight instructor, instrument rating checkride, cross-country instrument flight, instrument approaches, in-depth training, flight school"
 >
   <!-- <PageHeader
     title="How to Become a Private Pilot"
@@ -32,7 +28,7 @@ import { instrumentFAQs } from "../../data/instrumentFAQs";
   /> -->
 
   <header
-    class="relative h-screen-3/4 bg-commercial-pilot bg-cover bg-center bg-black flex flex-col items-center justify-center"
+    class="relative h-screen-3/4 bg-instrument-rating bg-cover bg-center bg-black flex flex-col items-center justify-center"
   >
     <div
       class="absolute bg-gradient-to-b from-black/60 to-black/20 w-full h-full z-0"
@@ -40,7 +36,7 @@ import { instrumentFAQs } from "../../data/instrumentFAQs";
     </div>
 
     <div
-      class="text-white text-center z-10 flex flex-col items-center gap-4 px-5"
+      class="text-white text-center lg:text-left z-10 flex flex-col items-center gap-4 px-5 h-full lg:pt-28 justify-center"
     >
       <h1 class="text-5xl font-bold tracking-tighter">
         How to Get an Instrument Rating
@@ -48,7 +44,11 @@ import { instrumentFAQs } from "../../data/instrumentFAQs";
       <h2 class="text-3xl tracking-wide">
         Navigate instrument conditions and expand your range
       </h2>
-      <a href="#" target="_blank"><button class="btn-red">Apply Now</button></a>
+      <EnrollmentModalButton
+        client:visible
+        btnStyle={"btn-red"}
+        btnText={"Apply Today"}
+      />
     </div>
   </header>
 

@@ -1,18 +1,16 @@
 ---
-import PageHeader from "../../components/PageHeader.astro";
 import DiscoveryFlightCTA from "../../components/DiscoveryFlightCTA.astro";
 import BaseLayout from "../../layouts/BaseLayout.astro";
-import UnderHeader from "../../components/UnderHeader.astro";
 import BundlePackages from "../../components/BundlePackages.astro";
-import { imageConfig } from "astro:assets";
 import FAQs from "../../components/FAQs";
 import { bundleFAQs } from "../../data/bundleFAQs";
+import EnrollmentModalButton from "../../components/enrollmentModalButtom";
 ---
 
 <BaseLayout
-  pageTitle="Training Courses | Summit Flight Academy"
-  pageDescription="Explore a comprehensive range of pilot training courses at Summit Flight Academy. From Private Pilot License (PPL) to Airline and Military programs, discover the perfect training path for your aviation goals. Flexible and accelerated options are available. Train with us and elevate your flight career."
-  pageKeywords="pilot training courses, aviation training programs, flight academy programs, PPL courses, Airline pilot training, Military pilot programs, accelerated pilot training, flexible pilot training, flight school courses, certified flight instructor, aviation career paths"
+  pageTitle="Pilot + Instrument Bundle | Summit Flight Academy"
+  pageDescription="Maximize your piloting potential with Summit Flight Academy's bundled Private Pilot + Instrument Rating training package. Designed for pilots seeking long-distance flying capabilities, this comprehensive program equips you with both certifications in one streamlined course. Choose between our 7- or 10-month schedules to fit your timeline, and benefit from cost savings by combining these essential ratings. Unlock the skies and expand your horizons with our efficient, in-depth training approach."
+  pageKeywords="private pilot training, instrument rating training, bundled pilot training, combined pilot certification, cross-country pilot package, long-distance flying, flight school packages, pilot training costs, accelerated pilot training, 7-month pilot program, 10-month pilot program"
 >
   <!-- <PageHeader
     title="How to Become a Private Pilot"
@@ -28,7 +26,7 @@ import { bundleFAQs } from "../../data/bundleFAQs";
   /> -->
 
   <header
-    class="relative h-screen-3/4 bg-commercial-pilot bg-cover bg-center bg-black flex flex-col items-center justify-center"
+    class="relative h-screen-3/4 bg-pilot-bundle bg-cover bg-center bg-black flex flex-col items-center justify-center"
   >
     <div
       class="absolute bg-gradient-to-b from-black/60 to-black/20 w-full h-full z-0"
@@ -36,22 +34,67 @@ import { bundleFAQs } from "../../data/bundleFAQs";
     </div>
 
     <div
-      class="text-white text-center z-10 flex flex-col items-center gap-4 px-5"
+      class="text-white text-center lg:text-left z-10 flex flex-col items-center gap-4 px-5 h-full lg:pt-28 justify-center"
     >
       <h1 class="text-5xl font-bold tracking-tighter">
         Bundle Your Private Pilot + Instrument Rating
       </h1>
       <h2 class="text-3xl tracking-wide">Knock both out in one package</h2>
-      <a href="#" target="_blank"><button class="btn-red">Apply Now</button></a>
+      <EnrollmentModalButton
+        client:visible
+        btnStyle={"btn-red"}
+        btnText={"Apply Today"}
+      />
     </div>
   </header>
 
-  <UnderHeader
-    title="The Summit Bundle"
-    text1=`We call this the "Cross Country Pilot Package". Pilots looking to fly longer distances will benefit from the flexibility that earning an instrument rating on top of a private pilot certificate offers.  To facilitate this, we offer a combined private and instrument package that with the option to complete your training in 7 or 10 months.`
-    text2=`Check out our private and instrument training pages for details on the overall training program. The overall requirements and objectives do not change.`
-    text3=` For this program we offer you special savings for continuing on with your instrument training right after your private training is completed. Like career track programs, staying in the training environment offers you the opportunity to be most efficient with your training program. We offer you two speeds at which to complete this program.​`
-  />
+  <section id="the-summit-bundle" class="bg-gray-800">
+    <div class="lg:py-16 py-24">
+      <div class="flex items-center justify-center gap-9 md:gap-12 flex-wrap">
+        <div class="md:w-1/4">
+          <h2
+            class="mt-2 text-4xl font-bold tracking-tight leading-tighter text-gray-100 md:text-5xl lg:text-6xl text-center md:text-right px-3 md:px-0"
+          >
+            The Summit Bundle
+          </h2>
+        </div>
+        <div class="md:w-1/3 font-extralight">
+          <p
+            class="text-base leading-tight text-white text-center md:text-left px-9 lg:px-0"
+          >
+            We call this the "Cross Country Pilot Package". Pilots looking to
+            fly longer distances will benefit from the flexibility that earning
+            an instrument rating on top of a private pilot certificate offers.
+            To facilitate this, we offer a combined private and instrument
+            package that with the option to complete your training in 7 or 10
+            months.
+          </p>
+          <p
+            class=`mt-4 text-base leading-tight text-white text-center md:text-left px-9 lg:px-0`
+          >
+            Check out our <a
+              class="text-red-500 hover:text-red-300"
+              href="/flight-programs/private-pilot-training">private</a
+            > and <a
+              class="text-red-500 hover:text-red-300"
+              href="/flight-programs/instrument-rating">instrument</a
+            > training pages for details on the overall training program. The overall
+            requirements and objectives do not change.
+          </p>
+          <p
+            class=`mt-4 text-base leading-tight text-white text-center md:text-left px-9 lg:px-0`
+          >
+            For this program we offer you special savings for continuing on with
+            your instrument training right after your private training is
+            completed. Like career track programs, staying in the training
+            environment offers you the opportunity to be most efficient with
+            your training program. We offer you two speeds at which to complete
+            this program.​
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <BundlePackages />
 

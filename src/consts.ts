@@ -2,20 +2,20 @@
 // You can import this data from anywhere in your site by using the `import` keyword.
 
 //Default SEO
-export const SITE_TITLE = "Summit Flight Academy | Kansas , MO";
+export const SITE_TITLE = "Summit Flight Academy | Lee's Summit, MO";
 export const SITE_DESCRIPTION =
-  "Summit Flight Academy provides aviation training for the Kansas City area. Our flight school reflects our commitment to offering cost effective and secure pathways for aspiring pilots, including private pilot, instrument, commercial, and international student programs. Whether you're utilizing the GI Bill or pursuing a lifelong dream, we ensure a comprehensive and safe journey to earn your wings.";
+  "Summit Flight Academy is a leading flight school in Kansas City, offering a range of pilot training programs including private pilot, instrument rating, commercial pilot, and multi-engine rating. With well-maintained aircraft, experienced instructors, and a supportive environment, they provide quality aviation education for aspiring pilots.";
 export const OG_IMAGE = "/img/fromWIX/SFA-logo.png";
 export const SITE_KEYWORDS =
-  "flight school kansas city, pilot training kansas city, LXT flight school, kansas city flight school, Ft. Bliss Flight school, Ft. Bliss RTAG, Ft. Bliss pilot training, lee's summit flight school,FAA pilot program,  Odessa Texas pilot school, Midland texas flight school  FAA certifications, purdue global aviation, M-1 Visa, foreign pilot licenses, aviation career, Part 141 flight school";
+  "flight school kansas city, pilot training kansas city, private pilot training, instrument rating, commercial pilot training, multi-engine rating, aviation education, learn to fly, discovery flight, career pilot program";
 
 //Customer NAP info
-export const ADDRESS = "2751 NE Douglas St, Lee's Summit";
+export const ADDRESS = "2751 NE Douglas St";
 export const ADDRESS2 = "";
 export const ADDRESS_CITY = "Lee's Summit";
 export const ADDRESS_STATE = "MO";
 export const ADDRESS_ZIP = "64064";
-export const PHONE_NUMBER = "816-282-1500";
+export const PHONE_NUMBER = "(816) 296-9892";
 export const EMAIL_ADDRESS = "info@summit-flight.com";
 
 //Social Media Links
@@ -23,52 +23,47 @@ export const FACEBOOK_LINK = "https://www.facebook.com/summitflightacademy/";
 export const INSTAGRAM_LINK = "https://www.instagram.com/summitflightacademy/";
 
 export const flightPrograms = {
-  name: "Private Training",
+  name: "Training",
   className: "flight-programs",
   mobileClassName: "flight-programs-mobile",
   submenu: [
     {
-      name: "Private Pilot Training", 
+      name: "Private Pilot Training",
       link: "/flight-programs/private-pilot-training",
     },
     {
-      name: "Instrument Rating", 
+      name: "Instrument Rating",
       link: "/flight-programs/instrument-rating",
     },
     {
-      name: "Private Pilot + Instrument Bundle", 
+      name: "Private Pilot + Instrument Bundle",
       link: "/flight-programs/private-pilot-instrument-bundle",
     },
-    {
-      name: "Multi-Engine Rating", 
+    /* {
+      name: "Multi-Engine Rating",
       link: "/flight-programs/multi-engine-rating",
-    },
-    {
-      name: "Flight Reviews & IPCs", 
-      link: "/flight-programs/fligh-reviews-ipcs",
-    },
+    }, */
   ],
 };
 
 export const career = {
-  name: "Career",
+  name: "Career Track",
   className: "career",
   mobileClassName: "career-mobile",
   submenu: [
     {
-      name: "Commercial Pilot Training", 
+      name: "Commercial Pilot Training",
       link: "/career/commercial-pilot-training",
     },
     {
-      name: "Instructor Training", 
+      name: "Instructor Training",
       link: "/career/instructor-training",
     },
     {
-      name: "Teach at Summit", 
+      name: "Teach at Summit",
       link: "/career/teach-at-summit",
     },
   ],
-
 };
 
 export const resources = {
@@ -85,8 +80,8 @@ export const resources = {
       link: "/resources/insurance",
     },
     {
-      name: "Download Forms",
-      link: "/resources/download-forms",
+      name: "Forms Library",
+      link: "/resources/forms",
     },
     {
       name: "FAQs",

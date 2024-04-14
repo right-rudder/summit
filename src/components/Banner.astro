@@ -6,12 +6,13 @@ import {
   PHONE_NUMBER,
   EMAIL_ADDRESS,
   ADDRESS,
+  ADDRESS_CITY,
   ADDRESS_STATE,
   ADDRESS_ZIP,
 } from "../consts";
 ---
 
-<div class="w-full bg-gray-900 z-50 relative h-10">
+<div class="w-full bg-gray-900 z-20 relative h-10">
   <div
     class="mx-auto flex max-w-[80rem] items-center h-full justify-between px-4"
   >
@@ -63,7 +64,8 @@ import {
     >
       <Icon name="tabler:map-pin" class="text-white mr-2 text-2xl" />
       <p class="hidden md:flex">
-        {ADDRESS}, {ADDRESS_STATE}
+        {ADDRESS} -
+        {ADDRESS_CITY}, {ADDRESS_STATE}
         {ADDRESS_ZIP}
       </p>
     </a>

@@ -1,282 +1,49 @@
 ---
-import ContactUs from "../../components/ContactUs.astro";
 import HomeLayout from "../../layouts/HomeLayout.astro";
-import ScheduleCallCTA from "../../components/ScheduleCallCTA.astro";
+import FinancingTabs from "../../components/FinancingTabs";
+import EnrollNowCTA from "../../components/EnrollNowCTA.astro";
 ---
 
 <HomeLayout
   pageTitle="Financing | Summit Flight Academy"
-  pageDescription="Explore the financing options available to fund your flight training with Summit Flight Academy. Leverage our partners to ensure finances don’t become the limiting factor in your path to becoming a pilot."
-  pageKeywords="Financing, loans, funding, Meritize, support, student loans"
+  pageDescription="Summit Flight Academy offers financing options through partnerships with Stratus Financial, Flight Training Financing, and AOPA Flight Training Financing. These financing options make flight training affordable whether you're pursuing a pilot career or a personal goal. Our team guides you to the best financing choice for your training and budget needs. Don't let costs hold you back - invest in your aviation goals through our financing partners. Apply online to get started or contact us for further inquiries."
+  pageKeywords="flight training financing, pilot career financing, personal aviation financing, flight school loans, affordable pilot training, financing partnerships, Stratus Financial, Flight Training Financing LLC, AOPA Flight Training Financing, easy financing application, flexible payment options"
 >
   <!-- Header -->
   <header
-    class="relative h-screen-3/4 bg-commercial-pilot bg-cover bg-center bg-black flex flex-col items-center justify-center"
+    class="relative h-screen-3/4 bg-financing bg-cover bg-center bg-black flex flex-col items-center justify-center"
   >
     <!-- bg-overlay to darken -->
     <div class="absolute bg-black/70 w-full h-full z-0"></div>
     <!-- Text -->
     <div
-      class="text-white text-center z-10 flex flex-col items-center gap-4 px-5"
+      class="text-white text-center lg:text-left z-10 flex flex-col items-center gap-4 px-5 h-full lg:pt-28 justify-center"
     >
       <h1 class="text-5xl font-bold tracking-tight">
         How to Access Financing at Summit
       </h1>
-      <h2 class="text-3xl tracking-wide">Our partnership with Meritize</h2>
-      <a href="https://apply.meritize.com/" target="_blank" class="btn-red"
-        >Contact Financing</a
-      >
+      <h2 class="text-3xl tracking-wide">
+        Explore our financing options below
+      </h2>
+      <a href="#financing-tabs" class="btn-red">Contact Financing</a>
     </div>
   </header>
+  <section id="flight-school-reach" class="w-full py-20 bg-gray-300">
+    <h2 class="text-4xl font-bold text-center mb-10 text-main-red">
+      Putting Flight School within Reach
+    </h2>
+    <p class="text-xl text-center max-w-3xl mx-auto text-gray-900">
+      Summit Flight Academy offers financing options through partnerships with
+      Stratus Financial, Flight Training Financing LLC, and AOPA Flight Training
+      Financing. These financing options make flight training affordable whether
+      you're pursuing a pilot career or a personal goal. Our team guides you to
+      the best financing choice for your training and budget needs. Don't let
+      costs hold you back - invest in your aviation goals through our financing
+      partners. Apply online to get started or contact us for further inquiries.
+    </p>
+  </section>
 
-  <!-- <section
-    class="flex flex-col items-center bg-gradient-to-br from-white to-gray-200"
-  >
-    <div class="max-w-7xl px-10 flex flex-col items-center py-10">
-      <h2 class="text-3xl font-semibold text-center tracking-tight">
-        Finance with Meritize
-      </h2>
-      <h3 class="pt-5 text-xl italic">
-        Don’t let finances limit your pilot aspirations
-      </h3>
-      <div class="tracking-wider">
-        <p class="pt-5">
-          Summit has teamed up with the Meritize platform* to offer our
-          students a unique financing option. Meritize works with students,
-          educators, and employers to help people excel in skills-based careers.
-        </p>
-        <p class="pt-5">
-          Meritize knows you are more than your credit score, and that is why
-          they look at your past achievements to enhance your loan options.
-        </p>
-        <p class="pt-5">
-          A few reasons why the Meritize Platform is a great option for students
-          include:
-        </p>
-        <ul class="list-disc pl-10">
-          <li>
-            Fixed and variable interest rates available** Flexible payment
-            options, including deferring full principal and interest payments
-            until 3 months after you complete your training
-          </li>
-          <li>Customer support is available 6 days a week</li>
-          <li>0.25% interest rate deduction if you sign up for autopay***</li>
-        </ul>
-        <p class="pt-5">With a Meritize loan, you can...</p>
-        <ul class="list-disc pl-10">
-          <li>
-            Use your transcript to enhance your credit and improve your loan
-            options
-          </li>
-          <li>Get pre-approved in minutes</li>
-          <li>Fund the full cost of attendance on your own merit</li>
-          <li>Choose affordable fixed or variable rates</li>
-          <li>
-            Repayment terms are flexible by offering deferred payment schedules
-            while you are in school
-          </li>
-          <li>Loan terms up to 20 years</li>
-          <li>
-            Avoid prepayment penalty fees if you choose to pay your loan off
-            early
-          </li>
-          <li>
-            Get access to free Meritize Career Success Services for job and
-            career support
-          </li>
-        </ul>
-        <p class="pt-5">
-          Checking your loan options with Meritize has never been easier. You
-          can fill out a short application to check your loan options without
-          impacting your credit score.
-        </p>
-        <p class="pt-5">
-          If loan options are available to you, Meritize will request your merit
-          information to finalize your application. This could be in the form
-          of:
-        </p>
-        <ul class="list-disc pl-10">
-          <li>
-            Academic Experience (Official or unofficial transcript or HSE
-            certification)
-          </li>
-          <li>Military Experience (DD214)</li>
-        </ul>
-        <p class="pt-5">
-          Want to learn more? Check out their FAQ page here:
-          <a
-            href="https://www.meritize.com/students/faq/"
-            rel="noopener noreferrer"
-            target="_blank"
-            class="hover:text-blue-500"
-            >https://www.meritize.com/students/faq/</a
-          > or give them a call at 833-MERIT-4-U.
-        </p>
-        <p>
-          Ready to see if you qualify? Check your options here:
-          <a
-            href="https://apply.meritize.com/"
-            rel="noopener noreferrer"
-            target="_blank"
-            class="hover:text-blue-500">https://apply.meritize.com/</a
-          >
-        </p>
-        <p class="pt-5">
-          *Summit Flight Academy does not endorse a particular lender, nor is
-          it affiliated with Meritize Financial, Inc. ("Meritize") or the
-          Meritize platform.
-        </p>
-        <p class="pt-5 text-xs">
-          Meritize Lending, LLC, NMLS ID 1661035 (NMLS Consumer Access
-          <a
-            href="https://www.nmlsconsumeraccess.org/"
-            rel="noopener noreferrer"
-            target="_blank"
-            class="hover:text-blue-500">https://www.nmlsconsumeraccess.org/</a
-          >)
-        </p>
-        <p class="pt-1 text-xs">
-          Meritize Financial, Inc. NMLS ID 1986399 (NMLS Consumer Access
-          <a
-            href="https://www.nmlsconsumeraccess.org/"
-            rel="noopener noreferrer"
-            target="_blank"
-            class="hover:text-blue-500">https://www.nmlsconsumeraccess.org/</a
-          >)
-        </p>
-        <p class="pt-1 text-xs">
-          Terms and Conditions apply. Meritize branded loan products are
-          educational loans issued by Meritize Lending, LLC**. Meritize reserves
-          the right to modify or discontinue products and benefits at any time
-          without notice. To qualify, a borrower must be a U.S. citizen,
-          permanent resident or hold an Employment Authorization Document and
-          meet Meritize’s underwriting requirements. If approved for a loan the
-          actual loan amount, term, payment, and APR amount of loan that a
-          customer qualifies for may vary based on credit determination, state
-          law, and other factors. Meritize does not warrant or guarantee any
-          claims made herein, including, but not limited to, gaining admission
-          to a program, concerning the quality or financial strength of any
-          educational institution, securing funding or obtaining employment. Our
-          final loan offer may differ as a result of the school chosen and the
-          associated cost of tuition. Not all schools are eligible for funding.
-          Meritize does not offer educational loans in the following states: IN,
-          ME, ND, NV, SD, VT, WI, WV, WY, PR. All rights reserved.
-        </p>
-        <p class="pt-1 text-xs">
-          **For residents of SC, loan is made by Meritize Financial, Inc.
-        </p>
-        <p class="pt-1 text-xs">*Variable rates are subject to change.</p>
-        <p class="pt-5">
-          Summit has teamed up with the Meritize platform* to offer our
-          student’s a unique financing option. Meritize works with students,
-          educators, and employers to help people excel in skills-based careers.
-        </p>
-        <p class="pt-5">
-          Meritize knows you are more than your credit score, and that is why
-          they look at your past achievements to potentially enhance your loan
-          options.
-        </p>
-        <p class="pt-5">
-          A few reasons why the Meritize Platform is a great option for students
-          include:
-        </p>
-        <ul class="list-disc pl-10">
-          <li>
-            Fixed and variable interest rates available** Flexible payment
-            options, including deferring full principal and interest payments
-            until 3 months after you complete your training
-          </li>
-          <li>Customer support available 6 days a week</li>
-          <li>0.25% interest rate deduction if you sign up for autopay***</li>
-        </ul>
-        <p class="pt-5">
-          Checking your loan options with Meritize has never been easier. You
-          can fill out a short application to check your loan options without
-          impacting your credit score.
-        </p>
-        <p class="pt-5">
-          If loan options are available to you, Meritize will request your merit
-          information to finalize your application. This could be in the form
-          of:
-        </p>
-        <ul class="list-disc pl-10">
-          <li>
-            Academic Experience (Official or unofficial transcript or HSE
-            certification)
-          </li>
-          <li>Military Experience (DD214)</li>
-        </ul>
-        <p class="pt-5">Want to learn more? Check out their FAQ page here:</p>
-        <p>
-          <a
-            href="https://www.meritize.com/students/faq/"
-            rel="noopener noreferrer"
-            target="_blank"
-            class="hover:text-blue-500"
-            >https://www.meritize.com/students/faq/</a
-          > or give them a call at 833-MERIT-4-U.
-        </p>
-        <p>
-          Ready to see if you qualify? Check your options here:
-          <a
-            href="https://apply.meritize.com/"
-            rel="noopener noreferrer"
-            target="_blank"
-            class="hover:text-blue-500">https://apply.meritize.com/</a
-          >
-        </p>
-        <p class="pt-5">
-          *Summit Flight Academy does not endorse a particular lender, nor is
-          it affiliated with Meritize Financial, Inc. ("Meritize") or the
-          Meritize platform.
-        </p>
-        <p class="pt-5 text-xs">
-          Meritize Lending, LLC, NMLS ID 1661035 (NMLS Consumer Access
-          <a
-            href="https://www.nmlsconsumeraccess.org/"
-            rel="noopener noreferrer"
-            target="_blank"
-            class="hover:text-blue-500">https://www.nmlsconsumeraccess.org/</a
-          >)
-        </p>
-        <p class="pt-1 text-xs">
-          Meritize Financial, Inc. NMLS ID 1986399 (NMLS Consumer Access
-          <a
-            href="https://www.nmlsconsumeraccess.org/"
-            rel="noopener noreferrer"
-            target="_blank"
-            class="hover:text-blue-500">https://www.nmlsconsumeraccess.org/</a
-          >)
-        </p>
-        <p class="pt-1 text-xs">
-          Terms and Conditions apply. Meritize branded loan products are
-          educational loans issued by Meritize Lending, LLC**. Meritize reserves
-          the right to modify or discontinue products and benefits at any time
-          without notice. To qualify, a borrower must be a U.S. citizen,
-          permanent resident or hold an Employment Authorization Document and
-          meet Meritize’s underwriting requirements. If approved for a loan the
-          actual loan amount, term, payment, and APR amount of loan that a
-          customer qualifies for may vary based on credit determination, state
-          law, and other factors. Meritize does not warrant or guarantee any
-          claims made herein, including, but not limited to, gaining admission
-          to a program, concerning the quality or financial strength of any
-          educational institution, securing funding or obtaining employment. Our
-          final loan offer may differ as a result of the school chosen and the
-          associated cost of tuition. Not all schools are eligible for funding.
-          Meritize does not offer educational loans in the following states: IN,
-          ME, ND, NV, SD, VT, WI, WV, WY, PR. All rights reserved.
-        </p>
-        <p class="pt-1 text-xs">
-          **For residents of SC, loan is made by Meritize Financial, Inc.
-        </p>
-        <p class="pt-1 text-xs">*Variable rates are subject to change.</p>
-      </div>
-    </div>
-  </section> -->
+  <FinancingTabs client:load />
 
-  <!-- Call to Action Banner -->
-  <!-- <ScheduleCallCTA /> -->
-
-  <!-- Contact Us Form -->
-  <ContactUs />
+  <EnrollNowCTA />
 </HomeLayout>

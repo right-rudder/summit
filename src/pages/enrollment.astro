@@ -2,6 +2,8 @@
 import FooterHome from "../components/FooterHome.astro";
 import EnrollmentForm from "../components/EnrollmentForm.astro";
 import BaseHead from "../components/BaseHead.astro";
+import "@fontsource-variable/raleway";
+import "@fontsource-variable/urbanist";
 
 const { pageImage } = Astro.props;
 ---
@@ -16,13 +18,11 @@ const { pageImage } = Astro.props;
     />
   </head>
   <div
-    class="grid place-items-center py-10 px-5 lg:pb-24 bg-gradient-to-br from-black to-red-950 text-white"
+    class="grid place-items-center py-24 px-5 lg:pb-24 bg-gradient-to-b from-gray-900 to-gray-700 text-gray-50"
   >
     <header class="grid place-items-center">
       <h1 class="text-3xl text-center">
-        Start the enrollment process at <span class="text-red-400"
-          >Summit</span
-        >
+        Start the enrollment process at <span class="text-red-400">Summit</span>
       </h1>
       <p class="italic text-center pt-5 text-gray-300">
         Fill out the form below and let's start flying! A Summit team member

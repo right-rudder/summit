@@ -1,88 +1,50 @@
 ---
-import DiscoveryFlightCTA from "../../components/DiscoveryFlightCTA.astro";
-import ContactUs from "../../components/ContactUs.astro";
 import BaseLayout from "../../layouts/BaseLayout.astro";
-import Location from "../../components/Location.astro";
-import { fleet } from "../../data/fleet";
-import { simulators } from "../../data/simulators";
-import FleetCard from "../../components/FleetCard.astro";
-import SimulatorCard from "../../components/SimulatorCard.astro";
+import UnderHeader from "../../components/UnderHeader.astro";
+import Fleet from "../../components/Fleet";
+import WhatsNext from "../../components/WhatsNext.astro";
 ---
 
 <BaseLayout
   pageTitle="Our Fleet | Summit Flight Academy"
-  pageDescription="Meet the Summit fleet: the plane names, specs, and price per rental hour. These planes are used both for training and rental. Explore our aircraft today and get to know what you’ll be flying!"
-  pageKeywords="Aircraft, fleet, Summit Flight Academy, rentals, book a flight, Cessna 172, Cessna 182, Piper, Flight training"
+  pageDescription="Explore Summit Flight's diverse fleet of Piper aircraft for flight training and rentals. Learn about the reliability and ease of flying offered by Piper models like the Cherokee, Warrior, and Archer. Inquire today for rental availability."
+  pageKeywords="Summit Flight, flight training, rentals, Piper Aircraft, PA-28, Cherokee, Warrior, Archer, Garmin avionics suite"
 >
   <header
-    class="relative h-screen-3/4 bg-commercial-pilot bg-cover bg-center bg-black flex flex-col items-center justify-center"
+    class="relative h-screen-3/4 bg-our-fleet bg-cover bg-center bg-black flex flex-col items-center justify-center"
   >
-    <div class="absolute bg-black/20 w-full h-full z-0"></div>
     <div
-      class="text-white text-center z-10 flex flex-col items-center gap-4 px-5"
+      class="absolute bg-gradient-to-b from-black/50 to-black/20 w-full h-full z-0"
     >
-      <h1 class="text-5xl font-bold tracking-tighter">The Summit Fleet</h1>
+    </div>
+    <div
+      class="text-white text-center lg:text-left z-10 flex flex-col items-center gap-4 px-5 h-full lg:pt-28 justify-center"
+    >
+      <h1 class="text-5xl font-bold tracking-tighter">Meet the Summit Fleet</h1>
       <h2 class="text-3xl tracking-wide">
         Our extensive fleet available for flight training and rentals
       </h2>
-      <a href="/discovery-flight-form" target="_blank" class="btn-red"
-        >Fly High</a
+      <a
+        href="https://forms.zohopublic.com/SummitFlight/form/SFARentalApplication/formperma/u_yUY7ZskEDNvEzx8P4BhNgX1rPaey6LAG_j3dhDnj0"
+        target="_blank"
+        class="btn-red">Inquire About Rentals</a
       >
     </div>
   </header>
 
-  <!--   <section
-    class="flex flex-col items-center px-10 bg-gradient-to-br from-white to-gray-200 py-10"
-  >
-    <div class="max-w-2xl">
-      <h2 class="text-3xl font-semibold text-center tracking-tight">
-        Our Fleet
-      </h2>
-      <h3 class="pt-10 text-xl italic text-center">
-        All airplanes are subject to fuel surcharge. Prices may change, contact
-        us for current prices. Prices do not include tax.
-      </h3>
-    </div>
+  <UnderHeader
+    title="The Pipers"
+    text1="Our fleet at Summit Flight is an all-Piper fleet.  Piper Aircraft continues to build some of the most reliable, docile, easy-to-fly aircraft ever made for the training environment.  Hundreds of thousands of pilots have earned their wings in one of over 144,000 aircraft Piper has built since the 1930s."
+    text2=`Our single engine aircraft are all variants of the Piper "PA-28" model consisting of Piper Cherokees, Warriors, and Archers. Most of our aircraft share a similar panel layout and Garmin avionics suite to assist students with transitioning between aircraft.`
+    text3="We maintain our aircraft in-house and work to quickly address maintenance needs proactively and as they arise."
+  />
 
-    {fleet.map((plane) => <FleetCard plane={plane} />)}
-  </section>
+  <Fleet client:visible />
 
-  <section
-    class="px-10 bg-gradient-to-br from-gray-800 to-black py-10 text-white"
-  >
-    <div class="flex flex-col gap-5 items-center max-w-2xl mx-auto">
-      <h2 class="text-3xl font-semibold text-center tracking-tight">
-        Renter Information
-      </h2>
-      <p class="text-center">
-        If you are NOT one of our current students and would like to rent one of
-        our planes, please download the RENTAL GUIDELINES.
-      </p>
-      <a
-        href="/files/rental-agreement.pdf"
-        download="rental-agreement.pdf"
-        class="btn-red self-center">Download</a
-      >
-    </div>
-  </section>
-
-  <section
-    class="flex flex-col items-center px-10 bg-gradient-to-br from-white to-gray-200 py-10"
-  >
-    <h2 class="text-3xl font-semibold text-center tracking-tight">
-      Our Simulators
-    </h2>
-    <h3 class="pt-10 text-xl italic">
-      Prices may change, contact us for current prices. Prices do not include
-      tax.
-    </h3>
-
-    {simulators.map((simulator) => <SimulatorCard simulator={simulator} />)}
-  </section>
-
-  <Location bgColorRed={true} /> -->
-
-  <DiscoveryFlightCTA />
-
-  <ContactUs />
-</BaseLayout>
+  <WhatsNext
+    title="Interested in Renting?"
+    body="Reach out to us and let Summit Flight Academy get you up in the air shortly."
+    <
+    BaseLayout
+  /></BaseLayout
+>

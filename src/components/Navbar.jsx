@@ -36,7 +36,7 @@ const Navbar = ({ pathname }) => {
   }, []);
 
   return (
-    <nav className="w-full h-0">
+    <nav className="w-full h-0 z-20">
       <div
         className={`${navBar || openMobile ? "bg-gray-900" : "bg-gradient-to-b from-gray-900/50 to-gray-100/0"} duration-300 ease-in`}
       >
@@ -80,14 +80,14 @@ const Navbar = ({ pathname }) => {
                   />
                   <NavLink
                     pathname={pathname}
-                    menuItem={about}
-                    toggled={about.name === openSubmenu}
+                    menuItem={resources}
+                    toggled={resources.name === openSubmenu}
                     onShow={handleMenuItemClick}
                   />
                   <NavLink
                     pathname={pathname}
-                    menuItem={resources}
-                    toggled={resources.name === openSubmenu}
+                    menuItem={about}
+                    toggled={about.name === openSubmenu}
                     onShow={handleMenuItemClick}
                   />
                   {/* <div>
@@ -101,7 +101,7 @@ const Navbar = ({ pathname }) => {
                     </a>
                   </div> */}
                   <a
-                    href="/discovery-flight-form"
+                    href="https://www.flightcircle.com/shop/325431594e72/4000002368"
                     target="_blank"
                     className="btn-red"
                   >
@@ -160,13 +160,13 @@ const Navbar = ({ pathname }) => {
       </div>
 
       <div
-        className={`${openMobile ? "max-h-[36rem]" : "max-h-0"} overflow-hidden transition-[max-height] duration-300 ease-in-out lg:hidden absolute w-full bg-gray-900 bg-opacity-90 -z-10`}
+        className={`${openMobile ? "max-h-[36rem]" : "max-h-0"} overflow-hidden transition-[max-height] duration-300 ease-in-out lg:hidden absolute w-full bg-gray-900 bg-opacity-90`}
         id="mobile-menu"
       >
         <div className="px-4 pb-3 pt-2 flex flex-col">
           <a
             href="/new-to-flying"
-            className={`cursor-pointer text-lg text-white py-5 hover:border-b-2 border-main-red whitespace-nowrap ${
+            className={`cursor-pointer text-xl text-white py-5 hover:border-b-2 border-main-red whitespace-nowrap ${
               pathname === "/discovery-flight" ? "border-b-2" : ""
             }`}
           >
@@ -174,7 +174,7 @@ const Navbar = ({ pathname }) => {
           </a>
           <MobileNavBar pathname={pathname} />
           <a
-            href="/discovery-flight-form"
+            href="https://www.flightcircle.com/shop/325431594e72/4000002368"
             target="_blank"
             className="btn-red place-self-center mt-5"
           >
