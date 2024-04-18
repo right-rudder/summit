@@ -7,7 +7,7 @@ import { Icon } from "astro-icon/components";
 import PageHeader from "../../components/PageHeader.astro";
 
 const posts = (await getCollection("blog")).sort(
-  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
 );
 ---
 
@@ -61,7 +61,6 @@ const posts = (await getCollection("blog")).sort(
                   class={`flex flex-col ${index === 0 ? "gap-1 lg:gap-5" : "gap-1"}`}
                 >
                   <div class="flex items-center gap-1">
-                    <Icon name="healthicons:ui-user-profile" class="text-3xl" />
                     <p class="font-medium text-sm">{post.data.author}</p>
                   </div>
                   <h4
