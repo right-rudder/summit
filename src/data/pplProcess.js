@@ -1,47 +1,32 @@
 export const pplProcess = [
   {
-    title: "1. Enrollment",
+    title: "Private Pilot License",
     content:
-      "Kickstart your flight training by enrolling in our Private Pilot Program. Begin the process by filling out our application form and emailing the required documents to info@flyredarrow.com. For in-person enrollment, bring a photo ID (driver's license) and proof of citizenship (passport or birth certificate).",
+      "Start with the basics of aviation theory and practical flying skills necessary for a Private Pilot License (PPL). This foundational course includes 40 hours of flight training and thorough ground school instruction.",
   },
   {
-    title: "2. Paperwork and Flight Kit",
+    title: "Instrument Rating",
     content:
-      "Upon arriving at our office, our front desk team will assist you in completing additional paperwork and integrating you into our online system. You'll receive a flight kit, including a backpack with an online ground course and essential materials for your at-home training.",
+      "Advance your skills by learning to fly in diverse weather conditions and understand complex navigation systems for Instrument Flight Rules (IFR) certification.",
   },
   {
-    title: "3. Instructor Match",
+    title: "Commercial Pilot License",
     content:
-      "Once the paperwork is complete, we'll match you with an experienced CFI who will guide you through the remaining stages of the program. Your instructor will become your mentor, providing personalized instruction tailored to your learning style and pace.",
+      "Elevate your flying expertise to a professional level with our Commercial Pilot License (CPL) training, focusing on advanced flight techniques and a higher standard of aviation safety.",
   },
   {
-    title: "4. Ground School Education",
+    title: "Multi-Engine Rating",
     content:
-      "Immerse yourself in our comprehensive ground school education. Learn the ins and outs of aviation, covering navigation, weather patterns, regulations, and more. This foundational knowledge is essential for a well-rounded understanding of flying",
+      "Gain proficiency in operating multi-engine aircraft, focusing on the complexities associated with more powerful and sophisticated aircraft systems.",
   },
   {
-    title: "5. Hands-On Flight Training",
+    title: "Certified Flight Instructor (CFI)",
     content:
-      "Transition from the classroom to hands-on flight training. Experience the feeling of taking control of the aircraft under the guidance of your instructor. Master basic maneuvers and gain confidence in handling the aircraft.",
+      "Complete your journey by becoming a flight instructor, empowering you to share your knowledge and passion for flying with aspiring pilots.",
   },
   {
-    title: "6. Solo Flight",
+    title: "Certified Flight Instructor Instrument (CFII)",
     content:
-      "Achieve a significant milestone by completing your first solo flight. This transformative experience marks your growing independence and proficiency as a pilot.",
-  },
-  {
-    title: "7. FAA Written Exam",
-    content:
-      "Complete the FAA written exam, demonstrating your theoretical understanding of aviation. Prepare with the guidance of your instructor to ensure success.",
-  },
-  {
-    title: "8. Checkride",
-    content:
-      "Undergo a checkride with a Summit instructor. This test assesses your ability to apply theoretical knowledge and execute practical flying skills.",
-  },
-  {
-    title: "9. Private Pilot License (PPL)",
-    content:
-      "Upon successful completion of the written exam and checkride, you'll be awarded your Private Pilot License. This certification opens doors to further advancements in your aviation journey.",
+      "Become an expert in instrument flying instruction with our CFII program. You will develop advanced instructional skills for teaching IFR scenarios, preparing you to confidently guide students through complex and varied flight conditions. Our course blends theoretical knowledge with practical experiences, crafting proficient instructors ready to tackle any challenge in instrument flying.",
   },
 ];

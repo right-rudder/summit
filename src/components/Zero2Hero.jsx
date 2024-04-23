@@ -2,7 +2,7 @@ import { useState } from "react";
 import PplStep from "./PplStep";
 import { pplProcess } from "../data/pplProcess";
 
-const PplProcess = () => {
+const Zero2Hero = () => {
   const [open, setOpen] = useState("");
   const handleClick = (e) => {
     if (open === e.target.id) {
@@ -26,4 +26,4 @@ const PplProcess = () => {
   );
 };
 
-export default PplProcess;
+export default Zero2Hero;
