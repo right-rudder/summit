@@ -21,6 +21,7 @@ export default {
         "instructor-training": "url('/img/cfi-header.webp')",
         "forms-library": "url('/img/forms-header.webp')",
         "teach-at": "url('/img/teach-at-summit-header.webp')",
+        "zero-to-hero": "url('/img/zero-to-hero-header.webp')",
         "new-to-flying":
           "url('/img/363431096_191721537226616_5859843225312776391_n.webp')",
         "faa-exam-center": "url('/img/faa-exam-center/banner.webp')",
