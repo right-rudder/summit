@@ -62,9 +62,9 @@ const ContactUsModalButton = ({ btnStyle, btnText, btnSymbol }) => {
         {btnSymbol && <span aria-hidden="true">{btnSymbol}</span>}
       </button>
       {showModal && (
-        <div className="fixed h-screen inset-0 bg-black bg-opacity-70 flex items-center justify-center">
+        <div className="fixed z-50 h-screen inset-0 bg-black bg-opacity-70 flex items-center justify-center">
           <div
-            className={`relative bg-white p-12 max-w-xl m-4 text-black rounded-md h-full ${window.scrollY >= 60 ? "lg:h-3/4" : "lg:h-3/5"} overflow-y-auto`}
+            className={`bg-white p-12 max-w-xl m-4 text-black rounded-md h-full overflow-y-auto`}
           >
             {!formSubmitted && (
               <div>
