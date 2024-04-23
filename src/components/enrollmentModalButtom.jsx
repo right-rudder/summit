@@ -60,231 +60,225 @@ const EnrollmentModalButton = ({ btnStyle, btnText }) => {
       >
         {btnText}
       </button>
-      <div className="z-50">
-        {showModal && (
-          <div className="fixed z-50 inset-0 bg-black bg-opacity-80 flex items-center justify-center">
-            <div
-              className={`relative bg-white p-12 max-w-xl m-4 text-black rounded-md h-full ${window.scrollY >= 60 ? "lg:h-3/4" : "lg:h-3/5"} overflow-y-auto`}
+      {showModal && (
+        <div className="fixed z-50 inset-0 bg-black bg-opacity-80 flex items-center justify-center">
+          <div
+            className={`relative bg-white p-12 max-w-xl m-4 text-black rounded-md h-full ${window.scrollY >= 60 ? "lg:h-3/4" : "lg:h-3/5"} overflow-y-auto`}
+          >
+            <button
+              className="bg-main-red p-1 rounded-full absolute top-2 right-2"
+              onClick={() => {
+                toggleModal();
+                document.body.style.overflow = "auto";
+              }}
             >
-              {!formSubmitted && (
-                <div>
-                  <h2 className="text-2xl text-center font-bold mb-1">
-                    Enroll at Summit
-                  </h2>
-                  <p className="text-center text-lg mb-4">
-                    Please fill out the form below.
-                  </p>
-                  <form onSubmit={handleSubmit}>
-                    <div className="mb-4">
-                      <label
-                        htmlFor="firstName"
-                        className="mb-1 text-gray-800 font-semibold"
-                      >
-                        First Name
-                        <input
-                          type="text"
-                          id="firstName"
-                          name="firstName"
-                          autoComplete="given-name"
-                          className="w-full p-2 border text-black bg-gray-100 border-gray-400 rounded"
-                          required
-                        />
-                      </label>
-                    </div>
-                    <div className="mb-4">
-                      <label
-                        htmlFor="lastName"
-                        className="mb-1 text-gray-800 font-semibold"
-                      >
-                        Last Name
-                        <input
-                          type="text"
-                          id="lastName"
-                          name="lastName"
-                          autoComplete="family-name"
-                          className="w-full p-2 border text-black bg-gray-100 border-gray-400 rounded"
-                          required
-                        />
-                      </label>
-                    </div>
-                    <div className="mb-4">
-                      <label
-                        htmlFor="email"
-                        className="mb-1 text-gray-800 font-semibold"
-                      >
-                        Email Address
-                        <input
-                          type="email"
-                          id="email"
-                          name="email"
-                          autoComplete="email"
-                          className="w-full p-2 border text-black bg-gray-100 border-gray-400 rounded"
-                          required
-                        />
-                      </label>
-                    </div>
-                    <div className="hidden">
-                      <label>
-                        Don't fill this out if you're human:
-                        <input name="confirm-email" />
-                      </label>
-                    </div>
-                    <div className="mb-4">
-                      <label
-                        htmlFor="phone"
-                        className="mb-1 text-gray-800 font-semibold"
-                      >
-                        Phone Number
-                        <input
-                          type="tel"
-                          id="phone"
-                          name="phone"
-                          min={10}
-                          max={10}
-                          autoComplete="tel"
-                          className="w-full p-2 border text-black bg-gray-100 border-gray-400 rounded"
-                          required
-                        />
-                      </label>
-                    </div>
-                    <div className="mb-4">
-                      <fieldset>
-                        <legend className="mb-2 text-gray-800 font-semibold">
-                          Training Program Interest?{" "}
-                          <small>(Check all that apply)</small>
-                        </legend>
-
-                        <div>
-                          <input
-                            type="checkbox"
-                            className="mx-2"
-                            id="private-pilot"
-                            name="private-pilot"
-                          />
-                          <label htmlFor="private-pilot">Private Pilot</label>
-                        </div>
-
-                        <div>
-                          <input
-                            type="checkbox"
-                            className="mx-2"
-                            id="instrument-rating"
-                            name="instrument-rating"
-                          />
-                          <label htmlFor="instrument-rating">
-                            Instrument Rating
-                          </label>
-                        </div>
-
-                        <div>
-                          <input
-                            type="checkbox"
-                            className="mx-2"
-                            id="instrument-pilot-bundle"
-                            name="instrument-pilot-bundle"
-                          />
-                          <label htmlFor="instrument-pilot-bundle">
-                            Private + Instrument Bundle
-                          </label>
-                        </div>
-
-                        <div>
-                          <input
-                            type="checkbox"
-                            className="mx-2"
-                            id="commercial-license"
-                            name="commercial-license"
-                          />
-                          <label htmlFor="commercial-license">
-                            Commercial License
-                          </label>
-                        </div>
-
-                        <div>
-                          <input
-                            type="checkbox"
-                            className="mx-2"
-                            id="cfi"
-                            name="cfi"
-                          />
-                          <label htmlFor="cfi">CFI</label>
-                        </div>
-
-                        <div>
-                          <input
-                            type="checkbox"
-                            className="mx-2"
-                            id="multiengine"
-                            name="multiengine"
-                          />
-                          <label htmlFor="multiengine">Multi Engine</label>
-                        </div>
-                      </fieldset>
-                    </div>
-                    <div className="mb-4">
-                      <textarea
-                        id="goal"
-                        name="goal"
-                        placeholder="What is your goal?"
-                        rows={4}
+              <IoMdClose className="text-xl text-white" />
+            </button>
+            {!formSubmitted && (
+              <div>
+                <h2 className="text-2xl text-center font-bold mb-1">
+                  Enroll at Summit
+                </h2>
+                <p className="text-center text-lg mb-4">
+                  Please fill out the form below.
+                </p>
+                <form onSubmit={handleSubmit}>
+                  <div className="mb-4">
+                    <label
+                      htmlFor="firstName"
+                      className="mb-1 text-gray-800 font-semibold"
+                    >
+                      First Name
+                      <input
+                        type="text"
+                        id="firstName"
+                        name="firstName"
+                        autoComplete="given-name"
                         className="w-full p-2 border text-black bg-gray-100 border-gray-400 rounded"
                         required
                       />
-                    </div>
-                    <button className="btn-red w-full" type="submit">
-                      Submit
-                    </button>
-                  </form>
-                </div>
-              )}
-
-              {formSubmitted && (
-                <div className="text-center">
-                  <h1 className="font-bold text-4xl py-10">
-                    Thank you for Enrolling {userName}.
-                  </h1>
-
-                  <div className="flex flex-row justify-center">
-                    <div className="bg-green-200 rounded-full py-3 px-4 mb-10">
-                      <div className="text-green-700 text-5xl">✓</div>
-                    </div>
+                    </label>
                   </div>
-
-                  <p className="px-5">
-                    Thank you for contacting Summit Flight Academy. We are
-                    looking forward to working with you soon. We will review
-                    your message and get back with you within 1-5 business days.{" "}
-                    <br />
-                    <br />
-                    You can also give us a call at{" "}
-                    <a className="text-red-500" href={`tel:${PHONE_NUMBER}`}>
-                      {PHONE_NUMBER}
-                    </a>{" "}
-                    or
-                    <br />
-                    email us at{" "}
-                    <a
-                      className="text-red-500"
-                      href={`mailto:${EMAIL_ADDRESS}`}
+                  <div className="mb-4">
+                    <label
+                      htmlFor="lastName"
+                      className="mb-1 text-gray-800 font-semibold"
                     >
-                      {EMAIL_ADDRESS}
-                    </a>
-                  </p>
+                      Last Name
+                      <input
+                        type="text"
+                        id="lastName"
+                        name="lastName"
+                        autoComplete="family-name"
+                        className="w-full p-2 border text-black bg-gray-100 border-gray-400 rounded"
+                        required
+                      />
+                    </label>
+                  </div>
+                  <div className="mb-4">
+                    <label
+                      htmlFor="email"
+                      className="mb-1 text-gray-800 font-semibold"
+                    >
+                      Email Address
+                      <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        autoComplete="email"
+                        className="w-full p-2 border text-black bg-gray-100 border-gray-400 rounded"
+                        required
+                      />
+                    </label>
+                  </div>
+                  <div className="hidden">
+                    <label>
+                      Don't fill this out if you're human:
+                      <input name="confirm-email" />
+                    </label>
+                  </div>
+                  <div className="mb-4">
+                    <label
+                      htmlFor="phone"
+                      className="mb-1 text-gray-800 font-semibold"
+                    >
+                      Phone Number
+                      <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        min={10}
+                        max={10}
+                        autoComplete="tel"
+                        className="w-full p-2 border text-black bg-gray-100 border-gray-400 rounded"
+                        required
+                      />
+                    </label>
+                  </div>
+                  <div className="mb-4">
+                    <fieldset>
+                      <legend className="mb-2 text-gray-800 font-semibold">
+                        Training Program Interest?{" "}
+                        <small>(Check all that apply)</small>
+                      </legend>
+
+                      <div>
+                        <input
+                          type="checkbox"
+                          className="mx-2"
+                          id="private-pilot"
+                          name="private-pilot"
+                        />
+                        <label htmlFor="private-pilot">Private Pilot</label>
+                      </div>
+
+                      <div>
+                        <input
+                          type="checkbox"
+                          className="mx-2"
+                          id="instrument-rating"
+                          name="instrument-rating"
+                        />
+                        <label htmlFor="instrument-rating">
+                          Instrument Rating
+                        </label>
+                      </div>
+
+                      <div>
+                        <input
+                          type="checkbox"
+                          className="mx-2"
+                          id="instrument-pilot-bundle"
+                          name="instrument-pilot-bundle"
+                        />
+                        <label htmlFor="instrument-pilot-bundle">
+                          Private + Instrument Bundle
+                        </label>
+                      </div>
+
+                      <div>
+                        <input
+                          type="checkbox"
+                          className="mx-2"
+                          id="commercial-license"
+                          name="commercial-license"
+                        />
+                        <label htmlFor="commercial-license">
+                          Commercial License
+                        </label>
+                      </div>
+
+                      <div>
+                        <input
+                          type="checkbox"
+                          className="mx-2"
+                          id="cfi"
+                          name="cfi"
+                        />
+                        <label htmlFor="cfi">CFI</label>
+                      </div>
+
+                      <div>
+                        <input
+                          type="checkbox"
+                          className="mx-2"
+                          id="multiengine"
+                          name="multiengine"
+                        />
+                        <label htmlFor="multiengine">Multi Engine</label>
+                      </div>
+                    </fieldset>
+                  </div>
+                  <div className="mb-4">
+                    <textarea
+                      id="goal"
+                      name="goal"
+                      placeholder="What is your goal?"
+                      rows={4}
+                      className="w-full p-2 border text-black bg-gray-100 border-gray-400 rounded"
+                      required
+                    />
+                  </div>
+                  <button className="btn-red w-full" type="submit">
+                    Submit
+                  </button>
+                </form>
+              </div>
+            )}
+
+            {formSubmitted && (
+              <div className="text-center">
+                <h1 className="font-bold text-4xl py-10">
+                  Thank you for Enrolling {userName}.
+                </h1>
+
+                <div className="flex flex-row justify-center">
+                  <div className="bg-green-200 rounded-full py-3 px-4 mb-10">
+                    <div className="text-green-700 text-5xl">✓</div>
+                  </div>
                 </div>
-              )}
-              <button
-                className="bg-main-red p-1 rounded-full absolute top-2 right-2"
-                onClick={() => {
-                  toggleModal();
-                  document.body.style.overflow = "auto";
-                }}
-              >
-                <IoMdClose className="text-xl text-white" />
-              </button>
-            </div>
+
+                <p className="px-5">
+                  Thank you for contacting Summit Flight Academy. We are looking
+                  forward to working with you soon. We will review your message
+                  and get back with you within 1-5 business days. <br />
+                  <br />
+                  You can also give us a call at{" "}
+                  <a className="text-red-500" href={`tel:${PHONE_NUMBER}`}>
+                    {PHONE_NUMBER}
+                  </a>{" "}
+                  or
+                  <br />
+                  email us at{" "}
+                  <a className="text-red-500" href={`mailto:${EMAIL_ADDRESS}`}>
+                    {EMAIL_ADDRESS}
+                  </a>
+                </p>
+              </div>
+            )}
           </div>
-        )}
-      </div>
+        </div>
+      )}
     </>
   );
 };
