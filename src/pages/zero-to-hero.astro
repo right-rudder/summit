@@ -10,6 +10,7 @@ import EnrollNowCTA from "../components/EnrollNowCTA.astro";
 import EnrollmentModalButton from "../components/enrollmentModalButtom";
 import Zero2Hero from "../components/Zero2Hero";
 import WhySummit from "../components/WhySummit.astro";
+import PriceCalcZero2Hero from "../components/priceCalcZero2Hero";
 ---
 
 <BaseLayout
@@ -96,6 +97,8 @@ import WhySummit from "../components/WhySummit.astro";
       </div>
     </div>
   </section>
+
+  <PriceCalcZero2Hero client:visible />
 
   <WhySummit />
 
