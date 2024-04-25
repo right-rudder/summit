@@ -1,5 +1,10 @@
 ---
 import EnrollmentModalButton from "./enrollmentModalButtom";
+
+const {
+  title = "Let's Get Started?",
+  subtitle = "Submit your enrollment interest today",
+} = Astro.props;
 ---
 
 <section
@@ -11,11 +16,9 @@ import EnrollmentModalButton from "./enrollmentModalButtom";
     <div
       class="min-h-[360px] max-w-5xl px-5 flex flex-col items-center justify-end"
     >
-      <h2 class="text-5xl font-semibold text-center tracking-tight">
-        Let's Get Started?
-      </h2>
-      <h3 class="mt-4 font-semibold text-3xl text-center">
-        Submit your enrollment interest today
+      <h2 class="text-5xl font-semibold text-center tracking-tight">{title}</h2>
+      <h3 class="my-4 font-semibold text-3xl text-center">
+        {subtitle}
       </h3>
       <EnrollmentModalButton
         btnStyle={"btn-red"}

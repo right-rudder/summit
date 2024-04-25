@@ -39,6 +39,10 @@ export const flightPrograms = {
       name: "Private Pilot + Instrument Bundle",
       link: "/flight-programs/private-pilot-instrument-bundle",
     },
+    {
+      name: "Commercial Pilot Training",
+      link: "/flight-programs/commercial-pilot-training",
+    },
     /* {
       name: "Multi-Engine Rating",
       link: "/flight-programs/multi-engine-rating",
@@ -51,10 +55,10 @@ export const career = {
   className: "career",
   mobileClassName: "career-mobile",
   submenu: [
-    {
-      name: "Commercial Pilot Training",
-      link: "/career/commercial-pilot-training",
-    },
+    /* {
+      name: "Zero to Hero Program",
+      link: "/career/zero-to-hero",
+    }, */
     {
       name: "Instructor Training",
       link: "/career/instructor-training",
