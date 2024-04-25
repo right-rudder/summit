@@ -43,6 +43,10 @@ export const flightPrograms = {
       name: "Private Pilot + Instrument Bundle",
       link: "/flight-programs/private-pilot-instrument-bundle",
     },
+    {
+      name: "Multi-Engine Rating",
+      link: "/flight-programs/multi-engine-rating",
+    },
   ],
 };
 
