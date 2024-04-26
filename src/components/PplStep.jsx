@@ -6,9 +6,9 @@ const PplStep = ({ step, toggled, onShow }) => {
       <button
         id={step.title}
         onClick={onShow}
-        className={`w-full px-4 py-3 flex items-center justify-between text-black whitespace-nowrap`}
+        className={`w-full px-4 py-3 flex items-center justify-between whitespace-nowrap`}
       >
-        <p>{step.title}</p>
+        <p className="font-bold text-lg text-black">{step.title}</p>
         {toggled ? (
           <FaMinus className="mr-3 pointer-events-none" />
         ) : (
@@ -22,6 +22,16 @@ const PplStep = ({ step, toggled, onShow }) => {
       >
         <li className="m-4">
           <p>{step.content}</p>
+          {step.content2 && <p>{step.content2}</p>}
+          <br />
+          {step.linkTo && (
+            <a
+              href={step.linkTo.url}
+              className="px-4 py-2 text-sm rounded bg-gray-700 text-gray-50 hover:text-gray-200 hover:bg-gray-900 trasnsition-colors duration-300"
+            >
+              {step.linkTo.title}
+            </a>
+          )}
         </li>
       </ul>
     </div>
