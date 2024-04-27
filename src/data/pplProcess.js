@@ -43,10 +43,10 @@ export const pplProcess = [
   },
   {
     title: "Certificated Flight Instructor-Instrument (CFII)",
-    /* linkTo: {
+    linkTo: {
       title: "Learn More",
       url: "/career/instructor-training",
-    }, */
+    },
     content:
       "Many flight schools strongly prefer instructors who can teach private/commercial and instrument students to help maintain a student-instructor relationship throughout training.   For those pilots without significant instrument time, this add-on certificate will hone your instrument stills and provide a more diverse set of students to teach.",
     content2:
@@ -62,5 +62,16 @@ export const pplProcess = [
       "Adding on a multi-engine rating and building 25-50 multi-engine hours is often a pre-requisite of most professional pilot jobs.",
     content2:
       "Your training starts with time in a RedBird simulator to learn multi-engine procedures. Then, we offer the option of earning your multi-engine certificate and 25 hours in a Piper Twin Commanche multi-engine aircraft or earning your multi-engine certificate plus multi-engine instructor rating to build further multi-engine hours.",
+  },
+  {
+    title: "Multi-Engine Instructor (MEI)",
+    linkTo: {
+      title: "Learn More",
+      url: "/career/instructor-training",
+    },
+    content:
+      "With this certification, you'll gain expertise in instructing in multi-engine aircraft, imparting knowledge and skills essential for operating these high-performance machines.",
+    content2:
+      "This is also where you can reach your required 25 hours of time building for your Multi Engine Rating.",
   },
 ];
