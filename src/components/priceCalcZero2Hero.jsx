@@ -67,7 +67,7 @@ const PriceCalcZero2Hero = () => {
                   <div className="grid grid-cols-1">
                     <fieldset>
                       <legend className="mb-2 text-xl text-gray-800 font-semibold">
-                        Certificates and Ratings Currenly Held:
+                        Certificates and Ratings Currently Held:
                       </legend>
 
                       <div className="">
@@ -220,14 +220,26 @@ const PriceCalcZero2Hero = () => {
                 className="absolute top-0 w-full h-full rounded-2xl bg-gradient-to-b from-gray-300 to-gray-200 shadow-xl transition duration-500 group-hover:scale-105 transform-gpu"
               ></div>
               <div className="relative p-6 space-y-6 lg:p-8">
-                <div className="relative p-6 space-y-6 lg:p-8">
+                <div className="p-6 space-y-6 lg:p-8">
                   <h3 className="text-4xl text-gray-800 font-bold text-center">
                     Zero to Hero
                   </h3>
                   <p className="italic text-center text-gray-700">
                     Fly for a career, within a year!
                   </p>
-                  <div className="relative flex justify-around">
+                  <div className="flex justify-around has-tooltip">
+                    <span class="tooltip">
+                      This pricing is based on <strong>250 hours</strong> and
+                      flying full-time. While pricing can vary within our other
+                      programs, it does less so for our Zero to Hero Program.
+                      However, the speed at which you can achieve the level you
+                      wish will be based upon your availability and time
+                      commitment. There is no way to go Zero to Hero in a year
+                      doing anything less than full-time. Flying 3-4 days a week
+                      makes Zero to Hero achievable in 12-15 months and flying
+                      2-3 days a week is achievable in 15-18 months.
+                    </span>
+
                     <div className="flex items-center">
                       <div className="">
                         <span className="block text-3xl text-gray-700 font-bold">
@@ -247,7 +259,7 @@ const PriceCalcZero2Hero = () => {
                     {total == 0 && (
                       <li className="space-x-2 flex flex-nowrap align-middle items-center">
                         <span className="font-semibold text-xl text-center">
-                          Choose your Goal from the right
+                          Choose your training goal
                         </span>
                       </li>
                     )}
@@ -312,7 +324,7 @@ const PriceCalcZero2Hero = () => {
                     </legend>
 
                     <div>
-                      <div className="">
+                      <div className="has-tooltip">
                         <input
                           type="checkbox"
                           checked={starter}
@@ -326,12 +338,17 @@ const PriceCalcZero2Hero = () => {
                             setStarter(!starter);
                           }}
                         />
+                        <span class="tooltip text-sm">
+                          Includes a passive headset, pilot bag, pilot training
+                          books, a logbook, foggles, a ForeFlight subscription
+                          while enrolled, and a kneeboard.
+                        </span>
                         <label htmlFor="starter" className="text-sm">
                           Starter Package
                         </label>
                       </div>
 
-                      <div className="">
+                      <div className="has-tooltip">
                         <input
                           type="checkbox"
                           checked={checkride}
@@ -345,12 +362,17 @@ const PriceCalcZero2Hero = () => {
                             setCheckride(!checkride);
                           }}
                         />
+                        <span class="tooltip text-sm">
+                          Depending on your DPE, you can plan to budget around
+                          $900 for most checkrides with the exceptions being the
+                          CFI initial (~$1,500) and CFI add-ons (~$1,200 each).
+                        </span>
                         <label htmlFor="checkride" className="text-sm">
                           Checkride Fees
                         </label>
                       </div>
 
-                      <div className="">
+                      <div className="has-tooltip">
                         <input
                           type="checkbox"
                           checked={written}
@@ -364,12 +386,16 @@ const PriceCalcZero2Hero = () => {
                             setWritten(!written);
                           }}
                         />
+                        <span class="tooltip text-sm">
+                          Written tests are ~$175 per certification (not
+                          required for the Multi Engine Rating or MEI add-on).
+                        </span>
                         <label htmlFor="written" className="text-sm">
                           Written Test Fees
                         </label>
                       </div>
 
-                      <div className="">
+                      <div className="has-tooltip">
                         <input
                           type="checkbox"
                           checked={headset}
@@ -383,6 +409,11 @@ const PriceCalcZero2Hero = () => {
                             setHeadset(!headset);
                           }}
                         />
+                        <span class="tooltip text-sm">
+                          Receive <strong>$299.00</strong> off of your Zulu 3
+                          Headset if you choose to upgrade your Starter Package
+                          at Summit Flight Academy.
+                        </span>
                         <label htmlFor="headset" className="text-sm">
                           Zulu 3 Headset
                         </label>
@@ -416,7 +447,7 @@ const PriceCalcZero2Hero = () => {
                     Certificates and Ratings You Want to Obtain:
                   </legend>
 
-                  <div className="">
+                  <div className="has-tooltip">
                     <input
                       type="checkbox"
                       checked={ppl}
@@ -431,6 +462,10 @@ const PriceCalcZero2Hero = () => {
                         setPpl(!ppl);
                       }}
                     />
+                    <span class="tooltip text-sm">
+                      Shared time building will make this certification
+                      achievable in a shorter time.
+                    </span>
                     <label htmlFor="ppl" className="text-sm">
                       Private Pilot Certificate{" "}
                       <small className="font-bold">(PPL)</small>
@@ -541,7 +576,7 @@ const PriceCalcZero2Hero = () => {
                     </label>
                   </div>
 
-                  <div className="">
+                  <div className="has-tooltip">
                     <input
                       type="checkbox"
                       checked={me}
@@ -556,6 +591,11 @@ const PriceCalcZero2Hero = () => {
                         setMe(!me);
                       }}
                     />
+                    <span className="tooltip text-sm">
+                      Career track students need 25 total ME hours to reach a
+                      Multi Engine certification. You can achieve this by either
+                      getting your MEI or flying 15 hours via time building.
+                    </span>
                     <label htmlFor="me" className="text-sm">
                       Multi Engine Rating
                     </label>
