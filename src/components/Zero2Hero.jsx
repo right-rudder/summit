@@ -13,7 +13,7 @@ const Zero2Hero = () => {
   };
 
   return (
-    <div className="flex flex-col gap-2 ">
+    <div className="w-full px-2 flex flex-col gap-2 ">
       {pplProcess.map((step) => (
         <PplStep
           key={step.title}
