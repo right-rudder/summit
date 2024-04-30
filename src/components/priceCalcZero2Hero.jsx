@@ -56,11 +56,11 @@ const PriceCalcZero2Hero = () => {
               How to start training with Summit Flight Academy
             </p>
           </div>
-          <div className="mt-12 m-auto -space-y-4 items-center justify-center md:flex md:space-y-0 md:-space-x-4 xl:w-full">
-            <div className="relative group w-10/12 lg:w-1/2">
+          <div className="mt-12 m-auto -space-y-4 items-center justify-center lg:flex md:space-y-0 xl:w-full">
+            <div className="relative group w-full lg:w-1/2">
               <div
                 aria-hidden="true"
-                className="absolute top-0 w-full h-full rounded-2xl bg-gradient-to-l from-gray-200 to-gray-100 shadow-lg transition duration-500 group-hover:scale-105 transform-gpu"
+                className="absolute top-0 w-full h-full rounded-2xl bg-gradient-to-br from-gray-200 to-gray-100 shadow-lg transition duration-500 group-hover:scale-105 transform-gpu"
               ></div>
               <div className="relative p-5 pt-12 md:p-8 md:pl-8 md:rounded-r-2xl lg:pl-10 lg:p-12">
                 <div className="mt-2 flex justify-between gap-6 w-full">
@@ -152,7 +152,7 @@ const PriceCalcZero2Hero = () => {
                           }}
                         />
                         <label htmlFor="heldCfi" className="text-sm">
-                          Cerftified Flight Instructor{" "}
+                          Certified Flight Instructor{" "}
                           <small className="font-bold">(CFI)</small>
                         </label>
                       </div>
@@ -173,7 +173,7 @@ const PriceCalcZero2Hero = () => {
                           }}
                         />
                         <label htmlFor="heldCfii" className="text-sm">
-                          Cerftified Flight Instructor-Instrument{" "}
+                          Certified Flight Instructor-Instrument{" "}
                           <small className="font-bold">(CFII)</small>
                         </label>
                       </div>
@@ -205,7 +205,7 @@ const PriceCalcZero2Hero = () => {
                             Total $
                           </span>
                         </div>
-                        <span className="text-xl text-center  text-gray-700 font-bold leading-0">
+                        <span className="text-xl text-center text-gray-700 font-bold leading-0">
                           {total.toLocaleString()}
                         </span>
                       </div>
@@ -214,17 +214,17 @@ const PriceCalcZero2Hero = () => {
                 </div>
               </div>
             </div>
-            <div className="relative z-10 -mx-4 group md:w-6/12 md:mx-0 lg:w-3/5">
+            <div className="relative z-10 min-h-[screen-1/2] m-0 lg:-mx-4 group w-full lg:w-2/5 lg:max-w-2/5">
               <div
                 aria-hidden="true"
                 className="absolute top-0 w-full h-full rounded-2xl bg-gradient-to-b from-gray-300 to-gray-200 shadow-xl transition duration-500 group-hover:scale-105 transform-gpu"
               ></div>
               <div className="relative p-6 space-y-6 lg:p-8">
                 <div className="relative p-6 space-y-6 lg:p-8">
-                  <h3 className="text-4xl text-gray-900 font-bold text-center">
+                  <h3 className="text-4xl text-gray-800 font-bold text-center">
                     Zero to Hero
                   </h3>
-                  <p className="italic text-center">
+                  <p className="italic text-center text-gray-700">
                     Fly for a career, within a year!
                   </p>
                   <div className="relative flex justify-around">
@@ -242,115 +242,173 @@ const PriceCalcZero2Hero = () => {
 
                   <ul
                     role="list"
-                    className="w-max space-y-4 pb-6 m-auto text-gray-600"
+                    className="w-full px-3 space-y-4 pb-6 m-auto text-gray-600"
                   >
-                    <li className="space-x-2 flex flex-nowrap align-middle items-center">
-                      <span className="text-sky-500 font-semibold">
-                        <FaCheckCircle className="text-green-600" />
-                      </span>
-                      <span>Private Pilot</span>
-                    </li>
-                    <li className="space-x-2 flex flex-nowrap align-middle items-center">
-                      <span className="text-sky-500 font-semibold">
-                        <FaCheckCircle className="text-green-600" />
-                      </span>
-                      <span>Instrument Rating</span>
-                    </li>
-                    <li className="space-x-2 flex flex-nowrap align-middle items-center">
-                      <span className="text-sky-500 font-semibold">
-                        <FaCheckCircle className="text-green-600" />
-                      </span>
-                      <span>Commercial Certificate</span>
-                    </li>
+                    {total == 0 && (
+                      <li className="space-x-2 flex flex-nowrap align-middle items-center">
+                        <span className="font-semibold text-xl text-center">
+                          Choose your Goal from the right
+                        </span>
+                      </li>
+                    )}
+                    {ppl && (
+                      <li className="space-x-2 flex flex-nowrap align-middle items-center">
+                        <FaCheckCircle className="text-green-600 text-xl" />
+                        <span>Private Pilot License</span>
+                      </li>
+                    )}
+                    {instrument && (
+                      <li className="space-x-2 flex flex-nowrap align-middle items-center">
+                        <span className="text-sky-500 font-semibold">
+                          <FaCheckCircle className="text-green-600 text-xl" />
+                        </span>
+                        <span>Instrument Rating</span>
+                      </li>
+                    )}
+                    {(cplShared || cplSolo) && (
+                      <li className="space-x-2 flex flex-nowrap align-middle items-center">
+                        <span className="text-sky-500 font-semibold">
+                          <FaCheckCircle className="text-green-600 text-xl" />
+                        </span>
+                        <span>Commercial Pilot Certificate</span>
+                      </li>
+                    )}
+                    {cfi && (
+                      <li className="space-x-2 flex flex-nowrap align-middle items-center">
+                        <span className="text-sky-500 font-semibold">
+                          <FaCheckCircle className="text-green-600 text-xl" />
+                        </span>
+                        <span>Certified Flight Instructor</span>
+                      </li>
+                    )}
+                    {cfii && (
+                      <li className="space-x-2 flex flex-nowrap align-middle items-center">
+                        <span className="text-sky-500 font-semibold">
+                          <FaCheckCircle className="text-green-600 text-xl" />
+                        </span>
+                        <span>Certified Flight Instructor-Instrument</span>
+                      </li>
+                    )}
+                    {me && (
+                      <li className="space-x-2 flex flex-nowrap align-middle items-center">
+                        <span className="text-sky-500 font-semibold">
+                          <FaCheckCircle className="text-green-600 text-xl" />
+                        </span>
+                        <span>Multi Engine Rating</span>
+                      </li>
+                    )}
+                    {(mei || meTbd) && (
+                      <li className="space-x-2 flex flex-nowrap align-middle items-center">
+                        <span className="text-sky-500 font-semibold">
+                          <FaCheckCircle className="text-green-600 text-xl" />
+                        </span>
+                        <span>Multi Engine Instructor</span>
+                      </li>
+                    )}
                   </ul>
-                  <fieldset>
-                    <legend className="mb-2 text-xl text-gray-800 font-semibold">
+                  <fieldset className="flex flex-col justify-center items-center align-top w-full text-left">
+                    <legend className="mb-2 text-xl text-center w-full text-gray-800 font-semibold">
                       Add Ons:
                     </legend>
 
-                    <div className="">
-                      <input
-                        type="checkbox"
-                        checked={starter}
-                        className="mx-2"
-                        id="starter"
-                        name="starter"
-                        onChange={(e) => {
-                          starter
-                            ? setTotal(total - priceStarter)
-                            : setTotal(total + priceStarter);
-                          setStarter(!starter);
-                        }}
-                      />
-                      <label htmlFor="starter" className="text-sm">
-                        Starter Package
-                      </label>
-                    </div>
+                    <div>
+                      <div className="">
+                        <input
+                          type="checkbox"
+                          checked={starter}
+                          className="mx-2"
+                          id="starter"
+                          name="starter"
+                          onChange={(e) => {
+                            starter
+                              ? setTotal(total - priceStarter)
+                              : setTotal(total + priceStarter);
+                            setStarter(!starter);
+                          }}
+                        />
+                        <label htmlFor="starter" className="text-sm">
+                          Starter Package
+                        </label>
+                      </div>
 
-                    <div className="">
-                      <input
-                        type="checkbox"
-                        checked={checkride}
-                        className="mx-2"
-                        id="checkride"
-                        name="checkride"
-                        onChange={(e) => {
-                          checkride
-                            ? setTotal(total - priceCheckride)
-                            : setTotal(total + priceCheckride);
-                          setCheckride(!checkride);
-                        }}
-                      />
-                      <label htmlFor="checkride" className="text-sm">
-                        Checkride Fees
-                      </label>
-                    </div>
+                      <div className="">
+                        <input
+                          type="checkbox"
+                          checked={checkride}
+                          className="mx-2"
+                          id="checkride"
+                          name="checkride"
+                          onChange={(e) => {
+                            checkride
+                              ? setTotal(total - priceCheckride)
+                              : setTotal(total + priceCheckride);
+                            setCheckride(!checkride);
+                          }}
+                        />
+                        <label htmlFor="checkride" className="text-sm">
+                          Checkride Fees
+                        </label>
+                      </div>
 
-                    <div className="">
-                      <input
-                        type="checkbox"
-                        checked={written}
-                        className="mx-2"
-                        id="written"
-                        name="written"
-                        onChange={(e) => {
-                          written
-                            ? setTotal(total - priceWritten)
-                            : setTotal(total + priceWritten);
-                          setWritten(!written);
-                        }}
-                      />
-                      <label htmlFor="written" className="text-sm">
-                        Written Test Fees
-                      </label>
-                    </div>
+                      <div className="">
+                        <input
+                          type="checkbox"
+                          checked={written}
+                          className="mx-2"
+                          id="written"
+                          name="written"
+                          onChange={(e) => {
+                            written
+                              ? setTotal(total - priceWritten)
+                              : setTotal(total + priceWritten);
+                            setWritten(!written);
+                          }}
+                        />
+                        <label htmlFor="written" className="text-sm">
+                          Written Test Fees
+                        </label>
+                      </div>
 
-                    <div className="">
-                      <input
-                        type="checkbox"
-                        checked={headset}
-                        className="mx-2"
-                        id="headset"
-                        name="headset"
-                        onChange={(e) => {
-                          headset
-                            ? setTotal(total - priceHeadset)
-                            : setTotal(total + priceHeadset);
-                          setHeadset(!headset);
-                        }}
-                      />
-                      <label htmlFor="headset" className="text-sm">
-                        Zulu 3 Headset
-                      </label>
+                      <div className="">
+                        <input
+                          type="checkbox"
+                          checked={headset}
+                          className="mx-2"
+                          id="headset"
+                          name="headset"
+                          onChange={(e) => {
+                            headset
+                              ? setTotal(total - priceHeadset)
+                              : setTotal(total + priceHeadset);
+                            setHeadset(!headset);
+                          }}
+                        />
+                        <label htmlFor="headset" className="text-sm">
+                          Zulu 3 Headset
+                        </label>
+                      </div>
                     </div>
                   </fieldset>
                 </div>
+                <div className="mt-8 mx-auto text-center">
+                  <ContactUsModalButton
+                    btnStyle={"btn-red w-10/12"}
+                    btnText={"Contact Us"}
+                  />
+                  <a
+                    href={`tel: ${PHONE_NUMBER}`}
+                    className="mt-6 flex space-x-3 justify-center flex-nowrap hover:font-bold hover:scale-105 transition-all duration-500"
+                  >
+                    <FaPhone />
+                    <span>{PHONE_NUMBER}</span>
+                  </a>
+                </div>
               </div>
             </div>
-            <div className="relative group w-10/12 lg:w-1/2">
+            <div className="relative group w-full lg:w-1/2">
               <div
                 aria-hidden="true"
-                className="absolute top-0 w-full h-full rounded-2xl bg-gradient-to-l from-gray-200 to-gray-100 shadow-lg transition duration-500 group-hover:scale-105 transform-gpu"
+                className="absolute top-0 w-full h-full rounded-2xl bg-gradient-to-tl from-gray-200 to-gray-100 shadow-lg transition duration-500 group-hover:scale-105 transform-gpu"
               ></div>
               <div className="relative p-5 pt-12 md:p-8 md:pl-8 md:rounded-r-2xl lg:pr-10 lg:p-12">
                 <fieldset>
@@ -457,7 +515,7 @@ const PriceCalcZero2Hero = () => {
                       }}
                     />
                     <label htmlFor="cfi" className="text-sm">
-                      Cerftified Flight Instructor{" "}
+                      Certified Flight Instructor{" "}
                       <small className="font-bold">(CFI)</small>
                     </label>
                   </div>
@@ -478,7 +536,7 @@ const PriceCalcZero2Hero = () => {
                       }}
                     />
                     <label htmlFor="cfii" className="text-sm">
-                      Cerftified Flight Instructor-Instrument{" "}
+                      Certified Flight Instructor-Instrument{" "}
                       <small className="font-bold">(CFII)</small>
                     </label>
                   </div>
@@ -540,8 +598,8 @@ const PriceCalcZero2Hero = () => {
                       }}
                     />
                     <label htmlFor="meTbd" className="text-sm">
-                      Multi Engine Instructor{" "}
-                      <small className="font-bold">(Time Building)</small>
+                      Multi Engine Time Building{" "}
+                      <small className="font-bold">(15 Hours)</small>
                     </label>
                   </div>
                 </fieldset>
