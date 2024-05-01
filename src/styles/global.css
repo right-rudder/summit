@@ -43,11 +43,11 @@
 }
 
 .tooltip {
-  @apply invisible opacity-0 absolute p-4 rounded-lg shadow-md shadow-slate-800/50 bg-gray-50 text-center text-gray-800 -mt-16 -ml-12;
+  @apply invisible opacity-0 absolute p-4 rounded-lg shadow-md shadow-slate-800/50 bg-gray-50 text-center text-gray-800 mt-5;
 }
 
 .has-tooltip:hover .tooltip {
-  @apply visible opacity-95 transition-all duration-500;
+  @apply visible opacity-95 transition-all duration-300 cursor-help;
 }
 
 /* width */

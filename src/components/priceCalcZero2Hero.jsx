@@ -239,7 +239,6 @@ const PriceCalcZero2Hero = () => {
                       makes Zero to Hero achievable in 12-15 months and flying
                       2-3 days a week is achievable in 15-18 months.
                     </span>
-
                     <div className="flex items-center">
                       <div className="">
                         <span className="block text-3xl text-gray-700 font-bold">
@@ -447,7 +446,7 @@ const PriceCalcZero2Hero = () => {
                     Certificates and Ratings You Want to Obtain:
                   </legend>
 
-                  <div className="has-tooltip">
+                  <div className="">
                     <input
                       type="checkbox"
                       checked={ppl}
@@ -462,10 +461,6 @@ const PriceCalcZero2Hero = () => {
                         setPpl(!ppl);
                       }}
                     />
-                    <span class="tooltip text-sm">
-                      Shared time building will make this certification
-                      achievable in a shorter time.
-                    </span>
                     <label htmlFor="ppl" className="text-sm">
                       Private Pilot Certificate{" "}
                       <small className="font-bold">(PPL)</small>
@@ -492,7 +487,7 @@ const PriceCalcZero2Hero = () => {
                     </label>
                   </div>
 
-                  <div className="">
+                  <div className="has-tooltip">
                     <input
                       type="checkbox"
                       checked={cplShared}
@@ -507,9 +502,13 @@ const PriceCalcZero2Hero = () => {
                         setCplShared(!cplShared);
                       }}
                     />
+                    <span class="tooltip text-sm">
+                      Shared time building will make this certification
+                      achievable in a shorter time.
+                    </span>
                     <label htmlFor="cplShared" className="text-sm">
                       Commercial Pilot Certificate{" "}
-                      <small className="font-bold">(shared)</small>
+                      <small className="font-bold">(Shared)</small>
                     </label>
                   </div>
 
@@ -576,7 +575,7 @@ const PriceCalcZero2Hero = () => {
                     </label>
                   </div>
 
-                  <div className="has-tooltip">
+                  <div className="">
                     <input
                       type="checkbox"
                       checked={me}
@@ -591,12 +590,13 @@ const PriceCalcZero2Hero = () => {
                         setMe(!me);
                       }}
                     />
-                    <span className="tooltip text-sm">
-                      Career track students need 25 total ME hours to reach a
-                      Multi Engine certification. You can achieve this by either
-                      getting your MEI or flying 15 hours via time building.
-                    </span>
-                    <label htmlFor="me" className="text-sm">
+                    <label htmlFor="me" className="text-sm has-tooltip">
+                      <span className="tooltip text-sm">
+                        Career track students need 25 total ME hours to reach a
+                        Multi Engine certification. You can achieve this by
+                        either getting your MEI or flying 15 hours via time
+                        building.
+                      </span>
                       Multi Engine Rating
                     </label>
                   </div>
