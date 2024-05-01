@@ -1,5 +1,5 @@
 import { FaCheckCircle } from "react-icons/fa";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { FaPhone } from "react-icons/fa6";
 import ContactUsModalButton from "./ContactUsModalButton";
 
@@ -43,6 +43,26 @@ const PriceCalcZero2Hero = () => {
   const [heldCfi, setHeldCfi] = useState(false);
   const [heldCfii, setHeldCfii] = useState(false);
   const [heldMe, setHeldMe] = useState(false);
+
+  useEffect(() => {
+    setPpl(true);
+    setInstrument(true);
+    setCplShared(true);
+    setCfi(true);
+    setCfii(true);
+    setMe(true);
+    setMei(true);
+    setTotal(
+      total +
+        pricePpl +
+        priceInstrument +
+        priceCplShared +
+        priceCfi +
+        priceCfii +
+        priceMe +
+        priceMei,
+    );
+  }, []);
 
   return (
     <section id="price-calculator">
@@ -256,7 +276,7 @@ const PriceCalcZero2Hero = () => {
                     className="w-full px-3 space-y-4 pb-6 m-auto text-gray-600"
                   >
                     {total == 0 && (
-                      <li className="space-x-2 flex flex-nowrap align-middle items-center">
+                      <li className="space-x-2 flex flex-nowrap align-middle justify-center items-center">
                         <span className="font-semibold text-xl text-center">
                           Choose your training goal
                         </span>
