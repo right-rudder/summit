@@ -158,26 +158,39 @@ const EnrollmentModalButton = ({ btnStyle, btnText }) => {
                   <div className="mb-4">
                     <fieldset>
                       <legend className="mb-2 text-gray-800 font-semibold">
-                        Training Program Interest?{" "}
-                        <small>(Check all that apply)</small>
+                        Primary Training Program Interest?
                       </legend>
 
                       <div>
                         <input
-                          type="checkbox"
+                          type="radio"
+                          className="mx-2"
+                          id="zero2hero"
+                          name="interest"
+                          value="zero2hero"
+                          required
+                        />
+                        <label htmlFor="zero2hero">Zero to Hero</label>
+                      </div>
+
+                      <div>
+                        <input
+                          type="radio"
                           className="mx-2"
                           id="private-pilot"
-                          name="private-pilot"
+                          name="interest"
+                          value="private-pilot"
                         />
                         <label htmlFor="private-pilot">Private Pilot</label>
                       </div>
 
                       <div>
                         <input
-                          type="checkbox"
+                          type="radio"
                           className="mx-2"
                           id="instrument-rating"
-                          name="instrument-rating"
+                          name="interest"
+                          value="instrument-rating"
                         />
                         <label htmlFor="instrument-rating">
                           Instrument Rating
@@ -186,10 +199,11 @@ const EnrollmentModalButton = ({ btnStyle, btnText }) => {
 
                       <div>
                         <input
-                          type="checkbox"
+                          type="radio"
                           className="mx-2"
                           id="instrument-pilot-bundle"
-                          name="instrument-pilot-bundle"
+                          name="interest"
+                          value="instrument-pilot-bundle"
                         />
                         <label htmlFor="instrument-pilot-bundle">
                           Private + Instrument Bundle
@@ -198,10 +212,11 @@ const EnrollmentModalButton = ({ btnStyle, btnText }) => {
 
                       <div>
                         <input
-                          type="checkbox"
+                          type="radio"
                           className="mx-2"
                           id="commercial-license"
-                          name="commercial-license"
+                          name="interest"
+                          value="commercial-license"
                         />
                         <label htmlFor="commercial-license">
                           Commercial License
@@ -210,20 +225,22 @@ const EnrollmentModalButton = ({ btnStyle, btnText }) => {
 
                       <div>
                         <input
-                          type="checkbox"
+                          type="radio"
                           className="mx-2"
                           id="cfi"
-                          name="cfi"
+                          name="interest"
+                          value="cfi"
                         />
                         <label htmlFor="cfi">CFI</label>
                       </div>
 
                       <div>
                         <input
-                          type="checkbox"
+                          type="radio"
                           className="mx-2"
                           id="multiengine"
-                          name="multiengine"
+                          name="interest"
+                          value="multiengine"
                         />
                         <label htmlFor="multiengine">Multi Engine</label>
                       </div>
