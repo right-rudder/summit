@@ -62,12 +62,19 @@ const ContactUsModalButton = ({ btnStyle, btnText, btnSymbol }) => {
         {btnSymbol && <span aria-hidden="true">{btnSymbol}</span>}
       </button>
       {showModal && (
-        <div className="fixed z-50 h-screen inset-0 bg-black bg-opacity-70 flex items-center justify-center">
-          <div
-            className={`bg-white p-12 max-w-xl m-4 text-black rounded-md h-full overflow-y-auto`}
-          >
+        <div className="relative z-50">
+          <div className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center">
             {!formSubmitted && (
-              <div>
+              <div className="relative bg-white p-12 max-w-xl m-4 text-black rounded-md h-screen-4/5 overflow-y-auto">
+                <button
+                  className="bg-main-red p-1 rounded-full absolute top-2 right-2"
+                  onClick={() => {
+                    toggleModal();
+                    document.body.style.overflow = "auto";
+                  }}
+                >
+                  <IoMdClose className="text-xl text-white" />
+                </button>
                 <h2 className="text-2xl text-center font-bold mb-1">
                   Contact Us
                 </h2>
@@ -157,7 +164,26 @@ const ContactUsModalButton = ({ btnStyle, btnText, btnSymbol }) => {
                       required
                     />
                   </div>
-                  <button className="btn-red w-full" type="submit">
+                  <div>
+                    <input
+                      type="checkbox"
+                      className="mx-2"
+                      id="zero2hero"
+                      name="zero2hero"
+                    />
+                    <label htmlFor="zero2hero">
+                      I am interested in the Summit Flight Academy{" "}
+                      <a
+                        className="text-main-red hover:text-gray-500 font-semibold"
+                        href="/career/zero-to-hero"
+                        target="_blank"
+                      >
+                        Zero to Hero
+                      </a>
+                      (Career Track) Program.
+                    </label>
+                  </div>
+                  <button className="btn-red mt-6 w-full" type="submit">
                     Submit
                   </button>
                 </form>
@@ -194,15 +220,6 @@ const ContactUsModalButton = ({ btnStyle, btnText, btnSymbol }) => {
                 </p>
               </div>
             )}
-            <button
-              className="bg-main-red p-1 rounded-full absolute top-2 right-2"
-              onClick={() => {
-                toggleModal();
-                document.body.style.overflow = "auto";
-              }}
-            >
-              <IoMdClose className="text-xl text-white" />
-            </button>
           </div>
         </div>
       )}
