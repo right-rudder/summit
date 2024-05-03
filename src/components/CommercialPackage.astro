@@ -1,3 +1,7 @@
+---
+import EnrollmentModalButton from "./enrollmentModalButtom";
+---
+
 <section id="commercial-pilot-package">
   <div class="bg-gray-900 py-24 sm:py-32">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
@@ -40,12 +44,11 @@
                 >$13,000</strong
               > once
             </p>
-            <a
-              href="#"
-              aria-describedby="tier-expedited"
-              class="mt-10 block bg-red-600 px-3 py-2 text-center text-sm font-semibold leading-6 text-white shadow-sm hover:bg-red-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600"
-              >Enroll Now</a
-            >
+            <EnrollmentModalButton
+              btnStyle={"mt-10 block w-full bg-red-600 px-3 py-2 text-center text-sm font-semibold leading-6 text-white shadow-sm hover:bg-red-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600"}
+              btnText={"Enroll Now"}
+              client:visible
+            />
             <p class="mt-10 text-sm font-semibold leading-6 text-gray-200">
               Our four-month commercial package sets you up to start achieving
               your aviation goals!
