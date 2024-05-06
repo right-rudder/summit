@@ -73,7 +73,7 @@ const PriceCalcZero2Hero = () => {
               Cost Estimator
             </h2>
             <p className="mt-4 text-lg leading-8 text-black text-center">
-              How to start training with Summit Flight Academy
+              How much does pilot training cost?
             </p>
           </div>
           <div className="mt-12 m-auto -space-y-4 items-center justify-center lg:flex md:space-y-0 xl:w-full">
@@ -241,8 +241,8 @@ const PriceCalcZero2Hero = () => {
               ></div>
               <div className="relative p-6 space-y-6 lg:p-8">
                 <div className="p-6 space-y-6 lg:p-8">
-                  <h3 className="text-4xl text-gray-800 font-bold text-center">
-                    Zero to Hero
+                  <h3 className="text-3xl text-gray-800 font-bold text-center">
+                    Summit Flight Training Calculator
                   </h3>
                   <p className="italic text-center text-gray-700">
                     Fly for a career, within a year!

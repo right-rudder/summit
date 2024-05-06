@@ -168,19 +168,19 @@ const ContactUsModalButton = ({ btnStyle, btnText, btnSymbol }) => {
                     <input
                       type="checkbox"
                       className="mx-2"
-                      id="zero2hero"
-                      name="zero2hero"
+                      id="career-track"
+                      name="career-track"
                     />
-                    <label htmlFor="zero2hero">
+                    <label htmlFor="career-track">
                       I am interested in the Summit Flight Academy{" "}
                       <a
                         className="text-main-red hover:text-gray-500 font-semibold"
-                        href="/career/zero-to-hero"
+                        href="/career/career-track"
                         target="_blank"
                       >
-                        Zero to Hero
-                      </a>
-                      (Career Track) Program.
+                        Career Track
+                      </a>{" "}
+                      (Zero to Hero) Program.
                     </label>
                   </div>
                   <button className="btn-red mt-6 w-full" type="submit">
@@ -191,33 +191,48 @@ const ContactUsModalButton = ({ btnStyle, btnText, btnSymbol }) => {
             )}
 
             {formSubmitted && (
-              <div className="text-center">
-                <h1 className="font-bold text-4xl py-10">
-                  Thank you for contacting us, {userName}.
-                </h1>
+              <div className="relative bg-white p-12 max-w-xl m-4 text-black rounded-md h-screen-4/5 overflow-y-auto">
+                <button
+                  className="bg-main-red p-1 rounded-full absolute top-2 right-2"
+                  onClick={() => {
+                    toggleModal();
+                    document.body.style.overflow = "auto";
+                  }}
+                >
+                  <IoMdClose className="text-xl text-white" />
+                </button>
+                <div className="text-center">
+                  <h1 className="font-bold text-4xl py-10">
+                    Thank you for contacting us, {userName}.
+                  </h1>
 
-                <div className="flex flex-row justify-center">
-                  <div className="bg-green-200 rounded-full py-3 px-4 mb-10">
-                    <div className="text-green-700 text-5xl">✓</div>
+                  <div className="flex flex-row justify-center">
+                    <div className="bg-green-200 rounded-full py-3 px-4 mb-10">
+                      <div className="text-green-700 text-5xl">✓</div>
+                    </div>
                   </div>
-                </div>
 
-                <p className="px-5">
-                  Thank you for contacting Summit Flight Academy. We are looking
-                  forward to working with you soon. We will review your message
-                  and get back with you within 1-5 business days. <br />
-                  <br />
-                  You can also give us a call at{" "}
-                  <a className="text-red-500" href={`tel:${PHONE_NUMBER}`}>
-                    {PHONE_NUMBER}
-                  </a>{" "}
-                  or
-                  <br />
-                  email us at{" "}
-                  <a className="text-red-500" href={`mailto:${EMAIL_ADDRESS}`}>
-                    {EMAIL_ADDRESS}
-                  </a>
-                </p>
+                  <p className="px-5">
+                    Thank you for contacting Summit Flight Academy. We are
+                    looking forward to working with you soon. We will review
+                    your message and get back with you within 1-5 business days.{" "}
+                    <br />
+                    <br />
+                    You can also give us a call at{" "}
+                    <a className="text-red-500" href={`tel:${PHONE_NUMBER}`}>
+                      {PHONE_NUMBER}
+                    </a>{" "}
+                    or
+                    <br />
+                    email us at{" "}
+                    <a
+                      className="text-red-500"
+                      href={`mailto:${EMAIL_ADDRESS}`}
+                    >
+                      {EMAIL_ADDRESS}
+                    </a>
+                  </p>
+                </div>
               </div>
             )}
           </div>

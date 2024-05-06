@@ -165,12 +165,14 @@ const EnrollmentModalButton = ({ btnStyle, btnText }) => {
                         <input
                           type="radio"
                           className="mx-2"
-                          id="zero2hero"
+                          id="career-track"
                           name="interest"
-                          value="zero2hero"
+                          value="career-track"
                           required
                         />
-                        <label htmlFor="zero2hero">Zero to Hero</label>
+                        <label htmlFor="career-track">
+                          Career Track Program
+                        </label>
                       </div>
 
                       <div>
@@ -180,6 +182,7 @@ const EnrollmentModalButton = ({ btnStyle, btnText }) => {
                           id="private-pilot"
                           name="interest"
                           value="private-pilot"
+                          required
                         />
                         <label htmlFor="private-pilot">Private Pilot</label>
                       </div>
@@ -191,6 +194,7 @@ const EnrollmentModalButton = ({ btnStyle, btnText }) => {
                           id="instrument-rating"
                           name="interest"
                           value="instrument-rating"
+                          required
                         />
                         <label htmlFor="instrument-rating">
                           Instrument Rating
@@ -204,6 +208,7 @@ const EnrollmentModalButton = ({ btnStyle, btnText }) => {
                           id="instrument-pilot-bundle"
                           name="interest"
                           value="instrument-pilot-bundle"
+                          required
                         />
                         <label htmlFor="instrument-pilot-bundle">
                           Private + Instrument Bundle
@@ -217,6 +222,7 @@ const EnrollmentModalButton = ({ btnStyle, btnText }) => {
                           id="commercial-license"
                           name="interest"
                           value="commercial-license"
+                          required
                         />
                         <label htmlFor="commercial-license">
                           Commercial License
@@ -230,6 +236,7 @@ const EnrollmentModalButton = ({ btnStyle, btnText }) => {
                           id="cfi"
                           name="interest"
                           value="cfi"
+                          required
                         />
                         <label htmlFor="cfi">CFI</label>
                       </div>
@@ -241,6 +248,7 @@ const EnrollmentModalButton = ({ btnStyle, btnText }) => {
                           id="multiengine"
                           name="interest"
                           value="multiengine"
+                          required
                         />
                         <label htmlFor="multiengine">Multi Engine</label>
                       </div>

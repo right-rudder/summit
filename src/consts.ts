@@ -56,8 +56,8 @@ export const career = {
   mobileClassName: "career-mobile",
   submenu: [
     {
-      name: "Zero to Hero Program",
-      link: "/career/zero-to-hero",
+      name: "Career Track Program",
+      link: "/career/career-track",
     },
     {
       name: "Instructor Training",
