@@ -1,20 +1,13 @@
 ---
-import PageHeader from "../../components/PageHeader.astro";
-import DiscoveryFlightCTA from "../../components/DiscoveryFlightCTA.astro";
-import ContactUs from "../../components/ContactUs.astro";
 import BaseLayout from "../../layouts/BaseLayout.astro";
-import TrainingCourseList from "../../components/TrainingCourseList.jsx";
 import UnderHeader from "../../components/UnderHeader.astro";
 import MultiEngineRoadmap from "../../components/MultiEngineRoadmap.astro";
 import EnrollNowCTA from "../../components/EnrollNowCTA.astro";
-import InstrumentPackages from "../../components/InstrumentPackages.astro";
-import { imageConfig } from "astro:assets";
-import FAQs from "../../components/FAQs";
-import { instrumentFAQs } from "../../data/instrumentFAQs";
+import MultienginePackage from "../../components/MultienginePackage.astro";
 ---
 
 <BaseLayout
-  pageTitle="Private Training | Summit Flight Academy"
+  pageTitle="Multi Engine | Summit Flight Academy"
   pageDescription="Soar to new heights with Summit Flight Academy's Multi-Engine Rating training. Gain the expertise to command complex, high-performance multi-engine aircraft with proficiency. Through ground school, practical flight sessions, and evaluations, our experienced instructors equip you with the essential knowledge and skills for safe multi-engine operations. Unlock new opportunities and elevate your piloting career with this advanced rating."
   pageKeywords="multi-engine rating, multi-engine training, pilot rating requirements, multi-engine aircraft operations, flight school training, advanced pilot certification, practical flight training, engine-out procedures, aviation career advancement, high-performance aircraft"
 >
@@ -58,6 +51,8 @@ import { instrumentFAQs } from "../../data/instrumentFAQs";
   />
 
   <MultiEngineRoadmap />
+
+  <MultienginePackage />
 
   <EnrollNowCTA />
 

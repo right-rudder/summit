@@ -1,3 +1,7 @@
+---
+import EnrollmentModalButton from "./enrollmentModalButtom";
+---
+
 <section id="instrument-rating-packages">
   <div class="bg-gray-900 py-24 sm:py-32">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
@@ -41,12 +45,11 @@
               <strong>$3,600</strong> months 2-7 or Pay <strong>$25,500</strong>
               once
             </p>
-            <a
-              href="#"
-              aria-describedby="tier-expedited"
-              class="mt-10 block bg-red-600 px-3 py-2 text-center text-sm font-semibold leading-6 text-white shadow-sm hover:bg-red-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600"
-              >Enroll Now</a
-            >
+            <EnrollmentModalButton
+              btnStyle={"mt-10 block w-full bg-red-600 px-3 py-2 text-center text-sm font-semibold leading-6 text-white shadow-sm hover:bg-red-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600"}
+              btnText={"Enroll Now"}
+              client:visible
+            />
             <p class="mt-10 text-sm font-semibold leading-6 text-gray-200">
               Our seven month* private - instrument pilot training package is
               available in one of our instrument equipped Pipers.
@@ -118,12 +121,11 @@
                 >$26,500</strong
               > once
             </p>
-            <a
-              href="#"
-              aria-describedby="tier-efficient"
-              class="mt-10 block bg-red-600 px-3 py-2 text-center text-sm font-semibold leading-6 text-white shadow-sm hover:bg-red-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600"
-              >Enroll Now</a
-            >
+            <EnrollmentModalButton
+              btnStyle={"mt-10 block w-full bg-red-600 px-3 py-2 text-center text-sm font-semibold leading-6 text-white shadow-sm hover:bg-red-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600"}
+              btnText={"Enroll Now"}
+              client:visible
+            />
             <p class="mt-10 text-sm font-semibold leading-6 text-gray-200">
               Our ten month* private-instrument training package provides a few
               additional hours to accommodate the longer training plan.
