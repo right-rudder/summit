@@ -20,14 +20,14 @@ const QuizModalButton = ({ btnStyle, btnText }) => {
     e.preventDefault();
     const formData = new FormData(e.target);
 
-    console.log(formData);
-
     if (formData.get("confirm-email")) {
       return;
     }
 
     const name = formData.get("firstName");
     setUserName(name);
+
+    console.log("Form data:", formData);
 
     const url =
       "https://services.leadconnectorhq.com/hooks/U9ULEEpmYvsaAGJyX7Wn/webhook-trigger/51a045fe-f219-46c5-acb3-26a6344429e9";
@@ -165,7 +165,8 @@ const QuizModalButton = ({ btnStyle, btnText }) => {
                           type="checkbox"
                           className="mx-2"
                           id="passion"
-                          name="passion"
+                          name="Inspirations"
+                          value={"A passion for adventure"}
                         />
                         <label htmlFor="passion">A passion for adventure</label>
                       </div>
@@ -175,7 +176,8 @@ const QuizModalButton = ({ btnStyle, btnText }) => {
                           type="checkbox"
                           className="mx-2"
                           id="progrow"
-                          name="progrow"
+                          name="Inspirations"
+                          value={"Professional growth and opportunities"}
                         />
                         <label htmlFor="progrow">
                           Professional growth and opportunities
@@ -186,7 +188,8 @@ const QuizModalButton = ({ btnStyle, btnText }) => {
                           type="checkbox"
                           className="mx-2"
                           id="hobby"
-                          name="hobby"
+                          name="Inspirations"
+                          value={"Personal hobby"}
                         />
                         <label htmlFor="hobby">Personal hobby</label>
                       </div>
@@ -195,7 +198,8 @@ const QuizModalButton = ({ btnStyle, btnText }) => {
                           type="checkbox"
                           className="mx-2"
                           id="other-pursue"
-                          name="other-pursue"
+                          name="Inspirations"
+                          value={"Other:"}
                           checked={pursue}
                           onChange={() => setPursue(!pursue)}
                         />
@@ -215,7 +219,7 @@ const QuizModalButton = ({ btnStyle, btnText }) => {
                         pilot.
                         <textarea
                           id="pursue-other"
-                          name="pursue-other"
+                          name="Inspirations"
                           rows={2}
                           className="w-full p-2 border text-black bg-gray-100 border-gray-400 rounded"
                         />
@@ -250,7 +254,8 @@ const QuizModalButton = ({ btnStyle, btnText }) => {
                           className="mx-2"
                           id="no-experience"
                           name="experience"
-                          value="no-experience"
+                          value="No prior experience with piloting aircraft"
+                          required
                         />
                         <label htmlFor="no-experience">
                           No prior experience with piloting aircraft
@@ -263,7 +268,8 @@ const QuizModalButton = ({ btnStyle, btnText }) => {
                           className="mx-2"
                           id="simulator-drone"
                           name="experience"
-                          value="simulator-drone"
+                          value="Experience with flight simulators or drones"
+                          required
                         />
                         <label htmlFor="simulator-drone">
                           Experience with flight simulators or drones
@@ -276,7 +282,8 @@ const QuizModalButton = ({ btnStyle, btnText }) => {
                           className="mx-2"
                           id="flight-training"
                           name="experience"
-                          value="flight-training"
+                          value="Some flight training but haven't soloed yet"
+                          required
                         />
                         <label htmlFor="flight-training">
                           Some flight training but haven't soloed yet
@@ -289,7 +296,8 @@ const QuizModalButton = ({ btnStyle, btnText }) => {
                           className="mx-2"
                           id="wants-checkride"
                           name="experience"
-                          value="wants-checkride"
+                          value="Currently working towards completing a checkride"
+                          required
                         />
                         <label htmlFor="wants-checkride">
                           Currently working towards completing a checkride
@@ -309,7 +317,8 @@ const QuizModalButton = ({ btnStyle, btnText }) => {
                           className="mx-2"
                           id="hands-on"
                           name="learnstyle"
-                          value="hands-on"
+                          value="Hands-on, practical learning"
+                          required
                         />
                         <label htmlFor="hands-on">
                           Hands-on, practical learning
@@ -322,7 +331,8 @@ const QuizModalButton = ({ btnStyle, btnText }) => {
                           className="mx-2"
                           id="visual"
                           name="learnstyle"
-                          value="visual"
+                          value="Visual learning through observation"
+                          required
                         />
                         <label htmlFor="visual">
                           Visual learning through observation
@@ -335,7 +345,8 @@ const QuizModalButton = ({ btnStyle, btnText }) => {
                           className="mx-2"
                           id="reading"
                           name="learnstyle"
-                          value="reading"
+                          value="Learning through reading and studying materials"
+                          required
                         />
                         <label htmlFor="reading">
                           Learning through reading and studying materials
@@ -357,7 +368,8 @@ const QuizModalButton = ({ btnStyle, btnText }) => {
                           className="mx-2"
                           id="structured"
                           name="approach"
-                          value="structured"
+                          value="I prefer a structured approach"
+                          required
                         />
                         <label htmlFor="structured">
                           I prefer a structured approach
@@ -370,7 +382,8 @@ const QuizModalButton = ({ btnStyle, btnText }) => {
                           className="mx-2"
                           id="flexible"
                           name="approach"
-                          value="flexible"
+                          value="I prefer a flexible approach"
+                          required
                         />
                         <label htmlFor="flexible">
                           I prefer a flexible approach
@@ -391,7 +404,10 @@ const QuizModalButton = ({ btnStyle, btnText }) => {
                           type="checkbox"
                           className="mx-2"
                           id="personalized"
-                          name="personalized"
+                          name="Guidance"
+                          value={
+                            "A personalized approach tailored to my individual learning needs and preferences"
+                          }
                         />
                         <label htmlFor="personalized">
                           A personalized approach tailored to my individual
@@ -404,7 +420,10 @@ const QuizModalButton = ({ btnStyle, btnText }) => {
                           type="checkbox"
                           className="mx-2"
                           id="hands-on-constant"
-                          name="hands-on-constant"
+                          name="Guidance"
+                          value={
+                            "Hands-on involvement from the instructor, with constant feedback and guidance"
+                          }
                         />
                         <label htmlFor="hands-on-constant">
                           Hands-on involvement from the instructor, with
@@ -417,7 +436,10 @@ const QuizModalButton = ({ btnStyle, btnText }) => {
                           type="checkbox"
                           className="mx-2"
                           id="structured-clear"
-                          name="structured-clear"
+                          name="Guidance"
+                          value={
+                            "A structured approach with clear goals and objectives"
+                          }
                         />
                         <label htmlFor="structured-clear">
                           A structured approach with clear goals and objectives
@@ -429,7 +451,10 @@ const QuizModalButton = ({ btnStyle, btnText }) => {
                           type="checkbox"
                           className="mx-2"
                           id="guidance-confidence"
-                          name="guidance-confidence"
+                          name="Guidance"
+                          value={
+                            "Supportive and encouraging guidance, with a focus on building confidence"
+                          }
                         />
                         <label htmlFor="guidance-confidence">
                           Supportive and encouraging guidance, with a focus on
@@ -442,7 +467,8 @@ const QuizModalButton = ({ btnStyle, btnText }) => {
                           type="checkbox"
                           className="mx-2"
                           id="other-guidance"
-                          name="other-guidance"
+                          name="Guidance"
+                          value={"Other:"}
                           checked={guidance}
                           onChange={() => setGuidance(!guidance)}
                         />
@@ -462,7 +488,7 @@ const QuizModalButton = ({ btnStyle, btnText }) => {
                         would prefer from your flight instructor.
                         <textarea
                           id="guidance-other"
-                          name="guidance-other"
+                          name="Guidance"
                           rows={2}
                           className="w-full p-2 border text-black bg-gray-100 border-gray-400 rounded"
                         />
@@ -513,6 +539,7 @@ const QuizModalButton = ({ btnStyle, btnText }) => {
                           id="visit-yes"
                           name="visit-us"
                           value="visit-yes"
+                          required
                         />
                         <label htmlFor="visit-yes">Yes</label>
                       </div>
@@ -524,6 +551,7 @@ const QuizModalButton = ({ btnStyle, btnText }) => {
                           id="visit-no"
                           name="visit-us"
                           value="visit-no"
+                          required
                         />
                         <label htmlFor="visit-no">No</label>
                       </div>

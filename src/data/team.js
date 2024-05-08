@@ -15,7 +15,7 @@ export const team = [
   {
     id: 1,
     name: "Levi Self",
-    role: "Founder, CFI,CFII, A&P",
+    role: "Founder, CFI,CFII, MEI, A&P",
     imageUrl: "/img/our-team/LeviSelf.webp",
     imageAlt: "headshot of Levi Self",
     paragrah1:
@@ -50,7 +50,7 @@ export const team = [
   {
     id: 4,
     name: "Ian Goings",
-    role: "CFI, CFII",
+    role: "CFI",
     imageUrl: "/img/our-team/IanGoings.webp",
     imageAlt: "headshot of Ian Goings",
     paragrah1:
@@ -60,6 +60,13 @@ export const team = [
   },
   {
     id: 5,
+    name: "Chris Gilstrap",
+    role: "CFI, CFII",
+    imageUrl: "/img/our-team/Chris-Gilstrap-CFI-CFII.webp",
+    imageAlt: "headshot of Chris Gilstrap",
+  },
+  {
+    id: 6,
     name: "John Kruse",
     role: "CFI",
     imageUrl: "/img/our-team/JohnKruse.webp",
@@ -70,7 +77,7 @@ export const team = [
       "John is available for instruction seven days a week and currently is taking on new students.",
   },
   {
-    id: 6,
+    id: 7,
     name: "Hillary Kuklenski",
     role: "CFI, CFII",
     imageUrl: "/img/our-team/HillaryKuklenski.webp",
@@ -83,10 +90,10 @@ export const team = [
       "Hillary is available to fly seven days a week and is currently accepting new students.",
   },
   {
-    id: 7,
+    id: 8,
     name: "Jami Heckman",
     role: "Dispatcher and Administrator",
-    imageUrl: "/img/our-team/JamiHeckman.webp",
+    imageUrl: "/img/our-team/summit-flight-academy-admin-jami-heckman.webp",
     imageAlt: "headshot of Jami Heckman",
     paragrah1:
       "Jami is our dispatcher and office administrator. Jami runs our office, helps onboard new students, maintains our student records, and ensure operations are running smoothly.",

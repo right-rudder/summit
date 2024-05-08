@@ -28,19 +28,25 @@ export default function Team() {
             <p className="text-base italic leading-7 text-gray-600">
               {team[selectedId].role}
             </p>
-            <p className="mt-2 text-base leading-7 text-gray-600">
-              {team[selectedId].paragrah1}
-            </p>
-            <p
-              className={`${team[selectedId].paragrah2 ? "block" : "hidden"} mt-2 text-base leading-7 text-gray-600`}
-            >
-              {team[selectedId].paragrah2}
-            </p>
-            <p
-              className={`${team[selectedId].paragrah3 ? "block" : "hidden"} mt-2 text-base leading-7 text-gray-600`}
-            >
-              {team[selectedId].paragrah3}
-            </p>
+            {team[selectedId].paragrah1 && (
+              <p className="mt-2 text-base leading-7 text-gray-600">
+                {team[selectedId].paragrah1}
+              </p>
+            )}
+            {team[selectedId].paragrah2 && (
+              <p
+                className={`${team[selectedId].paragrah2 ? "block" : "hidden"} mt-2 text-base leading-7 text-gray-600`}
+              >
+                {team[selectedId].paragrah2}
+              </p>
+            )}
+            {team[selectedId].paragrah3 && (
+              <p
+                className={`${team[selectedId].paragrah3 ? "block" : "hidden"} mt-2 text-base leading-7 text-gray-600`}
+              >
+                {team[selectedId].paragrah3}
+              </p>
+            )}
             <button
               className="bg-main-red p-1 rounded-full absolute top-2 right-2"
               onClick={() => {
