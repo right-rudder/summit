@@ -64,10 +64,6 @@ export const team = [
     role: "CFI, CFII",
     imageUrl: "/img/our-team/Chris-Gilstrap-CFI-CFII.webp",
     imageAlt: "headshot of Chris Gilstrap",
-    paragrah1:
-      "Ian is a Certificated Flight Instructor (CFI) as well as a multi-engine commercial pilot with an Embraer 120 type rating. He teaches private and commercial students. Growing up in the Kansas City area, Ian is an aviation program graduate from the University of Central Missouri in Warrensburg, Missouri. Students enjoy learning from Ian's aviation experience.",
-    paragrah2:
-      "Ian is available for instruction Monday-Saturday and currently is taking on new students.",
   },
   {
     id: 6,
