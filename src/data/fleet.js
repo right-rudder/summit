@@ -273,7 +273,7 @@ export const fleet = [
     ],
     alt: "piper-cherokee-at-summit-flight-academy",
     desc: `"Miss Whiskey," a beloved aircraft among our clientele aspiring for private pilot certification, is none other than N6894W. This aircraft is equipped with a highly functional VFR panel featuring ADS-B in/out capabilities, accompanied by a Garmin 660 GPS navigator that provides traffic and ADS-B weather display for enhanced situational awareness. Moreover, N6894W boasts an updated interior, ensuring a comfortable and modern flying experience. Additionally, the inclusion of four-point inertial reel seat belts up front further enhances safety measures for passengers and pilots alike.`,
-    rentalPrice: 160,
+    rentalPrice: 150,
     model: "PA-28-140",
     flightRules: "VFR",
     avionics:
