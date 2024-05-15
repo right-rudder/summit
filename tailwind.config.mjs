@@ -19,6 +19,8 @@ export default {
         "career-track": "url('/img/pilot-bundle-header.webp')",
         "commercial-pilot": "url('/img/commercial-pilot-header.webp')",
         "instructor-training": "url('/img/cfi-header.webp')",
+        "multi-engine":
+          "url('/img/multi-engine-pilot-student-flying-twin-comanche-at-summit-flight-academy.webp')",
         "forms-library": "url('/img/forms-header.webp')",
         "teach-at": "url('/img/teach-at-summit-header.webp')",
         "pilot-bundle": "url('/img/zero-to-hero-header.webp')",
