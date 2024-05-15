@@ -43,10 +43,10 @@ export const flightPrograms = {
       name: "Commercial Pilot Training",
       link: "/flight-programs/commercial-pilot-training",
     },
-    /* {
+    {
       name: "Multi-Engine Rating",
       link: "/flight-programs/multi-engine-rating",
-    }, */
+    },
   ],
 };
 

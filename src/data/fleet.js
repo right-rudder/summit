@@ -323,16 +323,16 @@ export const fleet = [
     name: "Piper Twin Comanche",
     images: [
       {
-        src: "/img/our-fleet/N7664Y-1.webp",
-        alt: "piper-twin-comanche-at-summit-flight-academy",
+        src: "/img/our-fleet/front-shot-of-N7664Y-Piper-Twin-Comanche-SFA.webp",
+        alt: "front-shot-of-N7664Y-Piper-Twin-Comanche-SFA",
       },
       {
-        src: "/img/our-fleet/N7664Y-2.webp",
-        alt: "piper-twin-comanche-at-summit-flight-academy",
+        src: "/img/our-fleet/instrument-panel-of-N7664Y-Piper-Twin-Comanche-summit-flight-academy.webp",
+        alt: "instrument-panel-of-N7664Y-Piper-Twin-Comanche-summit-flight-academy",
       },
       {
-        src: "/img/our-fleet/N7664Y-3.webp",
-        alt: "piper-twin-comanche-at-summit-flight-academy",
+        src: "/img/our-fleet/pilot-cockpit-of-N7664Y-Piper-Twin-Comanche.webp",
+        alt: "pilot-cockpit-of-N7664Y-Piper-Twin-Comanche",
       },
     ],
     alt: "piper-twin-comanche-at-summit-flight-academy",
