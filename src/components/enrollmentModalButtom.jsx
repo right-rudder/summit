@@ -250,7 +250,7 @@ const EnrollmentModalButton = ({ btnStyle, btnText }) => {
                           value="multiengine"
                           required
                         />
-                        <label htmlFor="multiengine">Multi Engine</label>
+                        <label htmlFor="multiengine">Multi-Engine</label>
                       </div>
                     </fieldset>
                   </div>

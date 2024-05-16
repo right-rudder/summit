@@ -336,9 +336,17 @@ export const fleet = [
       },
     ],
     alt: "piper-twin-comanche-at-summit-flight-academy",
-    desc: `Stay tuned for the arrival of N7664Y, a Piper Twin Comanche aircraft, set to join our fleet in Spring 2024. This addition promises advanced features and capabilities, allowing us to conduct more advanced training like our Multi-Engine Rating.`,
-    model: "Coming Spring 2024!",
-    /* rentalPrice: 160, */
+    desc: "Summit Flight Academy proudly introduces the newest addition to our fleet, the Piper Twin Comanche (PA-30), used specifically for Multi-Engine Training. This versatile and reliable aircraft is renowned for its exceptional performance, making it the perfect choice for aspiring multi-engine pilots.",
+    model: "Dual instructor only (Solo rental unavailable)",
+    rentalPrice: 295,
+    additionalCost: "Instruction Rate: +$80/hour",
+    addSubtitle1: "Training Advantages:",
+    addText1:
+      "The PA-30 Piper Twin Comanche is celebrated for its stable handling and robust construction, ensuring a safe and effective training environment. Its twin-engine configuration offers students the opportunity to master multi-engine operations, including engine-out procedures and complex flight maneuvers. The aircraft's advanced avionics and instrumentation provide a realistic and immersive learning experience, preparing students for real-world scenarios.",
+    addSubtitle2:
+      "Why Choose the Piper Twin Comanche at Summit Flight Academy?",
+    addText2:
+      "At Summit Flight Academy, we are committed to providing the highest quality flight training. The addition of the Piper Twin Comanche to our fleet reflects our dedication to offering state-of-the-art training equipment. Our experienced instructors are well-versed in multi-engine operations and are ready to guide you through every step of your training journey.",
     /* flightRules: "VFR", */
     /* avionics:
       "PMA-8000 Audio panel, KLX-135A Comm/GPS, Garmin GTX 345 ADS-B in/out transponder and Garmin 660 VFR GPS", */

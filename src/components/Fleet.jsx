@@ -13,14 +13,34 @@ export default function Fleet() {
         <div className="fixed inset-0 bg-gray-900 bg-opacity-90 flex items-center justify-center z-50">
           <div className="bg-white pt-6 pb-12 px-9 rounded-md text-center text-black h-[99%] w-full max-w-4xl overflow-y-auto">
             <CarouselImages images={fleet[selectedId].images} />
-            <h3 className="mt-6 text-xl font-bold leading-8 text-gray-900">
+            <h3 className="mt-6 text-2xl font-bold leading-8 text-gray-900">
               {fleet[selectedId].tailNumber}
               <small> ({fleet[selectedId].name})</small>
             </h3>
             <h5 className="text-sm italic">{fleet[selectedId].model}</h5>
-            <p className="mt-8 text-base leading-6 text-gray-600 px-6">
+            <p className="mt-6 text-base leading-6 text-gray-600 px-6">
               {fleet[selectedId].desc}
             </p>
+            {fleet[selectedId].addSubtitle1 && fleet[selectedId].addText1 && (
+              <>
+                <h5 className="mt-8 text-lg font-bold leading-7 text-main-red">
+                  {fleet[selectedId].addSubtitle1}
+                </h5>
+                <p className="mt-4 text-base leading-6 text-gray-600 px-6">
+                  {fleet[selectedId].addText1}
+                </p>
+              </>
+            )}
+            {fleet[selectedId].addSubtitle2 && fleet[selectedId].addText2 && (
+              <>
+                <h5 className="mt-8 text-lg font-bold leading-7 text-main-red">
+                  {fleet[selectedId].addSubtitle2}
+                </h5>
+                <p className="mt-4 text-base leading-6 text-gray-600 px-6">
+                  {fleet[selectedId].addText2}
+                </p>
+              </>
+            )}
             {fleet[selectedId].flightRules && (
               <p className="mt-6 text-base italic leading-7 text-gray-600">
                 <strong>Flight Rules:</strong> {fleet[selectedId].flightRules}
@@ -332,6 +352,11 @@ export default function Fleet() {
                       className={`ml-0 ${index % 2 === 0 ? "m-0 lg:ml-6" : "m-0 lg:mr-9 pr-9"} ${plane.rentalPrice ? "" : "hidden"} w-full mt-2 text-lg leading-7 text-main-red`}
                     >
                       Rate: ${plane.rentalPrice} <small>/hour</small>
+                    </p>
+                    <p
+                      className={`ml-0 ${index % 2 === 0 ? "m-0 lg:ml-6" : "m-0 lg:mr-9 pr-9"} ${plane.rentalPrice ? "" : "hidden"} w-full mt-0 text-lg leading-7 text-gray-600`}
+                    >
+                      <small className="text-xs">{plane.additionalCost}</small>
                     </p>
                     <div
                       className={`flex mt-6 justify-center ${index % 2 === 0 ? "lg:justify-start lg:ml-6" : "lg:justify-end m-0 lg:mr-6"}`}
