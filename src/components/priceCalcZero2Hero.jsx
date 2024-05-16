@@ -214,7 +214,7 @@ const PriceCalcZero2Hero = () => {
                           }}
                         />
                         <label htmlFor="heldMe" className="text-sm">
-                          Multi Engine Rating
+                          Multi-Engine Rating
                         </label>
                       </div>
                     </fieldset>
@@ -234,7 +234,7 @@ const PriceCalcZero2Hero = () => {
                 </div>
               </div>
             </div>
-            <div className="relative z-10 min-h-[screen-1/2] m-0 lg:-mx-4 group w-full lg:w-2/5 lg:max-w-2/5">
+            <div className="relative z-10 min-h-[screen-1/2] m-0 lg:-mx-4 group w-full lg:w-3/5 lg:max-w-3/5">
               <div
                 aria-hidden="true"
                 className="absolute top-0 w-full h-full rounded-2xl bg-gradient-to-b from-gray-300 to-gray-200 shadow-xl transition duration-500 group-hover:scale-105 transform-gpu"
@@ -273,7 +273,7 @@ const PriceCalcZero2Hero = () => {
 
                   <ul
                     role="list"
-                    className="w-full px-3 space-y-4 pb-6 m-auto text-gray-600"
+                    className="w-full px-3 space-y-2 text-sm pb-6 m-auto text-gray-600 grid grid-cols-1 lg:grid-cols-2 gap-4"
                   >
                     {total == 0 && (
                       <li className="space-x-2 flex flex-nowrap align-middle justify-center items-center">
@@ -285,7 +285,7 @@ const PriceCalcZero2Hero = () => {
                     {ppl && (
                       <li className="space-x-2 flex flex-nowrap align-middle items-center">
                         <FaCheckCircle className="text-green-600 text-xl" />
-                        <span>Private Pilot License</span>
+                        <span>Private Pilot Certificate</span>
                       </li>
                     )}
                     {instrument && (
@@ -325,7 +325,7 @@ const PriceCalcZero2Hero = () => {
                         <span className="text-sky-500 font-semibold">
                           <FaCheckCircle className="text-green-600 text-xl" />
                         </span>
-                        <span>Multi Engine Rating</span>
+                        <span>Multi-Engine Rating</span>
                       </li>
                     )}
                     {(mei || meTbd) && (
@@ -333,7 +333,7 @@ const PriceCalcZero2Hero = () => {
                         <span className="text-sky-500 font-semibold">
                           <FaCheckCircle className="text-green-600 text-xl" />
                         </span>
-                        <span>Multi Engine Instructor</span>
+                        <span>Multi-Engine Instructor</span>
                       </li>
                     )}
                   </ul>
@@ -407,7 +407,7 @@ const PriceCalcZero2Hero = () => {
                         />
                         <span class="tooltip text-sm">
                           Written tests are ~$175 per certification (not
-                          required for the Multi Engine Rating or MEI add-on).
+                          required for the Multi-Engine Rating or MEI add-on).
                         </span>
                         <label htmlFor="written" className="text-sm">
                           Written Test Fees
@@ -613,11 +613,11 @@ const PriceCalcZero2Hero = () => {
                     <label htmlFor="me" className="text-sm has-tooltip">
                       <span className="tooltip text-sm">
                         Career track students need 25 total ME hours to reach a
-                        Multi Engine certification. You can achieve this by
+                        Multi-Engine certification. You can achieve this by
                         either getting your MEI or flying 15 hours via time
                         building.
                       </span>
-                      Multi Engine Rating
+                      Multi-Engine Rating
                     </label>
                   </div>
 
@@ -637,7 +637,7 @@ const PriceCalcZero2Hero = () => {
                       }}
                     />
                     <label htmlFor="mei" className="text-sm">
-                      Multi Engine Instructor{" "}
+                      Multi-Engine Instructor{" "}
                       <small className="font-bold">(MEI)</small>
                     </label>
                   </div>
@@ -658,7 +658,7 @@ const PriceCalcZero2Hero = () => {
                       }}
                     />
                     <label htmlFor="meTbd" className="text-sm">
-                      Multi Engine Time Building{" "}
+                      Multi-Engine Time Building{" "}
                       <small className="font-bold">(15 Hours)</small>
                     </label>
                   </div>
