@@ -2,7 +2,7 @@ export const team = [
   {
     id: 0,
     name: "Jeremy Davis",
-    role: "Founder, Managing Partner, CFI, CFII",
+    role: "Founder, Managing Partner, CFI, CFII, MEI",
     imageUrl: "/img/our-team/JeremyDavis.webp",
     imageAlt: "headshot of Jeremy Davis",
     paragrah1:
