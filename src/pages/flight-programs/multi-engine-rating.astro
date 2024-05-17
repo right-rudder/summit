@@ -4,10 +4,11 @@ import UnderHeader from "../../components/UnderHeader.astro";
 import MultiEngineRoadmap from "../../components/MultiEngineRoadmap.astro";
 import EnrollNowCTA from "../../components/EnrollNowCTA.astro";
 import MultienginePackage from "../../components/MultienginePackage.astro";
+import EnrollmentModalButton from "../../components/enrollmentModalButtom";
 ---
 
 <BaseLayout
-  pageTitle="Multi Engine | Summit Flight Academy"
+  pageTitle="Multi-Engine | Summit Flight Academy"
   pageDescription="Soar to new heights with Summit Flight Academy's Multi-Engine Rating training. Gain the expertise to command complex, high-performance multi-engine aircraft with proficiency. Through ground school, practical flight sessions, and evaluations, our experienced instructors equip you with the essential knowledge and skills for safe multi-engine operations. Unlock new opportunities and elevate your piloting career with this advanced rating."
   pageKeywords="multi-engine rating, multi-engine training, pilot rating requirements, multi-engine aircraft operations, flight school training, advanced pilot certification, practical flight training, engine-out procedures, aviation career advancement, high-performance aircraft"
 >
@@ -25,7 +26,7 @@ import MultienginePackage from "../../components/MultienginePackage.astro";
   /> -->
 
   <header
-    class="relative h-screen-3/4 bg-commercial-pilot bg-cover bg-center bg-black flex flex-col items-center justify-center"
+    class="relative h-screen-3/4 bg-multi-engine bg-cover bg-left lg:bg-center bg-black flex flex-col items-center justify-center"
   >
     <div
       class="absolute bg-gradient-to-b from-black/60 to-black/20 w-full h-full z-0"
@@ -36,18 +37,22 @@ import MultienginePackage from "../../components/MultienginePackage.astro";
       class="text-white text-center lg:text-left z-10 flex flex-col items-center gap-4 px-5 h-full lg:pt-28 justify-center"
     >
       <h1 class="text-5xl font-bold tracking-tighter">
-        Add-on Your Multi Engine Rating
+        Add-on Your Multi-Engine Rating
       </h1>
       <h2 class="text-3xl tracking-wide">
-        Advance in your private training and fly complex aircraft
+        Advance your aviation credentials and fly complex aircraft
       </h2>
-      <a href="/enrollment" target="_blank" class="btn-red">Apply Today</a>
+      <EnrollmentModalButton
+        client:visible
+        btnStyle={"btn-red"}
+        btnText={"Apply Today"}
+      />
     </div>
   </header>
 
   <UnderHeader
-    title="What is a Multi Engine Rating?"
-    text1="A Multi-Engine Rating is a significant achievement that opens up new opportunities for pilots, granting them the privilege of acting as pilot in command (PIC) of multi-engine aircraft. At Summit Flight Academy, we understand the importance of this rating and are dedicated to providing comprehensive training to help aspiring pilots excel in the realm of multi-engine aviation. We ensure that you gain the necessary knowledge, skills, and experience to navigate the complexities of these high-performance aircraft with confidence and proficiency."
+    title="What is a Multi-Engine Rating?"
+    text1="A Multi-Engine Rating is a significant achievement that opens up new opportunities for pilots, granting them the privilege of acting as pilot in command (PIC) of multi-engine aircraft. At Summit Flight Academy, we understand the importance of this rating and are dedicated to providing top-notch training to help aspiring pilots excel in the realm of multi-engine aviation. We ensure that you gain the necessary knowledge, skills, and experience to navigate the complexities of these high-performance aircraft with confidence and proficiency."
   />
 
   <MultiEngineRoadmap />

@@ -72,6 +72,6 @@ export const pplProcess = [
     content:
       "With this certification, you'll gain expertise in instructing in multi-engine aircraft, imparting knowledge and skills essential for operating these high-performance machines.",
     content2:
-      "This is also where you can reach your required 25 hours of time building for your Multi Engine Rating.",
+      "This is also where you can reach your required 25 hours of time building for your Multi-Engine Rating.",
   },
 ];

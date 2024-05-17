@@ -2,7 +2,7 @@ export const team = [
   {
     id: 0,
     name: "Jeremy Davis",
-    role: "Founder, Managing Partner, CFI, CFII",
+    role: "Founder, Managing Partner, CFI, CFII, MEI",
     imageUrl: "/img/our-team/JeremyDavis.webp",
     imageAlt: "headshot of Jeremy Davis",
     paragrah1:
@@ -43,7 +43,7 @@ export const team = [
     imageUrl: "/img/our-team/KatiaVanHorn.webp",
     imageAlt: "headshot of Katia Van Horn",
     paragrah1:
-      "Katia is a Certificated Flight Instructor (CFI/CFII) and teaches private, commercial and instrument students. She has been flying since she was 16 and joined Summit Flight Academy in January of 2023 after completing her CFI, CFII and multi engine ratings. Katia has had many students successfully complete solo flights and check rides. Other than instructing, Katia's passion in aviation is gliding. Last season she completed several cross-country soaring flights and earned her commercial glider rating. Katia available for private, instrument, commercial and add-on CFI-I training.",
+      "Katia is a Certificated Flight Instructor (CFI/CFII) and teaches private, commercial and instrument students. She has been flying since she was 16 and joined Summit Flight Academy in January of 2023 after completing her CFI, CFII and multi-engine ratings. Katia has had many students successfully complete solo flights and check rides. Other than instructing, Katia's passion in aviation is gliding. Last season she completed several cross-country soaring flights and earned her commercial glider rating. Katia available for private, instrument, commercial and add-on CFI-I training.",
     paragrah2:
       "Katia is currently accepting new students. Please contact Summit office for scheduling availability.",
   },
