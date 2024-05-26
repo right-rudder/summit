@@ -21,7 +21,7 @@ tags:
   ]
 ---
 
-# Taking the Private Pilot Written Exam
+## Taking the Private Pilot Written Exam
 
 Getting your private pilot's license opens up a new world of freedom and adventure in the skies. But before you can take to the air solo, there are important steps including one major milestone: the FAA Private Pilot Aeronautical Knowledge exam, commonly called the "written" exam. We know exams can cause pre-flight jitters, so we wanted to give you the full rundown on what to expect.
 
@@ -76,7 +76,7 @@ Successful completion of the written exam is a required milestone for every pros
 
 Trust us, having already mastered those fundamentals through your high written exam score makes the actual skills testing a much smoother process. You'll be able to clearly demonstrate an authoritative understanding of concepts like aerodynamics, aircraft performance, and regulations—not just rote memorization. This well-rounded proficiency is what defines a true airman.
 
-## So Don't Delay!
+## So Don't Delay
 
 The private pilot written exam stands as one of the first defining challenges in your journey toward the rewarding goal of becoming a licensed aviator. With the right attitude, study strategy, and high-quality training tools, you can soar through this milestone with confidence.
 
