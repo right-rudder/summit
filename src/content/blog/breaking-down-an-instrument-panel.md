@@ -44,7 +44,6 @@ The Airspeed Indicator measures the aircraft's speed relative to the surrounding
 
 Understanding and monitoring airspeed is crucial for maintaining control and ensuring safe operation, especially during takeoff, landing, and turbulent conditions.
 
-
 ![Student passing a checkride at Summit Flight Academy in Overland Park, KS](/public/Checkride-Photo-preview.jpeg)
 *Another successful instrument checkride at Summit!*
 
