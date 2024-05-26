@@ -1,7 +1,7 @@
 ---
 description: "Understanding flight instruments is essential for any aspiring pilot. This guide explains the core and additional flight instruments, helping pilots in Overland Park, Prairie Village, Leawood, and Lee's Summit navigate the skies safely and confidently."
 pubDate: "May 16, 2024"
-heroImage: "/public/N7664Y-Piper-Twin-Comanche-instrument-panel.jpg"
+heroImage: "/img/N7664Y-Piper-Twin-Comanche-instrument-panel.jpg"
 imgAlt: "flight instruments"
 author: Jami Heckman
 title: Breaking Down an Instrument Panel
@@ -44,8 +44,8 @@ The Airspeed Indicator measures the aircraft's speed relative to the surrounding
 
 Understanding and monitoring airspeed is crucial for maintaining control and ensuring safe operation, especially during takeoff, landing, and turbulent conditions.
 
-![Student passing a checkride at Summit Flight Academy in Overland Park, KS](/public/Checkride-Photo-preview.jpeg)
-*Another successful instrument checkride at Summit!*
+![Student passing a checkride at Summit Flight Academy in Overland Park, KS](/img/Checkride-Photo-preview.jpg)
+_Another successful instrument checkride at Summit!_
 
 #### Attitude Indicator (AI)
 
@@ -105,7 +105,7 @@ Summit Flight Academy and other local flight schools in Overland Park, Prairie V
 
 Even if you start with visual flight rules (VFR) training, consider pursuing an [instrument rating (IFR)](https://www.summitflightacademy.com/flight-programs/instrument-rating/) to enhance your skills and increase your versatility as a pilot. Instrument training deepens your understanding of flight instruments and prepares you for flying in a wider range of weather conditions. If you're interested in a professional aviation career, explore our [career track options](https://www.summitflightacademy.com/career/career-track/) for a structured pathway to becoming a commercial pilot.
 
-![Excited pilot flying an aircraft over Leawood, Kansas](/public/ME-Training-Twin-Comanche.JPG)
-*Take flight with Summit Flight Academy today*
+![Excited pilot flying an aircraft over Leawood, Kansas](/img/ME-Training-Twin-Comanche.jpg)
+_Take flight with Summit Flight Academy today_
 
 Mastering flight instruments is a cornerstone of becoming a competent and confident pilot. By understanding the function and operation of each instrument, aspiring aviators from Overland Park to Lee's Summit can build a solid foundation for safe and efficient flight operations. Whether you're just starting your journey or looking to advance your skills, Summit Flight Academy is here to support you every step of the way. Embrace the challenge, invest in your education, and take to the skies with confidence.
