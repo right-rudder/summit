@@ -12,7 +12,7 @@ const Accordion = ({ faq, toggled, onShow, index }) => {
         <div
           className={`w-full h-full flex items-center justify-between text-black py-2`}
         >
-          <span className="font-mono mr-4 text-lg lg:text-5xl font-semibold w-20 lg:w-24 text-gray-800 tracking-tight overflow-hidden text-left">
+          <span className="font-mono lg:mr-4 text-lg lg:text-5xl font-semibold w-6 lg:w-24 text-gray-500 tracking-tight overflow-hidden text-left">
             {index + 1}
           </span>
           <p className="text-base lg:text-xl font-semibold w-full text-center lg:text-left">
