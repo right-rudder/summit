@@ -18,19 +18,34 @@ import {
   >
     <div class="flex items-center gap-3">
       <div class="hidden lg:flex gap-2">
-        <a href={FACEBOOK_LINK} target="_blank" rel="noopener">
+        <a
+          href={FACEBOOK_LINK}
+          target="_blank"
+          rel="noopener"
+          aria-label="Facebook Link"
+        >
           <Icon
             name="entypo-social:facebook-with-circle"
             class="text-white text-2xl hover:scale-105 cursor-pointer transition-all"
           />
         </a>
-        <a href={INSTAGRAM_LINK} target="_blank" rel="noopener">
+        <a
+          href={INSTAGRAM_LINK}
+          target="_blank"
+          rel="noopener"
+          aria-label="Instagram Link"
+        >
           <Icon
             name="entypo-social:instagram-with-circle"
             class="text-white text-2xl hover:scale-105 cursor-pointer transition-all"
           />
         </a>
-        <a href=`mailto:${EMAIL_ADDRESS}` target="_blank" rel="noopener">
+        <a
+          href=`mailto:${EMAIL_ADDRESS}`
+          target="_blank"
+          rel="noopener"
+          aria-label="Send Email Link"
+        >
           <Icon
             name="tabler:mail-filled"
             class="text-white text-2xl hover:scale-105 cursor-pointer transition-all"
@@ -40,6 +55,7 @@ import {
       <a
         href=`tel:${PHONE_NUMBER}`
         class="lg:ml-9 text-white text-sm lg:text-base font-normal flex hover:scale-105 cursor-pointer transition-all"
+        aria-label="Call telephone Link"
       >
         <Icon name="tabler:phone-call" class="text-white mr-2 text-2xl" />
         {PHONE_NUMBER}</a
