@@ -69,3 +69,7 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+
+.link {
+  @apply text-main-red hover:underline;
+}
