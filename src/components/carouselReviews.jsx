@@ -127,10 +127,10 @@ export default function CarouselReviews() {
             </div>
 
             <div className="hidden lg:flex absolute top-0 h-full w-full justify-between items-end py-4 lg:items-center text-gray-900/45 px-10 text-5xl">
-              <button onClick={previousSlide}>
+              <button onClick={previousSlide} aria-label="Previous Slide">
                 <BsFillArrowLeftCircleFill />
               </button>
-              <button onClick={nextSlide}>
+              <button onClick={nextSlide} aria-label="Next Slide">
                 <BsFillArrowRightCircleFill />
               </button>
             </div>

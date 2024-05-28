@@ -9,11 +9,7 @@ export const aopaFAQs = [
   },
   {
     title: "Is deferred repayment available? We does repayment begin?",
-    content:
-      "No deferred repayment is available. This means" +
-      "the borrower and/or their co-borrower must have a meas to" +
-      "repay training while it is occurring. Repayment begins" +
-      "approximately a month after initial loan disbursement.",
+    content: `No deferred repayment is available. This means the borrower and/or their co-borrower must have a means to repay training while it is occurring. Repayment begins approximately a month after initial loan disbursement.`,
   },
   {
     title: "Do I need a co-signer?",
@@ -26,14 +22,7 @@ export const aopaFAQs = [
   },
   {
     title: "How does my training get funded?",
-    content:
-      "You will receive a check or debit card with" +
-      "which to pay Summit Flight Academy for your training. If" +
-      "you choose to receive a check and pay in full via check" +
-      "when enrolling, you will be eligible for the pre-paid" +
-      "discount ($500). AOPA financing does not require paperwork" +
-      "for each lesson in order to make funding available to" +
-      "credit your account.",
+    content: `You will receive a check or debit card with which to pay Summit Flight Academy for your training. If you choose to receive a check and pay in full via check when enrolling, you will be eligible for the pre-paid discount ($500). AOPA financing does not require paperwork for each lesson in order to make funding available to credit your account.`,
   },
   {
     title: "Are there any other qualifications?",

@@ -56,7 +56,7 @@ export const privatepilotFAQs = [
       "We strive for this not to happen by providing average flight hours that are needed for the program length you select. However, in the event this happens, we will provide you additional aircraft and/or instructor hours at an agreed-upon discounted rate.",
   },
   {
-    title: "What Pilot supplies are included?",
+    title: "What pilot supplies are included?",
     content:
       "Your choice of two pilot bags, a Faro passive headset, logbook, basic kneeboard, ASA Oral Exam Guide, a hard copy of the FAA Private Pilot ACS, and ForeFlight Subscription. As a Lightspeed dealer, we do have an upgrade option available to a noise-cancelling headset. Some supplies like a flight computer and foggles can be borrowed from school inventory. Optional items will be discussed with your instructor to help you keep costs manageable.",
   },

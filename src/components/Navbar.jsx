@@ -48,10 +48,13 @@ const Navbar = ({ pathname }) => {
             <div className="flex flex-1 items-center justify-between">
               <a href="/" className="flex flex-shrink items-center">
                 <img
-                  src="/img/fromWIX/SFA-logo.png"
+                  loading="eager"
+                  src="/img/fromWIX/SFA-logo.webp"
                   alt="Summit Flight Academy Logo"
                   className={`${navBar ? "lg:h-14" : "lg:h-20"} object-contain h-14 w-auto transition-all`}
                   id="navbar-image"
+                  width={319}
+                  height={80}
                 />
               </a>
               <div className="hidden lg:ml-6 lg:block">
