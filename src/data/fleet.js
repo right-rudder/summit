@@ -323,16 +323,16 @@ export const fleet = [
     name: "Piper Twin Comanche",
     images: [
       {
-        src: "/img/our-fleet/front-shot-of-N7664Y-Piper-Twin-Comanche-SFA.webp",
-        alt: "front-shot-of-N7664Y-Piper-Twin-Comanche-SFA",
+        src: "/img/our-fleet/summit-flight-academy-front-shot-of-N7664Y-Piper-Twin-Comanche-SFA.webp",
+        alt: "summit-flight-academy-front-shot-of-N7664Y-Piper-Twin-Comanche-SFA",
       },
       {
-        src: "/img/our-fleet/instrument-panel-of-N7664Y-Piper-Twin-Comanche-summit-flight-academy.webp",
-        alt: "instrument-panel-of-N7664Y-Piper-Twin-Comanche-summit-flight-academy",
+        src: "/img/our-fleet/summit-flight-academy-instrument-panel-of-N7664Y-Piper-Twin-Comanche-summit-flight-academy.webp",
+        alt: "summit-flight-academy-instrument-panel-of-N7664Y-Piper-Twin-Comanche-summit-flight-academy",
       },
       {
-        src: "/img/our-fleet/pilot-cockpit-of-N7664Y-Piper-Twin-Comanche.webp",
-        alt: "pilot-cockpit-of-N7664Y-Piper-Twin-Comanche",
+        src: "/img/our-fleet/summit-flight-academy-pilot-cockpit-of-N7664Y-Piper-Twin-Comanche.webp",
+        alt: "summit-flight-academy-pilot-cockpit-of-N7664Y-Piper-Twin-Comanche",
       },
     ],
     alt: "piper-twin-comanche-at-summit-flight-academy",

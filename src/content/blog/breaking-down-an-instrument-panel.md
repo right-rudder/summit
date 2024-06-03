@@ -1,7 +1,7 @@
 ---
 description: "Understanding flight instruments is essential for any aspiring pilot. This guide explains the core and additional flight instruments, helping pilots in Overland Park, Prairie Village, Leawood, and Lee's Summit navigate the skies safely and confidently."
 pubDate: "May 16, 2024"
-heroImage: "/img/N7664Y-Piper-Twin-Comanche-instrument-panel.jpg"
+heroImage: "/img/our-fleet/summit-flight-academy-instrument-panel-of-N7664Y-Piper-Twin-Comanche-summit-flight-academy.webp"
 imgAlt: "flight instruments"
 author: Jami Heckman
 title: Breaking Down an Instrument Panel
