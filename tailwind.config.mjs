@@ -48,7 +48,7 @@ export default {
         "discovery-flight":
           "url('/img/summit-flight-academy-front-view-of-piper-cherokee-park-on-runway-discovery-flight.webp')",
         "cfi-and-student": "url('/img/discovery-flight/cfi-and-student.webp')",
-        store: "url('/img/Lightspeed_Zulu-V_Shot2_1060-5.webp')",
+        store: "url('/img/CFI-and-student-pilot.webp')",
       },
       height: (theme) => ({
         "screen-1/2": "50vh",
