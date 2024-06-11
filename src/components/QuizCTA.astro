@@ -1,5 +1,7 @@
 ---
 import QuizModalButton from "./QuizModalButton";
+
+const { city, text1 } = Astro.props;
 ---
 
 <div class="relative bg-gray-900">
@@ -45,11 +47,18 @@ import QuizModalButton from "./QuizModalButton";
         Build confidence in your craft
       </h2>
       <p class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">
-        Do You Have What It Takes To Be A Pilot?
+        {
+          city
+            ? `Do You Have What It Takes To Be A Pilot ${city}?`
+            : "Do You Have What It Takes To Be A Pilot?"
+        }
       </p>
       <p class="mt-6 text-base leading-7 text-gray-200">
-        Are you fascinated by flying and aviation? "Have you dreamed of being a
-        pilot? Do you wonder what it takes to fly a plane?"
+        {
+          text1
+            ? text1
+            : "Are you fascinated by flying and aviation? Have you dreamed of being a pilot? Do you wonder what it takes to fly a plane?"
+        }
       </p>
       <p class="mt-6 text-base leading-7 text-gray-200">
         Begin your path to becoming a pilot with our brief quiz. Our quiz is
