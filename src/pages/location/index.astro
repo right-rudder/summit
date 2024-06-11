@@ -6,7 +6,7 @@ const allLocations = await getCollection("location");
 ---
 
 <BaseLayout
-  pageTitle="New to Flying | Summit Flight Academy"
+  pageTitle="Locations | Summit Flight Academy"
   pageDescription="Explore the thrilling world of aviation at Summit Flight Academy. Discover why becoming a pilot is a rewarding journey, offering freedom, adventure, and personal growth. Get step-by-step guidance on how to obtain your pilot's license, from enrolling in our comprehensive training programs to passing exams and taking to the skies. Ignite your passion for flight today."
   pageKeywords="pilot training, become a pilot, flight school, private pilot license, aviation career, discovery flight, flight training programs, commercial pilot certification, instrument rating, multi-engine training, aviation education"
 >
@@ -31,8 +31,13 @@ const allLocations = await getCollection("location");
       </h2>
     </div>
   </header>
-  <div class="min-h-44 flex justify-center align-middle items-center">
-    <ul class="w-full flex flex-wrap justify-around items-center align-middle">
+  <div class="py-16">
+    <h2 class="mb-8 w-full text-center font-bold text-5xl">
+      Locations<small class="text-sm">({allLocations.length})</small>
+    </h2>
+    <ul
+      class="w-full flex flex-wrap justify-around items-center align-middle gap-y-6"
+    >
       {
         allLocations.map((location) => (
           <li class="btn-red">
