@@ -1,0 +1,535 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import CareerTrackCTA from "../components/careerTrackCTA.astro";
+import EnrollNowCTA from "../components/EnrollNowCTA.astro";
+---
+
+<BaseLayout
+  pageTitle="Store | Summit Flight Academy"
+  pageDescription="Explore the thrilling world of aviation at Summit Flight Academy. Discover why becoming a pilot is a rewarding journey, offering freedom, adventure, and personal growth. Get step-by-step guidance on how to obtain your pilot's license, from enrolling in our comprehensive training programs to passing exams and taking to the skies. Ignite your passion for flight today."
+  pageKeywords="pilot training, become a pilot, flight school, private pilot license, aviation career, discovery flight, flight training programs, commercial pilot certification, instrument rating, multi-engine training, aviation education"
+>
+  <header
+    class="relative h-screen-3/4 bg-store bg-cover bg-center bg-black flex flex-col items-center justify-center"
+  >
+    <!-- bg-overlay to darken -->
+    <div
+      class="absolute bg-gradient-to-b from-black/50 to-black/20 w-full h-full z-0"
+    >
+    </div>
+    <!-- Text -->
+    <div
+      class="text-white text-center lg:text-left z-10 flex flex-col items-center gap-4 px-5 h-full lg:pt-28 justify-center"
+    >
+      <h1 class="text-5xl font-bold tracking-tight">Lightspeed Store</h1>
+      <h2 class="text-3xl tracking-wide">Explore our recommended gear</h2>
+    </div>
+  </header>
+
+  <section class="container mx-auto py-12">
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+      <div class="flex justify-center align-middle items-center">
+        <div id="product-component-1717605538694"></div>
+        <script type="text/javascript">
+          /*<![CDATA[*/
+          (function () {
+            var scriptURL =
+              "https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js";
+            if (window.ShopifyBuy) {
+              if (window.ShopifyBuy.UI) {
+                ShopifyBuyInit();
+              } else {
+                loadScript();
+              }
+            } else {
+              loadScript();
+            }
+            function loadScript() {
+              var script = document.createElement("script");
+              script.async = true;
+              script.src = scriptURL;
+              (
+                document.getElementsByTagName("head")[0] ||
+                document.getElementsByTagName("body")[0]
+              ).appendChild(script);
+              script.onload = ShopifyBuyInit;
+            }
+            function ShopifyBuyInit() {
+              var client = ShopifyBuy.buildClient({
+                domain: "748f36-a5.myshopify.com",
+                storefrontAccessToken: "be076e39af723bcdc5aa12c000b83511",
+              });
+              ShopifyBuy.UI.onReady(client).then(function (ui) {
+                ui.createComponent("product", {
+                  id: "7919710240856",
+                  node: document.getElementById(
+                    "product-component-1717605538694"
+                  ),
+                  moneyFormat: "%24%7B%7Bamount%7D%7D",
+                  options: {
+                    product: {
+                      styles: {
+                        product: {
+                          "@media (min-width: 601px)": {
+                            "max-width": "calc(25% - 20px)",
+                            "margin-left": "20px",
+                            "margin-bottom": "50px",
+                          },
+                        },
+                        title: {
+                          "font-family": "Raleway, sans-serif",
+                        },
+                        button: {
+                          "font-family": "Raleway, sans-serif",
+                          ":hover": {
+                            "background-color": "#ff000f",
+                          },
+                          "background-color": "#c70009",
+                          ":focus": {
+                            "background-color": "#ff000f",
+                          },
+                        },
+                      },
+                      buttonDestination: "modal",
+                      contents: {
+                        options: false,
+                      },
+                      text: {
+                        button: "View product",
+                      },
+                      googleFonts: ["Raleway"],
+                    },
+                    productSet: {
+                      styles: {
+                        products: {
+                          "@media (min-width: 601px)": {
+                            "margin-left": "-20px",
+                          },
+                        },
+                      },
+                    },
+                    modalProduct: {
+                      contents: {
+                        img: false,
+                        imgWithCarousel: true,
+                        button: false,
+                        buttonWithQuantity: true,
+                      },
+                      styles: {
+                        product: {
+                          "@media (min-width: 601px)": {
+                            "max-width": "100%",
+                            "margin-left": "0px",
+                            "margin-bottom": "0px",
+                          },
+                        },
+                        button: {
+                          "font-family": "Raleway, sans-serif",
+                          ":hover": {
+                            "background-color": "#ff000f",
+                          },
+                          "background-color": "#c70009",
+                          ":focus": {
+                            "background-color": "#ff000f",
+                          },
+                        },
+                        title: {
+                          "font-family": "Raleway, sans-serif",
+                          "font-weight": "bold",
+                          "font-size": "26px",
+                          color: "#4c4c4c",
+                        },
+                        description: {
+                          "font-family": "Raleway, sans-serif",
+                        },
+                      },
+                      googleFonts: ["Raleway"],
+                      text: {
+                        button: "Add to cart",
+                      },
+                    },
+                    option: {},
+                    cart: {
+                      styles: {
+                        button: {
+                          "font-family": "Raleway, sans-serif",
+                          ":hover": {
+                            "background-color": "#ff000f",
+                          },
+                          "background-color": "#c70009",
+                          ":focus": {
+                            "background-color": "#ff000f",
+                          },
+                        },
+                      },
+                      text: {
+                        total: "Subtotal",
+                        button: "Checkout",
+                      },
+                      googleFonts: ["Raleway"],
+                    },
+                    toggle: {
+                      styles: {
+                        toggle: {
+                          "font-family": "Raleway, sans-serif",
+                          "background-color": "#c70009",
+                          ":hover": {
+                            "background-color": "#ff000f",
+                          },
+                          ":focus": {
+                            "background-color": "#ff000f",
+                          },
+                        },
+                      },
+                      googleFonts: ["Raleway"],
+                    },
+                  },
+                });
+              });
+            }
+          })();
+          /*]]>*/
+        </script>
+      </div>
+      <div class="flex justify-center align-middle items-center">
+        <div id="product-component-1717605448583"></div>
+        <script type="text/javascript">
+          /*<![CDATA[*/
+          (function () {
+            var scriptURL =
+              "https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js";
+            if (window.ShopifyBuy) {
+              if (window.ShopifyBuy.UI) {
+                ShopifyBuyInit();
+              } else {
+                loadScript();
+              }
+            } else {
+              loadScript();
+            }
+            function loadScript() {
+              var script = document.createElement("script");
+              script.async = true;
+              script.src = scriptURL;
+              (
+                document.getElementsByTagName("head")[0] ||
+                document.getElementsByTagName("body")[0]
+              ).appendChild(script);
+              script.onload = ShopifyBuyInit;
+            }
+            function ShopifyBuyInit() {
+              var client = ShopifyBuy.buildClient({
+                domain: "748f36-a5.myshopify.com",
+                storefrontAccessToken: "be076e39af723bcdc5aa12c000b83511",
+              });
+              ShopifyBuy.UI.onReady(client).then(function (ui) {
+                ui.createComponent("product", {
+                  id: "7919814017112",
+                  node: document.getElementById(
+                    "product-component-1717605448583"
+                  ),
+                  moneyFormat: "%24%7B%7Bamount%7D%7D",
+                  options: {
+                    product: {
+                      styles: {
+                        product: {
+                          "@media (min-width: 601px)": {
+                            "max-width": "calc(25% - 20px)",
+                            "margin-left": "20px",
+                            "margin-bottom": "50px",
+                          },
+                        },
+                        title: {
+                          "font-family": "Raleway, sans-serif",
+                        },
+                        button: {
+                          "font-family": "Raleway, sans-serif",
+                          ":hover": {
+                            "background-color": "#ff000f",
+                          },
+                          "background-color": "#c70009",
+                          ":focus": {
+                            "background-color": "#ff000f",
+                          },
+                        },
+                      },
+                      buttonDestination: "modal",
+                      contents: {
+                        options: false,
+                      },
+                      text: {
+                        button: "View product",
+                      },
+                      googleFonts: ["Raleway"],
+                    },
+                    productSet: {
+                      styles: {
+                        products: {
+                          "@media (min-width: 601px)": {
+                            "margin-left": "-20px",
+                          },
+                        },
+                      },
+                    },
+                    modalProduct: {
+                      contents: {
+                        img: false,
+                        imgWithCarousel: true,
+                        button: false,
+                        buttonWithQuantity: true,
+                      },
+                      styles: {
+                        product: {
+                          "@media (min-width: 601px)": {
+                            "max-width": "100%",
+                            "margin-left": "0px",
+                            "margin-bottom": "0px",
+                          },
+                        },
+                        button: {
+                          "font-family": "Raleway, sans-serif",
+                          ":hover": {
+                            "background-color": "#ff000f",
+                          },
+                          "background-color": "#c70009",
+                          ":focus": {
+                            "background-color": "#ff000f",
+                          },
+                        },
+                        title: {
+                          "font-family": "Raleway, sans-serif",
+                          "font-weight": "bold",
+                          "font-size": "26px",
+                          color: "#4c4c4c",
+                        },
+                        description: {
+                          "font-family": "Raleway, sans-serif",
+                        },
+                      },
+                      googleFonts: ["Raleway"],
+                      text: {
+                        button: "Add to cart",
+                      },
+                    },
+                    option: {},
+                    cart: {
+                      styles: {
+                        button: {
+                          "font-family": "Raleway, sans-serif",
+                          ":hover": {
+                            "background-color": "#ff000f",
+                          },
+                          "background-color": "#c70009",
+                          ":focus": {
+                            "background-color": "#ff000f",
+                          },
+                        },
+                      },
+                      text: {
+                        total: "Subtotal",
+                        button: "Checkout",
+                      },
+                      googleFonts: ["Raleway"],
+                    },
+                    toggle: {
+                      styles: {
+                        toggle: {
+                          "font-family": "Raleway, sans-serif",
+                          "background-color": "#c70009",
+                          ":hover": {
+                            "background-color": "#ff000f",
+                          },
+                          ":focus": {
+                            "background-color": "#ff000f",
+                          },
+                        },
+                      },
+                      googleFonts: ["Raleway"],
+                    },
+                  },
+                });
+              });
+            }
+          })();
+          /*]]>*/
+        </script>
+      </div>
+      <div class="flex justify-center align-middle items-center">
+        <div id="product-component-1717606400210"></div>
+        <script type="text/javascript">
+          /*<![CDATA[*/
+          (function () {
+            var scriptURL =
+              "https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js";
+            if (window.ShopifyBuy) {
+              if (window.ShopifyBuy.UI) {
+                ShopifyBuyInit();
+              } else {
+                loadScript();
+              }
+            } else {
+              loadScript();
+            }
+            function loadScript() {
+              var script = document.createElement("script");
+              script.async = true;
+              script.src = scriptURL;
+              (
+                document.getElementsByTagName("head")[0] ||
+                document.getElementsByTagName("body")[0]
+              ).appendChild(script);
+              script.onload = ShopifyBuyInit;
+            }
+            function ShopifyBuyInit() {
+              var client = ShopifyBuy.buildClient({
+                domain: "748f36-a5.myshopify.com",
+                storefrontAccessToken: "be076e39af723bcdc5aa12c000b83511",
+              });
+              ShopifyBuy.UI.onReady(client).then(function (ui) {
+                ui.createComponent("product", {
+                  id: "7905085423704",
+                  node: document.getElementById(
+                    "product-component-1717606400210"
+                  ),
+                  moneyFormat: "%24%7B%7Bamount%7D%7D",
+                  options: {
+                    product: {
+                      styles: {
+                        product: {
+                          "@media (min-width: 601px)": {
+                            "max-width": "calc(25% - 20px)",
+                            "margin-left": "20px",
+                            "margin-bottom": "50px",
+                          },
+                        },
+                        title: {
+                          "font-family": "Raleway, sans-serif",
+                        },
+                        button: {
+                          "font-family": "Raleway, sans-serif",
+                          ":hover": {
+                            "background-color": "#ff000f",
+                          },
+                          "background-color": "#c70009",
+                          ":focus": {
+                            "background-color": "#ff000f",
+                          },
+                        },
+                      },
+                      buttonDestination: "modal",
+                      contents: {
+                        options: false,
+                      },
+                      text: {
+                        button: "View product",
+                      },
+                      googleFonts: ["Raleway"],
+                    },
+                    productSet: {
+                      styles: {
+                        products: {
+                          "@media (min-width: 601px)": {
+                            "margin-left": "-20px",
+                          },
+                        },
+                      },
+                    },
+                    modalProduct: {
+                      contents: {
+                        img: false,
+                        imgWithCarousel: true,
+                        button: false,
+                        buttonWithQuantity: true,
+                      },
+                      styles: {
+                        product: {
+                          "@media (min-width: 601px)": {
+                            "max-width": "100%",
+                            "margin-left": "0px",
+                            "margin-bottom": "0px",
+                          },
+                        },
+                        button: {
+                          "font-family": "Raleway, sans-serif",
+                          ":hover": {
+                            "background-color": "#ff000f",
+                          },
+                          "background-color": "#c70009",
+                          ":focus": {
+                            "background-color": "#ff000f",
+                          },
+                        },
+                        title: {
+                          "font-family": "Raleway, sans-serif",
+                          "font-weight": "bold",
+                          "font-size": "26px",
+                          color: "#4c4c4c",
+                        },
+                        description: {
+                          "font-family": "Raleway, sans-serif",
+                        },
+                      },
+                      googleFonts: ["Raleway"],
+                      text: {
+                        button: "Add to cart",
+                      },
+                    },
+                    option: {},
+                    cart: {
+                      styles: {
+                        button: {
+                          "font-family": "Raleway, sans-serif",
+                          ":hover": {
+                            "background-color": "#ff000f",
+                          },
+                          "background-color": "#c70009",
+                          ":focus": {
+                            "background-color": "#ff000f",
+                          },
+                        },
+                      },
+                      text: {
+                        total: "Subtotal",
+                        button: "Checkout",
+                      },
+                      googleFonts: ["Raleway"],
+                    },
+                    toggle: {
+                      styles: {
+                        toggle: {
+                          "font-family": "Raleway, sans-serif",
+                          "background-color": "#c70009",
+                          ":hover": {
+                            "background-color": "#ff000f",
+                          },
+                          ":focus": {
+                            "background-color": "#ff000f",
+                          },
+                        },
+                      },
+                      googleFonts: ["Raleway"],
+                    },
+                  },
+                });
+              });
+            }
+          })();
+          /*]]>*/
+        </script>
+      </div>
+    </div>
+    <p class="mx-auto text-lg py-12 text-center font-medium">
+      At Summit Flight Academy, we understand the importance of high-quality
+      equipment in ensuring a successful and safe learning experience. That's
+      why we are proud to partner with Lightspeed to supply our students with
+      top-of-the-line aviation headsets. These headsets are essential for clear
+      communication and noise reduction, making them a critical tool for any
+      aspiring pilot. As the premier flight school in Kansas City, Summit Flight
+      Academy ensures that our students have access to the best training tools,
+      starting with the industry-leading Lightspeed headsets. Invest in your
+      pilot training with the best gear available, right here at Summit Flight
+      Academy.
+    </p>
+  </section>
+  <CareerTrackCTA />
+</BaseLayout>

@@ -78,7 +78,7 @@ const FinancingTabs = () => {
               <a
                 href="https://stratus.finance/apply/summitflight1286120/"
                 target="_blank"
-                class="btn-red"
+                className="btn-red"
               >
                 Apply Today
               </a>
@@ -170,7 +170,7 @@ const FinancingTabs = () => {
             <a
               href="http://flighttrainingfinancellc.com/summit%20/"
               target="_blank"
-              class="btn-red"
+              className="btn-red"
             >
               Apply Today
             </a>
@@ -266,7 +266,7 @@ const FinancingTabs = () => {
               <a
                 href="https://finance.aopa.org/flight-training-finance"
                 target="_blank"
-                class="btn-red"
+                className="btn-red"
               >
                 Apply Today
               </a>

@@ -93,16 +93,16 @@ const Navbar = ({ pathname }) => {
                     toggled={about.name === openSubmenu}
                     onShow={handleMenuItemClick}
                   />
-                  {/* <div>
+                  <div>
                     <a
-                      href="/discovery-flight"
-                      className={`cursor-pointer text-xl text-white py-5 hover:border-b-2 border-main-red whitespace-nowrap ${
-                        pathname === "/discovery-flight" ? "border-b-2" : ""
+                      href="/store"
+                      className={`cursor-pointer text-lg text-white py-2 hover:border-b-2 border-main-red whitespace-nowrap ${
+                        pathname === "/new-to-flying" ? "border-b-2" : ""
                       }`}
                     >
-                      Discovery Flight
+                      Shop
                     </a>
-                  </div> */}
+                  </div>
                   <a
                     href="https://www.flightcircle.com/shop/325431594e72/4000002368"
                     target="_blank"
@@ -176,6 +176,14 @@ const Navbar = ({ pathname }) => {
             New to Flying?
           </a>
           <MobileNavBar pathname={pathname} />
+          <a
+            href="/store"
+            className={`cursor-pointer text-xl text-white py-5 hover:border-b-2 border-main-red whitespace-nowrap ${
+              pathname === "/discovery-flight" ? "border-b-2" : ""
+            }`}
+          >
+            Shop
+          </a>
           <a
             href="https://www.flightcircle.com/shop/325431594e72/4000002368"
             target="_blank"

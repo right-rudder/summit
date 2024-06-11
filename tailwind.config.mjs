@@ -9,31 +9,46 @@ export default {
         "main-red": "#C70009",
       },
       backgroundImage: {
-        home: "url('/img/home-header.webp')",
-        404: "url('https://source.unsplash.com/random/?clouds/1280x720')",
-        blog: "url('/img/c1b522_8c1a8368eb464ce4bcae7b7dda097168~mv2.webp')",
-        "our-team": "url('/img/our-team/our-team-header.webp')",
-        "our-fleet": "url('/img/our-fleet/our-fleet-header.webp')",
-        "private-pilot": "url('/img/private-pilot-header.webp')",
-        "instrument-rating": "url('/img/instrument-rating-header.webp')",
-        "career-track": "url('/img/pilot-bundle-header.webp')",
-        "commercial-pilot": "url('/img/commercial-pilot-header.webp')",
-        "instructor-training": "url('/img/cfi-header.webp')",
-        "multi-engine":
-          "url('/img/multi-engine-pilot-student-flying-twin-comanche-at-summit-flight-academy.webp')",
-        "forms-library": "url('/img/forms-header.webp')",
-        "teach-at": "url('/img/teach-at-summit-header.webp')",
-        "pilot-bundle": "url('/img/zero-to-hero-header.webp')",
+        home: "url('/img/summit-flight-academy-pilot-student-shaking-hand-with-flight-instructor-in-font-of-Piper-PA-28-Cherokee-home-header.webp')",
         "new-to-flying":
-          "url('/img/363431096_191721537226616_5859843225312776391_n.webp')",
+          "url('/img/summit-flight-academy-pilot-student-in-font-of-Piper-PA-28-Cherokee-new-to-flying.webp')",
+        404: "url('https://source.unsplash.com/random/?clouds,sky,skies/720x480')",
+        "private-pilot":
+          "url('/img/summit-flight-academy-pilot-student-shaking-hands-with-flight-instructor-in-front-of-Piper-PA-28-Cherokee-private-pilot-header.webp')",
+        "instrument-rating":
+          "url('/img/summit-flight-academy-pilot-student-and-flight-instructor-inside-a-flight-simulator-instrument-rating.webp')",
+        "pilot-bundle":
+          "url('/img/summit-flight-academy-very-happy-pilot-stanging-next-to-piper-cherokee-bundle-header.webp')",
+        "commercial-pilot":
+          "url('/img/summit-flight-academy-missoury-very-happy-pilot-standing-on-left-wing-of-piper-cherokee-commercial-pilot.webp')",
+        "multi-engine":
+          "url('/img/summit-flight-academy-missoury-kansas-city-multi-engine-pilot-student-flying-twin-comanche-at-summit-flight-academy.webp')",
+        blog: "url('/img/summit-flight-academy-missoury-kansas-city-blog-header.webp')",
+        "instructor-training":
+          "url('/img/summit-flight-academy-missoury-kansas-city-cfi-instructor-training-pilot-student-and-instructor-next-to-piper-cherokee.webp')",
+        "career-track":
+          "url('/img/summit-flight-academy-missoury-kansas-city-career-track-zero-to-hero-pilot-student-and-instructor-next-to-piper-cherokee.webp')",
+        "teach-at":
+          "url('/img/summit-flight-academy-missoury-kansas-city-cfi-instructor-teach-at-summit-header.webp')",
+        "our-team":
+          "url('/img/our-team/summit-flight-academy-missoury-kansas-city-our-team-header.webp')",
+        "our-fleet": "url('/img/our-fleet/our-fleet-header.webp')",
+        "forms-library":
+          "url('/img/summit-flight-academy-missoury-kansas-city-forms-header.webp')",
         "faa-exam-center": "url('/img/faa-exam-center/banner.webp')",
-        financing: "url('/img/financing-header.webp')",
-        "insurance-header": "url('/img/insurance-header.webp')",
-        "faqs-header": "url('/img/faqs-header.webp')",
-        "visit-us": "url('/img/visit-us-header.webp')",
+        financing:
+          "url('/img/summit-flight-academy-missoury-kansas-city-financing-header.webp')",
+        "insurance-header":
+          "url('/img/summit-flight-academy-missoury-kansas-city-insurance-header.webp')",
+        "faqs-header":
+          "url('/img/summit-flight-academy-missoury-kansas-city-faqs-header.webp')",
+        "visit-us":
+          "url('/img/summit-flight-academy-missoury-kansas-city-visit-us-header.webp')",
         "training-courses": "url('/img/training-courses/banner.webp')",
-        "discovery-flight": "url('/img/fromWIX/IMG_2053 3_edited(1).jpg')",
+        "discovery-flight":
+          "url('/img/summit-flight-academy-front-view-of-piper-cherokee-park-on-runway-discovery-flight.webp')",
         "cfi-and-student": "url('/img/discovery-flight/cfi-and-student.webp')",
+        store: "url('/img/CFI-and-student-pilot.webp')",
       },
       height: (theme) => ({
         "screen-1/2": "50vh",

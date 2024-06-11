@@ -2,8 +2,6 @@
 import { FACEBOOK_LINK, INSTAGRAM_LINK } from "../consts";
 import "@fontsource-variable/urbanist";
 import "@fontsource-variable/raleway";
-import "@fontsource-variable/montserrat";
-import "@fontsource-variable/quicksand";
 
 const today = new Date();
 ---
@@ -246,14 +244,24 @@ const today = new Date();
         </div>
       </div>
     </div>
-    <div class="mt-16 border-t border-white/10 pt-8 sm:mt-20 lg:mt-24">
-      <p class="text-xs leading-5 text-gray-400">
-        &copy; {today.getFullYear()}
-        <a href="/">Summit Flight Academy</a>. All rights reserved.
-      </p>
-      <a href="/privacy-policy-tos" class="text-xs leading-5 text-gray-400"
+    <div
+      class="mt-16 border-t border-white/10 pt-8 sm:mt-20 lg:mt-24 lg:flex justify-between"
+    >
+      <a
+        href="/privacy-policy-tos"
+        class="text-xs leading-5 text-gray-400 hover:underline"
         >Privacy Policy and Terms of Service</a
       >
+      <p class="text-xs leading-5 text-gray-400">
+        Powered by <a
+          href="https://rightruddermarketing.com/"
+          target="_blank"
+          class="hover:underline font-semibold">More Right Rudder.</a
+        >
+      </p>
+      <p class="text-xs leading-5 text-gray-400">
+        All rights reserved. &copy; {today.getFullYear()}
+      </p>
     </div>
   </div>
 </footer>
