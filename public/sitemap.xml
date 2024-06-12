@@ -4,152 +4,214 @@
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-
-
   <url>
     <loc>https://www.summitflightacademy.com/</loc>
-    <lastmod>2024-05-26T21:10:33+00:00</lastmod>
-    <priority>1.00</priority>
+    <lastmod>2024-06-13T00:02:50+01:00</lastmod>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.summitflightacademy.com/about/visit-us/</loc>
+    <lastmod>2024-06-13T00:02:50+01:00</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.summitflightacademy.com/flight-programs/private-pilot-training/</loc>
+    <lastmod>2024-06-13T00:02:50+01:00</lastmod>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.summitflightacademy.com/new-to-flying/</loc>
-    <lastmod>2024-05-26T21:10:33+00:00</lastmod>
-    <priority>0.80</priority>
+    <lastmod>2024-06-13T00:02:51+01:00</lastmod>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>
-    https://www.summitflightacademy.com/flight-programs/private-pilot-training/
-    </loc>
-    <lastmod>2024-05-26T21:10:33+00:00</lastmod>
-    <priority>0.80</priority>
+    <loc>https://www.summitflightacademy.com/location/blue-springs/</loc>
+    <lastmod>2024-06-13T00:02:51+01:00</lastmod>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>
-    https://www.summitflightacademy.com/flight-programs/instrument-rating/
-    </loc>
-    <lastmod>2024-05-26T21:10:33+00:00</lastmod>
-    <priority>0.80</priority>
+    <loc>https://www.summitflightacademy.com/location/location/gardner/</loc>
+    <lastmod>2024-06-13T00:02:51+01:00</lastmod>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>
-    https://www.summitflightacademy.com/flight-programs/private-pilot-instrument-bundle/
-    </loc>
-    <lastmod>2024-05-26T21:10:33+00:00</lastmod>
-    <priority>0.80</priority>
+    <loc>https://www.summitflightacademy.com/location/grain-valley/</loc>
+    <lastmod>2024-06-13T00:02:51+01:00</lastmod>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>
-    https://www.summitflightacademy.com/flight-programs/commercial-pilot-training/
-    </loc>
-    <lastmod>2024-05-26T21:10:33+00:00</lastmod>
-    <priority>0.80</priority>
+    <loc>https://www.summitflightacademy.com/location/grandview/</loc>
+    <lastmod>2024-06-13T00:02:51+01:00</lastmod>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>
-    https://www.summitflightacademy.com/flight-programs/multi-engine-rating/
-    </loc>
-    <lastmod>2024-05-26T21:10:33+00:00</lastmod>
-    <priority>0.80</priority>
+    <loc>https://www.summitflightacademy.com/location/harrisonville/</loc>
+    <lastmod>2024-06-13T00:02:51+01:00</lastmod>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>
-    https://www.summitflightacademy.com/career/career-track/
-    </loc>
-    <lastmod>2024-05-26T21:10:33+00:00</lastmod>
-    <priority>0.80</priority>
+    <loc>https://www.summitflightacademy.com/location/independence/</loc>
+    <lastmod>2024-06-13T00:02:51+01:00</lastmod>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>
-    https://www.summitflightacademy.com/career/instructor-training/
-    </loc>
-    <lastmod>2024-05-26T21:10:33+00:00</lastmod>
-    <priority>0.80</priority>
+    <loc>https://www.summitflightacademy.com/location/kansas-city/</loc>
+    <lastmod>2024-06-13T00:02:51+01:00</lastmod>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>
-    https://www.summitflightacademy.com/career/teach-at-summit/
-    </loc>
-    <lastmod>2024-05-26T21:10:33+00:00</lastmod>
-    <priority>0.80</priority>
+    <loc>https://www.summitflightacademy.com/location/leawood/</loc>
+    <lastmod>2024-06-13T00:02:51+01:00</lastmod>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>
-    https://www.summitflightacademy.com/resources/financing/
-    </loc>
-    <lastmod>2024-05-26T21:10:33+00:00</lastmod>
-    <priority>0.80</priority>
+    <loc>https://www.summitflightacademy.com/location/lenexa/</loc>
+    <lastmod>2024-06-13T00:02:51+01:00</lastmod>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>
-    https://www.summitflightacademy.com/resources/insurance/
-    </loc>
-    <lastmod>2024-05-26T21:10:33+00:00</lastmod>
-    <priority>0.80</priority>
+    <loc>https://www.summitflightacademy.com/location/merriam/</loc>
+    <lastmod>2024-06-13T00:02:51+01:00</lastmod>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>
-    https://www.summitflightacademy.com/resources/forms/
-    </loc>
-    <lastmod>2024-05-26T21:10:33+00:00</lastmod>
-    <priority>0.80</priority>
+    <loc>https://www.summitflightacademy.com/location/mission-hills/</loc>
+    <lastmod>2024-06-13T00:02:51+01:00</lastmod>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>
-    https://www.summitflightacademy.com/resources/faqs/
-    </loc>
-    <lastmod>2024-05-26T21:10:33+00:00</lastmod>
-    <priority>0.80</priority>
+    <loc>https://www.summitflightacademy.com/location/mission/</loc>
+    <lastmod>2024-06-13T00:02:51+01:00</lastmod>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>
-    https://www.summitflightacademy.com/about/our-team/
-    </loc>
-    <lastmod>2024-05-26T21:10:33+00:00</lastmod>
-    <priority>0.80</priority>
+    <loc>https://www.summitflightacademy.com/location/olathe/</loc>
+    <lastmod>2024-06-13T00:02:51+01:00</lastmod>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>
-    https://www.summitflightacademy.com/about/our-fleet/
-    </loc>
-    <lastmod>2024-05-26T21:10:33+00:00</lastmod>
-    <priority>0.80</priority>
+    <loc>https://www.summitflightacademy.com/location/overland-park/</loc>
+    <lastmod>2024-06-13T00:02:51+01:00</lastmod>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>
-    https://www.summitflightacademy.com/about/visit-us/
-    </loc>
-    <lastmod>2024-05-26T21:10:33+00:00</lastmod>
-    <priority>0.80</priority>
+    <loc>https://www.summitflightacademy.com/location/parkville/</loc>
+    <lastmod>2024-06-13T00:02:51+01:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.summitflightacademy.com/location/prairie-village/</loc>
+    <lastmod>2024-06-13T00:02:51+01:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.summitflightacademy.com/location/raymore/</loc>
+    <lastmod>2024-06-13T00:02:51+01:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.summitflightacademy.com/location/shawnee/</loc>
+    <lastmod>2024-06-13T00:02:51+01:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.summitflightacademy.com/location/weston/</loc>
+    <lastmod>2024-06-13T00:02:51+01:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.summitflightacademy.com/flight-programs/instrument-rating/</loc>
+    <lastmod>2024-06-13T00:02:53+01:00</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.summitflightacademy.com/flight-programs/private-pilot-instrument-bundle/</loc>
+    <lastmod>2024-06-13T00:02:53+01:00</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.summitflightacademy.com/flight-programs/commercial-pilot-training/</loc>
+    <lastmod>2024-06-13T00:02:54+01:00</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.summitflightacademy.com/flight-programs/multi-engine-rating/</loc>
+    <lastmod>2024-06-13T00:02:54+01:00</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.summitflightacademy.com/career/career-track/</loc>
+    <lastmod>2024-06-13T00:02:54+01:00</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.summitflightacademy.com/career/teach-at-summit/</loc>
+    <lastmod>2024-06-13T00:02:55+01:00</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.summitflightacademy.com/resources/financing/</loc>
+    <lastmod>2024-06-13T00:02:55+01:00</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.summitflightacademy.com/resources/insurance/</loc>
+    <lastmod>2024-06-13T00:02:56+01:00</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.summitflightacademy.com/career/instructor-training/</loc>
+    <lastmod>2024-06-13T00:02:56+01:00</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.summitflightacademy.com/resources/forms/</loc>
+    <lastmod>2024-06-13T00:02:56+01:00</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.summitflightacademy.com/resources/faqs/</loc>
+    <lastmod>2024-06-13T00:02:56+01:00</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.summitflightacademy.com/about/our-team/</loc>
+    <lastmod>2024-06-13T00:02:56+01:00</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.summitflightacademy.com/about/our-fleet/</loc>
+    <lastmod>2024-06-13T00:02:57+01:00</lastmod>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.summitflightacademy.com/blog/</loc>
-    <lastmod>2024-05-26T21:10:33+00:00</lastmod>
-    <priority>0.80</priority>
+    <lastmod>2024-06-13T00:02:57+01:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.summitflightacademy.com/blog/breaking-down-an-instrument-panel/</loc>
+    <lastmod>2024-06-13T00:02:57+01:00</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.summitflightacademy.com/blog/finding-the-best-flight-school-for-you/</loc>
+    <lastmod>2024-06-13T00:02:57+01:00</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.summitflightacademy.com/blog/demystifying-the-written-exam/</loc>
+    <lastmod>2024-06-13T00:02:57+01:00</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.summitflightacademy.com/store/</loc>
+    <lastmod>2024-06-13T00:02:57+01:00</lastmod>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.summitflightacademy.com/enrollment/</loc>
-    <lastmod>2024-05-26T21:10:33+00:00</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>
-    https://www.summitflightacademy.com/blog/breaking-down-an-instrument-panel/
-    </loc>
-    <lastmod>2024-05-26T21:10:33+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>
-    https://www.summitflightacademy.com/blog/finding-the-best-flight-school-for-you/
-    </loc>
-    <lastmod>2024-05-26T21:10:33+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>
-    https://www.summitflightacademy.com/blog/demystifying-the-written-exam/
-    </loc>
-    <lastmod>2024-05-26T21:10:33+00:00</lastmod>
-    <priority>0.64</priority>
+    <lastmod>2024-06-13T00:02:58+01:00</lastmod>
+    <priority>0.8</priority>
   </url>
 </urlset>

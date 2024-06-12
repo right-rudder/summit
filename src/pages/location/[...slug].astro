@@ -1,0 +1,92 @@
+---
+import { type CollectionEntry, getCollection } from "astro:content";
+
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import UnderHeader from "../../components/UnderHeader.astro";
+import BecomePilot from "../../components/BecomePilot.astro";
+import QuizCTA from "../../components/QuizCTA.astro";
+import StartToday from "../../components/StartToday.astro";
+import FAQs from "../../components/FAQs";
+import { GeneralFAQs } from "../../data/generalFAQs1";
+import EnrollNowCTA from "../../components/EnrollNowCTA.astro";
+import EnrollmentModalButton from "../../components/enrollmentModalButtom";
+
+export async function getStaticPaths() {
+  const location = await getCollection("location");
+  return location.map((location) => ({
+    params: { slug: location.slug },
+    props: location,
+  }));
+}
+type Props = CollectionEntry<"location">;
+
+const location = Astro.props;
+---
+
+<BaseLayout
+  pageTitle=`${location.data.city}, ${location.data.state} | Summit Flight Academy`
+  pageDescription="Explore the thrilling world of aviation at Summit Flight Academy. Discover why becoming a pilot is a rewarding journey, offering freedom, adventure, and personal growth. Get step-by-step guidance on how to obtain your pilot's license, from enrolling in our comprehensive training programs to passing exams and taking to the skies. Ignite your passion for flight today."
+  pageKeywords="pilot training, become a pilot, flight school, private pilot license, aviation career, discovery flight, flight training programs, commercial pilot certification, instrument rating, multi-engine training, aviation education"
+>
+  <!-- <PageHeader
+    title="Considering Pilot Training?"
+    subtitle="Learn why we fly in the first place"
+    headerImg="new-to-flying"
+    imgPosition="center"
+    imgStartOpacity="60"
+    imgEndOpacity="20"
+    btnText="Apply Now"
+    btnHref="/enrollment"
+    target="_blank"
+    btnColor="red"
+  /> -->
+
+  <!-- Header -->
+  <header
+    class="relative h-screen-3/4 bg-new-to-flying bg-cover bg-center bg-black flex flex-col items-center justify-center"
+  >
+    <!-- bg-overlay to darken -->
+    <div
+      class="absolute bg-gradient-to-b from-black/50 to-black/20 w-full h-full z-0"
+    >
+    </div>
+    <!-- Text -->
+    <div
+      class="text-white text-center lg:text-left z-10 flex flex-col items-center gap-4 px-5 h-full lg:pt-28 justify-center"
+    >
+      <h1 class="text-5xl font-bold tracking-tight">
+        Considering Pilot Training in {location.data.city}?
+      </h1>
+      <h2 class="text-3xl tracking-wide">Come visit Summit Flight Academy</h2>
+      <EnrollmentModalButton
+        client:visible
+        btnStyle={"btn-red"}
+        btnText={"Apply Today"}
+      />
+    </div>
+  </header>
+
+  <UnderHeader
+    title=`Considerations for Future Pilots in ${location.data.city}`
+    text1=`At Summit Flight Academy, we understand the allure of flight training and are committed to helping you embark on this journey.`
+    text2=`The world of flight offers a multitude of opportunities, from commercial airline pilots to corporate aviators or even an instructor. With a pilot's license, you'll have the freedom to explore diverse roles, travel to new destinations, and embark on exciting adventures. Pilots from ${location.data.city} have the chance to see places like ${location.data.keyPlace} and ${location.data.keyPlace2}  from a new perspective.`
+    text3=`As a pilot, you'll command aircraft and navigate through the skies with precision and skill. Every flight is an adventure, filled with breathtaking views and a sense of accomplishment that few experiences can match. Beyond the thrill of flight, if you’re considering this as a career path, pilot training cultivates invaluable qualities such as decision-making, problem-solving, and teamwork, all contributing to your personal growth.`
+  />
+
+  <BecomePilot title=`How to Become a Pilot in ${location.data.city}` />
+
+  <QuizCTA
+    city={location.data.city}
+    text1="Are you fascinated by flying and aviation? Have you dreamed of being a pilot and flying over Kansas City on your own? Do you wonder what it takes to fly a plane?"
+  />
+
+  <StartToday city={location.data.city} />
+
+  <EnrollNowCTA />
+
+  <!-- FAQs -->
+  <FAQs faqs={GeneralFAQs} type="General" client:visible />
+
+  <!-- Contact Us Form -->
+  <!-- <ContactUs /> -->
+</BaseLayout>

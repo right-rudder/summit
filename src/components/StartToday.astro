@@ -1,3 +1,7 @@
+---
+const { city } = Astro.props;
+---
+
 <div class="bg-white lg:py-16 py-32">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="mx-auto max-w-2xl text-center">
@@ -7,7 +11,7 @@
       <p
         class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
       >
-        Start Today
+        {city ? `Start Flight Lessons in ${city} Today` : "Start Today"}
       </p>
       <p class="mt-6 text-lg leading-8 text-gray-600">
         If you've thought about becoming a pilot, now is the perfect time to get
