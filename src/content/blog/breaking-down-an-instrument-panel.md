@@ -1,5 +1,5 @@
 ---
-description: "Understanding flight instruments is essential for any aspiring pilot. This guide explains the core and additional flight instruments, helping pilots in Overland Park, Prairie Village, Leawood, and Lee's Summit navigate the skies safely and confidently."
+description: "Understanding flight instruments is essential for any aspiring pilot. This guide explains the core and additional flight instruments in our aicraft, helping future and current pilots in the Kansas City area navigate their flight training comfortably. Reading an instrument panel is a fundamental that every pilot should know concretely, whether just starting flight lessons or well on the track toward the airlines."
 pubDate: "May 16, 2024"
 heroImage: "/img/our-fleet/summit-flight-academy-instrument-panel-of-N7664Y-Piper-Twin-Comanche-summit-flight-academy.webp"
 imgAlt: "flight instruments"
