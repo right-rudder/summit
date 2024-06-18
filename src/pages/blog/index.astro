@@ -51,7 +51,7 @@ const posts = (await getCollection("blog")).sort(
     <ul class="grid gap-5 grid-cols-1 lg:grid-cols-2">
       {
         posts.map((post, index) => (
-          <li class="h-36 border border-black overflow-hidden p-2 lg:first:col-span-2 lg:first:h-96">
+          <li class="h-36 border border-black overflow-hidden p-2 lg:first:col-span-2 lg:first:h-96 hover:bg-gray-200 duration-200">
             <a
               href={`/blog/${post.slug}/`}
               class={`flex gap-5 h-full ${index === 0 ? "" : ""}`}
