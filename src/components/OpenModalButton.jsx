@@ -20,8 +20,7 @@ const OpenModalButton = () => {
       return;
     }
 
-    const fullName = formData.get("name");
-    const name = fullName.split(" ")[0];
+    const name = formData.get("name");
     setUserName(name);
 
     const url =
@@ -67,13 +66,28 @@ const OpenModalButton = () => {
                 </p>
                 <form onSubmit={handleSubmit}>
                   <div className="mb-4">
-                    <label htmlFor="name" className="block mb-1 font-bold">
-                      Name
+                    <label
+                      htmlFor="first-name"
+                      className="block mb-1 font-bold"
+                    >
+                      First Name
                     </label>
                     <input
                       type="text"
-                      id="name"
-                      name="name"
+                      id="first-name"
+                      name="first-name"
+                      className="w-full p-2 border bg-gray-100 border-gray-400 rounded focus:outline focus:outline-main-red/50 focus:ring focus:ring-main-red/50 focus:border-main-red/50"
+                      required
+                    />
+                  </div>
+                  <div className="mb-4">
+                    <label htmlFor="last-name" className="block mb-1 font-bold">
+                      Last Name
+                    </label>
+                    <input
+                      type="text"
+                      id="last-name"
+                      name="last-name"
                       className="w-full p-2 border bg-gray-100 border-gray-400 rounded focus:outline focus:outline-main-red/50 focus:ring focus:ring-main-red/50 focus:border-main-red/50"
                       required
                     />
