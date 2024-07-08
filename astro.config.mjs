@@ -12,7 +12,10 @@ export default defineConfig({
   site: "https://www.summitflightacademy.com/",
   integrations: [
     mdx(),
-    sitemap(),
+    sitemap({
+      filter: (page) =>
+        page !== "https://www.summitflightacademy.com/location/",
+    }),
     tailwind(),
     icon(),
     react(),

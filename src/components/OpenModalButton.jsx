@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { IoMdClose } from "react-icons/io";
+import { MdAirplaneTicket } from "react-icons/md";
 
 const OpenModalButton = () => {
   const [showModal, setShowModal] = useState(false);
@@ -23,7 +24,7 @@ const OpenModalButton = () => {
     setUserName(name);
 
     const url =
-      "https://services.leadconnectorhq.com/hooks/6Qxcfy0WWndWLURxYvBB/webhook-trigger/8626098f-6d59-46ce-909e-36863924966d";
+      "https://backend.leadconnectorhq.com/hooks/U9ULEEpmYvsaAGJyX7Wn/webhook-trigger/K2hRce0Um6nPnNCMeBb1";
     fetch(url, {
       method: "POST",
       body: new URLSearchParams(formData),
@@ -49,7 +50,7 @@ const OpenModalButton = () => {
   return (
     <>
       <button className="btn-red" onClick={toggleModal}>
-        Download the free guide
+        Download Our Free Guide
       </button>
 
       {showModal && (
@@ -57,46 +58,61 @@ const OpenModalButton = () => {
           <div className="bg-white p-12 max-w-md m-4 text-black relative rounded-md">
             {!formSubmitted && (
               <>
-                <h2 className="text-2xl text-center font-bold mb-1">
+                <h2 className="text-4xl text-gray-900 text-center font-bold mb-1">
                   Get the free guide
                 </h2>
-                <p className="mb-4 text-center">
+                <p className="mb-4 text-center text-gray-600">
                   Fill out the form below to get the free guide.
                 </p>
                 <form onSubmit={handleSubmit}>
                   <div className="mb-4">
-                    <label htmlFor="name" className="block mb-1">
-                      Name
+                    <label
+                      htmlFor="first-name"
+                      className="block mb-1 font-bold"
+                    >
+                      First Name
                     </label>
                     <input
                       type="text"
-                      id="name"
-                      name="name"
-                      className="w-full p-2 border bg-gray-100 border-gray-400 rounded"
+                      id="first-name"
+                      name="first-name"
+                      className="w-full p-2 border bg-gray-100 border-gray-400 rounded focus:outline focus:outline-main-red/50 focus:ring focus:ring-main-red/50 focus:border-main-red/50"
                       required
                     />
                   </div>
                   <div className="mb-4">
-                    <label htmlFor="phone" className="block mb-1">
+                    <label htmlFor="last-name" className="block mb-1 font-bold">
+                      Last Name
+                    </label>
+                    <input
+                      type="text"
+                      id="last-name"
+                      name="last-name"
+                      className="w-full p-2 border bg-gray-100 border-gray-400 rounded focus:outline focus:outline-main-red/50 focus:ring focus:ring-main-red/50 focus:border-main-red/50"
+                      required
+                    />
+                  </div>
+                  <div className="mb-4">
+                    <label htmlFor="phone" className="block mb-1 font-bold">
                       Phone
                     </label>
                     <input
                       type="text"
                       id="phone"
                       name="phone"
-                      className="w-full p-2 border bg-gray-100 border-gray-400 rounded"
+                      className="w-full p-2 border bg-gray-100 border-gray-400 rounded focus:outline focus:outline-main-red/50 focus:ring focus:ring-main-red/50 focus:border-main-red/50"
                       required
                     />
                   </div>
                   <div className="mb-4">
-                    <label htmlFor="email" className="block mb-1">
+                    <label htmlFor="email" className="block mb-1 font-bold">
                       Email
                     </label>
                     <input
                       type="email"
                       id="email"
                       name="email"
-                      className="w-full p-2 border bg-gray-100 border-gray-400 rounded"
+                      className="w-full p-2 border bg-gray-100 border-gray-400 rounded focus:outline focus:outline-main-red/50 focus:ring focus:ring-main-red/50 focus:border-main-red/50"
                       required
                     />
                   </div>
@@ -117,14 +133,20 @@ const OpenModalButton = () => {
 
             {formSubmitted && (
               <>
-                <h2 className="text-2xl font-bold mb-4">
-                  Thank you, {userName}, for downloading our Quick Start Guide!
+                <MdAirplaneTicket className="text-main-red text-9xl text-center mx-auto" />
+                <h2 className="text-4xl font-bold mt-6 mb-4">
+                  Thank you {userName}, for downloading our Quick Start Guide!
                 </h2>
-                <p className="mb-4">
+                <p className="mb-4 text-lg px-2">
                   You will receive an email with a download link shortly. Please
                   check your junk/spam folders if you do not receive anything
                   from us.
                 </p>
+                <img
+                  src="/summit.webp"
+                  alt="Summit Flight Academy Quick Start Guide"
+                  class="mx-auto w-64 h-auto mt-6"
+                />
               </>
             )}
 
