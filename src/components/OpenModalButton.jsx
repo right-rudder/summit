@@ -50,7 +50,7 @@ const OpenModalButton = () => {
   return (
     <>
       <button className="btn-red" onClick={toggleModal}>
-        Download the free guide
+        Download Our Free Guide
       </button>
 
       {showModal && (
