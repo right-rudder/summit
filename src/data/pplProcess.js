@@ -54,10 +54,10 @@ export const pplProcess = [
   },
   {
     title: "Multi-Engine Rating",
-    /* linkTo: {
+    linkTo: {
       title: "Learn More",
       url: "/flight-programs/multi-engine-rating",
-    }, */
+    },
     content:
       "Adding on a multi-engine rating and building 25-50 multi-engine hours is often a pre-requisite of most professional pilot jobs.",
     content2:
@@ -65,10 +65,10 @@ export const pplProcess = [
   },
   {
     title: "Multi-Engine Instructor (MEI)",
-    /* linkTo: {
+    linkTo: {
       title: "Learn More",
       url: "/career/instructor-training",
-    }, */
+    },
     content:
       "With this certification, you'll gain expertise in instructing in multi-engine aircraft, imparting knowledge and skills essential for operating these high-performance machines.",
     content2:
