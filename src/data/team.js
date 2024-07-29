@@ -62,7 +62,9 @@ export const team = [
     id: 5,
     name: "Chris Gilstrap",
     role: "CFI, CFII",
-    imageUrl: "/img/our-team/Chris-Gilstrap-CFI-CFII.webp",
+    paragrah1:
+      "Chris is a Certificated Flight Instructor (CFI/CFII) and teaches private, commercial and instrument students and has seen many successful students pass their check rides under his wing. Chris is available for private, instrument, commercial and add-on CFI-I training.",
+    imageUrl: "/img/our-team/summit-flight-academy-cfi-chris-g.webp",
     imageAlt: "headshot of Chris Gilstrap",
   },
   {
