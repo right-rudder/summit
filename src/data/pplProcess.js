@@ -37,12 +37,12 @@ export const pplProcess = [
       url: "/career/instructor-training",
     },
     content:
-      "A Certificated Flight Instructor (CFI) is often the most challenging, yet rewarding, certificate many pilots earn. It entrusts you with training the next generation of pilots. The CFI certificate typically enables you to build time efficiently towards the 1500 hours you need to qualify for an Airline Transport Pilot (ATP) certificate.",
+      "A Certified Flight Instructor (CFI) is often the most challenging, yet rewarding, certificate many pilots earn. It entrusts you with training the next generation of pilots. The CFI certificate typically enables you to build time efficiently towards the 1500 hours you need to qualify for an Airline Transport Pilot (ATP) certificate.",
     content2:
       "Your training will include approximately 15 hours of right seat flight time plus extensive ground school refining your lesson plans and developing effective teaching techniques on the ground and in the air.",
   },
   {
-    title: "Certificated Flight Instructor-Instrument (CFII)",
+    title: "Certified Flight Instructor-Instrument (CFII)",
     linkTo: {
       title: "Learn More",
       url: "/career/instructor-training",
