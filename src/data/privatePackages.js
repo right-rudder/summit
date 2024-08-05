@@ -3,7 +3,7 @@ const privatePackages = {
   heading: "Our Private Pilot Packages",
   description: `We pride ourselves on transparency when it comes to pilot training. While other flight schools may hide their pricing, we feel that our future students should have an idea of what they’re paying when engaging in flight lessons with us.`,
   question: {
-    questionHeading: "Not sure which package is right for you?",
+    questionHeading: "Which package is right for you?",
     questionDescription: `Our Private Pilot training packages are adapted to our students based on their availability during the week for flight training and how they prefer to schedule their payments. Please answer the questions below to discover which package we recommend for your schedule and payment preferences.`,
     questions: [
       {
@@ -60,8 +60,8 @@ const privatePackages = {
       option: "5-6 months by flying 3-4 days per week",
       monthlyPrice: {
         price: 3500,
-        afterPrice: "1st month",
-        note: "Pay $2,925 in months 2-5",
+        afterPrice: "paid in Month 1",
+        note: "Pay $2,925 monthly in months 2-5",
       },
       upfrontPrice: {
         price: 14900,
@@ -82,8 +82,8 @@ const privatePackages = {
       option: "9-10 months by flying 1-2 days per week",
       monthlyPrice: {
         price: 3500,
-        afterPrice: "1st month",
-        note: "Pay $1,738 in months 2-9",
+        afterPrice: "paid in Month 1",
+        note: "Pay $1,738 monthly in months 2-9",
       },
       upfrontPrice: {
         price: 16900,
