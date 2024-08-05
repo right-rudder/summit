@@ -26,7 +26,7 @@ const privatePackages = {
   },
   allInclude: [
     "Instructor Services, including Checkride Prep.",
-    "Basic Pilot Supplies: Passive Headset, Bag, Kneeboard, etc..",
+    "Basic Pilot Supplies: Passive Headset, Bag, Kneeboard, etc.",
     `Online Sporty's Ground School Course.`,
     "ForeFlight Electronic Chart Subscription.",
     "ASA Oral Exam Prep Book.",

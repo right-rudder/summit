@@ -25,7 +25,7 @@ export default function ProgramSuggester({ packages }) {
   }, []);
 
   return (
-    <section className="bg-gray-100 py-24 sm:py-32">
+    <section className="bg-gray-100 lg:pt-24 pb-12 pt-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl sm:text-center">
           <h2 className="text-base font-semibold leading-7 text-red-600">
@@ -38,9 +38,9 @@ export default function ProgramSuggester({ packages }) {
             {packages.description}
           </p>
         </div>
-        <div className="mx-auto mt-16 max-w-2xl rounded-3xl bg-gray-50 ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
+        <div className="mx-auto mt-12 max-w-2xl rounded-2xl bg-gray-50 ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
           <div className="p-8 sm:p-10 lg:flex-auto">
-            <h3 className="text-3xl text-center font-bold tracking-tight text-gray-900">
+            <h3 className="text-4xl text-center font-bold tracking-tight text-gray-900">
               {packages.question.questionHeading}
             </h3>
             <p className="mt-6 text-base text-center leading-7 text-gray-600">
@@ -50,14 +50,14 @@ export default function ProgramSuggester({ packages }) {
               <h4 className="w-full lg:px-10 text-lg text-center font-semibold leading-6 text-main-red">
                 {packages.question.questions[0].question}
               </h4>
-              <div className="flex-auto bg-gray-100 mt-2">
+              <div className="flex-auto mt-2 w-full lg:w-3/5">
                 <label htmlFor="question1" className="sr-only">
                   Select a tab
                 </label>
                 <select
                   id="question1"
                   name="question1"
-                  className="block w-full px-6 py-4 rounded-lg border-gray-300 focus:border-main-red focus:ring-main-red"
+                  className="block w-full px-6 py-4 text-center bg-gray-900 text-gray-50 rounded-lg border-gray-300 focus:border-main-red focus:ring-main-red"
                   defaultValue={currentPackage.option}
                   onChange={(e) => findPackage(e.target.value)}
                 >
@@ -71,14 +71,14 @@ export default function ProgramSuggester({ packages }) {
               <h4 className="w-full lg:px-10 text-lg text-center font-semibold leading-6 text-main-red">
                 {packages.question.questions[1].question}
               </h4>
-              <div className="flex-auto bg-gray-100 mt-2">
+              <div className="flex-auto mt-2 w-full lg:w-3/5">
                 <label htmlFor="question2" className="sr-only">
                   Select a tab
                 </label>
                 <select
                   id="question2"
                   name="question2"
-                  className="block w-full px-6 py-4 rounded-lg border-gray-300 focus:border-main-red focus:ring-main-red"
+                  className="block w-full px-6 py-4 text-center bg-gray-900 text-gray-50 rounded-lg border-gray-300 focus:border-main-red focus:ring-main-red"
                   defaultValue={packages.question.questions[1].options[0]}
                   onChange={(e) => findPrice(e.target.value)}
                 >
@@ -104,7 +104,7 @@ export default function ProgramSuggester({ packages }) {
                         aria-hidden="true"
                       >
                         <path
-                          fill-rule="evenodd"
+                          fillRule="evenodd"
                           d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
                           clip-rule="evenodd"
                         ></path>
@@ -117,7 +117,7 @@ export default function ProgramSuggester({ packages }) {
             </div>
           </div>
           <div className="-mt-2 p-2 lg:mt-0 lg:w-full lg:max-w-md lg:flex-shrink-0">
-            <div className="mt-4 rounded-2xl bg-gray-900 py-10 text-center ring-1 ring-inset ring-gray-900/5 lg:flex lg:flex-col lg:justify-center lg:py-16">
+            <div className="mt-4 lg:mt-0 rounded-xl bg-gray-900 py-10 text-center ring-1 ring-inset ring-gray-900/5 lg:flex lg:flex-col lg:justify-center lg:py-16">
               <div className="pt-16 lg:px-8 lg:pt-0 xl:px-14">
                 <h3
                   id="best-package"
@@ -153,7 +153,7 @@ export default function ProgramSuggester({ packages }) {
                         aria-hidden="true"
                       >
                         <path
-                          fill-rule="evenodd"
+                          fillRule="evenodd"
                           d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
                           clip-rule="evenodd"
                         ></path>

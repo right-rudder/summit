@@ -5,6 +5,10 @@ import BundlePackages from "../../components/BundlePackages.astro";
 import FAQs from "../../components/FAQs";
 import { bundleFAQs } from "../../data/bundleFAQs";
 import EnrollmentModalButton from "../../components/enrollmentModalButtom";
+import ProgramSuggester from "../../components/ProgramSuggester";
+import bundlePackages from "../../data/bundlePackages";
+
+const packages = bundlePackages;
 ---
 
 <BaseLayout
@@ -96,7 +100,9 @@ import EnrollmentModalButton from "../../components/enrollmentModalButtom";
     </div>
   </section>
 
-  <BundlePackages />
+  <!-- <BundlePackages /> -->
+
+  <ProgramSuggester packages={packages} client:load />
 
   <DiscoveryFlightCTA />
 
