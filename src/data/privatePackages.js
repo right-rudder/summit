@@ -1,14 +1,14 @@
 const privatePackages = {
-  upperHeading: "Private Pilot Training Packages",
-  heading: "Programs for You",
-  description: `Choose from our selection of private pilot training packages to find the one that best suits your needs. Whether you're looking for a comprehensive training program or a more flexible option, we have a package that's right for you.`,
+  upperHeading: "Summit Flight Academy Pricing",
+  heading: "Our Private Pilot Packages",
+  description: `We pride ourselves on transparency when it comes to pilot training. While other flight schools may hide their pricing, we feel that our future students should have an idea of what they’re paying when engaging in flight lessons with us.`,
   question: {
     questionHeading: "Not sure which package is right for you?",
-    questionDescription: `Our team is here to help you find the perfect private pilot training package. Contact us today to discuss your goals and preferences, and we'll recommend the best program for you.`,
+    questionDescription: `Our Private Pilot training packages are adapted to our students based on their availability during the week for flight training and how they prefer to schedule their payments. Please answer the questions below to discover which package we recommend for your schedule and payment preferences.`,
     questions: [
       {
         question:
-          "Based on how often you can fly per week, how quickly do you want to earn your certificate?",
+          "Based on how often you can fly per week, how quickly do you want to earn your Private Pilot Certificate?",
         options: [
           "3-4 months by flying 5-6 days per week",
           "5-6 months by flying 3-4 days per week",
@@ -25,13 +25,13 @@ const privatePackages = {
     ],
   },
   allInclude: [
-    "Instructor Services, including Checkride Prep.",
+    "Instructor Services, including Checkride Prep",
     "Basic Pilot Supplies: Passive Headset, Bag, Kneeboard, etc.",
-    `Online Sporty's Ground School Course.`,
-    "ForeFlight Electronic Chart Subscription.",
-    "ASA Oral Exam Prep Book.",
-    "FAA Private Pilot ACS Standards Book.",
-    "Non-owned Insurance.",
+    `Online Sporty's Ground School Course`,
+    "ForeFlight Electronic Chart Subscription",
+    "ASA Oral Exam Prep Book",
+    "FAA Private Pilot ACS Standards Book",
+    "Non-owned Insurance",
   ],
   packs: [
     {
@@ -43,7 +43,7 @@ const privatePackages = {
       },
       upfrontPrice: {
         price: 13900,
-        afterPrice: "once",
+        afterPrice: "paid once",
       },
       packageDescription:
         "Our three-month* private pilot training package is perfect for those looking to earn their pilot certificate over the summer or anytime where full-time effort can be applied. Students will take their ground school month one, then fly the next two months. Students must have the FAA medical certificate in hand prior to scheduling a start date. Your course schedule is planned in advance and you can expect to fly and study five days a week.",
@@ -65,7 +65,7 @@ const privatePackages = {
       },
       upfrontPrice: {
         price: 14900,
-        afterPrice: "once",
+        afterPrice: "paid once",
       },
       packageDescription:
         "Our five-month* private pilot training package is perfect for the majority of students. This program expects a student can commit to coming to the airport an average of 2-3 times a week to fly with various ground school assignments between lessons. Students will take their ground school and pass the FAA knowledge test prior to solo. Students will generally schedule out a month at a time to ensure their program progresses on schedule.",
@@ -87,7 +87,7 @@ const privatePackages = {
       },
       upfrontPrice: {
         price: 16900,
-        afterPrice: "once",
+        afterPrice: "paid once",
       },
       packageDescription:
         "Our nine-month* private pilot training package is recommended only for those students with more limited availability to learn to fly. The monthly cost is less, but the overall cost is more due to more flight hours needed for this pace of learning. Students will take their ground school and pass the FAA knowledge test prior to solo. Students will generally schedule out a month at a time, 1-2 lessons per week, to ensure their program progresses on schedule.",

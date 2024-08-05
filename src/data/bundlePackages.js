@@ -1,14 +1,14 @@
 const bundlePackages = {
-  upperHeading: "Private + Instrument Bundle Training Packages",
-  heading: "Programs for You",
-  description: `Choose from our selection of private pilot + instrument rating bundle training packages to find the one that best suits your needs. Whether you're looking for a comprehensive training program or a more flexible option, we have a package that's right for you.`,
+  upperHeading: "Summit Flight Academy Pricing",
+  heading: "Our Private Pilot + Instrument Rating Bundle",
+  description: `We pride ourselves on transparency when it comes to pilot training. While other flight schools may hide their pricing, we feel that our future students should have an idea of what they’re paying when engaging in flight lessons with us.`,
   question: {
-    questionHeading: "Not sure which package is right for you?",
-    questionDescription: `Our team is here to help you find the perfect private pilot training package. Contact us today to discuss your goals and preferences, and we'll recommend the best program for you.`,
+    questionHeading: "Which bundle is right for you?",
+    questionDescription: `Our Private Pilot + Instrument Bundle is adapted to our students based on their availability during the week for flight training and how they prefer to schedule their payments. Please answer the questions below to discover which package we recommend for your schedule and payment preferences.`,
     questions: [
       {
         question:
-          "Based on how often you can fly per week, how quickly do you want to earn your certificate?",
+          "Based on how often you can fly per week, how quickly do you want to earn your Private Pilot Certificate and Instrument Rating?",
         options: ["7 Month Program", "10 Month Program"],
       },
       {
@@ -35,7 +35,7 @@ const bundlePackages = {
       },
       upfrontPrice: {
         price: 25500,
-        afterPrice: "once",
+        afterPrice: "paid once",
       },
       packageDescription:
         "Our seven month* private - instrument pilot training package is available in one of our instrument equipped Pipers.",
@@ -56,7 +56,7 @@ const bundlePackages = {
       },
       upfrontPrice: {
         price: 26500,
-        afterPrice: "once",
+        afterPrice: "paid once",
       },
       packageDescription:
         "Our ten month* private-instrument training package provides a few additional hours to accommodate the longer training plan.",

@@ -1,7 +1,7 @@
 const instrumentPackages = {
-  upperHeading: "Instrument Rating Training Packages",
-  heading: "Programs for You",
-  description: `Choose from our selection of instrument rating training packages to find the one that best suits your needs. Whether you're looking for a comprehensive training program or a more flexible option, we have a package that's right for you.`,
+  upperHeading: "Summit Flight Academy Pricing",
+  heading: "Our Instrument Rating Packages",
+  description: `We pride ourselves on transparency when it comes to pilot training. While other flight schools may hide their pricing, we feel that our future students should have an idea of what they’re paying when engaging in flight lessons with us.`,
   question: {
     questionHeading: "Not sure which package is right for you?",
     questionDescription: `Our team is here to help you find the perfect private pilot training package. Contact us today to discuss your goals and preferences, and we'll recommend the best program for you.`,
@@ -31,12 +31,12 @@ const instrumentPackages = {
       option: "2 weeks intense training",
       monthlyPrice: {
         price: 3500,
-        afterPrice: "/Enrollment fee",
+        afterPrice: "/enrollment fee",
         note: "Remaining $8,500 due at Start",
       },
       upfrontPrice: {
         price: 12000,
-        afterPrice: "once",
+        afterPrice: "paid once",
       },
       packageDescription:
         "Our two week* accelerated instrument pilot training package is available in two plans with two aircraft choices in one of our instrument equipped Pipers.",
@@ -58,7 +58,7 @@ const instrumentPackages = {
       },
       upfrontPrice: {
         price: 12400,
-        afterPrice: "once",
+        afterPrice: "paid once",
       },
       packageDescription:
         "Our four month* flexible instrument pilot training package is available in two plans with two aircraft choices in one of our instrument equipped Pipers.",
