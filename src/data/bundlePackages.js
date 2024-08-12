@@ -39,9 +39,9 @@ const bundlePackages = {
       packageName: "7-Month Bundle",
       option: "7 months by flying 5-6 times per week",
       monthlyPrice: {
-        price: 4500,
-        afterPrice: "paid in Month 1",
-        note: "Pay $3,600 monthly in months 2-7",
+        price: 3750,
+        afterPrice: "/month",
+        note: "for seven months",
       },
       upfrontPrice: {
         price: 25500,
@@ -62,9 +62,9 @@ const bundlePackages = {
       packageName: "10-Month Program",
       option: "10 months by flying 2-3 times per week",
       monthlyPrice: {
-        price: 4500,
-        afterPrice: "paid in Month 1",
-        note: "Pay $2,500 monthly in Months 2-10",
+        price: 2700,
+        afterPrice: "/month",
+        note: "for ten months",
       },
       upfrontPrice: {
         price: 26500,

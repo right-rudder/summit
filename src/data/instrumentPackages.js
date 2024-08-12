@@ -34,12 +34,12 @@ const instrumentPackages = {
       option: "2 weeks of full-time training by flying daily",
       monthlyPrice: {
         price: 3500,
-        afterPrice: "/enrollment fee",
+        afterPrice: "Enrollment Fee",
         note: "Remaining $8,500 due at Start",
       },
       upfrontPrice: {
         price: 3500,
-        afterPrice: "/enrollment fee",
+        afterPrice: "Enrollment Fee",
         note: "Remaining $8,500 due at Start",
       },
       packageDescription:
@@ -56,11 +56,11 @@ const instrumentPackages = {
     },
     {
       packageName: "Efficient Package",
-      option: "4 months flexible training by flying 2-3 days per week",
+      option: "4 months of flexible training by flying 2-3 days per week",
       monthlyPrice: {
-        price: 3500,
-        afterPrice: "paid in Month 1",
-        note: "Pay $3,100 monthly in months 2-4",
+        price: 3200,
+        afterPrice: "/month",
+        note: "for four months",
       },
       upfrontPrice: {
         price: 12400,

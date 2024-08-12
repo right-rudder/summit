@@ -59,9 +59,9 @@ const privatePackages = {
       packageName: "Efficient Package",
       option: "5-6 months by flying 3-4 days per week",
       monthlyPrice: {
-        price: 3500,
-        afterPrice: "paid in Month 1",
-        note: "Pay $2,925 monthly in months 2-5",
+        price: 3000,
+        afterPrice: "/month",
+        note: "for five months",
       },
       upfrontPrice: {
         price: 14900,
@@ -81,9 +81,9 @@ const privatePackages = {
       packageName: "Extended Package ",
       option: "9-10 months by flying 1-2 days per week",
       monthlyPrice: {
-        price: 3500,
-        afterPrice: "paid in Month 1",
-        note: "Pay $1,738 monthly in months 2-9",
+        price: 1950,
+        afterPrice: "/month",
+        note: "for nine months",
       },
       upfrontPrice: {
         price: 16900,
