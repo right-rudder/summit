@@ -5,8 +5,8 @@ const commercialPackages = {
   flightHours: 215,
   hoursQuestion: "How many flight hours do you have?",
   hoursQuestion2: {
-    question: "Do you prefer solo or shared flight hours?",
-    options: ["Solo flight hours", "Shared flight hours"],
+    question: "You need time building; Do you prefer solo or shared time building?",
+    options: ["Solo time building", "Shared time building"],
   },
   question: {
     questionHeading: "Which package is right for you?",
@@ -14,14 +14,14 @@ const commercialPackages = {
     questions: [
       {
         question:
-          "Based on how often you can fly per week, how quickly do you want to earn your Private Pilot Certificate?",
+          "Based on how often you can fly per week, how quickly do you want to earn your Commercial Pilot Certificate?",
         options: [
-          "3-4 months by flying 5-6 days per week",
-          "5-6 months by flying 3-4 days per week",
-          "Solo flight hours 11 hours/week",
-          "Solo flight hours 18 hours/week",
-          "Shared flight hours 11 hours/week",
-          "Shared flight hours 18 hours/week",
+          "5 weeks, flying 6 hours/week",
+          "3 months, flying 3 hours/week",
+          "6 months (10 weeks Solo Time Building + 12 weeks Commercial Program)",
+          "3 months (6 weeks Solo Time Building + 5 weeks Commercial Program)",
+          "6 months (10 weeks Shared Time Building + 12 weeks Commercial Program",
+          "3 months (6 weeks Shared Time Building + 5 weeks Commercial Program)",
         ],
       },
       {
@@ -44,73 +44,83 @@ const commercialPackages = {
   ],
   packs: [
     {
-      packageName: "Expedited Package",
-      option: "3-4 months by flying 5-6 days per week",
+      packageName: "Accelerated Commercial Pilot Program",
+      option: "5 weeks, flying 6 hours/week",
       monthlyPrice: {
-        price: 4500,
-        afterPrice: "/month",
+        price: 8500,
+        afterPrice: "paid once",
       },
       upfrontPrice: {
-        price: 13900,
+        price: 8500,
         afterPrice: "paid once",
       },
       packageDescription:
-        "Our three-month* private pilot training package is perfect for those looking to earn their pilot certificate over the summer or anytime where full-time effort can be applied. Students will take their ground school month one, then fly the next two months. Students must have the FAA medical certificate in hand prior to scheduling a start date. Your course schedule is planned in advance and you can expect to fly and study five days a week.",
+        "*Must have completed Written Exam to qualify for this program.",
+      packageFeatures: [ 
+        "Training Duration: 5 weeks",
+        "Training Frequency: 6 hours/week",
+        "Total Flight Hours: 30 hours",
+      ],
+      packageLittlePrint:
+        "*Five weeks is the expected program length. Extensions may be needed due to weather, learning speed, illness, or mechanical issues and will be managed to ensure your completion as close as possible to the stated timeframe. No additional charges will apply unless the student exceeds the hours provided. Excess hours will be available at a program-discounted rate if needed.",
+    },
+    {
+      packageName: "Standard Commercial Pilot Program",
+      option: "3 months, flying 3 hours/week",
+      monthlyPrice: {
+        price: 3500,
+        afterPrice: "/month",
+        note: "for three months",
+      },
+      upfrontPrice: {
+        price: 10000,
+        afterPrice: "paid once",
+      },
+      packageDescription:
+        "",
       packageFeatures: [
-        "Training Duration: 3-4 months",
-        "Training Frequency: 5-6 days/week",
-        "Total Flight Hours: 48 hours",
+        "Training Duration: 3 months",
+        "Training Frequency: 3 hours/week",
+        "Total Flight Hours: 35 hours",
       ],
       packageLittlePrint:
         "*Three months is the expected program length. Extensions may be needed due to weather, learning speed, illness, or mechanical issues and will be managed to ensure your completion as close as possible to the stated timeframe. No additional charges will apply unless the student exceeds the hours provided. Excess hours will be available at a program-discounted rate if needed.",
     },
     {
-      packageName: "Efficient Package",
-      option: "5-6 months by flying 3-4 days per week",
+      packageName: [
+        "Solo Time Building",
+        "+",
+        "Standard Commercial Program",
+      ],
+      option: "6 months (10 weeks Time Building + 12 weeks Commercial Program)",
       monthlyPrice: {
-        price: 3000,
+        price: 4500,
         afterPrice: "/month",
-        note: "for five months",
+        note: "for six months",
       },
       upfrontPrice: {
-        price: 14900,
+        price: 27000,
         afterPrice: "paid once",
       },
       packageDescription:
-        "Our five-month* private pilot training package is perfect for the majority of students. This program expects a student can commit to coming to the airport an average of 2-3 times a week to fly with various ground school assignments between lessons. Students will take their ground school and pass the FAA knowledge test prior to solo. Students will generally schedule out a month at a time to ensure their program progresses on schedule.",
+        "",
       packageFeatures: [
-        "Training Duration: 5-6 month",
-        "Training Frequency: 3-4 days/week",
-        "Total Flight Hours: 58 hours",
+        "Training Duration: 6 months",
+        "Time Building Frequency: 11 hours/week",
+        "Commercial Training Frequency: 1-2 days/week",
+        "Total Time Building Hours: Up to 110 hours",
+        "Total Commercial Program Hours: 35 hours",
       ],
       packageLittlePrint:
-        "*Five months is the expected program length. Extensions may be needed due to weather, learning speed, illness, or mechanical issues and will be managed to ensure your completion as close as possible to the stated timeframe. No additional charges will apply unless the student exceeds the hours provided. Excess hours will be available at a program-discounted rate if needed.",
+        "*Six months is the expected program length. Extensions may be needed due to weather, learning speed, illness, or mechanical issues and will be managed to ensure your completion as close as possible to the stated timeframe. No additional charges will apply unless the student exceeds the hours provided. Excess hours will be available at a program-discounted rate if needed.",
     },
     {
-      packageName: "Solo Flight Time Package 1",
-      option: "Solo flight hours 11 hours/week",
-      monthlyPrice: {
-        price: 1950,
-        afterPrice: "/month",
-        note: "for nine months",
-      },
-      upfrontPrice: {
-        price: 16900,
-        afterPrice: "paid once",
-      },
-      packageDescription:
-        "Our nine-month* private pilot training package is recommended only for those students with more limited availability to learn to fly. The monthly cost is less, but the overall cost is more due to more flight hours needed for this pace of learning. Students will take their ground school and pass the FAA knowledge test prior to solo. Students will generally schedule out a month at a time, 1-2 lessons per week, to ensure their program progresses on schedule.",
-      packageFeatures: [
-        "Training Duration: 9-10 months",
-        "Training Frequency: 1-2 days/week",
-        "Total Flight Hours: 67 hours",
+      packageName: [
+        "Solo Time Building",
+        "+",
+        "Expedited Commercial Program",
       ],
-      packageLittlePrint:
-        "*Nine months is the expected program length. Extensions may be needed due to weather, learning speed, illness, or mechanical issues and will be managed to ensure your completion as close as possible to the stated timeframe. No additional charges will apply unless the student exceeds the hours provided. Excess hours will be available at a program-discounted rate if needed.",
-    },
-    {
-      packageName: "Solo Flight Time Package 2",
-      option: "Solo flight hours 18 hours/week",
+      option: "3 months (6 weeks Solo Time Building + 5 weeks Commercial Program)",
       monthlyPrice: {
         price: 8675,
         afterPrice: "/month",
@@ -121,18 +131,24 @@ const commercialPackages = {
         afterPrice: "paid once",
       },
       packageDescription:
-        "Our nine-month* private pilot training package is recommended only for those students with more limited availability to learn to fly. The monthly cost is less, but the overall cost is more due to more flight hours needed for this pace of learning. Students will take their ground school and pass the FAA knowledge test prior to solo. Students will generally schedule out a month at a time, 1-2 lessons per week, to ensure their program progresses on schedule.",
+        "",
       packageFeatures: [
-        "Training Duration: 9-10 months",
-        "Training Frequency: 1-2 days/week",
-        "Total Flight Hours: 67 hours",
+        "Training Duration: 3 months",
+        "Time Building Frequency: 18 hours/week",
+        "Commercial Training Frequency: 4 days/week",
+        "Total Time Building Hours: Up to 110 hours",
+        "Total Commercial Program Hours: 30 hours",
       ],
       packageLittlePrint:
-        "*Nine months is the expected program length. Extensions may be needed due to weather, learning speed, illness, or mechanical issues and will be managed to ensure your completion as close as possible to the stated timeframe. No additional charges will apply unless the student exceeds the hours provided. Excess hours will be available at a program-discounted rate if needed.",
+        "*Three months is the expected program length. Extensions may be needed due to weather, learning speed, illness, or mechanical issues and will be managed to ensure your completion as close as possible to the stated timeframe. No additional charges will apply unless the student exceeds the hours provided. Excess hours will be available at a program-discounted rate if needed.",
     },
     {
-      packageName: "Shared Flight Time Package 1",
-      option: "Shared flight hours 11 hours/week",
+      packageName: [
+        "Shared Time Building",
+        "+",
+        "Standard Commercial Program",
+      ],
+      option: "6 months (10 weeks Shared Time Building + 12 weeks Commercial Program",
       monthlyPrice: {
         price: 3500,
         afterPrice: "/month",
@@ -143,18 +159,24 @@ const commercialPackages = {
         afterPrice: "paid once",
       },
       packageDescription:
-        "Our nine-month* private pilot training package is recommended only for those students with more limited availability to learn to fly. The monthly cost is less, but the overall cost is more due to more flight hours needed for this pace of learning. Students will take their ground school and pass the FAA knowledge test prior to solo. Students will generally schedule out a month at a time, 1-2 lessons per week, to ensure their program progresses on schedule.",
-      packageFeatures: [
-        "Training Duration: 9-10 months",
-        "Training Frequency: 1-2 days/week",
-        "Total Flight Hours: 67 hours",
-      ],
-      packageLittlePrint:
-        "*Nine months is the expected program length. Extensions may be needed due to weather, learning speed, illness, or mechanical issues and will be managed to ensure your completion as close as possible to the stated timeframe. No additional charges will apply unless the student exceeds the hours provided. Excess hours will be available at a program-discounted rate if needed.",
-    },
+        "*Shared time building is only available if we have multiple students seeking this at the same time.",
+        packageFeatures: [
+          "Training Duration: 6 months",
+          "Time Building Frequency: 11 hours/week",
+          "Commercial Training Frequency: 1-2 days/week",
+          "Total Time Building Hours: Up to 110 hours",
+          "Total Commercial Program Hours: 35 hours",
+        ],
+        packageLittlePrint:
+          "*Six months is the expected program length. Extensions may be needed due to weather, learning speed, illness, or mechanical issues and will be managed to ensure your completion as close as possible to the stated timeframe. No additional charges will apply unless the student exceeds the hours provided. Excess hours will be available at a program-discounted rate if needed.",
+      },
     {
-      packageName: "Shared Flight Time Package 2",
-      option: "Shared flight hours 18 hours/week",
+      packageName: [
+        "Shared Time Building",
+        "+",
+        "Expedited Commercial Program",
+      ],
+      option: "3 months (6 weeks Shared Time Building + 5 weeks Commercial Program)",
       monthlyPrice: {
         price: 6350,
         afterPrice: "/month",
@@ -165,14 +187,16 @@ const commercialPackages = {
         afterPrice: "paid once",
       },
       packageDescription:
-        "Our nine-month* private pilot training package is recommended only for those students with more limited availability to learn to fly. The monthly cost is less, but the overall cost is more due to more flight hours needed for this pace of learning. Students will take their ground school and pass the FAA knowledge test prior to solo. Students will generally schedule out a month at a time, 1-2 lessons per week, to ensure their program progresses on schedule.",
+        "*Shared time building is only available if we have multiple students seeking this at the same time.",
       packageFeatures: [
-        "Training Duration: 9-10 months",
-        "Training Frequency: 1-2 days/week",
-        "Total Flight Hours: 67 hours",
+        "Training Duration: 3 months",
+        "Time Building Frequency: 18 hours/week",
+        "Commercial Training Frequency: 4 days/week",
+        "Total Time Building Hours: Up to 110 hours",
+        "Total Commercial Program Hours: 30 hours",
       ],
       packageLittlePrint:
-        "*Nine months is the expected program length. Extensions may be needed due to weather, learning speed, illness, or mechanical issues and will be managed to ensure your completion as close as possible to the stated timeframe. No additional charges will apply unless the student exceeds the hours provided. Excess hours will be available at a program-discounted rate if needed.",
+        "*Three months is the expected program length. Extensions may be needed due to weather, learning speed, illness, or mechanical issues and will be managed to ensure your completion as close as possible to the stated timeframe. No additional charges will apply unless the student exceeds the hours provided. Excess hours will be available at a program-discounted rate if needed.",
     },
   ],
 };

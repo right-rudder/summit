@@ -70,7 +70,7 @@ const privatePackages = {
       packageDescription:
         "Our five-month* private pilot training package is perfect for the majority of students. This program expects a student can commit to coming to the airport an average of 2-3 times a week to fly with various ground school assignments between lessons. Students will take their ground school and pass the FAA knowledge test prior to solo. Students will generally schedule out a month at a time to ensure their program progresses on schedule.",
       packageFeatures: [
-        "Training Duration: 5-6 month",
+        "Training Duration: 5-6 months",
         "Training Frequency: 3-4 days/week",
         "Total Flight Hours: 58 hours",
       ],
