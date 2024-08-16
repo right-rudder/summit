@@ -5,6 +5,31 @@ export default function ProgramSuggester({ packages }) {
   const [currentPackage, setCurrentPackage] = useState(packages.packs[0]);
   const [currentPrice, setCurrentPrice] = useState(currentPackage.monthlyPrice);
 
+  const [hoursValue, setHoursValue] = useState(packages.flightHours);
+
+  const [options, setOptions] = useState(
+    packages.flightHours ? [] : packages.question.questions[0].options,
+  );
+
+  const findOptions = (option) => {
+    if (option.includes("Solo")) {
+      setOptions([
+        "Solo flight hours 11 hours/week",
+        "Solo flight hours 18 hours/week",
+      ]);
+    } else if (option.includes("Shared")) {
+      setOptions([
+        "Shared flight hours 11 hours/week",
+        "Shared flight hours 18 hours/week",
+      ]);
+    } else {
+      setOptions([
+        "3-4 months by flying 5-6 days per week",
+        "5-6 months by flying 3-4 days per week",
+      ]);
+    }
+  };
+
   const findPackage = (option) => {
     const pack = packages.packs.find((pack) => pack.option === option);
     setCurrentPackage(pack);
@@ -20,6 +45,10 @@ export default function ProgramSuggester({ packages }) {
   };
 
   useEffect(() => {
+    setHoursValue(packages.flightHours);
+    setOptions(
+      packages.flightHours ? [] : packages.question.questions[0].options,
+    );
     setCurrentPackage(packages.packs[0]);
     setCurrentPrice(packages.packs[0].monthlyPrice);
   }, []);
@@ -47,7 +76,56 @@ export default function ProgramSuggester({ packages }) {
               {packages.question.questionDescription}
             </p>
             <div className="mt-10 flex flex-col items-center gap-x-4">
-              <h4 className="w-full lg:px-10 text-lg text-center font-semibold leading-6 text-main-red">
+              {packages.flightHours && (
+                <>
+                  <label
+                    htmlFor="flight-time"
+                    className="w-full lg:px-10 text-lg text-center font-semibold leading-6 text-main-red"
+                  >
+                    {packages.hoursQuestion}
+                  </label>
+                  <input
+                    name="flight-time"
+                    id="flight-time"
+                    type="number"
+                    defaultValue={hoursValue}
+                    className="w-20 mt-2 py-2 text-xl font-serif font-bold text-center bg-gray-900 text-gray-50 rounded-lg border-gray-300 focus:border-main-red focus:ring-main-red"
+                    step={15}
+                    min={110}
+                    onChange={(e) => {
+                      setHoursValue(e.target.value);
+                      if (hoursValue <= packages.flightHours) {
+                        findOptions("Commercial");
+                      }
+                    }}
+                  />
+
+                  {hoursValue < packages.flightHours && (
+                    <div className="mt-6 flex flex-col justify-center align-middle items-center">
+                      <h4 className="w-full lg:px-10 text-lg text-center font-semibold leading-6 text-main-red">
+                        {packages.hoursQuestion2.question}
+                      </h4>
+                      <div className="flex-auto mt-2 w-full lg:w-3/5">
+                        <label htmlFor="hoursQuestion2" className="sr-only">
+                          Select a tab
+                        </label>
+                        <select
+                          id="hoursQuestion2"
+                          name="hoursQuestion2"
+                          defaultValue={packages.hoursQuestion2.options[0]}
+                          className="block w-full px-6 py-4 text-center bg-gray-900 text-gray-50 rounded-lg border-gray-300 focus:border-main-red focus:ring-main-red"
+                          onChange={(e) => findOptions(e.target.value)}
+                        >
+                          {packages.hoursQuestion2.options.map((option) => (
+                            <option key={option}>{option}</option>
+                          ))}
+                        </select>
+                      </div>
+                    </div>
+                  )}
+                </>
+              )}
+              <h4 className="mt-6 w-full lg:px-10 text-lg text-center font-semibold leading-6 text-main-red">
                 {packages.question.questions[0].question}
               </h4>
               <div className="flex-auto mt-2 w-full lg:w-3/5">
@@ -61,7 +139,7 @@ export default function ProgramSuggester({ packages }) {
                   defaultValue={currentPackage.option}
                   onChange={(e) => findPackage(e.target.value)}
                 >
-                  {packages.question.questions[0].options.map((option) => (
+                  {options.map((option) => (
                     <option key={option}>{option}</option>
                   ))}
                 </select>
@@ -136,7 +214,7 @@ export default function ProgramSuggester({ packages }) {
                   )}
                 </p>
                 {currentPrice.note && (
-                  <p class="mt-3 text-sm leading-6 text-gray-500 font-serif">
+                  <p className="mt-3 text-sm leading-6 text-gray-500 font-serif">
                     {currentPrice.note}
                   </p>
                 )}
