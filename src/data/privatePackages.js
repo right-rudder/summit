@@ -10,6 +10,7 @@ const privatePackages = {
         question:
           "Based on how often you can fly per week, how quickly do you want to earn your Private Pilot Certificate?",
         options: [
+          " ",
           "3-4 months by flying 5-6 days per week",
           "5-6 months by flying 3-4 days per week",
           "9-10 months by flying 1-2 days per week",
@@ -18,6 +19,7 @@ const privatePackages = {
       {
         question: "How would you prefer to pay for your package?",
         options: [
+          " ",
           "In monthly installments (block time)",
           "In one up-front payment (discounts available)",
         ],

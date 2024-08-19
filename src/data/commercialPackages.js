@@ -7,7 +7,7 @@ const commercialPackages = {
   hoursQuestion2: {
     question:
       "You need time building; Do you prefer solo or shared time building?",
-    options: ["Solo time building", "Shared time building"],
+    options: [" ", "Solo time building", "Shared time building"],
   },
   question: {
     questionHeading: "Which package is right for you?",
@@ -17,6 +17,7 @@ const commercialPackages = {
         question:
           "Based on how often you can fly per week, how quickly do you want to earn your Commercial Pilot Certificate?",
         options: [
+          " ",
           "5 weeks, flying 6 hours/week",
           "3 months, flying 3 hours/week",
           "6 months (10 weeks Solo Time Building + 12 weeks Commercial Program)",
@@ -28,6 +29,7 @@ const commercialPackages = {
       {
         question: "How would you prefer to pay for your package?",
         options: [
+          " ",
           "In monthly installments (block time)",
           "In one up-front payment (discounts available)",
         ],

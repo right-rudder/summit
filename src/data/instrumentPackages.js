@@ -10,6 +10,7 @@ const instrumentPackages = {
         question:
           "Based on how often you can fly per week, how quickly do you want to earn your Instrument Rating?",
         options: [
+          " ",
           "2 weeks of full-time training by flying daily",
           "4 months flexible training by flying 2-3 days per week",
         ],
@@ -17,6 +18,7 @@ const instrumentPackages = {
       {
         question: "How would you prefer to pay for your package?",
         options: [
+          " ",
           "In monthly installments (block time)",
           "In one up-front payment (discounts available)",
         ],
@@ -56,7 +58,7 @@ const instrumentPackages = {
     },
     {
       packageName: "Efficient Package",
-      option: "4 months of flexible training by flying 2-3 days per week",
+      option: "4 months flexible training by flying 2-3 days per week",
       monthlyPrice: {
         price: 3200,
         afterPrice: "/month",

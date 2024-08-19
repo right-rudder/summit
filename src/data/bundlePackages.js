@@ -10,6 +10,7 @@ const bundlePackages = {
         question:
           "Based on how often you can fly per week, how quickly do you want to earn your Private Pilot Certificate and Instrument Rating?",
         options: [
+          " ",
           "7 months by flying 5-6 times per week",
           "10 months by flying 2-3 times per week",
         ],
@@ -17,6 +18,7 @@ const bundlePackages = {
       {
         question: "How would you prefer to pay for your package?",
         options: [
+          " ",
           "In monthly installments (block time)",
           "In one up-front payment (discounts available)",
         ],

@@ -14,16 +14,19 @@ export default function ProgramSuggester({ packages }) {
   const findOptions = (option) => {
     if (option.includes("Solo")) {
       setOptions([
+        " ",
         "6 months (10 weeks Solo Time Building + 12 weeks Commercial Program)",
         "3 months (6 weeks Solo Time Building + 5 weeks Commercial Program)",
       ]);
     } else if (option.includes("Shared")) {
       setOptions([
+        " ",
         "6 months (10 weeks Shared Time Building + 12 weeks Commercial Program",
         "3 months (6 weeks Shared Time Building + 5 weeks Commercial Program)",
       ]);
     } else {
       setOptions([
+        " ",
         "5 weeks, flying 6 hours/week",
         "3 months, flying 3 hours/week",
       ]);
@@ -32,6 +35,9 @@ export default function ProgramSuggester({ packages }) {
 
   const findPackage = (option) => {
     const pack = packages.packs.find((pack) => pack.option === option);
+    if (!pack) {
+      return;
+    }
     setCurrentPackage(pack);
     setCurrentPrice(pack.monthlyPrice);
   };
@@ -155,6 +161,7 @@ export default function ProgramSuggester({ packages }) {
                 <select
                   id="question2"
                   name="question2"
+                  defaultValue={packages.question.questions[1].options[0]}
                   className="block w-full px-6 py-4 text-center bg-gray-900 text-gray-50 rounded-lg border-gray-300 focus:border-main-red focus:ring-main-red"
                   onChange={(e) => findPrice(e.target.value)}
                 >
