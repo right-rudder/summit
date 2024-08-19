@@ -14,18 +14,18 @@ export default function ProgramSuggester({ packages }) {
   const findOptions = (option) => {
     if (option.includes("Solo")) {
       setOptions([
-        "Solo flight hours 11 hours/week",
-        "Solo flight hours 18 hours/week",
+        "6 months (10 weeks Solo Time Building + 12 weeks Commercial Program)",
+        "3 months (6 weeks Solo Time Building + 5 weeks Commercial Program)",
       ]);
     } else if (option.includes("Shared")) {
       setOptions([
-        "Shared flight hours 11 hours/week",
-        "Shared flight hours 18 hours/week",
+        "6 months (10 weeks Shared Time Building + 12 weeks Commercial Program",
+        "3 months (6 weeks Shared Time Building + 5 weeks Commercial Program)",
       ]);
     } else {
       setOptions([
-        "3-4 months by flying 5-6 days per week",
-        "5-6 months by flying 3-4 days per week",
+        "5 weeks, flying 6 hours/week",
+        "3 months, flying 3 hours/week",
       ]);
     }
   };
@@ -136,7 +136,6 @@ export default function ProgramSuggester({ packages }) {
                   id="question1"
                   name="question1"
                   className="block w-full px-6 py-4 text-center bg-gray-900 text-gray-50 rounded-lg border-gray-300 focus:border-main-red focus:ring-main-red"
-                  defaultValue={currentPackage.option}
                   onChange={(e) => findPackage(e.target.value)}
                 >
                   {options.map((option) => (
@@ -157,7 +156,6 @@ export default function ProgramSuggester({ packages }) {
                   id="question2"
                   name="question2"
                   className="block w-full px-6 py-4 text-center bg-gray-900 text-gray-50 rounded-lg border-gray-300 focus:border-main-red focus:ring-main-red"
-                  defaultValue={packages.question.questions[1].options[0]}
                   onChange={(e) => findPrice(e.target.value)}
                 >
                   {packages.question.questions[1].options.map((option) => (

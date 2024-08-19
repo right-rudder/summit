@@ -5,7 +5,8 @@ const commercialPackages = {
   flightHours: 215,
   hoursQuestion: "How many flight hours do you have?",
   hoursQuestion2: {
-    question: "You need time building; Do you prefer solo or shared time building?",
+    question:
+      "You need time building; Do you prefer solo or shared time building?",
     options: ["Solo time building", "Shared time building"],
   },
   question: {
@@ -56,7 +57,7 @@ const commercialPackages = {
       },
       packageDescription:
         "*Must have completed Written Exam to qualify for this program.",
-      packageFeatures: [ 
+      packageFeatures: [
         "Training Duration: 5 weeks",
         "Training Frequency: 6 hours/week",
         "Total Flight Hours: 30 hours",
@@ -76,8 +77,7 @@ const commercialPackages = {
         price: 10000,
         afterPrice: "paid once",
       },
-      packageDescription:
-        "",
+      packageDescription: "",
       packageFeatures: [
         "Training Duration: 3 months",
         "Training Frequency: 3 hours/week",
@@ -87,12 +87,9 @@ const commercialPackages = {
         "*Three months is the expected program length. Extensions may be needed due to weather, learning speed, illness, or mechanical issues and will be managed to ensure your completion as close as possible to the stated timeframe. No additional charges will apply unless the student exceeds the hours provided. Excess hours will be available at a program-discounted rate if needed.",
     },
     {
-      packageName: [
-        "Solo Time Building",
-        "+",
-        "Standard Commercial Program",
-      ],
-      option: "6 months (10 weeks Time Building + 12 weeks Commercial Program)",
+      packageName: ["Solo Time Building", " + ", "Standard Commercial Program"],
+      option:
+        "6 months (10 weeks Solo Time Building + 12 weeks Commercial Program)",
       monthlyPrice: {
         price: 4500,
         afterPrice: "/month",
@@ -102,8 +99,7 @@ const commercialPackages = {
         price: 27000,
         afterPrice: "paid once",
       },
-      packageDescription:
-        "",
+      packageDescription: "",
       packageFeatures: [
         "Training Duration: 6 months",
         "Time Building Frequency: 11 hours/week",
@@ -117,10 +113,11 @@ const commercialPackages = {
     {
       packageName: [
         "Solo Time Building",
-        "+",
+        " + ",
         "Expedited Commercial Program",
       ],
-      option: "3 months (6 weeks Solo Time Building + 5 weeks Commercial Program)",
+      option:
+        "3 months (6 weeks Solo Time Building + 5 weeks Commercial Program)",
       monthlyPrice: {
         price: 8675,
         afterPrice: "/month",
@@ -130,8 +127,7 @@ const commercialPackages = {
         price: 25500,
         afterPrice: "paid once",
       },
-      packageDescription:
-        "",
+      packageDescription: "",
       packageFeatures: [
         "Training Duration: 3 months",
         "Time Building Frequency: 18 hours/week",
@@ -145,10 +141,11 @@ const commercialPackages = {
     {
       packageName: [
         "Shared Time Building",
-        "+",
+        " + ",
         "Standard Commercial Program",
       ],
-      option: "6 months (10 weeks Shared Time Building + 12 weeks Commercial Program",
+      option:
+        "6 months (10 weeks Shared Time Building + 12 weeks Commercial Program",
       monthlyPrice: {
         price: 3500,
         afterPrice: "/month",
@@ -160,23 +157,24 @@ const commercialPackages = {
       },
       packageDescription:
         "*Shared time building is only available if we have multiple students seeking this at the same time.",
-        packageFeatures: [
-          "Training Duration: 6 months",
-          "Time Building Frequency: 11 hours/week",
-          "Commercial Training Frequency: 1-2 days/week",
-          "Total Time Building Hours: Up to 110 hours",
-          "Total Commercial Program Hours: 35 hours",
-        ],
-        packageLittlePrint:
-          "*Six months is the expected program length. Extensions may be needed due to weather, learning speed, illness, or mechanical issues and will be managed to ensure your completion as close as possible to the stated timeframe. No additional charges will apply unless the student exceeds the hours provided. Excess hours will be available at a program-discounted rate if needed.",
-      },
+      packageFeatures: [
+        "Training Duration: 6 months",
+        "Time Building Frequency: 11 hours/week",
+        "Commercial Training Frequency: 1-2 days/week",
+        "Total Time Building Hours: Up to 110 hours",
+        "Total Commercial Program Hours: 35 hours",
+      ],
+      packageLittlePrint:
+        "*Six months is the expected program length. Extensions may be needed due to weather, learning speed, illness, or mechanical issues and will be managed to ensure your completion as close as possible to the stated timeframe. No additional charges will apply unless the student exceeds the hours provided. Excess hours will be available at a program-discounted rate if needed.",
+    },
     {
       packageName: [
         "Shared Time Building",
-        "+",
+        " + ",
         "Expedited Commercial Program",
       ],
-      option: "3 months (6 weeks Shared Time Building + 5 weeks Commercial Program)",
+      option:
+        "3 months (6 weeks Shared Time Building + 5 weeks Commercial Program)",
       monthlyPrice: {
         price: 6350,
         afterPrice: "/month",
