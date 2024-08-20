@@ -38,11 +38,9 @@ const commercialPackages = {
   },
   allInclude: [
     "Instructor Services, including Checkride Prep",
-    "Basic Pilot Supplies: Passive Headset, Bag, Kneeboard, etc.",
+    "Necessary Redbird Simulator Time",
     `Online Sporty's Ground School Course`,
     "ForeFlight Electronic Chart Subscription",
-    "ASA Oral Exam Prep Book",
-    "FAA Private Pilot ACS Standards Book",
     "Non-owned Insurance",
   ],
   packs: [
