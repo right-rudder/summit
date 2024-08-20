@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 export default function ProgramSuggester({ packages }) {
   const [currentPackage, setCurrentPackage] = useState(packages.packs[0]);
   const [currentPrice, setCurrentPrice] = useState(currentPackage.monthlyPrice);
+  const [currenVisible, setCurrentVisible] = useState(false);
 
   const [hoursValue, setHoursValue] = useState(packages.flightHours);
 
@@ -38,8 +39,8 @@ export default function ProgramSuggester({ packages }) {
     if (!pack) {
       return;
     }
+    setCurrentVisible(true);
     setCurrentPackage(pack);
-    setCurrentPrice(pack.monthlyPrice);
   };
 
   const findPrice = (option) => {
@@ -199,7 +200,9 @@ export default function ProgramSuggester({ packages }) {
               </div>
             </div>
           </div>
-          <div className="-mt-2 p-2 lg:mt-0 lg:w-full lg:max-w-md lg:flex-shrink-0">
+          <div
+            className={`${currenVisible ? "w-full h-full opacity-100" : "w-0 opacity-0 h-0"} duration-1000 transition-all -mt-2 p-2 lg:mt-0 lg:max-w-md lg:flex-shrink-0 sticky top-20`}
+          >
             <div className="mt-4 lg:mt-0 rounded-xl bg-gray-900 py-10 text-center ring-1 ring-inset ring-gray-900/5 lg:flex lg:flex-col lg:justify-center lg:py-16">
               <div className="pt-16 lg:px-8 lg:pt-0 xl:px-14">
                 <h3
@@ -225,7 +228,7 @@ export default function ProgramSuggester({ packages }) {
                 )}
                 <ul
                   role="list"
-                  className="mt-6 px-7 lg:px-0 space-y-3 text-sm text-left leading-6 text-gray-100"
+                  className="mx-auto w-fit mt-6 px-7 lg:px-0 space-y-3 text-sm text-left leading-6 text-gray-100"
                 >
                   {currentPackage.packageFeatures.map((feature) => (
                     <li className="flex gap-x-3">
@@ -238,7 +241,7 @@ export default function ProgramSuggester({ packages }) {
                         <path
                           fillRule="evenodd"
                           d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                          clip-rule="evenodd"
+                          clipRule="evenodd"
                         ></path>
                       </svg>
                       <span>{feature}</span>
