@@ -7,6 +7,7 @@ export default function ProgramSuggester({ packages }) {
   const [currenVisible, setCurrentVisible] = useState(false);
 
   const [hoursValue, setHoursValue] = useState(packages.flightHours);
+  const [totalHoursPrice, setTotalHoursPrice] = useState(0);
 
   const [options, setOptions] = useState(
     packages.flightHours ? [] : packages.question.questions[0].options,
@@ -41,6 +42,9 @@ export default function ProgramSuggester({ packages }) {
     }
     setCurrentVisible(true);
     setCurrentPackage(pack);
+    if (pack.hourPrice) {
+      setTotalHoursPrice((packages.flightHours - hoursValue) * pack.hourPrice);
+    }
   };
 
   const findPrice = (option) => {
@@ -102,10 +106,20 @@ export default function ProgramSuggester({ packages }) {
                     onChange={(e) => {
                       setHoursValue(e.target.value);
                       if (hoursValue <= packages.flightHours) {
+                        if (currentPackage.hourPrice) {
+                          setTotalHoursPrice(
+                            (packages.flightHours - e.target.value) *
+                              currentPackage.hourPrice,
+                          );
+                        }
                         findOptions("Commercial");
                       }
                     }}
                   />
+                  {currentPackage.hourPrice &&
+                    hoursValue <= packages.flightHours && (
+                      <p>Hour Price $ {currentPackage.hourPrice}</p>
+                    )}
 
                   {hoursValue < packages.flightHours && (
                     <div className="mt-6 flex flex-col justify-center align-middle items-center">
@@ -190,7 +204,7 @@ export default function ProgramSuggester({ packages }) {
                         <path
                           fillRule="evenodd"
                           d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                          clip-rule="evenodd"
+                          clipRule="evenodd"
                         ></path>
                       </svg>
                       <span>{feature}</span>
@@ -221,6 +235,14 @@ export default function ProgramSuggester({ packages }) {
                     </span>
                   )}
                 </p>
+                {totalHoursPrice > 0 && (
+                  <p className="text-xl font-bold tracking-tight text-gray-200 font-serif">
+                    + $ {totalHoursPrice.toLocaleString()}&nbsp;
+                    <span className="text-sm font-semibold leading-6 text-gray-100">
+                      &nbsp;for total hours
+                    </span>
+                  </p>
+                )}
                 {currentPrice.note && (
                   <p className="mt-3 text-sm leading-6 text-gray-500 font-serif">
                     {currentPrice.note}

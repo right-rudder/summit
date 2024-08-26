@@ -99,6 +99,7 @@ const commercialPackages = {
         price: 27000,
         afterPrice: "paid once",
       },
+      hourPrice: 200,
       packageDescription: "",
       packageFeatures: [
         "Training Duration: 6 months",
@@ -127,6 +128,7 @@ const commercialPackages = {
         price: 25500,
         afterPrice: "paid once",
       },
+      hourPrice: 200,
       packageDescription: "",
       packageFeatures: [
         "Training Duration: 3 months",
@@ -155,6 +157,7 @@ const commercialPackages = {
         price: 20500,
         afterPrice: "paid once",
       },
+      hourPrice: 100,
       packageDescription:
         "*Shared time building is only available if we have multiple students seeking this at the same time.",
       packageFeatures: [
@@ -184,6 +187,7 @@ const commercialPackages = {
         price: 19000,
         afterPrice: "paid once",
       },
+      hourPrice: 100,
       packageDescription:
         "*Shared time building is only available if we have multiple students seeking this at the same time.",
       packageFeatures: [
