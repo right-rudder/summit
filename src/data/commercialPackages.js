@@ -3,10 +3,11 @@ const commercialPackages = {
   heading: "Commercial Pilot Packages",
   description: `We pride ourselves on transparency when it comes to pilot training. While other flight schools may hide their pricing, we feel that our future students should have an idea of what they’re paying when engaging in flight lessons with us.`,
   flightHours: 215,
+  frequencyQuestion: "How often can you fly per week?",
+  frequencyOptions: [8, 10, 12, 14, 16, 18, 20],
   hoursQuestion: "How many flight hours do you have?",
   hoursQuestion2: {
-    question:
-      "You need time building; Do you prefer solo or shared time building?",
+    question: "Do you prefer solo or shared time building?",
     options: [" ", "Solo time building", "Shared time building"],
   },
   question: {
@@ -99,10 +100,11 @@ const commercialPackages = {
         price: 27000,
         afterPrice: "paid once",
       },
-      hourPrice: 200,
+      hourPrice: 173.52,
+      durationWeeks: 12,
       packageDescription: "",
       packageFeatures: [
-        "Training Duration: 6 months",
+        "Training Duration:",
         "Time Building Frequency: 11 hours/week",
         "Commercial Training Frequency: 1-2 days/week",
         "Total Time Building Hours: Up to 110 hours",
@@ -128,10 +130,11 @@ const commercialPackages = {
         price: 25500,
         afterPrice: "paid once",
       },
-      hourPrice: 200,
+      hourPrice: 173.52,
+      durationWeeks: 5,
       packageDescription: "",
       packageFeatures: [
-        "Training Duration: 3 months",
+        "Training Duration:",
         "Time Building Frequency: 18 hours/week",
         "Commercial Training Frequency: 4 days/week",
         "Total Time Building Hours: Up to 110 hours",
@@ -157,11 +160,12 @@ const commercialPackages = {
         price: 20500,
         afterPrice: "paid once",
       },
-      hourPrice: 100,
+      hourPrice: 92.18,
+      durationWeeks: 12,
       packageDescription:
         "*Shared time building is only available if we have multiple students seeking this at the same time.",
       packageFeatures: [
-        "Training Duration: 6 months",
+        "Training Duration:",
         "Time Building Frequency: 11 hours/week",
         "Commercial Training Frequency: 1-2 days/week",
         "Total Time Building Hours: Up to 110 hours",
@@ -187,11 +191,12 @@ const commercialPackages = {
         price: 19000,
         afterPrice: "paid once",
       },
-      hourPrice: 100,
+      hourPrice: 92.18,
+      durationWeeks: 5,
       packageDescription:
         "*Shared time building is only available if we have multiple students seeking this at the same time.",
       packageFeatures: [
-        "Training Duration: 3 months",
+        "Training Duration:",
         "Time Building Frequency: 18 hours/week",
         "Commercial Training Frequency: 4 days/week",
         "Total Time Building Hours: Up to 110 hours",
