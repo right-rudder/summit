@@ -3,7 +3,7 @@ const commercialPackages = {
   heading: "Commercial Pilot Packages",
   description: `We pride ourselves on transparency when it comes to pilot training. While other flight schools may hide their pricing, we feel that our future students should have an idea of what they’re paying when engaging in flight lessons with us.`,
   flightHours: 215,
-  frequencyQuestion: "How many hours can you devote to time building per week?",
+  frequencyQuestion: "How often can you fly per week?",
   frequencyOptions: [8, 10, 12, 14, 16, 18, 20],
   hoursQuestion: "How many flight hours do you have?",
   hoursQuestion2: {
@@ -16,15 +16,15 @@ const commercialPackages = {
     questions: [
       {
         question:
-          "How quickly do you want to earn your Commercial Pilot Certificate?",
+          "Based on how often you can fly per week, how quickly do you want to earn your Commercial Pilot Certificate?",
         options: [
           " ",
           "5 weeks, flying 6 hours/week",
           "3 months, flying 3 hours/week",
-          "3 months (+ Solo Time Building)",
-          "5 weeks (+ Solo Time Building)",
-          "3 months (+ Shared Time Building)",
-          "5 weeks (+ Shared Time Building)",
+          "6 months (10 weeks Solo Time Building + 12 weeks Commercial Program)",
+          "3 months (6 weeks Solo Time Building + 5 weeks Commercial Program)",
+          "6 months (10 weeks Shared Time Building + 12 weeks Commercial Program",
+          "3 months (6 weeks Shared Time Building + 5 weeks Commercial Program)",
         ],
       },
       {
@@ -46,7 +46,7 @@ const commercialPackages = {
   ],
   packs: [
     {
-      packageName: "Expedited Commercial Pilot Program",
+      packageName: "Accelerated Commercial Pilot Program",
       option: "5 weeks, flying 6 hours/week",
       monthlyPrice: {
         price: 8500,
@@ -88,13 +88,9 @@ const commercialPackages = {
         "*Three months is the expected program length. Extensions may be needed due to weather, learning speed, illness, or mechanical issues and will be managed to ensure your completion as close as possible to the stated timeframe. No additional charges will apply unless the student exceeds the hours provided. Excess hours will be available at a program-discounted rate if needed.",
     },
     {
-      packageName: [
-        "Standard Commercial Program",
-        " + ",
-        "Solo Time Building",
-      ],
+      packageName: ["Solo Time Building", " + ", "Standard Commercial Program"],
       option:
-        "3 months (+ Solo Time Building)",
+        "6 months (10 weeks Solo Time Building + 12 weeks Commercial Program)",
       monthlyPrice: {
         price: 4500,
         afterPrice: "/month",
@@ -119,12 +115,12 @@ const commercialPackages = {
     },
     {
       packageName: [
-        "Expedited Commercial Program",
-        " + ",
         "Solo Time Building",
+        " + ",
+        "Expedited Commercial Program",
       ],
       option:
-        "5 weeks (+ Solo Time Building)",
+        "3 months (6 weeks Solo Time Building + 5 weeks Commercial Program)",
       monthlyPrice: {
         price: 8675,
         afterPrice: "/month",
@@ -149,12 +145,12 @@ const commercialPackages = {
     },
     {
       packageName: [
-        "Standard Commercial Program",
-        " + ",
         "Shared Time Building",
+        " + ",
+        "Standard Commercial Program",
       ],
       option:
-        "3 months (+ Shared Time Building)",
+        "6 months (10 weeks Shared Time Building + 12 weeks Commercial Program",
       monthlyPrice: {
         price: 3500,
         afterPrice: "/month",
@@ -180,12 +176,12 @@ const commercialPackages = {
     },
     {
       packageName: [
-        "Expedited Commercial Program",
-        " + ",
         "Shared Time Building",
+        " + ",
+        "Expedited Commercial Program",
       ],
       option:
-        "5 weeks (+ Shared Time Building)",
+        "3 months (6 weeks Shared Time Building + 5 weeks Commercial Program)",
       monthlyPrice: {
         price: 6350,
         afterPrice: "/month",
