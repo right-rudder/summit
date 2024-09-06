@@ -5,7 +5,7 @@ const commercialPackages = {
   flightHours: 215,
   frequencyQuestion: "How often can you fly per week?",
   frequencyOptions: [8, 10, 12, 14, 16, 18, 20],
-  hoursQuestion: "How many flight hours do you have?",
+  hoursQuestion: "How many total hours do you have?",
   hoursQuestion2: {
     question: "Do you prefer solo or shared time building?",
     options: [" ", "Solo time building", "Shared time building"],
@@ -102,6 +102,7 @@ const commercialPackages = {
       },
       hourPrice: 173.52,
       durationWeeks: 12,
+      programFrequency: "1-2 days/week",
       packageDescription: "",
       packageFeatures: [
         "Training Duration:",
@@ -132,6 +133,8 @@ const commercialPackages = {
       },
       hourPrice: 173.52,
       durationWeeks: 5,
+      programFrequency: "4 days/week",
+
       packageDescription: "",
       packageFeatures: [
         "Training Duration:",
@@ -162,6 +165,7 @@ const commercialPackages = {
       },
       hourPrice: 92.18,
       durationWeeks: 12,
+      programFrequency: "1-2 days/week",
       packageDescription:
         "*Shared time building is only available if we have multiple students seeking this at the same time.",
       packageFeatures: [
@@ -193,6 +197,7 @@ const commercialPackages = {
       },
       hourPrice: 92.18,
       durationWeeks: 5,
+      programFrequency: "4 days/week",
       packageDescription:
         "*Shared time building is only available if we have multiple students seeking this at the same time.",
       packageFeatures: [

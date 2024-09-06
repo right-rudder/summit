@@ -16,9 +16,11 @@ export default function ProgramSuggester({ packages }) {
   const [options, setOptions] = useState(
     packages.flightHours ? [] : packages.question.questions[0].options,
   );
+  const [priceOption, setPriceOption] = useState(" ");
   const [globOption, setGlobOption] = useState("");
 
   const findOptions = (option) => {
+    calcTotalPrice(globOption);
     if (option.includes("Solo")) {
       setOptions([
         " ",
@@ -41,6 +43,10 @@ export default function ProgramSuggester({ packages }) {
   };
 
   const calcTotalPrice = (afterPrice) => {
+    if (hoursValue > packages.flightHours) {
+      setCurrentFeatures(currentPackage.packageFeatures);
+      return;
+    }
     !afterPrice && (afterPrice = globOption);
     if (afterPrice === "In monthly installments (block time)") {
       setCurrentPrice({
@@ -62,17 +68,13 @@ export default function ProgramSuggester({ packages }) {
           " months",
       });
       setCurrentFeatures([
-        "Program Duration: " + currentPackage.durationWeeks + " weeks",
-        "Time Building: " +
-          Math.ceil((packages.flightHours - hoursValue) / flightFrequency) +
+        "Time Building Type: " +
+          (globOption.includes("Solo") ? "Solo" : "Shared"),
+        "Time Building Hours: " + (packages.flightHours - hoursValue),
+        "Commercial Program Duration: " +
+          currentPackage.durationWeeks +
           " weeks",
-        "Total Weeks: " +
-          Math.ceil(
-            (packages.flightHours - hoursValue) / flightFrequency +
-              currentPackage.durationWeeks,
-          ),
-        "Commercial Training Frequency: 1-2 days/week",
-        "Time Building Frequency: " + flightFrequency + " hours/week",
+        "Commercial Training Frequency: " + currentPackage.programFrequency,
       ]);
     } else {
       setCurrentPrice({
@@ -81,17 +83,13 @@ export default function ProgramSuggester({ packages }) {
         note: "",
       });
       setCurrentFeatures([
-        "Program Duration: " + currentPackage.durationWeeks + " weeks",
-        "Time Building: " +
-          Math.ceil((packages.flightHours - hoursValue) / flightFrequency) +
+        "Time Building Type: " +
+          (globOption.includes("Solo") ? "Solo" : "Shared"),
+        "Time Building Hours: " + (packages.flightHours - hoursValue),
+        "Commercial Program Duration: " +
+          currentPackage.durationWeeks +
           " weeks",
-        "Total Weeks: " +
-          Math.ceil(
-            (packages.flightHours - hoursValue) / flightFrequency +
-              currentPackage.durationWeeks,
-          ),
-        "Commercial Training Frequency: 1-2 days/week",
-        "Time Building Frequency: " + flightFrequency + " hours/week",
+        "Commercial Training Frequency: " + currentPackage.programFrequency,
       ]);
     }
   };
@@ -102,31 +100,34 @@ export default function ProgramSuggester({ packages }) {
       return;
     }
     setCurrentPackage(pack);
-    if (pack.hourPrice) {
+    setCurrentPrice(pack.monthlyPrice);
+    if (hoursValue < packages.flightHours) {
       setTotalHoursPrice((packages.flightHours - hoursValue) * pack.hourPrice);
+      calcTotalPrice(priceOption);
     }
   };
 
   const findPrice = (option) => {
-    setGlobOption(option);
     if (option === "In monthly installments (block time)") {
       setCurrentPrice(currentPackage.monthlyPrice);
-      if (currentPackage.hourPrice) {
+      if (hoursValue <= packages.flightHours) {
+        setTotalHoursPrice(
+          (packages.flightHours - hoursValue) * currentPackage.hourPrice,
+        );
         calcTotalPrice(option);
       }
-    } else if (option === "") {
-      setCurrentPrice({ price: 0 });
-    } else {
+    } else if (option === "In one up-front payment (discounts available)") {
       setCurrentPrice(currentPackage.upfrontPrice);
-      if (currentPackage.hourPrice) {
-        calcTotalPrice(option);
-      }
+    } else {
+      setCurrentPrice({ price: 0 });
     }
   };
 
   useEffect(() => {
-    globOption && calcTotalPrice(globOption);
-  }, [flightFrequency, hoursValue]);
+    packages.flightHours &&
+      packages.flightHours > hoursValue &&
+      calcTotalPrice(priceOption);
+  }, [flightFrequency, priceOption, hoursValue]);
 
   return (
     <section className="bg-gray-100 lg:pt-24 pb-12 pt-32">
@@ -186,25 +187,106 @@ export default function ProgramSuggester({ packages }) {
                     )}
 
                   {hoursValue < packages.flightHours && (
-                    <div className="mt-6 flex flex-col justify-center align-middle items-center">
-                      <h4 className="w-full lg:px-10 text-lg text-center font-semibold leading-6 text-main-red">
-                        {packages.hoursQuestion2.question}
-                      </h4>
-                      <div className="flex-auto mt-2 w-full lg:w-3/5">
-                        <label htmlFor="hoursQuestion2" className="sr-only">
-                          Select a tab
-                        </label>
-                        <select
-                          id="hoursQuestion2"
-                          name="hoursQuestion2"
-                          defaultValue={packages.hoursQuestion2.options[0]}
-                          className="block w-full px-6 py-4 text-center bg-gray-900 text-gray-50 rounded-lg border-gray-300 focus:border-main-red focus:ring-main-red"
-                          onChange={(e) => findOptions(e.target.value)}
-                        >
-                          {packages.hoursQuestion2.options.map((option) => (
-                            <option key={option}>{option}</option>
-                          ))}
-                        </select>
+                    <div className="mt-6 flex flex-col justify-center align-middle items-center bg-gray-200 rounded-md p-12">
+                      <h3 className="w-full text-2xl lg:px-10 text-center font-semibold leading-6 text-main-red">
+                        You Need Time Building
+                      </h3>
+                      <p>
+                        You have {packages.flightHours - hoursValue} hours left
+                      </p>
+                      <div className="mt-7 flex flex-col justify-center align-middle items-center">
+                        <h4 className="w-full lg:px-10 text-lg text-center font-semibold leading-6 text-main-red">
+                          {packages.hoursQuestion2.question}
+                        </h4>
+                        <div className="flex-auto mt-2 w-full lg:w-3/5">
+                          <label htmlFor="hoursQuestion2" className="sr-only">
+                            Select a tab
+                          </label>
+                          <select
+                            id="hoursQuestion2"
+                            name="hoursQuestion2"
+                            defaultValue={packages.hoursQuestion2.options[0]}
+                            className="block w-full px-6 py-4 text-center bg-gray-900 text-gray-50 rounded-lg border-gray-300 focus:border-main-red focus:ring-main-red"
+                            onChange={(e) => {
+                              findOptions(e.target.value);
+                              setGlobOption(e.target.value);
+                            }}
+                          >
+                            {packages.hoursQuestion2.options.map((option) => (
+                              <option key={option}>{option}</option>
+                            ))}
+                          </select>
+                        </div>
+                        <div className="mt-10 flex flex-col justify-center align-middle items-center">
+                          <label
+                            htmlFor="flight-frequency"
+                            className="w-full lg:px-10 text-lg text-center font-semibold leading-6 text-main-red"
+                          >
+                            {packages.frequencyQuestion}
+                          </label>
+                          <input
+                            name="flight-frequency"
+                            id="flight-frequency"
+                            type="number"
+                            defaultValue={flightFrequency}
+                            className="w-20 mt-2 py-2 text-xl font-serif font-bold text-center bg-gray-900 text-gray-50 rounded-lg border-gray-300 focus:border-main-red focus:ring-main-red"
+                            step={2}
+                            min={8}
+                            max={20}
+                            onChange={(e) => {
+                              setFlightFrequency(e.target.value);
+                            }}
+                          />
+                          <p>{globOption}</p>
+                          <p>
+                            Total Hours Price $
+                            {totalHoursPrice.toLocaleString("en-US")}
+                          </p>
+                          <p>
+                            Total Pack Price $
+                            {currentPackage.monthlyPrice.price}
+                          </p>
+                          <p>
+                            Total Price $
+                            {(
+                              currentPackage.monthlyPrice.price +
+                              totalHoursPrice
+                            ).toLocaleString("en-US")}
+                          </p>
+                          <p>
+                            Pack Weeks : {currentPackage.durationWeeks} weeks
+                          </p>
+                          <p>
+                            Time Building :{" "}
+                            {Math.ceil(
+                              (packages.flightHours - hoursValue) /
+                                flightFrequency,
+                            )}
+                            weeks
+                          </p>
+                          <p>Flight Freq : {flightFrequency} hours per week</p>
+                          <p>
+                            Needed Flight Time:{" "}
+                            {packages.flightHours - hoursValue} hours
+                          </p>
+                          <p>
+                            Total Weeks:
+                            {Math.round(
+                              (packages.flightHours - hoursValue) /
+                                flightFrequency +
+                                currentPackage.durationWeeks,
+                            )}
+                          </p>
+                          <p>
+                            Total Months:
+                            {Math.round(
+                              ((packages.flightHours - hoursValue) /
+                                flightFrequency +
+                                currentPackage.durationWeeks) *
+                                0.230137,
+                            )}
+                          </p>
+                        </div>
                       </div>
                     </div>
                   )}
@@ -223,9 +305,7 @@ export default function ProgramSuggester({ packages }) {
                   className="block w-full px-6 py-4 text-center bg-gray-900 text-gray-50 rounded-lg border-gray-300 focus:border-main-red focus:ring-main-red"
                   onChange={(e) => {
                     findPackage(e.target.value);
-                    if (!packages.flightHours) {
-                      setCurrentVisible(true);
-                    }
+                    setCurrentVisible(true);
                   }}
                 >
                   {options.map((option) => (
@@ -247,74 +327,15 @@ export default function ProgramSuggester({ packages }) {
                   name="question2"
                   defaultValue={packages.question.questions[1].options[0]}
                   className="block w-full px-6 py-4 text-center bg-gray-900 text-gray-50 rounded-lg border-gray-300 focus:border-main-red focus:ring-main-red"
-                  onChange={(e) => findPrice(e.target.value)}
+                  onChange={(e) => {
+                    findPrice(e.target.value);
+                    setPriceOption(e.target.value);
+                  }}
                 >
                   {packages.question.questions[1].options.map((option) => (
                     <option key={option}>{option}</option>
                   ))}
                 </select>
-                {hoursValue < packages.flightHours && (
-                  <div className="mt-10 flex flex-col justify-center align-middle items-center">
-                    <label
-                      htmlFor="flight-frequency"
-                      className="w-full lg:px-10 text-lg text-center font-semibold leading-6 text-main-red"
-                    >
-                      {packages.frequencyQuestion}
-                    </label>
-                    <input
-                      name="flight-frequency"
-                      id="flight-frequency"
-                      type="number"
-                      defaultValue={flightFrequency}
-                      className="w-20 mt-2 py-2 text-xl font-serif font-bold text-center bg-gray-900 text-gray-50 rounded-lg border-gray-300 focus:border-main-red focus:ring-main-red"
-                      step={2}
-                      min={8}
-                      max={20}
-                      onChange={(e) => {
-                        setCurrentVisible(true);
-                        setFlightFrequency(e.target.value);
-                      }}
-                    />
-                    <p>{globOption}</p>
-                    <p>
-                      Total Hours Price $
-                      {totalHoursPrice.toLocaleString("en-US")}
-                    </p>
-                    <p>Total Pack Price ${currentPackage.monthlyPrice.price}</p>
-                    <p>
-                      Total Price $
-                      {(
-                        currentPackage.monthlyPrice.price + totalHoursPrice
-                      ).toLocaleString("en-US")}
-                    </p>
-                    <p>Pack Weeks : {currentPackage.durationWeeks} weeks</p>
-                    <p>Flight Freq : {flightFrequency} hours per week</p>
-                    <p>
-                      Needed Flight Time: {packages.flightHours - hoursValue}{" "}
-                      hours
-                    </p>
-                    <p>
-                      Time Building :{" "}
-                      {(packages.flightHours - hoursValue) / flightFrequency}
-                      weeks
-                    </p>
-                    <p>
-                      Total Weeks:
-                      {Math.round(
-                        (packages.flightHours - hoursValue) / flightFrequency +
-                          currentPackage.durationWeeks,
-                      )}
-                    </p>
-                    <p>
-                      Total Months:
-                      {Math.round(
-                        ((packages.flightHours - hoursValue) / flightFrequency +
-                          currentPackage.durationWeeks) *
-                          0.230137,
-                      )}
-                    </p>
-                  </div>
-                )}
               </div>
               <div className="mt-8 bg-gray-200 rounded-lg p-4 lg:p-12">
                 <h5 className="text-xl font-bold text-center">
@@ -358,7 +379,7 @@ export default function ProgramSuggester({ packages }) {
                 </h3>
                 <p className="mt-6 w-full flex justify-center items-baseline gap-x-1">
                   <span className="text-5xl font-bold tracking-tight text-gray-200 font-serif">
-                    $ {currentPrice.price.toLocaleString()}
+                    $ {currentPrice.price.toLocaleString("en-US")}
                   </span>
                   {currentPrice.afterPrice && (
                     <span className="text-sm font-semibold leading-6 text-gray-100">
