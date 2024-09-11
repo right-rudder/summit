@@ -1,94 +1,10 @@
 import { useState } from "react";
 import FAQs from "./FAQs";
-import { stratusFAQs } from "../data/stratusFAQs";
 import { ftfFAQs } from "../data/ftfFAQs";
 import { aopaFAQs } from "../data/aopaFAQs";
 
 const FinancingTabs = () => {
-  const [currentTab, setCurrentTab] = useState("Stratus Financial");
-
-  const stratusFinancial = (
-    <>
-      <section
-        id="financing-tabs"
-        className="flex flex-col items-center bg-gradient-to-br from-white to-gray-200"
-      >
-        <div className="max-w-7xl px-10 flex flex-col items-center py-10">
-          <div className="flex flex-col-reverse lg:flex-row items-center w-full justify-around py-10 gap-10">
-            <div>
-              <h2 className="text-5xl font-semibold text-center tracking-tight">
-                Finance with Stratus Financial
-              </h2>
-              <h3 className="pt-3 text-2xl text-center">
-                Leverage financial support here
-              </h3>
-            </div>
-            <div className="bg-white p-8 rounded">
-              <img
-                src="/img/financing/stratusLogo.webp"
-                alt="Stratus Financial logo"
-                className="h-16 md:h-20"
-              />
-            </div>
-          </div>
-          <div className="tracking-wider">
-            <p className="pt-5">
-              Stratus Financial was founded by FAA Certificated Flight and
-              Ground Instructors passionate about helping others achieve their
-              aviation dreams.
-            </p>
-            <div className="flex flex-col md:flex-row w-full gap-5">
-              <div className="flex-1">
-                <p className="pt-5 font-semibold text-center lg:text-left text-lg">
-                  Student Requirements
-                </p>
-                <ul className="mt-4 list-disc pl-10">
-                  <li>Must be a US Citizen or Permanent Resident*</li>
-                  <li>Paystubs for the past two (2) months</li>
-                  <li>Bank Statements for the past two (2) months</li>
-                  <li>Driver's License</li>
-                  <li>
-                    Name & contact number of employer (for employee
-                    verification)
-                  </li>
-                  <li>1st or 2nd class Medical Certificate</li>
-                  <li>Co-borrower Recommended</li>
-                  <li>Pilot Certificate, if applicable</li>
-                  <li>Subject to Credit Check and Underwriting</li>
-                </ul>
-                <p className="pt-5 italic">
-                  *If non-US citizen, TSA verification is required.
-                </p>
-              </div>
-              <div className="flex-1">
-                <p className="mt-4 md:pt-5 font-semibold text-center lg:text-left text-lg">
-                  Loan Process
-                </p>
-                <ol className="pl-10 list-decimal">
-                  <li>Application</li>
-                  <li>Processing</li>
-                  <li>Underwriting</li>
-                  <li>Approval</li>
-                  <li>Funding</li>
-                  <li>Pilot Training</li>
-                </ol>
-              </div>
-            </div>
-            <div className="mt-12 flex justify-center md:flex-row w-full">
-              <a
-                href="https://stratus.finance/apply/summitflight1286120/"
-                target="_blank"
-                className="btn-red"
-              >
-                Apply Today
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-      <FAQs faqs={stratusFAQs} type="Stratus Financial" />
-    </>
-  );
+  const [currentTab, setCurrentTab] = useState("Flight Training Finance");
 
   const flightTrainingFinance = (
     <>
@@ -291,7 +207,6 @@ const FinancingTabs = () => {
           defaultValue={currentTab}
           onChange={(e) => setCurrentTab(e.target.value)}
         >
-          <option>Stratus Financial</option>
           <option>Flight Training Finance</option>
           <option>AOPA</option>
         </select>
@@ -302,16 +217,6 @@ const FinancingTabs = () => {
           className="isolate flex divide-x divide-gray-200 rounded-lg shadow"
           aria-label="Tabs"
         >
-          <div
-            className={`${currentTab === "Stratus Financial" ? "text-gray-900" : "text-gray-500 hover:text-gray-700"} cursor-pointer rounded-l-lg group relative min-w-0 flex-1 overflow-hidden bg-white py-4 px-4 text-center font-medium hover:bg-gray-50 focus:z-10`}
-            onClick={() => setCurrentTab("Stratus Financial")}
-          >
-            <span>Stratus Financial</span>
-            <span
-              aria-hidden="true"
-              className={`${currentTab === "Stratus Financial" ? "bg-main-red" : "bg-transparent"} absolute inset-x-0 bottom-0 h-0.5`}
-            ></span>
-          </div>
           <div
             className={`${currentTab === "Flight Training Finance" ? "text-gray-900" : "text-gray-500 hover:text-gray-700"} cursor-pointer rounded-l-lg group relative min-w-0 flex-1 overflow-hidden bg-white py-4 px-4 text-center font-medium hover:bg-gray-50 focus:z-10`}
             onClick={() => setCurrentTab("Flight Training Finance")}
@@ -336,7 +241,6 @@ const FinancingTabs = () => {
         </div>
       </div>
 
-      {currentTab === "Stratus Financial" && stratusFinancial}
       {currentTab === "Flight Training Finance" && flightTrainingFinance}
       {currentTab === "AOPA" && aopa}
     </div>
