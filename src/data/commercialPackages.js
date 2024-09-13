@@ -50,7 +50,7 @@ const commercialPackages = {
       option: "5 weeks, flying 6 hours/week",
       monthlyPrice: {
         price: 8500,
-        afterPrice: "paid once",
+        afterPrice: "/month",
       },
       upfrontPrice: {
         price: 8500,

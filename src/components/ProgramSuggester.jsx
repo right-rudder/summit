@@ -8,6 +8,8 @@ export default function ProgramSuggester({ packages }) {
   const [currentFeatures, setCurrentFeatures] = useState(
     currentPackage.packageFeatures,
   );
+  const [packageOption, setPackageOption] = useState("");
+  const [timeBuildingOption, setTimeBuildingOption] = useState("");
 
   const [hoursValue, setHoursValue] = useState(packages.flightHours);
   const [totalHoursPrice, setTotalHoursPrice] = useState(0);
@@ -49,6 +51,17 @@ export default function ProgramSuggester({ packages }) {
     }
     !afterPrice && (afterPrice = globOption);
     if (afterPrice === "In monthly installments (block time)") {
+      console.log("calcTotalPrice");
+      console.log("currentPackage", currentPackage);
+      console.log("top", currentPackage.durationWeeks);
+      console.log(
+        "bottom",
+        Math.ceil(
+          ((packages.flightHours - hoursValue) / flightFrequency +
+            currentPackage.durationWeeks) *
+            0.230137,
+        ),
+      );
       setCurrentPrice({
         price:
           (currentPackage.monthlyPrice.price + totalHoursPrice) /
@@ -77,6 +90,7 @@ export default function ProgramSuggester({ packages }) {
         "Commercial Training Frequency: " + currentPackage.programFrequency,
       ]);
     } else {
+      console.log("calcTotalPrice else");
       setCurrentPrice({
         price: currentPackage.monthlyPrice.price + totalHoursPrice,
         afterPrice: "/paid once",
@@ -100,7 +114,8 @@ export default function ProgramSuggester({ packages }) {
       return;
     }
     setCurrentPackage(pack);
-    setCurrentPrice(pack.monthlyPrice);
+    console.log("findpackage");
+    findPrice(priceOption);
     if (hoursValue < packages.flightHours) {
       setTotalHoursPrice((packages.flightHours - hoursValue) * pack.hourPrice);
       calcTotalPrice(priceOption);
@@ -109,6 +124,7 @@ export default function ProgramSuggester({ packages }) {
 
   const findPrice = (option) => {
     if (option === "In monthly installments (block time)") {
+      console.log("findprice");
       setCurrentPrice(currentPackage.monthlyPrice);
       if (hoursValue <= packages.flightHours) {
         setTotalHoursPrice(
@@ -117,8 +133,11 @@ export default function ProgramSuggester({ packages }) {
         calcTotalPrice(option);
       }
     } else if (option === "In one up-front payment (discounts available)") {
+      console.log("findprice else if");
       setCurrentPrice(currentPackage.upfrontPrice);
     } else {
+      return;
+      console.log("findprice else");
       setCurrentPrice({ price: 0 });
     }
   };
@@ -126,8 +145,20 @@ export default function ProgramSuggester({ packages }) {
   useEffect(() => {
     packages.flightHours &&
       packages.flightHours > hoursValue &&
-      calcTotalPrice(priceOption);
-  }, [flightFrequency, priceOption, hoursValue]);
+      currentPackage.durationWeeks &&
+      calcPriceAndFindPackages();
+  }, [
+    flightFrequency,
+    priceOption,
+    hoursValue,
+    packageOption,
+    timeBuildingOption,
+  ]);
+
+  const calcPriceAndFindPackages = () => {
+    calcTotalPrice(priceOption);
+    findPackage(packageOption);
+  };
 
   return (
     <section className="bg-gray-100 lg:pt-24 pb-12 pt-32">
@@ -169,7 +200,11 @@ export default function ProgramSuggester({ packages }) {
                     step={15}
                     min={110}
                     onChange={(e) => {
+                      // console.log(e.target.value);
                       setHoursValue(e.target.value);
+                      // console.log(packages.flightHours);
+                      // console.log(currentPackage);
+                      // console.log(currentPackage.hourPrice);
                       if (hoursValue <= packages.flightHours) {
                         if (currentPackage.hourPrice) {
                           setTotalHoursPrice(
@@ -208,6 +243,9 @@ export default function ProgramSuggester({ packages }) {
                             defaultValue={packages.hoursQuestion2.options[0]}
                             className="block w-full px-6 py-4 text-center bg-gray-900 text-gray-50 rounded-lg border-gray-300 focus:border-main-red focus:ring-main-red"
                             onChange={(e) => {
+                              setCurrentVisible(false);
+                              calcTotalPrice(priceOption);
+                              setTimeBuildingOption(e.target.value);
                               findOptions(e.target.value);
                               setGlobOption(e.target.value);
                             }}
@@ -305,6 +343,7 @@ export default function ProgramSuggester({ packages }) {
                   className="block w-full px-6 py-4 text-center bg-gray-900 text-gray-50 rounded-lg border-gray-300 focus:border-main-red focus:ring-main-red"
                   onChange={(e) => {
                     findPackage(e.target.value);
+                    setPackageOption(e.target.value);
                     setCurrentVisible(true);
                   }}
                 >
@@ -346,7 +385,7 @@ export default function ProgramSuggester({ packages }) {
                   className="mt-6 px-7 lg:px-0 space-y-3 text-lg text-left leading-6 text-gray-900"
                 >
                   {packages.allInclude.map((feature) => (
-                    <li className="flex gap-x-3">
+                    <li className="flex gap-x-3" key={feature}>
                       <svg
                         className="h-6 w-5 flex-none text-red-600"
                         viewBox="0 0 20 20"
@@ -379,7 +418,10 @@ export default function ProgramSuggester({ packages }) {
                 </h3>
                 <p className="mt-6 w-full flex justify-center items-baseline gap-x-1">
                   <span className="text-5xl font-bold tracking-tight text-gray-200 font-serif">
-                    $ {currentPrice.price.toLocaleString("en-US")}
+                    {currentPrice.price.toLocaleString("en-US", {
+                      style: "currency",
+                      currency: "USD",
+                    })}
                   </span>
                   {currentPrice.afterPrice && (
                     <span className="text-sm font-semibold leading-6 text-gray-100">
@@ -396,23 +438,41 @@ export default function ProgramSuggester({ packages }) {
                   role="list"
                   className="mx-auto w-fit mt-6 px-7 lg:px-0 space-y-3 text-sm text-left leading-6 text-gray-100"
                 >
-                  {currentFeatures.map((feature) => (
-                    <li className="flex gap-x-3">
-                      <svg
-                        className="h-6 w-5 flex-none text-red-600"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                        aria-hidden="true"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                      <span>{feature}</span>
-                    </li>
-                  ))}
+                  {currentPackage.durationWeeks
+                    ? currentFeatures.map((feature) => (
+                        <li className="flex gap-x-3" key={feature}>
+                          <svg
+                            className="h-6 w-5 flex-none text-red-600"
+                            viewBox="0 0 20 20"
+                            fill="currentColor"
+                            aria-hidden="true"
+                          >
+                            <path
+                              fillRule="evenodd"
+                              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                              clipRule="evenodd"
+                            ></path>
+                          </svg>
+                          <span>{feature}</span>
+                        </li>
+                      ))
+                    : currentPackage.packageFeatures.map((feature) => (
+                        <li className="flex gap-x-3" key={feature}>
+                          <svg
+                            className="h-6 w-5 flex-none text-red-600"
+                            viewBox="0 0 20 20"
+                            fill="currentColor"
+                            aria-hidden="true"
+                          >
+                            <path
+                              fillRule="evenodd"
+                              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                              clipRule="evenodd"
+                            ></path>
+                          </svg>
+                          <span>{feature}</span>
+                        </li>
+                      ))}
                 </ul>
                 <EnrollmentModalButton
                   btnStyle={
