@@ -13,7 +13,7 @@ export default function ProgramSuggester({ packages }) {
 
   const [hoursValue, setHoursValue] = useState(packages.flightHours);
   const [totalHoursPrice, setTotalHoursPrice] = useState(0);
-  const [flightFrequency, setFlightFrequency] = useState(8);
+  const [flightFrequency, setFlightFrequency] = useState(0);
 
   const [options, setOptions] = useState(
     packages.flightHours ? [] : packages.question.questions[0].options,
@@ -26,20 +26,20 @@ export default function ProgramSuggester({ packages }) {
     if (option.includes("Solo")) {
       setOptions([
         " ",
-        "6 months (10 weeks Solo Time Building + 12 weeks Commercial Program)",
-        "3 months (6 weeks Solo Time Building + 5 weeks Commercial Program)",
+        "12 weeks, flying 1-2 days/week (after solo time building)",
+        "5 weeks, flying 5-6 days/week (after solo time building)",
       ]);
     } else if (option.includes("Shared")) {
       setOptions([
         " ",
-        "6 months (10 weeks Shared Time Building + 12 weeks Commercial Program",
-        "3 months (6 weeks Shared Time Building + 5 weeks Commercial Program)",
+        "12 weeks, flying 1-2 days/week (after shared time building)",
+        "5 weeks, flying 5-6 days/week (after shared time building)",
       ]);
     } else {
       setOptions([
         " ",
-        "5 weeks, flying 6 hours/week",
-        "3 months, flying 3 hours/week",
+        "5 weeks, flying 5-6 days/week",
+        "12 weeks, flying 1-2 days/week",
       ]);
     }
   };
@@ -216,18 +216,17 @@ export default function ProgramSuggester({ packages }) {
                       }
                     }}
                   />
-                  {currentPackage.hourPrice &&
-                    hoursValue <= packages.flightHours && (
-                      <p>Hour Price $ {currentPackage.hourPrice}</p>
-                    )}
-
                   {hoursValue < packages.flightHours && (
                     <div className="mt-6 flex flex-col justify-center align-middle items-center bg-gray-200 rounded-md p-12">
                       <h3 className="w-full text-2xl lg:px-10 text-center font-semibold leading-6 text-main-red">
                         You Need Time Building
                       </h3>
-                      <p>
-                        You have {packages.flightHours - hoursValue} hours left
+                      <p className="w-full mt-1 md:w-3/4 text-center">
+                        You have{" "}
+                        <strong>
+                          {packages.flightHours - hoursValue} hours
+                        </strong>{" "}
+                        left before you can start our Commercial Program.
                       </p>
                       <div className="mt-7 flex flex-col justify-center align-middle items-center">
                         <h4 className="w-full lg:px-10 text-lg text-center font-semibold leading-6 text-main-red">
@@ -268,62 +267,13 @@ export default function ProgramSuggester({ packages }) {
                             type="number"
                             defaultValue={flightFrequency}
                             className="w-20 mt-2 py-2 text-xl font-serif font-bold text-center bg-gray-900 text-gray-50 rounded-lg border-gray-300 focus:border-main-red focus:ring-main-red"
-                            step={2}
-                            min={8}
+                            step={1}
+                            min={4}
                             max={20}
                             onChange={(e) => {
                               setFlightFrequency(e.target.value);
                             }}
                           />
-                          <p>{globOption}</p>
-                          <p>
-                            Total Hours Price $
-                            {totalHoursPrice.toLocaleString("en-US")}
-                          </p>
-                          <p>
-                            Total Pack Price $
-                            {currentPackage.monthlyPrice.price}
-                          </p>
-                          <p>
-                            Total Price $
-                            {(
-                              currentPackage.monthlyPrice.price +
-                              totalHoursPrice
-                            ).toLocaleString("en-US")}
-                          </p>
-                          <p>
-                            Pack Weeks : {currentPackage.durationWeeks} weeks
-                          </p>
-                          <p>
-                            Time Building :{" "}
-                            {Math.ceil(
-                              (packages.flightHours - hoursValue) /
-                                flightFrequency,
-                            )}
-                            weeks
-                          </p>
-                          <p>Flight Freq : {flightFrequency} hours per week</p>
-                          <p>
-                            Needed Flight Time:{" "}
-                            {packages.flightHours - hoursValue} hours
-                          </p>
-                          <p>
-                            Total Weeks:
-                            {Math.round(
-                              (packages.flightHours - hoursValue) /
-                                flightFrequency +
-                                currentPackage.durationWeeks,
-                            )}
-                          </p>
-                          <p>
-                            Total Months:
-                            {Math.round(
-                              ((packages.flightHours - hoursValue) /
-                                flightFrequency +
-                                currentPackage.durationWeeks) *
-                                0.230137,
-                            )}
-                          </p>
                         </div>
                       </div>
                     </div>
@@ -418,10 +368,7 @@ export default function ProgramSuggester({ packages }) {
                 </h3>
                 <p className="mt-6 w-full flex justify-center items-baseline gap-x-1">
                   <span className="text-5xl font-bold tracking-tight text-gray-200 font-serif">
-                    {currentPrice.price.toLocaleString("en-US", {
-                      style: "currency",
-                      currency: "USD",
-                    })}
+                    $ {Math.ceil(currentPrice.price).toLocaleString("en-US")}
                   </span>
                   {currentPrice.afterPrice && (
                     <span className="text-sm font-semibold leading-6 text-gray-100">

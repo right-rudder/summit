@@ -3,9 +3,9 @@ const commercialPackages = {
   heading: "Commercial Pilot Packages",
   description: `We pride ourselves on transparency when it comes to pilot training. While other flight schools may hide their pricing, we feel that our future students should have an idea of what they’re paying when engaging in flight lessons with us.`,
   flightHours: 215,
-  frequencyQuestion: "How often can you fly per week?",
+  frequencyQuestion: "How many hours per week can you fly for time building?",
   frequencyOptions: [8, 10, 12, 14, 16, 18, 20],
-  hoursQuestion: "How many total hours do you have?",
+  hoursQuestion: "How many total flight hours do you have?",
   hoursQuestion2: {
     question: "Do you prefer solo or shared time building?",
     options: [" ", "Solo time building", "Shared time building"],
@@ -16,7 +16,7 @@ const commercialPackages = {
     questions: [
       {
         question:
-          "Based on how often you can fly per week, how quickly do you want to earn your Commercial Pilot Certificate?",
+          "With enough time building hours, how quickly do you want to earn your Commercial Pilot Certificate (CPL)?",
         options: [
           " ",
           "5 weeks, flying 6 hours/week",
@@ -47,10 +47,10 @@ const commercialPackages = {
   packs: [
     {
       packageName: "Accelerated Commercial Pilot Program",
-      option: "5 weeks, flying 6 hours/week",
+      option: "5 weeks, flying 5-6 days/week",
       monthlyPrice: {
         price: 8500,
-        afterPrice: "/month",
+        afterPrice: "paid once",
       },
       upfrontPrice: {
         price: 8500,
@@ -64,11 +64,11 @@ const commercialPackages = {
         "Total Flight Hours: 30 hours",
       ],
       packageLittlePrint:
-        "*Five weeks is the expected program length. Extensions may be needed due to weather, learning speed, illness, or mechanical issues and will be managed to ensure your completion as close as possible to the stated timeframe. No additional charges will apply unless the student exceeds the hours provided. Excess hours will be available at a program-discounted rate if needed.",
+        "*Five weeks is the expected length of the Commercial Program. Extensions may be needed due to weather, learning speed, illness, or mechanical issues and will be managed to ensure your completion as close as possible to the stated timeframe. No additional charges will apply unless the student exceeds the hours provided. Excess hours will be available at a program-discounted rate if needed.",
     },
     {
       packageName: "Standard Commercial Pilot Program",
-      option: "3 months, flying 3 hours/week",
+      option: "12 weeks, flying 1-2 days/week",
       monthlyPrice: {
         price: 3500,
         afterPrice: "/month",
@@ -85,12 +85,11 @@ const commercialPackages = {
         "Total Flight Hours: 35 hours",
       ],
       packageLittlePrint:
-        "*Three months is the expected program length. Extensions may be needed due to weather, learning speed, illness, or mechanical issues and will be managed to ensure your completion as close as possible to the stated timeframe. No additional charges will apply unless the student exceeds the hours provided. Excess hours will be available at a program-discounted rate if needed.",
+        "*Twelve weeks is the expected length of the Commercial Program. Extensions may be needed due to weather, learning speed, illness, or mechanical issues and will be managed to ensure your completion as close as possible to the stated timeframe. No additional charges will apply unless the student exceeds the hours provided. Excess hours will be available at a program-discounted rate if needed.",
     },
     {
       packageName: ["Solo Time Building", " + ", "Standard Commercial Program"],
-      option:
-        "6 months (10 weeks Solo Time Building + 12 weeks Commercial Program)",
+      option: "12 weeks, flying 1-2 days/week (after solo time building)",
       monthlyPrice: {
         price: 4500,
         afterPrice: "/month",
@@ -112,7 +111,7 @@ const commercialPackages = {
         "Total Commercial Program Hours: 35 hours",
       ],
       packageLittlePrint:
-        "*Six months is the expected program length. Extensions may be needed due to weather, learning speed, illness, or mechanical issues and will be managed to ensure your completion as close as possible to the stated timeframe. No additional charges will apply unless the student exceeds the hours provided. Excess hours will be available at a program-discounted rate if needed.",
+        "*Twelve weeks is the expected length of the Commercial Program. Completion of time building will depend on your availability and consistency in training. Extensions may be needed due to weather, learning speed, illness, or mechanical issues and will be managed to ensure your completion as close as possible to the stated timeframe. No additional charges will apply unless the student exceeds the hours provided. Excess hours will be available at a program-discounted rate if needed.",
     },
     {
       packageName: [
@@ -120,8 +119,7 @@ const commercialPackages = {
         " + ",
         "Expedited Commercial Program",
       ],
-      option:
-        "3 months (6 weeks Solo Time Building + 5 weeks Commercial Program)",
+      option: "5 weeks, flying 5-6 days/week (after solo time building)",
       monthlyPrice: {
         price: 8675,
         afterPrice: "/month",
@@ -144,7 +142,7 @@ const commercialPackages = {
         "Total Commercial Program Hours: 30 hours",
       ],
       packageLittlePrint:
-        "*Three months is the expected program length. Extensions may be needed due to weather, learning speed, illness, or mechanical issues and will be managed to ensure your completion as close as possible to the stated timeframe. No additional charges will apply unless the student exceeds the hours provided. Excess hours will be available at a program-discounted rate if needed.",
+        "*Five weeks is the expected length of the Commercial Program. Completion of time building will depend on your availability and consistency in training. Extensions may be needed due to weather, learning speed, illness, or mechanical issues and will be managed to ensure your completion as close as possible to the stated timeframe. No additional charges will apply unless the student exceeds the hours provided. Excess hours will be available at a program-discounted rate if needed.",
     },
     {
       packageName: [
@@ -152,8 +150,7 @@ const commercialPackages = {
         " + ",
         "Standard Commercial Program",
       ],
-      option:
-        "6 months (10 weeks Shared Time Building + 12 weeks Commercial Program",
+      option: "12 weeks, flying 1-2 days/week (after shared time building)",
       monthlyPrice: {
         price: 3500,
         afterPrice: "/month",
@@ -176,7 +173,7 @@ const commercialPackages = {
         "Total Commercial Program Hours: 35 hours",
       ],
       packageLittlePrint:
-        "*Six months is the expected program length. Extensions may be needed due to weather, learning speed, illness, or mechanical issues and will be managed to ensure your completion as close as possible to the stated timeframe. No additional charges will apply unless the student exceeds the hours provided. Excess hours will be available at a program-discounted rate if needed.",
+        "*Twelve weeks is the expected length of the Commercial Program. Completion of time building will depend on your availability and consistency in training. Extensions may be needed due to weather, learning speed, illness, or mechanical issues and will be managed to ensure your completion as close as possible to the stated timeframe. No additional charges will apply unless the student exceeds the hours provided. Excess hours will be available at a program-discounted rate if needed.",
     },
     {
       packageName: [
@@ -184,8 +181,7 @@ const commercialPackages = {
         " + ",
         "Expedited Commercial Program",
       ],
-      option:
-        "3 months (6 weeks Shared Time Building + 5 weeks Commercial Program)",
+      option: "5 weeks, flying 5-6 days/week (after shared time building)",
       monthlyPrice: {
         price: 6350,
         afterPrice: "/month",
@@ -208,7 +204,7 @@ const commercialPackages = {
         "Total Commercial Program Hours: 30 hours",
       ],
       packageLittlePrint:
-        "*Three months is the expected program length. Extensions may be needed due to weather, learning speed, illness, or mechanical issues and will be managed to ensure your completion as close as possible to the stated timeframe. No additional charges will apply unless the student exceeds the hours provided. Excess hours will be available at a program-discounted rate if needed.",
+        "*Five weeks is the expected length of the Commercial Program. Completion of time building will depend on your availability and consistency in training. Extensions may be needed due to weather, learning speed, illness, or mechanical issues and will be managed to ensure your completion as close as possible to the stated timeframe. No additional charges will apply unless the student exceeds the hours provided. Excess hours will be available at a program-discounted rate if needed.",
     },
   ],
 };
