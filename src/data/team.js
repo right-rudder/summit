@@ -4,7 +4,8 @@ export const team = [
     name: "Jeremy Davis",
     role: "Founder, Managing Partner, CFI, CFII, MEI",
     imageUrl: "/img/our-team/JeremyDavis.webp",
-    imageAlt: "headshot of Jeremy Davis",
+    imageAlt:
+      "headshot of Jeremy Davis at Summit Flight Academy kansas city flight instructor",
     paragrah1:
       "Jeremy is a CFI-I, co-founder of Summit Flight Academy and its managing partner. Jeremy is a single and multi-engine commercial pilot who teaches private, commercial and instrument students. Jeremy's love for general aviation has taken him and his family from coast to coast and even to the Bahamas in their Cessna 182. His flying dreams are to go on a literal cross-country African safari and sightsee Alaska by air.",
     paragrah2:
@@ -17,7 +18,8 @@ export const team = [
     name: "Levi Self",
     role: "Founder, CFI,CFII, MEI, A&P",
     imageUrl: "/img/our-team/LeviSelf.webp",
-    imageAlt: "headshot of Levi Self",
+    imageAlt:
+      "headshot of Levi Self at Summit Flight Academy kansas city flight instructor",
     paragrah1:
       "Levi is a co-founder of Summit Flight Academy, an airframe and powerplant mechanic (A&P), and flight instructor offering private and commercial instruction. Levi oversees our maintenance operations, keeping our fleet of Piper aircraft safe and reliability in the air. ",
     paragrah2:
@@ -30,7 +32,8 @@ export const team = [
     name: "Shane Griffin",
     role: "CFI, CFII, MEI",
     imageUrl: "/img/our-team/ShaneGriffin.webp",
-    imageAlt: "headshot of Shane Griffin",
+    imageAlt:
+      "headshot of Shane Griffin at Summit Flight Academy kansas city flight instructor",
     paragrah1:
       "Shane is a Certified Flight Instructor (CFI/CFII/MEI) and teaches private, commercial, instrument and multi-engine students. A native of the Kansas City area, Shane has been in the real estate industry for most of his career. He recently added aviation to his vocational goals and desires to fly for a fractional aviation company and continue teaching instrument and multi-engine students. Shane previously owned a Van's RV-10 and now currently flies a Piper Twin Comanche. When not flying, Shane enjoys spending time with his family. ",
     paragrah2:
@@ -41,7 +44,8 @@ export const team = [
     name: "Katia Van Horn",
     role: "CFI, CFII",
     imageUrl: "/img/our-team/KatiaVanHorn.webp",
-    imageAlt: "headshot of Katia Van Horn",
+    imageAlt:
+      "headshot of Katia Van Horn at Summit Flight Academy kansas city flight instructor",
     paragrah1:
       "Katia is a Certificated Flight Instructor (CFI/CFII) and teaches private, commercial and instrument students. She has been flying since she was 16 and joined Summit Flight Academy in January of 2023 after completing her CFI, CFII and multi-engine ratings. Katia has had many students successfully complete solo flights and check rides. Other than instructing, Katia's passion in aviation is gliding. Last season she completed several cross-country soaring flights and earned her commercial glider rating. Katia available for private, instrument, commercial and add-on CFI-I training.",
     paragrah2:
@@ -52,7 +56,8 @@ export const team = [
     name: "Ian Goings",
     role: "CFI",
     imageUrl: "/img/our-team/IanGoings.webp",
-    imageAlt: "headshot of Ian Goings",
+    imageAlt:
+      "headshot of Ian Goings at Summit Flight Academy kansas city flight instructor",
     paragrah1:
       "Ian is a Certificated Flight Instructor (CFI) as well as a multi-engine commercial pilot with an Embraer 120 type rating. He teaches private and commercial students. Growing up in the Kansas City area, Ian is an aviation program graduate from the University of Central Missouri in Warrensburg, Missouri. Students enjoy learning from Ian's aviation experience.",
     paragrah2:
@@ -65,38 +70,51 @@ export const team = [
     paragrah1:
       "Chris is a Certificated Flight Instructor (CFI/CFII) and teaches private, commercial and instrument students and has seen many successful students pass their check rides under his wing. Chris is available for private, instrument, commercial and add-on CFI-I training.",
     imageUrl: "/img/our-team/summit-flight-academy-cfi-chris-g.webp",
-    imageAlt: "headshot of Chris Gilstrap",
+    imageAlt:
+      "headshot of Chris Gilstrap at Summit Flight Academy kansas city flight instructor",
   },
   {
     id: 6,
-    name: "John Kruse",
-    role: "CFI",
-    imageUrl: "/img/our-team/JohnKruse.webp",
-    imageAlt: "headshot of John Kruse",
+    name: "Chris Knoernschild",
+    role: "CFI, CFII",
+    imageUrl: "/img/our-team/Chris-Knoernschild(CFI-CFII).webp",
+    imageAlt:
+      "headshot of Chris Knoernschild at Summit Flight Academy kansas city flight instructor",
     paragrah1:
-      "John is a Certificated Flight Instructor (CFI) and teaches private and commercial students. Originally from Iowa, John is an aviation program graduate from the University of Central Missouri in Warrensburg, Missouri. Students enjoy John's calm, methodical approach to flight instruction.",
+      "Chris teaches private, commercial, and instrument students, guiding many through successful check rides.",
     paragrah2:
-      "John is available for instruction seven days a week and currently is taking on new students.",
+      "He is available for private, instrument, commercial, and add-on CFI-I training.",
   },
   {
     id: 7,
-    name: "Hillary Kuklenski",
+    name: "Andrew Finkelstein",
     role: "CFI, CFII",
-    imageUrl: "/img/our-team/HillaryKuklenski.webp",
-    imageAlt: "headshot of Hillary Kuklenski",
+    imageUrl: "/img/our-team/Andrew-Finkelstein(CFI-CFII).webp",
+    imageAlt:
+      "headshot of Andrew Finkelstein at Summit Flight Academy kansas city flight instructor",
     paragrah1:
-      "Hillary is a Certified Flight Instructor (CFI/CFII) and teaches private, commercial and instrument students. Originally from Colorado, she moved to Kansas City a decade ago, trading the mountains for a corporate job. She always has had a love of the skies and flight, and two years ago, finally took the leap into aviation. Hillary enjoys teaching and witnessing her students soar to new heights in their aviation journeys.",
+      "Andrew teaches private, commercial, and instrument students, helping them succeed in their check rides.",
     paragrah2:
-      "Long term, Hillary aspires to fly long-haul overseas flights for an airline where she can combine her passion for aviation with the thrill of exploring the world. Outside the clouds, you'll find Hillary indulging in her love for travel, burying herself in a good book, or enjoying the company of her two Great Danes.",
-    paragrah3:
-      "Hillary is available to fly seven days a week and is currently accepting new students.",
+      "He is available for private, instrument, commercial, and add-on CFI-I training.",
   },
   {
     id: 8,
+    name: "Trent Lyman",
+    role: "CFI",
+    imageUrl: "/img/our-team/Trent-Lyman(CFI).webp",
+    imageAlt:
+      "headshot of Trent Lyman at Summit Flight Academy kansas city flight instructor",
+    paragrah1:
+      "Trent specializes in teaching private and commercial students, providing expert guidance for successful check rides.",
+    paragrah2: "He is available for private and commercial training.",
+  },
+  {
+    id: 9,
     name: "Jami Heckman",
     role: "Dispatcher and Administrator",
     imageUrl: "/img/our-team/summit-flight-academy-admin-jami-heckman.webp",
-    imageAlt: "headshot of Jami Heckman",
+    imageAlt:
+      "headshot of Jami Heckman at Summit Flight Academy kansas city flight dispatcher and administrator",
     paragrah1:
       "Jami is our dispatcher and office administrator. Jami runs our office, helps onboard new students, maintains our student records, and ensure operations are running smoothly.",
     paragrah2:
