@@ -69,30 +69,38 @@ export const team = [
   },
   {
     id: 6,
-    name: "John Kruse",
-    role: "CFI",
-    imageUrl: "/img/our-team/JohnKruse.webp",
-    imageAlt: "headshot of John Kruse",
+    name: "Chris-Knoernschild",
+    role: "CFI, CFII",
+    imageUrl: "/img/our-team/Chris-Knoernschild(CFI-CFII).webp",
+    imageAlt: "headshot of Chris-Knoernschild",
     paragrah1:
-      "John is a Certificated Flight Instructor (CFI) and teaches private and commercial students. Originally from Iowa, John is an aviation program graduate from the University of Central Missouri in Warrensburg, Missouri. Students enjoy John's calm, methodical approach to flight instruction.",
+      "Chris teaches private, commercial, and instrument students, guiding many through successful check rides.",
     paragrah2:
-      "John is available for instruction seven days a week and currently is taking on new students.",
+      "He is available for private, instrument, commercial, and add-on CFI-I training.",
   },
   {
     id: 7,
-    name: "Hillary Kuklenski",
+    name: "Andrew-Finkelstein",
     role: "CFI, CFII",
-    imageUrl: "/img/our-team/HillaryKuklenski.webp",
-    imageAlt: "headshot of Hillary Kuklenski",
+    imageUrl: "/img/our-team/Andrew-Finkelstein(CFI-CFII).webp",
+    imageAlt: "headshot of Andrew-Finkelstein",
     paragrah1:
-      "Hillary is a Certified Flight Instructor (CFI/CFII) and teaches private, commercial and instrument students. Originally from Colorado, she moved to Kansas City a decade ago, trading the mountains for a corporate job. She always has had a love of the skies and flight, and two years ago, finally took the leap into aviation. Hillary enjoys teaching and witnessing her students soar to new heights in their aviation journeys.",
+      "Andrew teaches private, commercial, and instrument students, helping them succeed in their check rides.",
     paragrah2:
-      "Long term, Hillary aspires to fly long-haul overseas flights for an airline where she can combine her passion for aviation with the thrill of exploring the world. Outside the clouds, you'll find Hillary indulging in her love for travel, burying herself in a good book, or enjoying the company of her two Great Danes.",
-    paragrah3:
-      "Hillary is available to fly seven days a week and is currently accepting new students.",
+      "He is available for private, instrument, commercial, and add-on CFI-I training.",
   },
   {
     id: 8,
+    name: "Trent-Lyman",
+    role: "CFI",
+    imageUrl: "/img/our-team/Trent-Lyman(CFI).webp",
+    imageAlt: "headshot of Trent-Lyman",
+    paragrah1:
+      "Trent specializes in teaching private and commercial students, providing expert guidance for successful check rides.",
+    paragrah2: "He is available for private and commercial training.",
+  },
+  {
+    id: 9,
     name: "Jami Heckman",
     role: "Dispatcher and Administrator",
     imageUrl: "/img/our-team/summit-flight-academy-admin-jami-heckman.webp",
