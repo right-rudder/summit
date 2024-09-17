@@ -7,6 +7,10 @@ import InstrumentPackages from "../../components/InstrumentPackages.astro";
 import FAQs from "../../components/FAQs";
 import { instrumentFAQs } from "../../data/instrumentFAQs";
 import EnrollmentModalButton from "../../components/enrollmentModalButtom";
+import ProgramSuggester from "../../components/ProgramSuggester";
+import instrumentPackages from "../../data/instrumentPackages";
+
+const packages = instrumentPackages;
 ---
 
 <BaseLayout
@@ -59,9 +63,11 @@ import EnrollmentModalButton from "../../components/enrollmentModalButtom";
 
   <InstrumentRoadmap />
 
-  <EnrollNowCTA />
+  <!-- <InstrumentPackages /> -->
 
-  <InstrumentPackages />
+  <ProgramSuggester packages={packages} client:load />
+
+  <EnrollNowCTA />
 
   <FAQs faqs={instrumentFAQs} type="Instrument Rating" client:visible />
 
