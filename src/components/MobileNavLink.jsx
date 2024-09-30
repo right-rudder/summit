@@ -9,7 +9,7 @@ const MobileNavLink = ({ menuItem, pathname, toggled, onShow }) => {
         id={menuItem.name}
         onClick={onShow}
         className={`text-xl w-full flex items-center justify-between text-white py-5 hover:border-b-2 border-main-red whitespace-nowrap ${
-          isActive ? "border-b-2" : ""
+          isActive ? "bg-gray-800/90 pl-2 border-b-2" : ""
         }`}
       >
         <p className="pointer-events-none">{menuItem.name}</p>
@@ -20,16 +20,21 @@ const MobileNavLink = ({ menuItem, pathname, toggled, onShow }) => {
         )}
       </button>
       <ul
-        className={`overflow-hidden text-white ${
+        className={`overflow-hidden text-white bg-gray-500/40 w-full divide-y-2 divide-white/10 ${
           toggled ? "max-h-96" : "max-h-0"
         } transition-[max-height] duration-300 ease-in-out }`}
       >
         {menuItem.submenu.map((item) => (
-          <li key={item.name} className="m-4">
+          <li
+            key={item.name}
+            className={`py-3 pl-5 w-full ${
+              item.link === pathname ? "bg-main-red/70" : ""
+            }`}
+          >
             <a
               href={item.link}
-              className={`hover:border-b-2 border-main-red text-xl ${
-                item.link === pathname ? "border-b-2" : ""
+              className={`hover:border-b-2 block w-full border-main-red text-xl ${
+                item.link === pathname ? "" : ""
               }`}
             >
               {item.name}
