@@ -47,27 +47,30 @@ const posts = (await getCollection("blog")).sort(
     <!-- <Partners /> -->
   </header>
 
-  <section class="max-w-7xl mx-auto my-24 p-5 bg-gray-100">
+  <section class="max-w-7xl mx-auto mt-8 mb-24 p-5 bg-gray-50 rounded-md">
     <ul class="grid gap-5 grid-cols-1 lg:grid-cols-2">
       {
         posts.map((post, index) => (
-          <li class="h-36 border border-black overflow-hidden p-2 lg:first:col-span-2 lg:first:h-96 hover:bg-gray-200 duration-200">
+          <li
+            title={post.data.title}
+            class="h-36 group border bg-gray-200 rounded-md border-black overflow-hidden p-2 lg:first:col-span-2 lg:first:h-96 hover:bg-main-red/10 duration-200"
+          >
             <a
               href={`/blog/${post.slug}/`}
               class={`flex gap-5 h-full ${index === 0 ? "" : ""}`}
             >
-              <div class="flex-[1.7_1.7_0] h-full flex flex-col justify-between">
+              <div class="flex-[1.7_1.7_0] h-full flex flex-col pl-4 py-4 pr-8 justify-between">
                 <div
                   class={`flex flex-col ${index === 0 ? "gap-1 lg:gap-5" : "gap-1"}`}
                 >
-                  <div class="flex items-center gap-1">
-                    <p class="font-medium text-sm">{post.data.author}</p>
-                  </div>
                   <h4
                     class={`font-semibold leading-5 ${index === 0 ? "text-xl lg:text-3xl" : "text-xl"}`}
                   >
                     {post.data.title}
                   </h4>
+                  <div class="flex items-center gap-1">
+                    <p class="font-semibold text-sm">{post.data.author}</p>
+                  </div>
                   <p class={`${index === 0 ? "hidden lg:block" : "hidden"}`}>
                     {post.data.description}
                   </p>
@@ -77,11 +80,11 @@ const posts = (await getCollection("blog")).sort(
                   <FormattedDate date={post.data.pubDate} />
                 </p>
               </div>
-              <div class="flex-1 h-full">
+              <div class="flex-1 h-full rounded-md overflow-hidden">
                 <img
                   src={post.data.heroImage}
-                  alt=""
-                  class="h-full object-cover w-full"
+                  alt={post.data.imgAlt}
+                  class="h-full object-cover w-full group-hover:scale-110 duration-300 delay-200 ease-out"
                 />
               </div>
             </a>

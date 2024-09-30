@@ -14,17 +14,21 @@ const {
   imgAlt,
   author,
   readingTime,
+  category,
+  tags,
 } = Astro.props;
 ---
 
 <BaseLayout
   mainBg="bg-gradient-to-b from-gray-100 to-gray-300"
-  pageTitle=`${title} | Summit Flight Academy`
+  pageTitle=`${title} | Blog | Summit Flight Academy`
   pageDescription={description}
-  pageKeywords="blog, private pilot's license, written exam, pilot resources, flight training, kansas city flight school, exam preparation, pilot licensing, aviation blog, pilot tips"
+  pageKeywords={`blog, private pilot's license, written exam, pilot resources, flight training, kansas city flight school, exam preparation, pilot licensing, aviation blog, pilot tips and tricks` +
+    category +
+    tags?.join(", ")}
 >
-  <article class="flex flex-col mt-36 mb-24 max-w-2xl mx-auto p-5 gap-5">
-    <h1 class="text-4xl lg:text-5xl font-semibold">{title}</h1>
+  <article class="flex flex-col mt-36 mb-24 max-w-4xl mx-auto p-5 gap-5">
+    <h1 class="text-4xl lg:text-5xl font-bold">{title}</h1>
     <div class="flex items-center gap-3">
       <div>
         <p>{author}</p>
