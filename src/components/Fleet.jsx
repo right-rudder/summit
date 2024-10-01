@@ -247,7 +247,7 @@ export default function Fleet() {
                       </li>
                     </ul>
                   </div>
-                  <div className="rounded flex flex-col align-middle items-center justify-center p-3 lg:p-9 bg-gray-50">
+                  <div className="rounded flex flex-col align-middle lg:col-span-2 items-center justify-center p-3 lg:p-9 bg-gray-50">
                     <h4 className="text-xl text-gray-900 font-bold">
                       Powerplant:
                     </h4>
