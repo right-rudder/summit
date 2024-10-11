@@ -47,47 +47,53 @@ const posts = (await getCollection("blog")).sort(
     <!-- <Partners /> -->
   </header>
 
-  <section class="max-w-7xl mx-auto my-24 p-5 bg-gray-100">
-    <ul class="grid gap-5 grid-cols-1 lg:grid-cols-2">
-      {
-        posts.map((post, index) => (
-          <li class="h-36 border border-black overflow-hidden p-2 lg:first:col-span-2 lg:first:h-96 hover:bg-gray-200 duration-200">
-            <a
-              href={`/blog/${post.slug}/`}
-              class={`flex gap-5 h-full ${index === 0 ? "" : ""}`}
-            >
-              <div class="flex-[1.7_1.7_0] h-full flex flex-col justify-between">
-                <div
-                  class={`flex flex-col ${index === 0 ? "gap-1 lg:gap-5" : "gap-1"}`}
-                >
-                  <div class="flex items-center gap-1">
-                    <p class="font-medium text-sm">{post.data.author}</p>
-                  </div>
-                  <h4
-                    class={`font-semibold leading-5 ${index === 0 ? "text-xl lg:text-3xl" : "text-xl"}`}
+  <section class="max-w-7xl mx-auto p-5 bg-gray-100">
+    <div class="mx-auto py-12 lg:px-8">
+      <ul class="grid gap-5 grid-cols-1 lg:grid-cols-2">
+        {
+          posts.map((post, index) => (
+            <li class="h-fit group ring-2 ring-gray-700 bg-gray-200 overflow-hidden rounded-md lg:first:col-span-2 lg:first:h-96 hover:bg-gray-300 duration-300">
+              <a
+                href={`/blog/${post.slug}/`}
+                class={`flex gap-5 h-full ${index === 0 ? "" : ""}`}
+              >
+                <div class="flex-[1.7_1.7_0] h-full flex flex-col justify-between pl-6 py-6">
+                  <div
+                    class={`flex flex-col ${index === 0 ? "gap-1 lg:gap-5" : "gap-1"}`}
                   >
-                    {post.data.title}
-                  </h4>
-                  <p class={`${index === 0 ? "hidden lg:block" : "hidden"}`}>
-                    {post.data.description}
+                    <div class="flex items-center gap-1">
+                      <p class="font-medium text-sm text-gray-700 leading-none">
+                        {post.data.author}
+                      </p>
+                    </div>
+                    <h4
+                      class={`font-semibold leading-5 text-gray-600 ${index === 0 ? "text-2xl lg:text-4xl" : "text-xl"}`}
+                    >
+                      {post.data.title}
+                    </h4>
+                    <p
+                      class={`${index === 0 ? "hidden lg:text-lg md:block" : "hidden"} pr-8`}
+                    >
+                      {post.data.description}
+                    </p>
+                  </div>
+                  <p class="text-gray-500 mt-4 text-sm">
+                    {post.data.readingTime} read ·{" "}
+                    <FormattedDate date={post.data.pubDate} />
                   </p>
                 </div>
-                <p class="text-gray-500 text-sm">
-                  {post.data.readingTime} read ·{" "}
-                  <FormattedDate date={post.data.pubDate} />
-                </p>
-              </div>
-              <div class="flex-1 h-full">
-                <img
-                  src={post.data.heroImage}
-                  alt=""
-                  class="h-full object-cover w-full"
-                />
-              </div>
-            </a>
-          </li>
-        ))
-      }
-    </ul>
+                <div class="flex-1 md:aspect-square overflow-hidden">
+                  <img
+                    src={post.data.heroImage}
+                    alt={post.data.imgAlt}
+                    class="h-full object-cover w-full group-hover:scale-110 duration-500"
+                  />
+                </div>
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
   </section>
 </BaseLayout>

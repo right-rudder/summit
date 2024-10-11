@@ -51,7 +51,7 @@ const Navbar = ({ pathname }) => {
                   loading="eager"
                   src="/img/fromWIX/SFA-logo.webp"
                   alt="Summit Flight Academy Logo"
-                  className={`${navBar ? "lg:h-14" : "lg:h-20"} object-contain h-14 w-auto transition-all`}
+                  className={`${navBar ? "lg:h-14" : "lg:h-20 h-16"} object-contain h-14 w-auto duration-300`}
                   id="navbar-image"
                   width={319}
                   height={80}
