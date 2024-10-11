@@ -2,6 +2,7 @@
 import { FACEBOOK_LINK, INSTAGRAM_LINK } from "../consts";
 import "@fontsource-variable/urbanist";
 import "@fontsource-variable/raleway";
+import ImageComp from "./ImageComp.astro";
 
 const today = new Date();
 ---
@@ -15,10 +16,10 @@ const today = new Date();
     <div class="xl:grid xl:grid-cols-3 xl:gap-8">
       <div class="space-y-8">
         <a href="/">
-          <img
-            class="mx-auto lg:mx-0 h-20 hover:brightness-125 duration-300 hover:scale-105 cursor-pointer"
-            src="/img/fromWIX/SFA-logo.png"
-            alt="Summit Logo"
+          <ImageComp
+            styles="mx-auto object-contain lg:mx-0 h-20 hover:brightness-125 duration-300 hover:scale-105 cursor-pointer"
+            imagePath="/src/assets/SFA-logo.png"
+            imageAlt="Summit Logo"
           />
         </a>
         <p

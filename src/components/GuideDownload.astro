@@ -1,4 +1,5 @@
 ---
+import ImageComp from "./ImageComp.astro";
 import OpenModalButton from "./OpenModalButton";
 ---
 
@@ -21,10 +22,11 @@ import OpenModalButton from "./OpenModalButton";
       </p>
       <OpenModalButton client:visible />
     </div>
-    <img
-      src="/summit.webp"
-      alt="Summit Flight Academy Quick Start Guide"
-      class="p-5 h-[250px] md:h-[300px] lg:h-[400px] order-first lg:order-last"
+    <ImageComp
+      imagePath="/src/assets/summit.webp"
+      imageAlt="Summit Flight Academy Quick Start Guide"
+      styles="p-5 h-[250px] md:h-[300px] lg:h-[400px] order-first lg:order-last"
+      quality="100"
     />
   </div>
 </section>
