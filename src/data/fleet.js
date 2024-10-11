@@ -20,7 +20,7 @@ export const fleet = [
     alt: "piper-archer-ii-at-summit-flight-academy",
     desc: `Piper PA-28 Archer N4353L is a true gem in Summit Flight Academy's training fleet, offering the most utility of the fixed-gear PA-28 line and making it an ideal platform for instrument and commercial pilot training. This beautiful aircraft shines with its highly capable IFR panel and boasts an upgraded leather interior, providing a comfortable and stylish cabin environment perfect for cross-country adventures, ensuring an exceptional training experience as you hone your instrument skills or build experience for a commercial certificate.`,
     rentalPrice: 175,
-    model: "PA-28-140",
+    model: "PA-28-181",
     flightRules: "VFR/IFR",
     avionics: "Dual NAV/COM, IFR GPS, ADS-B IN/OUT",
     specifications: {

@@ -38,7 +38,7 @@ const Navbar = ({ pathname }) => {
   return (
     <nav className="w-full h-0 z-20">
       <div
-        className={`${navBar || openMobile ? "bg-gray-900" : "bg-gradient-to-b from-gray-900/50 to-gray-100/0"} duration-300 ease-in`}
+        className={`${navBar || openMobile ? "bg-gray-900" : "bg-gradient-to-b from-gray-800/70 to-gray-100/0"} duration-300 ease-in`}
       >
         <div className="mx-auto max-w-7xl px-4">
           <div
@@ -117,7 +117,7 @@ const Navbar = ({ pathname }) => {
             <div className="absolute inset-y-0 right-0 flex items-center lg:hidden">
               <button
                 type="button"
-                className="mobile-menu-button relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                className="mobile-menu-button relative inline-flex items-center justify-center rounded-md p-2 text-gray-50 focus:outline-none focus:ring-1 focus:ring-inset focus:ring-main-red"
                 aria-controls="mobile-menu"
                 aria-expanded="false"
                 onClick={handleHamburgerClick}
@@ -163,14 +163,16 @@ const Navbar = ({ pathname }) => {
       </div>
 
       <div
-        className={`${openMobile ? "max-h-[36rem]" : "max-h-0"} overflow-hidden transition-[max-height] duration-300 ease-in-out lg:hidden absolute w-full bg-gray-900 bg-opacity-90`}
+        className={`${openMobile ? "max-h-[36rem]" : "max-h-0"} overflow-hidden transition-[max-height] duration-300 ease-in-out lg:hidden absolute w-full bg-gray-900/95`}
         id="mobile-menu"
       >
         <div className="px-4 pb-3 pt-2 flex flex-col">
           <a
             href="/new-to-flying"
-            className={`cursor-pointer text-xl text-white py-5 hover:border-b-2 border-main-red whitespace-nowrap ${
-              pathname === "/discovery-flight" ? "border-b-2" : ""
+            className={`cursor-pointer text-xl py-5 text-white hover:border-b-2 border-main-red whitespace-nowrap ${
+              pathname === "/new-to-flying"
+                ? "bg-gray-800/90 pl-2 border-b-2"
+                : ""
             }`}
           >
             New to Flying?
@@ -179,7 +181,7 @@ const Navbar = ({ pathname }) => {
           <a
             href="/store"
             className={`cursor-pointer text-xl text-white py-5 hover:border-b-2 border-main-red whitespace-nowrap ${
-              pathname === "/discovery-flight" ? "border-b-2" : ""
+              pathname === "/store" ? "bg-gray-800/90 pl-2 border-b-2" : ""
             }`}
           >
             Shop
@@ -187,7 +189,7 @@ const Navbar = ({ pathname }) => {
           <a
             href="https://www.flightcircle.com/shop/325431594e72/4000002368"
             target="_blank"
-            className="btn-red place-self-center mt-5"
+            className="btn-red w-full mt-12"
           >
             BOOK NOW
           </a>

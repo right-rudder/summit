@@ -7,6 +7,10 @@ import OurPackages from "../../components/OurPackages.astro";
 import FAQs from "../../components/FAQs";
 import { privatepilotFAQs } from "../../data/privatePilotFAQs";
 import EnrollmentModalButton from "../../components/enrollmentModalButtom";
+import ProgramSuggester from "../../components/ProgramSuggester";
+import privatePackages from "../../data/privatePackages";
+
+const packages = privatePackages;
 ---
 
 <BaseLayout
@@ -59,9 +63,11 @@ import EnrollmentModalButton from "../../components/enrollmentModalButtom";
 
   <PilotRoadmap />
 
-  <EnrollNowCTA />
+  <!-- <OurPackages /> -->
 
-  <OurPackages />
+  <ProgramSuggester packages={packages} client:load />
+
+  <EnrollNowCTA />
 
   <FAQs faqs={privatepilotFAQs} type="Private Pilot" client:visible />
 

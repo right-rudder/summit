@@ -8,6 +8,7 @@ import CarouselReviews from "../components/carouselReviews.jsx";
 import QuizCTA from "../components/QuizCTA.astro";
 import EnrollmentModalButton from "../components/enrollmentModalButtom";
 import GuideDownload from "../components/GuideDownload.astro";
+import ImageComp from "../components/ImageComp.astro";
 ---
 
 <HomeLayout
@@ -55,11 +56,40 @@ import GuideDownload from "../components/GuideDownload.astro";
     <!-- <Partners /> -->
   </header>
 
+  <section
+    class="h-auto w-full py-6 bg-gray-200 flex flex-col md:flex-row justify-center align-middle items-center"
+  >
+    <h2
+      class="text-base text-center md:text-right w-full md:w-1/2 md:mr-8 lg:text-xl text-slate-600 font-bold uppercase font-header"
+    >
+      Proudly Sending Pilots to
+    </h2>
+    <a
+      class="w-full md:w-1/2 flex justify-center md:justify-start"
+      href="https://www.skywest.com/"
+      target="_blank"
+    >
+      <ImageComp
+        imagePath="/src/assets/skywest-logo.png"
+        imageAlt="Skywest airlines logo"
+        styles="h-24 w-auto md:pl-5 md:border-l-2 border-slate-300"
+      />
+    </a>
+  </section>
+
   <TryFlyingCTA />
 
   <GettingStarted />
 
-  <CarouselReviews client:load />
+  <script
+    src="https://static.elfsight.com/platform/platform.js"
+    data-use-service-core
+    defer></script>
+  <div
+    class="elfsight-app-d87b7480-d576-4832-832e-fe5ea4353251 py-12 border-b border-4 border-gray-300"
+    data-elfsight-app-lazy
+  >
+  </div>
 
   <WhySummit />
 

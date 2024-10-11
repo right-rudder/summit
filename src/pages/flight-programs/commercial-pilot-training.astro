@@ -7,6 +7,10 @@ import CommercialPackage from "../../components/CommercialPackage.astro";
 import FAQs from "../../components/FAQs";
 import { commercialPilotFAQs } from "../../data/commercialPilotFAQs";
 import EnrollmentModalButton from "../../components/enrollmentModalButtom";
+import ProgramSuggester from "../../components/ProgramSuggester";
+import commercialPackages from "../../data/commercialPackages";
+
+const packages = commercialPackages;
 ---
 
 <BaseLayout
@@ -57,9 +61,9 @@ import EnrollmentModalButton from "../../components/enrollmentModalButtom";
 
   <CommercialRoadmap />
 
-  <WhatsNext />
+  <ProgramSuggester packages={packages} client:load />
 
-  <CommercialPackage />
+  <WhatsNext />
 
   <FAQs faqs={commercialPilotFAQs} type="Commercial Pilot" client:visible />
 

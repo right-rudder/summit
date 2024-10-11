@@ -1,7 +1,7 @@
 {
   "name": "summit",
   "type": "module",
-  "version": "0.0.1",
+  "version": "0.1.21",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
