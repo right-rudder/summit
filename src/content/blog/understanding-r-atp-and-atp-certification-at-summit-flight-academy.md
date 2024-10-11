@@ -1,16 +1,26 @@
 ---
-author: "Jami Heckman" 
-title: "Understanding R-ATP and ATP Certification at Summit Flight Academy" 
-description: "Learn the differences between R-ATP and ATP certification and how Summit Flight Academy prepares pilots for a successful aviation career through structured training programs.
-heroImage: "/img/blog/passing-a-checkride-at-lees-summit-airport.webp" 
-imgAlt: "Passing a checkride at Lee's Summit Airport" 
+author: "Jami Heckman"
+title: "Understanding R-ATP and ATP Certification at Summit Flight Academy"
+description: "Learn the differences between R-ATP and ATP certification and how Summit Flight Academy prepares pilots for a successful aviation career through structured training programs."
+heroImage: "/img/blog/passing-a-checkride-at-lees-summit-airport.webp"
+imgAlt: "Passing a checkride at Lee's Summit Airport"
 pubDate: "Oct 11, 2024"
-category: "Pilot Training" 
-readingTime: "6 min" 
-tags: [summit flight academy, atp certification, r-atp certification, kansas city flight school, private pilot license, commercial pilot training, multi-engine rating, instrument rating] 
+category: "Pilot Training"
+readingTime: "6 min"
+tags:
+  [
+    summit flight academy,
+    atp certification,
+    r-atp certification,
+    kansas city flight school,
+    private pilot license,
+    commercial pilot training,
+    multi-engine rating,
+    instrument rating,
+  ]
 ---
 
-# Navigating R-ATP and ATP Certifications: Your Path to the Airlines
+## Navigating R-ATP and ATP Certifications: Your Path to the Airlines
 
 At [Summit Flight Academy](https://www.summitflightacademy.com/), we’re dedicated to helping aspiring pilots reach their aviation goals. For those aiming for careers as airline pilots, understanding the difference between the Restricted Airline Transport Pilot (R-ATP) and the Airline Transport Pilot (ATP) certifications is essential. While Summit Flight Academy provides training to prepare you for ATP certification, this guide will outline the key distinctions between these two certifications and what steps you need to take to earn them.
 
