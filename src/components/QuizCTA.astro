@@ -1,4 +1,5 @@
 ---
+import ImageComp from "./ImageComp.astro";
 import QuizModalButton from "./QuizModalButton";
 
 const { city, text1 } = Astro.props;
@@ -8,11 +9,11 @@ const { city, text1 } = Astro.props;
   <div
     class="relative h-80 overflow-hidden bg-red-600 md:absolute md:left-0 md:h-full md:w-1/2 lg:w-1/2"
   >
-    <img
-      class="h-full w-full object-cover object-left"
-      src="/img/summit-flight-academy-lees-summit-kansas-city-missoury-pilot-training-flight-students-on-the-runway-pre-flight-checks.webp"
-      alt="summit-flight-academy-lees-summit-kansas-city-missoury-pilot-training-flight-students-on-the-runway-pre-flight-checks"
-      loading="lazy"
+    <ImageComp
+      styles="h-full w-full object-cover object-left"
+      imagePath="/src/assets/summit-flight-academy-lees-summit-kansas-city-missoury-pilot-training-flight-students-on-the-runway-pre-flight-checks.webp"
+      imageAlt="summit-flight-academy-lees-summit-kansas-city-missoury-pilot-training-flight-students-on-the-runway-pre-flight-checks"
+      quality="90"
     />
     <svg
       viewBox="0 0 926 676"

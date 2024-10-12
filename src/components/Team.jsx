@@ -78,7 +78,7 @@ export default function Team() {
             {team.map((person) => (
               <li
                 key={person.name}
-                className="hover:shadow-2xl transition-shadow duration-300 ease-in py-4 rounded-xl"
+                className="hover:shadow-2xl hover:bg-white transition-shadow duration-300 ease-in py-4 rounded-xl"
               >
                 <a
                   className="cursor-pointer"

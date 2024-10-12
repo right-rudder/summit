@@ -2,10 +2,16 @@
 import type { ImageMetadata } from "astro";
 import { Image } from "astro:assets";
 
-const { imagePath, imageAlt, quality = 60, styles = "" } = Astro.props;
+const {
+  imagePath,
+  imageAlt,
+  quality = 60,
+  loading = "lazy",
+  styles = "",
+} = Astro.props;
 
 const images = import.meta.glob<{ default: ImageMetadata }>(
-  "/src/assets/*.{jpeg,jpg,png,gif}"
+  "/src/assets/*.{jpeg,jpg,png,gif,webp}"
 );
 if (!images[imagePath])
   throw new Error(
@@ -18,4 +24,5 @@ if (!images[imagePath])
   alt={imageAlt}
   class={styles}
   quality={quality}
+  loading={loading}
 />

@@ -1,3 +1,7 @@
+---
+import ImageComp from "./ImageComp.astro";
+---
+
 <div class="bg-white lg:py-16 py-24">
   <div class="flex items-center justify-center gap-9 md:gap-12 flex-wrap">
     <div class="md:w-1/4">
@@ -16,14 +20,14 @@
       </p>
     </div>
     <div class="flex items-center justify-center lg:mt-0 md:w-1/4 flex-wrap">
-      <img
-        class="w-1/2 object-cover p-1 md:p-0 md-w-full"
-        src="/img/summit-flight-academy-lees-summit-kansas-city-missoury-pilot-training-SFA-1x1-logo-red.webp"
-        alt="summit-flight-academy-lees-summit-kansas-city-missoury-pilot-training-logo"
-        loading="lazy"
-        width="132"
-        height="114"
+      <ImageComp
+        imagePath="/src/assets/summit-flight-academy-lees-summit-kansas-city-missoury-pilot-training-SFA-1x1-logo-red.webp"
+        imageAlt="summit-flight-academy-lees-summit-kansas-city-missoury-pilot-training-logo"
+        styles="w-1/2 object-cover p-1 md:p-0 md-w-full"
+        loading="eager"
+        quality="100"
       />
+
       <a
         href="https://www.flightcircle.com/shop/325431594e72/4000002368"
         target="_blank"

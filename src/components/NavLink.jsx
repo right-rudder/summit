@@ -4,6 +4,7 @@ const NavLink = ({ menuItem, pathname, toggled, onShow }) => {
     <div className="relative">
       <a
         id={menuItem.name}
+        href={menuItem.link}
         onMouseEnter={onShow}
         className={`cursor-pointer text-lg drop-shadow-md text-white py-2 hover:border-b-2 border-main-red whitespace-nowrap ${
           isActive ? "border-b-2" : ""
