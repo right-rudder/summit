@@ -22,20 +22,20 @@ export default function Team() {
               src={team[selectedId].imageUrl}
               alt={team[selectedId].imageAlt}
             />
-            <h3 className="mt-6 text-xl font-bold leading-8 text-gray-900">
+            <h3 className="mt-6 text-2xl font-bold leading-8 text-gray-900">
               {team[selectedId].name}
             </h3>
-            <p className="text-base italic leading-7 text-gray-600">
+            <p className="text-base -mt-2 italic leading-7 text-gray-500">
               {team[selectedId].role}
             </p>
             {team[selectedId].paragrah1 && (
-              <p className="mt-2 text-base leading-7 text-gray-600">
+              <p className="mt-2 max-w-lg mx-auto text-base leading-6 text-gray-600">
                 {team[selectedId].paragrah1}
               </p>
             )}
             {team[selectedId].paragrah2 && (
               <p
-                className={`${team[selectedId].paragrah2 ? "block" : "hidden"} mt-2 text-base leading-7 text-gray-600`}
+                className={`${team[selectedId].paragrah2 ? "block" : "hidden"} mt-2 max-w-lg mx-auto  text-base leading-7 text-gray-600`}
               >
                 {team[selectedId].paragrah2}
               </p>
