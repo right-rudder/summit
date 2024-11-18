@@ -105,11 +105,23 @@ export const team = [
     imageAlt:
       "headshot of Trent Lyman at Summit Flight Academy kansas city flight instructor",
     paragrah1:
-      "Trent specializes in teaching private and commercial students, providing expert guidance for successful check rides.",
+      "Trent specializes in teaching private and commercial students, providing expert guidance for successful check rides. Flying is his passion and he enjoys sharing his knowledge with students.",
     paragrah2: "He is available for private and commercial training.",
   },
   {
     id: 9,
+    name: "Josh Keller",
+    role: "CFI, CFII",
+    imageUrl: "/img/our-team/Josh-Keller-CFI-CFII.webp",
+    imageAlt:
+      "headshot of Josh Keller at Summit Flight Academy kansas city flight instructor",
+    paragrah1:
+      "Josh is a Certified Flight Instructor (CFI/CFII) who teaches Private, Instrument, and Commercial students. He has been flying since he was 16 and is passionate about aviation. His current goal is to not only create new pilots but help others achieve their dreams in aviation.",
+    paragrah2:
+      "Josh is currently accepting new students. Please contact Summit Office for scheduling.",
+  },
+  {
+    id: 10,
     name: "Jami Heckman",
     role: "Dispatcher and Administrator",
     imageUrl: "/img/our-team/summit-flight-academy-admin-jami-heckman.webp",
