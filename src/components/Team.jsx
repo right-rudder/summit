@@ -29,13 +29,13 @@ export default function Team() {
               {team[selectedId].role}
             </p>
             {team[selectedId].paragrah1 && (
-              <p className="mt-2 max-w-lg mx-auto text-base leading-6 text-gray-600">
+              <p className="mt-4 max-w-xl mx-auto text-lg leading-6 text-gray-600">
                 {team[selectedId].paragrah1}
               </p>
             )}
             {team[selectedId].paragrah2 && (
               <p
-                className={`${team[selectedId].paragrah2 ? "block" : "hidden"} mt-2 max-w-lg mx-auto  text-base leading-7 text-gray-600`}
+                className={`${team[selectedId].paragrah2 ? "block" : "hidden"} mt-2 max-w-xl mx-auto text-lg leading-7 text-gray-600`}
               >
                 {team[selectedId].paragrah2}
               </p>
