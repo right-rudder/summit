@@ -81,7 +81,7 @@ export const team = [
     imageAlt:
       "headshot of Chris Knoernschild at Summit Flight Academy kansas city flight instructor",
     paragrah1:
-      "Chris teaches private, commercial, and instrument students, guiding many through successful check rides.",
+      "Chris teaches private, commercial, and instrument students, guiding many through successful check rides.  He also has his seaplane rating.",
     paragrah2:
       "He is available for private, instrument, commercial, and add-on CFI-I training.",
   },
