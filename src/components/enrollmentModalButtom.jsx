@@ -37,6 +37,9 @@ const EnrollmentModalButton = ({ btnStyle, btnText }) => {
       .then((response) => {
         if (response.ok) {
           setFormSubmitted(true);
+          setTimeout(() => {
+            window.location.href = "/enrollment-confirmation";
+          }, 2000);
         } else {
           console.error("Form submission failed:", response.statusText);
         }
