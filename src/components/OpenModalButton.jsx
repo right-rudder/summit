@@ -35,6 +35,9 @@ const OpenModalButton = () => {
       .then((response) => {
         if (response.ok) {
           setFormSubmitted(true);
+          setTimeout(() => {
+            window.location.href = "/guide-confirmation";
+          }, 2000);
         } else {
           console.error("Form submission failed:", response.statusText);
         }

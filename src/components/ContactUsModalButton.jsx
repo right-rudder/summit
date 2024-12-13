@@ -37,6 +37,9 @@ const ContactUsModalButton = ({ btnStyle, btnText, btnSymbol }) => {
       .then((response) => {
         if (response.ok) {
           setFormSubmitted(true);
+          setTimeout(() => {
+            window.location.href = "/contact-confirmation";
+          }, 3000);
         } else {
           console.error("Form submission failed:", response.statusText);
         }
