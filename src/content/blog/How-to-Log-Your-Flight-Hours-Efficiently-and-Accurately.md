@@ -1,6 +1,6 @@
 ---
 description: "Learn how to log your flight hours efficiently and accurately. This guide is tailored for student pilots in the Kansas City area training at Summit Flight Academy in Lee’s Summit, Missouri."
-pubDate: "November 26, 2024"
+pubDate: "December 13, 2024"
 heroImage: "/img/blog/hourglass-rocks-time.avif"
 imgAlt: "A student pilot logging flight hours in a Piper Cherokee cockpit"
 author: Jami Heckman
