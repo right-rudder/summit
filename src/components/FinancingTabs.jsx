@@ -5,7 +5,7 @@ import { ftfFAQs } from "../data/ftfFAQs";
 import { aopaFAQs } from "../data/aopaFAQs";
 
 const FinancingTabs = () => {
-  const [currentTab, setCurrentTab] = useState("Flight Training Finance");
+  const [currentTab, setCurrentTab] = useState("Stratus Financial");
 
   const stratusFinancial = (
     <>
@@ -20,7 +20,7 @@ const FinancingTabs = () => {
                 Finance with Stratus Financial
               </h2>
               <h3 className="pt-3 text-2xl text-center">
-                Leverage financial support here
+                Financial Support for Kansas Residents
               </h3>
             </div>
             <div className="bg-white p-8 rounded">
@@ -43,18 +43,21 @@ const FinancingTabs = () => {
                   Student Requirements
                 </p>
                 <ul className="mt-4 list-disc pl-10">
-                  <li>Must be a US Citizen or Permanent Resident*</li>
-                  <li>Paystubs for the past two (2) months</li>
-                  <li>Bank Statements for the past two (2) months</li>
-                  <li>Driver's License</li>
+                  <li>
+                    Must be a US Citizen/Permanent Resident* AND a current
+                    resident of Kansas.
+                  </li>
+                  <li>Paystubs for the past two (2) months.</li>
+                  <li>Bank Statements for the past two (2) months.</li>
+                  <li>Driver's License.</li>
                   <li>
                     Name & contact number of employer (for employee
-                    verification)
+                    verification).
                   </li>
-                  <li>1st or 2nd class Medical Certificate</li>
-                  <li>Co-borrower Recommended</li>
-                  <li>Pilot Certificate, if applicable</li>
-                  <li>Subject to Credit Check and Underwriting</li>
+                  <li>1st or 2nd class Medical Certificate.</li>
+                  <li>Co-borrower Recommended.</li>
+                  <li>Pilot Certificate, if applicable.</li>
+                  <li>Subject to Credit Check and Underwriting.</li>
                 </ul>
                 <p className="pt-5 italic">
                   *If non-US citizen, TSA verification is required.
