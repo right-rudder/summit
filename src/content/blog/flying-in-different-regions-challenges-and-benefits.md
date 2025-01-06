@@ -4,7 +4,7 @@ pubDate: "January 6, 2025"
 heroImage: "/img/blog/flying-in-different-regions-challenges-benefits-SPOTLIGHT-40-60-image-720x500.jpg"
 imgAlt: "A pilot flying over mountainous terrain during sunset"
 author: Jami Heckman
-title: Flying in Different Regions: Challenges and Benefits
+title: "Flying in Different Regions: Challenges and Benefits"
 fileTitle: "flying-in-different-regions-challenges-and-benefits"
 readingTime: "7 min"
 tags:
