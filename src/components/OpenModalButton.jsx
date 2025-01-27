@@ -23,9 +23,10 @@ const OpenModalButton = () => {
     const name = formData.get("name");
     setUserName(name);
 
-    const url =
+    const GHL_BOOK_FORM_WEBHOOK_URL =
       "https://backend.leadconnectorhq.com/hooks/U9ULEEpmYvsaAGJyX7Wn/webhook-trigger/K2hRce0Um6nPnNCMeBb1";
-    fetch(url, {
+
+    fetch(GHL_BOOK_FORM_WEBHOOK_URL, {
       method: "POST",
       body: new URLSearchParams(formData),
       headers: {
