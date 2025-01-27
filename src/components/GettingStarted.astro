@@ -1,5 +1,6 @@
 ---
 import ContactUsModalButton from "./ContactUsModalButton";
+import EnrollmentModalButton from "./enrollmentModalButtom";
 ---
 
 <div class="bg-gray-800 py-16 sm:py-32">
@@ -177,14 +178,14 @@ import ContactUsModalButton from "./ContactUsModalButton";
               Get started with your training! No matter where you're starting
               from, Summit Flight Academy is ready to take you to those heights.
             </p>
-            <p class="mt-6">
-              <a
-                href="enrollment"
-                target="_blank"
-                class="text-sm font-semibold leading-6 text-gray-100 hover:text-red-500"
-                >Enroll Now<span aria-hidden="true">→</span></a
-              >
-            </p>
+            <div class="mt-6">
+              <EnrollmentModalButton
+                client:visible
+                arrow={true}
+                btnStyle={"text-sm font-semibold leading-6 text-gray-100 hover:text-red-500"}
+                btnText={"Enroll Now"}
+              />
+            </div>
           </dd>
         </div>
       </dl>

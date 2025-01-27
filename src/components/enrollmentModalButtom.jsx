@@ -2,7 +2,7 @@ import { useState } from "react";
 import { IoMdClose } from "react-icons/io";
 import { PHONE_NUMBER, EMAIL_ADDRESS } from "../consts";
 
-const EnrollmentModalButton = ({ btnStyle, btnText }) => {
+const EnrollmentModalButton = ({ btnStyle, btnText, arrow = false }) => {
   const [showModal, setShowModal] = useState(false);
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [userName, setUserName] = useState("");
@@ -24,10 +24,10 @@ const EnrollmentModalButton = ({ btnStyle, btnText }) => {
     const name = formData.get("firstName");
     setUserName(name);
 
-    const url =
+    const GHL_ENROLL_FORM_WEBHOOK_URL =
       "https://services.leadconnectorhq.com/hooks/U9ULEEpmYvsaAGJyX7Wn/webhook-trigger/2IrB1WdH7C0efVNIoWzr";
 
-    fetch(url, {
+    fetch(GHL_ENROLL_FORM_WEBHOOK_URL, {
       method: "POST",
       body: new URLSearchParams(formData),
       headers: {
@@ -62,6 +62,7 @@ const EnrollmentModalButton = ({ btnStyle, btnText }) => {
         }}
       >
         {btnText}
+        {arrow && <span aria-hidden="true">→</span>}
       </button>
       {showModal && (
         <div className="fixed z-50 inset-0 bg-black bg-opacity-80 flex items-center justify-center">

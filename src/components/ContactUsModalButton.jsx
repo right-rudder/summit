@@ -24,10 +24,10 @@ const ContactUsModalButton = ({ btnStyle, btnText, btnSymbol }) => {
     const name = formData.get("firstName");
     setUserName(name);
 
-    const url =
+    const GHL_CONTACT_FORM_WEBHOOK_URL =
       "https://services.leadconnectorhq.com/hooks/U9ULEEpmYvsaAGJyX7Wn/webhook-trigger/VAPtgklteM3FyxMATB6b";
 
-    fetch(url, {
+    fetch(GHL_CONTACT_FORM_WEBHOOK_URL, {
       method: "POST",
       body: new URLSearchParams(formData),
       headers: {
@@ -65,10 +65,10 @@ const ContactUsModalButton = ({ btnStyle, btnText, btnSymbol }) => {
         {btnSymbol && <span aria-hidden="true">{btnSymbol}</span>}
       </button>
       {showModal && (
-        <div className="relative z-50">
-          <div className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center">
+        <div className="z-30">
+          <div className="fixed inset-0 bg-black bg-opacity-70 flex items-end justify-center">
             {!formSubmitted && (
-              <div className="relative bg-white p-12 max-w-xl m-4 text-black rounded-md h-screen-4/5 overflow-y-auto">
+              <div className="relative bg-white p-12 max-w-xl text-black h-screen-4/5 rounded-md overflow-y-auto z-50">
                 <button
                   className="bg-main-red p-1 rounded-full absolute top-2 right-2"
                   onClick={() => {
@@ -78,7 +78,7 @@ const ContactUsModalButton = ({ btnStyle, btnText, btnSymbol }) => {
                 >
                   <IoMdClose className="text-xl text-white" />
                 </button>
-                <h2 className="text-2xl text-center font-bold mb-1">
+                <h2 className="text-3xl text-center font-bold mb-1">
                   Contact Us
                 </h2>
                 <p className="text-center text-lg mb-4">

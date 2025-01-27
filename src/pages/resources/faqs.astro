@@ -25,12 +25,14 @@ import ContactUsModalButton from "../../components/ContactUsModalButton";
       <h2 class="text-3xl tracking-wide">
         The answers to your questions all in one place
       </h2>
-      <ContactUsModalButton
-        btnSymbol={null}
-        btnStyle={"btn-red"}
-        btnText={"Contact Us for More Information"}
-        client:visible
-      />
+      <div class="z-50">
+        <ContactUsModalButton
+          btnSymbol={null}
+          btnStyle={"btn-red"}
+          btnText={"Contact Us for More Information"}
+          client:visible
+        />
+      </div>
     </div>
   </header>
   <FAQsTabs client:load />
