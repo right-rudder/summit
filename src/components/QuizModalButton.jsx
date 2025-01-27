@@ -73,7 +73,7 @@ const QuizModalButton = ({ btnStyle, btnText }) => {
         <div id="quiz-modal" className="relative z-50">
           <div className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center">
             {!formSubmitted && (
-              <div className="bg-white p-12 max-w-xl m-4 text-black rounded-md h-full overflow-y-auto">
+              <div className="bg-white relative p-12 max-w-xl m-4 text-black rounded-md h-full overflow-y-auto">
                 <h2 className="text-2xl text-center font-bold mb-1">
                   Is Flight Training for You?
                 </h2>
@@ -561,6 +561,15 @@ const QuizModalButton = ({ btnStyle, btnText }) => {
                     Submit
                   </button>
                 </form>
+                <button
+                  className="bg-main-red p-1 rounded-full absolute top-2 right-2"
+                  onClick={() => {
+                    toggleModal();
+                    document.body.style.overflow = "auto";
+                  }}
+                >
+                  <IoMdClose className="text-xl text-white" />
+                </button>
               </div>
             )}
 
@@ -594,16 +603,6 @@ const QuizModalButton = ({ btnStyle, btnText }) => {
                 </p>
               </div>
             )}
-
-            <button
-              className="bg-main-red p-1 rounded-full absolute top-2 right-2"
-              onClick={() => {
-                toggleModal();
-                document.body.style.overflow = "auto";
-              }}
-            >
-              <IoMdClose className="text-xl text-white" />
-            </button>
           </div>
         </div>
       )}
