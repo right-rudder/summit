@@ -15,24 +15,24 @@ const FinancingTabs = () => {
       >
         <div className="max-w-7xl px-10 flex flex-col items-center py-10">
           <div className="flex flex-col-reverse lg:flex-row items-center w-full justify-around py-10 gap-10">
-            <div>
+            <div className="w-full lg:w-3/4">
               <h2 className="text-5xl font-semibold text-center tracking-tight">
                 Finance with Stratus Financial
               </h2>
               <h3 className="pt-3 text-2xl text-center">
-                Financial Support for Kansas Residents
+                Where Dreams Take Flight
               </h3>
               <p className="mt-3 text-sm text-center max-w-xl">
-                Stratus Financial was founded by FAA Certificated Flight and
-                Ground Instructors passionate about helping others achieve their
-                aviation dreams.
+                <strong>For Pilots, By Pilots.</strong> Stratus Financial was
+                founded by FAA Certificated Flight and Ground Instructors
+                passionate about helping others achieve their aviation dreams.
               </p>
             </div>
-            <div className="bg-white p-8 rounded">
+            <div className="bg-white h-full p-6 rounded">
               <img
                 src="/img/financing/stratusLogo.webp"
                 alt="Stratus Financial logo"
-                className="h-16 md:h-20"
+                className="w-full h-full object-contain"
               />
             </div>
           </div>
@@ -49,10 +49,7 @@ const FinancingTabs = () => {
                   Student Requirements
                 </p>
                 <ul className="mt-4 list-disc pl-10">
-                  <li>
-                    Must be a US Citizen/Permanent Resident* AND a current
-                    resident of Kansas.
-                  </li>
+                  <li>Must be a US Citizen/Permanent Resident.*</li>
                   <li>Be enrolled in our Career Track Program.</li>
                   <li>Paystubs for the past two (2) months.</li>
                   <li>Bank Statements for the past two (2) months.</li>
