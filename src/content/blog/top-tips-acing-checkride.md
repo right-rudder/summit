@@ -40,15 +40,15 @@ Your Designated Pilot Examiner (DPE) will ask questions about regulations, proce
 - FAR/AIM for regulations
 - Scenario-based study sessions with your instructor
 
-If you’re preparing for an instrument or multi-engine checkride, make sure you understand IFR procedures and systems in depth. Check out our [Instrument Rating](https://www.summitflightacademy.com/flight-programs/instrument-rating/) or [Multi-Engine Rating](https://www.summitflightacademy.com/flight-programs/multi-engine-rating/) training for extra support.
+If you’re preparing for an instrument or multi-engine checkride, make sure you understand Instrument Flight Rules (IFR) procedures and systems in depth. Check out our [Instrument Rating](https://www.summitflightacademy.com/flight-programs/instrument-rating/) or [Multi-Engine Rating](https://www.summitflightacademy.com/flight-programs/multi-engine-rating/) training for extra support.
 
 ---
 
 ## 3. Perfect Your Maneuvers
 Your DPE will evaluate your ability to perform required maneuvers safely and within ACS parameters. Be sure to:
-- Practice slow flight, stalls, steep turns, and emergency procedures.
-- Ensure smooth and coordinated control inputs.
-- Know the standards for altitude, speed, and heading deviations.
+- Practice slow flight, stalls, steep turns, and emergency procedures
+- Ensure smooth and coordinated control inputs
+- Know the standards for altitude, speed, and heading deviations
 
 If you struggle with specific maneuvers, schedule additional practice flights with your instructor at [Summit Flight Academy](https://www.summitflightacademy.com/).
 
@@ -56,25 +56,25 @@ If you struggle with specific maneuvers, schedule additional practice flights wi
 
 ## 4. Know Your Aircraft Inside and Out
 You must demonstrate knowledge of your aircraft’s performance, limitations, and emergency procedures. Be prepared to:
-- Explain the aircraft systems (fuel, electrical, flight controls, etc.).
-- Calculate weight and balance and takeoff/landing distances.
-- Demonstrate proper checklist usage for every phase of flight.
+- Explain the aircraft systems (fuel, electrical, flight controls, etc.)
+- Calculate weight and balance and takeoff/landing distances
+- Demonstrate proper checklist usage for every phase of flight
 
 ---
 
 ## 5. Fly with Confidence and Stay Ahead of the Aircraft
 Examiners are not expecting perfection, but they want to see good judgment and confidence. If you make a minor mistake, acknowledge it and correct it quickly. Stay ahead of the aircraft by:
-- Thinking one step ahead in each phase of flight.
-- Using checklists methodically.
-- Staying calm and professional throughout the ride.
+- Thinking one step ahead in each phase of flight
+- Using checklists methodically
+- Staying calm and professional throughout the ride
 
 ---
 
 ## 6. Get Plenty of Rest and Arrive Prepared
 A well-rested mind is crucial for peak performance. The night before your checkride:
-- Review key topics but don’t cram.
-- Ensure you have all necessary documents (logbook, IACRA application, endorsements, etc.).
-- Arrive early, dressed professionally, and with a positive mindset.
+- Review key topics but don’t cram
+- Ensure you have all necessary documents (logbook, IACRA application, endorsements, etc.)
+- Arrive early, dressed professionally, and with a positive mindset
 
 ---
 
