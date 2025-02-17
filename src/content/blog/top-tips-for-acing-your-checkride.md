@@ -18,7 +18,7 @@ tags:
     "Lee's Summit aviation training",
     "FAA practical test",
     "flight school guidance",
-    "aviation study tips"
+    "aviation study tips",
   ]
 ---
 
@@ -27,16 +27,20 @@ Your checkride is the final step toward earning your pilot certificate. It’s a
 ---
 
 ## 1. Understand the ACS (Airman Certification Standards)
+
 The FAA’s Airman Certification Standards (ACS) outline everything you need to know and demonstrate during your checkride. Make sure to review the relevant ACS for your certificate or rating, whether you’re taking your [Private Pilot](https://www.summitflightacademy.com/flight-programs/private-pilot-training/), [Instrument Rating](https://www.summitflightacademy.com/flight-programs/instrument-rating/), or [Commercial Pilot](https://www.summitflightacademy.com/flight-programs/commercial-pilot-training/) checkride.
 
-### Quick Tip:
+### Quick Tip
+
 Highlight areas where you feel less confident and focus your study efforts there.
 
 ---
 
 ## 2. Be Proficient in the Oral Exam
+
 Your Designated Pilot Examiner (DPE) will ask questions about regulations, procedures, aerodynamics, weather, and emergency scenarios. Practice answering questions out loud, and use resources like:
-- FAA Handbooks (e.g., *Pilot’s Handbook of Aeronautical Knowledge*)
+
+- FAA Handbooks (e.g., _Pilot’s Handbook of Aeronautical Knowledge_)
 - FAR/AIM for regulations
 - Scenario-based study sessions with your instructor
 
@@ -45,7 +49,9 @@ If you’re preparing for an instrument or multi-engine checkride, make sure you
 ---
 
 ## 3. Perfect Your Maneuvers
+
 Your DPE will evaluate your ability to perform required maneuvers safely and within ACS parameters. Be sure to:
+
 - Practice slow flight, stalls, steep turns, and emergency procedures
 - Ensure smooth and coordinated control inputs
 - Know the standards for altitude, speed, and heading deviations
@@ -55,7 +61,9 @@ If you struggle with specific maneuvers, schedule additional practice flights wi
 ---
 
 ## 4. Know Your Aircraft Inside and Out
+
 You must demonstrate knowledge of your aircraft’s performance, limitations, and emergency procedures. Be prepared to:
+
 - Explain the aircraft systems (fuel, electrical, flight controls, etc.)
 - Calculate weight and balance and takeoff/landing distances
 - Demonstrate proper checklist usage for every phase of flight
@@ -63,7 +71,9 @@ You must demonstrate knowledge of your aircraft’s performance, limitations, an
 ---
 
 ## 5. Fly with Confidence and Stay Ahead of the Aircraft
+
 Examiners are not expecting perfection, but they want to see good judgment and confidence. If you make a minor mistake, acknowledge it and correct it quickly. Stay ahead of the aircraft by:
+
 - Thinking one step ahead in each phase of flight
 - Using checklists methodically
 - Staying calm and professional throughout the ride
@@ -71,7 +81,9 @@ Examiners are not expecting perfection, but they want to see good judgment and c
 ---
 
 ## 6. Get Plenty of Rest and Arrive Prepared
+
 A well-rested mind is crucial for peak performance. The night before your checkride:
+
 - Review key topics but don’t cram
 - Ensure you have all necessary documents (logbook, IACRA application, endorsements, etc.)
 - Arrive early, dressed professionally, and with a positive mindset
@@ -79,6 +91,7 @@ A well-rested mind is crucial for peak performance. The night before your checkr
 ---
 
 ## Final Thoughts
+
 At [Summit Flight Academy](https://www.summitflightacademy.com/), we ensure our students are fully prepared for their checkride. Our structured programs, experienced instructors, and real-world training environment set you up for success.
 
 Looking for extra practice or financing options? Visit our [Financing Page](https://www.summitflightacademy.com/resources/financing/) or check out our [FAQs](https://www.summitflightacademy.com/resources/faqs/) for more details.
@@ -86,4 +99,3 @@ Looking for extra practice or financing options? Visit our [Financing Page](http
 📞 **Call us at [+1 816-282-1500](tel:+18162821500)**  
 🌐 **Visit us at [summitflightacademy.com](https://www.summitflightacademy.com/)**  
 ✈️ **Schedule an intro flight today at [FlightCircle](https://www.flightcircle.com/shop/325431594e72/4000002368).**
-
