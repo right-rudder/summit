@@ -22,6 +22,11 @@ const FinancingTabs = () => {
               <h3 className="pt-3 text-2xl text-center">
                 Financial Support for Kansas Residents
               </h3>
+              <p className="mt-3 text-sm text-center max-w-xl">
+                Stratus Financial was founded by FAA Certificated Flight and
+                Ground Instructors passionate about helping others achieve their
+                aviation dreams.
+              </p>
             </div>
             <div className="bg-white p-8 rounded">
               <img
@@ -32,10 +37,11 @@ const FinancingTabs = () => {
             </div>
           </div>
           <div className="tracking-wider">
-            <p className="pt-5">
-              Stratus Financial was founded by FAA Certificated Flight and
-              Ground Instructors passionate about helping others achieve their
-              aviation dreams.
+            <p>
+              <strong>Enhanced Support for Professional Training:</strong>{" "}
+              Stratus Financial focuses on professional programs, they aim to
+              provide even greater support and financial solutions for students
+              committed to pursuing a career in aviation.
             </p>
             <div className="flex flex-col md:flex-row w-full gap-5">
               <div className="flex-1">
@@ -47,6 +53,7 @@ const FinancingTabs = () => {
                     Must be a US Citizen/Permanent Resident* AND a current
                     resident of Kansas.
                   </li>
+                  <li>Be enrolled in our Career Track Program.</li>
                   <li>Paystubs for the past two (2) months.</li>
                   <li>Bank Statements for the past two (2) months.</li>
                   <li>Driver's License.</li>
