@@ -1,7 +1,6 @@
 ---
 import { type CollectionEntry, getCollection } from "astro:content";
 import BlogPost from "../../layouts/BlogPost.astro";
-import UnderHeaderVideo from "../../components/UnderHeaderVideo.astro";
 
 export async function getStaticPaths() {
   const posts = await getCollection("blog");
@@ -21,4 +20,3 @@ const { Content } = await post.render();
     <Content />
   </div>
 </BlogPost>
-<UnderHeaderVideo title="From First Responder to Instructor Pilot | Summit Flight Academy KS" videoId="HkUJ5JOp_u4" />
