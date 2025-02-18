@@ -25,6 +25,10 @@ When it comes to pursuing your dreams of becoming a pilot, the choice of flight 
 
 Enter Summit Flight Academy - the premier choice for pilot training in the Lee's Summit, Missouri area. Strategically located at the Lee's Summit Airport, our academy offers an unparalleled learning environment and robust curriculum that sets us apart from the competition.
 
+## From First Responder to Instructor Pilot | Summit Flight Academy KS
+
+[![From First Responder to Instructor Pilot | Summit Flight Academy KS](https://img.youtube.com/vi/HkUJ5JOp_u4/0.jpg)](https://www.youtube.com/watch?v=HkUJ5JOp_u4)
+
 ## Diverse Training Programs to Suit Every Aspiration
 
 At Summit Flight Academy, we understand that not all pilots-in-training have the same goals and aspirations. That's why we offer a diverse range of training programs to cater to the unique needs and interests of our students. Our tailored curriculum includes Private Pilot, Instrument, Commercial, Multi-Engine, Certified Flight Instructor (CFI), Certified Flight Instructor - Instrument (CFII), and Multi-Engine Instructor (MEI) training.
