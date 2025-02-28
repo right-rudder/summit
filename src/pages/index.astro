@@ -9,6 +9,7 @@ import QuizCTA from "../components/QuizCTA.astro";
 import EnrollmentModalButton from "../components/enrollmentModalButtom";
 import GuideDownload from "../components/GuideDownload.astro";
 import ImageComp from "../components/ImageComp.astro";
+import UnderHeaderVideo from "../components/UnderHeaderVideo.astro";
 ---
 
 <HomeLayout
@@ -77,6 +78,12 @@ import ImageComp from "../components/ImageComp.astro";
     </a>
   </section>
 
+  <UnderHeaderVideo
+    title="Why Become a Pilot?"
+    description="If you've thought about becoming a pilot, now is the perfect time to get started. Summit Flight Academy is your place to start training and get your pilot certificate and ratings. "
+    videoId="rYngYS6eBeg"
+  />
+
   <TryFlyingCTA />
 
   <GettingStarted />
@@ -92,6 +99,13 @@ import ImageComp from "../components/ImageComp.astro";
   </div>
 
   <WhySummit />
+
+  <UnderHeaderVideo
+    reverse={true}
+    title="Join our Family"
+    description="At Summit Flight Academy, we focus on creating a welcoming, collaborative environment where aspiring pilots can thrive. Whether you’re local to Lee’s Summit, Overland Park, or Johnson County, Summit offers the resources, expertise, and encouragement to help you succeed."
+    videoId="IQJgXZ1KgKU"
+  />
 
   <OurTop />
 
