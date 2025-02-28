@@ -5,33 +5,31 @@ const { title, description, videoId, reverse } = Astro.props;
 ---
 
 <section id={title} class="bg-gray-900">
-  <div class="pt-12 lg:pt-0">
-    <div
-      class={`flex items-center justify-center gap-9 md:gap-12 flex-wrap ${
-        reverse ? "md:flex-row-reverse" : "md:flex-row"
-      }`}
-    >
-      <div class="w-full md:w-1/3">
-        <h2
-          class={`mt-2 text-4xl font-bold tracking-tight leading-tighter text-gray-100 md:text-5xl lg:text-6xl text-center  px-3 md:px-0 ${
-            reverse ? "md:text-left" : "md:text-right"
-          }`}
-        >
-          {title}
-        </h2>
-        {
-          description && (
-            <p
-              class={`text-gray-400 mt-4 text-base px-3 md:px-0 ${reverse ? "md:text-left" : "md:text-right"}`}
-            >
-              {description}
-            </p>
-          )
-        }
-      </div>
-      <div class="w-full md:w-1/2 flex justify-center">
-        <YouTube id={videoId} class="w-full h-auto" params="start=0" />
-      </div>
+  <div
+    class={`mx-auto flex items-center justify-center gap-9 md:gap-12 flex-wrap max-w-7xl ${
+      reverse ? "md:flex-row-reverse" : "md:flex-row"
+    }`}
+  >
+    <div class="w-full md:w-1/3 pt-16 md:pt-0">
+      <h2
+        class={`mt-2 text-4xl font-bold tracking-tight leading-tighter text-gray-100 md:text-5xl lg:text-6xl text-center px-3 md:px-0 ${
+          reverse ? "md:text-left" : "md:text-right"
+        }`}
+      >
+        {title}
+      </h2>
+      {
+        description && (
+          <p
+            class={`text-gray-400 mt-4 text-base px-3 md:px-0 text-center ${reverse ? "md:text-left" : "md:text-right"}`}
+          >
+            {description}
+          </p>
+        )
+      }
+    </div>
+    <div class="w-full md:w-1/2 flex justify-center">
+      <YouTube id={videoId} class="w-full h-auto" params="start=0" />
     </div>
   </div>
 </section>
