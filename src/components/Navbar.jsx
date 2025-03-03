@@ -5,16 +5,21 @@ import { useEffect, useState } from "react";
 
 const Navbar = ({ pathname }) => {
   const [openMobile, setOpenMobile] = useState(false);
-  const [openSubmenu, setOpenSubmenu] = useState("");
+  const [openSubmenu, setOpenSubmenu] = useState(null);
   const [navBar, setNavbar] = useState(false);
 
   const handleHamburgerClick = () => {
     setOpenMobile(() => !openMobile);
+    if (openMobile) {
+      document.body.style.overflow = "auto";
+    } else {
+      document.body.style.overflow = "hidden";
+    }
   };
 
   const handleMenuItemClick = (e) => {
     if (openSubmenu === e.target.id) {
-      setOpenSubmenu("");
+      setOpenSubmenu(null);
     } else {
       setOpenSubmenu(e.target.id);
     }
@@ -36,9 +41,9 @@ const Navbar = ({ pathname }) => {
   }, []);
 
   return (
-    <nav className="w-full h-0 z-20">
+    <nav className="w-full h-0 z-20" onMouseLeave={() => setOpenSubmenu(null)}>
       <div
-        className={`${navBar || openMobile ? "bg-gray-900" : "bg-gradient-to-b from-gray-800/70 to-gray-100/0"} duration-300 ease-in`}
+        className={`${navBar || openMobile ? "bg-gray-900/95 backdrop-blur-sm" : "bg-gradient-to-b from-gray-800/70 to-gray-100/0"} duration-300 ease-in`}
       >
         <div className="mx-auto max-w-7xl px-4">
           <div
@@ -59,7 +64,7 @@ const Navbar = ({ pathname }) => {
               </a>
               <div className="hidden lg:ml-6 lg:block">
                 <div className="flex gap-5 xl:gap-10 items-center">
-                  <div>
+                  <div onMouseEnter={() => setOpenSubmenu(null)}>
                     <a
                       href="/new-to-flying"
                       className={`cursor-pointer text-lg text-white py-2 hover:border-b-2 border-main-red whitespace-nowrap ${
@@ -93,7 +98,7 @@ const Navbar = ({ pathname }) => {
                     toggled={about.name === openSubmenu}
                     onShow={handleMenuItemClick}
                   />
-                  <div>
+                  <div onMouseEnter={() => setOpenSubmenu(null)}>
                     <a
                       href="/store"
                       className={`cursor-pointer text-lg text-white py-2 hover:border-b-2 border-main-red whitespace-nowrap ${
@@ -104,6 +109,7 @@ const Navbar = ({ pathname }) => {
                     </a>
                   </div>
                   <a
+                    onMouseEnter={() => setOpenSubmenu(null)}
                     href="https://www.flightcircle.com/shop/325431594e72/4000002368"
                     target="_blank"
                     className="btn-red"
@@ -163,7 +169,7 @@ const Navbar = ({ pathname }) => {
       </div>
 
       <div
-        className={`${openMobile ? "max-h-[36rem]" : "max-h-0"} overflow-hidden transition-[max-height] duration-300 ease-in-out lg:hidden absolute w-full bg-gray-900/95`}
+        className={`${openMobile ? "max-h-screen" : "max-h-0"} overflow-hidden transition-[max-height] duration-300 ease-in-out lg:hidden absolute w-full bg-gray-900/95`}
         id="mobile-menu"
       >
         <div className="px-4 pb-3 pt-2 flex flex-col">

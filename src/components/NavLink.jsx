@@ -16,7 +16,7 @@ const NavLink = ({ menuItem, pathname, toggled, onShow }) => {
         onMouseLeave={onShow}
         className={`overflow-hidden text-white ${
           toggled ? "max-h-96" : "max-h-0"
-        } transition-[max-height] duration-300 ease-out absolute bg-gray-900 bg-opacity-90 flex flex-col whitespace-nowrap top-12`}
+        } transition-[max-height] duration-200 ease-out absolute bg-gray-900 bg-opacity-90 flex flex-col whitespace-nowrap top-12`}
       >
         {menuItem.submenu.map((item) => (
           <a
