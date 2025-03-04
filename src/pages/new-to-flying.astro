@@ -42,15 +42,15 @@ import UnderHeaderVideo from "../components/UnderHeaderVideo.astro";
     <div
       class="text-white text-center lg:text-left z-10 flex flex-col items-center gap-4 px-5 h-full lg:pt-28 justify-center"
     >
-      <h1 class="text-5xl font-bold tracking-tight">
+      <h1 class="text-5xl font-bold tracking-tight animate-slow-fade">
         Considering Pilot Training?
       </h1>
-      <h2 class="text-3xl tracking-wide">
+      <h2 class="text-3xl tracking-wide animate-slow-fade">
         Learn why we fly in the first place
       </h2>
       <EnrollmentModalButton
         client:visible
-        btnStyle={"btn-red"}
+        btnStyle={"btn-red animate-slow-fade"}
         btnText={"Apply Today"}
       />
     </div>
@@ -63,7 +63,11 @@ import UnderHeaderVideo from "../components/UnderHeaderVideo.astro";
     text3=`As a pilot, you'll command aircraft and navigate through the skies with precision and skill. Every flight is an adventure, filled with breathtaking views and a sense of accomplishment that few experiences can match. Beyond the thrill of flight, if you’re considering this as a career path, pilot training cultivates invaluable qualities such as decision-making, problem-solving, and teamwork, all contributing to your personal growth.`
   /> -->
 
-  <UnderHeaderVideo title="Why Become a Pilot?" videoId="rVbNTxcTwf4" />
+  <UnderHeaderVideo
+    title="Why Become a Pilot?"
+    description="If you've thought about becoming a pilot, now is the perfect time to get started. Summit Flight Academy is your place to start training and get your pilot certificate and ratings. "
+    videoId="rVbNTxcTwf4"
+  />
 
   <BecomePilot />
 
