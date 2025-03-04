@@ -63,9 +63,21 @@ export default {
           "0%": { transform: "translateX(0)" },
           "100%": { transform: "translateX(-100%)" },
         },
+        zoom: {
+          "0%": { transform: "scale(1)" },
+          "100%": { transform: "scale(1.2)" },
+        },
+        fade: {
+          "0%": { opacity: "0", transform: "scale(1.2)" },
+          "25%": { opacity: "0" },
+          "100%": { opacity: "1", transform: "scale(1)" },
+        },
       },
       animation: {
         moveReviews: "moveReviews 5s linear infinite",
+        "slow-fade": "fade 1s forwards ease-out",
+        "slow-zoom": "zoom 45s alternate infinite ease-in-out",
+        "mid-zoom": "zoom 18s alternate infinite ease-in-out",
       },
       fontFamily: {
         serif: ["Urbanist Variable", ...defaultTheme.fontFamily.serif],
