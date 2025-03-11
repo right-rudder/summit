@@ -4,6 +4,7 @@ import Header from "../components/Header.astro";
 import FooterHome from "../components/FooterHome.astro";
 import "@fontsource-variable/urbanist";
 import "@fontsource-variable/raleway";
+import ChatWidget from "../components/ChatWidget.astro";
 
 const { pageTitle, pageDescription, pageImage, pageKeywords } = Astro.props;
 ---
@@ -18,10 +19,20 @@ const { pageTitle, pageDescription, pageImage, pageKeywords } = Astro.props;
     />
   </head>
   <body class="relative font-sans">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-N727HR8B"
+        height="0"
+        width="0"
+        style="display:none;visibility:hidden"></iframe></noscript
+    >
+    <!-- End Google Tag Manager (noscript) -->
     <Header />
     <main>
       <slot />
     </main>
+    <ChatWidget />
     <FooterHome />
   </body>
 </html>

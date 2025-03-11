@@ -4,6 +4,7 @@ import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import "@fontsource-variable/urbanist";
 import "@fontsource-variable/raleway";
+import ChatWidget from "../components/ChatWidget.astro";
 
 const { pageTitle, pageDescription, pageImage, pageKeywords } = Astro.props;
 ---
@@ -31,6 +32,7 @@ const { pageTitle, pageDescription, pageImage, pageKeywords } = Astro.props;
     <main>
       <slot />
     </main>
+    <ChatWidget />
     <Footer />
   </body>
 </html>
