@@ -85,7 +85,7 @@ export const team = [
     paragrah2:
       "He is available for private, instrument, commercial, and add-on CFI-I training.",
   },
-  {
+  /* {
     id: 7,
     name: "Andrew Finkelstein",
     role: "CFI, CFII",
@@ -96,7 +96,7 @@ export const team = [
       "Andrew teaches private, commercial, and instrument students, helping them succeed in their check rides.",
     paragrah2:
       "He is available for private, instrument, commercial, and add-on CFI-I training.",
-  },
+  }, */
   {
     id: 8,
     name: "Trent Lyman",
