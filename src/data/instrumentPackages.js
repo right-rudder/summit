@@ -11,7 +11,7 @@ const instrumentPackages = {
           "Based on how often you can fly per week, how quickly do you want to earn your Instrument Rating?",
         options: [
           " ",
-          "2 weeks of full-time training by flying daily",
+          /* "2 weeks of full-time training by flying daily", */
           "4 months flexible training by flying 2-3 days per week",
         ],
       },
@@ -31,7 +31,7 @@ const instrumentPackages = {
     "Non-owned Insurance",
   ],
   packs: [
-    {
+    /* {
       packageName: "Accelerated Package",
       option: "2 weeks of full-time training by flying daily",
       monthlyPrice: {
@@ -55,7 +55,7 @@ const instrumentPackages = {
       ],
       packageLittlePrint:
         "*Contact Summit Flight Academy for scheduling availability on this program. Significant advanced planning required. Two weeks of dedicated, full time effort is needed to complete this program. You will complete multiple flights and ground school each day to complete the program in two weeks. It is expected that you will sit for your checkride at the end of the two weeks. Advanced scheduling for this program is required in order to secure a checkride date and instructor/aircraft availability.",
-    },
+    }, */
     {
       packageName: "Efficient Package",
       option: "4 months flexible training by flying 2-3 days per week",
