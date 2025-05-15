@@ -1,5 +1,5 @@
 ---
-pubDate: "May 15, 20245"
+pubDate: "May 15, 2025"
 author: "Jami Heckman"
 title: "Mastering Crosswind Landings: Tips for Confident Approaches"
 description: "Learn how to master crosswind landings with expert tips and proven techniques at Lee's Summit Municipal Airport (KLXT). Discover the crab method, side-slip approach, and practice at Summit Flight Academy to build confidence and skill in challenging wind conditions. Book your next training session today!"
