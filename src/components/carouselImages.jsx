@@ -70,7 +70,7 @@ export default function Carouselimages({ images }) {
               })}
             </div>
           </div>
-        </div>
+        </section>
       )}
     </>
   );
