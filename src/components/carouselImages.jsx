@@ -31,7 +31,7 @@ export default function Carouselimages({ images }) {
   return (
     <>
       {images && (
-        <div id="images" class="w-full m-auto">
+        <section id="images" class="w-full m-auto">
           <div className="overflow-hidden relative">
             <div
               className={`flex transition ease-out duration-500`}
