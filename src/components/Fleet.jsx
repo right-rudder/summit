@@ -11,7 +11,7 @@ export default function Fleet() {
     <section id="summit-fleet" className="relative">
       {showModal && (
         <div className="fixed inset-0 bg-gray-900 bg-opacity-90 flex items-center justify-center z-50">
-          <div className="bg-white pt-6 pb-12 px-9 rounded-md text-center text-black h-[99%] w-full max-w-4xl overflow-y-auto">
+          <div className="bg-white pt-6 pb-12 lg:px-9 rounded-md text-center text-black h-[99%] w-full max-w-4xl overflow-y-auto">
             <CarouselImages images={fleet[selectedId].images} />
             <h3 className="mt-6 text-2xl font-bold leading-8 text-gray-900">
               {fleet[selectedId].tailNumber}
@@ -53,7 +53,7 @@ export default function Fleet() {
             )}
             {fleet[selectedId].specifications && (
               <div className="p-8 mt-4 rounded text-left bg-red-700">
-                <h3 className="w-full text-center text-white text-2xl font-semibold">
+                <h3 className="w-full text-center font-bold text-white text-2xl uppercase">
                   Specifications
                 </h3>
                 <div className="mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
