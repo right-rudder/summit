@@ -132,15 +132,23 @@ export const fleet = [
     name: "Piper Cherokee",
     images: [
       {
-        src: "/img/our-fleet/N15283-1.webp",
+        src: "/img/our-fleet/Summit-Flight-Academy-fleet-N15283-main.webp",
         alt: "piper-cherokee-at-summit-flight-academy",
       },
       {
-        src: "/img/our-fleet/N15283-2.webp",
+        src: "/img/our-fleet/Summit-Flight-Academy-fleet-N15283-2.webp",
+        alt: "piper-cherokee-at-summit-flight-academy-runway",
+      },
+      {
+        src: "/img/our-fleet/Summit-Flight-Academy-fleet-N15283-instruments.webp",
         alt: "piper-cherokee-interior-control-panel",
       },
       {
         src: "/img/our-fleet/N15283-3.webp",
+        alt: "piper-cherokee-interior-seats",
+      },
+      {
+        src: "/img/our-fleet/Summit-Flight-Academy-fleet-N15283-seats.webp",
         alt: "piper-cherokee-interior-seats",
       },
     ],
