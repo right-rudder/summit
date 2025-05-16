@@ -8,7 +8,7 @@ export const SITE_DESCRIPTION =
 export const OG_IMAGE =
   "/img/summit-flight-academy-missoury-kansas-city-piper-back-view-amazing-sunset-whats-next.webp";
 export const SITE_KEYWORDS =
-  "flight school kansas city, pilot training kansas city, private pilot training, instrument rating, commercial pilot training, multi-engine rating, aviation education, learn to fly, discovery flight, career pilot program";
+  "flight school Lee's Summit, Kansas City pilot training, private pilot license, multi-engine rating, flight lessons Missouri, instrument rating training, flight academy Kansas City, discovery flights, commercial pilot certification, Lee's Summit Airport flight school";
 
 //Customer NAP info
 export const ADDRESS = "2751 NE Douglas St";
