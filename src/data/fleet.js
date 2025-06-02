@@ -148,6 +148,10 @@ export const fleet = [
         alt: "piper-cherokee-interior-seats",
       },
       {
+        src: "/img/our-fleet/N15283-4.webp",
+        alt: "piper-cherokee-interior-seats",
+      },
+      {
         src: "/img/our-fleet/Summit-Flight-Academy-fleet-N15283-seats.webp",
         alt: "piper-cherokee-interior-seats",
       },
@@ -157,7 +161,7 @@ export const fleet = [
     rentalPrice: 165,
     model: "PA-28-140",
     flightRules: "VFR + IFR  (Day and Night)",
-    avionics: "Standard w/ ADS-B in/out",
+    avionics: "Standard w/ ADS-B in/out, Garmin GFC-500 two axis autopilot",
     specifications: {
       exterior: {
         exteriorHeight: "7 ft 3.6 in",
