@@ -10,7 +10,8 @@ import EnrollmentModalButton from "../../components/enrollmentModalButtom";
 import ProgramSuggester from "../../components/ProgramSuggester";
 import privatePackages from "../../data/privatePackages";
 import UnderHeaderVideo from "../../components/UnderHeaderVideo.astro";
-
+const GHL_ENROLL_FORM_WEBHOOK_URL = import.meta.env.GHL_ENROLL_FORM_WEBHOOK_URL;
+const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
 const packages = privatePackages;
 ---
 
@@ -53,6 +54,8 @@ const packages = privatePackages;
         client:visible
         btnStyle={"btn-red"}
         btnText={"Apply Today"}
+        webhookUrl={GHL_ENROLL_FORM_WEBHOOK_URL}
+        apiKey={PORTAL_API_KEY}
       />
     </div>
   </header>
@@ -74,7 +77,12 @@ const packages = privatePackages;
     videoId="J2IArZuvtAs"
   />
 
-  <ProgramSuggester packages={packages} client:load />
+  <ProgramSuggester
+    packages={packages}
+    client:load
+    webhookUrl={GHL_ENROLL_FORM_WEBHOOK_URL}
+    apiKey={PORTAL_API_KEY}
+  />
 
   <EnrollNowCTA />
 

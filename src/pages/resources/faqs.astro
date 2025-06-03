@@ -3,6 +3,9 @@ import HomeLayout from "../../layouts/HomeLayout.astro";
 import FAQsTabs from "../../components/FAQsTabs";
 import ContactUsModalButton from "../../components/ContactUsModalButton";
 import UnderHeaderVideo from "../../components/UnderHeaderVideo.astro";
+const GHL_CONTACT_FORM_WEBHOOK_URL = import.meta.env
+  .GHL_CONTACT_FORM_WEBHOOK_URL;
+const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
 ---
 
 <HomeLayout
@@ -31,6 +34,8 @@ import UnderHeaderVideo from "../../components/UnderHeaderVideo.astro";
           btnSymbol={null}
           btnStyle={"btn-red"}
           btnText={"Contact Us for More Information"}
+          webhookUrl={GHL_CONTACT_FORM_WEBHOOK_URL}
+          apiKey={PORTAL_API_KEY}
           client:visible
         />
       </div>

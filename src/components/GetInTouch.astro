@@ -8,6 +8,9 @@ import {
   ADDRESS_ZIP,
 } from "../consts";
 import ContactUsModalButton from "./ContactUsModalButton";
+const GHL_CONTACT_FORM_WEBHOOK_URL = import.meta.env
+  .GHL_CONTACT_FORM_WEBHOOK_URL;
+const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
 ---
 
 <div class="bg-white py-16 sm:py-24">
@@ -94,8 +97,8 @@ import ContactUsModalButton from "./ContactUsModalButton";
             class="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-50"
           >
             <p class="flex-auto">
-              Send us an email at {EMAIL_ADDRESS} with any inquiries, and we’ll get back to you
-              shortly
+              Send us an email at {EMAIL_ADDRESS} with any inquiries, and we’ll get
+              back to you shortly
             </p>
             <p class="mt-6">
               <a
@@ -146,6 +149,8 @@ import ContactUsModalButton from "./ContactUsModalButton";
                 btnSymbol={" →"}
                 btnStyle={"text-lg font-semibold leading-6 text-white hover:text-red-500"}
                 btnText={"Schedule a Visit"}
+                webhookUrl={GHL_CONTACT_FORM_WEBHOOK_URL}
+                apiKey={PORTAL_API_KEY}
                 client:visible
               />
             </p>

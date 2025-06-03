@@ -2,54 +2,77 @@ import { useState } from "react";
 import { IoMdClose } from "react-icons/io";
 import { PHONE_NUMBER, EMAIL_ADDRESS } from "../consts";
 
-const EnrollmentModalButton = ({ btnStyle, btnText, arrow = false }) => {
+const EnrollmentModalButton = ({
+  btnStyle,
+  btnText,
+  arrow = false,
+  webhookUrl,
+  apiKey,
+}) => {
   const [showModal, setShowModal] = useState(false);
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [userName, setUserName] = useState("");
 
   const toggleModal = () => {
-    console.log(btnStyle);
     setShowModal(!showModal);
     setFormSubmitted(false);
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     const formData = new FormData(e.target);
 
-    if (formData.get("confirm-email")) {
-      return;
-    }
+    const confirmEmail = formData.get("confirm-email")?.trim();
+    if (confirmEmail) return;
 
     const name = formData.get("firstName");
     setUserName(name);
 
-    const GHL_ENROLL_FORM_WEBHOOK_URL =
-      "https://services.leadconnectorhq.com/hooks/U9ULEEpmYvsaAGJyX7Wn/webhook-trigger/2IrB1WdH7C0efVNIoWzr";
+    const urlEncodedBody = new URLSearchParams(formData).toString();
 
-    fetch(GHL_ENROLL_FORM_WEBHOOK_URL, {
-      method: "POST",
-      body: new URLSearchParams(formData),
-      headers: {
-        "Content-Type": "application/x-www-form-urlencoded",
-      },
-    })
-      .then((response) => {
-        if (response.ok) {
-          setFormSubmitted(true);
-          setTimeout(() => {
-            window.location.href = "/enrollment-confirmation";
-          }, 2000);
-        } else {
-          console.error("Form submission failed:", response.statusText);
-        }
-      })
-      .catch((error) => {
-        console.error(
-          "Network error occurred while submitting the form:",
-          error,
-        );
-      });
+    const jsonBody = {
+      first_name: formData.get("firstName")?.trim() || "",
+      last_name: formData.get("lastName")?.trim() || "",
+      email: formData.get("email")?.trim() || "",
+      phone: formData.get("phone")?.trim() || "",
+      campaign: "enrollment",
+      account_random_id: "ac_ftthqk4f",
+    };
+
+    try {
+      const [ghlRes, portalRes] = await Promise.all([
+        fetch(webhookUrl, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/x-www-form-urlencoded",
+          },
+          body: urlEncodedBody,
+        }),
+        fetch("https://portal.rightruddermarketing.com/api/leads", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json",
+            "x-api-key": apiKey,
+          },
+          body: JSON.stringify(jsonBody),
+        }),
+      ]);
+
+      if (ghlRes.ok && portalRes.ok) {
+        setFormSubmitted(true);
+        setTimeout(() => {
+          window.location.href = "/enrollment-confirmation";
+        }, 2000);
+      } else {
+        console.error("Submission failed", {
+          ghlStatus: ghlRes.status,
+          portalStatus: portalRes.status,
+        });
+      }
+    } catch (err) {
+      console.error("Submission error:", err);
+    }
   };
 
   return (

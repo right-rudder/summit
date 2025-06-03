@@ -1,6 +1,8 @@
 ---
 import EnrollmentModalButton from "./enrollmentModalButtom";
 import ImageComp from "./ImageComp.astro";
+const GHL_ENROLL_FORM_WEBHOOK_URL = import.meta.env.GHL_ENROLL_FORM_WEBHOOK_URL;
+const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
 
 const {
   title = "Let's Get Started?",
@@ -35,6 +37,8 @@ const {
       <EnrollmentModalButton
         btnStyle={"btn-red mt-10 w-full lg:w-1/2"}
         btnText={"Enroll Today"}
+        webhookUrl={GHL_ENROLL_FORM_WEBHOOK_URL}
+        apiKey={PORTAL_API_KEY}
         client:visible
       />
     </div>

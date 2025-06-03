@@ -9,7 +9,8 @@ import { commercialPilotFAQs } from "../../data/commercialPilotFAQs";
 import EnrollmentModalButton from "../../components/enrollmentModalButtom";
 import ProgramSuggester from "../../components/ProgramSuggester";
 import commercialPackages from "../../data/commercialPackages";
-
+const GHL_ENROLL_FORM_WEBHOOK_URL = import.meta.env.GHL_ENROLL_FORM_WEBHOOK_URL;
+const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
 const packages = commercialPackages;
 ---
 
@@ -50,6 +51,8 @@ const packages = commercialPackages;
         client:visible
         btnStyle={"btn-red"}
         btnText={"Apply Today"}
+        webhookUrl={GHL_ENROLL_FORM_WEBHOOK_URL}
+        apiKey={PORTAL_API_KEY}
       />
     </div>
   </header>
@@ -61,7 +64,12 @@ const packages = commercialPackages;
 
   <CommercialRoadmap />
 
-  <ProgramSuggester packages={packages} client:load />
+  <ProgramSuggester
+    packages={packages}
+    client:load
+    webhookUrl={GHL_ENROLL_FORM_WEBHOOK_URL}
+    apiKey={PORTAL_API_KEY}
+  />
 
   <WhatsNext />
 

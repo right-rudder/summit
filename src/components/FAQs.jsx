@@ -5,10 +5,8 @@ export default function FAQs({ faqs, type }) {
   const [open, setOpen] = useState("");
   const handleClick = (e) => {
     if (open === e.target.id) {
-      console.log("closing", e.target.id);
       setOpen("");
     } else {
-      console.log("opening", e.target.id);
       setOpen(e.target.id);
     }
   };
