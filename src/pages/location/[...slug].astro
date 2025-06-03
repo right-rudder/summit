@@ -21,6 +21,8 @@ export async function getStaticPaths() {
 type Props = CollectionEntry<"location">;
 
 const location = Astro.props;
+const GHL_ENROLL_FORM_WEBHOOK_URL = import.meta.env.GHL_ENROLL_FORM_WEBHOOK_URL;
+const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
 ---
 
 <BaseLayout
@@ -62,6 +64,8 @@ const location = Astro.props;
         client:visible
         btnStyle={"btn-red"}
         btnText={"Apply Today"}
+        webhookUrl={GHL_ENROLL_FORM_WEBHOOK_URL}
+        apiKey={PORTAL_API_KEY}
       />
     </div>
   </header>

@@ -2,6 +2,9 @@
 import { Icon } from "astro-icon/components";
 import { FACEBOOK_LINK, INSTAGRAM_LINK } from "../consts";
 import ContactUsModalButton from "./ContactUsModalButton";
+const GHL_CONTACT_FORM_WEBHOOK_URL = import.meta.env
+  .GHL_CONTACT_FORM_WEBHOOK_URL;
+const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
 
 const {
   title = "What's Next",
@@ -30,6 +33,8 @@ const {
         btnSymbol={null}
         btnStyle="mt-9 btn-red"
         btnText="Contact Us"
+        webhookUrl={GHL_CONTACT_FORM_WEBHOOK_URL}
+        apiKey={PORTAL_API_KEY}
         client:load
       />
       <div class="mt-8 flex justify-center items-center flex-wrap">

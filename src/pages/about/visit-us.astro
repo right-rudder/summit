@@ -4,6 +4,8 @@ import GetInTouch from "../../components/GetInTouch.astro";
 import Location from "../../components/Location.astro";
 import EnrollmentModalButton from "../../components/enrollmentModalButtom";
 import UnderHeaderVideo from "../../components/UnderHeaderVideo.astro";
+const GHL_ENROLL_FORM_WEBHOOK_URL = import.meta.env.GHL_ENROLL_FORM_WEBHOOK_URL;
+const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
 ---
 
 <BaseLayout
@@ -26,6 +28,8 @@ import UnderHeaderVideo from "../../components/UnderHeaderVideo.astro";
         btnStyle={"btn-red"}
         btnText={"Visit Us"}
         client:load
+        webhookUrl={GHL_ENROLL_FORM_WEBHOOK_URL}
+        apiKey={PORTAL_API_KEY}
       />
       <!-- <a href="#contactUs" class="btn-red">Meet Summit</a> -->
     </div>

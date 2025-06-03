@@ -10,6 +10,8 @@ import EnrollmentModalButton from "../components/enrollmentModalButtom";
 import GuideDownload from "../components/GuideDownload.astro";
 import ImageComp from "../components/ImageComp.astro";
 import UnderHeaderVideo from "../components/UnderHeaderVideo.astro";
+const GHL_ENROLL_FORM_WEBHOOK_URL = import.meta.env.GHL_ENROLL_FORM_WEBHOOK_URL;
+const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
 ---
 
 <HomeLayout
@@ -52,6 +54,8 @@ import UnderHeaderVideo from "../components/UnderHeaderVideo.astro";
         client:visible
         btnStyle={"btn-red z-0 animate-slow-fade"}
         btnText={"Apply Today"}
+        webhookUrl={GHL_ENROLL_FORM_WEBHOOK_URL}
+        apiKey={PORTAL_API_KEY}
       />
     </div>
     <!-- <Partners /> -->

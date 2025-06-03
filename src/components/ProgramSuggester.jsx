@@ -1,7 +1,7 @@
 import EnrollmentModalButton from "./enrollmentModalButtom";
 import { useEffect, useState } from "react";
 
-export default function ProgramSuggester({ packages }) {
+export default function ProgramSuggester({ packages, webhookUrl, apiKey }) {
   const [currentPackage, setCurrentPackage] = useState(packages.packs[0]);
   const [currentPrice, setCurrentPrice] = useState(currentPackage.monthlyPrice);
   const [currenVisible, setCurrentVisible] = useState(false);
@@ -51,17 +51,6 @@ export default function ProgramSuggester({ packages }) {
     }
     !afterPrice && (afterPrice = globOption);
     if (afterPrice === "In monthly installments (block time)") {
-      console.log("calcTotalPrice");
-      console.log("currentPackage", currentPackage);
-      console.log("top", currentPackage.durationWeeks);
-      console.log(
-        "bottom",
-        Math.ceil(
-          ((packages.flightHours - hoursValue) / flightFrequency +
-            currentPackage.durationWeeks) *
-            0.230137,
-        ),
-      );
       setCurrentPrice({
         price:
           (currentPackage.monthlyPrice.price + totalHoursPrice) /
@@ -90,7 +79,6 @@ export default function ProgramSuggester({ packages }) {
         "Commercial Training Frequency: " + currentPackage.programFrequency,
       ]);
     } else {
-      console.log("calcTotalPrice else");
       setCurrentPrice({
         price: currentPackage.monthlyPrice.price + totalHoursPrice,
         afterPrice: "/paid once",
@@ -114,7 +102,6 @@ export default function ProgramSuggester({ packages }) {
       return;
     }
     setCurrentPackage(pack);
-    console.log("findpackage");
     findPrice(priceOption);
     if (hoursValue < packages.flightHours) {
       setTotalHoursPrice((packages.flightHours - hoursValue) * pack.hourPrice);
@@ -124,7 +111,6 @@ export default function ProgramSuggester({ packages }) {
 
   const findPrice = (option) => {
     if (option === "In monthly installments (block time)") {
-      console.log("findprice");
       setCurrentPrice(currentPackage.monthlyPrice);
       if (hoursValue <= packages.flightHours) {
         setTotalHoursPrice(
@@ -133,12 +119,9 @@ export default function ProgramSuggester({ packages }) {
         calcTotalPrice(option);
       }
     } else if (option === "In one up-front payment (discounts available)") {
-      console.log("findprice else if");
       setCurrentPrice(currentPackage.upfrontPrice);
     } else {
       return;
-      console.log("findprice else");
-      setCurrentPrice({ price: 0 });
     }
   };
 
@@ -200,11 +183,7 @@ export default function ProgramSuggester({ packages }) {
                     step={15}
                     min={110}
                     onChange={(e) => {
-                      // console.log(e.target.value);
                       setHoursValue(e.target.value);
-                      // console.log(packages.flightHours);
-                      // console.log(currentPackage);
-                      // console.log(currentPackage.hourPrice);
                       if (hoursValue <= packages.flightHours) {
                         if (currentPackage.hourPrice) {
                           setTotalHoursPrice(
@@ -427,6 +406,8 @@ export default function ProgramSuggester({ packages }) {
                   }
                   btnText={"Enroll Now"}
                   client:visible
+                  webhookUrl={webhookUrl}
+                  apiKey={apiKey}
                 />
                 <p className="mt-10 text-sm font-normal px-4 lg:px-0 text-justify leading-6 text-gray-200">
                   {currentPackage.packageDescription}

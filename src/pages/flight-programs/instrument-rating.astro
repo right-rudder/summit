@@ -9,7 +9,8 @@ import { instrumentFAQs } from "../../data/instrumentFAQs";
 import EnrollmentModalButton from "../../components/enrollmentModalButtom";
 import ProgramSuggester from "../../components/ProgramSuggester";
 import instrumentPackages from "../../data/instrumentPackages";
-
+const GHL_ENROLL_FORM_WEBHOOK_URL = import.meta.env.GHL_ENROLL_FORM_WEBHOOK_URL;
+const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
 const packages = instrumentPackages;
 ---
 
@@ -52,6 +53,8 @@ const packages = instrumentPackages;
         client:visible
         btnStyle={"btn-red"}
         btnText={"Apply Today"}
+        webhookUrl={GHL_ENROLL_FORM_WEBHOOK_URL}
+        apiKey={PORTAL_API_KEY}
       />
     </div>
   </header>
@@ -65,7 +68,12 @@ const packages = instrumentPackages;
 
   <!-- <InstrumentPackages /> -->
 
-  <ProgramSuggester packages={packages} client:load />
+  <ProgramSuggester
+    packages={packages}
+    client:load
+    webhookUrl={GHL_ENROLL_FORM_WEBHOOK_URL}
+    apiKey={PORTAL_API_KEY}
+  />
 
   <EnrollNowCTA />
 

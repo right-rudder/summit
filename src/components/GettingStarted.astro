@@ -1,6 +1,10 @@
 ---
 import ContactUsModalButton from "./ContactUsModalButton";
 import EnrollmentModalButton from "./enrollmentModalButtom";
+const GHL_CONTACT_FORM_WEBHOOK_URL = import.meta.env
+  .GHL_CONTACT_FORM_WEBHOOK_URL;
+const GHL_ENROLL_FORM_WEBHOOK_URL = import.meta.env.GHL_ENROLL_FORM_WEBHOOK_URL;
+const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
 ---
 
 <div class="bg-gray-900 pt-24 pb-32">
@@ -61,6 +65,8 @@ import EnrollmentModalButton from "./enrollmentModalButtom";
                 client:visible
                 btnStyle="text-sm font-semibold leading-6 text-gray-100 hover:text-red-500"
                 btnText={"Contact Us"}
+                webhookUrl={GHL_CONTACT_FORM_WEBHOOK_URL}
+                apiKey={PORTAL_API_KEY}
               />
             </div>
           </dd>
@@ -184,6 +190,8 @@ import EnrollmentModalButton from "./enrollmentModalButtom";
                 arrow={true}
                 btnStyle={"text-sm font-semibold leading-6 text-gray-100 hover:text-red-500"}
                 btnText={"Enroll Now"}
+                webhookUrl={GHL_ENROLL_FORM_WEBHOOK_URL}
+                apiKey={PORTAL_API_KEY}
               />
             </div>
           </dd>

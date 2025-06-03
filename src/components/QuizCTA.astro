@@ -1,7 +1,8 @@
 ---
 import ImageComp from "./ImageComp.astro";
 import QuizModalButton from "./QuizModalButton";
-
+const GHL_QUIZ_FORM_WEBHOOK_URL = import.meta.env.GHL_QUIZ_FORM_WEBHOOK_URL;
+const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
 const { city, text1 } = Astro.props;
 ---
 
@@ -72,6 +73,8 @@ const { city, text1 } = Astro.props;
           btnStyle="btn-red"
           btnText="Take the Quiz"
           client:visible
+          webhookUrl={GHL_QUIZ_FORM_WEBHOOK_URL}
+          apiKey={PORTAL_API_KEY}
         />
       </div>
     </div>

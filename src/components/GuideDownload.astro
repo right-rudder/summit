@@ -1,6 +1,8 @@
 ---
 import ImageComp from "./ImageComp.astro";
 import OpenModalButton from "./OpenModalButton";
+const GHL_BOOK_FORM_WEBHOOK_URL = import.meta.env.GHL_BOOK_FORM_WEBHOOK_URL;
+const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
 ---
 
 <section
@@ -20,7 +22,11 @@ import OpenModalButton from "./OpenModalButton";
         Check out our booklet to learn more about earning your pilot
         certifications.
       </p>
-      <OpenModalButton client:visible />
+      <OpenModalButton
+        webhookUrl={GHL_BOOK_FORM_WEBHOOK_URL}
+        apiKey={PORTAL_API_KEY}
+        client:visible
+      />
     </div>
     <ImageComp
       imagePath="/src/assets/summit.webp"

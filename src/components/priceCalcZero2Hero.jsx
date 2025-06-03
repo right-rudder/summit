@@ -5,7 +5,7 @@ import ContactUsModalButton from "./ContactUsModalButton";
 
 import { PHONE_NUMBER } from "../consts";
 
-const PriceCalcZero2Hero = () => {
+const PriceCalcZero2Hero = ({ webhookUrl, apiKey }) => {
   const [total, setTotal] = useState(0);
   const pricePpl = 17000;
   const priceInstrument = 16000;
@@ -248,7 +248,7 @@ const PriceCalcZero2Hero = () => {
                     Fly for a career, within a year!
                   </p>
                   <div className="flex justify-around has-tooltip">
-                    <span class="tooltip">
+                    <span className="tooltip">
                       This pricing is based on <strong>250 hours</strong> and
                       flying full-time. While pricing can vary within our other
                       programs, it does less so for our Zero to Hero Program.
@@ -357,7 +357,7 @@ const PriceCalcZero2Hero = () => {
                             setStarter(!starter);
                           }}
                         />
-                        <span class="tooltip text-sm">
+                        <span className="tooltip text-sm">
                           Includes a passive headset, pilot bag, pilot training
                           books, a logbook, foggles, a ForeFlight subscription
                           while enrolled, and a kneeboard.
@@ -381,7 +381,7 @@ const PriceCalcZero2Hero = () => {
                             setCheckride(!checkride);
                           }}
                         />
-                        <span class="tooltip text-sm">
+                        <span className="tooltip text-sm">
                           Depending on your DPE, you can plan to budget around
                           $900 for most checkrides with the exceptions being the
                           CFI initial (~$1,500) and CFI add-ons (~$1,200 each).
@@ -405,7 +405,7 @@ const PriceCalcZero2Hero = () => {
                             setWritten(!written);
                           }}
                         />
-                        <span class="tooltip text-sm">
+                        <span className="tooltip text-sm">
                           Written tests are ~$175 per certification (not
                           required for the Multi-Engine Rating or MEI add-on).
                         </span>
@@ -428,7 +428,7 @@ const PriceCalcZero2Hero = () => {
                             setHeadset(!headset);
                           }}
                         />
-                        <span class="tooltip text-sm">
+                        <span className="tooltip text-sm">
                           Receive <strong>$299.00</strong> off of your Zulu 3
                           Headset if you choose to upgrade your Starter Package
                           at Summit Flight Academy.
@@ -444,6 +444,8 @@ const PriceCalcZero2Hero = () => {
                   <ContactUsModalButton
                     btnStyle={"btn-red w-10/12"}
                     btnText={"Contact Us"}
+                    webhookUrl={webhookUrl}
+                    apiKey={apiKey}
                   />
                   <a
                     href={`tel: ${PHONE_NUMBER}`}
@@ -522,7 +524,7 @@ const PriceCalcZero2Hero = () => {
                         setCplShared(!cplShared);
                       }}
                     />
-                    <span class="tooltip text-sm">
+                    <span className="tooltip text-sm">
                       Shared time building will make this certification
                       achievable in a shorter time.
                     </span>
