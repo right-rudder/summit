@@ -9,16 +9,17 @@ const { title = "How to Become a Pilot" } = Astro.props;
     >
       <div class="lg:ml-auto lg:pl-4 lg:pt-4">
         <div class="lg:max-w-lg">
-          <h2
+          <span
             class="text-base font-semibold leading-7 text-red-600 text-center lg:text-left"
+            aria-hidden="true"
           >
             Taking off
-          </h2>
-          <h3
+          </span>
+          <h2
             class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl text-center lg:text-left"
           >
             {title}
-          </h3>
+          </h2>
           <p
             class="mt-6 text-lg leading-8 text-gray-600 text-center lg:text-left"
           >
