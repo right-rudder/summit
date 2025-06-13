@@ -1,7 +1,7 @@
 ---
 author: "Jami Heckman"
 title: "Why Now Is the Perfect Time to Pursue a Career in Aviation"
-description: Discover why now is the perfect time to pursue a career in aviation. Learn about high pilot demand, top-tier training at Summit Flight Academy, and how to start flying today from Lee's Summit Municipal Airport (KLXT)."
+description: "Discover why now is the perfect time to pursue a career in aviation. Learn about high pilot demand, top-tier training at Summit Flight Academy, and how to start flying today from Lee's Summit Municipal Airport (KLXT)."
 heroImage: "/img/blog/Summit-Flight-Academy-future-pilot.png"
 imgAlt: "The Summit Flight Academy future airline pilot."
 pubDate: "June 13, 2025"
