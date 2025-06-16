@@ -12,13 +12,13 @@ import EnrollNowCTA from "../../components/EnrollNowCTA.astro";
 import EnrollmentModalButton from "../../components/enrollmentModalButtom";
 
 export async function getStaticPaths() {
-  const location = await getCollection("location");
+  const location = await getCollection("pilot-training");
   return location.map((location) => ({
     params: { slug: location.slug },
     props: location,
   }));
 }
-type Props = CollectionEntry<"location">;
+type Props = CollectionEntry<"pilot-training">;
 
 const location = Astro.props;
 const GHL_ENROLL_FORM_WEBHOOK_URL = import.meta.env.GHL_ENROLL_FORM_WEBHOOK_URL;
@@ -57,9 +57,10 @@ const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
       class="text-white text-center lg:text-left z-10 flex flex-col items-center gap-4 px-5 h-full lg:pt-28 justify-center"
     >
       <h1 class="text-5xl font-bold tracking-tight">
-        Considering Pilot Training in {location.data.city}?
+        Considering Pilot Training near {location.data.city}?
       </h1>
-      <h2 class="text-3xl tracking-wide">Come visit Summit Flight Academy</h2>
+      <h2 class="text-3xl tracking-wide">Come visit Summit Flight Academy at Lee's Summit</h2>
+      <p>Just {location.data.time} away!</p>
       <EnrollmentModalButton
         client:visible
         btnStyle={"btn-red"}
@@ -71,13 +72,13 @@ const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
   </header>
 
   <UnderHeader
-    title=`Considerations for Future Pilots in ${location.data.city}`
+    title=`Considerations for Future Pilots near ${location.data.city}`
     text1=`At Summit Flight Academy, we understand the allure of flight training and are committed to helping you embark on this journey.`
     text2=`The world of flight offers a multitude of opportunities, from commercial airline pilots to corporate aviators or even an instructor. With a pilot's license, you'll have the freedom to explore diverse roles, travel to new destinations, and embark on exciting adventures. Pilots from ${location.data.city} have the chance to see places like ${location.data.keyPlace} and ${location.data.keyPlace2}  from a new perspective.`
     text3=`As a pilot, you'll command aircraft and navigate through the skies with precision and skill. Every flight is an adventure, filled with breathtaking views and a sense of accomplishment that few experiences can match. Beyond the thrill of flight, if you’re considering this as a career path, pilot training cultivates invaluable qualities such as decision-making, problem-solving, and teamwork, all contributing to your personal growth.`
   />
 
-  <BecomePilot title=`How to Become a Pilot in ${location.data.city}` />
+  <BecomePilot title=`How to Become a Pilot` />
 
   <QuizCTA
     city={location.data.city}

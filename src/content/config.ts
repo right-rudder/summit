@@ -26,10 +26,11 @@ const location = defineCollection({
     description: z.string(),
     keyPlace: z.string(),
     keyPlace2: z.string(),
+    time: z.string(),
   }),
 });
 
 export const collections = {
   blog: blog,
-  location: location,
+  "pilot-training": location,
 };
