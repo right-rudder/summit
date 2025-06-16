@@ -46,6 +46,7 @@ export default defineConfig({
     "/book-online": "/discovery-flight-form",
     "/plans-pricing": "/",
     "/post/[...slug]": "/blog/[...slug]",
+    "/location/[...slug]": "/pilot-training/[...slug]",
     "/flight-experience": "/",
     "/copy-of-financing": "/resources/financing",
     "/copy-of-faa-testing-center": "/resources/faa-exam-center",
