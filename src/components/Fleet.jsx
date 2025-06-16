@@ -366,7 +366,7 @@ export default function Fleet() {
                         target="_blank"
                         className="btn-red"
                       >
-                        Rent Now
+                        Fly Now
                       </a>
                     </div>
                   </div>
