@@ -53,18 +53,6 @@ export const team = [
   },
   {
     id: 4,
-    name: "Ian Goings",
-    role: "CFI",
-    imageUrl: "/img/our-team/IanGoings.webp",
-    imageAlt:
-      "headshot of Ian Goings at Summit Flight Academy kansas city flight instructor",
-    paragrah1:
-      "Ian is a Certificated Flight Instructor (CFI) as well as a multi-engine commercial pilot with an Embraer 120 type rating. He teaches private and commercial students. Growing up in the Kansas City area, Ian is an aviation program graduate from the University of Central Missouri in Warrensburg, Missouri. Students enjoy learning from Ian's aviation experience.",
-    paragrah2:
-      "Ian is available for instruction Monday-Saturday and currently is taking on new students.",
-  },
-  {
-    id: 5,
     name: "Chris Gilstrap",
     role: "CFI, CFII",
     paragrah1:
@@ -74,7 +62,7 @@ export const team = [
       "headshot of Chris Gilstrap at Summit Flight Academy kansas city flight instructor",
   },
   {
-    id: 6,
+    id: 5,
     name: "Chris Knoernschild",
     role: "CFI, CFII",
     imageUrl: "/img/our-team/Chris-Knoernschild(CFI-CFII).webp",
@@ -85,20 +73,8 @@ export const team = [
     paragrah2:
       "He is available for private, instrument, commercial, and add-on CFI-I training.",
   },
-  /* {
-    id: 7,
-    name: "Andrew Finkelstein",
-    role: "CFI, CFII",
-    imageUrl: "/img/our-team/Andrew-Finkelstein(CFI-CFII).webp",
-    imageAlt:
-      "headshot of Andrew Finkelstein at Summit Flight Academy kansas city flight instructor",
-    paragrah1:
-      "Andrew teaches private, commercial, and instrument students, helping them succeed in their check rides.",
-    paragrah2:
-      "He is available for private, instrument, commercial, and add-on CFI-I training.",
-  }, */
   {
-    id: 8,
+    id: 6,
     name: "Trent Lyman",
     role: "CFI",
     imageUrl: "/img/our-team/Trent-Lyman(CFI).webp",
@@ -109,7 +85,7 @@ export const team = [
     paragrah2: "He is available for private and commercial training.",
   },
   {
-    id: 9,
+    id: 7,
     name: "Josh Keller",
     role: "CFI, CFII",
     imageUrl: "/img/our-team/Josh-Keller-CFI-CFII.webp",
@@ -121,7 +97,7 @@ export const team = [
       "Josh is currently accepting new students. Please contact Summit Office for scheduling.",
   },
   {
-    id: 10,
+    id: 8,
     name: "Jami Heckman",
     role: "Dispatcher and Administrator",
     imageUrl: "/img/our-team/summit-flight-academy-admin-jami-heckman.webp",
