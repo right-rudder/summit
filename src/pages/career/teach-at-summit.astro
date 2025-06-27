@@ -4,6 +4,7 @@ import UnderHeader from "../../components/UnderHeader.astro";
 import JoinUsCTA from "../../components/JoinUsCTA.astro";
 import WhatsNext from "../../components/WhatsNext.astro";
 import UnderHeaderVideo from "../../components/UnderHeaderVideo.astro";
+import WhySummit from "../../components/WhySummit.astro";
 ---
 
 <BaseLayout
@@ -33,12 +34,18 @@ import UnderHeaderVideo from "../../components/UnderHeaderVideo.astro";
     </div>
 
     <div
-      class="text-white text-center lg:text-left z-10 flex flex-col items-center gap-4 px-5 h-full lg:pt-28 justify-center"
+      class="text-white text-center lg:text-left z-10 flex flex-col items-center gap-3 px-5 h-full lg:pt-28 justify-center"
     >
-      <h1 class="text-5xl font-bold tracking-tighter">
+      <h1 class="text-6xl text-center font-bold tracking-tighter">
         Teach at Summit Flight Academy
       </h1>
-      <h2 class="text-2xl text-center tracking-wide max-w-2xl">Our awesome team of instructors is fully staffed currently.  When positions become available we'll update this page. Thank you for your interest in Summit Flight Academy.</h2>
+      <h2 class="text-2xl text-center tracking-wide max-w-3xl">
+        Our awesome team of instructors is fully staffed currently.
+      </h2>
+      <p class="text-base/5 text-center tracking-wide max-w-2xl">
+        When positions become available we'll update this page. Thank you for
+        your interest in Summit Flight Academy.
+      </p>
       <!-- <a
         href="https://forms.zohopublic.com/SummitFlight/form/JobApplication/formperma/nAfp7M8R0PYCdmjJ9eKGj34r6CvGzJ0jT91kZ78hw0Q"
         target="_blank"
@@ -53,7 +60,8 @@ import UnderHeaderVideo from "../../components/UnderHeaderVideo.astro";
     videoId="hyz-h0xRsD8"
   />
 
-  <JoinUsCTA />
+  <!-- <JoinUsCTA /> -->
+  <WhySummit />
 
   <UnderHeaderVideo
     title="Teaching Others the Joy of Flight"
@@ -61,7 +69,6 @@ import UnderHeaderVideo from "../../components/UnderHeaderVideo.astro";
     videoId="Wv-7yQ70Q1w"
     reverse
   />
-
   <WhatsNext
     title="Come Visit Us"
     body="Have more questions about our CFI openings and positions? Reach out to us with the form below."
