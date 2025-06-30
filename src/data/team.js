@@ -98,6 +98,18 @@ export const team = [
   },
   {
     id: 8,
+    name: "Hillary Kuklenski",
+    role: "CFI, CFII",
+    imageUrl: "/img/our-team/Summit-Flight-Academy-team-Hillary-Kuklenski-CFI-CFII.jpg",
+    imageAlt:
+      "headshot of Hillary Kuklenski at Summit Flight Academy kansas city flight instructor",
+    paragrah1:
+      "Hillary is a Certified Flight Instructor (CFI/CFII) who teaches Private, Instrument, and Commercial students. Her current goal is to not only create new pilots but help others achieve their dreams in aviation.",
+    paragrah2:
+      "Hillary is currently accepting new students. Please contact Summit Office for scheduling.",
+  },
+  {
+    id: 9,
     name: "Jami Heckman",
     role: "Dispatcher and Administrator",
     imageUrl: "/img/our-team/summit-flight-academy-admin-jami-heckman.webp",
@@ -107,5 +119,17 @@ export const team = [
       "Jami is our dispatcher and office administrator. Jami runs our office, helps onboard new students, maintains our student records, and ensure operations are running smoothly.",
     paragrah2:
       "Prior to joining Summit Flight, Jami and her husband were long term missionaries in Taiwan. She speaks fluent mandarin and outside of Summit often performs translation services.",
+  },,
+  {
+    id: 10,
+    name: "Brielle Barton",
+    role: "Weekend Dispatcher and Administrator",
+    imageUrl: "/img/our-team/Summit-Flight-Academy-team-Brielle-Barton-Weekend-Dispatcher-Administrator.jpeg",
+    imageAlt:
+      "headshot of Brielle Barton at Summit Flight Academy kansas city flight dispatcher and administrator",
+    paragrah1:
+      "Brielle is our dispatcher and office administrator on weekends. On weekends, Brielle runs our office, helps onboard new students, maintains our student records, and ensure operations are running smoothly.",
+    paragrah2:
+      "",
   },
 ];
