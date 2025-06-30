@@ -5,6 +5,8 @@ import BaseLayout from "./BaseLayout.astro";
 import { Icon } from "astro-icon/components";
 import UnderHeaderVideo from "../components/UnderHeaderVideo.astro";
 import EnrollNowCTA from "../components/EnrollNowCTA.astro";
+import { randomVideo } from "../data/videosYoutube.js";
+
 type Props = CollectionEntry<"blog">["data"];
 
 const {
@@ -19,6 +21,8 @@ const {
   category,
   tags,
 } = Astro.props;
+
+const video = randomVideo();
 ---
 
 <BaseLayout
@@ -53,9 +57,9 @@ const {
     </div>
   </article>
   <UnderHeaderVideo
-    title="Meet Andrew"
-    description="Learn how Andrew transitioned from a 31-year career in public service to his passion for aviation. With a unique background as a firefighter, paramedic, and police officer, Andrew brings over three decades of life experience to his role as a flight instructor. Andrew shares the exciting benefits of becoming a pilot, including the ability to travel and explore new destinations."
-    videoId="HkUJ5JOp_u4"
+    title={video.title}
+    description={video.description}
+    videoId={video.videoId}
   />
   <EnrollNowCTA />
 </BaseLayout>
