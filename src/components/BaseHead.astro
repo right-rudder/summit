@@ -202,8 +202,12 @@ import { ViewTransitions } from "astro:transitions";
     w[l] = w[l] || [];
     w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
     var f = d.getElementsByTagName(s)[0],
-      j = d.createElement(s) as HTMLScriptElement,
-      dl = l != "dataLayer" ? "&l=" + l : "";
+      j = d.createElement(s);
+    if (!(j instanceof HTMLScriptElement)) {
+      console.error("Failed to create an HTMLScriptElement.");
+      return;
+    }
+    var dl = l != "dataLayer" ? "&l=" + l : "";
     j.async = true;
     j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
     if (f.parentNode) {
