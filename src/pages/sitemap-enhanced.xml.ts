@@ -214,7 +214,7 @@ ${allPages
     <loc>${new URL(page.url, site).href}</loc>
     <priority>${page.priority}</priority>
     <changefreq>${page.changefreq}</changefreq>
-    ${page.lastmod ? `<lastmod>${page.lastmod.toISOString().split("T")[0]}</lastmod>` : ""}
+    <lastmod>${page.lastmod.toISOString().split("T")[0]}</lastmod>
   </url>`,
   )
   .join("\n")}
