@@ -28,12 +28,12 @@ const {
 
 // Ensure alt text is descriptive and SEO-friendly
 const seoAlt =
-  alt ||
+  (!alt || alt.trim() === "") ?
   `Image from Summit Flight Academy - ${src
     .split("/")
     .pop()
     ?.replace(/\.[^/.]+$/, "")
-    .replace(/[-_]/g, " ")}`;
+    .replace(/[-_]/g, " ")}` : alt;
 
 // Generate different image sizes for responsive loading
 const generateSrcSet = (baseSrc: string) => {
