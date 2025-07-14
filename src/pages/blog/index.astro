@@ -3,12 +3,19 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../../consts";
 import { getCollection } from "astro:content";
 import FormattedDate from "../../components/FormattedDate.astro";
 import BaseLayout from "../../layouts/BaseLayout.astro";
+import Breadcrumb from "../../components/Breadcrumb.astro";
 import { Icon } from "astro-icon/components";
 import PageHeader from "../../components/PageHeader.astro";
 
 const posts = (await getCollection("blog")).sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
 );
+
+// Breadcrumb items
+const breadcrumbItems = [
+  { name: "Home", href: "/" },
+  { name: "Blog", href: "/blog" },
+];
 ---
 
 <BaseLayout
@@ -38,14 +45,21 @@ const posts = (await getCollection("blog")).sort(
     <div
       class="text-white text-center lg:text-left z-10 flex flex-col items-center gap-4 px-5 h-full lg:pt-28 justify-center"
     >
-      <h1 class="text-5xl font-bold tracking-tight">Blog</h1>
+      <h1 class="text-5xl font-bold tracking-tight">Aviation Blog</h1>
       <h2 class="text-3xl tracking-wide">
-        Read up on our latest updates and pilot resources
+        Expert insights and pilot resources from Summit Flight Academy
       </h2>
       <!-- <a href="#contactUs" class="btn-red">Enroll Today</a> -->
     </div>
     <!-- <Partners /> -->
   </header>
+
+  <!-- Breadcrumb Navigation -->
+  <div class="bg-gray-50 py-4">
+    <div class="max-w-7xl mx-auto px-5">
+      <Breadcrumb items={breadcrumbItems} />
+    </div>
+  </div>
 
   <section class="max-w-7xl mx-auto p-5 bg-gray-100">
     <div class="mx-auto py-12 lg:px-8">
@@ -95,6 +109,5 @@ const posts = (await getCollection("blog")).sort(
         }
       </ul>
     </div>
-
   </section>
 </BaseLayout>

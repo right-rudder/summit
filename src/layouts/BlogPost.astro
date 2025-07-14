@@ -5,6 +5,7 @@ import BaseLayout from "./BaseLayout.astro";
 import { Icon } from "astro-icon/components";
 import UnderHeaderVideo from "../components/UnderHeaderVideo.astro";
 import EnrollNowCTA from "../components/EnrollNowCTA.astro";
+import Breadcrumb from "../components/Breadcrumb.astro";
 import { randomVideo } from "../data/videosYoutube.js";
 
 type Props = CollectionEntry<"blog">["data"];
@@ -23,36 +24,143 @@ const {
 } = Astro.props;
 
 const video = randomVideo();
+
+// Generate Article structured data
+const articleStructuredData = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: title,
+  description: description,
+  image: heroImage ? new URL(heroImage, Astro.site).toString() : undefined,
+  author: {
+    "@type": "Person",
+    name: author,
+  },
+  publisher: {
+    "@type": "Organization",
+    name: "Summit Flight Academy",
+    logo: {
+      "@type": "ImageObject",
+      url: "https://www.summitflightacademy.com/img/fromWIX/SFA-logo.webp",
+    },
+  },
+  datePublished: pubDate.toISOString(),
+  dateModified: (updatedDate || pubDate).toISOString(),
+  mainEntityOfPage: {
+    "@type": "WebPage",
+    "@id": Astro.url.toString(),
+  },
+};
+
+// Breadcrumb items
+const breadcrumbItems = [
+  { name: "Home", href: "/" },
+  { name: "Blog", href: "/blog" },
+  { name: title, href: Astro.url.pathname },
+];
 ---
 
 <BaseLayout
   mainBg="bg-gradient-to-b from-gray-100 to-gray-300"
   pageTitle=`${title} | Blog | Summit Flight Academy`
   pageDescription={description}
-  pageKeywords={`blog, private pilot's license, written exam, pilot resources, flight training, kansas city flight school, exam preparation, pilot licensing, aviation blog, pilot tips and tricks` +
-    category +
-    tags?.join(", ")}
+  pageKeywords={`blog, private pilot's license, written exam, pilot resources, flight training, kansas city flight school, exam preparation, pilot licensing, aviation blog, pilot tips and tricks, ${category}, ${tags?.join(", ")}`}
+  author={author}
+  publishDate={pubDate}
+  modifiedDate={updatedDate}
+  articleSection={category}
+  articleTags={tags}
 >
-  <article class="flex flex-col mt-36 mb-24 max-w-4xl mx-auto p-5 gap-5">
-    <h1 class="text-4xl lg:text-5xl font-bold">{title}</h1>
-    <div class="flex items-center gap-3">
-      <div>
-        <p>{author}</p>
-        <p>{readingTime} read · <FormattedDate date={pubDate} /></p>
+  <!-- Article Structured Data -->
+  <script
+    type="application/ld+json"
+    set:html={JSON.stringify(articleStructuredData)}
+  />
+
+  <!-- Breadcrumb Navigation -->
+  <div class="mt-36 mb-8 max-w-4xl mx-auto p-5">
+    <Breadcrumb items={breadcrumbItems} />
+  </div>
+
+  <article
+    class="flex flex-col mb-24 max-w-4xl mx-auto p-5 gap-5"
+    itemscope
+    itemtype="https://schema.org/Article"
+  >
+    <header>
+      <h1 class="text-4xl lg:text-5xl font-bold" itemprop="headline">
+        {title}
+      </h1>
+      <div class="flex items-center gap-3 mt-4">
+        <div>
+          <p itemprop="author" itemscope itemtype="https://schema.org/Person">
+            <span itemprop="name">{author}</span>
+          </p>
+          <p>
+            <span itemprop="timeRequired">{readingTime} read</span> ·
+            <time itemprop="datePublished" datetime={pubDate.toISOString()}>
+              <FormattedDate date={pubDate} />
+            </time>
+            {
+              updatedDate && (
+                <>
+                  {" "}
+                  (Updated:
+                  <time
+                    itemprop="dateModified"
+                    datetime={updatedDate.toISOString()}
+                  >
+                    <FormattedDate date={updatedDate} />
+                  </time>
+                  )
+                </>
+              )
+            }
+          </p>
+          {
+            category && (
+              <p class="text-sm text-gray-600 mt-1">
+                <span
+                  itemprop="about"
+                  class="inline-block bg-white ring-1 ring-gray-500 text-gray-800 text-xs px-3 py-1 capitalize rounded-full"
+                >
+                  {category}
+                </span>
+              </p>
+            )
+          }
+          {
+            tags && tags.length > 0 && (
+              <div class="flex flex-wrap gap-1 mt-2">
+                {tags.slice(0, 3).map((tag: string) => (
+                  <span
+                    class="inline-block bg-red-100 text-red-800 text-xs px-3 py-1 capitalize rounded-full"
+                    itemprop="keywords"
+                  >
+                    {tag}
+                  </span>
+                ))}
+              </div>
+            )
+          }
+        </div>
       </div>
-    </div>
-    <div class="">
-      {
-        heroImage && (
+    </header>
+
+    {
+      heroImage && (
+        <div class="my-6">
           <img
             src={heroImage}
             alt={imgAlt}
-            class="aspect-[4/3] object-cover w-full h-full"
+            class="aspect-[4/3] object-cover w-full h-full rounded-lg shadow-lg"
+            itemprop="image"
           />
-        )
-      }
-    </div>
-    <div class="w-full">
+        </div>
+      )
+    }
+
+    <div class="w-full prose prose-lg max-w-none" itemprop="articleBody">
       <slot />
     </div>
   </article>

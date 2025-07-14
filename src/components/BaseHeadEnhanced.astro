@@ -1,6 +1,5 @@
 ---
-// Import the global.css file here so that it is included on
-// all pages through the use of the <BaseHead /> component.
+// Enhanced BaseHead component with improved SEO features
 import "../styles/global.css";
 import {
   SITE_TITLE,
@@ -104,20 +103,8 @@ import { ViewTransitions } from "astro:transitions";
 <meta name="googlebot" content="index, follow" />
 <meta name="bingbot" content="index, follow" />
 
-<!-- Language and Geographic Meta Tags -->
-<meta name="language" content="en-US" />
-<meta name="geo.region" content="US-MO" />
-<meta name="geo.placename" content="Lee's Summit, Missouri" />
-<meta name="geo.position" content="38.96205924753997;-94.3752812745751" />
-<meta name="ICBM" content="38.96205924753997, -94.3752812745751" />
-
 <!-- Canonical URL -->
 <link rel="canonical" href={canonicalURL} />
-
-<!-- Preconnect to External Domains for Performance -->
-<link rel="preconnect" href="https://www.googletagmanager.com" />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
 <!-- Primary Meta Tags -->
 <title>{newTitle}</title>
@@ -136,6 +123,13 @@ import { ViewTransitions } from "astro:transitions";
     <meta name="article:modified_time" content={modifiedDate.toISOString()} />
   )
 }
+
+<!-- Language and Geographic Meta Tags -->
+<meta name="language" content="en-US" />
+<meta name="geo.region" content="US-MO" />
+<meta name="geo.placename" content="Lee's Summit, Missouri" />
+<meta name="geo.position" content="38.96205924753997;-94.3752812745751" />
+<meta name="ICBM" content="38.96205924753997, -94.3752812745751" />
 
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content={ogType} />
@@ -179,8 +173,15 @@ import { ViewTransitions } from "astro:transitions";
 <meta property="twitter:description" content={newDesc} />
 <meta property="twitter:image" content={new URL(newImage, Astro.url)} />
 <meta property="twitter:image:alt" content={newTitle} />
+
+<!-- Additional Social Media Meta Tags -->
 <meta property="twitter:site" content="@summitflightacademy" />
 <meta property="twitter:creator" content="@summitflightacademy" />
+
+<!-- Preconnect to External Domains for Performance -->
+<link rel="preconnect" href="https://www.googletagmanager.com" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
 <!-- Google tag (gtag.js) -->
 <script
@@ -196,6 +197,7 @@ import { ViewTransitions } from "astro:transitions";
 
   gtag("config", "G-35S7FS2VTF");
 </script>
+
 <!-- Google Tag Manager -->
 <script>
   (function (w, d, s, l, i) {
@@ -212,6 +214,8 @@ import { ViewTransitions } from "astro:transitions";
   })(window, document, "script", "dataLayer", "GTM-N727HR8B");
 </script>
 <!-- End Google Tag Manager -->
+
+<!-- Enhanced Structured Data - Local Business -->
 <script type="application/ld+json">
   {
     "@context": "http://schema.org",
@@ -247,11 +251,11 @@ import { ViewTransitions } from "astro:transitions";
       "ratingValue": "5",
       "reviewCount": "14"
     },
+    "url": "https://www.summitflightacademy.com/",
     "sameAs": [
       "https://www.facebook.com/summitflightacademy/",
       "https://www.instagram.com/summitflightacademy/"
     ],
-    "url": "https://www.summitflightacademy.com/",
     "priceRange": "$$$",
     "geo": {
       "@type": "GeoCoordinates",
@@ -280,3 +284,5 @@ import { ViewTransitions } from "astro:transitions";
     ]
   }
 </script>
+
+<ViewTransitions />

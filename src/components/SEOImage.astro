@@ -1,0 +1,68 @@
+---
+interface Props {
+  src: string;
+  alt: string;
+  width?: number;
+  height?: number;
+  class?: string;
+  loading?: "lazy" | "eager";
+  fetchpriority?: "high" | "low" | "auto";
+  sizes?: string;
+  title?: string;
+  itemprop?: string;
+}
+
+const {
+  src,
+  alt,
+  width,
+  height,
+  class: className = "",
+  loading = "lazy",
+  fetchpriority = "auto",
+  sizes,
+  title,
+  itemprop,
+  ...rest
+} = Astro.props;
+
+// Ensure alt text is descriptive and SEO-friendly
+const seoAlt =
+  alt ||
+  `Image from Summit Flight Academy - ${src
+    .split("/")
+    .pop()
+    ?.replace(/\.[^/.]+$/, "")
+    .replace(/[-_]/g, " ")}`;
+
+// Generate different image sizes for responsive loading
+const generateSrcSet = (baseSrc: string) => {
+  if (
+    baseSrc.includes(".webp") ||
+    baseSrc.includes(".jpg") ||
+    baseSrc.includes(".png")
+  ) {
+    // For static images, we'll use the original for now
+    // In a production environment, you'd want to generate multiple sizes
+    return undefined;
+  }
+  return undefined;
+};
+
+const srcset = generateSrcSet(src);
+---
+
+<img
+  src={src}
+  alt={seoAlt}
+  {width}
+  {height}
+  class={className}
+  loading={loading}
+  fetchpriority={fetchpriority}
+  {sizes}
+  {srcset}
+  {title}
+  {itemprop}
+  {...rest}
+/>
