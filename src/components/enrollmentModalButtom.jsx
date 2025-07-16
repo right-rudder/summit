@@ -286,6 +286,7 @@ const EnrollmentModalButton = ({
                       id="goal"
                       name="goal"
                       placeholder="What is your goal?"
+                      maxlength="500"
                       rows={4}
                       className="w-full p-2 border text-black bg-gray-100 border-gray-400 rounded"
                       required
