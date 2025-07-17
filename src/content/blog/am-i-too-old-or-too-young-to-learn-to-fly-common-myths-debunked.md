@@ -6,6 +6,7 @@ imgAlt: "flight instruments"
 author: Jami Heckman
 title: Am I Too Old (or Too Young) to Learn to Fly? Common Myths Debunked
 readingTime: "8 min"
+category: "Flight Training"
 tags:
   [
     learn to fly,

@@ -1,0 +1,129 @@
+---
+import {
+  BUSINESS_NAME,
+  ADDRESS,
+  ADDRESS_CITY,
+  ADDRESS_STATE,
+  ADDRESS_ZIP,
+  PHONE_DISPLAY,
+  EMAIL_ADDRESS,
+  LATITUDE,
+  LONGITUDE,
+  FACEBOOK_LINK,
+  INSTAGRAM_LINK,
+  BUSINESS_HOURS,
+} from "../consts-enhanced";
+
+interface Props {
+  additionalType?: string[];
+  services?: string[];
+  areaServed?: string[];
+}
+
+const {
+  additionalType = ["FlightTrainingSchool", "AviationTrainingCenter"],
+  services = [
+    "Private Pilot Training",
+    "Instrument Rating Training",
+    "Commercial Pilot Training",
+    "Multi-Engine Rating",
+    "Flight Instructor Training",
+    "Discovery Flights",
+  ],
+  areaServed = [
+    "Kansas City, MO",
+    "Lee's Summit, MO",
+    "Overland Park, KS",
+    "Independence, MO",
+    "Blue Springs, MO",
+  ],
+} = Astro.props;
+
+const businessSchema = {
+  "@context": "https://schema.org",
+  "@type": ["LocalBusiness", "EducationalOrganization", ...additionalType],
+  name: BUSINESS_NAME,
+  description:
+    "Summit Flight Academy is a premier flight training school located at Lee's Summit Airport (KLXT) in Kansas City, Missouri. We offer comprehensive pilot training programs including private pilot, instrument rating, commercial pilot, and multi-engine certifications with modern aircraft and experienced instructors.",
+  url: Astro.site?.toString(),
+  logo: {
+    "@type": "ImageObject",
+    url: "https://www.summitflightacademy.com/img/fromWIX/SFA-logo.webp",
+    width: 400,
+    height: 400,
+  },
+  image: [
+    "https://www.summitflightacademy.com/img/summit-flight-academy-missoury-kansas-city-piper-back-view-amazing-sunset-whats-next.webp",
+    "https://www.summitflightacademy.com/img/fromWIX/SFA-logo.webp",
+  ],
+  telephone: PHONE_DISPLAY,
+  email: EMAIL_ADDRESS,
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: ADDRESS,
+    addressLocality: ADDRESS_CITY,
+    addressRegion: ADDRESS_STATE,
+    postalCode: ADDRESS_ZIP,
+    addressCountry: "US",
+  },
+  geo: {
+    "@type": "GeoCoordinates",
+    latitude: LATITUDE,
+    longitude: LONGITUDE,
+  },
+  openingHoursSpecification: Object.entries(BUSINESS_HOURS).map(
+    ([day, hours]) => {
+      const [opens, closes] = hours.split("-");
+      return {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: day,
+        opens: opens,
+        closes: closes,
+      };
+    }
+  ),
+  sameAs: [FACEBOOK_LINK, INSTAGRAM_LINK],
+  areaServed: areaServed.map((area) => ({
+    "@type": "Place",
+    name: area,
+  })),
+  serviceType: services,
+  hasOfferCatalog: {
+    "@type": "OfferCatalog",
+    name: "Flight Training Programs",
+    itemListElement: services.map((service, index) => ({
+      "@type": "Offer",
+      itemOffered: {
+        "@type": "Course",
+        name: service,
+        provider: {
+          "@type": "Organization",
+          name: BUSINESS_NAME,
+        },
+      },
+    })),
+  },
+  aggregateRating: {
+    "@type": "AggregateRating",
+    ratingValue: "5",
+    reviewCount: "14",
+    bestRating: "5",
+    worstRating: "1",
+  },
+  priceRange: "$$$",
+  currenciesAccepted: "USD",
+  paymentAccepted: [
+    "Cash",
+    "Credit Card",
+    "Visa",
+    "Mastercard",
+    "American Express",
+    "Discover",
+    "Checks",
+  ],
+  foundingDate: "2020",
+  slogan: "Your Leading Flight School in Kansas City",
+};
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(businessSchema)} />
