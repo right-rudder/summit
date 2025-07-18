@@ -112,13 +112,13 @@ export const team = [
     id: 9,
     name: "Brielle Barton",
     role: "Weekend Dispatcher and Administrator",
-    imageUrl: "/img/our-team/Brielle-Barton-Weekend-Dispatcher-Administrator.webp",
+    imageUrl:
+      "/img/our-team/Brielle-Barton-Weekend-Dispatcher-Administrator.webp",
     imageAlt:
       "headshot of Brielle Barton at Summit Flight Academy kansas city flight dispatcher and administrator",
     paragrah1:
       "Brielle is our dispatcher and office administrator on weekends. On weekends, Brielle runs our office, helps onboard new students, maintains our student records, and ensure operations are running smoothly.",
-    paragrah2:
-      "",
+    paragrah2: "",
   },
   {
     id: 10,
@@ -128,9 +128,9 @@ export const team = [
     imageAlt:
       "headshot of Josh Gordon at Summit Flight Academy kansas city flight CFII, MEI",
     paragrah1:
-      "",
+      "Josh is a Certified Flight Instructor (CFI/CFII/MEI) with experience training students at all levels—from private pilot to commercial multi-engine. He brings a calm, professional approach to instruction and is especially skilled at building student confidence during advanced maneuvers and checkride prep.",
     paragrah2:
-      "",
+      "Josh is currently accepting new students for private, instrument, commercial, and multi-engine training. Contact the Summit office to schedule a lesson.",
   },
   {
     id: 11,
@@ -140,8 +140,8 @@ export const team = [
     imageAlt:
       "headshot of Matt Haselhorst at Summit Flight Academy kansas city flight instructor",
     paragrah1:
-      "",
+      "Matt is a Certified Flight Instructor (CFI/CFII) who teaches private, instrument, and commercial students. Known for his patient teaching style and strong technical knowledge, Matt helps students develop solid foundational skills and prepares them for real-world flying.",
     paragrah2:
-      "",
+      "Matt is available for training on weekdays and weekends. Please reach out to the Summit team for his current availability.",
   },
 ];
