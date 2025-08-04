@@ -1,2 +1,2 @@
-/secret-page
-  Basic-Auth: myuser:mypassword
+/multi-engine-resources
+  Basic-Auth: user:multi@sfa
