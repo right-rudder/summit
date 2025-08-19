@@ -98,6 +98,30 @@ export const team = [
   },
   {
     id: 8,
+    name: "Josh Gordon",
+    role: "CFI, CFII, MEI",
+    imageUrl: "/img/our-team/Josh-Gordon-CFII-MEI.webp",
+    imageAlt:
+      "headshot of Josh Gordon at Summit Flight Academy kansas city flight CFII, MEI",
+    paragrah1:
+      "",
+    paragrah2:
+      "",
+  },
+  {
+    id: 9,
+    name: "Matt Haselhorst",
+    role: "CFI, CFII",
+    imageUrl: "/img/our-team/Matt-Haselhorst-CFII.webp",
+    imageAlt:
+      "headshot of Matt Haselhorst at Summit Flight Academy kansas city flight instructor",
+    paragrah1:
+      "",
+    paragrah2:
+      "",
+  },
+    {
+    id: 10,
     name: "Jami Heckman",
     role: "Dispatcher and Administrator",
     imageUrl: "/img/our-team/summit-flight-academy-admin-jami-heckman.webp",
@@ -109,7 +133,7 @@ export const team = [
       "Prior to joining Summit Flight, Jami and her husband were long term missionaries in Taiwan. She speaks fluent mandarin and outside of Summit often performs translation services.",
   },
   {
-    id: 9,
+    id: 11,
     name: "Brielle Barton",
     role: "Weekend Dispatcher and Administrator",
     imageUrl:
@@ -119,29 +143,5 @@ export const team = [
     paragrah1:
       "Brielle is our dispatcher and office administrator on weekends. On weekends, Brielle runs our office, helps onboard new students, maintains our student records, and ensure operations are running smoothly.",
     paragrah2: "",
-  },
-  {
-    id: 10,
-    name: "Josh Gordon",
-    role: "CFI, CFII, MEI",
-    imageUrl: "/img/our-team/Josh-Gordon-CFII-MEI.webp",
-    imageAlt:
-      "headshot of Josh Gordon at Summit Flight Academy kansas city flight CFII, MEI",
-    paragrah1:
-      "Josh is a Certified Flight Instructor (CFI/CFII/MEI) with experience training students at all levels—from private pilot to commercial multi-engine. He brings a calm, professional approach to instruction and is especially skilled at building student confidence during advanced maneuvers and checkride prep.",
-    paragrah2:
-      "Josh is currently accepting new students for private, instrument, commercial, and multi-engine training. Contact the Summit office to schedule a lesson.",
-  },
-  {
-    id: 11,
-    name: "Matt Haselhorst",
-    role: "CFI, CFII",
-    imageUrl: "/img/our-team/Matt-Haselhorst-CFII.webp",
-    imageAlt:
-      "headshot of Matt Haselhorst at Summit Flight Academy kansas city flight instructor",
-    paragrah1:
-      "Matt is a Certified Flight Instructor (CFI/CFII) who teaches private, instrument, and commercial students. Known for his patient teaching style and strong technical knowledge, Matt helps students develop solid foundational skills and prepares them for real-world flying.",
-    paragrah2:
-      "Matt is available for training on weekdays and weekends. Please reach out to the Summit team for his current availability.",
   },
 ];
