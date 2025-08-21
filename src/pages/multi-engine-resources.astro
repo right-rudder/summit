@@ -27,7 +27,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
   </header>
 
   <section>
-    <div class="py-24 px-5 max-w-5xl mx-auto flex flex-col items-center">
+    <div class="py-24 px-5 max-w-7xl mx-auto flex flex-col items-center">
       <h2 class="text-base font-semibold leading-7 text-main-red text-center">
         Multi-Engine Resources
       </h2>
@@ -37,13 +37,36 @@ import BaseLayout from "../layouts/BaseLayout.astro";
         Below are resources to help you prepare for your multi-engine training
         at Summit Flight Academy.
       </p>
-      <a
-        href="/files/sfa-me-add-on-study-guide-and-course-information.pdf"
-        class="btn-red whitespace-normal w-full sm:w-fit"
-        download="SFA ME Add-On Study Guide and Course Information"
-      >
-        Add-On Study Guide and Course Information
-      </a>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full">
+        <div></div>
+        <div
+          class="flex flex-col bg-gray-700 p-9 rounded-xl hover:bg-gray-600 transition duration-300"
+        >
+          <dt class="text-base font-semibold leading-7 text-gray-200">
+            <h4 class="text-white text-xl">
+              Add-On Study Guide and Course Information
+            </h4>
+          </dt>
+          <dd
+            class="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-200"
+          >
+            <p class="flex-auto">
+              An outline of prerequisites, required documents, study materials,
+              and the full syllabus to prepare for your multi-engine add-on or
+              MEI checkride at Summit Flight Academy.
+            </p>
+            <div class="mt-6">
+              <a
+                href="/files/sfa-me-add-on-study-guide-and-course-information.pdf"
+                class="btn-red"
+                download="SFA ME Add-On Study Guide and Course Information"
+              >
+                Download
+              </a>
+            </div>
+          </dd>
+        </div>
+      </div>
     </div>
   </section>
 </BaseLayout>
