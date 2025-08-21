@@ -1,0 +1,72 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout
+  pageTitle="Multi-Engine Resources | Summit Flight Academy"
+  pageDescription="View and explore multi-engine resources including videos, documents, and more to help you in your training at Summit Flight Academy."
+  pageKeywords="pilot training, become a pilot, flight school, private pilot license, aviation career, discovery flight, flight training programs, commercial pilot certification, instrument rating, multi-engine training, aviation education"
+>
+  <header
+    class="relative h-screen-3/4 bg-resources bg-cover bg-center bg-black flex flex-col items-center justify-center"
+  >
+    <div
+      class="absolute bg-gradient-to-b from-black/50 to-black/20 w-full h-full z-0"
+    >
+    </div>
+    <div
+      class="text-white text-center lg:text-left z-10 flex flex-col items-center gap-4 px-5 h-full lg:pt-28 justify-center"
+    >
+      <h1 class="text-5xl font-bold tracking-tight animate-slow-fade">
+        Multi-Engine Resources
+      </h1>
+      <h2 class="text-3xl tracking-wide animate-slow-fade">
+        Explore multi-engine resources needed before your multi-engine training
+      </h2>
+    </div>
+  </header>
+
+  <section>
+    <div class="py-24 px-5 max-w-7xl mx-auto flex flex-col items-center">
+      <h2 class="text-base font-semibold leading-7 text-main-red text-center">
+        Multi-Engine Resources
+      </h2>
+      <p
+        class="mt-2 text-2xl font-bold tracking-tight text-black sm:text-3xl text-center mb-8"
+      >
+        Below are resources to help you prepare for your multi-engine training
+        at Summit Flight Academy.
+      </p>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full">
+        <div></div>
+        <div
+          class="flex flex-col bg-gray-700 p-9 rounded-xl hover:bg-gray-600 transition duration-300"
+        >
+          <dt class="text-base font-semibold leading-7 text-gray-200">
+            <h4 class="text-white text-xl">
+              Add-On Study Guide and Course Information
+            </h4>
+          </dt>
+          <dd
+            class="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-200"
+          >
+            <p class="flex-auto">
+              An outline of prerequisites, required documents, study materials,
+              and the full syllabus to prepare for your multi-engine add-on or
+              MEI checkride at Summit Flight Academy.
+            </p>
+            <div class="mt-6">
+              <a
+                href="/files/sfa-me-add-on-study-guide-and-course-information.pdf"
+                class="btn-red"
+                download="SFA ME Add-On Study Guide and Course Information"
+              >
+                Download
+              </a>
+            </div>
+          </dd>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
