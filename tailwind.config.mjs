@@ -49,6 +49,8 @@ export default {
           "url('/img/summit-flight-academy-front-view-of-piper-cherokee-park-on-runway-discovery-flight.webp')",
         "cfi-and-student": "url('/img/discovery-flight/cfi-and-student.webp')",
         store: "url('/img/CFI-and-student-pilot.webp')",
+        resources:
+          "url('/img/our-fleet/summit-flight-academy-front-shot-of-N7664Y-Piper-Twin-Comanche-SFA.webp')",
       },
       height: (theme) => ({
         "screen-1/2": "50vh",
