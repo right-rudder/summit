@@ -104,9 +104,9 @@ export const team = [
     imageAlt:
       "headshot of Josh Gordon at Summit Flight Academy kansas city flight CFII, MEI",
     paragrah1:
-      "",
+      "Josh specializes in training private, instrument, commercial, and CFII pilots, providing professional support to ensure successful check rides. His passion for flying motivates him to share his expertise with students.",
     paragrah2:
-      "",
+      "He is available for Private, Instrument and Commercial training.",
   },
   {
     id: 9,
@@ -120,8 +120,20 @@ export const team = [
     paragrah2:
       "",
   },
-    {
+  {
     id: 10,
+    name: "Pete Langworthy",
+    role: "CFI, CFII",
+    imageUrl: "/img/our-team/pete-langworthy-cfii.jpg",
+    imageAlt:
+      "headshot of Pete Langworthy at Summit Flight Academy kansas city flight instructor",
+    paragrah1:
+      "Pete recently relocated to Kansas City with his wife and children from Alaska.",
+    paragrah2:
+      "He specializes in instructing private, instrument, and commercial students, offering expert guidance to ensure successful check rides. Pete enjoys sharing his knowledge with his students.",
+  },
+    {
+    id: 11,
     name: "Jami Heckman",
     role: "Dispatcher and Administrator",
     imageUrl: "/img/our-team/summit-flight-academy-admin-jami-heckman.webp",
@@ -133,7 +145,7 @@ export const team = [
       "Prior to joining Summit Flight, Jami and her husband were long term missionaries in Taiwan. She speaks fluent mandarin and outside of Summit often performs translation services.",
   },
   {
-    id: 11,
+    id: 12,
     name: "Brielle Barton",
     role: "Weekend Dispatcher and Administrator",
     imageUrl:
