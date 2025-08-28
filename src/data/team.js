@@ -100,7 +100,7 @@ export const team = [
     id: 8,
     name: "Josh Gordon",
     role: "CFI, CFII, MEI",
-    imageUrl: "/img/our-team/Josh-Gordon-CFII-MEI.webp",
+    imageUrl: "/img/our-team/Josh-Gordon-CFII-MEI.jpeg",
     imageAlt:
       "headshot of Josh Gordon at Summit Flight Academy kansas city flight CFII, MEI",
     paragrah1:
@@ -112,11 +112,11 @@ export const team = [
     id: 9,
     name: "Matt Haselhorst",
     role: "CFI, CFII",
-    imageUrl: "/img/our-team/Matt-Haselhorst-CFII.webp",
+    imageUrl: "/img/our-team/Matt-Haselhorst-CFII.jpeg",
     imageAlt:
       "headshot of Matt Haselhorst at Summit Flight Academy kansas city flight instructor",
     paragrah1:
-      "",
+      "Matt is a Certified Flight Instructor (CFI/CFII/MEI) originally from Dodge City, Kansas. He began his aviation journey at the age of 22 while in his senior year at Fort Hays State University. Working as a Line Service Technician for 4 years, he studied and eventually achieved Multi-Engine Instructor in December of 2024! Matt’s favorite topic to teach is weather, where he might give you a short ‘Tornados 101’ lecture. His future goals are to instruct out of his own plane and work as a contract pilot in the corporate realm.",
     paragrah2:
       "",
   },
@@ -124,13 +124,13 @@ export const team = [
     id: 10,
     name: "Pete Langworthy",
     role: "CFI, CFII",
-    imageUrl: "/img/our-team/pete-langworthy-cfii.jpg",
+    imageUrl: "/img/our-team/pete-langworthy-cfii.jpeg",
     imageAlt:
       "headshot of Pete Langworthy at Summit Flight Academy kansas city flight instructor",
     paragrah1:
-      "Pete recently relocated to Kansas City with his wife and children from Alaska.",
+      "Peter is a Certified Flight Instructor (CFI/CFII) and teaches both private, commercial and instrument students. Born and raised in Alaska, he grew up flying in his dad’s Cessna 182, where his passion for aviation first began. He earned his private pilot certificate in 2019 and began instructing in 2025. With a strong focus on safety and proficiency, he is passionate about helping develop the next generation of skilled and confident pilots. When not flying, he enjoys spending time with his wife and kids and enjoying the new adventures of Missouri.",
     paragrah2:
-      "He specializes in instructing private, instrument, and commercial students, offering expert guidance to ensure successful check rides. Pete enjoys sharing his knowledge with his students.",
+      "He is available for instruction and is currently accepting new students.",
   },
     {
     id: 11,
