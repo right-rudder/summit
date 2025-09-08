@@ -1,0 +1,85 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import UnderHeader from "../../components/UnderHeader.astro";
+import BecomePilot from "../../components/BecomePilot.astro";
+import QuizCTA from "../../components/QuizCTA.astro";
+import StartToday from "../../components/StartToday.astro";
+import FAQs from "../../components/FAQs";
+import { CheckrideFAQs as GeneralFAQs } from "../../data/checkrideFAQs";
+import EnrollNowCTA from "../../components/EnrollNowCTA.astro";
+import EnrollmentModalButton from "../../components/enrollmentModalButtom";
+import UnderHeaderVideo from "../../components/UnderHeaderVideo.astro";
+import CheckRideRoadMap from "../../components/CheckRideRoadMap.astro";
+import CardWhite from "../../components/CheckrideComponents/CardWhite.astro";
+import CardBlue from "../../components/CheckrideComponents/CardBlue.astro";
+import CardsContainer from "../../components/CheckrideComponents/CardsContainer.astro";
+const GHL_ENROLL_FORM_WEBHOOK_URL = import.meta.env.GHL_ENROLL_FORM_WEBHOOK_URL;
+const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
+
+const header = {
+  title: "Your Road to the Private Pilot Checkride",
+  description:
+    "Prepare for your FAA private pilot checkride with a step-by-step guide covering flight training milestones, knowledge exams, and practical test tips.",
+};
+---
+
+<BaseLayout
+  pageTitle="Road to Your Checkride | Summit Flight Academy"
+  pageDescription="Learn everything you need to know about preparing for your private pilot checkride, including training milestones, FAA requirements, and tips for success."
+  pageKeywords="private pilot checkride, FAA practical test, pilot training, flight test, Summit Flight Academy"
+>
+  <header
+    class="relative h-screen-3/4 bg-new-to-flying bg-cover bg-center bg-black flex flex-col items-center justify-center"
+  >
+    <!-- bg-overlay to darken -->
+    <div
+      class="absolute bg-gradient-to-b from-black/50 to-black/20 w-full h-full z-0"
+    >
+    </div>
+    <!-- Text -->
+    <div
+      class="text-white text-center lg:text-left z-10 flex flex-col items-center gap-4 px-5 h-full lg:pt-28 justify-center"
+    >
+      <h1 class="text-5xl font-bold tracking-tight animate-slow-fade">
+        {header.title}
+      </h1>
+      <h2 class="text-3xl tracking-wide animate-slow-fade">
+        {header.description}
+      </h2>
+      <EnrollmentModalButton
+        client:visible
+        btnStyle={"btn-red animate-slow-fade"}
+        btnText={"Apply Today"}
+        webhookUrl={GHL_ENROLL_FORM_WEBHOOK_URL}
+        apiKey={PORTAL_API_KEY}
+      />
+    </div>
+  </header>
+
+  <UnderHeaderVideo
+    title="Why Become a Pilot?"
+    description="If you've thought about becoming a pilot, now is the perfect time to get started. Summit Flight Academy is your place to start training and get your pilot certificate and ratings. "
+    videoId="rVbNTxcTwf4"
+  />
+
+  <CardWhite />
+
+  <CardBlue />
+
+  <CardsContainer />
+
+  <UnderHeaderVideo
+    title="How to Get Started"
+    videoId="jsqzAKMlHZQ"
+    description="Meet Andrew, a Certified Flight Instructor (CFI) at Summit Flight Academy with a passion for guiding students through their first flying experience. Andrew has been a part of the Summit team for six months and loves helping aspiring pilots achieve their dreams. Andrew walks you through the experience of taking off, climbing, and maneuvering a small aircraft for the first time."
+  />
+
+  <CheckRideRoadMap />
+
+  <FAQs faqs={GeneralFAQs} type="General" client:visible />
+
+  <EnrollNowCTA />
+
+  <!-- Contact Us Form -->
+  <!-- <ContactUs /> -->
+</BaseLayout>
