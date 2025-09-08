@@ -2,7 +2,6 @@ export const CHECKRIDE_GUIDE = {
   title: "Road To Your Checkride",
   introduction:
     "We receive a lot of questions about pilot exams. This document is our attempt to clarify what will happen here at Summit before your checkride, how it is scheduled, what to expect, and the more frequent reasons why an applicant may not be successful.",
-
   sections: [
     {
       title: 'The "Checkride" and your Examiner',
