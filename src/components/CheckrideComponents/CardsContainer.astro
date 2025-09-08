@@ -1,0 +1,110 @@
+---
+const { city } = Astro.props;
+---
+
+<div class="bg-white lg:py-16 py-32">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="mx-auto max-w-2xl text-center">
+      <h2 class="text-base font-semibold leading-7 text-red-600">
+        Explore our flight training options
+      </h2>
+      <p
+        class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
+      >
+        {city ? `Start Flight Lessons near ${city} Today` : "Start Today"}
+      </p>
+      <p class="mt-6 text-lg leading-8 text-gray-600">
+        If you've thought about becoming a pilot, now is the perfect time to get
+        started. Summit Flight Academy is your place to start training and get
+        your pilot certificate and ratings.
+      </p>
+    </div>
+    <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:max-w-4xl">
+      <dl
+        class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-8 lg:max-w-none lg:grid-cols-2"
+      >
+        <div
+          class="relative bg-gray-100 hover:bg-gray-200 transition duration-200 p-12 rounded-lg text-center align-middle pb-24"
+        >
+          <dt class="text-xl font-semibold leading-7 text-gray-900">
+            Take a Discovery Flight
+          </dt>
+          <dd class="mt-4 text-base leading-7 text-gray-600">
+            The best way to see if flying is right for you is to take a
+            discovery flight. This brief introductory flight, led by one of our
+            seasoned instructors, offers a first hand glimpse into the world of
+            piloting. During this experience, you'll take the controls of the
+            plane, acquaint yourself with maneuvers, and view the Kansas City
+            from a new perspective.
+          </dd>
+          <div class="mt-9 flex justify-center">
+            <a
+              href="https://www.flightcircle.com/shop/325431594e72/4000002368"
+              target="_blank"
+              class="absolute bottom-12 btn-red">Schedule Today</a
+            >
+          </div>
+        </div>
+        <div
+          class="relative bg-gray-100 hover:bg-gray-200 transition duration-200 p-12 rounded-lg text-center align-middle pb-24"
+        >
+          <dt class="text-xl font-semibold leading-7 text-gray-900">
+            Start Flight Training
+          </dt>
+          <dd class="mt-4 text-base leading-7 text-gray-600">
+            The first step in your aviation journey is obtaining your private
+            pilot certificate. This allows you to be pilot in command (PIC) of
+            an aircraft and take passengers with you. Our team of experienced
+            instructors will work with you to craft a training regimen that
+            perfectly suits your goals, schedule, and preferred learning style.
+            Get your private pilot certificate at Summit Flight Academy.
+          </dd>
+          <div class="mt-9 flex justify-center">
+            <a
+              href="/flight-programs/private-pilot-training"
+              class="absolute bottom-12 btn-red">Private Pilot</a
+            >
+          </div>
+        </div>
+        <div
+          class="relative bg-gray-100 hover:bg-gray-200 transition duration-200 p-12 rounded-lg text-center align-middle pb-24"
+        >
+          <dt class="text-xl font-semibold leading-7 text-gray-900">
+            Advanced Flight Training
+          </dt>
+          <dd class="mt-4 text-base leading-7 text-gray-600">
+            Expand your aviation knowledge and skills through a diverse range of
+            advanced courses and certifications. From instrument training to
+            multi-engine training, commercial training, and beyond, Summit
+            offers a selection of advanced training options.
+          </dd>
+          <div class="mt-9 flex justify-center">
+            <a
+              href="/flight-programs/private-pilot-instrument-bundle"
+              class="absolute bottom-12 btn-red">Our Courses</a
+            >
+          </div>
+        </div>
+        <div
+          class="relative bg-gray-100 hover:bg-gray-200 transition duration-200 p-12 rounded-lg text-center align-middle pb-24"
+        >
+          <dt class="text-xl font-semibold leading-7 text-gray-900">
+            Start Your Pilot Career
+          </dt>
+          <dd class="mt-4 text-base leading-7 text-gray-600">
+            Begin your pilot career with Summit Flight Academy. We offer
+            training to get your commercial pilot certificate - the level
+            required to fly aircraft commercially and make money flying. This
+            certificate can be extended into becoming a CFI or CFII with us too!
+          </dd>
+          <div class="mt-9 flex justify-center">
+            <a
+              href="/career/commercial-pilot-training"
+              class="absolute bottom-12 btn-red">Commercial Training</a
+            >
+          </div>
+        </div>
+      </dl>
+    </div>
+  </div>
+</div>
