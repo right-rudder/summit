@@ -1,0 +1,102 @@
+---
+const StepsExample = [
+  {
+    title: "Title 1",
+    descriptions: [
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+    ],
+    imagePath: "/src/assets/placeholder-img.webp",
+    imageAlt: "Placeholder Image",
+  },
+  {
+    title: "Title 2",
+    descriptions: [
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+    ],
+    imagePath: "/src/assets/placeholder-img.webp",
+    imageAlt: "Placeholder Image",
+  },
+];
+
+const {
+  title = "Section Title",
+  id = "check-ride-steps",
+  description = "Section Description",
+  content = StepsExample,
+} = Astro.props;
+
+import ImageComp from "./ImageComp.astro";
+---
+
+<section id={id}>
+  <div class="bg-white py-16 sm:py-32">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <div class="mx-auto w-full lg:mx-0">
+        <h2
+          class="xl:text-6xl text-5xl font-bold tracking-tight text-main-red text-center"
+        >
+          {title}
+        </h2>
+        <p class="mt-4 text-lg leading-8 text-black text-center">
+          {description}
+        </p>
+      </div>
+
+      <div>
+        {
+          content.map((step, index) =>
+            (index + 1) % 2 === 0 ? (
+              <div class="my-8 flex flex-wrap justify-center gap-8 lg:gap-0">
+                <div class="relative pt-32 lg:pt-16 flex flex-col justify-center items-center w-full lg:w-1/2">
+                  <h3 class="absolute top-0 left-0 text-9xl font-light text-main-red">
+                    {index + 1}
+                  </h3>
+                  <div class="text-center lg:text-right pr-6">
+                    <h3 class="text-3xl font-bold tracking-tight text-main-red">
+                      {step.title}
+                    </h3>
+                    {step.descriptions.map((desc) => (
+                      <p class="text-xl leading-8 text-gray-800">{desc}</p>
+                    ))}
+                  </div>
+                </div>
+                <div class="flex flex-col justify-center items-center w-full lg:w-1/2">
+                  <ImageComp
+                    styles="object-cover rounded"
+                    imagePath={step.imagePath}
+                    imageAlt={step.imageAlt}
+                  />
+                </div>
+              </div>
+            ) : (
+              <div class="my-8 flex flex-wrap justify-center lg:flex-row-reverse gap-8 lg:gap-0">
+                <div class="relative pt-32 lg:pt-16 flex flex-col justify-center items-center w-full lg:w-1/2">
+                  <h3 class="absolute top-0 right-0 text-9xl font-light text-main-red">
+                    {index + 1}
+                  </h3>
+                  <div class="text-center lg:text-left pl-6">
+                    <h3 class="text-3xl font-bold tracking-tight text-main-red">
+                      {step.title}
+                    </h3>
+                    {step.descriptions.map((desc) => (
+                      <p class="text-xl leading-8 text-gray-800">{desc}</p>
+                    ))}
+                  </div>
+                </div>
+                <div class="flex flex-col justify-center items-center w-full lg:w-1/2">
+                  <ImageComp
+                    styles="object-cover rounded"
+                    imagePath={step.imagePath}
+                    imageAlt={step.imageAlt}
+                  />
+                </div>
+              </div>
+            ),
+          )
+        }
+      </div>
+    </div>
+  </div>
+</section>
