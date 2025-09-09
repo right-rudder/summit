@@ -3,6 +3,7 @@ export const CHECKRIDE_GUIDE = {
   introduction:
     "We receive a lot of questions about pilot exams. This document is our attempt to clarify what will happen here at Summit before your checkride, how it is scheduled, what to expect, and the more frequent reasons why an applicant may not be successful.",
 
+  //cardwhite
   checkrideAndExaminer: {
     title: 'The "Checkride" and your Examiner',
     content: [
@@ -13,12 +14,14 @@ export const CHECKRIDE_GUIDE = {
     ],
   },
 
+  //cardblue
   knowledgeTest: {
     title: "Knowledge Test",
     content:
       'We typically ask our students to take their knowledge before solo or before the mid-point in the training for Practical Tests beyond private pilot. We do this to make sure the learning is well distributed throughout your course and to give us time to address any weaknesses that show up in your written test. An examiner is required to include in their test plan any topics you miss on your written. This is one of the reasons we want students to do well on the knowledge test. Getting a barely passing score makes your oral exam more complicated than it needs to be and opens you up to first impressions that may be less favorable if you "barely passed" your written.',
   },
 
+  //cardwhite
   scheduling: {
     title: "When can I take the checkride?",
     content: [
@@ -30,6 +33,7 @@ export const CHECKRIDE_GUIDE = {
     ],
   },
 
+  //Card blue
   oralExamInsight: {
     title: "Oral Exam Insight and Common Errors:",
     preExamErrors: [
@@ -45,6 +49,7 @@ export const CHECKRIDE_GUIDE = {
     ],
   },
 
+  //checkRide RoadMap
   acsTasks: {
     title: "Private/Commercial ACS Notes",
     tasks: {
@@ -154,6 +159,7 @@ export const CHECKRIDE_GUIDE = {
     },
   },
 
+  // cards container
   flightErrors: {
     title:
       "Common Private and Commercial Flight Errors (Courtesy of DPE Brian Park)",
