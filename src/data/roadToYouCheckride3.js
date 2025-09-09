@@ -17,27 +17,37 @@ export const CHECKRIDE_GUIDE = {
 
   //cardblue
   knowledgeTest: {
+    upperTitle: "Test",
     title: "Knowledge Test",
-    content:
+    descriptions: [
       'We typically ask our students to take their knowledge before solo or before the mid-point in the training for Practical Tests beyond private pilot. We do this to make sure the learning is well distributed throughout your course and to give us time to address any weaknesses that show up in your written test. An examiner is required to include in their test plan any topics you miss on your written. This is one of the reasons we want students to do well on the knowledge test. Getting a barely passing score makes your oral exam more complicated than it needs to be and opens you up to first impressions that may be less favorable if you "barely passed" your written.',
+    ],
+    imagePath:
+      "/src/assets/summit-flight-academy-pilot-training-ground-school-instrument-rating.webp",
+    imageAlt: "Pilot training ground school",
   },
 
   //cardwhite
   scheduling: {
+    upperTitle: "Scheduling",
     title: "When can I take the checkride?",
-    content: [
+    descriptions: [
       "To be qualified to take your test, your CFI will review the requirements in part 61 of the FAA regulations for the certificate or rating you are applying for. There are requirements that must be completed (for example completing X amount of solo time, night flight time, cross country experiences, etc.) as well as standards that you need to meet in your knowledge, skills, and risk management. Your CFI cannot legally sign you off until you meet all requirements.",
       "At Summit Flight, once your syllabus is completed successfully, you will be paired with senior instructor to compete a mock oral exam and a mock flight test. You must pass both to sit for your checkride. If we are working to schedule you into a time slot we have already booked with an examiner, you must schedule and pass these mocks at least two weeks prior to your checkride so we have time to address any lingering deficiencies. Otherwise, we typically will schedule a checkride after you pass the mocks.",
       "When you are ready for your checkride, your instructor will help you schedule it. We have DPEs that we get regular dates for and others that we call and schedule when we have a student just about ready. Most students can get a checkride in less than month from the time we sign you off. Some rides, such as the multi-engine and initial Flight Instructor Practical Test, can take longer to get scheduled due to the limited number of DPEs that are qualified to administer them. Once your test is scheduled, your CFI will continue to work with you on ground and flight lessons to ensure you stay sharp.",
       "As mentioned, your oral exam is going to be based on the testing document from the FAA. The FAA strongly encourages DPEs to administer a scenario-based exam where it makes sense to do so. What this likely means is that your knowledge will be applied to one or more hypothetical situations, and you will be asked to explain how you are going to proceed or what you are going to do, and why.",
       "One recommendation we give students for their checkride is to take the ACS/PTS and use it to create blueprint to your checkride. First, go through each task and sub-item/code and attempt to document where the source of this topic come from. For example, if you are looking at the line item on the Private ACS about BasicMed, the ACS code is PA.I.A.K5 and the regulations are found in part 68 of the FAR. This line item already tells you it is in part 68, so no extra note pointing to the reg is needed. Then on the page, you might make a few key notes to jog your memory about BasicMed that should expect to be able to explain…the privileges and limitations of BasicMed, how to obtain it and how to retain it. If the DPE wants more than you have in your head or notes, you know exactly where to dig in the FARs to answer his or her question.",
     ],
+    imagePath:
+      "/src/assets/summit-flight-academy-two-students-in-front-of-plane.webp",
+    imageAlt: "Summit FLight Academy inside office",
   },
 
   //Card blue
   oralExamInsight: {
+    upperTitle: "Oral Exam",
     title: "Oral Exam Insight and Common Errors:",
-    preExamErrors: [
+    descriptions: [
       "Not having appropriate endorsements or they are expired.",
       "Not bringing all required documents",
       "Not signing all pages of your paper logbook.",
@@ -52,118 +62,104 @@ export const CHECKRIDE_GUIDE = {
 
   //checkRide RoadMap
   acsTasks: {
+    upperTitle: "ACS Tasks",
     title: "Private/Commercial ACS Notes",
-    tasks: {
-      A: {
+    description: "Commom Errors",
+    steps: [
+      {
+        step: "A",
         title: "Task A: Pilot Qualifications",
-        content:
+        descriptions: [
           "In general, this task is one where an applicant should be comfortable with all the topics listed. You will be fine looking up a few key details, if needed, but one should be conversational about all these items. The DPE is looking to determine if you know what you are allowed to do, not do, and when you cannot temporarily do something (e.g. when ill). You will likely get a scenario or two given to you and then asked to determine how you will response as PIC. Once you answer, expect to be asked why you gave the answer you gave.",
-        commonErrors: {
-          private:
-            'A common scenario as a private pilot is asking about taking a friend or family member somewhere and how the costs of that flight can or cannot be shared and even if the flight is legal to make. It\'s a common error to not understand the term "common purpose" and assume that just because you pay your share, the flight is legal.',
-          commercial:
-            "For commercial applicants, there are a lot of nuances to the regulations around when it is appropriate to be paid, when you are crossing the line into a regulated charter operation and the responsibilities of the operator vs. the pilot. There are many resources on navigating these scenarios online, FAA interpretation letters, and commercial training resources. Is a common error to not be able to talk through a hypothetical scenario and be able to defend your answer using appropriate FAA resources.",
-        },
-      },
-      B: {
-        title: "Task B: Airworthiness Requirements",
-        content:
-          'This task has gotten the better of some pilot applicants simply because they couldn\'t get past the rote understanding of these topics. It can break down when given a scenario by the DPE to talk through a hypothetical flight and aircraft. Often, he or she will use the aircraft you will be flying to talk through many of these items. Be sure to pre-mark all inspection items and compliance items so you can easily show them to the examiner. Your scenario will likely also give you something "broke" on the airplane and that will spur a conversation that walks through the various airworthiness regulations and different types of equipment lists. The DPE will want to hear you talk through the regulations (e.g. 91.205) and various types of equipment lists, be able to explain what those lists are and if/how they are relevant to your aircraft.',
-        commonErrors:
-          "A lot of applicants also miss what to do if something is found inop. They know they need to placard it, but often forget about the required aircraft logbook entry and who can make that entry.",
-      },
-      C: {
-        title: "Task C: Weather Information",
-        content:
-          "The weather task can be divided into two parts: theory and application.",
-        commonErrors: {
-          theory:
-            "Not having a good grasp of the knowledge areas listed in this task is a common issue and one frequent pain point is atmospheric composition and stability. For example, applicants struggle at times to explain wind shear (what it is) and/or what to do when faced with it. Another example: In the Midwest we don't have mountains, the impact of mountains on a pilot are sometimes not well remembered.",
-          application:
-            "Application is a key thing DPEs are looking for and often see weakness in. For example, being able to explain different cloud types and then, more importantly, applying that knowledge to your VFR flight. Another example: It's good that you can explain what a cold front vs. warm front is and how to ID them on a weather product, but can you explain how they can impact a flight? Often your cross-country assignment will be the basis of your weather discussion and applicants at times struggle to get past telling the examiner what is seen or forecast and communicating the impact to the flight. You likely will be asked to make hypothetical go-no go decisions for a scenario given to you by the examiner. Do you have personal minimums documented to clearly show the examiner you are not just making a subjective decision? Often a DPE will press you on your decision and many applicants think that means the DPE is trying to get them to change their go or no-go decision. They usually just want to see if you can smartly defend the decision.",
-          noGoDefault:
-            'A counter-intuitive common error is to just default to a "no go" decision. Applicants often feel that is the "safe" answer. Its only safe if you can defend it well.',
-          weatherSources:
-            "Finally, another common error is not being able to explain all the various ways to get weather information and the best use cases and limitations of each…. EFB compiled weather, aviationweather.gov, 1800wxbrief.com, 1-800-Wx-Brief, Flight Service, ADS-B In, Commercial Satellite based weather, airborne weather radar, etc. Be sure to have an account with 1800wxbrief.com and be able to use it to get a briefing if asked. Make sure you have called flight service and rec'd a weather briefing. Some DPEs will ask you to do one or more of these things if they have doubts in your experience using those sources.",
-          flightService:
-            'A common issue with contacting flight service is not knowing how to use the sectional to obtain the radio frequency information and the name of the service you are speaking to (e.g. "Columbia Radio"). Not knowing what the "R" means on a Flight Service frequency found on a sectional is another common error.',
-        },
-      },
-      D: {
-        title: "Task D: Cross-Country Flight Planning",
-        content:
-          "It is permissible to use an electronic Flight Bag (e.g. ForeFlight) OR Paper nav logs and paper or electronic sectionals to aid in your flight planning.",
-        commonErrors: {
-          efbUnderstanding:
-            "The biggest common error seen here is the lack of understanding around what the EFB is spitting out to a pilot. Did you build your aircraft profile using current conditions and performance charts? Or have you used the defaults that ForeFlight gave you or your CFI helped you with two seasons ago when the weather is vastly different than it is now?",
-          weightBalance:
-            "Have you compared your EFB weight and balance to one you calculated manually to ensure it is right? Using an electronic W&B application sometimes means an applicant struggles to explain how weight, moment and arm all work together. Be sure to also be able to explain how you came up with your arm lengths for various stations using the FAA approved documents for your aircraft. Often an EFB will have a profile for your airplane already built but it's common for students to not know where the data came from and be able to substantiate it to the DPE when asked. If a student can't talk through how a weight and balance is determined with an electronic tool, a DPE often will ask the applicant to fill out a paper W&B in front of them to confirm the knowledge.",
-          compassErrors:
-            "Another common error seen in EFB usage is how to account for compass errors. On a paper nav log, this is a built-in column. How does a pilot account for this with an EFB? Some applicants can't explain that. Or, if you have a glass or partly glass cockpit, it's a common error to not be able to explain the relevance of the compass correction card. --When working, the magnetometer and related equipment has been calibrated after installation to account for those errors and correct them for you in the displayed heading.",
-          sectionalInformation:
-            "When using an EFB, sometimes applicants struggle with identifying information on the sectional. Using a paper copy, applicants have access to the tables that show information on towered airports, MOAs, restricted airspace, etc. It is common for applicants to struggle to determine where to get that information in an EFB. If you get stumped on something, be able to find the answer using the EFB and/or the FAA's Aeronautical Chart User Guide (in ForeFlight on online). Also be able to look up the raw Chart Supplement information for a given airport using your EFB.",
-          unitsConsistency:
-            "A common error across paper and electronic formats is making sure there is consistency in speeds. Many of our aircraft have speeds in miles per hour. Winds are reported in knots. These must be sync'd up to a common unit of measure. Similarly, communicating the difference in true north and magnetic north and when they are used in aviation is a common error. (If its written its true.)",
-          waypoints:
-            "Picking good waypoints for a cross country flight is a common error regardless of doing the planning manually or electronically. Make sure they are not only visible but distinguishable (one city might look like another from the air).",
-          performanceCharts:
-            "Make sure to use the right performance charts correctly to aid in making climb, cruise and decent calculations is a common error on paper and electronically.",
-          fuelPlanning:
-            "Fuel planning can be a challenge for some. Are you being conservative, and can you demonstrate good judgement in your fuel loading and use data to back it up? Often applicants will oversimplify their fuel planning explanation, especially when planning electronically, because they don't see the calculations being made along the way.",
-          altitudeSelection:
-            'Altitude selection is a struggle for many applicants when they fixate on one data point for picking altitude. For example, winds might be best at 6500 feet. However, airspace, obstacles, terrain, endurance, clouds, turbulence, and other factors should be well accounted for when a DPE asks the seemingly simple "why did you pick this altitude" question.',
-          vfrFlightPlans:
-            "VFR Flight plans are not as common as they used to be in the world of ADS-B and flight following. However, it is a task element to be able to explain the elements of a VFR flight plan. A common challenge is for an applicant to not be able to explain how to file, open and close a VFR flight plan.",
-        },
-      },
-      E: {
-        title: "Task E: National Airspace System",
-        content:
-          "Many DPEs will bake this topic into the flight planning and use a sectional to go over this task during your cross-country review. A common method to approach this is for them to ask you about the airspace along your route of flight and to then pick out random other airspace or chart symbols as needed to cover all the ground on this topic that is in their plan of action.",
-        commonErrors: [
-          'A common error on this topic is not having down cold the A-G airspace definitions, their weather mins and entry requirements. You do not have time to look this up while flying. Its expected you know these "cold" just like the aircraft V speeds your CFI drilled into you.',
-          "In the Midwest we have a lot of the same types of airspace. However, with the ease of EFBs, a DPE may take you for a virtual trip out to visit airspace you are not familiar with. A common error is not being able to identify the requirements and/or use of using special use airspace, warning areas, Class Charlie's, TRSA's, etc.",
+          "PRIVATE:",
+          'A common scenario as a private pilot is asking about taking a friend or family member somewhere and how the costs of that flight can or cannot be shared and even if the flight is legal to make. It\'s a common error to not understand the term "common purpose" and assume that just because you pay your share, the flight is legal.',
+          "COMMERCIAL: ",
+          "For commercial applicants, there are a lot of nuances to the regulations around when it is appropriate to be paid, when you are crossing the line into a regulated charter operation and the responsibilities of the operator vs. the pilot. There are many resources on navigating these scenarios online, FAA interpretation letters, and commercial training resources. Is a common error to not be able to talk through a hypothetical scenario and be able to defend your answer using appropriate FAA resources.",
         ],
       },
-      F: {
+      {
+        step: "B",
+        title: "Task B: Airworthiness Requirements",
+        descriptions: [
+          "This task has gotten the better of some pilot applicants simply because they couldn't get past the rote understanding of these topics. It can break down when given a scenario by the DPE to talk through a hypothetical flight and aircraft. Often, he or she will use the aircraft you will be flying to talk through many of these items. Be sure to pre-mark all inspection items and compliance items so you can easily show them to the examiner.",
+          "Your scenario will likely also give you something 'broke' on the airplane and that will spur a conversation that walks through the various airworthiness regulations and different types of equipment lists. The DPE will want to hear you talk through the regulations (e.g. 91.205) and various types of equipment lists, be able to explain what those lists are and if/how they are relevant to your aircraft.",
+          "A lot of applicants also miss what to do if something is found inop. They know they need to placard it, but often forget about the required aircraft logbook entry and who can make that entry. This is a critical step—deactivating and placarding isn't enough without the proper documentation to keep the aircraft's maintenance records accurate and the next pilot informed.",
+        ],
+      },
+      {
+        step: "C",
+        title: "Task C: Weather Information",
+        descriptions: [
+          "The weather task can be divided into two parts: theory and application. Not having a good grasp of the knowledge areas listed in this task is a common issue and one frequent pain point is atmospheric composition and stability.",
+          "For example, applicants struggle at times to explain wind shear (what it is) and/or what to do when faced with it. Another example: In the Midwest we don't have mountains, the impact of mountains on a pilot are sometimes not well remembered.",
+          "Application is a key thing DPEs are looking for and often see weakness in. For example, being able to explain different cloud types and then, more importantly, applying that knowledge to your VFR flight. It's good that you can explain what a cold front vs. warm front is, but can you explain how they can impact a flight?",
+          "Often your cross-country assignment will be the basis of your weather discussion. You likely will be asked to make hypothetical go/no-go decisions. Do you have personal minimums documented? Often a DPE will press you on your decision not to change your mind, but to see if you can smartly defend it.",
+          "A counter-intuitive common error is to just default to a 'no go' decision. Applicants often feel that is the 'safe' answer. It's only safe if you can defend it well.",
+          "Finally, another common error is not being able to explain all the various ways to get weather information and the best use cases and limitations of each (e.g., EFB, aviationweather.gov, Flight Service). A common issue with contacting flight service is not knowing how to use the sectional to obtain the radio frequency information and the name of the service you are speaking to.",
+        ],
+      },
+      {
+        step: "D",
+        title: "Task D: Cross-Country Flight Planning",
+        descriptions: [
+          "It is permissible to use an electronic Flight Bag (e.g. ForeFlight) OR Paper nav logs and paper or electronic sectionals to aid in your flight planning. The biggest common error seen here is the lack of understanding around what the EFB is calculating for you.",
+          "Did you build your aircraft profile using current conditions and performance charts? Or have you used the defaults from two seasons ago? Have you compared your EFB weight and balance to one you calculated manually to ensure it is right? If you can't talk through how an electronic W&B works, a DPE often will ask you to fill out a paper one in front of them.",
+          "Another common error is how to account for compass errors in an EFB. On a paper nav log, this is a built-in column. How does a pilot account for this with an EFB? Some applicants can't explain that.",
+          "When using an EFB, sometimes applicants struggle with identifying information found in the Chart Supplement. It is common for applicants to struggle to determine where to get that information in an EFB. If you get stumped, be able to find the answer using the EFB and/or the FAA's Aeronautical Chart User Guide.",
+          "A common error across paper and electronic formats is making sure there is consistency in speeds (e.g., MPH vs. Knots) and understanding the difference between true north and magnetic north and when they are used.",
+          "Fuel planning can be a challenge. Are you being conservative, and can you demonstrate good judgement? Often applicants will oversimplify their fuel planning explanation, especially when planning electronically, because they don't see the calculations being made.",
+          "Altitude selection is a struggle for many applicants when they fixate on one data point like winds. However, airspace, obstacles, terrain, endurance, clouds, and turbulence should all be well accounted for.",
+          "A common challenge is for an applicant to not be able to explain how to file, open, and close a VFR flight plan, as it's not as common in the world of ADS-B and flight following.",
+        ],
+      },
+      {
+        step: "E",
+        title: "Task E: National Airspace System",
+        descriptions: [
+          "Many DPEs will bake this topic into the flight planning and use a sectional to go over this task during your cross-country review. They will ask you about the airspace along your route of flight and then pick out random other airspace or chart symbols.",
+          "A common error on this topic is not having down cold the A-G airspace definitions, their weather mins, and entry requirements. You do not have time to look this up while flying. It's expected you know these 'cold' just like your aircraft V speeds.",
+          "With the ease of EFBs, a DPE may take you for a virtual trip out to visit airspace you are not familiar with. A common error is not being able to identify the requirements for special use airspace, warning areas, Class Charlie airspace, TRSAs, etc. Don't just know your local airspace; be prepared to interpret any airspace on the sectional.",
+        ],
+      },
+      {
+        step: "F",
         title: "Task F: Performance and Limitations",
-        content:
-          "Again, this is often baked into the cross-country flight planning exercise the DPE assigns an applicant. The DPE will expect an applicant to be familiar with all of the performance charts applicable to your aircraft and use them correctly during your flight planning. A best practice we recommend is printing off the most common charts and using a ruler and pencil to mark them up with the output expected for the performance parameters you are facing for your checkride (expected temps, weight and balance, runway, winds, etc.). This prevents many stress-induced errors trying to interpret on the fly.",
-        commonErrors:
-          "Common errors include not using the right chart or right part of the chart for the given weight parameter you need, not making use of the more conservative number when faced with an in-between answer, not accounting for your level of proficiency or experience when using the output of a chart (are you as good as Piper's test pilot?), etc.",
-        aerodynamics:
-          "Aerodynamics is included in this task. The DPE is not going to expect you to fill out the lift equation and complete the math to explain how the plane flies, but they are expected to hold you to the explanations the FAA offers in the Pilot's Handbook of Aeronautical Knowledge and related sources.",
+        descriptions: [
+          "This is often baked into the cross-country flight planning exercise. The DPE will expect you to be familiar with all of the performance charts applicable to your aircraft and use them correctly.",
+          "A best practice is printing off the most common charts and using a ruler and pencil to mark them up with the output expected for your checkride conditions. This prevents many stress-induced errors.",
+          "Common errors include not using the right chart for the given weight, not using the more conservative number when faced with an in-between answer, and not accounting for your level of proficiency when using the output of a chart (are you as good as the manufacturer's test pilot?).",
+          "Aerodynamics is included in this task. The DPE is not going to expect you to fill out the lift equation, but they will expect you to explain aerodynamic principles to the standard found in the Pilot's Handbook of Aeronautical Knowledge.",
+        ],
       },
-      G: {
+      {
+        step: "G",
         title: "Task G: Operations of Systems",
-        content:
-          "Put bluntly, you need to know your airplane extremely well. Some of this topic may be covered during the oral and some of it may continue into the pre-flight or even the flight. You must know about every piece of equipment and switch in your aircraft. If it works, its fair game for a DPE to ask you to show them how to use it, explain what it is, or tell them what does. If it doesn't work, be prepared to show the DPE how the aircraft complies with the applicable regulations on handling inoperative equipment.",
-        commonErrors: {
-          oral: "A common error during the oral is not being able to explain the flight instruments and how they work. The principal of rigidity in space and how it makes some of our flight instruments work is a weak area in many orals. Understanding the power sources for the various instruments and how they work is sometimes a weak area as well. If your instruments are electronic, its sometimes challenging for a student to convey how they differ from traditional instruments.",
-          preflight:
-            "During the preflight, if the cowling of your aircraft engine is easy to open, expect the DPE to ask you do perform some show and tell. They may point at something and ask you to tell them what it is and how it works. Be sure your CFI has done this with you a few times. You are not a mechanic, but you are expected to know how all systems operate at a basic level. A common error during the oral is not referencing the POH or manufacturer information to walk through the details when a DPE is asking you to task your explanation a bit further.",
-          equipmentFailure:
-            'During your flight portion the DPE may "Fail" some piece of equipment and expect you to handle it. However, they may also talk you through a scenario on the ground and it\'s a common error for an applicant to not be able to work through a logical flow of what to do. For example, there was a video circulating on the internet of a pilot who lost his electrical system. He panicked and decided he had to land immediately. Unfortunately, he was so bent on landing that he crashed into the rear of another plane that had just landed a few moments sooner than he did. Can you explain how an electrical failure does or does not impact engine operation and how you could better handle a situation like this?',
-          avionics:
-            "Another common error is not having basic mastery of the avionics on your aircraft. If you have a GPS/Comm/Nav system such as a Garmin 650/750XI and a pair of G5s, you need to be able to use the functions the DPE asks you to use. Study the manuals for your avionics and/or use the simulator apps for those products to be familiar enough with them that you can navigate the user interface well. Applicants have failed a private pilot checkride for not knowing how to change the Garmin 650xi and G5 from GPS mode to ground based nav mode, tuning to a VOR, and navigating to it. Sure, they did it a few times in training, but they froze up during the checkride because they were not at a level of mastery to break past the mental block they encountered.",
-        },
+        descriptions: [
+          "Put bluntly, you need to know your airplane extremely well. Some of this topic may be covered during the oral and some may continue into the pre-flight or even the flight. You must know about every piece of equipment and switch in your aircraft.",
+          "A common error during the oral is not being able to explain the flight instruments and how they work. The principle of rigidity in space and how it makes gyroscopic instruments work is a weak area. Understanding the power sources for the various instruments is another.",
+          "During the preflight, if the cowling is easy to open, expect the DPE to ask you to perform some show and tell. You are not a mechanic, but you are expected to know how all systems operate at a basic level. A common error is not referencing the POH to walk through the details when asked.",
+          "During your flight, the DPE may 'fail' a piece of equipment. A common error is not being able to work through a logical flow of what to do. For example, can you explain how an electrical failure does or does not impact engine operation and how you would handle it?",
+          "Another common error is not having basic mastery of the avionics. If you have a GPS like a Garmin 650/750, you need to be able to use its functions. Study the manuals and use simulator apps. Applicants have failed for not knowing how to switch from GPS to VLOC mode and tune a VOR.",
+        ],
       },
-      H: {
+      {
+        step: "H",
         title: "Task H: Human Factors",
-        content:
-          "This is a task where a some of applicants get stuck going past rote answers. DPEs will expect applicants to be able to define IMSAFE, PAVE and other templates for managing the risk of the items in this task.",
-        standard:
-          "To meet the standard for this task item, a DPE needs to be satisfied with two things: Does this applicant know what the aeromedical and physiological risks of flight are and do they possess the needed skills to assess those risks and mitigate them well?",
-        commonError:
-          "A common error is being able to know them but failing to assess them well. For example: If you can't name every exact type of hypoxia, but you know most of them and can look up any you missed, that's good. But to hit the mark you need to be able to explain what to do to avoid becoming hypoxic, the symptoms if it does happen, and what action to take.",
+        descriptions: [
+          "This is a task where some applicants get stuck giving just rote answers. DPEs will expect you to be able to define IMSAFE, PAVE, and other risk management templates.",
+          "To meet the standard, a DPE needs to be satisfied with two things: Does this applicant know the aeromedical and physiological risks of flight, and do they possess the skills to assess and mitigate them well?",
+          "A common error is being able to recite the acronyms but failing to apply them well in a scenario. For example: If you can't name every exact type of hypoxia, that's okay if you can look it up. But you must be able to explain what to do to avoid it, the symptoms if it happens, and the immediate actions to take. The application of the knowledge is more important than just memorization.",
+        ],
       },
-    },
+    ],
   },
 
   // cards container
   flightErrors: {
+    upperTitle: "Flight Errors",
     title:
       "Common Private and Commercial Flight Errors (Courtesy of DPE Brian Park)",
+    description: "Most common flight errors in maneuvers",
     maneuvers: {
       softFieldTakeoff: {
         title: "Soft-Field Takeoff and Climb",

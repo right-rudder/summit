@@ -51,7 +51,8 @@ import ImageComp from "./ImageComp.astro";
               <div class="my-8 flex flex-wrap justify-center gap-8 lg:gap-0">
                 <div class="relative pt-32 lg:pt-16 flex flex-col justify-center items-center w-full lg:w-1/2">
                   <h3 class="absolute top-0 left-0 text-9xl font-light text-main-red">
-                    {index + 1}
+                    {step.step && step.step}
+                    {!step.step && index + 1}
                   </h3>
                   <div class="text-center lg:text-right pr-6">
                     <h3 class="text-3xl font-bold tracking-tight text-main-red">
@@ -65,8 +66,10 @@ import ImageComp from "./ImageComp.astro";
                 <div class="flex flex-col justify-center items-center w-full lg:w-1/2">
                   <ImageComp
                     styles="object-cover rounded"
-                    imagePath={step.imagePath}
-                    imageAlt={step.imageAlt}
+                    imagePath={
+                      step.imagePath || "/src/assets/placeholder-img.webp"
+                    }
+                    imageAlt={step.imageAlt || "Image Placeholder"}
                   />
                 </div>
               </div>
@@ -88,8 +91,10 @@ import ImageComp from "./ImageComp.astro";
                 <div class="flex flex-col justify-center items-center w-full lg:w-1/2">
                   <ImageComp
                     styles="object-cover rounded"
-                    imagePath={step.imagePath}
-                    imageAlt={step.imageAlt}
+                    imagePath={
+                      step.imagePath || "/src/assets/placeholder-img.webp"
+                    }
+                    imageAlt={step.imageAlt || "Image Placeholder"}
                   />
                 </div>
               </div>
