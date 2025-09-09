@@ -1,9 +1,13 @@
 ---
 import ImageComp from "../ImageComp.astro";
-import QuizModalButton from "../QuizModalButton";
-const GHL_QUIZ_FORM_WEBHOOK_URL = import.meta.env.GHL_QUIZ_FORM_WEBHOOK_URL;
-const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
-const { city, text1 } = Astro.props;
+const example = {
+  upperTitle: "Build confidence in your craft",
+  title: "Do You Have What It Takes To Be A Pilot?",
+  descriptions: [
+    "Begin your path to becoming a pilot with our brief quiz. Our quiz is designed to look at your aviation-related knowledge and aptitude, alongside your unique personality traits and interests, to provide insights into whether a future in aviation aligns with your aspirations.",
+  ],
+};
+const { city, text1, content = example } = Astro.props;
 ---
 
 <div class="relative bg-gray-900">
@@ -46,37 +50,22 @@ const { city, text1 } = Astro.props;
       class="pl-6 pr-6 md:ml-auto md:w-1/2 md:pl-16 lg:w-1/2 lg:pl-24 lg:pr-0 xl:pl-32 text-center lg:text-left"
     >
       <h2 class="text-base font-semibold leading-7 text-gray-400">
-        Build confidence in your craft
+        {content.upperTitle}
       </h2>
       <p class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">
         {
           city
             ? `Do You Have What It Takes To Be A Pilot near ${city}?`
-            : "Do You Have What It Takes To Be A Pilot?"
+            : content.title
         }
       </p>
-      <p class="mt-6 text-base leading-7 text-gray-200">
-        {
-          text1
-            ? text1
-            : "Are you fascinated by flying and aviation? Have you dreamed of being a pilot? Do you wonder what it takes to fly a plane?"
-        }
-      </p>
-      <p class="mt-6 text-base leading-7 text-gray-200">
-        Begin your path to becoming a pilot with our brief quiz. Our quiz is
-        designed to look at your aviation-related knowledge and aptitude,
-        alongside your unique personality traits and interests, to provide
-        insights into whether a future in aviation aligns with your aspirations.
-      </p>
-      <div class="mt-8">
-        <QuizModalButton
-          btnStyle="btn-red"
-          btnText="Take the Quiz"
-          client:visible
-          webhookUrl={GHL_QUIZ_FORM_WEBHOOK_URL}
-          apiKey={PORTAL_API_KEY}
-        />
-      </div>
+      {text1 && <p class="mt-6 text-base leading-7 text-gray-200">{text1}</p>}
+
+      {
+        content.descriptions.map((description) => (
+          <p class="mt-6 text-base leading-7 text-gray-200">{description}</p>
+        ))
+      }
     </div>
   </div>
 </div>
