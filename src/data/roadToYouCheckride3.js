@@ -160,8 +160,8 @@ export const CHECKRIDE_GUIDE = {
     title:
       "Common Private and Commercial Flight Errors (Courtesy of DPE Brian Park)",
     description: "Most common flight errors in maneuvers",
-    maneuvers: {
-      softFieldTakeoff: {
+    cards: [
+      {
         title: "Soft-Field Takeoff and Climb",
         standards: [
           "IV.C.S6: Clear the area, maintain necessary flight control inputs, taxi into takeoff position and align the airplane on the runway centerline without stopping, while advancing the throttle smoothly to takeoff power.",
@@ -170,7 +170,7 @@ export const CHECKRIDE_GUIDE = {
         commonErrors:
           "Common errors that I observe are insufficient back-elevator pressure during taxi into takeoff position, taxiing too quickly onto the runway and therefore having to use brakes while taxiing into takeoff position, and not remaining in ground in effect while accelerating to Vx or Vy.",
       },
-      softFieldLanding: {
+      {
         title: "Soft-Field Approach and Landing",
         standards: [
           "IV.D.S9: Make smooth, timely, and correct control inputs during the round out and touchdown, and, for tricycle gear airplanes, keep the nose wheel off the surface until loss of elevator effectiveness.",
@@ -178,7 +178,7 @@ export const CHECKRIDE_GUIDE = {
         commonErrors:
           'Common errors that I observe are hard touchdown and allowing the nose-wheel to "fall" to the runway after touchdown rather than controlling its descent. The standard requires an applicant to keep the nose wheel off the surface until loss of elevator effectiveness and all too often an applicant will land and lower the nose similar to a normal landing without much attempt at applying back-elevator pressure during the rollout.',
       },
-      shortFieldTakeoff: {
+      {
         title: "Short-Field Takeoff and Maximum Performance Climb",
         standards: [
           "IV.E.S6: Clear the area, taxi into takeoff position, and align the airplane on the runway centerline utilizing maximum available takeoff area.",
@@ -186,7 +186,7 @@ export const CHECKRIDE_GUIDE = {
         commonErrors:
           "A common error that I observe is the failure to utilize all available runway/takeoff area. There is often little difference between an applicant's taxi into takeoff position for a normal takeoff and a short-field takeoff.",
       },
-      shortFieldLanding: {
+      {
         title: "Short-Field Approach and Landing",
         privateStandards: [
           "IV.F.S7: Maintain manufacturer's published approach airspeed or in its absence not more than 1.3Vso, +10/-5 knots with gust factor applied.",
@@ -201,7 +201,7 @@ export const CHECKRIDE_GUIDE = {
         commonErrors:
           'Common errors that I observe are too high an airspeed resulting in floating on round out, touchdown with excessive airspeed, and not applying adequate braking after touchdown. Applicants often have difficulty controlling their airspeed on final and it is common for them to come in at a higher landing approach airspeed than normal. This will typically result in a float past their intended point of landing and sometimes cause the applicant to force the plane onto the runway before it is ready to land. Another common observation involves braking. I understand the desire to extend the life of the brakes, but applicants often do not brake at all and just announce "simulate maximum braking." I am concerned this creates a negative transfer of learning and does not align with the manufacturer\'s recommended procedure for airplane braking. During a test, we often pass multiple taxiways suitable for exiting the runway because the applicant is not even applying normal braking. If brakes or tires are a concern, I request that the applicant at least uses normal braking after touchdown.',
       },
-      powerOff180: {
+      {
         title: "Power-Off 180 Accuracy Approach and Landing",
         standards: [
           "IV.M.S8: Touch down at a proper pitch attitude, within 200 feet beyond or on the specified point with no side drift and with the airplane's longitudinal axis aligned with and over the runway centerline or landing path, as applicable.",
@@ -209,7 +209,7 @@ export const CHECKRIDE_GUIDE = {
         commonErrors:
           "A common error that I observe is forcing the airplane onto the runway to avoid overshooting the designated landing spot. Typically, applicants will use the 1000ft markings on the runway which are 150 feet long. The standard requires they touchdown 200 feet beyond that point. So, the touchdown needs to basically be within a 350 foot long landing point and often the tendency is to drift long on these because the applicants are approaching the runway too fast.",
       },
-      steepTurns: {
+      {
         title: "Steep Turns",
         standards: [
           "V.A.S5: Maintain the entry altitude +/-100 feet, airspeed +/-10 knots, bank +/-5 degrees, and roll out on the entry heading +/-10 degrees.",
@@ -217,7 +217,7 @@ export const CHECKRIDE_GUIDE = {
         commonErrors:
           "Common errors that I observe are gaining or losing altitude, ineffective use of trim, ineffective use of power, and inadequate airspeed control. The two biggest challenges I see with this maneuver are altitude and speed control. Altitude because I don't think the applicants are properly adjusting trim and airspeed because applicants are not properly adjusting power.",
       },
-      groundReference: {
+      {
         title: "Ground Reference Maneuvers",
         standards: [
           "V.B.S4: Apply adequate wind-drift correction during straight and turning flight to maintain a constant ground track around a rectangular reference area, or to maintain a constant radius turn on each side of a selected reference line or point.",
@@ -226,7 +226,7 @@ export const CHECKRIDE_GUIDE = {
         commonErrors:
           "Common errors that I observe are failure to establish a constant level altitude prior to entering the maneuver, failure to maintain altitude during the maneuver, and failure to properly assess wind direction which leads to an inability to maintain constant radius turns. Applicants have enough time to set up for this maneuver and typically don't set up properly prior to entering their first turn. Their altitude is not stable, the power is not set to a desired level, and the trim is not adjusted. During the maneuver it appears that they struggle to maintain altitude when this could have been prevented with taking a little time to properly configure their aircraft prior to the maneuver. Additionally, most aircraft have some sort of wind direction and velocity indicator on one or multiple screens in the cockpit. If this information is present in the cockpit, it greatly benefits the applicant by taking out the guess work of where to bank more and where to bank less throughout the turn. If the information is not present in the cockpit, have the applicant look at winds aloft prior to departure to get a general idea of what the winds will be doing during their flight.",
       },
-      eightsOnPylons: {
+      {
         title: "Eights on Pylons",
         standards: [
           "V.E.S6: Apply smooth and continuous corrections so that the line-of-sight reference line remains on the pylon.",
@@ -234,7 +234,7 @@ export const CHECKRIDE_GUIDE = {
         commonErrors:
           'Common errors that I observe are excessive gain or loss of altitude, abrupt control usage, and failure to time the bank so that the entry turn is completed with the pylon in position. It is common for applicants to make their entry turn late which starts the maneuver with their pylon behind their reference line of sight often resulting in the applicant drastically pitching up to start the maneuver. Conversely as we come around the pylon the opposite is then needed, and several hundred feet is often lost descending to "catch" the pylon.',
       },
-      pilotageDeadReckoning: {
+      {
         title: "Pilotage and Dead Reckoning",
         standards: [
           "VI.A.S2: Navigate by pilotage.",
@@ -243,7 +243,7 @@ export const CHECKRIDE_GUIDE = {
         content:
           "This task uses the cross-country flight plan the applicant prepared to navigate by means of pilotage and dead reckoning. The applicant should include two to three visual waypoints within the first 25nm or so of their cross-country flight plan (if they don't then I will have them redo it prior to departure). Top of climb, VORs, etc. are not visual waypoints (at least not good ones for the applicant because they need to be visually identified). This task requires the ability to look outside the aircraft and identify the waypoints they've chosen. It also requires they fly the headings they've computed and arrive at their waypoints relatively on time. There is no use of GPS during this task, so have them plan accordingly. They should use their heading indicator, a clock (please please please have them start a timer), and visual references on the ground to navigate to a few points and then we are good to go.",
       },
-      lostProcedures: {
+      {
         title: "Lost Procedures",
         standards: [
           "VI.D.S1: Use an appropriate method to determine position.",
@@ -252,7 +252,7 @@ export const CHECKRIDE_GUIDE = {
         commonErrors:
           "Applicants often do not have any method ready to go when asked to determine their position using lost procedures. I always do this maneuver at a lower altitude and while the applicant considers what they would do if they were lost, we often fly the same heading and same altitude for several minutes. Even if cross radials are used, they are not staying in the same area so the point they often determine to be their position is somewhere behind their actual position. Applicants can climb, circle, or fly to a prominent landmark and stay there until they determine their position?",
       },
-      emergencyDescent: {
+      {
         title: "Emergency Descent",
         standards: [
           "IX.A.S4: Use bank angle between 30 degrees and 45 degrees to maintain positive load factors during the descent.",
@@ -261,7 +261,7 @@ export const CHECKRIDE_GUIDE = {
         commonErrors:
           "Common errors that I observe are applicants not using a bank of 30-45 degrees throughout the entire descent (sometimes just at the beginning then roll wings level) and descending below the specified altitude. I typically give a descent of approximately 2000 feet. For example, if we are at 5500 feet, I will tell them they have an engine fire and request they begin an emergency descent. Before they start the descent, I will let them know that once they reach 3500 the airplane is back to normal again and they can level off and roll wings level on whatever heading they end up on. Often I have to remind them of the level off altitude as they are rapidly descending through 3500.",
       },
-      emergencyLanding: {
+      {
         title: "Emergency Approach and Landing (Simulated)",
         standards: [
           "IX.B.S1: Establish and maintain the recommended best glide airspeed, +/-10 knots.",
@@ -270,6 +270,6 @@ export const CHECKRIDE_GUIDE = {
         commonErrors:
           "Common errors that I observe are not maintaining the recommended best glide airspeed and not setting up for a landing that considers wind direction. Applicants often say they are establishing best glide airspeed, but will get distracted by something else and not pay much attention to their airspeed throughout the descent. Often trim is not used to maintain the best glide airspeed, so unless constant instrument scanning is used the applicant's airspeed will often fluctuate quite a bit. Applicants will typically pick an acceptable landing area but will not consider wind direction and often set up to land with a tailwind. Again, most aircraft I test in have wind direction and velocity indicators which can be a great advantage if the applicant uses it. If the information is not present in the cockpit, have the applicant look at winds aloft prior to departure to get a general idea of what the winds will be doing during their flight.",
       },
-    },
+    ],
   },
 };
