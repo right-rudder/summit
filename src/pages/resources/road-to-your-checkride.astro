@@ -7,19 +7,28 @@ import StartToday from "../../components/StartToday.astro";
 import FAQs from "../../components/FAQs";
 import { CheckrideFAQs as GeneralFAQs } from "../../data/checkrideFAQs";
 import EnrollNowCTA from "../../components/EnrollNowCTA.astro";
-import EnrollmentModalButton from "../../components/enrollmentModalButtom";
 import UnderHeaderVideo from "../../components/UnderHeaderVideo.astro";
 import CheckRideRoadMap from "../../components/CheckRideRoadMap.astro";
 import CardWhite from "../../components/CheckrideComponents/CardWhite.astro";
 import CardBlue from "../../components/CheckrideComponents/CardBlue.astro";
 import CardsContainer from "../../components/CheckrideComponents/CardsContainer.astro";
-const GHL_ENROLL_FORM_WEBHOOK_URL = import.meta.env.GHL_ENROLL_FORM_WEBHOOK_URL;
-const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
 
 const header = {
   title: "Your Road to the Private Pilot Checkride",
   description:
     "Prepare for your FAA private pilot checkride with a step-by-step guide covering flight training milestones, knowledge exams, and practical test tips.",
+  btns: [
+    {
+      title: "Download Guide",
+      link: "/files/Road To Your Checkride.pdf",
+      blank: true,
+    },
+    {
+      title: "Details",
+      link: "#",
+      blank: false,
+    },
+  ],
 };
 ---
 
@@ -29,7 +38,7 @@ const header = {
   pageKeywords="private pilot checkride, FAA practical test, pilot training, flight test, Summit Flight Academy"
 >
   <header
-    class="relative h-screen-3/4 bg-new-to-flying bg-cover bg-center bg-black flex flex-col items-center justify-center"
+    class="relative pt-24 py-12 lg:py-24 h-full bg-new-to-flying bg-cover bg-center bg-black flex flex-col items-center justify-center"
   >
     <!-- bg-overlay to darken -->
     <div
@@ -38,21 +47,31 @@ const header = {
     </div>
     <!-- Text -->
     <div
-      class="text-white text-center lg:text-left z-10 flex flex-col items-center gap-4 px-5 h-full lg:pt-28 justify-center"
+      class="text-white text-center z-10 flex flex-col items-center gap-4 px-5 h-full lg:pt-28 justify-center"
     >
-      <h1 class="text-5xl font-bold tracking-tight animate-slow-fade">
+      <h1
+        class="text-3xl lg:text-5xl font-bold tracking-tight animate-slow-fade"
+      >
         {header.title}
       </h1>
-      <h2 class="text-3xl tracking-wide animate-slow-fade">
+      <h2
+        class="text-lg lg:text-3xl tracking-wide animate-slow-fade text-center text-pretty px-5"
+      >
         {header.description}
       </h2>
-      <EnrollmentModalButton
-        client:visible
-        btnStyle={"btn-red animate-slow-fade"}
-        btnText={"Apply Today"}
-        webhookUrl={GHL_ENROLL_FORM_WEBHOOK_URL}
-        apiKey={PORTAL_API_KEY}
-      />
+      <div class="flex gap-2 items-center justify-center flex-wrap">
+        {
+          header.btns.map((btn) => (
+            <a
+              href={btn.link}
+              class="btn-red"
+              target={btn.blank ? "_blank" : "_self"}
+            >
+              {btn.title}
+            </a>
+          ))
+        }
+      </div>
     </div>
   </header>
 
