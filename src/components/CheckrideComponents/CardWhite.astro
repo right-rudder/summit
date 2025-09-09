@@ -1,10 +1,10 @@
 ---
 import ImageComp from "../ImageComp.astro";
 const example = {
-  uppertitle: "Taking Off",
+  upperTitle: "Taking Off",
   title: "How to Become a Pilot",
   imagePath:
-    "/src/assets/summit-flight-academy-front-view-of-Piper-PA-28-Cherokee.webp",
+    "/src/assets/student-receiving-certificate-shaking-hands-instructor.webp",
   imageAlt: "summit-flight-academy-front-view-of-Piper-PA-28-Cherokee",
   descriptions: [
     "Embark on the exciting journey to becoming a pilot with Summit Flight Academy by following these structured steps.",
@@ -84,7 +84,7 @@ const { content = example } = Astro.props;
             class="text-base font-semibold leading-7 text-red-600 text-center lg:text-left"
             aria-hidden="true"
           >
-            {content.uppertitle}
+            {content.upperTitle}
           </span>
           <h2
             class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl text-center lg:text-left"
@@ -108,7 +108,17 @@ const { content = example } = Astro.props;
                   <div class="relative pl-9">
                     <dt class="inline font-semibold text-gray-900">
                       <div>
-                        <Fragment set:html={bullet.icon} />
+                        {!bullet.icon && (
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            fill="currentColor"
+                            class="absolute left-1 top-1 h-5 w-5 text-red-600"
+                          >
+                            <path d="M21.731 2.269a2.625 2.625 0 0 0-3.712 0l-1.157 1.157 3.712 3.712 1.157-1.157a2.625 2.625 0 0 0 0-3.712ZM19.513 8.199l-3.712-3.712-12.15 12.15a5.25 5.25 0 0 0-1.32 2.214l-.8 2.685a.75.75 0 0 0 .933.933l2.685-.8a5.25 5.25 0 0 0 2.214-1.32L19.513 8.2Z" />
+                          </svg>
+                        )}
+                        {bullet.icon && <Fragment set:html={bullet.icon} />}
                       </div>
                       {bullet.title}
                     </dt>
@@ -118,11 +128,12 @@ const { content = example } = Astro.props;
             }
             <div>
               {
-                content.afterDescriptions.map((description) => (
-                  <p class="text-lg font-semibold text-center lg:text-left">
-                    {description}
-                  </p>
-                ))
+                content.afterDescriptions &&
+                  content.afterDescriptions.map((description) => (
+                    <p class="text-lg font-semibold text-center lg:text-left">
+                      {description}
+                    </p>
+                  ))
               }
             </div>
           </dl>
@@ -139,9 +150,9 @@ const { content = example } = Astro.props;
       </div>
       <div class="flex items-center justify-end lg:order-first">
         <ImageComp
-          imagePath={content.imagePath}
-          imageAlt={content.imageAlt}
-          styles="w-[48rem] max-w-none shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]"
+          imagePath={content.imagePath || example.imagePath}
+          imageAlt={content.imageAlt || example.imageAlt}
+          styles="w-[48rem] lg:aspect-[9/16] lg:h-full object-cover  max-w-none shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]"
         />
       </div>
     </div>
