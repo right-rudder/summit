@@ -84,12 +84,6 @@ const header = {
 
   <CardWhite content={CHECKRIDE_GUIDE.scheduling} />
 
-  <UnderHeaderVideo
-    title="How to Get Started"
-    videoId="jsqzAKMlHZQ"
-    description="Meet Andrew, a Certified Flight Instructor (CFI) at Summit Flight Academy with a passion for guiding students through their first flying experience. Andrew has been a part of the Summit team for six months and loves helping aspiring pilots achieve their dreams. Andrew walks you through the experience of taking off, climbing, and maneuvering a small aircraft for the first time."
-  />
-
   <CardBlue content={CHECKRIDE_GUIDE.oralExamInsight} />
 
   <CheckRideRoadMap
@@ -98,7 +92,13 @@ const header = {
     content={CHECKRIDE_GUIDE.acsTasks.steps}
   />
 
-  <CardsContainer />
+  <CardsContainer content={CHECKRIDE_GUIDE.flightErrors} />
+
+  <UnderHeaderVideo
+    title="How to Get Started"
+    videoId="jsqzAKMlHZQ"
+    description="Meet Andrew, a Certified Flight Instructor (CFI) at Summit Flight Academy with a passion for guiding students through their first flying experience. Andrew has been a part of the Summit team for six months and loves helping aspiring pilots achieve their dreams. Andrew walks you through the experience of taking off, climbing, and maneuvering a small aircraft for the first time."
+  />
   <FAQs faqs={GeneralFAQs} type="General" client:visible />
 
   <EnrollNowCTA />
