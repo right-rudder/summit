@@ -8,7 +8,7 @@ import CheckRideRoadMap from "../../components/CheckRideRoadMap.astro";
 import CardWhite from "../../components/CheckrideComponents/CardWhite.astro";
 import CardBlue from "../../components/CheckrideComponents/CardBlue.astro";
 import CardsContainer from "../../components/CheckrideComponents/CardsContainer.astro";
-import { CHECKRIDE_GUIDE } from "../../data/roadToYouCheckride2";
+import { CHECKRIDE_GUIDE } from "../../data/roadToYouCheckride3";
 
 const header = {
   title: "Your Road to the Private Pilot Checkride",
@@ -78,7 +78,7 @@ const header = {
     videoId="rVbNTxcTwf4"
   />
 
-  <CardWhite />
+  <CardWhite content={CHECKRIDE_GUIDE.checkrideAndExaminer} />
 
   <CardBlue />
 
