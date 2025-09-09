@@ -10,30 +10,14 @@ const example = {
     {
       title: "Take a Discovery Flight",
       descriptions: [
-        "The best way to see if flying is right for you is to take a discovery flight. This brief introductory flight, led by one of our seasoned instructors, offers a first hand glimpse into the world of piloting. During this experience, you'll take the controls of the plane, acquaint yourself with maneuvers, and view the Kansas City from a new perspective.",
+        "The best way to see if flying is right for you is to take a discovery flight...",
       ],
       btns: [],
     },
     {
-      title: "Take a Discovery Flight",
-      descriptions: [
-        "The best way to see if flying is right for you is to take a discovery flight. This brief introductory flight, led by one of our seasoned instructors, offers a first hand glimpse into the world of piloting. During this experience, you'll take the controls of the plane, acquaint yourself with maneuvers, and view the Kansas City from a new perspective.",
-      ],
-      bullets: [
-        {
-          title: "Bullet 1",
-        },
-        {
-          title: "Bullet 2",
-        },
-      ],
-      btns: [],
-    },
-    {
-      title: "Take a Discovery Flight",
-      descriptions: [
-        "The best way to see if flying is right for you is to take a discovery flight. This brief introductory flight, led by one of our seasoned instructors, offers a first hand glimpse into the world of piloting. During this experience, you'll take the controls of the plane, acquaint yourself with maneuvers, and view the Kansas City from a new perspective.",
-      ],
+      title: "With Bullets",
+      descriptions: ["Example with bullets."],
+      bullets: [{ title: "Bullet 1" }, { title: "Bullet 2" }],
       btns: [],
     },
   ],
@@ -57,20 +41,52 @@ const { city, content = example } = Astro.props;
         {content.description}
       </p>
     </div>
+
     <div class="mx-auto mt-16 max-w-3xl sm:mt-20 lg:max-w-none">
       <div class="flex flex-wrap gap-8 items-center w-full">
         {
           content.cards.map((card) => (
-            <div class=" bg-gray-100 hover:bg-gray-200 transition duration-200 p-12 rounded-lg text-center align-middle pb-24 w-full flex-1 min-w-[400px]">
+            <div class="bg-gray-100 hover:bg-gray-200 transition duration-200 p-12 rounded-lg text-center align-middle pb-24 w-full flex-1 min-w-[400px]">
               <dt class="text-xl font-semibold leading-7 text-gray-900">
                 {card.title}
               </dt>
-              <dd class="mt-4 text-base leading-7 text-gray-600">
-                {card.descriptions}
-              </dd>
+
+              {/* ✅ Generic Descriptions */}
+              {card.descriptions &&
+                card.descriptions.map((text) => (
+                  <dd class="mt-4 text-base leading-7 text-gray-600">{text}</dd>
+                ))}
+
+              {/* ✅ Standards */}
+              {card.standards &&
+                card.standards.map((text) => (
+                  <dd class="mt-4 text-base leading-7 text-gray-600">{text}</dd>
+                ))}
+
+              {/* ✅ Common Errors */}
+              {card.commonErrors &&
+                card.commonErrors.map((text) => (
+                  <dd class="mt-4 text-base leading-7 text-gray-600">{text}</dd>
+                ))}
+
+              {/* ✅ Private Standards */}
+              {card.privateStandards &&
+                card.privateStandards.map((text) => (
+                  <dd class="mt-4 text-base leading-7 text-gray-600">{text}</dd>
+                ))}
+
+              {/* ✅ Commercial Standards */}
+              {card.commercialStandards &&
+                card.commercialStandards.map((text) => (
+                  <dd class="mt-4 text-base leading-7 text-gray-600">{text}</dd>
+                ))}
+
+              {/* ✅ Bullets (uses CardSimple) */}
               {card.bullets && (
-                <CardSimple title="Hello World" content={card.bullets} />
+                <CardSimple title="Key Points" content={card.bullets} />
               )}
+
+              {/* ✅ Buttons */}
               {card.btns &&
                 card.btns.map((btn) => (
                   <div class="mt-9 flex justify-center">
