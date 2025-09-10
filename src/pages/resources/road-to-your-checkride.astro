@@ -40,6 +40,33 @@ const header = {
   pageDescription="Learn everything you need to know about preparing for your private pilot checkride, including training milestones, FAA requirements, and tips for success."
   pageKeywords="private pilot checkride, FAA practical test, pilot training, flight test, Summit Flight Academy"
 >
+  <div class="overflow-hidden">
+    <nav
+      id="side-navbar"
+      class="flex fixed top-1/4 right-4 text-right flex-col gap-4 text-gray-400 z-50"
+    >
+      {
+        [
+          CHECKRIDE_GUIDE.checkrideAndExaminer.upperTitle,
+          CHECKRIDE_GUIDE.knowledgeTest.upperTitle,
+          CHECKRIDE_GUIDE.scheduling.upperTitle,
+          CHECKRIDE_GUIDE.oralExamInsight.upperTitle,
+          CHECKRIDE_GUIDE.acsTasks.upperTitle,
+          CHECKRIDE_GUIDE.flightErrors.upperTitle,
+          "faqs",
+        ].map((id) => (
+          <a
+            href={`#${id}`}
+            class="transition-all duration-300 text-xs lg:text-lg hover:text-red-500 hover:scale-110 hover:font-bold"
+            data-nav-link={id}
+          >
+            {id.replace(/([A-Z])/g, " $1")} {/* make camelCase more readable */}
+          </a>
+        ))
+      }
+    </nav>
+  </div>
+
   <header
     class="relative pt-24 py-12 lg:py-24 h-full bg-new-to-flying bg-cover bg-center bg-black flex flex-col items-center justify-center"
   >
@@ -123,4 +150,47 @@ const header = {
 
   <!-- Contact Us Form -->
   <!-- <ContactUs /> -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const sections = document.querySelectorAll<HTMLElement>("section, #faqs");
+      const navLinks =
+        document.querySelectorAll<HTMLAnchorElement>("[data-nav-link]");
+
+      function onScroll() {
+        let current = "";
+        sections.forEach((section) => {
+          const sectionTop = section.offsetTop - 150; // HTMLElement is safe
+          if (window.scrollY >= sectionTop) {
+            current = section.id; // safe, HTMLElement always has .id (string)
+          }
+        });
+
+        navLinks.forEach((link) => {
+          link.classList.remove("text-red-500", "scale-110", "font-bold");
+          if (link.dataset.navLink === current) {
+            link.classList.add("text-red-500", "scale-110", "font-bold");
+          }
+        });
+      }
+
+      window.addEventListener("scroll", onScroll);
+
+      // Smooth scroll
+      navLinks.forEach((link) => {
+        link.addEventListener("click", (e) => {
+          e.preventDefault();
+          const href = link.getAttribute("href");
+          if (!href) return; // safeguard
+          const id = href.substring(1);
+          const target = document.getElementById(id);
+          if (target) {
+            window.scrollTo({
+              top: target.offsetTop - 80,
+              behavior: "smooth",
+            });
+          }
+        });
+      });
+    });
+  </script>
 </BaseLayout>
