@@ -43,11 +43,11 @@ const { city, content = example } = Astro.props;
     </div>
 
     <div class="mx-auto mt-16 max-w-3xl sm:mt-20 lg:max-w-none">
-      <div class="flex flex-wrap -mx-4 items-start">
+      <div class="columns-1 sm:columns-2 lg:columns-3 gap-6">
         {
           content.cards.map((card) => (
-            <div class="px-4 mb-8 w-full sm:w-1/2 lg:w-1/3 flex flex-col">
-              <div class="bg-gray-100 hover:bg-gray-200 transition duration-200 p-8 rounded-lg flex-1 flex flex-col">
+            <div class="mb-6 break-inside-avoid">
+              <div class="bg-gray-100 hover:bg-gray-200 transition duration-200 p-8 rounded-lg">
                 <dt class="text-xl font-semibold leading-7 text-gray-900">
                   {card.title}
                 </dt>
