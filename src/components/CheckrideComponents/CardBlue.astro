@@ -1,5 +1,6 @@
 ---
 import ImageComp from "../ImageComp.astro";
+
 const example = {
   upperTitle: "Build confidence in your craft",
   title: "Do You Have What It Takes To Be A Pilot?",
@@ -12,49 +13,39 @@ const example = {
   imageAlt:
     "summit-flight-academy-lees-summit-kansas-city-missoury-pilot-training-flight-students-on-the-runway-pre-flight-checks",
 };
+
 const { city, text1, content = example } = Astro.props;
 ---
 
-<div class="relative bg-gray-900 flex flex-row-reverse">
-  <div class="bg-red-600 w-full md:w-1/2">
-    <ImageComp
-      styles="h-full w-full object-cover object-left"
-      imagePath={content.imagePath ||
-        "/src/assets/summit-flight-academy-lees-summit-kansas-city-missoury-pilot-training-flight-students-on-the-runway-pre-flight-checks.webp"}
-      imageAlt={content.imageAlt ||
-        "summit-flight-academy-lees-summit-kansas-city-missoury-pilot-training-flight-students-on-the-runway-pre-flight-checks"}
-      quality="90"
-    />
-  </div>
-  <div class="w-full md:w-1/2 py-24 sm:py-32 lg:px-8 lg:py-40">
-    <div class="w-full text-center lg:text-right">
+<div class="relative bg-gray-900 flex flex-col md:flex-row">
+  <!-- TEXT SIDE -->
+  <div
+    class="w-full md:w-1/2 py-16 px-6 sm:py-24 sm:px-8 lg:py-40 lg:px-12 flex items-center"
+  >
+    <section class="w-full text-center md:text-right">
       <h2 class="text-2xl font-semibold leading-7 text-gray-400">
         {content.upperTitle}
       </h2>
-      <p
-        class="my-6 block text-3xl font-bold tracking-tight text-white sm:text-4xl"
-      >
+
+      <h3 class="my-6 text-3xl font-bold tracking-tight text-white sm:text-4xl">
         {
           city
             ? `Do You Have What It Takes To Be A Pilot near ${city}?`
             : content.title
         }
-      </p>
-      {
-        text1 && (
-          <p class="py-6 block text-base leading-7 text-gray-200">{text1}</p>
-        )
-      }
+      </h3>
+
+      {text1 && <p class="py-6 text-base leading-7 text-gray-200">{text1}</p>}
 
       {
         content.descriptions.map((description) => (
-          <div class="flex justify-end items-center py-2 gap-4 pl-6">
+          <article class="flex justify-start md:justify-end items-start py-3 gap-4">
             {content.haveIcon && (
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
                 fill="currentColor"
-                class="h-6 w-6 text-red-600 bg-white rounded-full border-red-600 border-2"
+                class="lg:h-8 lg:w-8 h-6 w-6 text-red-600 bg-white rounded-full border-2 border-red-600 shrink-0"
               >
                 <path
                   fill="currentColor"
@@ -63,12 +54,22 @@ const { city, text1, content = example } = Astro.props;
               </svg>
             )}
 
-            <p class=" text-lg  text-gray-200 lg:text-justify">
+            <p class="text-base lg:text-lg text-gray-200 md:text-justify">
               <Fragment set:html={description} />
             </p>
-          </div>
+          </article>
         ))
       }
-    </div>
+    </section>
+  </div>
+
+  <!-- IMAGE SIDE -->
+  <div class="w-full md:w-1/2">
+    <ImageComp
+      styles="h-64 w-full object-cover object-center md:h-full"
+      imagePath={content.imagePath}
+      imageAlt={content.imageAlt}
+      quality="90"
+    />
   </div>
 </div>
