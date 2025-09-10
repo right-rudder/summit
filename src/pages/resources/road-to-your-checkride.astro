@@ -3,13 +3,13 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import FAQs from "../../components/FAQs";
 import { CheckrideFAQs as GeneralFAQs } from "../../data/checkrideFAQs";
 import EnrollNowCTA from "../../components/EnrollNowCTA.astro";
-import UnderHeaderVideo from "../../components/UnderHeaderVideo.astro";
 import CheckRideRoadMap from "../../components/CheckRideRoadMap.astro";
 import CardWhite from "../../components/CheckrideComponents/CardWhite.astro";
 import CardBlue from "../../components/CheckrideComponents/CardBlue.astro";
 import CardsContainer from "../../components/CheckrideComponents/CardsContainer.astro";
 import { CHECKRIDE_GUIDE } from "../../data/roadToYouCheckride3";
 import UnderHeader from "../../components/UnderHeader.astro";
+import ContactUs from "../../components/ContactUs.astro";
 
 const header = {
   title: "Your Road to the Private Pilot Checkride",
@@ -23,7 +23,12 @@ const header = {
     },
     {
       title: "Details",
-      link: "#",
+      link: `#${CHECKRIDE_GUIDE.checkrideAndExaminer.upperTitle}`,
+      blank: false,
+    },
+    {
+      title: "FAQs",
+      link: "#faqs",
       blank: false,
     },
   ],
@@ -80,20 +85,32 @@ const header = {
     text3="Read below to learn more about what to expect, how to prepare, and how to succeed during your checkride with a DPE."
   />
 
-  <CardWhite content={CHECKRIDE_GUIDE.checkrideAndExaminer} />
+  <section id={CHECKRIDE_GUIDE.checkrideAndExaminer.upperTitle}>
+    <CardWhite content={CHECKRIDE_GUIDE.checkrideAndExaminer} />
+  </section>
 
-  <CardBlue content={CHECKRIDE_GUIDE.knowledgeTest} />
+  <section id={CHECKRIDE_GUIDE.knowledgeTest.upperTitle}>
+    <CardBlue content={CHECKRIDE_GUIDE.knowledgeTest} />
+  </section>
 
-  <CardWhite content={CHECKRIDE_GUIDE.scheduling} />
+  <section id={CHECKRIDE_GUIDE.scheduling.upperTitle}>
+    <CardWhite content={CHECKRIDE_GUIDE.scheduling} />
+  </section>
 
-  <CardBlue content={CHECKRIDE_GUIDE.oralExamInsight} />
+  <section id={CHECKRIDE_GUIDE.oralExamInsight.upperTitle}>
+    <CardBlue content={CHECKRIDE_GUIDE.oralExamInsight} />
+  </section>
 
-  <CheckRideRoadMap
-    title={CHECKRIDE_GUIDE.acsTasks.title}
-    content={CHECKRIDE_GUIDE.acsTasks.steps}
-  />
+  <section id={CHECKRIDE_GUIDE.acsTasks.upperTitle}>
+    <CheckRideRoadMap
+      title={CHECKRIDE_GUIDE.acsTasks.title}
+      content={CHECKRIDE_GUIDE.acsTasks.steps}
+    />
+  </section>
 
-  <CardsContainer content={CHECKRIDE_GUIDE.flightErrors} />
+  <section id={CHECKRIDE_GUIDE.flightErrors.upperTitle}>
+    <CardsContainer content={CHECKRIDE_GUIDE.flightErrors} />
+  </section>
 
   <UnderHeader
     title="Ready for Your Checkride?"
@@ -103,8 +120,6 @@ const header = {
   />
 
   <FAQs faqs={GeneralFAQs} type="General" client:visible />
-
-  <EnrollNowCTA />
 
   <!-- Contact Us Form -->
   <!-- <ContactUs /> -->
