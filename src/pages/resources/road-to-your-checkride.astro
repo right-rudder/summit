@@ -43,7 +43,7 @@ const header = {
   <div class="overflow-hidden">
     <nav
       id="side-navbar"
-      class="flex fixed top-1/4 right-4 text-right flex-col gap-4 text-gray-400 z-50"
+      class="flex fixed top-1/4 right-4 text-right flex-col gap-4 text-gray-400 z-50 opacity-0 pointer-events-none transition-opacity duration-500"
     >
       {
         [
@@ -60,7 +60,7 @@ const header = {
             class="transition-all duration-300 text-xs lg:text-lg hover:text-red-500 hover:scale-110 hover:font-bold"
             data-nav-link={id}
           >
-            {id.replace(/([A-Z])/g, " $1")} {/* make camelCase more readable */}
+            {id.replace(/([A-Z])/g, " $1")}
           </a>
         ))
       }
@@ -155,13 +155,30 @@ const header = {
       const sections = document.querySelectorAll<HTMLElement>("section, #faqs");
       const navLinks =
         document.querySelectorAll<HTMLAnchorElement>("[data-nav-link]");
+      const sideNav = document.getElementById("side-navbar");
+
+      // first section = where nav should start appearing
+      const firstSection = sections[0];
 
       function onScroll() {
         let current = "";
+
+        // show/hide side nav
+        if (firstSection && sideNav) {
+          if (window.scrollY >= firstSection.offsetTop - 100) {
+            sideNav.classList.remove("opacity-0", "pointer-events-none");
+            sideNav.classList.add("opacity-100");
+          } else {
+            sideNav.classList.add("opacity-0", "pointer-events-none");
+            sideNav.classList.remove("opacity-100");
+          }
+        }
+
+        // highlight active section
         sections.forEach((section) => {
-          const sectionTop = section.offsetTop - 150; // HTMLElement is safe
+          const sectionTop = section.offsetTop - 150;
           if (window.scrollY >= sectionTop) {
-            current = section.id; // safe, HTMLElement always has .id (string)
+            current = section.id;
           }
         });
 
@@ -175,12 +192,12 @@ const header = {
 
       window.addEventListener("scroll", onScroll);
 
-      // Smooth scroll
+      // smooth scroll
       navLinks.forEach((link) => {
         link.addEventListener("click", (e) => {
           e.preventDefault();
           const href = link.getAttribute("href");
-          if (!href) return; // safeguard
+          if (!href) return;
           const id = href.substring(1);
           const target = document.getElementById(id);
           if (target) {
