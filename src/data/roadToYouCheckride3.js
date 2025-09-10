@@ -58,7 +58,7 @@ export const CHECKRIDE_GUIDE = {
       "Not bringing DPE fee in their required form of payment.",
       "Not bringing current FAA documents and charts.",
       "Forgetting to bring a view limiting device.",
-      `<strong>Not carefully reviewing that all requirements are met. </strong> <br> (Did you do 9 night takeoffs and 10 night landings? <br> If so, you are not qualified for the private checkride.)`,
+      `<strong>Not carefully reviewing that all requirements are met. </strong> <br> ( Did you do 9 night takeoffs and 10 night landings? <br> If so, you are not qualified for the private checkride. )`,
     ],
   },
 
