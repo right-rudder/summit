@@ -48,24 +48,26 @@ import ImageComp from "./ImageComp.astro";
         {
           content.map((step, index) =>
             (index + 1) % 2 === 0 ? (
-              <div class="my-8 flex flex-wrap justify-center gap-8 lg:gap-0">
-                <div class="relative pt-32 lg:pt-16 flex flex-col justify-center items-center w-full lg:w-1/2">
+              <div class="my-8 flex flex-wrap justify-start gap-8 lg:gap-0">
+                <div class="relative pt-32 lg:pt-16 flex flex-col justify-start items-center w-full lg:w-1/2">
                   <h3 class="absolute top-0 left-0 text-9xl font-light text-main-red">
                     {step.step && step.step}
                     {!step.step && index + 1}
                   </h3>
-                  <div class="text-center lg:text-right pr-6">
-                    <h3 class="text-3xl font-bold tracking-tight text-main-red">
+                  <div class="text-center lg:text-justify pr-6">
+                    <h3 class="text-3xl font-bold tracking-tight text-main-red py-12 lg:text-right">
                       {step.title}
                     </h3>
                     {step.descriptions.map((desc) => (
-                      <p class="text-xl leading-8 text-gray-800">{desc}</p>
+                      <p class="text-xl leading-8 py-2 text-gray-800 text-pretty">
+                        <Fragment set:html={desc} />
+                      </p>
                     ))}
                   </div>
                 </div>
-                <div class="flex flex-col justify-center items-center w-full lg:w-1/2">
+                <div class="flex flex-col justify-center items-center lg:h-full w-full lg:w-1/2">
                   <ImageComp
-                    styles="object-cover rounded"
+                    styles="object-cover rounded aspect-[9/16] lg:h-full"
                     imagePath={
                       step.imagePath || "/src/assets/placeholder-img.webp"
                     }
@@ -74,23 +76,26 @@ import ImageComp from "./ImageComp.astro";
                 </div>
               </div>
             ) : (
-              <div class="my-8 flex flex-wrap justify-center lg:flex-row-reverse gap-8 lg:gap-0">
-                <div class="relative pt-32 lg:pt-16 flex flex-col justify-center items-center w-full lg:w-1/2">
+              <div class="my-8 flex flex-wrap justify-start lg:flex-row-reverse gap-8 lg:gap-0">
+                <div class="relative pt-32 lg:pt-16 flex flex-col justify-start items-center w-full lg:w-1/2">
                   <h3 class="absolute top-0 right-0 text-9xl font-light text-main-red">
-                    {index + 1}
+                    {step.step && step.step}
+                    {!step.step && index + 1}
                   </h3>
-                  <div class="text-center lg:text-left pl-6">
-                    <h3 class="text-3xl font-bold tracking-tight text-main-red">
+                  <div class="text-center lg:text-justify pl-6 lg:pl-12">
+                    <h3 class="text-3xl font-bold tracking-tight text-main-red py-12">
                       {step.title}
                     </h3>
                     {step.descriptions.map((desc) => (
-                      <p class="text-xl leading-8 text-gray-800">{desc}</p>
+                      <p class="text-xl leading-8 py-2 text-gray-800 text-pretty">
+                        <Fragment set:html={desc} />
+                      </p>
                     ))}
                   </div>
                 </div>
-                <div class="flex flex-col justify-center items-center w-full lg:w-1/2">
+                <div class="flex flex-col justify-center items-center w-full lg:w-1/2 lg:h-full">
                   <ImageComp
-                    styles="object-cover rounded"
+                    styles="object-cover rounded aspect-[9/16]  lg:h-full"
                     imagePath={
                       step.imagePath || "/src/assets/placeholder-img.webp"
                     }
