@@ -147,62 +147,150 @@ const header = {
   <!-- <ContactUs /> -->
   <script>
     document.addEventListener("DOMContentLoaded", () => {
-      const sections = document.querySelectorAll<HTMLElement>("section, #faqs");
-      const navLinks =
-        document.querySelectorAll<HTMLAnchorElement>("[data-nav-link]");
       const sideNav = document.getElementById("side-navbar");
+      const linkNodes = Array.from(
+        document.querySelectorAll("[data-nav-link]"),
+      );
 
-      // first section = where nav should start appearing
-      const firstSection = sections[0];
+      const navPairs = linkNodes
+        .map((link) => {
+          const raw =
+            link.getAttribute("data-nav-link") ||
+            link.getAttribute("href")?.slice(1) ||
+            "";
+          const decoded = (() => {
+            try {
+              return decodeURIComponent(raw);
+            } catch (e) {
+              return raw;
+            }
+          })();
 
-      function onScroll() {
-        let current = "";
+          let target =
+            document.getElementById(decoded) ||
+            (window.CSS
+              ? document.querySelector(`#${CSS.escape(decoded)}`)
+              : null);
 
-        // show/hide side nav
-        if (firstSection && sideNav) {
-          if (window.scrollY >= firstSection.offsetTop - 100) {
+          if (!target) {
+            console.warn(`SideNav: no target found for nav link "${decoded}"`);
+          }
+          return { link, target, id: decoded };
+        })
+        .filter((p) => p.target);
+      if (!navPairs.length) {
+        console.warn(
+          "SideNav: no nav links with matching sections were found. Make sure your section ids match the data-nav-link values.",
+        );
+        return;
+      }
+
+      navPairs.forEach(({ link, target }) => {
+        link.classList.add(
+          "inline-block",
+          "transform",
+          "transition-all",
+          "duration-200",
+          "origin-left",
+        );
+        link.addEventListener("click", (e) => {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: "smooth", block: "start" });
+          try {
+            history.replaceState(null, "", "#" + encodeURIComponent(target.id));
+          } catch (err) {
+            /* ignore */
+          }
+        });
+      });
+
+      // Active class helper
+      const ACTIVE_CLASSES = ["text-red-500", "scale-110", "font-bold"];
+      function clearActive() {
+        navPairs.forEach(({ link }) =>
+          link.classList.remove(...ACTIVE_CLASSES),
+        );
+      }
+      function setActiveById(id) {
+        clearActive();
+        const pair = navPairs.find((p) => p.target && p.target.id === id);
+        if (pair) {
+          pair.link.classList.add(...ACTIVE_CLASSES);
+          pair.link.setAttribute("aria-current", "true");
+        }
+      }
+
+      const visibility = new Map();
+      navPairs.forEach((p) => visibility.set(p.target.id, 0));
+
+      let currentActiveId = null;
+
+      const ioOptions = {
+        root: null,
+        rootMargin: "0px 0px -40% 0px",
+        threshold: Array.from({ length: 101 }, (_, i) => i / 100),
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          visibility.set(entry.target.id, entry.intersectionRatio);
+        });
+
+        let bestId = null;
+        let bestRatio = 0;
+        for (const [id, ratio] of visibility.entries()) {
+          if (ratio > bestRatio) {
+            bestRatio = ratio;
+            bestId = id;
+          }
+        }
+
+        if (bestId && bestId !== currentActiveId && bestRatio > 0) {
+          currentActiveId = bestId;
+          setActiveById(bestId);
+        }
+      }, ioOptions);
+
+      navPairs.forEach(({ target }) => observer.observe(target));
+
+      const hero = document.querySelector("header");
+      if (hero && sideNav) {
+        const heroObserver = new IntersectionObserver(
+          (entries) => {
+            const e = entries[0];
+            if (e && e.isIntersecting) {
+              sideNav.classList.add("opacity-0", "pointer-events-none");
+              sideNav.classList.remove("opacity-100");
+              sideNav.setAttribute("aria-hidden", "true");
+            } else {
+              sideNav.classList.remove("opacity-0", "pointer-events-none");
+              sideNav.classList.add("opacity-100");
+              sideNav.setAttribute("aria-hidden", "false");
+            }
+          },
+          { threshold: 0.05 },
+        );
+        heroObserver.observe(hero);
+      } else if (sideNav) {
+        const firstTarget = navPairs[0].target;
+        const onScroll = () => {
+          if (window.scrollY >= firstTarget.offsetTop - 100) {
             sideNav.classList.remove("opacity-0", "pointer-events-none");
             sideNav.classList.add("opacity-100");
           } else {
             sideNav.classList.add("opacity-0", "pointer-events-none");
             sideNav.classList.remove("opacity-100");
           }
-        }
-
-        // highlight active section
-        sections.forEach((section) => {
-          const sectionTop = section.offsetTop - 150;
-          if (window.scrollY >= sectionTop) {
-            current = section.id;
-          }
-        });
-
-        navLinks.forEach((link) => {
-          link.classList.remove("text-red-500", "scale-110", "font-bold");
-          if (link.dataset.navLink === current) {
-            link.classList.add("text-red-500", "scale-110", "font-bold");
-          }
-        });
+        };
+        window.addEventListener("scroll", onScroll, { passive: true });
+        onScroll();
       }
 
-      window.addEventListener("scroll", onScroll);
-
-      // smooth scroll
-      navLinks.forEach((link) => {
-        link.addEventListener("click", (e) => {
-          e.preventDefault();
-          const href = link.getAttribute("href");
-          if (!href) return;
-          const id = href.substring(1);
-          const target = document.getElementById(id);
-          if (target) {
-            window.scrollTo({
-              top: target.offsetTop - 80,
-              behavior: "smooth",
-            });
-          }
-        });
+      const initial = navPairs.find((p) => {
+        const r = p.target.getBoundingClientRect();
+        return r.top <= window.innerHeight * 0.5 && r.bottom >= 0;
       });
+      if (initial) setActiveById(initial.target.id);
     });
   </script>
 </BaseLayout>
