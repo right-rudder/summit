@@ -60,6 +60,8 @@ export const CHECKRIDE_GUIDE = {
       "Forgetting to bring a view limiting device.",
       `<strong>Not carefully reviewing that all requirements are met. </strong> <br> ( Did you do 9 night takeoffs and 10 night landings? <br> If so, you are not qualified for the private checkride. )`,
     ],
+    imagePath: "/src/assets/CFI-and-student-pilot.webp",
+    imageAlt: "CFI and Student Pilot inside plane",
   },
 
   //checkRide RoadMap
@@ -76,6 +78,9 @@ export const CHECKRIDE_GUIDE = {
           'A common scenario as a private pilot is asking about taking a friend or family member somewhere and how the costs of that flight can or cannot be shared and even if the flight is legal to make. It\'s a common error to not understand the term "common purpose" and assume that just because you pay your share, the flight is legal.',
           "For commercial applicants, there are a lot of nuances to the regulations around when it is appropriate to be paid, when you are crossing the line into a regulated charter operation and the responsibilities of the operator vs. the pilot. There are many resources on navigating these scenarios online, FAA interpretation letters, and commercial training resources. Is a common error to not be able to talk through a hypothetical scenario and be able to defend your answer using appropriate FAA resources.",
         ],
+        imagePath:
+          "/src/assets/summit-flight-academy-pilot-student-in-front-of-Piper-PA-28-Cherokee-lees-summit-missoury.webp",
+        imageAlt: "",
       },
       {
         step: "B",
@@ -85,6 +90,9 @@ export const CHECKRIDE_GUIDE = {
           "Your scenario will likely also give you something 'broke' on the airplane and that will spur a conversation that walks through the various airworthiness regulations and different types of equipment lists. The DPE will want to hear you talk through the regulations (e.g. 91.205) and various types of equipment lists, be able to explain what those lists are and if/how they are relevant to your aircraft.",
           "A lot of applicants also miss what to do if something is found inop. They know they need to placard it, but often forget about the required aircraft logbook entry and who can make that entry. This is a critical step—deactivating and placarding isn't enough without the proper documentation to keep the aircraft's maintenance records accurate and the next pilot informed.",
         ],
+        imagePath:
+          "/src/assets/summit-flight-academy-missoury-kansas-city-piper-back-view-amazing-sunset-whats-next.webp",
+        imageAlt: "",
       },
       {
         step: "C",
@@ -97,6 +105,9 @@ export const CHECKRIDE_GUIDE = {
           "A counter-intuitive common error is to just default to a 'no go' decision. Applicants often feel that is the 'safe' answer. It's only safe if you can defend it well.",
           "Finally, another common error is not being able to explain all the various ways to get weather information and the best use cases and limitations of each (e.g., EFB, aviationweather.gov, Flight Service). A common issue with contacting flight service is not knowing how to use the sectional to obtain the radio frequency information and the name of the service you are speaking to.",
         ],
+        imagePath:
+          "/src/assets/summit-plane-preparing-take-flight-clouds-mountain.webp",
+        imageAlt: "",
       },
       {
         step: "D",
@@ -111,6 +122,8 @@ export const CHECKRIDE_GUIDE = {
           "Altitude selection is a struggle for many applicants when they fixate on one data point like winds. However, airspace, obstacles, terrain, endurance, clouds, and turbulence should all be well accounted for.",
           "A common challenge is for an applicant to not be able to explain how to file, open, and close a VFR flight plan, as it's not as common in the world of ADS-B and flight following.",
         ],
+        imagePath: "/src/assets/red-arrow-fleet.webp",
+        imageAlt: "",
       },
       {
         step: "E",
@@ -120,6 +133,8 @@ export const CHECKRIDE_GUIDE = {
           "A common error on this topic is not having down cold the A-G airspace definitions, their weather mins, and entry requirements. You do not have time to look this up while flying. It's expected you know these 'cold' just like your aircraft V speeds.",
           "With the ease of EFBs, a DPE may take you for a virtual trip out to visit airspace you are not familiar with. A common error is not being able to identify the requirements for special use airspace, warning areas, Class Charlie airspace, TRSAs, etc. Don't just know your local airspace; be prepared to interpret any airspace on the sectional.",
         ],
+        imagePath: "/src/assets/discovery-flight-banner.webp",
+        imageAlt: "",
       },
       {
         step: "F",
@@ -130,6 +145,9 @@ export const CHECKRIDE_GUIDE = {
           "Common errors include not using the right chart for the given weight, not using the more conservative number when faced with an in-between answer, and not accounting for your level of proficiency when using the output of a chart (are you as good as the manufacturer's test pilot?).",
           "Aerodynamics is included in this task. The DPE is not going to expect you to fill out the lift equation, but they will expect you to explain aerodynamic principles to the standard found in the Pilot's Handbook of Aeronautical Knowledge.",
         ],
+        imagePath:
+          "/src/assets/summit-flight-academy-missoury-kansas-city-insurance-header.webp",
+        imageAlt: "",
       },
       {
         step: "G",
@@ -141,6 +159,8 @@ export const CHECKRIDE_GUIDE = {
           "During your flight, the DPE may 'fail' a piece of equipment. A common error is not being able to work through a logical flow of what to do. For example, can you explain how an electrical failure does or does not impact engine operation and how you would handle it?",
           "Another common error is not having basic mastery of the avionics. If you have a GPS like a Garmin 650/750, you need to be able to use its functions. Study the manuals and use simulator apps. Applicants have failed for not knowing how to switch from GPS to VLOC mode and tune a VOR.",
         ],
+        imagePath: "/src/assets/instrument-panel.webp",
+        imageAlt: "",
       },
       {
         step: "H",
