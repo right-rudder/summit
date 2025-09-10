@@ -1,0 +1,112 @@
+---
+const StepsExample = [
+  {
+    title: "Title 1",
+    descriptions: [
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+    ],
+    imagePath: "/src/assets/placeholder-img.webp",
+    imageAlt: "Placeholder Image",
+  },
+  {
+    title: "Title 2",
+    descriptions: [
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet.",
+    ],
+    imagePath: "/src/assets/placeholder-img.webp",
+    imageAlt: "Placeholder Image",
+  },
+];
+
+const {
+  title = "Section Title",
+  id = "check-ride-steps",
+  description,
+  content = StepsExample,
+} = Astro.props;
+
+import ImageComp from "./ImageComp.astro";
+---
+
+<section id={id}>
+  <div class="bg-white py-16 sm:py-32">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <div class="mx-auto w-full lg:mx-0">
+        <h2
+          class="lg:text-6xl text-3xl font-bold tracking-tight text-main-red text-center"
+        >
+          {title}
+        </h2>
+        <p class="mt-4 text-lg leading-8 text-black text-center">
+          {description}
+        </p>
+      </div>
+
+      <div>
+        {
+          content.map((step, index) =>
+            (index + 1) % 2 === 0 ? (
+              <div class="my-8 flex flex-wrap justify-start gap-8 lg:gap-0">
+                <div class="relative pt-32 lg:pt-16 flex flex-col justify-start items-center w-full lg:w-1/2">
+                  <h3 class="absolute top-0 left-0 text-9xl font-light text-main-red">
+                    {step.step && step.step}
+                    {!step.step && index + 1}
+                  </h3>
+                  <div class="text-center lg:text-justify pr-6">
+                    <h3 class="text-3xl font-bold tracking-tight text-main-red py-12 lg:text-right">
+                      {step.title}
+                    </h3>
+                    {step.descriptions.map((desc) => (
+                      <p class="text-xl leading-8 py-2 text-gray-800 text-pretty">
+                        <Fragment set:html={desc} />
+                      </p>
+                    ))}
+                  </div>
+                </div>
+                <div class="flex flex-col justify-center items-center lg:h-full w-full lg:w-1/2">
+                  <ImageComp
+                    styles=" rounded aspect-[9/16] lg:h-full lg:w-full object-cover"
+                    imagePath={
+                      step.imagePath || "/src/assets/placeholder-img.webp"
+                    }
+                    imageAlt={step.imageAlt || "Image Placeholder"}
+                  />
+                </div>
+              </div>
+            ) : (
+              <div class="my-8 flex flex-wrap justify-start lg:flex-row-reverse gap-8 lg:gap-0">
+                <div class="relative pt-32 lg:pt-16 flex flex-col justify-start items-center w-full lg:w-1/2">
+                  <h3 class="absolute top-0 right-0 text-9xl font-light text-main-red">
+                    {step.step && step.step}
+                    {!step.step && index + 1}
+                  </h3>
+                  <div class="text-center lg:text-justify pl-6 lg:pl-12">
+                    <h3 class="text-3xl font-bold tracking-tight text-main-red py-12">
+                      {step.title}
+                    </h3>
+                    {step.descriptions.map((desc) => (
+                      <p class="text-xl leading-8 py-2 text-gray-800 text-pretty">
+                        <Fragment set:html={desc} />
+                      </p>
+                    ))}
+                  </div>
+                </div>
+                <div class="flex flex-col justify-center items-center w-full lg:w-1/2 lg:h-full">
+                  <ImageComp
+                    styles="object-cover rounded aspect-[9/16]  lg:h-full"
+                    imagePath={
+                      step.imagePath || "/src/assets/placeholder-img.webp"
+                    }
+                    imageAlt={step.imageAlt || "Image Placeholder"}
+                  />
+                </div>
+              </div>
+            ),
+          )
+        }
+      </div>
+    </div>
+  </div>
+</section>

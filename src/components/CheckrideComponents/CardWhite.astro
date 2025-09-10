@@ -1,0 +1,160 @@
+---
+import ImageComp from "../ImageComp.astro";
+const example = {
+  upperTitle: "Taking Off",
+  title: "How to Become a Pilot",
+  imagePath:
+    "/src/assets/student-receiving-certificate-shaking-hands-instructor.webp",
+  imageAlt: "summit-flight-academy-front-view-of-Piper-PA-28-Cherokee",
+  descriptions: [
+    "Embark on the exciting journey to becoming a pilot with Summit Flight Academy by following these structured steps.",
+  ],
+  bullets: [
+    {
+      icon: `<svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="absolute left-1 top-1 h-5 w-5 text-red-600"
+                >
+                  <path
+                    d="M21.731 2.269a2.625 2.625 0 0 0-3.712 0l-1.157 1.157 3.712 3.712 1.157-1.157a2.625 2.625 0 0 0 0-3.712ZM19.513 8.199l-3.712-3.712-12.15 12.15a5.25 5.25 0 0 0-1.32 2.214l-.8 2.685a.75.75 0 0 0 .933.933l2.685-.8a5.25 5.25 0 0 0 2.214-1.32L19.513 8.2Z"
+                  ></path>
+                </svg>`,
+      title: `Sign Up`,
+      description: `Enroll in Summit's Private Pilot Program to receive
+                comprehensive knowledge and hands-on experience guided by our
+                seasoned instructors.`,
+    },
+    {
+      icon: `<svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="absolute left-1 top-1 h-5 w-5 text-red-600"
+                >
+                  <path
+                    d="M6 3a3 3 0 0 0-3 3v2.25a3 3 0 0 0 3 3h2.25a3 3 0 0 0 3-3V6a3 3 0 0 0-3-3H6ZM15.75 3a3 3 0 0 0-3 3v2.25a3 3 0 0 0 3 3H18a3 3 0 0 0 3-3V6a3 3 0 0 0-3-3h-2.25ZM6 12.75a3 3 0 0 0-3 3V18a3 3 0 0 0 3 3h2.25a3 3 0 0 0 3-3v-2.25a3 3 0 0 0-3-3H6ZM17.625 13.5a.75.75 0 0 0-1.5 0v2.625H13.5a.75.75 0 0 0 0 1.5h2.625v2.625a.75.75 0 0 0 1.5 0v-2.625h2.625a.75.75 0 0 0 0-1.5h-2.625V13.5Z"
+                  ></path>
+                </svg>`,
+      title: ` Train`,
+      description: `Immerse yourself in hands-on flight training and Summit's
+                tailored ground school education, gaining expertise in
+                navigation, weather, radio communications, and regulations.`,
+    },
+    {
+      icon: `<svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="absolute left-1 top-1 h-5 w-5 text-red-600"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M12.516 2.17a.75.75 0 0 0-1.032 0 11.209 11.209 0 0 1-7.877 3.08.75.75 0 0 0-.722.515A12.74 12.74 0 0 0 2.25 9.75c0 5.942 4.064 10.933 9.563 12.348a.749.749 0 0 0 .374 0c5.499-1.415 9.563-6.406 9.563-12.348 0-1.39-.223-2.73-.635-3.985a.75.75 0 0 0-.722-.516l-.143.001c-2.996 0-5.717-1.17-7.734-3.08Zm3.094 8.016a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z"
+                    clip-rule="evenodd"></path>
+                </svg>`,
+      title: ` Pass the Exams`,
+      description: ` Successfully complete the FAA written exam, a practical flight
+                test with a FAA Designated Pilot Examiner (DPE), and receive
+                your Private Pilot Certificate. This achievement marks the
+                beginning of further advancements in your aviation evolution.`,
+    },
+  ],
+  afterDescriptions: [
+    "By beginning training with us, you’ll soon be up in the air on your own, and closer to succeeding in your aviation goals than ever before.",
+  ],
+  btn: {
+    title: "",
+    link: "",
+  },
+};
+
+const { content = example } = Astro.props;
+---
+
+<div class="overflow-hidden bg-white py-16 sm:py-24">
+  <div class="mx-auto max-w-7xl">
+    <div
+      class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2"
+    >
+      <div class="lg:ml-auto lg:pl-4 lg:pt-4 px-6 lg:px-8">
+        <div class="lg:max-w-lg">
+          <p
+            class="text-base font-semibold leading-7 text-red-600 text-center lg:text-left"
+            aria-hidden="true"
+          >
+            {content.upperTitle}
+          </p>
+          <h2
+            class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl text-center lg:text-left"
+          >
+            {content.title}
+          </h2>
+          {
+            content.descriptions.map((description) => (
+              <p class="mt-6 text-lg leading-8 text-gray-600 text-center lg:text-justify">
+                {description}
+              </p>
+            ))
+          }
+
+          <dl
+            class="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none"
+          >
+            {
+              content.bullets &&
+                content.bullets.map((bullet) => (
+                  <div class="relative pl-9">
+                    <dt class="inline font-semibold text-gray-900">
+                      <div>
+                        {!bullet.icon && (
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            fill="currentColor"
+                            class="absolute left-1 top-1 h-5 w-5 text-red-600"
+                          >
+                            <path d="M21.731 2.269a2.625 2.625 0 0 0-3.712 0l-1.157 1.157 3.712 3.712 1.157-1.157a2.625 2.625 0 0 0 0-3.712ZM19.513 8.199l-3.712-3.712-12.15 12.15a5.25 5.25 0 0 0-1.32 2.214l-.8 2.685a.75.75 0 0 0 .933.933l2.685-.8a5.25 5.25 0 0 0 2.214-1.32L19.513 8.2Z" />
+                          </svg>
+                        )}
+                        {bullet.icon && <Fragment set:html={bullet.icon} />}
+                      </div>
+                      {bullet.title}
+                    </dt>
+                    <dd class="inline ml-2">{bullet.description}</dd>
+                  </div>
+                ))
+            }
+            <div>
+              {
+                content.afterDescriptions &&
+                  content.afterDescriptions.map((description) => (
+                    <p class="text-lg font-semibold text-center lg:text-justify">
+                      {description}
+                    </p>
+                  ))
+              }
+            </div>
+          </dl>
+        </div>
+        <div class="mt-12 text-center lg:text-left">
+          {
+            content.btn && (
+              <a href={content.btn.link} target="_blank" class="btn-red mt-5">
+                {content.btn.title}
+              </a>
+            )
+          }
+        </div>
+      </div>
+      <div class="flex items-center justify-end lg:order-first">
+        <ImageComp
+          imagePath={content.imagePath || example.imagePath}
+          imageAlt={content.imageAlt || example.imageAlt}
+          styles="w-[48rem] lg:aspect-[9/16] lg:h-full object-cover  max-w-none shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]"
+        />
+      </div>
+    </div>
+  </div>
+</div>

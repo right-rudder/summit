@@ -1,0 +1,296 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import FAQs from "../../components/FAQs";
+import { CheckrideFAQs as GeneralFAQs } from "../../data/checkrideFAQs";
+import EnrollNowCTA from "../../components/EnrollNowCTA.astro";
+import CheckRideRoadMap from "../../components/CheckRideRoadMap.astro";
+import CardWhite from "../../components/CheckrideComponents/CardWhite.astro";
+import CardBlue from "../../components/CheckrideComponents/CardBlue.astro";
+import CardsContainer from "../../components/CheckrideComponents/CardsContainer.astro";
+import { CHECKRIDE_GUIDE } from "../../data/roadToYouCheckride3";
+import UnderHeader from "../../components/UnderHeader.astro";
+import ContactUs from "../../components/ContactUs.astro";
+
+const header = {
+  title: "Your Road to the Private Pilot Checkride",
+  description:
+    "Prepare for your FAA private pilot checkride with a step-by-step guide covering flight training milestones, knowledge exams, and practical test tips.",
+  btns: [
+    {
+      title: "Download Guide",
+      link: "/files/Road To Your Checkride.pdf",
+      blank: true,
+    },
+    {
+      title: "Details",
+      link: `#${CHECKRIDE_GUIDE.checkrideAndExaminer.upperTitle}`,
+      blank: false,
+    },
+  ],
+};
+---
+
+<BaseLayout
+  pageTitle="Road to Your Checkride | Summit Flight Academy"
+  pageDescription="Learn everything you need to know about preparing for your private pilot checkride, including training milestones, FAA requirements, and tips for success."
+  pageKeywords="private pilot checkride, FAA practical test, pilot training, flight test, Summit Flight Academy"
+>
+  <div class="overflow-hidden">
+    <nav
+      id="side-navbar"
+      class="flex fixed top-1/4 right-4 text-right flex-col gap-4 text-gray-400 z-50 opacity-0 pointer-events-none transition-opacity duration-500"
+    >
+      {
+        [
+          CHECKRIDE_GUIDE.checkrideAndExaminer.upperTitle,
+          CHECKRIDE_GUIDE.knowledgeTest.upperTitle,
+          CHECKRIDE_GUIDE.scheduling.upperTitle,
+          CHECKRIDE_GUIDE.oralExamInsight.upperTitle,
+          CHECKRIDE_GUIDE.acsTasks.upperTitle,
+          CHECKRIDE_GUIDE.flightErrors.upperTitle,
+          "faqs",
+        ].map((id) => (
+          <a
+            href={`#${id}`}
+            class="transition-all duration-300 text-xs lg:text-lg hover:text-red-500 hover:scale-110 hover:font-bold"
+            data-nav-link={id}
+          >
+            {id.replace(/([A-Z])/g, " $1")}
+          </a>
+        ))
+      }
+    </nav>
+  </div>
+
+  <header
+    class="relative overflow-hidden pt-24 py-12 lg:py-24 h-full bg-new-to-flying bg-cover bg-center bg-black flex flex-col items-center justify-center"
+  >
+    <!-- bg-overlay to darken -->
+    <div
+      class="absolute -mt-20 lg:mt-0 scale-110 lg:scale-100 bg-gradient-to-b from-black/50 to-black/20 w-full h-full z-0"
+    >
+    </div>
+    <!-- Text -->
+    <div
+      class="text-white text-center z-10 flex flex-col items-center gap-4 px-5 h-full lg:pt-28 justify-center"
+    >
+      <h1
+        class="text-3xl lg:text-5xl font-bold tracking-tight animate-slow-fade"
+      >
+        {header.title}
+      </h1>
+      <h2
+        class="text-lg lg:text-3xl tracking-wide animate-slow-fade text-center text-pretty px-5"
+      >
+        {header.description}
+      </h2>
+      <div class="flex gap-2 items-center justify-center flex-wrap">
+        {
+          header.btns.map((btn) => (
+            <a
+              href={btn.link}
+              class="btn-red"
+              target={btn.blank ? "_blank" : "_self"}
+            >
+              {btn.title}
+            </a>
+          ))
+        }
+      </div>
+    </div>
+  </header>
+
+  <UnderHeader
+    title="What is the Checkride?"
+    text1="The checkride is the final step in obtaining a new certificate or rating, often referred to formally as the FAA 'Practical Test.' Administered by a Designated Pilot Examiner (DPE), this exam evaluates your ability to safely and competently operate an aircraft according to FAA standards. It’s more than just a flight; it’s the culmination of your training, knowledge, and decision-making skills."
+    text2="During the checkride, the examiner will assess your performance in both oral and flight portions. The oral exam focuses on your ability to apply aeronautical knowledge to real-world scenarios, such as weather interpretation, flight planning, and safety decision-making. The flight portion tests your ability to meet FAA standards consistently, handle maneuvers, and make sound go/no-go judgments in actual flight conditions."
+    text3="Read below to learn more about what to expect, how to prepare, and how to succeed during your checkride with a DPE."
+  />
+
+  <section id={CHECKRIDE_GUIDE.checkrideAndExaminer.upperTitle}>
+    <CardWhite content={CHECKRIDE_GUIDE.checkrideAndExaminer} />
+  </section>
+
+  <section id={CHECKRIDE_GUIDE.knowledgeTest.upperTitle}>
+    <CardBlue content={CHECKRIDE_GUIDE.knowledgeTest} />
+  </section>
+
+  <section id={CHECKRIDE_GUIDE.scheduling.upperTitle}>
+    <CardWhite content={CHECKRIDE_GUIDE.scheduling} />
+  </section>
+
+  <section id={CHECKRIDE_GUIDE.oralExamInsight.upperTitle}>
+    <CardBlue content={CHECKRIDE_GUIDE.oralExamInsight} />
+  </section>
+
+  <section id={CHECKRIDE_GUIDE.acsTasks.upperTitle}>
+    <CheckRideRoadMap
+      title={CHECKRIDE_GUIDE.acsTasks.title}
+      content={CHECKRIDE_GUIDE.acsTasks.steps}
+    />
+  </section>
+
+  <section id={CHECKRIDE_GUIDE.flightErrors.upperTitle}>
+    <CardsContainer content={CHECKRIDE_GUIDE.flightErrors} />
+  </section>
+
+  <UnderHeader
+    title="Ready for Your Checkride?"
+    text1="Your checkride represents the culmination of all your hard work, training, and dedication. With preparation, focus, and the guidance of your instructor, you’re ready to demonstrate your knowledge, skills, and decision-making ability to a Designated Pilot Examiner (DPE)."
+    text2="Remember, the DPE isn’t looking for perfection—they’re assessing your ability to safely and consistently meet FAA standards. By studying the ACS/PTS, practicing thoroughly, and understanding how to apply your knowledge, you set yourself up for success."
+    text3="Take a deep breath, trust your training, and approach the checkride with confidence. Passing this final step opens the door to new opportunities in aviation and marks the beginning of the next stage of your flying journey."
+  />
+
+  <FAQs faqs={GeneralFAQs} type="General" client:visible />
+
+  <!-- Contact Us Form -->
+  <!-- <ContactUs /> -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const sideNav = document.getElementById("side-navbar");
+      const linkNodes = Array.from(
+        document.querySelectorAll("[data-nav-link]"),
+      );
+
+      const navPairs = linkNodes
+        .map((link) => {
+          const raw =
+            link.getAttribute("data-nav-link") ||
+            link.getAttribute("href")?.slice(1) ||
+            "";
+          const decoded = (() => {
+            try {
+              return decodeURIComponent(raw);
+            } catch (e) {
+              return raw;
+            }
+          })();
+
+          let target =
+            document.getElementById(decoded) ||
+            (window.CSS
+              ? document.querySelector(`#${CSS.escape(decoded)}`)
+              : null);
+
+          if (!target) {
+            console.warn(`SideNav: no target found for nav link "${decoded}"`);
+          }
+          return { link, target, id: decoded };
+        })
+        .filter((p) => p.target);
+      if (!navPairs.length) {
+        console.warn(
+          "SideNav: no nav links with matching sections were found. Make sure your section ids match the data-nav-link values.",
+        );
+        return;
+      }
+
+      navPairs.forEach(({ link, target }) => {
+        link.classList.add(
+          "inline-block",
+          "transform",
+          "transition-all",
+          "duration-200",
+          "origin-left",
+        );
+        link.addEventListener("click", (e) => {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: "smooth", block: "start" });
+          try {
+            history.replaceState(null, "", "#" + encodeURIComponent(target.id));
+          } catch (err) {
+            /* ignore */
+          }
+        });
+      });
+
+      // Active class helper
+      const ACTIVE_CLASSES = ["text-red-500", "scale-110", "font-bold"];
+      function clearActive() {
+        navPairs.forEach(({ link }) =>
+          link.classList.remove(...ACTIVE_CLASSES),
+        );
+      }
+      function setActiveById(id) {
+        clearActive();
+        const pair = navPairs.find((p) => p.target && p.target.id === id);
+        if (pair) {
+          pair.link.classList.add(...ACTIVE_CLASSES);
+          pair.link.setAttribute("aria-current", "true");
+        }
+      }
+
+      const visibility = new Map();
+      navPairs.forEach((p) => visibility.set(p.target.id, 0));
+
+      let currentActiveId = null;
+
+      const ioOptions = {
+        root: null,
+        rootMargin: "0px 0px -40% 0px",
+        threshold: Array.from({ length: 101 }, (_, i) => i / 100),
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          visibility.set(entry.target.id, entry.intersectionRatio);
+        });
+
+        let bestId = null;
+        let bestRatio = 0;
+        for (const [id, ratio] of visibility.entries()) {
+          if (ratio > bestRatio) {
+            bestRatio = ratio;
+            bestId = id;
+          }
+        }
+
+        if (bestId && bestId !== currentActiveId && bestRatio > 0) {
+          currentActiveId = bestId;
+          setActiveById(bestId);
+        }
+      }, ioOptions);
+
+      navPairs.forEach(({ target }) => observer.observe(target));
+
+      const hero = document.querySelector("header");
+      if (hero && sideNav) {
+        const heroObserver = new IntersectionObserver(
+          (entries) => {
+            const e = entries[0];
+            if (e && e.isIntersecting) {
+              sideNav.classList.add("opacity-0", "pointer-events-none");
+              sideNav.classList.remove("opacity-100");
+              sideNav.setAttribute("aria-hidden", "true");
+            } else {
+              sideNav.classList.remove("opacity-0", "pointer-events-none");
+              sideNav.classList.add("opacity-100");
+              sideNav.setAttribute("aria-hidden", "false");
+            }
+          },
+          { threshold: 0.05 },
+        );
+        heroObserver.observe(hero);
+      } else if (sideNav) {
+        const firstTarget = navPairs[0].target;
+        const onScroll = () => {
+          if (window.scrollY >= firstTarget.offsetTop - 100) {
+            sideNav.classList.remove("opacity-0", "pointer-events-none");
+            sideNav.classList.add("opacity-100");
+          } else {
+            sideNav.classList.add("opacity-0", "pointer-events-none");
+            sideNav.classList.remove("opacity-100");
+          }
+        };
+        window.addEventListener("scroll", onScroll, { passive: true });
+        onScroll();
+      }
+
+      const initial = navPairs.find((p) => {
+        const r = p.target.getBoundingClientRect();
+        return r.top <= window.innerHeight * 0.5 && r.bottom >= 0;
+      });
+      if (initial) setActiveById(initial.target.id);
+    });
+  </script>
+</BaseLayout>

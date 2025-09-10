@@ -12,7 +12,7 @@ export default function FAQs({ faqs, type }) {
   };
 
   return (
-    <div className="bg-white">
+    <div className="bg-white" id="faqs">
       <div className="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8 lg:py-40">
         <div className="mx-auto max-w-4xl">
           <p className="text-center capitalize text-xl font-bold leading-7 tracking-tight text-main-red">

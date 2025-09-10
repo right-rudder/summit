@@ -1,0 +1,109 @@
+---
+import CardSimple from "./CardSimple.astro";
+
+const example = {
+  upperTitle: "Explore our flight training options",
+  title: "Start Today",
+  description:
+    "If you've thought about becoming a pilot, now is the perfect time to get started. Summit Flight Academy is your place to start training and get your pilot certificate and ratings.",
+  cards: [
+    {
+      title: "Take a Discovery Flight",
+      descriptions: [
+        "The best way to see if flying is right for you is to take a discovery flight...",
+      ],
+      btns: [],
+    },
+    {
+      title: "With Bullets",
+      descriptions: ["Example with bullets."],
+      bullets: [{ title: "Bullet 1" }, { title: "Bullet 2" }],
+      btns: [],
+    },
+  ],
+};
+
+const { city, content = example } = Astro.props;
+---
+
+<div class="bg-white lg:py-16 py-32">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="mx-auto max-w-2xl text-center">
+      <h2 class="text-base font-semibold leading-7 text-red-600">
+        {content.upperTitle}
+      </h2>
+      <p
+        class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
+      >
+        {city ? `Start Flight Lessons near ${city} Today` : content.title}
+      </p>
+      <p class="mt-6 text-lg leading-8 text-gray-600 group-hover:text-white">
+        {content.description}
+      </p>
+    </div>
+
+    <div class="mx-auto mt-16 max-w-3xl sm:mt-20 lg:max-w-none">
+      <div class="columns-1 sm:columns-2 lg:columns-3 gap-6">
+        {
+          content.cards.map((card) => (
+            <div class="mb-6 break-inside-avoid">
+              <div class="bg-gray-100 group hover:bg-gray-900 transition duration-200 p-8 rounded-lg">
+                <dt class="text-xl px-4 font-semibold leading-7 group-hover:text-red-600 text-gray-900">
+                  {card.title}
+                </dt>
+
+                {card.descriptions &&
+                  card.descriptions.map((text) => (
+                    <dd class="mt-4 text-justify px-4 text-base text-gray text-pretty-600 group-hover:text-white">
+                      {text}
+                    </dd>
+                  ))}
+
+                {card.standards &&
+                  card.standards.map((text) => (
+                    <dd class="mt-4 text-justify px-4 text-base text-gray text-pretty-600 group-hover:text-white">
+                      {text}
+                    </dd>
+                  ))}
+
+                {card.commonErrors &&
+                  card.commonErrors.map((text) => (
+                    <dd class="mt-4 text-justify px-4 text-base text-gray text-pretty-600 group-hover:text-white">
+                      {text}
+                    </dd>
+                  ))}
+
+                {card.privateStandards &&
+                  card.privateStandards.map((text) => (
+                    <dd class="mt-4 text-justify px-4 text-base text-gray text-pretty-600 group-hover:text-white">
+                      {text}
+                    </dd>
+                  ))}
+
+                {card.commercialStandards &&
+                  card.commercialStandards.map((text) => (
+                    <dd class="mt-4 text-justify px-4 text-base text-gray text-pretty-600 group-hover:text-white">
+                      {text}
+                    </dd>
+                  ))}
+
+                {card.bullets && (
+                  <CardSimple title="Key Points" content={card.bullets} />
+                )}
+
+                {card.btns &&
+                  card.btns.map((btn) => (
+                    <div class="mt-6 flex justify-center">
+                      <a href={btn.link} target="_blank" class="btn-red">
+                        {btn.title}
+                      </a>
+                    </div>
+                  ))}
+              </div>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </div>
+</div>
