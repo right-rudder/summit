@@ -71,9 +71,7 @@ export const CHECKRIDE_GUIDE = {
         title: "Task A: Pilot Qualifications",
         descriptions: [
           "In general, this task is one where an applicant should be comfortable with all the topics listed. You will be fine looking up a few key details, if needed, but one should be conversational about all these items. The DPE is looking to determine if you know what you are allowed to do, not do, and when you cannot temporarily do something (e.g. when ill). You will likely get a scenario or two given to you and then asked to determine how you will response as PIC. Once you answer, expect to be asked why you gave the answer you gave.",
-          "PRIVATE:",
           'A common scenario as a private pilot is asking about taking a friend or family member somewhere and how the costs of that flight can or cannot be shared and even if the flight is legal to make. It\'s a common error to not understand the term "common purpose" and assume that just because you pay your share, the flight is legal.',
-          "COMMERCIAL: ",
           "For commercial applicants, there are a lot of nuances to the regulations around when it is appropriate to be paid, when you are crossing the line into a regulated charter operation and the responsibilities of the operator vs. the pilot. There are many resources on navigating these scenarios online, FAA interpretation letters, and commercial training resources. Is a common error to not be able to talk through a hypothetical scenario and be able to defend your answer using appropriate FAA resources.",
         ],
       },
