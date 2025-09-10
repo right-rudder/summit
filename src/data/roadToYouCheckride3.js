@@ -20,7 +20,8 @@ export const CHECKRIDE_GUIDE = {
     upperTitle: "Test",
     title: "Knowledge Test",
     descriptions: [
-      'We typically ask our students to take their knowledge before solo or before the mid-point in the training for Practical Tests beyond private pilot. We do this to make sure the learning is well distributed throughout your course and to give us time to address any weaknesses that show up in your written test. An examiner is required to include in their test plan any topics you miss on your written. This is one of the reasons we want students to do well on the knowledge test. Getting a barely passing score makes your oral exam more complicated than it needs to be and opens you up to first impressions that may be less favorable if you "barely passed" your written.',
+      "We typically ask our students to take their knowledge before solo or before the mid-point in the training for Practical Tests beyond private pilot. We do this to make sure the learning is well distributed throughout your course and to give us time to address any weaknesses that show up in your written test.",
+      ` An examiner is required to include in their test plan any topics you miss on your written. This is one of the reasons we want students to do well on the knowledge test. Getting a barely passing score makes your oral exam more complicated than it needs to be and opens you up to first impressions that may be less favorable if you "barely passed" your written.`,
     ],
     imagePath:
       "/src/assets/summit-flight-academy-pilot-training-ground-school-instrument-rating.webp",
@@ -46,7 +47,8 @@ export const CHECKRIDE_GUIDE = {
   //Card blue
   oralExamInsight: {
     upperTitle: "Oral Exam",
-    title: "Oral Exam Insight and Common Errors:",
+    title: "Oral Exam Insight and Common Errors",
+    haveIcon: true,
     descriptions: [
       "Not having appropriate endorsements or they are expired.",
       "Not bringing all required documents",
@@ -56,7 +58,7 @@ export const CHECKRIDE_GUIDE = {
       "Not bringing DPE fee in their required form of payment.",
       "Not bringing current FAA documents and charts.",
       "Forgetting to bring a view limiting device.",
-      "Not carefully reviewing that all requirements are met. (Did you do 9 night takeoffs and 10 night landings? If so, you are not qualified for the private checkride.)",
+      `<strong>Not carefully reviewing that all requirements are met. </strong> <br> (Did you do 9 night takeoffs and 10 night landings? <br> If so, you are not qualified for the private checkride.)`,
     ],
   },
 
