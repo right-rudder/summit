@@ -93,7 +93,7 @@ const { content = example } = Astro.props;
           </h2>
           {
             content.descriptions.map((description) => (
-              <p class="mt-6 text-lg leading-8 text-gray-600 text-center lg:text-left">
+              <p class="mt-6 text-lg leading-8 text-gray-600 text-center lg:text-justify">
                 {description}
               </p>
             ))
@@ -130,7 +130,7 @@ const { content = example } = Astro.props;
               {
                 content.afterDescriptions &&
                   content.afterDescriptions.map((description) => (
-                    <p class="text-lg font-semibold text-center lg:text-left">
+                    <p class="text-lg font-semibold text-center lg:text-justify">
                       {description}
                     </p>
                   ))
