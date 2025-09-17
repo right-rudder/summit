@@ -20,7 +20,7 @@ tags:
   ]
 ---
 
-Knowing your airplane isn’t optional—it’s essential. Examiners consistently report that systems knowledge separates well-prepared pilots from those who struggle. At Summit Flight Academy in Lee’s Summit, Missouri, we make sure Kansas City student pilots can explain systems clearly and confidently.
+Knowing your airplane isn’t optional, it’s essential. Examiners consistently report that systems knowledge separates well-prepared pilots from those who struggle. At Summit Flight Academy in Lee’s Summit, Missouri, we make sure Kansas City student pilots can explain systems clearly and confidently.
 
 ---
 
@@ -57,7 +57,7 @@ Our instructors break down systems using:
 
 - Explain systems like you’re teaching a non-pilot friend.
 - Link knowledge to real training flights (“I used carb heat on descent into KLXT”).
-- Don’t overcomplicate—clarity matters more than jargon.
+- Don’t overcomplicate, clarity matters more than jargon.
 
 ---
 
@@ -74,4 +74,4 @@ At Summit Flight Academy, systems knowledge is part of every lesson.
 📞 **Call us at +1 816-282-1500**  
 🌐 **Visit us at [summitflightacademy.com](https://www.summitflightacademy.com/)**
 
-Fly smarter—train with us in Lee’s Summit today.
+Fly smarter, train with us in Lee’s Summit today.

@@ -20,7 +20,7 @@ tags:
   ]
 ---
 
-Emergency procedures aren’t just a test item—they’re a lifesaving skill. At Summit Flight Academy in Lee’s Summit, Missouri, we train our Kansas City student pilots to stay calm and precise when handling simulated emergencies on checkride day.
+Emergency procedures aren’t just a test item, they’re a lifesaving skill. At Summit Flight Academy in Lee’s Summit, Missouri, we train our Kansas City student pilots to stay calm and precise when handling simulated emergencies on checkride day.
 
 ---
 
@@ -57,7 +57,7 @@ Our instructors emphasize:
 ## 4. **Tips for Checkride Success**
 
 - Practice simulated emergencies on every solo.
-- Talk through your thought process out loud—examiners value clear decision-making.
+- Talk through your thought process out loud, examiners value clear decision-making.
 - Keep flying the airplane until the maneuver is complete.
 
 ---
@@ -70,7 +70,7 @@ Emergencies don’t follow a script. Building muscle memory through repetition e
 
 ## Start Your Aviation Journey
 
-At Summit Flight Academy, we don’t just prepare you to pass—we prepare you to fly with confidence.
+At Summit Flight Academy, we don’t just prepare you to pass, we prepare you to fly with confidence.
 
 📞 **Call us at +1 816-282-1500**  
 🌐 **Visit us at [summitflightacademy.com](https://www.summitflightacademy.com/)**

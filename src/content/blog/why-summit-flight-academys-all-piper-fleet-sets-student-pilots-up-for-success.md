@@ -29,11 +29,11 @@ tags:
 
 When choosing a flight school, many prospective pilots focus on price, location, or instructor credentials. While these factors matter, there's another crucial element that can make or break your training experience: the aircraft you'll be flying. At [Summit Flight Academy](https://www.summitflightacademy.com), we've made a deliberate choice to train exclusively with Piper aircraft, and the results speak for themselves.
 
-Our carefully curated fleet includes the Cherokee, Warrior, Archer II, and Twin Comanche—each selected not just for their individual strengths, but for how they work together to create a seamless training progression. Here's why this strategic decision gives our students a distinct advantage in the cockpit and beyond.
+Our carefully curated fleet includes the Cherokee, Warrior, Archer II, and Twin Comanche, each selected not just for their individual strengths, but for how they work together to create a seamless training progression. Here's why this strategic decision gives our students a distinct advantage in the cockpit and beyond.
 
 ## The Science Behind Student-Friendly Design
 
-Piper's low-wing configuration isn't just about aesthetics—it's about physics working in your favor. The low-wing design provides inherent stability that helps nervous students find their confidence faster. With fuel stored in the wings below the center of gravity, these aircraft naturally resist rolling motion, creating a more stable platform for learning fundamental skills.
+Piper's low-wing configuration isn't just about aesthetics, it's about physics working in your favor. The low-wing design provides inherent stability that helps nervous students find their confidence faster. With fuel stored in the wings below the center of gravity, these aircraft naturally resist rolling motion, creating a more stable platform for learning fundamental skills.
 
 The wide-stance landing gear and robust construction mean more forgiving landings during those critical early lessons. When you're already managing radio calls, traffic patterns, and airspace, having an aircraft that won't punish minor technique errors allows you to focus on becoming a pilot rather than wrestling with the machine.
 
@@ -51,7 +51,7 @@ At Summit, we maintain our [entire fleet](https://www.summitflightacademy.com/ab
 
 ## Industry-Standard Training That Opens Doors
 
-The professional aviation industry runs on consistency and standardization. By training exclusively on Piper aircraft, our students learn on the same platforms used by major university aviation programs and airline-sponsored academies worldwide. This isn't coincidence—it's recognition of Piper's role as the gold standard for pilot development.
+The professional aviation industry runs on consistency and standardization. By training exclusively on Piper aircraft, our students learn on the same platforms used by major university aviation programs and airline-sponsored academies worldwide. This isn't coincidence, it's recognition of Piper's role as the gold standard for pilot development.
 
 Our fleet spans the technology spectrum from traditional analog instruments to modern glass cockpits, ensuring graduates are comfortable in both legacy aircraft and cutting-edge avionics suites. This versatility proves invaluable when students transition to airline training programs or pursue instructor ratings, where they'll encounter diverse aircraft types and cockpit configurations.
 
@@ -63,7 +63,7 @@ Unlike larger, more expensive multi-engine trainers, the Twin Comanche provides 
 
 ## The Summit Advantage in Action
 
-Choosing the right training aircraft isn't just about individual preferences—it's about creating a systematic approach to pilot development. Our all-Piper fleet represents a strategic investment in our students' success, from their first discovery flight through advanced ratings and beyond.
+Choosing the right training aircraft isn't just about individual preferences, it's about creating a systematic approach to pilot development. Our all-Piper fleet represents a strategic investment in our students' success, from their first discovery flight through advanced ratings and beyond.
 
 Students consistently report faster progression, greater confidence, and smoother transitions between aircraft types. Instructors can focus on teaching advanced concepts rather than basic aircraft familiarization. And our graduates enter the professional aviation world with the skills and experience that employers value most.
 
@@ -73,6 +73,6 @@ The best way to understand the Piper advantage is to experience it firsthand. Wh
 
 Ready to see what makes our approach different? [Schedule a Discovery Flight](https://www.flightcircle.com/shop/325431594e72/4000002368) today and join one of our certified flight instructors for an introductory lesson. You'll experience the stability, reliability, and student-friendly design that has made Piper aircraft the cornerstone of professional pilot training worldwide.
 
-At Summit Flight Academy, we don't just teach you to fly—we prepare you to succeed. And that preparation begins with putting you in the right aircraft from day one.
+At Summit Flight Academy, we don't just teach you to fly, we prepare you to succeed. And that preparation begins with putting you in the right aircraft from day one.
 
 _Discover more about our training philosophy and aircraft specifications by visiting our [fleet page](https://www.summitflightacademy.com/about/our-fleet/). Your aviation career starts with the right foundation._

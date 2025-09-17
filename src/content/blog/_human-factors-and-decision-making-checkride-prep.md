@@ -20,7 +20,7 @@ tags:
   ]
 ---
 
-Flying isn’t just about stick and rudder skills—it’s about judgment. The FAA emphasizes human factors on every checkride, and at Summit Flight Academy in Lee’s Summit, Missouri, we make sure Kansas City student pilots are ready to demonstrate safe decision-making.
+Flying isn’t just about stick and rudder skills, it’s about judgment. The FAA emphasizes human factors on every checkride, and at Summit Flight Academy in Lee’s Summit, Missouri, we make sure Kansas City student pilots are ready to demonstrate safe decision-making.
 
 ---
 
@@ -55,13 +55,13 @@ At Summit, we use FAA-recognized models like:
 
 - Always verbalize your risk assessment.
 - Share a personal example from training flights.
-- Show awareness of limits—knowing when _not_ to fly is professionalism.
+- Show awareness of limits, knowing when _not_ to fly is professionalism.
 
 ---
 
 ## Why It Matters
 
-Good decision-making prevents accidents. Demonstrating this skill proves you’re not just ready to pass the checkride—you’re ready to fly responsibly.
+Good decision-making prevents accidents. Demonstrating this skill proves you’re not just ready to pass the checkride, you’re ready to fly responsibly.
 
 ---
 

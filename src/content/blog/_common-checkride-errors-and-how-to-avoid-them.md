@@ -53,9 +53,9 @@ We prepare students by:
 
 ## 4. **Tips for Checkride Day**
 
-- Fly like it’s a normal lesson—don’t overthink.
+- Fly like it’s a normal lesson, don’t overthink.
 - Take a deep breath before each maneuver.
-- Remember: one mistake rarely fails you—it’s about overall safety and judgment.
+- Remember: one mistake rarely fails you, it’s about overall safety and judgment.
 
 ---
 
@@ -67,7 +67,7 @@ Checkrides measure safety, not perfection. By avoiding common errors, you’ll p
 
 ## Start Your Aviation Journey
 
-At Summit Flight Academy, we guide students through every step—from first solo to checkride success.
+At Summit Flight Academy, we guide students through every step, from first solo to checkride success.
 
 📞 **Call us at +1 816-282-1500**  
 🌐 **Visit us at [summitflightacademy.com](https://www.summitflightacademy.com/)**
