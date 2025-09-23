@@ -81,7 +81,6 @@ Mastering airspace isn’t just about passing your checkride, it’s about becom
 
 At Summit Flight Academy in Lee’s Summit, we ensure every student masters national airspace knowledge before checkride day.
 
-📞 **Call us at +1 816-282-1500**  
 🌐 **Visit us at [summitflightacademy.com](https://www.summitflightacademy.com/)**
 
 Train with confidence, let’s get you checkride-ready.
