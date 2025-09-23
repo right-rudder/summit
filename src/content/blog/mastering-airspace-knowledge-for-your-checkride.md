@@ -68,12 +68,12 @@ DPEs want more than definitions. They expect you to:
 
 Mastering airspace isn’t just about passing your checkride, it’s about becoming a safe, confident pilot who knows exactly where you can and can’t fly.
 
----
+<!-- ---
 
 ## Related Reading
 
 - [Weather and Cross-Country Planning: Keys to Checkride Success](/blog/weather-and-cross-country-planning-checkride-success)
-- [Common Checkride Errors and How to Avoid Them](/blog/common-checkride-errors-and-how-to-avoid-them)
+- [Common Checkride Errors and How to Avoid Them](/blog/common-checkride-errors-and-how-to-avoid-them) -->
 
 ---
 
