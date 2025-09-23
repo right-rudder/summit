@@ -27,7 +27,7 @@ Getting your private pilot's license opens up a new world of freedom and adventu
 
 ## What is the Written Exam All About?
 
-You might be thinking, _A written test? But I want to be hands-on in flying planes!_ We get it. The appeal is definitely the magic of flight itself. However, the FAA has this knowledge exam requirement for a crucial reason—to ensure all future pilots have a comprehensive understanding of the rules, responsibilities, and vital procedures involved in safely operating aircraft in the national airspace system.
+You might be thinking, _A written test? But I want to be hands-on in flying planes!_ We get it. The appeal is definitely the magic of flight itself. However, the FAA has this knowledge exam requirement for a crucial reason, to ensure all future pilots have a comprehensive understanding of the rules, responsibilities, and vital procedures involved in safely operating aircraft in the national airspace system.
 
 The Private Pilot written exam covers a wide range of must-know aviation concepts like:
 
@@ -74,7 +74,7 @@ Having this depth of understanding thoroughly ingrained before starting hands-on
 
 Successful completion of the written exam is a required milestone for every prospective pilot. But it goes beyond just checking a box - it's powerful proof that you've taken command of essential aviation knowledge and information recall abilities. This boosts your confidence tremendously as you transition into further flight training and prepare for your final checkride exam with an FAA examiner.
 
-Trust us, having already mastered those fundamentals through your high written exam score makes the actual skills testing a much smoother process. You'll be able to clearly demonstrate an authoritative understanding of concepts like aerodynamics, aircraft performance, and regulations—not just rote memorization. This well-rounded proficiency is what defines a true airman.
+Trust us, having already mastered those fundamentals through your high written exam score makes the actual skills testing a much smoother process. You'll be able to clearly demonstrate an authoritative understanding of concepts like aerodynamics, aircraft performance, and regulations, not just rote memorization. This well-rounded proficiency is what defines a true airman.
 
 ## So Don't Delay
 

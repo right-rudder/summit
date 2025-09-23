@@ -23,7 +23,6 @@ tags:
 
 At Summit Flight Academy, we understand how important it is to make your first flight experience memorable and informative. Our Discovery Flight is designed to give you a taste of what it’s like to be a pilot, while also providing you with essential knowledge about flying and preparing you to choose your training path. Here’s what you can expect during your Discovery Flight with us.
 
-
 ## Warm Welcome & Facility Tour
 
 Upon arrival, your Certified Flight Instructor (CFI) greets you and leads you through our state-of-the-art facilities. You’ll get a chance to explore:
@@ -32,7 +31,7 @@ Upon arrival, your Certified Flight Instructor (CFI) greets you and leads you th
 
 - **Pilot Lounge:** Flight planning stations, free Wi-Fi, and refreshments create a comfortable workspace.
 
-- **Hangar:** Explore our modern fleet—Garmin G1000–equipped Cessna 172s and Piper Seminoles—while hearing about each aircraft’s capabilities.
+- **Hangar:** Explore our modern fleet, Garmin G1000–equipped Cessna 172s and Piper Seminoles, while hearing about each aircraft’s capabilities.
 
 ## Comprehensive Pre-Flight Briefing
 
@@ -99,9 +98,9 @@ Conclude your flight with a professional landing experience:
 Your questions answered and personalized recommendations for your pilot journey.
 
 ## What’s Next for You?
+
 After your Discovery Flight, you’ll have a clear understanding of what it takes to become a pilot. Whether you’re interested in pursuing a private pilot license, instrument rating, or even a career in aviation, Summit Flight Academy is here to guide you every step of the way.
 
 We offer a range of training programs tailored to your goals, including our zero-to-hero pathway and specialized multi-engine training. Our experienced instructors and state-of-the-art facilities ensure you receive the best possible education in a supportive environment.
 
 Ready to take the first step toward your aviation dreams? Book your Discovery Flight today at [Summit Flight Academy](https://www.summitflightacademy.com) and experience the thrill of flying firsthand. Whether you’re a complete beginner or looking to advance your skills, we’re here to help you soar to new heights in your pilot training journey.
-

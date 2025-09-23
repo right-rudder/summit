@@ -95,4 +95,4 @@ At Summit Flight Academy in Lee’s Summit, Missouri, we help pilots adapt to va
 🌐 **Visit us at [summitflightacademy.com](https://www.summitflightacademy.com/)**  
 ✈️ **Schedule an intro flight today at [FlightCircle](https://www.flightcircle.com/shop/325431594e72/4000002368).**
 
-Prepare for the challenges and benefits of flying across regions with Summit Flight Academy—your trusted partner in aviation education.
+Prepare for the challenges and benefits of flying across regions with Summit Flight Academy, your trusted partner in aviation education.

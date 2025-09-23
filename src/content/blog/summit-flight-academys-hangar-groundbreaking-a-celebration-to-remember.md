@@ -66,9 +66,9 @@ What an absolutely magical day it was! On Friday, May 30th, 2025, Summit Flight 
 
 ## A Dream Years in the Making
 
-After several years of careful planning, dreaming, and anticipating, we finally had the privilege of turning the first shovel of dirt at KLXT North Ramp. But this groundbreaking represents so much more than the beginning of construction—it's the culmination of countless conversations, shared aspirations, and the unwavering support of an extraordinary community that has believed in our vision from day one.
+After several years of careful planning, dreaming, and anticipating, we finally had the privilege of turning the first shovel of dirt at KLXT North Ramp. But this groundbreaking represents so much more than the beginning of construction, it's the culmination of countless conversations, shared aspirations, and the unwavering support of an extraordinary community that has believed in our vision from day one.
 
-As we stood there at 5:30 PM, surrounded by the faces of people who have become like family to us, the ceremony felt like the natural progression of a journey we've all been on together. Every student who has trusted us with their aviation dreams, every instructor who has shared their passion and expertise, every business partner who has stood by us, and every staff member who pours their heart into this academy—you were all there in spirit, and many of you were there in person, making the moment even more special.
+As we stood there at 5:30 PM, surrounded by the faces of people who have become like family to us, the ceremony felt like the natural progression of a journey we've all been on together. Every student who has trusted us with their aviation dreams, every instructor who has shared their passion and expertise, every business partner who has stood by us, and every staff member who pours their heart into this academy, you were all there in spirit, and many of you were there in person, making the moment even more special.
 
 ---
 
@@ -87,7 +87,7 @@ The live music that filled the air throughout the afternoon created the perfect 
 
 ### Sweet Moments with Sylas and Maddy's
 
-The partnership with Sylas and Maddy's for free ice cream was nothing short of brilliant! Watching children's eyes light up as they chose their favorite flavors, seeing seasoned pilots enjoying a nostalgic treat, and witnessing new friendships form over shared scoops of ice cream reminded us that the best celebrations bring out the child-like wonder in all of us. The ice cream wasn't just delicious—it was a symbol of the sweetness that comes from achieving long-held dreams and sharing them with people who matter.
+The partnership with Sylas and Maddy's for free ice cream was nothing short of brilliant! Watching children's eyes light up as they chose their favorite flavors, seeing seasoned pilots enjoying a nostalgic treat, and witnessing new friendships form over shared scoops of ice cream reminded us that the best celebrations bring out the child-like wonder in all of us. The ice cream wasn't just delicious, it was a symbol of the sweetness that comes from achieving long-held dreams and sharing them with people who matter.
 
 There's something magical about ice cream that breaks down barriers and brings people together. We watched as conversations flowed naturally between students and instructors, as business partners chatted with families, and as strangers became friends over their shared love of aviation and their mutual appreciation for a perfectly crafted sundae. These moments of connection were exactly what we had hoped for, and they exceeded our wildest expectations.
 
@@ -100,15 +100,15 @@ _Aviation supporters gathered at the groundbreaking ceremony for Summit Flight A
 
 ### Raffle Excitement and Generous Hearts
 
-Our raffle, featuring over $1,000 in prizes, brought out the playful competitive spirit in everyone! The excitement was contagious as numbers were called and winners celebrated. But what touched us most wasn't just the joy of the winners—it was the genuine happiness that everyone shared in each other's good fortune. The applause, the congratulations, and the good-natured excitement reminded us that our community is filled with people who genuinely celebrate each other's successes.
+Our raffle, featuring over $1,000 in prizes, brought out the playful competitive spirit in everyone! The excitement was contagious as numbers were called and winners celebrated. But what touched us most wasn't just the joy of the winners, it was the genuine happiness that everyone shared in each other's good fortune. The applause, the congratulations, and the good-natured excitement reminded us that our community is filled with people who genuinely celebrate each other's successes.
 
-The generosity of our sponsors and partners who contributed to the raffle prizes was overwhelming. Their support didn't just provide great prizes—it demonstrated the incredible network of businesses and individuals who believe in Summit Flight Academy's mission and want to see us succeed.
+The generosity of our sponsors and partners who contributed to the raffle prizes was overwhelming. Their support didn't just provide great prizes, it demonstrated the incredible network of businesses and individuals who believe in Summit Flight Academy's mission and want to see us succeed.
 
 ### The Heart of It All: Our Amazing Community
 
 Perhaps the most beautiful aspect of the entire celebration was witnessing the incredible tapestry of our aviation community come together. Current students shared their training experiences with prospective pilots, seasoned aviators offered encouragement and wisdom to those just beginning their journey, and instructors connected with families to answer questions and share their passion for teaching.
 
-We watched as children gazed up at aircraft with wonder, their imaginations already taking flight. We saw the pride in parents' eyes as they watched their adult children pursue their aviation dreams. We witnessed the quiet satisfaction of experienced pilots who remembered their own first solo flights and first cross-country adventures. These connections, these shared stories, these moments of mutual inspiration—this is what makes Summit Flight Academy more than just a flight school. We're a family, and Friday's celebration proved it beyond any doubt.
+We watched as children gazed up at aircraft with wonder, their imaginations already taking flight. We saw the pride in parents' eyes as they watched their adult children pursue their aviation dreams. We witnessed the quiet satisfaction of experienced pilots who remembered their own first solo flights and first cross-country adventures. These connections, these shared stories, these moments of mutual inspiration, this is what makes Summit Flight Academy more than just a flight school. We're a family, and Friday's celebration proved it beyond any doubt.
 
 ---
 
@@ -127,7 +127,7 @@ For those who drove to join us, the parking lot became its own gathering place w
 
 When 5:30 PM arrived and it was time for the official groundbreaking ceremony, the atmosphere was electric. As we gathered around the ceremonial shovels, looking out at the faces of people who have supported us through every step of our journey, the moment felt both surreal and perfectly natural.
 
-The ceremony wasn't just about breaking ground—it was about breaking through to a new level of possibility. As we turned that first shovel of dirt, we weren't just starting construction on a building; we were laying the foundation for countless future success stories, for dreams that haven't even been dreamed yet, and for adventures that will take our students and pilots to destinations they've only imagined.
+The ceremony wasn't just about breaking ground, it was about breaking through to a new level of possibility. As we turned that first shovel of dirt, we weren't just starting construction on a building; we were laying the foundation for countless future success stories, for dreams that haven't even been dreamed yet, and for adventures that will take our students and pilots to destinations they've only imagined.
 
 ---
 
@@ -140,7 +140,7 @@ _This image captures the moment of the groundbreaking ceremony for Summit Flight
 
 In the days since our celebration, we've been overwhelmed by the messages, photos, and expressions of excitement from everyone who attended. The stories people have shared about the connections they made, the inspiration they felt, and the renewed enthusiasm for their own aviation journeys have reminded us why we do what we do.
 
-To our students—both current and future—thank you for trusting us with your dreams and for bringing such enthusiasm and dedication to everything you do. Your progress, your achievements, and your passion inspire us every single day. Watching you grow as pilots and as individuals is the greatest reward we could ask for.
+To our students, both current and future, thank you for trusting us with your dreams and for bringing such enthusiasm and dedication to everything you do. Your progress, your achievements, and your passion inspire us every single day. Watching you grow as pilots and as individuals is the greatest reward we could ask for.
 
 To our incredible instructors and staff, your dedication goes far beyond just teaching procedures and techniques. You're mentors, cheerleaders, and guardians of aviation's greatest traditions. The care you show for each student, the extra time you spend answering questions, and the genuine investment you make in every person's success is what sets Summit Flight Academy apart.
 
@@ -150,7 +150,7 @@ To our business partners and sponsors, your support enables us to dream bigger a
 
 As construction begins on our new hangar, we're reminded daily that we're building more than just a structure. We're creating a space where dreams will take physical form, where nervous students will gain confidence, where experienced pilots will share their knowledge, and where the next generation of aviators will prepare for adventures we can only imagine.
 
-This hangar will house aircraft, certainly, but more importantly, it will house hope, ambition, dedication, and the unwavering belief that the sky is not the limit—it's just the beginning. Every rivet, every beam, every square foot of space will be infused with the support and encouragement of the community that made this expansion possible.
+This hangar will house aircraft, certainly, but more importantly, it will house hope, ambition, dedication, and the unwavering belief that the sky is not the limit, it's just the beginning. Every rivet, every beam, every square foot of space will be infused with the support and encouragement of the community that made this expansion possible.
 
 We're planning to document the construction process and share regular updates because this hangar belongs to all of us. It's a physical manifestation of our shared commitment to excellence in aviation training and our collective belief in the power of flight to transform lives.
 
@@ -158,7 +158,7 @@ We're planning to document the construction process and share regular updates be
 
 As we move forward with construction, we're already envisioning the ribbon-cutting ceremony that will mark the completion of our new facility. We're imagining the first aircraft to be housed in the new hangar, the first maintenance session to be completed in the expanded space, and the first group of students to benefit from the enhanced training environment.
 
-But more than anything, we're looking forward to continuing this incredible journey with all of you. The groundbreaking celebration was a beautiful beginning, but it's just that—a beginning. The real magic will happen in the months and years to come as we continue to grow together, to support each other's dreams, and to push the boundaries of what's possible in aviation training.
+But more than anything, we're looking forward to continuing this incredible journey with all of you. The groundbreaking celebration was a beautiful beginning, but it's just that, a beginning. The real magic will happen in the months and years to come as we continue to grow together, to support each other's dreams, and to push the boundaries of what's possible in aviation training.
 
 ## A Heartfelt Thank You
 
