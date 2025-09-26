@@ -2,27 +2,45 @@ import EnrollmentModalButton from "./enrollmentModalButtom";
 import { useEffect, useState } from "react";
 
 export default function ProgramSuggester({ packages, webhookUrl, apiKey }) {
+  // Base package
   const [currentPackage, setCurrentPackage] = useState(packages.packs[0]);
-  const [currentPrice, setCurrentPrice] = useState(currentPackage.monthlyPrice);
-  const [currenVisible, setCurrentVisible] = useState(false);
+
+  // Display price object
+  const [currentPrice, setCurrentPrice] = useState(
+    packages.packs[0]?.monthlyPrice || { price: 0, afterPrice: "", note: "" }
+  );
+
+  const [currentVisible, setCurrentVisible] = useState(false);
   const [currentFeatures, setCurrentFeatures] = useState(
-    currentPackage.packageFeatures,
+    packages.packs[0]?.packageFeatures || []
   );
+
+  // Selections
   const [packageOption, setPackageOption] = useState("");
-  const [timeBuildingOption, setTimeBuildingOption] = useState("");
-
-  const [hoursValue, setHoursValue] = useState(packages.flightHours);
-  const [totalHoursPrice, setTotalHoursPrice] = useState(0);
-  const [flightFrequency, setFlightFrequency] = useState(0);
-
-  const [options, setOptions] = useState(
-    packages.flightHours ? [] : packages.question.questions[0].options,
+  const [priceOption, setPriceOption] = useState(
+    packages.question.questions[1].options[0] || ""
   );
-  const [priceOption, setPriceOption] = useState(" ");
+  const [timeBuildingOption, setTimeBuildingOption] = useState("");
   const [globOption, setGlobOption] = useState("");
 
+  // User inputs
+  const [hoursValue, setHoursValue] = useState(
+    Number(packages.flightHours) || 0
+  );
+  const [flightFrequency, setFlightFrequency] = useState(0);
+
+  // Derived / UI options
+  const [options, setOptions] = useState(
+    packages.question.questions[0].options
+  );
+  const [totalHoursPrice, setTotalHoursPrice] = useState(0);
+
+  const UPFRONT_LABEL = "In one up-front payment (discounts available)";
+  const MONTHLY_LABEL = "In monthly installments (block time)";
+
+  // ---------- Helpers ----------
+
   const findOptions = (option) => {
-    calcTotalPrice(globOption);
     if (option.includes("Solo")) {
       setOptions([
         " ",
@@ -44,104 +62,151 @@ export default function ProgramSuggester({ packages, webhookUrl, apiKey }) {
     }
   };
 
-  const calcTotalPrice = (afterPrice) => {
-    if (hoursValue > packages.flightHours) {
-      setCurrentFeatures(currentPackage.packageFeatures);
-      return;
+const calcTotalPrice = (paymentChoiceArg, packArg) => {
+  const paymentChoice = paymentChoiceArg || priceOption;
+  const pack = packArg || currentPackage;
+
+  const UPFRONT = UPFRONT_LABEL;
+  const MONTHLY = MONTHLY_LABEL;
+
+  // helper: try to infer the minimum months from any range-like field
+  const getMinMonths = () => {
+    // prefer an explicit months range if you have one
+    const candidates = [
+      pack.durationMonthsRange,   // e.g. "9-10"
+      pack.durationMonths,        // e.g. "5-6" or 6
+      pack.durationWeeksRange,    // e.g. "20-24 weeks"
+      pack.durationWeeks          // number of weeks
+    ];
+
+    for (const c of candidates) {
+      if (typeof c === "string") {
+        const m = c.match(/\d+/);
+        if (m) return Number(m[0]);
+      } else if (typeof c === "number") {
+        // weeks -> months (same factor you already use)
+        return Math.max(1, Math.round(c * 0.230137));
+      }
     }
-    !afterPrice && (afterPrice = globOption);
-    if (afterPrice === "In monthly installments (block time)") {
-      setCurrentPrice({
-        price:
-          (currentPackage.monthlyPrice.price + totalHoursPrice) /
-          Math.ceil(
-            ((packages.flightHours - hoursValue) / flightFrequency +
-              currentPackage.durationWeeks) *
-              0.230137,
-          ),
-        afterPrice: "/month",
-        note:
-          "for " +
-          Math.ceil(
-            ((packages.flightHours - hoursValue) / flightFrequency +
-              currentPackage.durationWeeks) *
-              0.230137,
-          ) +
-          " months",
-      });
-      setCurrentFeatures([
-        "Time Building Type: " +
-          (globOption.includes("Solo") ? "Solo" : "Shared"),
-        "Time Building Hours: " + (packages.flightHours - hoursValue),
-        "Commercial Program Duration: " +
-          currentPackage.durationWeeks +
-          " weeks",
-        "Commercial Training Frequency: " + currentPackage.programFrequency,
-      ]);
-    } else {
-      setCurrentPrice({
-        price: currentPackage.monthlyPrice.price + totalHoursPrice,
-        afterPrice: "/paid once",
-        note: "",
-      });
-      setCurrentFeatures([
-        "Time Building Type: " +
-          (globOption.includes("Solo") ? "Solo" : "Shared"),
-        "Time Building Hours: " + (packages.flightHours - hoursValue),
-        "Commercial Program Duration: " +
-          currentPackage.durationWeeks +
-          " weeks",
-        "Commercial Training Frequency: " + currentPackage.programFrequency,
-      ]);
-    }
+    return undefined;
   };
+
+  // If NO time building is needed (equal counts as enough)
+  if (hoursValue >= packages.flightHours) {
+    const priceObj = paymentChoice === UPFRONT ? pack.upfrontPrice : pack.monthlyPrice;
+    const minMonths = getMinMonths();
+
+    setCurrentPrice({
+      price: Number(priceObj?.price || 0),
+      afterPrice: paymentChoice === UPFRONT ? "/paid once" : "/month",
+      // Prefer the package's own note (keeps "for nine months" wording).
+      // If it's missing, fallback to "for X months" from the min range.
+      note: priceObj?.note || (minMonths ? `for ${minMonths} months` : ""),
+    });
+    setCurrentFeatures(pack.packageFeatures || []);
+    return;
+  }
+
+  // Time building needed
+  if (paymentChoice === MONTHLY) {
+    const remainingHours = Math.max(packages.flightHours - hoursValue, 0);
+    const weeksFromTimeBuilding = flightFrequency > 0 ? remainingHours / flightFrequency : 0;
+
+    const months = Math.max(
+      1,
+      Math.ceil((weeksFromTimeBuilding + (pack.durationWeeks || 0)) * 0.230137)
+    );
+
+    const baseMonthly = Number(pack.monthlyPrice?.price || 0);
+    const pricePerMonth = (baseMonthly + Number(totalHoursPrice || 0)) / months;
+
+    setCurrentPrice({
+      price: pricePerMonth,
+      afterPrice: "/month",
+      note: `for ${months} months`,
+    });
+  } else if (paymentChoice === UPFRONT) {
+    const baseUpfront = Number(pack.upfrontPrice?.price || 0);
+    setCurrentPrice({
+      price: baseUpfront + Number(totalHoursPrice || 0),
+      afterPrice: "/paid once",
+      note: "",
+    });
+  } else {
+    // Fallback (treat as upfront)
+    const baseUpfront = Number(pack.upfrontPrice?.price || 0);
+    setCurrentPrice({
+      price: baseUpfront + Number(totalHoursPrice || 0),
+      afterPrice: "/paid once",
+      note: "",
+    });
+  }
+
+  setCurrentFeatures([
+    "Time Building Type: " + (globOption.includes("Solo") ? "Solo" : "Shared"),
+    "Time Building Hours: " + Math.max(packages.flightHours - hoursValue, 0),
+    "Commercial Program Duration: " + (pack.durationWeeks || 0) + " weeks",
+    "Commercial Training Frequency: " + (pack.programFrequency || ""),
+  ]);
+};
 
   const findPackage = (option) => {
-    const pack = packages.packs.find((pack) => pack.option === option);
-    if (!pack) {
-      return;
-    }
+    const pack = packages.packs.find((p) => p.option === option);
+    if (!pack) return;
+
     setCurrentPackage(pack);
-    findPrice(priceOption);
-    if (hoursValue < packages.flightHours) {
-      setTotalHoursPrice((packages.flightHours - hoursValue) * pack.hourPrice);
-      calcTotalPrice(priceOption);
+
+    if (hoursValue <= packages.flightHours && pack?.hourPrice) {
+      setTotalHoursPrice(
+        Math.max(packages.flightHours - hoursValue, 0) * Number(pack.hourPrice)
+      );
+    }
+
+    // Ensure the display reflects the newly selected pack
+    findPrice(priceOption, pack);
+  };
+
+  const findPrice = (option, packArg) => {
+    const pack = packArg || currentPackage;
+    if (!pack) return;
+
+    if (option === MONTHLY_LABEL) {
+      setCurrentPrice(pack.monthlyPrice || { price: 0, afterPrice: "", note: "" });
+      if (hoursValue <= packages.flightHours && pack?.hourPrice) {
+        setTotalHoursPrice(
+          Math.max(packages.flightHours - hoursValue, 0) * Number(pack.hourPrice)
+        );
+      }
+      calcTotalPrice(option, pack);
+    } else if (option === UPFRONT_LABEL) {
+      setCurrentPrice(pack.upfrontPrice || { price: 0, afterPrice: "", note: "" });
+      calcTotalPrice(option, pack);
+    } else {
+      // Unknown label → default to upfront computation
+      setCurrentPrice(pack.upfrontPrice || { price: 0, afterPrice: "", note: "" });
+      calcTotalPrice(option, pack);
     }
   };
 
-  const findPrice = (option) => {
-    if (option === "In monthly installments (block time)") {
-      setCurrentPrice(currentPackage.monthlyPrice);
-      if (hoursValue <= packages.flightHours) {
-        setTotalHoursPrice(
-          (packages.flightHours - hoursValue) * currentPackage.hourPrice,
-        );
-        calcTotalPrice(option);
-      }
-    } else if (option === "In one up-front payment (discounts available)") {
-      setCurrentPrice(currentPackage.upfrontPrice);
-    } else {
-      return;
-    }
-  };
+  // ---------- Effects ----------
 
   useEffect(() => {
-    packages.flightHours &&
-      packages.flightHours > hoursValue &&
-      currentPackage.durationWeeks &&
-      calcPriceAndFindPackages();
-  }, [
-    flightFrequency,
-    priceOption,
-    hoursValue,
-    packageOption,
-    timeBuildingOption,
-  ]);
+    if (!currentPackage?.hourPrice) {
+      setTotalHoursPrice(0);
+      return;
+    }
+    const remaining = Math.max(packages.flightHours - hoursValue, 0);
+    const derived = remaining * Number(currentPackage.hourPrice);
+    setTotalHoursPrice(derived);
+  }, [hoursValue, currentPackage, packages.flightHours]);
 
-  const calcPriceAndFindPackages = () => {
-    calcTotalPrice(priceOption);
-    findPackage(packageOption);
-  };
+  useEffect(() => {
+    if (!currentPackage) return;
+    calcTotalPrice(priceOption, currentPackage);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [hoursValue, flightFrequency, priceOption, currentPackage, globOption, totalHoursPrice]);
+
+  // ---------- Render ----------
 
   return (
     <section className="bg-gray-100 lg:pt-24 pb-12 pt-32">
@@ -157,7 +222,9 @@ export default function ProgramSuggester({ packages, webhookUrl, apiKey }) {
             {packages.description}
           </p>
         </div>
+
         <div className="mx-auto mt-12 max-w-2xl rounded-2xl bg-gray-50 ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
+          {/* LEFT SIDE */}
           <div className="p-8 sm:p-10 lg:flex-auto">
             <h3 className="text-4xl text-center font-bold tracking-tight text-gray-900">
               {packages.question.questionHeading}
@@ -165,8 +232,9 @@ export default function ProgramSuggester({ packages, webhookUrl, apiKey }) {
             <p className="mt-6 text-base text-center leading-7 text-gray-600">
               {packages.question.questionDescription}
             </p>
+
             <div className="mt-10 flex flex-col items-center gap-x-4">
-              {packages.flightHours && (
+              {!!packages.flightHours && (
                 <>
                   <label
                     htmlFor="flight-time"
@@ -174,43 +242,49 @@ export default function ProgramSuggester({ packages, webhookUrl, apiKey }) {
                   >
                     {packages.hoursQuestion}
                   </label>
+
                   <input
                     name="flight-time"
                     id="flight-time"
                     type="number"
-                    defaultValue={hoursValue}
+                    value={hoursValue}
                     className="w-20 mt-2 py-2 text-xl font-serif font-bold text-center bg-gray-900 text-gray-50 rounded-lg border-gray-300 focus:border-main-red focus:ring-main-red"
                     step={15}
                     min={110}
                     onChange={(e) => {
-                      setHoursValue(e.target.value);
-                      if (hoursValue <= packages.flightHours) {
-                        if (currentPackage.hourPrice) {
+                      const val = Number(e.target.value || 0);
+                      setHoursValue(val);
+                      if (val <= packages.flightHours) {
+                        if (currentPackage?.hourPrice) {
                           setTotalHoursPrice(
-                            (packages.flightHours - e.target.value) *
-                              currentPackage.hourPrice,
+                            Math.max(packages.flightHours - val, 0) *
+                              Number(currentPackage.hourPrice)
                           );
                         }
                         findOptions("Commercial");
                       }
                     }}
                   />
+
                   {hoursValue < packages.flightHours && (
-                    <div className="mt-6 flex flex-col justify-center align-middle items-center bg-gray-200 rounded-md p-12">
+                    <div className="mt-6 flex flex-col justify-center items-center bg-gray-200 rounded-md p-12">
                       <h3 className="w-full text-2xl lg:px-10 text-center font-semibold leading-6 text-main-red">
                         You Need Time Building
                       </h3>
+
                       <p className="w-full mt-1 md:w-3/4 text-center">
                         You have{" "}
                         <strong>
-                          {packages.flightHours - hoursValue} hours
+                          {Math.max(packages.flightHours - hoursValue, 0)} hours
                         </strong>{" "}
                         left before you can start our Commercial Program.
                       </p>
-                      <div className="mt-7 flex flex-col justify-center align-middle items-center">
+
+                      <div className="mt-7 flex flex-col justify-center items-center">
                         <h4 className="w-full lg:px-10 text-lg text-center font-semibold leading-6 text-main-red">
                           {packages.hoursQuestion2.question}
                         </h4>
+
                         <div className="flex-auto mt-2 w-full lg:w-3/5">
                           <label htmlFor="hoursQuestion2" className="sr-only">
                             Select a tab
@@ -218,14 +292,14 @@ export default function ProgramSuggester({ packages, webhookUrl, apiKey }) {
                           <select
                             id="hoursQuestion2"
                             name="hoursQuestion2"
-                            defaultValue={packages.hoursQuestion2.options[0]}
+                            value={timeBuildingOption || packages.hoursQuestion2.options[0]}
                             className="block w-full px-6 py-4 text-center bg-gray-900 text-gray-50 rounded-lg border-gray-300 focus:border-main-red focus:ring-main-red"
                             onChange={(e) => {
+                              const val = e.target.value;
                               setCurrentVisible(false);
-                              calcTotalPrice(priceOption);
-                              setTimeBuildingOption(e.target.value);
-                              findOptions(e.target.value);
-                              setGlobOption(e.target.value);
+                              setTimeBuildingOption(val);
+                              setGlobOption(val);
+                              findOptions(val);
                             }}
                           >
                             {packages.hoursQuestion2.options.map((option) => (
@@ -233,25 +307,27 @@ export default function ProgramSuggester({ packages, webhookUrl, apiKey }) {
                             ))}
                           </select>
                         </div>
-                        <div className="mt-10 flex flex-col justify-center align-middle items-center">
+
+                        <div className="mt-10 flex flex-col justify-center items-center">
                           <label
                             htmlFor="flight-frequency"
                             className="w-full lg:px-10 text-lg text-center font-semibold leading-6 text-main-red"
                           >
                             {packages.frequencyQuestion}
                           </label>
+
                           <input
                             name="flight-frequency"
                             id="flight-frequency"
                             type="number"
-                            defaultValue={flightFrequency}
+                            value={flightFrequency}
                             className="w-20 mt-2 py-2 text-xl font-serif font-bold text-center bg-gray-900 text-gray-50 rounded-lg border-gray-300 focus:border-main-red focus:ring-main-red"
                             step={1}
                             min={4}
                             max={20}
-                            onChange={(e) => {
-                              setFlightFrequency(e.target.value);
-                            }}
+                            onChange={(e) =>
+                              setFlightFrequency(Number(e.target.value || 0))
+                            }
                           />
                         </div>
                       </div>
@@ -259,9 +335,11 @@ export default function ProgramSuggester({ packages, webhookUrl, apiKey }) {
                   )}
                 </>
               )}
+
               <h4 className="mt-6 w-full lg:px-10 text-lg text-center font-semibold leading-6 text-main-red">
                 {packages.question.questions[0].question}
               </h4>
+
               <div className="flex-auto mt-2 w-full lg:w-3/5">
                 <label htmlFor="question1" className="sr-only">
                   Select a tab
@@ -269,10 +347,12 @@ export default function ProgramSuggester({ packages, webhookUrl, apiKey }) {
                 <select
                   id="question1"
                   name="question1"
+                  value={packageOption || options[0] || ""}
                   className="block w-full px-6 py-4 text-center bg-gray-900 text-gray-50 rounded-lg border-gray-300 focus:border-main-red focus:ring-main-red"
                   onChange={(e) => {
-                    findPackage(e.target.value);
-                    setPackageOption(e.target.value);
+                    const val = e.target.value;
+                    setPackageOption(val);
+                    findPackage(val);
                     setCurrentVisible(true);
                   }}
                 >
@@ -282,10 +362,12 @@ export default function ProgramSuggester({ packages, webhookUrl, apiKey }) {
                 </select>
               </div>
             </div>
+
             <div className="mt-10 flex flex-col items-center gap-x-4">
               <h4 className="w-full lg:px-10 text-lg text-center font-semibold leading-6 text-main-red">
                 {packages.question.questions[1].question}
               </h4>
+
               <div className="flex-auto mt-2 w-full lg:w-3/5">
                 <label htmlFor="question2" className="sr-only">
                   Select a tab
@@ -293,11 +375,12 @@ export default function ProgramSuggester({ packages, webhookUrl, apiKey }) {
                 <select
                   id="question2"
                   name="question2"
-                  defaultValue={packages.question.questions[1].options[0]}
+                  value={priceOption}
                   className="block w-full px-6 py-4 text-center bg-gray-900 text-gray-50 rounded-lg border-gray-300 focus:border-main-red focus:ring-main-red"
                   onChange={(e) => {
-                    findPrice(e.target.value);
-                    setPriceOption(e.target.value);
+                    const val = e.target.value;
+                    setPriceOption(val);
+                    findPrice(val);
                   }}
                 >
                   {packages.question.questions[1].options.map((option) => (
@@ -305,6 +388,7 @@ export default function ProgramSuggester({ packages, webhookUrl, apiKey }) {
                   ))}
                 </select>
               </div>
+
               <div className="mt-8 bg-gray-200 rounded-lg p-4 lg:p-12">
                 <h5 className="text-xl font-bold text-center">
                   All packages will include:
@@ -334,8 +418,12 @@ export default function ProgramSuggester({ packages, webhookUrl, apiKey }) {
               </div>
             </div>
           </div>
+
+          {/* RIGHT SIDE */}
           <div
-            className={`${currenVisible ? "w-full h-full opacity-100" : "w-0 opacity-0 h-0"} duration-1000 transition-all -mt-2 p-2 lg:mt-0 lg:max-w-md lg:flex-shrink-0 sticky top-20`}
+            className={`${
+              currentVisible ? "w-full h-full opacity-100" : "w-0 opacity-0 h-0"
+            } duration-1000 transition-all -mt-2 p-2 lg:mt-0 lg:max-w-md lg:flex-shrink-0 sticky top-20`}
           >
             <div className="mt-4 lg:mt-0 rounded-xl bg-gray-900 py-10 text-center ring-1 ring-inset ring-gray-900/5 lg:flex lg:flex-col lg:justify-center lg:py-16">
               <div className="pt-16 lg:px-8 lg:pt-0 xl:px-14">
@@ -345,9 +433,13 @@ export default function ProgramSuggester({ packages, webhookUrl, apiKey }) {
                 >
                   {currentPackage.packageName}
                 </h3>
+
                 <p className="mt-6 w-full flex justify-center items-baseline gap-x-1">
                   <span className="text-5xl font-bold tracking-tight text-gray-200 font-serif">
-                    $ {Math.ceil(currentPrice.price).toLocaleString("en-US")}
+                    ${" "}
+                    {Number.isFinite(currentPrice?.price)
+                      ? Math.ceil(Number(currentPrice.price)).toLocaleString("en-US")
+                      : "0"}
                   </span>
                   {currentPrice.afterPrice && (
                     <span className="text-sm font-semibold leading-6 text-gray-100">
@@ -355,11 +447,8 @@ export default function ProgramSuggester({ packages, webhookUrl, apiKey }) {
                     </span>
                   )}
                 </p>
-                {currentPrice.note && (
-                  <p className="mt-3 text-sm leading-6 text-gray-500 font-serif">
-                    {currentPrice.note}
-                  </p>
-                )}
+
+
                 <ul
                   role="list"
                   className="mx-auto w-fit mt-6 px-7 lg:px-0 space-y-3 text-sm text-left leading-6 text-gray-100"
@@ -382,7 +471,7 @@ export default function ProgramSuggester({ packages, webhookUrl, apiKey }) {
                           <span>{feature}</span>
                         </li>
                       ))
-                    : currentPackage.packageFeatures.map((feature) => (
+                    : (currentPackage.packageFeatures || []).map((feature) => (
                         <li className="flex gap-x-3" key={feature}>
                           <svg
                             className="h-6 w-5 flex-none text-red-600"
@@ -400,6 +489,7 @@ export default function ProgramSuggester({ packages, webhookUrl, apiKey }) {
                         </li>
                       ))}
                 </ul>
+
                 <EnrollmentModalButton
                   btnStyle={
                     "mt-10 block mx-auto w-1/2 lg:w-3/4 bg-red-600 px-3 py-2 text-center text-sm font-semibold leading-6 text-white shadow-sm hover:bg-red-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600"
@@ -409,6 +499,7 @@ export default function ProgramSuggester({ packages, webhookUrl, apiKey }) {
                   webhookUrl={webhookUrl}
                   apiKey={apiKey}
                 />
+
                 <p className="mt-10 text-sm font-normal px-4 lg:px-0 text-justify leading-6 text-gray-200">
                   {currentPackage.packageDescription}
                 </p>
@@ -418,6 +509,7 @@ export default function ProgramSuggester({ packages, webhookUrl, apiKey }) {
               </div>
             </div>
           </div>
+          {/* END RIGHT SIDE */}
         </div>
       </div>
     </section>
