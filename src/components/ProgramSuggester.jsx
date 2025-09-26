@@ -1,10 +1,52 @@
-// ProgramSuggesterFixed.jsx
 import { useEffect, useMemo, useState } from "react";
 import EnrollmentModalButton from "./enrollmentModalButtom";
 
 /**
- * Expected `packages` shape (same as your previous component)
- * See inline comments if you need to tweak labels.
+ * DATA SCHEMA EXPECTED IN `packages` PROP
+ * packages = {
+ *   upperHeading: string,
+ *   heading: string,
+ *   description: string,
+ *   flightHours: number,                // target required hours (e.g., 250)
+ *   hoursQuestion: string,              // label for flight time input
+ *   hoursQuestion2: {                   // time-building mode select
+ *     question: string,
+ *     options: ["Solo", "Shared"]       // or any labels containing those words
+ *   },
+ *   frequencyQuestion: string,          // label for flights/week input
+ *   allInclude: string[],               // bullets list
+ *   question: {
+ *     questionHeading: string,
+ *     questionDescription: string,
+ *     questions: [
+ *       {
+ *         question: string,             // Q1: choose package
+ *         options: string[]             // options must match pack.option
+ *       },
+ *       {
+ *         question: string,             // Q2: payment mode
+ *         options: [
+ *            "In monthly installments (block time)",
+ *            "In one up-front payment (discounts available)"
+ *         ]
+ *       }
+ *     ]
+ *   },
+ *   packs: [
+ *     {
+ *       option: string,                 // must match Q1 options
+ *       packageName: string,
+ *       packageDescription: string,
+ *       packageLittlePrint: string,
+ *       packageFeatures: string[],
+ *       durationWeeks: number,          // commercial program duration in weeks
+ *       programFrequency: string,       // text like "5–6 days/week"
+ *       hourPrice: number,              // TB hour price
+ *       monthlyPrice: { price: number },
+ *       upfrontPrice: { price: number }
+ *     }
+ *   ]
+ * }
  */
 
 const PM_MONTHLY = "In monthly installments (block time)";
@@ -16,7 +58,7 @@ const toInt = (v, fallback = 0) => {
   return Number.isFinite(n) ? Math.max(0, n) : fallback;
 };
 
-export default function ProgramSuggester({
+export default function ProgramSuggesterFixed({
   packages,
   webhookUrl,
   apiKey,
@@ -32,55 +74,20 @@ export default function ProgramSuggester({
     [packages.packs, selectedOption, defaultPack],
   );
 
-  // --- PAYMENT MODE (Monthly by default, robust to data order/labels) --------
-  const rawPaymentOptions = packages?.question?.questions?.[1]?.options ?? [
+  // --- PAYMENT MODE ----------------------------------------------------------
+  const paymentOptions = packages?.question?.questions?.[1]?.options ?? [
     PM_MONTHLY,
     PM_UPFRONT,
   ];
-
-  // Ensure monthly-looking option appears first in the dropdown
-  const paymentOptions = useMemo(() => {
-    const opts = Array.isArray(rawPaymentOptions) ? rawPaymentOptions : [];
-
-    const monthly =
-      opts.find((o) => o === PM_MONTHLY) ||
-      opts.find((o) => /monthly/i.test(String(o))) ||
-      PM_MONTHLY;
-
-    const upfront =
-      opts.find((o) => o === PM_UPFRONT) ||
-      opts.find((o) => /(up[\s-]?front|once|full)/i.test(String(o))) ||
-      PM_UPFRONT;
-
-    const result = [];
-    if (!result.includes(monthly)) result.push(monthly);
-    if (!result.includes(upfront)) result.push(upfront);
-
-    // Ensure exactly two options, with monthly first
-    if (result.length < 2) {
-      if (!result.includes(PM_MONTHLY)) result.unshift(PM_MONTHLY);
-      if (result.length < 2 && !result.includes(PM_UPFRONT)) result.push(PM_UPFRONT);
-    }
-
-    return result.slice(0, 2);
-  }, [rawPaymentOptions]);
-
-  // Force "monthly" as the default selected value
-  const [priceOption, setPriceOption] = useState(PM_MONTHLY);
-
-  // Snap to monthly if options load later or label varies slightly
-  useEffect(() => {
-    const m =
-      paymentOptions.find((o) => o === PM_MONTHLY) ||
-      paymentOptions.find((o) => /monthly/i.test(o)) ||
-      PM_MONTHLY;
-    setPriceOption(m);
-  }, [paymentOptions]);
+  const [priceOption, setPriceOption] = useState(
+    paymentOptions[0] ?? PM_MONTHLY,
+  );
 
   // --- USER INPUTS -----------------------------------------------------------
   const [hoursValue, setHoursValue] = useState(
-    toInt(packages?.flightHours ?? 0), // start at requirement by default
+    toInt(packages?.flightHours ?? 0), // start at the requirement by default
   );
+
   const [flightFrequency, setFlightFrequency] = useState(0); // flights per week during TB
   const [tbMode, setTbMode] = useState(
     packages?.hoursQuestion2?.options?.[0] ?? "Solo",
@@ -92,16 +99,22 @@ export default function ProgramSuggester({
   const tbHourPrice = toInt(selectedPack?.hourPrice ?? 0);
   const timeBuildingCost = remainingHours * tbHourPrice;
 
+  // monthly & upfront base prices for the selected pack
   const baseMonthly = toInt(selectedPack?.monthlyPrice?.price ?? 0);
   const baseUpfront = toInt(selectedPack?.upfrontPrice?.price ?? 0);
 
+  // compute duration in months when monthly mode is selected
   // months ~= ceil( (TB weeks + program weeks) * 0.230137 )
   const monthsForPlan = useMemo(() => {
-    if (!/monthly/i.test(priceOption)) return 0;
+    if (priceOption !== PM_MONTHLY) return 0; // not used for upfront
+
     const freq = toInt(flightFrequency);
     const tbWeeks = remainingHours > 0 && freq > 0 ? remainingHours / freq : 0;
+
     const programWeeks = toInt(selectedPack?.durationWeeks ?? 0);
     const totalWeeks = tbWeeks + programWeeks;
+
+    // 0.230137 is your weeks->months heuristic; ensure at least 1 month
     return Math.max(1, Math.ceil(totalWeeks * 0.230137));
   }, [
     priceOption,
@@ -112,15 +125,18 @@ export default function ProgramSuggester({
 
   // --- PRICE OBJECT (ALWAYS FRESH) ------------------------------------------
   const currentPrice = useMemo(() => {
-    if (/monthly/i.test(priceOption)) {
+    if (priceOption === PM_MONTHLY) {
       const months = monthsForPlan || 1;
       const perMonth = (baseMonthly + timeBuildingCost) / months;
+
       return {
         price: Math.ceil(perMonth),
         afterPrice: "/month",
         note: `for ${months} month${months > 1 ? "s" : ""}`,
       };
     }
+
+    // upfront
     return {
       price: Math.ceil(baseUpfront + timeBuildingCost),
       afterPrice: "/paid once",
@@ -128,9 +144,10 @@ export default function ProgramSuggester({
     };
   }, [priceOption, monthsForPlan, baseMonthly, baseUpfront, timeBuildingCost]);
 
-  // --- FEATURES PANEL --------------------------------------------------------
+  // --- FEATURES PANEL (keeps same feel, adds TB context when relevant) ------
   const featureList = useMemo(() => {
     const base = selectedPack?.packageFeatures ?? [];
+
     if (remainingHours <= 0) return base;
 
     const tbType = String(tbMode).includes("Solo") ? "Solo" : "Shared";
@@ -138,6 +155,7 @@ export default function ProgramSuggester({
       `Time Building Type: ${tbType}`,
       `Time Building Hours: ${remainingHours}`,
     ];
+
     if (selectedPack?.durationWeeks) {
       addOns.push(
         `Commercial Program Duration: ${selectedPack.durationWeeks} weeks`,
@@ -151,14 +169,16 @@ export default function ProgramSuggester({
     return addOns;
   }, [selectedPack, remainingHours, tbMode]);
 
-  // --- PACKAGE SELECT OPTIONS ------------------------------------------------
+  // --- SELECT OPTIONS FOR Q1 (PACKAGE) --------------------------------------
   const packageQuestion = packages?.question?.questions?.[0];
   const packageSelectOptions = useMemo(() => {
     const explicit = packageQuestion?.options ?? [];
     if (explicit.length) return explicit;
+    // fallback to pack.option list
     return packages.packs.map((p) => p.option);
   }, [packageQuestion?.options, packages.packs]);
 
+  // initialize selection from first option if needed
   useEffect(() => {
     if (!selectedOption && packageSelectOptions.length) {
       setSelectedOption(packageSelectOptions[0]);
