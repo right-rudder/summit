@@ -1,297 +1,257 @@
-import { useEffect, useMemo, useState } from "react";
 import EnrollmentModalButton from "./enrollmentModalButtom";
+import { useEffect, useState } from "react";
 
-/**
- * DATA SCHEMA EXPECTED IN `packages` PROP
- * packages = {
- *   upperHeading: string,
- *   heading: string,
- *   description: string,
- *   flightHours: number,                // target required hours (e.g., 250)
- *   hoursQuestion: string,              // label for flight time input
- *   hoursQuestion2: {                   // time-building mode select
- *     question: string,
- *     options: ["Solo", "Shared"]       // or any labels containing those words
- *   },
- *   frequencyQuestion: string,          // label for flights/week input
- *   allInclude: string[],               // bullets list
- *   question: {
- *     questionHeading: string,
- *     questionDescription: string,
- *     questions: [
- *       {
- *         question: string,             // Q1: choose package
- *         options: string[]             // options must match pack.option
- *       },
- *       {
- *         question: string,             // Q2: payment mode
- *         options: [
- *            "In monthly installments (block time)",
- *            "In one up-front payment (discounts available)"
- *         ]
- *       }
- *     ]
- *   },
- *   packs: [
- *     {
- *       option: string,                 // must match Q1 options
- *       packageName: string,
- *       packageDescription: string,
- *       packageLittlePrint: string,
- *       packageFeatures: string[],
- *       durationWeeks: number,          // commercial program duration in weeks
- *       programFrequency: string,       // text like "5–6 days/week"
- *       hourPrice: number,              // TB hour price
- *       monthlyPrice: { price: number },
- *       upfrontPrice: { price: number }
- *     }
- *   ]
- * }
- */
-
-const PM_MONTHLY = "In monthly installments (block time)";
-const PM_UPFRONT = "In one up-front payment (discounts available)";
-
-/** helper to coerce to non-negative integer */
-const toInt = (v, fallback = 0) => {
-  const n = Number.parseInt(String(v), 10);
-  return Number.isFinite(n) ? Math.max(0, n) : fallback;
-};
-
-export default function ProgramSuggesterFixed({
-  packages,
-  webhookUrl,
-  apiKey,
-}) {
-  // --- SELECTED PACKAGE ------------------------------------------------------
-  const defaultPack = packages?.packs?.[0];
-  const [selectedOption, setSelectedOption] = useState(
-    defaultPack?.option ?? "",
+export default function ProgramSuggester({ packages, webhookUrl, apiKey }) {
+  const [currentPackage, setCurrentPackage] = useState(packages.packs[0]);
+  const [currentPrice, setCurrentPrice] = useState(currentPackage.monthlyPrice);
+  const [currenVisible, setCurrentVisible] = useState(false);
+  const [currentFeatures, setCurrentFeatures] = useState(
+    currentPackage.packageFeatures,
   );
-  const selectedPack = useMemo(
-    () =>
-      packages.packs.find((p) => p.option === selectedOption) ?? defaultPack,
-    [packages.packs, selectedOption, defaultPack],
+  const [packageOption, setPackageOption] = useState("");
+  const [timeBuildingOption, setTimeBuildingOption] = useState("");
+
+  const [hoursValue, setHoursValue] = useState(packages.flightHours);
+  const [totalHoursPrice, setTotalHoursPrice] = useState(0);
+  const [flightFrequency, setFlightFrequency] = useState(0);
+
+  const [options, setOptions] = useState(
+    packages.flightHours ? [] : packages.question.questions[0].options,
   );
+  const [priceOption, setPriceOption] = useState(" ");
+  const [globOption, setGlobOption] = useState("");
 
-  // --- PAYMENT MODE ----------------------------------------------------------
-  const paymentOptions = packages?.question?.questions?.[1]?.options ?? [
-    PM_MONTHLY,
-    PM_UPFRONT,
-  ];
-  const [priceOption, setPriceOption] = useState(
-    paymentOptions[0] ?? PM_MONTHLY,
-  );
+  const findOptions = (option) => {
+    calcTotalPrice(globOption);
+    if (option.includes("Solo")) {
+      setOptions([
+        " ",
+        "12 weeks, flying 1-2 days/week (after solo time building)",
+        "5 weeks, flying 5-6 days/week (after solo time building)",
+      ]);
+    } else if (option.includes("Shared")) {
+      setOptions([
+        " ",
+        "12 weeks, flying 1-2 days/week (after shared time building)",
+        "5 weeks, flying 5-6 days/week (after shared time building)",
+      ]);
+    } else {
+      setOptions([
+        " ",
+        "5 weeks, flying 5-6 days/week",
+        "12 weeks, flying 1-2 days/week",
+      ]);
+    }
+  };
 
-  // --- USER INPUTS -----------------------------------------------------------
-  const [hoursValue, setHoursValue] = useState(
-    toInt(packages?.flightHours ?? 0), // start at the requirement by default
-  );
+  const calcTotalPrice = (afterPrice) => {
+    if (hoursValue > packages.flightHours) {
+      setCurrentFeatures(currentPackage.packageFeatures);
+      return;
+    }
+    !afterPrice && (afterPrice = globOption);
+    if (afterPrice === "In monthly installments (block time)") {
+      setCurrentPrice({
+        price:
+          (currentPackage.monthlyPrice.price + totalHoursPrice) /
+          Math.ceil(
+            ((packages.flightHours - hoursValue) / flightFrequency +
+              currentPackage.durationWeeks) *
+              0.230137,
+          ),
+        afterPrice: "/month",
+        note:
+          "for " +
+          Math.ceil(
+            ((packages.flightHours - hoursValue) / flightFrequency +
+              currentPackage.durationWeeks) *
+              0.230137,
+          ) +
+          " months",
+      });
+      setCurrentFeatures([
+        "Time Building Type: " +
+          (globOption.includes("Solo") ? "Solo" : "Shared"),
+        "Time Building Hours: " + (packages.flightHours - hoursValue),
+        "Commercial Program Duration: " +
+          currentPackage.durationWeeks +
+          " weeks",
+        "Commercial Training Frequency: " + currentPackage.programFrequency,
+      ]);
+    } else {
+      setCurrentPrice({
+        price: currentPackage.monthlyPrice.price + totalHoursPrice,
+        afterPrice: "/paid once",
+        note: "",
+      });
+      setCurrentFeatures([
+        "Time Building Type: " +
+          (globOption.includes("Solo") ? "Solo" : "Shared"),
+        "Time Building Hours: " + (packages.flightHours - hoursValue),
+        "Commercial Program Duration: " +
+          currentPackage.durationWeeks +
+          " weeks",
+        "Commercial Training Frequency: " + currentPackage.programFrequency,
+      ]);
+    }
+  };
 
-  const [flightFrequency, setFlightFrequency] = useState(0); // flights per week during TB
-  const [tbMode, setTbMode] = useState(
-    packages?.hoursQuestion2?.options?.[0] ?? "Solo",
-  );
+  const findPackage = (option) => {
+    const pack = packages.packs.find((pack) => pack.option === option);
+    if (!pack) {
+      return;
+    }
+    setCurrentPackage(pack);
+    findPrice(priceOption);
+    if (hoursValue < packages.flightHours) {
+      setTotalHoursPrice((packages.flightHours - hoursValue) * pack.hourPrice);
+      calcTotalPrice(priceOption);
+    }
+  };
 
-  // --- DERIVED NUMBERS -------------------------------------------------------
-  const requiredHours = toInt(packages?.flightHours ?? 0);
-  const remainingHours = Math.max(requiredHours - toInt(hoursValue), 0);
-  const tbHourPrice = toInt(selectedPack?.hourPrice ?? 0);
-  const timeBuildingCost = remainingHours * tbHourPrice;
+  const findPrice = (option) => {
+    if (option === "In monthly installments (block time)") {
+      setCurrentPrice(currentPackage.monthlyPrice);
+      if (hoursValue <= packages.flightHours) {
+        setTotalHoursPrice(
+          (packages.flightHours - hoursValue) * currentPackage.hourPrice,
+        );
+        calcTotalPrice(option);
+      }
+    } else if (option === "In one up-front payment (discounts available)") {
+      setCurrentPrice(currentPackage.upfrontPrice);
+    } else {
+      return;
+    }
+  };
 
-  // monthly & upfront base prices for the selected pack
-  const baseMonthly = toInt(selectedPack?.monthlyPrice?.price ?? 0);
-  const baseUpfront = toInt(selectedPack?.upfrontPrice?.price ?? 0);
-
-  // compute duration in months when monthly mode is selected
-  // months ~= ceil( (TB weeks + program weeks) * 0.230137 )
-  const monthsForPlan = useMemo(() => {
-    if (priceOption !== PM_MONTHLY) return 0; // not used for upfront
-
-    const freq = toInt(flightFrequency);
-    const tbWeeks = remainingHours > 0 && freq > 0 ? remainingHours / freq : 0;
-
-    const programWeeks = toInt(selectedPack?.durationWeeks ?? 0);
-    const totalWeeks = tbWeeks + programWeeks;
-
-    // 0.230137 is your weeks->months heuristic; ensure at least 1 month
-    return Math.max(1, Math.ceil(totalWeeks * 0.230137));
+  useEffect(() => {
+    packages.flightHours &&
+      packages.flightHours > hoursValue &&
+      currentPackage.durationWeeks &&
+      calcPriceAndFindPackages();
   }, [
-    priceOption,
     flightFrequency,
-    remainingHours,
-    selectedPack?.durationWeeks,
+    priceOption,
+    hoursValue,
+    packageOption,
+    timeBuildingOption,
   ]);
 
-  // --- PRICE OBJECT (ALWAYS FRESH) ------------------------------------------
-  const currentPrice = useMemo(() => {
-    if (priceOption === PM_MONTHLY) {
-      const months = monthsForPlan || 1;
-      const perMonth = (baseMonthly + timeBuildingCost) / months;
+  const calcPriceAndFindPackages = () => {
+    calcTotalPrice(priceOption);
+    findPackage(packageOption);
+  };
 
-      return {
-        price: Math.ceil(perMonth),
-        afterPrice: "/month",
-        note: `for ${months} month${months > 1 ? "s" : ""}`,
-      };
-    }
-
-    // upfront
-    return {
-      price: Math.ceil(baseUpfront + timeBuildingCost),
-      afterPrice: "/paid once",
-      note: "",
-    };
-  }, [priceOption, monthsForPlan, baseMonthly, baseUpfront, timeBuildingCost]);
-
-  // --- FEATURES PANEL (keeps same feel, adds TB context when relevant) ------
-  const featureList = useMemo(() => {
-    const base = selectedPack?.packageFeatures ?? [];
-
-    if (remainingHours <= 0) return base;
-
-    const tbType = String(tbMode).includes("Solo") ? "Solo" : "Shared";
-    const addOns = [
-      `Time Building Type: ${tbType}`,
-      `Time Building Hours: ${remainingHours}`,
-    ];
-
-    if (selectedPack?.durationWeeks) {
-      addOns.push(
-        `Commercial Program Duration: ${selectedPack.durationWeeks} weeks`,
-      );
-    }
-    if (selectedPack?.programFrequency) {
-      addOns.push(
-        `Commercial Training Frequency: ${selectedPack.programFrequency}`,
-      );
-    }
-    return addOns;
-  }, [selectedPack, remainingHours, tbMode]);
-
-  // --- SELECT OPTIONS FOR Q1 (PACKAGE) --------------------------------------
-  const packageQuestion = packages?.question?.questions?.[0];
-  const packageSelectOptions = useMemo(() => {
-    const explicit = packageQuestion?.options ?? [];
-    if (explicit.length) return explicit;
-    // fallback to pack.option list
-    return packages.packs.map((p) => p.option);
-  }, [packageQuestion?.options, packages.packs]);
-
-  // initialize selection from first option if needed
-  useEffect(() => {
-    if (!selectedOption && packageSelectOptions.length) {
-      setSelectedOption(packageSelectOptions[0]);
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [packageSelectOptions.length]);
-
-  // --- RENDER ---------------------------------------------------------------
   return (
     <section className="bg-gray-100 lg:pt-24 pb-12 pt-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        {/* Header */}
         <div className="mx-auto max-w-2xl sm:text-center">
           <h2 className="text-base font-semibold leading-7 text-red-600">
-            {packages?.upperHeading}
+            {packages.upperHeading}
           </h2>
           <h2 className="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
-            {packages?.heading}
+            {packages.heading}
           </h2>
           <p className="mt-6 text-lg lg:px-6 leading-7 text-gray-600">
-            {packages?.description}
+            {packages.description}
           </p>
         </div>
-
-        {/* Card */}
         <div className="mx-auto mt-12 max-w-2xl rounded-2xl bg-gray-50 ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
-          {/* Left column: form & inclusions */}
           <div className="p-8 sm:p-10 lg:flex-auto">
             <h3 className="text-4xl text-center font-bold tracking-tight text-gray-900">
-              {packages?.question?.questionHeading}
+              {packages.question.questionHeading}
             </h3>
             <p className="mt-6 text-base text-center leading-7 text-gray-600">
-              {packages?.question?.questionDescription}
+              {packages.question.questionDescription}
             </p>
-
-            {/* Inputs */}
             <div className="mt-10 flex flex-col items-center gap-x-4">
-              {Number.isFinite(requiredHours) && requiredHours > 0 && (
+              {packages.flightHours && (
                 <>
-                  {/* Flight time input */}
                   <label
                     htmlFor="flight-time"
                     className="w-full lg:px-10 text-lg text-center font-semibold leading-6 text-main-red"
                   >
-                    {packages?.hoursQuestion}
+                    {packages.hoursQuestion}
                   </label>
                   <input
+                    name="flight-time"
                     id="flight-time"
                     type="number"
-                    value={hoursValue}
+                    defaultValue={hoursValue}
                     className="w-20 mt-2 py-2 text-xl font-serif font-bold text-center bg-gray-900 text-gray-50 rounded-lg border-gray-300 focus:border-main-red focus:ring-main-red"
-                    step={5}
-                    min={0}
-                    onChange={(e) => setHoursValue(toInt(e.target.value, 0))}
+                    step={15}
+                    min={110}
+                    onChange={(e) => {
+                      setHoursValue(e.target.value);
+                      if (hoursValue <= packages.flightHours) {
+                        if (currentPackage.hourPrice) {
+                          setTotalHoursPrice(
+                            (packages.flightHours - e.target.value) *
+                              currentPackage.hourPrice,
+                          );
+                        }
+                        findOptions("Commercial");
+                      }
+                    }}
                   />
-
-                  {/* Time building panel */}
-                  {remainingHours > 0 && (
-                    <div className="mt-6 flex flex-col justify-center items-center bg-gray-200 rounded-md p-12">
+                  {hoursValue < packages.flightHours && (
+                    <div className="mt-6 flex flex-col justify-center align-middle items-center bg-gray-200 rounded-md p-12">
                       <h3 className="w-full text-2xl lg:px-10 text-center font-semibold leading-6 text-main-red">
                         You Need Time Building
                       </h3>
                       <p className="w-full mt-1 md:w-3/4 text-center">
-                        You have <strong>{remainingHours} hours</strong> left
-                        before you can start our Commercial Program.
+                        You have{" "}
+                        <strong>
+                          {packages.flightHours - hoursValue} hours
+                        </strong>{" "}
+                        left before you can start our Commercial Program.
                       </p>
-
-                      <div className="mt-7 flex flex-col justify-center items-center">
+                      <div className="mt-7 flex flex-col justify-center align-middle items-center">
                         <h4 className="w-full lg:px-10 text-lg text-center font-semibold leading-6 text-main-red">
-                          {packages?.hoursQuestion2?.question}
+                          {packages.hoursQuestion2.question}
                         </h4>
-
                         <div className="flex-auto mt-2 w-full lg:w-3/5">
-                          <label htmlFor="tb-mode" className="sr-only">
-                            Select time-building mode
+                          <label htmlFor="hoursQuestion2" className="sr-only">
+                            Select a tab
                           </label>
                           <select
-                            id="tb-mode"
+                            id="hoursQuestion2"
+                            name="hoursQuestion2"
+                            defaultValue={packages.hoursQuestion2.options[0]}
                             className="block w-full px-6 py-4 text-center bg-gray-900 text-gray-50 rounded-lg border-gray-300 focus:border-main-red focus:ring-main-red"
-                            value={tbMode}
-                            onChange={(e) => setTbMode(e.target.value)}
+                            onChange={(e) => {
+                              setCurrentVisible(false);
+                              calcTotalPrice(priceOption);
+                              setTimeBuildingOption(e.target.value);
+                              findOptions(e.target.value);
+                              setGlobOption(e.target.value);
+                            }}
                           >
-                            {(
-                              packages?.hoursQuestion2?.options ?? [
-                                "Solo",
-                                "Shared",
-                              ]
-                            ).map((opt) => (
-                              <option key={opt} value={opt}>
-                                {opt}
-                              </option>
+                            {packages.hoursQuestion2.options.map((option) => (
+                              <option key={option}>{option}</option>
                             ))}
                           </select>
                         </div>
-
-                        <div className="mt-10 flex flex-col justify-center items-center">
+                        <div className="mt-10 flex flex-col justify-center align-middle items-center">
                           <label
                             htmlFor="flight-frequency"
                             className="w-full lg:px-10 text-lg text-center font-semibold leading-6 text-main-red"
                           >
-                            {packages?.frequencyQuestion}
+                            {packages.frequencyQuestion}
                           </label>
                           <input
+                            name="flight-frequency"
                             id="flight-frequency"
                             type="number"
-                            value={flightFrequency}
+                            defaultValue={flightFrequency}
                             className="w-20 mt-2 py-2 text-xl font-serif font-bold text-center bg-gray-900 text-gray-50 rounded-lg border-gray-300 focus:border-main-red focus:ring-main-red"
                             step={1}
-                            min={0}
-                            max={30}
-                            onChange={(e) =>
-                              setFlightFrequency(toInt(e.target.value, 0))
-                            }
+                            min={4}
+                            max={20}
+                            onChange={(e) => {
+                              setFlightFrequency(e.target.value);
+                            }}
                           />
                         </div>
                       </div>
@@ -299,55 +259,52 @@ export default function ProgramSuggesterFixed({
                   )}
                 </>
               )}
-
-              {/* Q1: Choose package */}
               <h4 className="mt-6 w-full lg:px-10 text-lg text-center font-semibold leading-6 text-main-red">
-                {packages?.question?.questions?.[0]?.question}
+                {packages.question.questions[0].question}
               </h4>
               <div className="flex-auto mt-2 w-full lg:w-3/5">
-                <label htmlFor="package-select" className="sr-only">
-                  Select a package
+                <label htmlFor="question1" className="sr-only">
+                  Select a tab
                 </label>
                 <select
-                  id="package-select"
+                  id="question1"
+                  name="question1"
                   className="block w-full px-6 py-4 text-center bg-gray-900 text-gray-50 rounded-lg border-gray-300 focus:border-main-red focus:ring-main-red"
-                  value={selectedOption}
-                  onChange={(e) => setSelectedOption(e.target.value)}
+                  onChange={(e) => {
+                    findPackage(e.target.value);
+                    setPackageOption(e.target.value);
+                    setCurrentVisible(true);
+                  }}
                 >
-                  {packageSelectOptions.map((opt) => (
-                    <option key={opt} value={opt}>
-                      {opt}
-                    </option>
+                  {options.map((option) => (
+                    <option key={option}>{option}</option>
                   ))}
                 </select>
               </div>
             </div>
-
-            {/* Payment mode, inclusions */}
             <div className="mt-10 flex flex-col items-center gap-x-4">
-              {/* Q2: Payment mode */}
               <h4 className="w-full lg:px-10 text-lg text-center font-semibold leading-6 text-main-red">
-                {packages?.question?.questions?.[1]?.question}
+                {packages.question.questions[1].question}
               </h4>
               <div className="flex-auto mt-2 w-full lg:w-3/5">
-                <label htmlFor="payment-mode" className="sr-only">
-                  Select payment mode
+                <label htmlFor="question2" className="sr-only">
+                  Select a tab
                 </label>
                 <select
-                  id="payment-mode"
+                  id="question2"
+                  name="question2"
+                  defaultValue={packages.question.questions[1].options[0]}
                   className="block w-full px-6 py-4 text-center bg-gray-900 text-gray-50 rounded-lg border-gray-300 focus:border-main-red focus:ring-main-red"
-                  value={priceOption}
-                  onChange={(e) => setPriceOption(e.target.value)}
+                  onChange={(e) => {
+                    findPrice(e.target.value);
+                    setPriceOption(e.target.value);
+                  }}
                 >
-                  {paymentOptions.map((opt) => (
-                    <option key={opt} value={opt}>
-                      {opt}
-                    </option>
+                  {packages.question.questions[1].options.map((option) => (
+                    <option key={option}>{option}</option>
                   ))}
                 </select>
               </div>
-
-              {/* Inclusions */}
               <div className="mt-8 bg-gray-200 rounded-lg p-4 lg:p-12">
                 <h5 className="text-xl font-bold text-center">
                   All packages will include:
@@ -356,7 +313,7 @@ export default function ProgramSuggesterFixed({
                   role="list"
                   className="mt-6 px-7 lg:px-0 space-y-3 text-lg text-left leading-6 text-gray-900"
                 >
-                  {(packages?.allInclude ?? []).map((feature) => (
+                  {packages.allInclude.map((feature) => (
                     <li className="flex gap-x-3" key={feature}>
                       <svg
                         className="h-6 w-5 flex-none text-red-600"
@@ -368,7 +325,7 @@ export default function ProgramSuggesterFixed({
                           fillRule="evenodd"
                           d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
                           clipRule="evenodd"
-                        />
+                        ></path>
                       </svg>
                       <span>{feature}</span>
                     </li>
@@ -377,56 +334,72 @@ export default function ProgramSuggesterFixed({
               </div>
             </div>
           </div>
-
-          {/* Right column: sticky price & details */}
-          <div className="w-full h-full opacity-100 duration-1000 transition-all -mt-2 p-2 lg:mt-0 lg:max-w-md lg:flex-shrink-0 sticky top-20">
+          <div
+            className={`${currenVisible ? "w-full h-full opacity-100" : "w-0 opacity-0 h-0"} duration-1000 transition-all -mt-2 p-2 lg:mt-0 lg:max-w-md lg:flex-shrink-0 sticky top-20`}
+          >
             <div className="mt-4 lg:mt-0 rounded-xl bg-gray-900 py-10 text-center ring-1 ring-inset ring-gray-900/5 lg:flex lg:flex-col lg:justify-center lg:py-16">
               <div className="pt-16 lg:px-8 lg:pt-0 xl:px-14">
-                <h3 className="text-base font-semibold leading-7 text-center text-gray-200">
-                  {selectedPack?.packageName}
+                <h3
+                  id="best-package"
+                  className="text-base font-semibold leading-7 text-center text-gray-200"
+                >
+                  {currentPackage.packageName}
                 </h3>
-
-                {/* Price */}
                 <p className="mt-6 w-full flex justify-center items-baseline gap-x-1">
                   <span className="text-5xl font-bold tracking-tight text-gray-200 font-serif">
-                    $ {Number(currentPrice?.price ?? 0).toLocaleString("en-US")}
+                    $ {Math.ceil(currentPrice.price).toLocaleString("en-US")}
                   </span>
-                  {currentPrice?.afterPrice ? (
+                  {currentPrice.afterPrice && (
                     <span className="text-sm font-semibold leading-6 text-gray-100">
                       {currentPrice.afterPrice}
                     </span>
-                  ) : null}
+                  )}
                 </p>
-                {currentPrice?.note ? (
+                {currentPrice.note && (
                   <p className="mt-3 text-sm leading-6 text-gray-500 font-serif">
                     {currentPrice.note}
                   </p>
-                ) : null}
-
-                {/* Feature list (contextual if TB required) */}
+                )}
                 <ul
                   role="list"
                   className="mx-auto w-fit mt-6 px-7 lg:px-0 space-y-3 text-sm text-left leading-6 text-gray-100"
                 >
-                  {featureList.map((f) => (
-                    <li className="flex gap-x-3" key={f}>
-                      <svg
-                        className="h-6 w-5 flex-none text-red-600"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                        aria-hidden="true"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                          clipRule="evenodd"
-                        />
-                      </svg>
-                      <span>{f}</span>
-                    </li>
-                  ))}
+                  {currentPackage.durationWeeks
+                    ? currentFeatures.map((feature) => (
+                        <li className="flex gap-x-3" key={feature}>
+                          <svg
+                            className="h-6 w-5 flex-none text-red-600"
+                            viewBox="0 0 20 20"
+                            fill="currentColor"
+                            aria-hidden="true"
+                          >
+                            <path
+                              fillRule="evenodd"
+                              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                              clipRule="evenodd"
+                            ></path>
+                          </svg>
+                          <span>{feature}</span>
+                        </li>
+                      ))
+                    : currentPackage.packageFeatures.map((feature) => (
+                        <li className="flex gap-x-3" key={feature}>
+                          <svg
+                            className="h-6 w-5 flex-none text-red-600"
+                            viewBox="0 0 20 20"
+                            fill="currentColor"
+                            aria-hidden="true"
+                          >
+                            <path
+                              fillRule="evenodd"
+                              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                              clipRule="evenodd"
+                            ></path>
+                          </svg>
+                          <span>{feature}</span>
+                        </li>
+                      ))}
                 </ul>
-
                 <EnrollmentModalButton
                   btnStyle={
                     "mt-10 block mx-auto w-1/2 lg:w-3/4 bg-red-600 px-3 py-2 text-center text-sm font-semibold leading-6 text-white shadow-sm hover:bg-red-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600"
@@ -436,17 +409,15 @@ export default function ProgramSuggesterFixed({
                   webhookUrl={webhookUrl}
                   apiKey={apiKey}
                 />
-
                 <p className="mt-10 text-sm font-normal px-4 lg:px-0 text-justify leading-6 text-gray-200">
-                  {selectedPack?.packageDescription}
+                  {currentPackage.packageDescription}
                 </p>
                 <p className="mt-10 text-xs px-5 lg:px-0 text-justify font-light leading-none text-gray-500">
-                  {selectedPack?.packageLittlePrint}
+                  {currentPackage.packageLittlePrint}
                 </p>
               </div>
             </div>
           </div>
-          {/* /Right column */}
         </div>
       </div>
     </section>
