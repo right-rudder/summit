@@ -3,8 +3,8 @@ description: "Human factors play a crucial role in flight safety and FAA checkri
 pubDate: "October 30, 2025"
 heroImage: "/img/blog/human-factors-pilot-training.avif"
 imgAlt: "Flight instructor discussing decision-making with student pilot"
-author: Jami Heckman
-title: Human Factors and Decision-Making: Essential Checkride Prep
+author: "Jami Heckman"
+title: "Human Factors and Decision-Making: Essential Checkride Prep"
 readingTime: "6 min"
 tags:
   [

@@ -3,8 +3,8 @@ description: "Weather knowledge and cross-country planning are critical for pass
 pubDate: "November 30, 2025"
 heroImage: "/img/blog/weather-flight-planning.avif"
 imgAlt: "Student pilot reviewing aviation weather charts and flight plan"
-author: Jami Heckman
-title: Weather and Cross-Country Planning: Keys to Checkride Success
+author: "Jami Heckman"
+title: "Weather and Cross-Country Planning: Keys to Checkride Success"
 readingTime: "7 min"
 tags:
   [
