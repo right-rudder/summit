@@ -95,6 +95,10 @@ export const resources = {
       name: "FAQs",
       link: "/resources/faqs",
     },
+    {
+      name: "Multi-Engine Resources",
+      link: "/multi-engine-resources",
+    },
   ],
 };
 
