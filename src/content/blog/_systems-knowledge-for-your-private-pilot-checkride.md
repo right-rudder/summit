@@ -3,8 +3,8 @@ description: "Systems knowledge is a must-have for passing the FAA private pilot
 pubDate: "November 15, 2025"
 heroImage: "/img/blog/aircraft-systems-training.avif"
 imgAlt: "Student pilot studying Cessna 172 systems with instructor"
-author: Jami Heckman
-title: Systems Knowledge for Your Private Pilot Checkride
+author: "Jami Heckman"
+title: "Systems Knowledge for Your Private Pilot Checkride"
 readingTime: "6 min"
 tags:
   [

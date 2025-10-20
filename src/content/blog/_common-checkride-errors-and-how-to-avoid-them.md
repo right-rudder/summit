@@ -3,8 +3,8 @@ description: "Checkride nerves can cause simple mistakes. Learn the most common 
 pubDate: "September 30, 2025"
 heroImage: "/img/blog/pilot-checkride-training.avif"
 imgAlt: "Flight instructor debriefing a student after training flight"
-author: Jami Heckman
-title: Common Checkride Errors and How to Avoid Them
+author: "Jami Heckman"
+title: "Common Checkride Errors and How to Avoid Them"
 readingTime: "7 min"
 tags:
   [
