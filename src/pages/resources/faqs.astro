@@ -1,5 +1,5 @@
 ---
-import HomeLayout from "../../layouts/HomeLayout.astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
 import FAQsTabs from "../../components/FAQsTabs";
 import ContactUsModalButton from "../../components/ContactUsModalButton";
 import UnderHeaderVideo from "../../components/UnderHeaderVideo.astro";
@@ -8,7 +8,7 @@ const GHL_CONTACT_FORM_WEBHOOK_URL = import.meta.env
 const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
 ---
 
-<HomeLayout
+<BaseLayout
   pageTitle="FAQs | Summit Flight Academy"
   pageDescription="Explore Summit Flight Academy's comprehensive Frequently Asked Questions, addressing common inquiries about our flight training programs. Find detailed answers categorized into General, Private Pilot, Instrument Rating, Pilot + Instrument Bundle, and Commercial Pilot sections. This centralized resource provides clarity on certifications, requirements, processes, and more, ensuring you have the information you need to pursue your aviation goals confidently."
   pageKeywords="flight training FAQ, pilot certification questions, private pilot FAQs, instrument rating FAQs, commercial pilot FAQs, aviation training inquiries, frequently asked questions, common concerns addressed, centralized information resource, clarifying flight school processes"
@@ -49,4 +49,4 @@ const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
   />
 
   <FAQsTabs client:load />
-</HomeLayout>
+</BaseLayout>

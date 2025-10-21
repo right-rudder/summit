@@ -1,10 +1,10 @@
 ---
-import HomeLayout from "../../layouts/HomeLayout.astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
 import FinancingTabs from "../../components/FinancingTabs";
 import EnrollNowCTA from "../../components/EnrollNowCTA.astro";
 ---
 
-<HomeLayout
+<BaseLayout
   pageTitle="Financing | Summit Flight Academy"
   pageDescription="Summit Flight Academy offers financing options through partnerships with Flight Training Financing, and AOPA Flight Training Financing. These financing options make flight training affordable whether you're pursuing a pilot career or a personal goal. Our team guides you to the best financing choice for your training and budget needs. Don't let costs hold you back - invest in your aviation goals through our financing partners. Apply online to get started or contact us for further inquiries."
   pageKeywords="flight training financing, pilot career financing, personal aviation financing, flight school loans, affordable pilot training, financing partnerships, Flight Training Financing LLC, AOPA Flight Training Financing, easy financing application, flexible payment options"
@@ -46,4 +46,4 @@ import EnrollNowCTA from "../../components/EnrollNowCTA.astro";
   <FinancingTabs client:load />
 
   <EnrollNowCTA />
-</HomeLayout>
+</BaseLayout>
