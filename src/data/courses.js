@@ -15,7 +15,7 @@ export const courses = [
   },
   {
     id: "1",
-    imagePath: "/img/training-courses/instrument-panel.webp",
+    imagePath: "/img/training-courses/kansas-city-flight-training-instruments-aircraft-instrument-rating.webp",
     alt: "Simulator AATD being used for instrument training Las Cruces, NM",
     title: "Instrument Rating",
     banner_title: "How to Earn Your Instrument Rating",
