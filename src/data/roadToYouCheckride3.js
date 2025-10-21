@@ -133,8 +133,8 @@ export const CHECKRIDE_GUIDE = {
           "A common error on this topic is not having down cold the A-G airspace definitions, their weather mins, and entry requirements. You do not have time to look this up while flying. It's expected you know these 'cold' just like your aircraft V speeds.",
           "With the ease of EFBs, a DPE may take you for a virtual trip out to visit airspace you are not familiar with. A common error is not being able to identify the requirements for special use airspace, warning areas, Class Charlie airspace, TRSAs, etc. Don't just know your local airspace; be prepared to interpret any airspace on the sectional.",
         ],
-        imagePath: "/src/assets/discovery-flight-banner.webp",
-        imageAlt: "",
+        imagePath: "/src/assets/lees-summit-discovery-flights-flying-lessons-aerial-tours-kansas-city.webp",
+        imageAlt: "Summit Flight Academy offers Discovery Flights out of Lee's Summit in Kansas City",
       },
       {
         step: "F",
@@ -159,7 +159,7 @@ export const CHECKRIDE_GUIDE = {
           "During your flight, the DPE may 'fail' a piece of equipment. A common error is not being able to work through a logical flow of what to do. For example, can you explain how an electrical failure does or does not impact engine operation and how you would handle it?",
           "Another common error is not having basic mastery of the avionics. If you have a GPS like a Garmin 650/750, you need to be able to use its functions. Study the manuals and use simulator apps. Applicants have failed for not knowing how to switch from GPS to VLOC mode and tune a VOR.",
         ],
-        imagePath: "/src/assets/instrument-panel.webp",
+        imagePath: "/src/assets/kansas-city-flight-training-instruments-aircraft-instrument-rating.webp",
         imageAlt: "",
       },
       {
