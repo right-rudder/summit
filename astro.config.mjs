@@ -5,7 +5,6 @@ import tailwind from "@astrojs/tailwind";
 import icon from "astro-icon";
 import react from "@astrojs/react";
 import alpinejs from "@astrojs/alpinejs";
-import partytown from "@astrojs/partytown";
 
 // https://astro.build/config
 export default defineConfig({
@@ -20,11 +19,6 @@ export default defineConfig({
     icon(),
     react(),
     alpinejs(),
-    partytown({
-      config: {
-        forward: ["dataLayer.push"],
-      },
-    }),
   ],
   redirects: {
     "/faq": "/",
