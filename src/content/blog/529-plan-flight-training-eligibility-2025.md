@@ -1,7 +1,7 @@
 ---
 description: "529 plan funds can be used for flight training at eligible Part 61 and Part 141 schools. This guide explains what the new law covers, how to use your 529 funds for aviation education, and what steps aspiring pilots should take to benefit from this opportunity."
 pubDate: "October 23, 2025"
-heroImage: "/img/blog/weather-flight-planning.avif"
+heroImage: "/img/blog/passing-a-multi-engine-check-ride-over-kansas-city-flight-lessons-lees-summit-summit-flight-academy.webp"
 imgAlt: "student pilot studying with headset and flight manuals"
 author: "Summit Flight Academy Team"
 title: "New Law Expands 529 Plans to Cover Flight Training Costs"
@@ -23,7 +23,7 @@ tags:
 
 For many aspiring aviators, the cost of flight training has long been one of the biggest hurdles on the path to becoming a pilot. Fortunately, a major change is on the horizon. Beginning **August 2025**, students will be able to use **529 education savings plans** to pay for **qualified flight training programs** at approved **Part 61 and Part 141 flight schools**.
 
-This new federal law (Section 70414) expands the use of 529 funds beyond traditional college degrees — now including postsecondary credentialing such as pilot training. That means tuition, fees, books, and even equipment needed for flight programs may qualify for payment through your 529 plan.
+This new federal law (Section 70414) expands the use of 529 funds beyond traditional college degrees , now including postsecondary credentialing such as pilot training. That means tuition, fees, books, and even equipment needed for flight programs may qualify for payment through your 529 plan.
 
 Let’s break down what this means for future pilots and how you can take advantage of it.
 
@@ -43,11 +43,11 @@ Includes required materials like training manuals, charts, headsets, and study a
 
 #### **Equipment**
 
-Necessary tools and devices for your training program — such as flight bags, logbooks, or flight planning software.
+Necessary tools and devices for your training program , such as flight bags, logbooks, or flight planning software.
 
 #### **FAA Exams & Check Rides**
 
-Fees for written exams, practical tests, and check rides — all essential parts of earning your pilot certificates and ratings.
+Fees for written exams, practical tests, and check rides , all essential parts of earning your pilot certificates and ratings.
 
 ---
 
@@ -71,7 +71,7 @@ If you plan to fund your aviation education through a 529 plan, here’s what yo
 
 ### Why This Change Matters for Future Pilots
 
-This legislation represents a major win for aviation students nationwide. Before the update, 529 funds could only be used at accredited higher education institutions — leaving pilot training programs largely ineligible.
+This legislation represents a major win for aviation students nationwide. Before the update, 529 funds could only be used at accredited higher education institutions , leaving pilot training programs largely ineligible.
 
 Now, the expanded definition of **postsecondary credentialing** acknowledges the professional and technical nature of pilot training. It opens the door for thousands of aspiring aviators to access funds that were previously locked away, making the dream of flight more attainable.
 
@@ -81,13 +81,13 @@ Now, the expanded definition of **postsecondary credentialing** acknowledges the
 
 At **Summit Flight Academy**, we’re excited to see the government recognize the importance of aviation careers and the high-level education they require.
 
-Whether you’re starting your **private pilot license (PPL)**, advancing to an **instrument rating**, or pursuing a **commercial pilot certificate**, this new 529 flexibility can significantly reduce your financial burden and help you stay focused on what truly matters — becoming a safe, skilled, and confident pilot.
+Whether you’re starting your **private pilot license (PPL)**, advancing to an **instrument rating**, or pursuing a **commercial pilot certificate**, this new 529 flexibility can significantly reduce your financial burden and help you stay focused on what truly matters , becoming a safe, skilled, and confident pilot.
 
 ---
 
-![student pilot walking toward aircraft](/img/blog/weather-flight-planning.avif)
+![student pilot walking toward aircraft](/img/blog/passing-a-checkride-at-lees-summit-airport.webp)
 _Training for your dreams just got more accessible with the 2025 529 expansion._
 
 If you’d like help understanding whether your flight training program qualifies, contact your 529 plan administrator or reach out to **Summit Flight Academy**. Our team can guide you through enrollment and connect you with resources to make your aviation journey smoother and more affordable.
 
-The sky isn’t the limit anymore — it’s your next classroom.
+The sky isn’t the limit anymore , it’s your next classroom.
