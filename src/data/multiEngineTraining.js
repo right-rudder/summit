@@ -21,7 +21,8 @@ export const MULTI_ENGINE_TRAINING = {
       "Key features include constant-speed propellers, counter-rotating engines (eliminating the critical engine factor), and excellent single-engine performance characteristics. The aircraft's systems are representative of most light twin aircraft you'll encounter in the general aviation fleet.",
       "Our Twin Comanche is meticulously maintained and equipped with modern avionics including GPS navigation and advanced instrumentation to prepare you for today's aviation environment.",
     ],
-    imagePath: "/src/assets/placeholder-img.webp",
+    imagePath:
+      "/src/assets/summit-flight-academy-front-shot-of-N7664Y-Piper-Twin-Comanche-SFA.webp",
     imageAlt: "Piper PA-30 Twin Comanche multi-engine training aircraft",
   },
   //cardwhite
@@ -33,7 +34,8 @@ export const MULTI_ENGINE_TRAINING = {
       "We understand that weather and maintenance can impact scheduling. In the event of delays, we work flexibly with students to adjust the schedule or combine lessons when possible.",
       "For students traveling to the Kansas City area, we have arranged hotel discounts near the airport. The Hampton Inn and Fairfield Inn both offer special rates for our training students.",
     ],
-    imagePath: "/src/assets/placeholder-img.webp",
+    imagePath:
+      "/src/assets/how-to-get-the-most-out-of-your-weather-products.webp",
     imageAlt: "Multi-engine aircraft cockpit during training",
   },
   //Card blue
@@ -68,7 +70,7 @@ export const MULTI_ENGINE_TRAINING = {
           "<strong>Ground Lesson 2: PA-30 Systems & Performance</strong><br>Detailed review of Twin Comanche systems, weight and balance, performance calculations, and limitations specific to the PA-30.",
           "<strong>Sim Session 1: Emergency Procedures</strong><br>Practice engine failure drills, single-engine operations, and emergency procedures in a safe, controlled simulator environment before your first flight.",
         ],
-        imagePath: "/src/assets/placeholder-img.webp",
+        imagePath: "/src/assets/N7664Y-1.webp",
         imageAlt: "Multi-engine ground school instruction",
       },
       {
@@ -79,7 +81,8 @@ export const MULTI_ENGINE_TRAINING = {
           "<strong>Key Skills:</strong> Propeller synchronization, slow flight, stalls, steep turns, and introduction to single-engine operations. Learn the unique handling characteristics of multi-engine aircraft.",
           "<strong>Focus Areas:</strong> Aircraft control and coordination while managing two powerplants. Introduction to the engine failure 'drill' and basic single-engine maneuvering.",
         ],
-        imagePath: "/src/assets/placeholder-img.webp",
+        imagePath:
+          "/src/assets/summit-flight-academy-two-students-in-front-of-plane.webp",
         imageAlt: "First multi-engine flight training",
       },
       {
@@ -90,7 +93,7 @@ export const MULTI_ENGINE_TRAINING = {
           "<strong>Key Skills:</strong> Engine failure on takeoff, engine failure after liftoff, single-engine go-arounds, and engine restart procedures. Practice VMC demonstrations and drag demonstrations.",
           "<strong>Advanced Techniques:</strong> Crosswind and short-field operations with emphasis on single-engine performance limitations and safety considerations.",
         ],
-        imagePath: "/src/assets/placeholder-img.webp",
+        imagePath: "/src/assets/N7664Y-2.webp",
         imageAlt: "Multi-engine emergency procedures training",
       },
       {
@@ -101,7 +104,8 @@ export const MULTI_ENGINE_TRAINING = {
           "<strong>Comprehensive Coverage:</strong> All required maneuvers including single-engine instrument flying, systems malfunctions, emergency descents, and precision landings.",
           "<strong>Performance Assessment:</strong> Detailed evaluation against ACS standards to develop targeted training plan for remaining lessons.",
         ],
-        imagePath: "/src/assets/placeholder-img.webp",
+        imagePath:
+          "/src/assets/summit-flight-academy-very-happy-pilot-in-piper-cherokee-cockpit-giving-thumbs-up-instrument-rating.webp",
         imageAlt: "ACS maneuvers practice in multi-engine aircraft",
       },
       {
@@ -112,7 +116,7 @@ export const MULTI_ENGINE_TRAINING = {
           "<strong>Customized Training:</strong> Lesson plan developed by instructor with student input to address specific challenge areas and build confidence.",
           "<strong>Mastery Focus:</strong> Repeated practice of high-risk operations and maneuvers that typically challenge students during the checkride.",
         ],
-        imagePath: "/src/assets/placeholder-img.webp",
+        imagePath: "/src/assets/CFI-and-student-pilot.webp",
         imageAlt: "Multi-engine skill refinement training",
       },
       {
@@ -123,7 +127,8 @@ export const MULTI_ENGINE_TRAINING = {
           "<strong>Flight Lesson 5: Mock Checkride</strong><br>Full simulation of the practical test with another instructor acting as examiner. Builds confidence and ensures readiness for the actual checkride.",
           "<strong>Administrative Completion:</strong> IACRA submission, final endorsements, and checkride briefing to ensure all paperwork and requirements are complete.",
         ],
-        imagePath: "/src/assets/placeholder-img.webp",
+        imagePath:
+          "/src/assets/summit-flight-academy-missoury-kansas-city-cfi-instructor-training-pilot-student-and-instructor2.webp",
         imageAlt: "Mock checkride preparation session",
       },
       {
@@ -134,7 +139,7 @@ export const MULTI_ENGINE_TRAINING = {
           "<strong>Oral Examination:</strong> Demonstration of multi-engine knowledge, systems understanding, and risk management decision-making.",
           "<strong>Flight Test:</strong> Performance of all required maneuvers to ACS standards, with emphasis on safe single-engine operations and emergency procedures.",
         ],
-        imagePath: "/src/assets/placeholder-img.webp",
+        imagePath: "/src/assets/red-arrow-fleet.webp",
         imageAlt: "Multi-engine checkride with DPE",
       },
     ],
