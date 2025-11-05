@@ -1,0 +1,294 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import FAQs from "../../components/FAQs";
+import { MultiEngineFAQs } from "../../data/multiEngineFAQs";
+import EnrollNowCTA from "../../components/EnrollNowCTA.astro";
+import CheckRideRoadMap from "../../components/CheckRideRoadMap.astro";
+import CardWhite from "../../components/CheckrideComponents/CardWhite.astro";
+import CardBlue from "../../components/CheckrideComponents/CardBlue.astro";
+import CardsContainer from "../../components/CheckrideComponents/CardsContainer.astro";
+import { MULTI_ENGINE_TRAINING } from "../../data/multiEngineTraining";
+import UnderHeader from "../../components/UnderHeader.astro";
+import ContactUs from "../../components/ContactUs.astro";
+
+const header = {
+  title: "Multi-Engine Rating Training",
+  description:
+    "Accelerate your aviation career with our intensive 7-day multi-engine rating program. Train in our Piper PA-30 Twin Comanche and master multi-engine operations.",
+  btns: [
+    {
+      title: "Download Syllabus",
+      link: "/files/sfa-me-add-on-study-guide-and-course-information.pdf",
+      blank: true,
+    },
+    {
+      title: "Program Details",
+      link: `#${MULTI_ENGINE_TRAINING.programOverview.upperTitle}`,
+      blank: false,
+    },
+  ],
+};
+---
+
+<BaseLayout
+  pageTitle="Multi-Engine Rating Training | Summit Flight Academy"
+  pageDescription="Complete your multi-engine rating in 7 days with our intensive training program. Piper PA-30 Twin Comanche, experienced instructors, and comprehensive syllabus."
+  pageKeywords="multi-engine rating, multi-engine training, ME rating, twin engine training, Piper PA-30, multi-engine add-on, Kansas City flight training"
+>
+  <div class="overflow-hidden">
+    <nav
+      id="side-navbar"
+      class="flex fixed top-1/4 right-4 text-right flex-col gap-4 text-gray-400 z-50 opacity-0 pointer-events-none transition-opacity duration-500"
+    >
+      {
+        [
+          MULTI_ENGINE_TRAINING.programOverview.upperTitle,
+          MULTI_ENGINE_TRAINING.aircraftFeatures.upperTitle,
+          MULTI_ENGINE_TRAINING.trainingSchedule.upperTitle,
+          MULTI_ENGINE_TRAINING.requirements.upperTitle,
+          MULTI_ENGINE_TRAINING.syllabus.upperTitle,
+          MULTI_ENGINE_TRAINING.commonErrors.upperTitle,
+          "faqs",
+        ].map((id) => (
+          <a
+            href={`#${id}`}
+            class="transition-all duration-300 text-xs lg:text-lg hover:text-red-500 hover:scale-110 hover:font-bold"
+            data-nav-link={id}
+          >
+            {id.replace(/([A-Z])/g, " $1")}
+          </a>
+        ))
+      }
+    </nav>
+  </div>
+
+  <header
+    class="relative overflow-hidden pt-24 py-12 lg:py-24 h-full bg-new-to-flying bg-cover bg-center bg-black flex flex-col items-center justify-center"
+  >
+    <!-- bg-overlay to darken -->
+    <div
+      class="absolute -mt-20 lg:mt-0 scale-110 lg:scale-100 bg-gradient-to-b from-black/50 to-black/20 w-full h-full z-0"
+    >
+    </div>
+
+    <!-- Text -->
+    <div
+      class="text-white text-center z-10 flex flex-col items-center gap-4 px-5 h-full lg:pt-28 justify-center"
+    >
+      <h1
+        class="text-3xl lg:text-5xl font-bold tracking-tight animate-slow-fade"
+      >
+        {header.title}
+      </h1>
+      <h2
+        class="text-lg lg:text-3xl tracking-wide animate-slow-fade text-center text-pretty px-5"
+      >
+        {header.description}
+      </h2>
+      <div class="flex gap-2 items-center justify-center flex-wrap">
+        {
+          header.btns.map((btn) => (
+            <a
+              href={btn.link}
+              class="btn-red"
+              target={btn.blank ? "_blank" : "_self"}
+            >
+              {btn.title}
+            </a>
+          ))
+        }
+      </div>
+    </div>
+  </header>
+
+  <UnderHeader
+    title="What is Multi-Engine Training?"
+    text1="A multi-engine rating opens doors to advanced aviation careers and more capable aircraft. This rating teaches you to safely operate twin-engine aircraft, with emphasis on single-engine emergency procedures, performance management, and advanced systems operation."
+    text2="Our intensive 7-day program is designed for pilots who want to efficiently add the multi-engine rating to their certificate. The course combines comprehensive ground instruction, simulator sessions, and flight training in our Piper PA-30 Twin Comanche."
+    text3="You'll learn critical skills including engine failure procedures, VMC awareness, single-engine operations, and advanced aircraft systems. The program culminates with your FAA practical test, preparing you to safely operate multi-engine aircraft in various conditions."
+  />
+
+  <section id={MULTI_ENGINE_TRAINING.programOverview.upperTitle}>
+    <CardWhite content={MULTI_ENGINE_TRAINING.programOverview} />
+  </section>
+
+  <section id={MULTI_ENGINE_TRAINING.aircraftFeatures.upperTitle}>
+    <CardBlue content={MULTI_ENGINE_TRAINING.aircraftFeatures} />
+  </section>
+
+  <section id={MULTI_ENGINE_TRAINING.trainingSchedule.upperTitle}>
+    <CardWhite content={MULTI_ENGINE_TRAINING.trainingSchedule} />
+  </section>
+
+  <section id={MULTI_ENGINE_TRAINING.requirements.upperTitle}>
+    <CardBlue content={MULTI_ENGINE_TRAINING.requirements} />
+  </section>
+
+  <section id={MULTI_ENGINE_TRAINING.syllabus.upperTitle}>
+    <CheckRideRoadMap
+      title={MULTI_ENGINE_TRAINING.syllabus.title}
+      description={MULTI_ENGINE_TRAINING.syllabus.description}
+      content={MULTI_ENGINE_TRAINING.syllabus.steps}
+    />
+  </section>
+
+  <section id={MULTI_ENGINE_TRAINING.commonErrors.upperTitle}>
+    <CardsContainer content={MULTI_ENGINE_TRAINING.commonErrors} />
+  </section>
+
+  <UnderHeader
+    title="Ready for Multi-Engine Training?"
+    text1="Adding a multi-engine rating significantly expands your aviation capabilities and career opportunities. With our structured 7-day program and experienced instructors, you'll build the skills and confidence needed to safely operate twin-engine aircraft."
+    text2="The multi-engine rating represents a major step forward in your pilot development. You'll learn to manage complex systems, handle emergency situations, and understand advanced aircraft performance—skills that are essential for professional aviation careers."
+    text3="Take the next step in your aviation journey. Contact us today to schedule your multi-engine training and join the ranks of pilots qualified to operate sophisticated twin-engine aircraft."
+  />
+
+  <FAQs faqs={MultiEngineFAQs} type="Multi-Engine" client:visible />
+
+  <!-- Contact Us Form -->
+  <!-- <ContactUs /> -->
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const sideNav = document.getElementById("side-navbar");
+      const linkNodes = Array.from(
+        document.querySelectorAll("[data-nav-link]"),
+      );
+      const navPairs = linkNodes
+        .map((link) => {
+          const raw =
+            link.getAttribute("data-nav-link") ||
+            link.getAttribute("href")?.slice(1) ||
+            "";
+          const decoded = (() => {
+            try {
+              return decodeURIComponent(raw);
+            } catch (e) {
+              return raw;
+            }
+          })();
+          let target =
+            document.getElementById(decoded) ||
+            (window.CSS
+              ? document.querySelector(`#${CSS.escape(decoded)}`)
+              : null);
+          if (!target) {
+            console.warn(`SideNav: no target found for nav link "${decoded}"`);
+          }
+          return { link, target, id: decoded };
+        })
+        .filter((p) => p.target);
+
+      if (!navPairs.length) {
+        console.warn(
+          "SideNav: no nav links with matching sections were found. Make sure your section ids match the data-nav-link values.",
+        );
+        return;
+      }
+
+      navPairs.forEach(({ link, target }) => {
+        link.classList.add(
+          "inline-block",
+          "transform",
+          "transition-all",
+          "duration-200",
+          "origin-left",
+        );
+        link.addEventListener("click", (e) => {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: "smooth", block: "start" });
+          try {
+            history.replaceState(null, "", "#" + encodeURIComponent(target.id));
+          } catch (err) {
+            /* ignore */
+          }
+        });
+      });
+
+      // Active class helper
+      const ACTIVE_CLASSES = ["text-red-500", "scale-110", "font-bold"];
+      function clearActive() {
+        navPairs.forEach(({ link }) =>
+          link.classList.remove(...ACTIVE_CLASSES),
+        );
+      }
+      function setActiveById(id) {
+        clearActive();
+        const pair = navPairs.find((p) => p.target && p.target.id === id);
+        if (pair) {
+          pair.link.classList.add(...ACTIVE_CLASSES);
+          pair.link.setAttribute("aria-current", "true");
+        }
+      }
+
+      const visibility = new Map();
+      navPairs.forEach((p) => visibility.set(p.target.id, 0));
+      let currentActiveId = null;
+
+      const ioOptions = {
+        root: null,
+        rootMargin: "0px 0px -40% 0px",
+        threshold: Array.from({ length: 101 }, (_, i) => i / 100),
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          visibility.set(entry.target.id, entry.intersectionRatio);
+        });
+        let bestId = null;
+        let bestRatio = 0;
+        for (const [id, ratio] of visibility.entries()) {
+          if (ratio > bestRatio) {
+            bestRatio = ratio;
+            bestId = id;
+          }
+        }
+        if (bestId && bestId !== currentActiveId && bestRatio > 0) {
+          currentActiveId = bestId;
+          setActiveById(bestId);
+        }
+      }, ioOptions);
+
+      navPairs.forEach(({ target }) => observer.observe(target));
+
+      const hero = document.querySelector("header");
+      if (hero && sideNav) {
+        const heroObserver = new IntersectionObserver(
+          (entries) => {
+            const e = entries[0];
+            if (e && e.isIntersecting) {
+              sideNav.classList.add("opacity-0", "pointer-events-none");
+              sideNav.classList.remove("opacity-100");
+              sideNav.setAttribute("aria-hidden", "true");
+            } else {
+              sideNav.classList.remove("opacity-0", "pointer-events-none");
+              sideNav.classList.add("opacity-100");
+              sideNav.setAttribute("aria-hidden", "false");
+            }
+          },
+          { threshold: 0.05 },
+        );
+        heroObserver.observe(hero);
+      } else if (sideNav) {
+        const firstTarget = navPairs[0].target;
+        const onScroll = () => {
+          if (window.scrollY >= firstTarget.offsetTop - 100) {
+            sideNav.classList.remove("opacity-0", "pointer-events-none");
+            sideNav.classList.add("opacity-100");
+          } else {
+            sideNav.classList.add("opacity-0", "pointer-events-none");
+            sideNav.classList.remove("opacity-100");
+          }
+        };
+        window.addEventListener("scroll", onScroll, { passive: true });
+        onScroll();
+      }
+
+      const initial = navPairs.find((p) => {
+        const r = p.target.getBoundingClientRect();
+        return r.top <= window.innerHeight * 0.5 && r.bottom >= 0;
+      });
+      if (initial) setActiveById(initial.target.id);
+    });
+  </script>
+</BaseLayout>
