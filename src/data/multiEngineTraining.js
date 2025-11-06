@@ -11,6 +11,7 @@ export const MULTI_ENGINE_TRAINING = {
       "The course follows a structured syllabus that builds from fundamental multi-engine aerodynamics to advanced single-engine emergency procedures. Each day is carefully planned to maximize learning while ensuring safety and proficiency.",
       "Upon completion, you'll be prepared for the multi-engine practical test and have the confidence to safely operate multi-engine aircraft in various conditions.",
     ],
+    imagePath: "/src/assets/CFI-and-student-holding-certificate.jpg"
   },
   //cardblue
   aircraftFeatures: {
@@ -35,7 +36,7 @@ export const MULTI_ENGINE_TRAINING = {
       "For students traveling to the Kansas City area, we have arranged hotel discounts near the airport. The Hampton Inn and Fairfield Inn both offer special rates for our training students.",
     ],
     imagePath:
-      "/src/assets/how-to-get-the-most-out-of-your-weather-products.webp",
+      "/src/assets/N7664Y-2.webp",
     imageAlt: "Multi-engine aircraft cockpit during training",
   },
   //Card blue
@@ -63,7 +64,7 @@ export const MULTI_ENGINE_TRAINING = {
     description: "Comprehensive 7-day training program",
     steps: [
       {
-        step: "Day 1",
+        step: "1",
         title: "Ground School & Simulator Foundation",
         descriptions: [
           "<strong>Ground Lesson 1: Multi-Engine Aerodynamics</strong><br>Understanding VMC, critical engine concepts, single-engine performance, and engine-out procedures. Mastering the aerodynamic principles that make multi-engine flying unique.",
@@ -74,7 +75,7 @@ export const MULTI_ENGINE_TRAINING = {
         imageAlt: "Multi-engine ground school instruction",
       },
       {
-        step: "Day 2",
+        step: "2",
         title: "First Multi-Engine Flight",
         descriptions: [
           "<strong>Flight Lesson 1: Multi-Engine Orientation</strong><br>Extensive pre-flight training, aircraft systems orientation, and introduction to multi-engine operations. Practice normal takeoffs, climbs, and basic maneuvers.",
@@ -82,11 +83,11 @@ export const MULTI_ENGINE_TRAINING = {
           "<strong>Focus Areas:</strong> Aircraft control and coordination while managing two powerplants. Introduction to the engine failure 'drill' and basic single-engine maneuvering.",
         ],
         imagePath:
-          "/src/assets/summit-flight-academy-two-students-in-front-of-plane.webp",
+          "/src/assets/summit-flight-academy-missoury-kansas-city-multi-engine-pilot-student-flying-twin-comanche-at-summit-flight-academy.webp",
         imageAlt: "First multi-engine flight training",
       },
       {
-        step: "Day 3",
+        step: "3",
         title: "Emergency Operations Mastery",
         descriptions: [
           "<strong>Flight Lesson 2: Emergency Procedures</strong><br>Intensive practice of multi-engine emergency procedures including engine failures during critical phases of flight.",
@@ -97,7 +98,7 @@ export const MULTI_ENGINE_TRAINING = {
         imageAlt: "Multi-engine emergency procedures training",
       },
       {
-        step: "Day 4",
+        step: "4",
         title: "ACS Task Integration",
         descriptions: [
           "<strong>Flight Lesson 3: Complete ACS Review</strong><br>Run-through of all Airman Certification Standards tasks to identify areas needing additional practice.",
@@ -109,18 +110,18 @@ export const MULTI_ENGINE_TRAINING = {
         imageAlt: "ACS maneuvers practice in multi-engine aircraft",
       },
       {
-        step: "Day 5",
+        step: "5",
         title: "Skill Refinement",
         descriptions: [
           "<strong>Flight Lesson 4: Clean-up & Refinement</strong><br>Focused training on specific ACS tasks that require additional practice based on previous performance.",
           "<strong>Customized Training:</strong> Lesson plan developed by instructor with student input to address specific challenge areas and build confidence.",
           "<strong>Mastery Focus:</strong> Repeated practice of high-risk operations and maneuvers that typically challenge students during the checkride.",
         ],
-        imagePath: "/src/assets/CFI-and-student-pilot.webp",
+        imagePath: "/src/assets/multi-engine-pilot-flying-piper-over-kansas-city-flight-lessons-lees-summit-summit-flight-academy.webp",
         imageAlt: "Multi-engine skill refinement training",
       },
       {
-        step: "Day 6",
+        step: "6",
         title: "Checkride Preparation",
         descriptions: [
           "<strong>Ground Lesson 3: Mock Oral Exam</strong><br>Comprehensive oral examination covering multi-engine aerodynamics, systems, regulations, and emergency procedures. Final review of aircraft logbooks and documentation.",
@@ -132,14 +133,14 @@ export const MULTI_ENGINE_TRAINING = {
         imageAlt: "Mock checkride preparation session",
       },
       {
-        step: "Day 7",
+        step: "7",
         title: "Checkride Day",
         descriptions: [
           "<strong>Multi-Engine Practical Test</strong><br>The culmination of your training - the official FAA checkride with a Designated Pilot Examiner.",
           "<strong>Oral Examination:</strong> Demonstration of multi-engine knowledge, systems understanding, and risk management decision-making.",
           "<strong>Flight Test:</strong> Performance of all required maneuvers to ACS standards, with emphasis on safe single-engine operations and emergency procedures.",
         ],
-        imagePath: "/src/assets/red-arrow-fleet.webp",
+        imagePath: "/src/assets/passing-a-multi-engine-check-ride-over-kansas-city-flight-lessons-lees-summit-summit-flight-academy.webp",
         imageAlt: "Multi-engine checkride with DPE",
       },
     ],
