@@ -22,7 +22,7 @@ generate_generic_keyword() {
   local count=${#GENERIC_KEYWORDS[@]}
   local first="${GENERIC_KEYWORDS[$((RANDOM % count))]}"
   local second=""
-  
+
   # 50% chance to add a second keyword
   if (( RANDOM % 2 )); then
     second="${GENERIC_KEYWORDS[$((RANDOM % count))]}"
@@ -32,26 +32,43 @@ generate_generic_keyword() {
   echo "${first// /-}${second:+_${second// /-}}"
 }
 
-# Process each file in the current directory
-for file in *; do
-  # Skip directories
-  [[ -d "$file" ]] && continue
-  
-  # Extract filename and extension
-  extension="${file##*.}"
-  filename="${file%.*}"
+# Function to rename files recursively
+rename_files_recursively() {
+  find . -type f | while read -r file; do
+    dir=$(dirname "$file")
+    base=$(basename "$file")
+    extension="${base##*.}"
+    filename="${base%.*}"
 
-  # Generate random generic keyword
-  generic_keyword=$(generate_generic_keyword)
+    # Skip hidden files (like .DS_Store)
+    [[ "$base" == .* ]] && continue
 
-  # Build new filename
-  new_name="${COMPANY_NAME}_${LOCALIZATION}_${generic_keyword}_${filename// /-}.${extension}"
+    # Generate random generic keyword
+    generic_keyword=$(generate_generic_keyword)
 
-  # Avoid overly long names (>100 chars for safety)
-  if (( ${#new_name} > 100 )); then
-    new_name="${new_name:0:96}.${extension}"
-  fi
+    # Build the new filename (use '-' for words, '_' between keyword groups)
+    new_name="${COMPANY_NAME}_${LOCALIZATION}_${generic_keyword}_${filename// /-}.${extension}"
 
-  # Rename file
-  mv -v -- "$file" "$new_name"
-done
+    # Limit only if it's excessively long (>180 chars)
+    max_length=180
+    if (( ${#new_name} > max_length )); then
+      prefix="${COMPANY_NAME}_${LOCALIZATION}_${generic_keyword}_"
+      base_clean="${filename// /-}"
+      truncated_base="${base_clean:0:$((max_length - ${#prefix} - ${#extension} - 1))}"
+      new_name="${prefix}${truncated_base}.${extension}"
+    fi
+
+    # Skip if new name already exists to avoid overwriting
+    if [[ -e "$dir/$new_name" ]]; then
+      echo "⚠️  Skipping '$file' → '$new_name' (already exists)"
+      continue
+    fi
+
+    # Rename file
+    echo "🔄 Renaming: $file → $dir/$new_name"
+    mv -- "$file" "$dir/$new_name"
+  done
+}
+
+# Run the function
+rename_files_recursively
