@@ -1,7 +1,7 @@
 ---
 description: "Systems knowledge is a must-have for passing the FAA private pilot checkride. Learn how Summit Flight Academy ensures Kansas City student pilots know their aircraft inside and out."
-pubDate: "November 15, 2025"
-heroImage: "/img/blog/aircraft-systems-training.avif"
+pubDate: "November 19, 2025"
+heroImage: "/img/blog/summit-flight-academy-missoury-happy-pilot-shaking-hands-with-flight-instructor-receiving-certificate.webp"
 imgAlt: "Student pilot studying Cessna 172 systems with instructor"
 author: "Jami Heckman"
 title: "Systems Knowledge for Your Private Pilot Checkride"
@@ -71,7 +71,6 @@ Understanding systems makes you a safer pilot. When something fails in flight, y
 
 At Summit Flight Academy, systems knowledge is part of every lesson.
 
-📞 **Call us at +1 816-282-1500**  
-🌐 **Visit us at [summitflightacademy.com](https://www.summitflightacademy.com/)**
+[Book a Discovery Flight](https://www.flightcircle.com/shop/325431594e72/4000002368)
 
 Fly smarter, train with us in Lee’s Summit today.
