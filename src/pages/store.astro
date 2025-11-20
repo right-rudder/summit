@@ -2,6 +2,8 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import CareerTrackCTA from "../components/careerTrackCTA.astro";
 import EnrollNowCTA from "../components/EnrollNowCTA.astro";
+import TryFlyingCTA from "../components/TryFlyingCTA.astro";
+import UnderHeaderVideo from "../components/UnderHeaderVideo.astro";
 ---
 
 <BaseLayout
@@ -26,9 +28,20 @@ import EnrollNowCTA from "../components/EnrollNowCTA.astro";
     </div>
   </header>
 
-  <section class="container mx-auto py-12">
+  <UnderHeaderVideo
+    title="Why Become a Pilot?"
+    description="If you've thought about becoming a pilot, now is the perfect time to get started. Summit Flight Academy is your place to start training and get your pilot certificate and ratings."
+    videoId="rYngYS6eBeg"
+  />
+
+  <section class="container mx-auto pt-12">
+    <h3
+      class="text-3xl tracking-wide font-bold text-main-red text-center uppercase py-6"
+    >
+      Lightspeed Headsets
+    </h3>
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
-      <div class="flex justify-center align-middle items-center">
+      <div class="flex justify-center align-middle items-center min-h-96">
         <div id="product-component-1717605538694"></div>
         <script type="text/javascript">
           /*<![CDATA[*/
@@ -518,7 +531,8 @@ import EnrollNowCTA from "../components/EnrollNowCTA.astro";
         </script>
       </div>
     </div>
-    <p class="mx-auto text-lg py-12 text-center font-medium">
+
+    <p class="mx-auto text-lg pt-12 text-center font-medium">
       At Summit Flight Academy, we understand the importance of high-quality
       equipment in ensuring a successful and safe learning experience. That's
       why we are proud to partner with Lightspeed to supply our students with
@@ -531,5 +545,7 @@ import EnrollNowCTA from "../components/EnrollNowCTA.astro";
       Academy.
     </p>
   </section>
+
+  <TryFlyingCTA />
   <CareerTrackCTA />
 </BaseLayout>
