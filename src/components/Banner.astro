@@ -3,6 +3,7 @@ import { Icon } from "astro-icon/components";
 import {
   FACEBOOK_LINK,
   INSTAGRAM_LINK,
+  YOUTUBE_LINK,
   PHONE_NUMBER,
   EMAIL_ADDRESS,
   ADDRESS,
@@ -37,6 +38,17 @@ import {
         >
           <Icon
             name="entypo-social:instagram-with-circle"
+            class="text-white text-2xl hover:scale-105 cursor-pointer transition-all"
+          />
+        </a>
+        <a
+          href={YOUTUBE_LINK}
+          target="_blank"
+          rel="noopener"
+          aria-label="Summit Flight Academy Youtube channel link"
+        >
+          <Icon
+            name="entypo-social:youtube-with-circle"
             class="text-white text-2xl hover:scale-105 cursor-pointer transition-all"
           />
         </a>

@@ -1,7 +1,7 @@
 ---
 description: "Understanding flight instruments is essential for any aspiring pilot. This guide explains the core and additional flight instruments in our aicraft, helping future and current pilots in the Kansas City area navigate their flight training comfortably. Reading an instrument panel is a fundamental that every pilot should know concretely, whether just starting flight lessons or well on the track toward the airlines."
 pubDate: "May 16, 2024"
-heroImage: "/img/our-fleet/summit-flight-academy-instrument-panel-of-N7664Y-Piper-Twin-Comanche-summit-flight-academy.webp"
+heroImage: "/img/our-fleet/summit-flight-academy_kansas-city-missouri_flying-lessons_pilot-academy_fleet-piper-twin-comanche-N7664Y-instrument-panel.webp"
 imgAlt: "flight instruments"
 author: Jami Heckman
 title: Breaking Down an Instrument Panel
