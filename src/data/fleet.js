@@ -6,18 +6,18 @@ export const fleet = [
     images: [
       {
         src: "/img/our-fleet/N4353L-1.webp",
-        alt: "piper-archer-ii-at-summit-flight-academy",
+        alt: "Piper Archer II at Summit Flight Academy",
       },
       {
         src: "/img/our-fleet/N4353L-2.webp",
-        alt: "piper-archer-ii-interior-control-panel",
+        alt: "Piper Archer II interior control panel",
       },
       {
         src: "/img/our-fleet/N4353L-3.webp",
-        alt: "piper-archer-ii-interior-seats",
+        alt: "Piper Archer II interior seats",
       },
     ],
-    alt: "piper-archer-ii-at-summit-flight-academy",
+    alt: "Piper Archer II at Summit Flight Academy",
     desc: `Piper PA-28 Archer N4353L is a true gem in Summit Flight Academy's training fleet, offering the most utility of the fixed-gear PA-28 line and making it an ideal platform for instrument and commercial pilot training. This beautiful aircraft shines with its highly capable IFR panel and boasts an upgraded leather interior, providing a comfortable and stylish cabin environment perfect for cross-country adventures, ensuring an exceptional training experience as you hone your instrument skills or build experience for a commercial certificate.`,
     rentalPrice: null,
     model: "PA-28-181",
@@ -70,18 +70,18 @@ export const fleet = [
     images: [
       {
         src: "/img/our-fleet/N425CB-1.webp",
-        alt: "piper-warrior-at-summit-flight-academy",
+        alt: "Piper Warrior at Summit Flight Academy",
       },
       {
         src: "/img/our-fleet/N425CB-2.webp",
-        alt: "piper-warrior-interior-control-panel",
+        alt: "Piper Warrior interior control panel",
       },
       {
         src: "/img/our-fleet/N425CB-3.webp",
-        alt: "piper-warrior-interior-seats",
+        alt: "Piper Warrior interior seats",
       },
     ],
-    alt: "piper-warrior-at-summit-flight-academy",
+    alt: "Piper Warrior at Summit Flight Academy",
     desc: `N425CB is one of Summit Flight Academy's latest fleet additions and a true standout with its IFR panel, digital attitude indicator, updated paint scheme, and brand-new interior. This aircraft boasts an impressive avionics suite and a stunning new interior. With its impressive instrumentation, updated aesthetics, and top-notch amenities, N425CB provides a cutting-edge and enjoyable flight training experience.`,
     rentalPrice: null,
     model: "PA-28-151",
@@ -133,22 +133,22 @@ export const fleet = [
     images: [
       {
         src: "/img/our-fleet/Summit-Flight-Academy-fleet-N15283-main.webp",
-        alt: "piper-cherokee-at-summit-flight-academy",
+        alt: "Piper Cherokee at Summit Flight Academy",
       },
       {
         src: "/img/our-fleet/Summit-Flight-Academy-fleet-N15283-2.webp",
-        alt: "piper-cherokee-at-summit-flight-academy-runway",
+        alt: "Piper Cherokee at Summit Flight Academy runway",
       },
       {
         src: "/img/our-fleet/N15283-3.webp",
-        alt: "piper-cherokee-interior-seats",
+        alt: "Piper Cherokee interior seats",
       },
       {
         src: "/img/our-fleet/N15283-4.webp",
-        alt: "piper-cherokee-interior-seats",
+        alt: "Piper Cherokee interior seats",
       },
     ],
-    alt: "piper-cherokee-at-summit-flight-academy",
+    alt: "Piper Cherokee at Summit Flight Academy",
     desc: `N15283, the flagship aircraft of Summit Flight, has played an integral role in training numerous aspiring pilots. Boasting an IFR-capable instrument panel equipped with dual Garmin G5 ADI/HSI instruments, along with a cutting-edge Garmin avionics stack featuring a GTN 650Xi and GTX 345 ADS-B in/out transponder, N15283 ensures a state-of-the-art learning experience for students. Recently, this aircraft underwent significant upgrades, including the installation of all-new windows and a luxurious leather interior, enhancing both comfort and style for those on board.`,
     rentalPrice: null,
     model: "PA-28-140",
@@ -200,18 +200,18 @@ export const fleet = [
     images: [
       {
         src: "/img/our-fleet/N15044-1.webp",
-        alt: "piper-cherokee-at-summit-flight-academy",
+        alt: "Piper Cherokee at Summit Flight Academy",
       },
       {
         src: "/img/our-fleet/N15044-2.webp",
-        alt: "piper-cherokee-interior-control-panel",
+        alt: "Piper Cherokee interior control panel",
       },
       {
         src: "/img/our-fleet/N15044-3.webp",
-        alt: "piper-cherokee-interior-seats",
+        alt: "Piper Cherokee interior seats",
       },
     ],
-    alt: "piper-cherokee-at-summit-flight-academy",
+    alt: "Piper Cherokee at Summit Flight Academy",
     desc: `The Piper PA-28 series, including the Cherokee, Warrior, and Archer is one of most popular single engine aircraft ever made. It is still in production today and is a favorite for flight training thanks to its safety record, good performance, and ease of operation.`,
     rentalPrice: null,
     model: "PA-28-140",
@@ -264,18 +264,18 @@ export const fleet = [
     images: [
       {
         src: "/img/our-fleet/N6894W-1.webp",
-        alt: "piper-cherokee-at-summit-flight-academy",
+        alt: "Piper Cherokee at Summit Flight Academy",
       },
       {
         src: "/img/our-fleet/N6894W-2.webp",
-        alt: "piper-cherokee-interior-control-panel",
+        alt: "Piper Cherokee interior control panel",
       },
       {
         src: "/img/our-fleet/N6894W-3.webp",
-        alt: "piper-cherokee-interior-seats",
+        alt: "Piper Cherokee interior seats",
       },
     ],
-    alt: "piper-cherokee-at-summit-flight-academy",
+    alt: "Piper Cherokee at Summit Flight Academy",
     desc: `"Miss Whiskey," a beloved aircraft among our clientele aspiring for private pilot certification, is none other than N6894W. This aircraft is equipped with a highly functional VFR panel featuring ADS-B in/out capabilities, accompanied by a Garmin 660 GPS navigator that provides traffic and ADS-B weather display for enhanced situational awareness. Moreover, N6894W boasts an updated interior, ensuring a comfortable and modern flying experience. Additionally, the inclusion of four-point inertial reel seat belts up front further enhances safety measures for passengers and pilots alike.`,
     rentalPrice: null,
     model: "PA-28-140",
@@ -328,18 +328,18 @@ export const fleet = [
     images: [
       {
         src: "/img/our-fleet/summit-flight-academy-front-shot-of-N7664Y-Piper-Twin-Comanche-SFA.webp",
-        alt: "summit-flight-academy-front-shot-of-N7664Y-Piper-Twin-Comanche-SFA",
+        alt: "Summit Flight Academy front shot of N7664Y Piper Twin Comanche SFA",
       },
       {
         src: "/img/our-fleet/summit-flight-academy-instrument-panel-of-N7664Y-Piper-Twin-Comanche-summit-flight-academy.webp",
-        alt: "summit-flight-academy-instrument-panel-of-N7664Y-Piper-Twin-Comanche-summit-flight-academy",
+        alt: "Summit Flight Academy instrument panel of N7664Y Piper Twin Comanche",
       },
       {
         src: "/img/our-fleet/summit-flight-academy-pilot-cockpit-of-N7664Y-Piper-Twin-Comanche.webp",
-        alt: "summit-flight-academy-pilot-cockpit-of-N7664Y-Piper-Twin-Comanche",
+        alt: "Summit Flight Academy pilot cockpit of N7664Y Piper Twin Comanche",
       },
     ],
-    alt: "piper-twin-comanche-at-summit-flight-academy",
+    alt: "Piper Twin Comanche at Summit Flight Academy",
     desc: "Summit Flight Academy proudly introduces the newest addition to our fleet, the Piper Twin Comanche (PA-30), used specifically for Multi-Engine Training. This versatile and reliable aircraft is renowned for its exceptional performance, making it the perfect choice for aspiring multi-engine pilots.",
     model: "Dual instructor only (Solo rental unavailable)",
     rentalPrice: null,
