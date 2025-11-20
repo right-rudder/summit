@@ -9,6 +9,13 @@ import { GeneralFAQs } from "../data/generalFAQs1";
 import EnrollNowCTA from "../components/EnrollNowCTA.astro";
 import EnrollmentModalButton from "../components/enrollmentModalButtom";
 import UnderHeaderVideo from "../components/UnderHeaderVideo.astro";
+import {
+  CAREER_PATH_KEYWORDS,
+  CORE_PROGRAM_KEYWORDS,
+  DISCOVERY_EXPERIENCE_KEYWORDS,
+  GENERAL_AVIATION_KEYWORDS,
+  LOCATION_KEYWORDS,
+} from "../consts";
 const GHL_ENROLL_FORM_WEBHOOK_URL = import.meta.env.GHL_ENROLL_FORM_WEBHOOK_URL;
 const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
 ---
@@ -16,7 +23,7 @@ const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
 <BaseLayout
   pageTitle="New to Flying | Summit Flight Academy"
   pageDescription="Explore the thrilling world of aviation at Summit Flight Academy. Discover why becoming a pilot is a rewarding journey, offering freedom, adventure, and personal growth. Get step-by-step guidance on how to obtain your pilot's license, from enrolling in our comprehensive training programs to passing exams and taking to the skies. Ignite your passion for flight today."
-  pageKeywords="pilot training, become a pilot, flight school, private pilot license, aviation career, discovery flight, flight training programs, commercial pilot certification, instrument rating, multi-engine training, aviation education"
+  pageKeywords=`${GENERAL_AVIATION_KEYWORDS}, ${DISCOVERY_EXPERIENCE_KEYWORDS}, ${CAREER_PATH_KEYWORDS}, ${CORE_PROGRAM_KEYWORDS}, ${LOCATION_KEYWORDS},pilot training, become a pilot, flight school, private pilot license, aviation career, discovery flight, flight training programs, commercial pilot certification, instrument rating, multi-engine training, aviation education`
 >
   <!-- <PageHeader
     title="Considering Pilot Training?"

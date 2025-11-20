@@ -8,6 +8,11 @@ import EnrollmentModalButton from "../../components/enrollmentModalButtom";
 import ProgramSuggester from "../../components/ProgramSuggester";
 import bundlePackages from "../../data/bundlePackages";
 import UnderHeaderVideo from "../../components/UnderHeaderVideo.astro";
+import {
+  CAREER_PATH_KEYWORDS,
+  CORE_PROGRAM_KEYWORDS,
+  LOCATION_KEYWORDS,
+} from "../../consts";
 const GHL_ENROLL_FORM_WEBHOOK_URL = import.meta.env.GHL_ENROLL_FORM_WEBHOOK_URL;
 const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
 const packages = bundlePackages;
@@ -16,7 +21,7 @@ const packages = bundlePackages;
 <BaseLayout
   pageTitle="Pilot + Instrument Bundle | Summit Flight Academy"
   pageDescription="Maximize your piloting potential with Summit Flight Academy's bundled Private Pilot + Instrument Rating training package. Designed for pilots seeking long-distance flying capabilities, this comprehensive program equips you with both certifications in one streamlined course. Choose between our 7- or 10-month schedules to fit your timeline, and benefit from cost savings by combining these essential ratings. Unlock the skies and expand your horizons with our efficient, in-depth training approach."
-  pageKeywords="private pilot training, instrument rating training, bundled pilot training, combined pilot certification, cross-country pilot package, long-distance flying, flight school packages, pilot training costs, accelerated pilot training, 7-month pilot program, 10-month pilot program"
+  pageKeywords=`${CAREER_PATH_KEYWORDS}, ${CORE_PROGRAM_KEYWORDS}, ${LOCATION_KEYWORDS}, private pilot training, instrument rating training, bundled pilot training, combined pilot certification, cross-country pilot package, long-distance flying, flight school packages, pilot training costs, accelerated pilot training, 7-month pilot program, 10-month pilot program`
 >
   <!-- <PageHeader
     title="How to Become a Private Pilot"

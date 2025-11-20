@@ -1,5 +1,12 @@
 ---
-import { SITE_TITLE, SITE_DESCRIPTION } from "../../consts";
+import {
+  SITE_TITLE,
+  SITE_DESCRIPTION,
+  CAREER_PATH_KEYWORDS,
+  CORE_PROGRAM_KEYWORDS,
+  LOCATION_KEYWORDS,
+  GENERAL_AVIATION_KEYWORDS,
+} from "../../consts";
 import { getCollection } from "astro:content";
 import FormattedDate from "../../components/FormattedDate.astro";
 import BaseLayout from "../../layouts/BaseLayout.astro";
@@ -21,7 +28,7 @@ const breadcrumbItems = [
 <BaseLayout
   pageTitle="Blog | Summit Flight Academy"
   pageDescription="Explore the latest happenings in the world of flight training at Summit Flight Academy. Gain valuable insights and tips to ease pre-flight jitters and prepare effectively for your important milestones."
-  pageKeywords="blog, private pilot's license, written exam, pilot resources, flight training, kansas city flight school, exam preparation, pilot licensing, aviation blog, pilot tips"
+  pageKeywords=`blog, private pilot's license, written exam, pilot resources, flight training, ${CAREER_PATH_KEYWORDS}, ${CORE_PROGRAM_KEYWORDS}, ${LOCATION_KEYWORDS}, ${GENERAL_AVIATION_KEYWORDS}, kansas city flight school, exam preparation, pilot licensing, aviation blog, pilot tips`
 >
   <!-- <PageHeader
     title="Blog"
