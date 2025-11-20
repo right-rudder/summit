@@ -19,7 +19,7 @@ tags:
 
 At Summit Flight Academy, we pride ourselves on the consistency and quality of our training fleet. Every aircraft in our lineup is chosen with a specific purpose in mind, ensuring that each student experiences a high level of safety, comfort, and versatility during their training. Our entire fleet consists of Piper Aircraft models, which have been a cornerstone of aviation training for decades.
 
-**Piper Aircraft: A Tradition in Flight Training**
+## Piper Aircraft: A Tradition in Flight Training
 
 Piper Aircraft continues to build some of the most reliable and easy-to-fly aircraft designed for training. From the Piper Archer to the Cherokee, each aircraft model brings something unique to the table, making them ideal for pilots learning to fly or advancing their certification.
 
