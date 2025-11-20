@@ -114,6 +114,7 @@ export const EMAIL_ADDRESS = "info@summit-flight.com";
 //Social Media Links
 export const FACEBOOK_LINK = "https://www.facebook.com/summitflightacademy/";
 export const INSTAGRAM_LINK = "https://www.instagram.com/summitflightacademy/";
+export const YOUTUBE_LINK = "https://www.youtube.com/@SummitFlight";
 
 export const flightPrograms = {
   name: "Training",

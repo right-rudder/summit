@@ -5,15 +5,15 @@ export const fleet = [
     name: "Piper Archer II",
     images: [
       {
-        src: "/img/our-fleet/N4353L-1.webp",
+        src: "/img/our-fleet/summit-flight-academy_kansas-city-missouri_pilot-academy_fleet-piper-archer-ii-pa-28-181-N4353L-back-view.webp",
         alt: "Piper Archer II at Summit Flight Academy",
       },
       {
-        src: "/img/our-fleet/N4353L-2.webp",
+        src: "/img/our-fleet/summit-flight-academy_kansas-city-missouri_flying-lessons_pilot-academy_fleet-piper-archer-ii-pa-28-181-N4353L-instrument-panel.webp",
         alt: "Piper Archer II interior control panel",
       },
       {
-        src: "/img/our-fleet/N4353L-3.webp",
+        src: "/img/our-fleet/summit-flight-academy_kansas-city-missouri_flying-lessons_fleet-piper-archer-ii-pa-28-181-N4353L-cockpit-seats.webp",
         alt: "Piper Archer II interior seats",
       },
     ],
@@ -69,15 +69,15 @@ export const fleet = [
     name: "Piper Warrior",
     images: [
       {
-        src: "/img/our-fleet/N425CB-1.webp",
+        src: "/img/our-fleet/summit-flight-academy_kansas-city-missouri_flying-lessons_fleet-piper-warrior-pa-28-151-N425CB-side-view.webp",
         alt: "Piper Warrior at Summit Flight Academy",
       },
       {
-        src: "/img/our-fleet/N425CB-2.webp",
+        src: "/img/our-fleet/summit-flight-academy_kansas-city-missouri_flight-school_flight-school_fleet-piper-warrior-pa-28-151-N425CB-instrument-panel.webp",
         alt: "Piper Warrior interior control panel",
       },
       {
-        src: "/img/our-fleet/N425CB-3.webp",
+        src: "/img/our-fleet/summit-flight-academy_kansas-city-missouri_pilot-training_become-a-pilot_fleet-piper-warrior-pa-28-151-N425CB-cockpit-seats.webp",
         alt: "Piper Warrior interior seats",
       },
     ],
@@ -132,19 +132,19 @@ export const fleet = [
     name: "Piper Cherokee",
     images: [
       {
-        src: "/img/our-fleet/Summit-Flight-Academy-fleet-N15283-main.webp",
+        src: "/img/our-fleet/summit-flight-academy_kansas-city-missouri_pilot-academy_flight-academy_fleet-piper-cherokee-pa-28-140-N15283-front-view-2.webp",
         alt: "Piper Cherokee at Summit Flight Academy",
       },
       {
-        src: "/img/our-fleet/Summit-Flight-Academy-fleet-N15283-2.webp",
+        src: "/img/our-fleet/summit-flight-academy_kansas-city-missouri_flight-training_flight-school_fleet-piper-cherokee-pa-28-140-N15283-side-view.webp",
         alt: "Piper Cherokee at Summit Flight Academy runway",
       },
       {
-        src: "/img/our-fleet/N15283-3.webp",
+        src: "/img/our-fleet/summit-flight-academy_kansas-city-missouri_flight-training_become-a-pilot_fleet-piper-cherokee-pa-28-140-N15283-cockpit-seats.webp",
         alt: "Piper Cherokee interior seats",
       },
       {
-        src: "/img/our-fleet/N15283-4.webp",
+        src: "/img/our-fleet/summit-flight-academy_kansas-city-missouri_pilot-academy_fleet-piper-cherokee-pa-28-140-N15283-instrument-panel-2.webp",
         alt: "Piper Cherokee interior seats",
       },
     ],
@@ -199,15 +199,15 @@ export const fleet = [
     name: "Piper Cherokee",
     images: [
       {
-        src: "/img/our-fleet/N15044-1.webp",
+        src: "/img/our-fleet/summit-flight-academy_kansas-city-missouri_pilot-academy_fleet-piper-cherokee-pa-28-140-N15044-side-view.webp",
         alt: "Piper Cherokee at Summit Flight Academy",
       },
       {
-        src: "/img/our-fleet/N15044-2.webp",
+        src: "/img/our-fleet/summit-flight-academy_kansas-city-missouri_flying-lessons_fleet-piper-cherokee-pa-28-140-N15044-instrument-panel.webp",
         alt: "Piper Cherokee interior control panel",
       },
       {
-        src: "/img/our-fleet/N15044-3.webp",
+        src: "/img/our-fleet/summit-flight-academy_kansas-city-missouri_become-a-pilot_fleet-piper-cherokee-pa-28-140-N15044-cockpit-seats.webp",
         alt: "Piper Cherokee interior seats",
       },
     ],
@@ -263,15 +263,15 @@ export const fleet = [
     name: "Piper Cherokee",
     images: [
       {
-        src: "/img/our-fleet/N6894W-1.webp",
+        src: "/img/our-fleet/summit-flight-academy_kansas-city-missouri_flight-training_fleet-piper-cherokee-pa-28-140-N6894W-front-view.webp",
         alt: "Piper Cherokee at Summit Flight Academy",
       },
       {
-        src: "/img/our-fleet/N6894W-2.webp",
+        src: "/img/our-fleet/summit-flight-academy_kansas-city-missouri_flying-lessons_fleet-piper-cherokee-pa-28-140-N6894W-instrument-panel.webp",
         alt: "Piper Cherokee interior control panel",
       },
       {
-        src: "/img/our-fleet/N6894W-3.webp",
+        src: "/img/our-fleet/summit-flight-academy_kansas-city-missouri_flying-lessons_fleet-piper-cherokee-pa-28-140-N6894W-cockpit-seats.webp",
         alt: "Piper Cherokee interior seats",
       },
     ],
@@ -327,15 +327,15 @@ export const fleet = [
     name: "Piper Twin Comanche",
     images: [
       {
-        src: "/img/our-fleet/summit-flight-academy-front-shot-of-N7664Y-Piper-Twin-Comanche-SFA.webp",
+        src: "/img/our-fleet/summit-flight-academy_kansas-city-missouri_become-a-pilot_flying-lessons_fleet-piper-twin-comanche-N7664Y-front-right-view.webp",
         alt: "Summit Flight Academy front shot of N7664Y Piper Twin Comanche SFA",
       },
       {
-        src: "/img/our-fleet/summit-flight-academy-instrument-panel-of-N7664Y-Piper-Twin-Comanche-summit-flight-academy.webp",
+        src: "/img/our-fleet/summit-flight-academy_kansas-city-missouri_flying-lessons_pilot-academy_fleet-piper-twin-comanche-N7664Y-instrument-panel.webp",
         alt: "Summit Flight Academy instrument panel of N7664Y Piper Twin Comanche",
       },
       {
-        src: "/img/our-fleet/summit-flight-academy-pilot-cockpit-of-N7664Y-Piper-Twin-Comanche.webp",
+        src: "/img/our-fleet/summit-flight-academy_kansas-city-missouri_flight-academy_pilot-academy_fleet-piper-twin-comanche-N7664Y-cockpit-seats.webp",
         alt: "Summit Flight Academy pilot cockpit of N7664Y Piper Twin Comanche",
       },
     ],
