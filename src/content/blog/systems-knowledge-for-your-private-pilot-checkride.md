@@ -28,10 +28,11 @@ Knowing your airplane isn’t optional, it’s essential. Examiners consistently
 
 Examiners expect you to explain, in plain English:
 
-- How the electrical system works.
-- How fuel flows through the aircraft.
-- How carburetors and fuel injection differ.
-- What vacuum-driven instruments rely on.
+- Know basic functions of major systems (electrical, fuel, vacuum, pitot-static).
+- Recognize symptoms of system malfunctions.
+- Explain safe pilot actions for system failures.
+- Prioritize safety and decision-making
+
 
 ---
 
