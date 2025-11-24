@@ -10,6 +10,11 @@ import FAQs from "../../components/FAQs";
 import { GeneralFAQs } from "../../data/generalFAQs1";
 import EnrollNowCTA from "../../components/EnrollNowCTA.astro";
 import EnrollmentModalButton from "../../components/enrollmentModalButtom";
+import {
+  CAREER_PATH_KEYWORDS,
+  CORE_PROGRAM_KEYWORDS,
+  LOCATION_KEYWORDS,
+} from "../../consts";
 
 export async function getStaticPaths() {
   const location = await getCollection("pilot-training");
@@ -27,8 +32,8 @@ const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
 
 <BaseLayout
   pageTitle=`${location.data.city}, ${location.data.state} | Summit Flight Academy`
-  pageDescription="Explore the thrilling world of aviation at Summit Flight Academy. Discover why becoming a pilot is a rewarding journey, offering freedom, adventure, and personal growth. Get step-by-step guidance on how to obtain your pilot's license, from enrolling in our comprehensive training programs to passing exams and taking to the skies. Ignite your passion for flight today."
-  pageKeywords="pilot training, become a pilot, flight school, private pilot license, aviation career, discovery flight, flight training programs, commercial pilot certification, instrument rating, multi-engine training, aviation education"
+  pageDescription=`Explore the thrilling world of aviation at Summit Flight Academy. Discover why becoming a pilot near ${location.data.city} is a rewarding journey, offering freedom, adventure, and personal growth.  Get step-by-step guidance on how to obtain your pilot's license, from enrolling in our comprehensive training programs to passing exams and taking to the skies. Ignite your passion for flight today. ${location.data.city} is: ${location.data.description}.`
+  pageKeywords=`${CAREER_PATH_KEYWORDS}, ${CORE_PROGRAM_KEYWORDS}, ${LOCATION_KEYWORDS}, ${location.data.city}, ${location.data.state}, pilot training, become a pilot, flight school, private pilot license, aviation career, discovery flight, flight training programs, commercial pilot certification, instrument rating, multi-engine training, aviation education`
 >
   <!-- <PageHeader
     title="Considering Pilot Training?"
@@ -59,7 +64,9 @@ const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
       <h1 class="text-5xl font-bold tracking-tight">
         Considering Pilot Training near {location.data.city}?
       </h1>
-      <h2 class="text-3xl tracking-wide">Come visit Summit Flight Academy at Lee's Summit</h2>
+      <h2 class="text-3xl tracking-wide">
+        Come visit Summit Flight Academy at Lee's Summit
+      </h2>
       <p>Just {location.data.time} away!</p>
       <EnrollmentModalButton
         client:visible

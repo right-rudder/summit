@@ -29,7 +29,7 @@ tags:
 
 Have you ever looked up at a passing plane and thought, _“Could I do that?”_ Maybe you’ve always dreamed of becoming a pilot but worried you missed your chance. Or perhaps you’re just starting to explore your career path and wondering if flight training is even possible at your age.
 
-Here’s the truth: **there’s no “perfect age” to learn how to fly.**
+## Here’s the truth: **there’s no “perfect age” to learn how to fly.**
 
 At [Summit Flight Academy](https://www.summitflightacademy.com), we’ve trained students ranging from teenagers to retirees, each with their own reasons for flying but all sharing the same dream of taking to the skies. Whether you're looking for a fulfilling hobby, an exciting new challenge, or a brand-new career path, learning to fly opens doors you never imagined. If you’re questioning whether it’s too early or too late to begin flight training, this post is here to give you clarity and encouragement.
 

@@ -1,7 +1,7 @@
 ---
 description: "Discover why Summit Flight Academy trains exclusively on Piper aircraft like the Cherokee, Warrior, Archer II, and Twin Comanche. Learn how our fleet choice enhances safety, skill-building, reliability, and career readiness for aspiring pilots in Kansas City. Book your Discovery Flight today!"
 pubDate: "July 12, 2025"
-heroImage: "/img/our-fleet/our-fleet-header.webp"
+heroImage: "/img/our-fleet/summit-flight-academy_kansas-city-missouri_become-a-pilot_flying-lessons_fleet-piper-cherokee-pa-28-140-N6894W-back-view.webp"
 imgAlt: "flight instruments"
 author: Jami Heckman
 title: Why Summit Flight Academy's All-Piper Fleet Sets Student Pilots Up for Success

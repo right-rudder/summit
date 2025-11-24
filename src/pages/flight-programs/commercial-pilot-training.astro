@@ -9,6 +9,11 @@ import { commercialPilotFAQs } from "../../data/commercialPilotFAQs";
 import EnrollmentModalButton from "../../components/enrollmentModalButtom";
 import ProgramSuggester from "../../components/ProgramSuggester";
 import commercialPackages from "../../data/commercialPackages";
+import {
+  CAREER_PATH_KEYWORDS,
+  CORE_PROGRAM_KEYWORDS,
+  LOCATION_KEYWORDS,
+} from "../../consts";
 const GHL_ENROLL_FORM_WEBHOOK_URL = import.meta.env.GHL_ENROLL_FORM_WEBHOOK_URL;
 const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
 const packages = commercialPackages;
@@ -17,7 +22,7 @@ const packages = commercialPackages;
 <BaseLayout
   pageTitle="Commercial Pilot | Summit Flight Academy"
   pageDescription="Take your aviation career to new heights with Summit Flight Academy's Commercial Pilot training program. Gain the expertise and flight experience required to obtain your coveted Commercial Pilot Certificate (CPL), enabling you to fly professionally and get paid for your services. From meeting flight hour requirements and passing written exams to mastering cross-country missions and acing the checkride, our experienced instructors guide you through every step, ensuring you emerge as a highly skilled and qualified commercial pilot."
-  pageKeywords="commercial pilot training, commercial pilot certificate, commercial pilot license (CPL), flight school training, aviation career path, pilot certification requirements, cross-country flight training, commercial pilot checkride, professional pilot opportunities, get paid to fly"
+  pageKeywords=`${CAREER_PATH_KEYWORDS}, ${CORE_PROGRAM_KEYWORDS}, ${LOCATION_KEYWORDS}, commercial pilot training, commercial pilot certificate, commercial pilot license (CPL), flight school training, aviation career path, pilot certification requirements, cross-country flight training, commercial pilot checkride, professional pilot opportunities, get paid to fly`
 >
   <!-- <PageHeader
     title="Become a Commercial Pilot"

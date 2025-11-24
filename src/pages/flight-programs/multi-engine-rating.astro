@@ -6,6 +6,11 @@ import EnrollNowCTA from "../../components/EnrollNowCTA.astro";
 import MultienginePackage from "../../components/MultienginePackage.astro";
 import EnrollmentModalButton from "../../components/enrollmentModalButtom";
 import UnderHeaderVideo from "../../components/UnderHeaderVideo.astro";
+import {
+  CAREER_PATH_KEYWORDS,
+  CORE_PROGRAM_KEYWORDS,
+  LOCATION_KEYWORDS,
+} from "../../consts";
 const GHL_ENROLL_FORM_WEBHOOK_URL = import.meta.env.GHL_ENROLL_FORM_WEBHOOK_URL;
 const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
 ---
@@ -13,7 +18,7 @@ const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
 <BaseLayout
   pageTitle="Multi-Engine | Summit Flight Academy"
   pageDescription="Soar to new heights with Summit Flight Academy's Multi-Engine Rating training. Gain the expertise to command complex, high-performance multi-engine aircraft with proficiency. Through ground school, practical flight sessions, and evaluations, our experienced instructors equip you with the essential knowledge and skills for safe multi-engine operations. Unlock new opportunities and elevate your piloting career with this advanced rating."
-  pageKeywords="multi-engine rating, multi-engine training, pilot rating requirements, multi-engine aircraft operations, flight school training, advanced pilot certification, practical flight training, engine-out procedures, aviation career advancement, high-performance aircraft"
+  pageKeywords=`${CAREER_PATH_KEYWORDS}, ${CORE_PROGRAM_KEYWORDS}, ${LOCATION_KEYWORDS}, multi-engine rating, multi-engine training, pilot rating requirements, multi-engine aircraft operations, flight school training, advanced pilot certification, practical flight training, engine-out procedures, aviation career advancement, high-performance aircraft`
 >
   <!-- <PageHeader
     title="How to Become a Private Pilot"

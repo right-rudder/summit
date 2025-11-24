@@ -1,7 +1,7 @@
 ---
 description: "Prepare for your checkride with these essential tips. Learn what to expect, how to study effectively, and how Summit Flight Academy can help you succeed."
 pubDate: "February 11, 2025"
-heroImage: "/img/blog/flying-pilot.webp"
+heroImage: "/img/blog/cockpit-pilots_summit-flight-academy_kansas-city-missouri_flying-lessons_become-a-pilot_flying-pilot.webp"
 imgAlt: "A student pilot performing a checkride."
 author: Jami Heckman
 title: "Top Tips for Acing Your Checkride"
