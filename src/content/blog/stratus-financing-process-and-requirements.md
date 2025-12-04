@@ -18,7 +18,10 @@ tags:
   ]
 ---
 
-Financing your pilot training should be straightforward, especially when preparing for a professional aviation career. Summit Flight Academy partners with Stratus Financial — an aviation-focused lender designed *by pilots, for pilots* — to offer students reliable financing for full career-track programs and individual ratings. This guide breaks down eligibility requirements, documents you’ll need, how the application works, common questions and what to expect.
+Financing your pilot training should be straightforward, especially when preparing for a professional aviation career. Summit Flight Academy partners with Stratus Financial — an aviation-focused lender designed *by pilots, for pilots* — to offer students reliable financing for full career-track programs and individual ratings. This guide breaks down eligibility requirements, documents you’ll need, how the application works, common questions and what to expect. 
+
+You can also learn about all financing options available for Summit students on our **[Financing Resources page](/resources/financing/)**.
+
 
 ---
 
@@ -71,7 +74,7 @@ Having these ready helps prevent delays during processing.
 Stratus outlines a clear six-step path :
 
 ### **1. Application**  
-You begin the process online through Stratus.
+You begin the process online through Stratus by **[applying here](/resources/financing/)**.
 
 ### **2. Processing**  
 Your documents and information are reviewed.
