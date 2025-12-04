@@ -1,10 +1,10 @@
 ---
 description: "A clear, student-friendly guide to the Stratus Financial application process for Summit Flight Academy career-track students."
 pubDate: "December 3, 2025"
-heroImage: "/img/blog/stratus-financial-placeholder-asset.webp"
-imgAlt: "Student pilot reviewing financing options at Summit Flight Academy"
+heroImage: "/img/blog/stratus-financing-process-and-requirements.webp"
+imgAlt: "Stratus logo over the Summit Flight Academy's aircraft"
 author: "Jami Heckman"
-title: "Stratus Financing for Summit Students: Step-by-Step Guide and Requirements"
+title: "Stratus Financing Process & Requirements"
 readingTime: "7 min"
 tags: 
   [
@@ -24,31 +24,31 @@ Financing your pilot training should be straightforward, especially when prepari
 
 ## **1. What Is Stratus Financial?**
 
-Stratus Financial was founded by FAA Certificated Flight and Ground Instructors who understand the realities of aviation training firsthand (source: *“For Pilots, By Pilots.”*). Stratus specializes in supporting professional flight training programs and offers financing for:
+Stratus Financial was founded by FAA Certificated Flight and Ground Instructors who understand the realities of aviation training firsthand. Stratus specializes in supporting professional flight training programs and offers financing for:
 
 - Full career-track programs  
 - Individual certificates or ratings  
-- Packages that may include supplies and checkride fees (source: stratusFAQs)
+- Packages that may include supplies and checkride fees
 
-Stratus aims to provide “greater support and financial solutions for students committed to pursuing a career in aviation” (source).
+Stratus aims to provide greater support and financial solutions for students committed to pursuing a career in aviation.
 
 ---
 
 ## **2. Eligibility Requirements for Summit Students**
 
-According to Summit’s published requirements, students must meet the following criteria to qualify for Stratus financing:
+Summit students must meet the following criteria to qualify for Stratus financing:
 
 - **U.S. Citizen or Permanent Resident**  
-  - If not, **TSA verification** is required (source)
-- **Enrolled in Summit’s Career Track Program** (source)
-- **Paystubs for the past 2 months** (source)
-- **Bank statements for the past 2 months** (source)
-- **Driver’s license** (source)
-- **Employer name & contact number** (source)
-- **1st or 2nd class FAA medical certificate** (source)
-- **Co-borrower recommended** (source)
-- **Pilot certificate, if applicable** (source)
-- **Subject to credit check and underwriting** (source)
+  - If not, **TSA verification** is required 
+- **Enrolled in Summit’s Career Track Program** 
+- **Paystubs for the past 2 months** 
+- **Bank statements for the past 2 months** 
+- **Driver’s license** 
+- **Employer name & contact number** 
+- **1st or 2nd class FAA medical certificate** 
+- **Co-borrower recommended** 
+- **Pilot certificate, if applicable** 
+- **Subject to credit check and underwriting** 
 
 ---
 
@@ -69,7 +69,7 @@ Having these ready helps prevent delays during processing.
 
 ## **4. Step-by-Step Stratus Application Process**
 
-Stratus outlines a clear six-step path (source):
+Stratus outlines a clear six-step path :
 
 ### **1. Application**  
 You begin the process online through Stratus.
@@ -81,10 +81,10 @@ Your documents and information are reviewed.
 Credit evaluation and employment verification take place.
 
 ### **4. Approval**  
-You receive your available options—rates, terms, and any conditional requirements.
+You receive your available options such as rates, terms, and any conditional requirements.
 
 ### **5. Funding**  
-Stratus sends funds **directly to Summit Flight Academy** (source).
+Stratus sends funds **directly to Summit Flight Academy**.
 
 ### **6. Pilot Training**  
 Your training begins with an active student funding account.
@@ -94,7 +94,7 @@ Your training begins with an active student funding account.
 ## **5. How Funding Works & Handling of Unused Funds**
 
 Stratus deposits loan funds directly into your Summit training account.  
-Flight schools “agree to return unused funds in order to minimize your debt obligation” (source).
+Flight schools agree to return unused funds in order to minimize your debt obligation.
 
 This prevents overborrowing and protects students from unnecessary long-term debt.
 
@@ -102,13 +102,7 @@ This prevents overborrowing and protects students from unnecessary long-term deb
 
 ## **6. Common Delays and What to Expect**
 
-The raw intelligence does **not** specify typical delay durations. However, delays can occur when:
-
-- Documents are missing  
-- Employment verification requires additional confirmation  
-- Underwriting requests clarification  
-
-Any area marked “not specified in the source” will be presented transparently to ensure accuracy.
+Common reasons for delays typically include missing documents, verification steps, or follow-up requests during underwriting.
 
 ---
 
@@ -116,10 +110,10 @@ Any area marked “not specified in the source” will be presented transparentl
 
 Per Stratus documentation:
 
-- **Deferred payments** available during training (source: stratusFAQs)
-- **Interest-only** payments available while building hours to ATP minimums (source)
-- **Financing can include checkride fees and required supplies** (source)
-- **Multiple rate and repayment structures** offered after conditional approval (source)
+- **Deferred payments** available during training
+- **Interest-only** payments available while building hours to ATP minimums 
+- **Financing can include checkride fees and required supplies** 
+- **Multiple rate and repayment structures** offered after conditional approval 
 
 These options support full-time immersion in training without the pressure of large upfront expenses.
 
