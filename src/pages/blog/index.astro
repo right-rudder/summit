@@ -66,7 +66,8 @@ const breadcrumbItems = [
       <ul class="grid gap-5 grid-cols-1 lg:grid-cols-2">
         {
           posts.map((post, index) => (
-            <li class="h-fit group ring-2 ring-gray-700 bg-gray-200 overflow-hidden rounded-md lg:first:col-span-2 lg:first:h-96 hover:bg-gray-300 duration-300">
+            <li class="h-fit group ring-2 ring-gray-700 bg-gray-200
+             overflow-hidden rounded-md lg:first:col-span-2 lg:first:h-96 hover:bg-gray-300 duration-300">
               <a
                 href={`/blog/${post.slug}/`}
                 class={`flex gap-5 h-full ${index === 0 ? "" : ""}`}
