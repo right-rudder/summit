@@ -27,7 +27,6 @@ Financing your pilot training should be straightforward, especially when prepari
 Stratus Financial was founded by FAA Certificated Flight and Ground Instructors who understand the realities of aviation training firsthand. Stratus specializes in supporting professional flight training programs and offers financing for:
 
 - Full career-track programs  
-- Individual certificates or ratings  
 - Packages that may include supplies and checkride fees
 
 Stratus aims to provide greater support and financial solutions for students committed to pursuing a career in aviation.
@@ -125,4 +124,3 @@ Ready to begin the Stratus application?
 Start your financing process today:
 
 [Apply Now](https://apply.stratus.finance/summitflight1286120)
-
