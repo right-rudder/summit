@@ -9,6 +9,7 @@ import { GeneralFAQs } from "../data/generalFAQs1";
 import EnrollNowCTA from "../components/EnrollNowCTA.astro";
 import EnrollmentModalButton from "../components/enrollmentModalButtom";
 import UnderHeaderVideo from "../components/UnderHeaderVideo.astro";
+import CTAHolidayAndNewYear from "../components/CTAHolidayAndNewYear.astro";
 const GHL_ENROLL_FORM_WEBHOOK_URL = import.meta.env.GHL_ENROLL_FORM_WEBHOOK_URL;
 const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
 ---
@@ -74,7 +75,7 @@ const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
   />
 
   <BecomePilot />
-
+  <CTAHolidayAndNewYear iconRight={true}></CTAHolidayAndNewYear>
   <QuizCTA />
 
   <StartToday />
