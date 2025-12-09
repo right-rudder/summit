@@ -11,6 +11,8 @@ import GuideDownload from "../components/GuideDownload.astro";
 import ImageComp from "../components/ImageComp.astro";
 import UnderHeaderVideo from "../components/UnderHeaderVideo.astro";
 import { SITE_KEYWORDS, CORE_PROGRAM_KEYWORDS, AIRCRAFT_FLEET_KEYWORDS, DISCOVERY_EXPERIENCE_KEYWORDS, CAREER_PATH_KEYWORDS, LOCATION_KEYWORDS, RENTAL_GROUND_KEYWORDS, GENERAL_AVIATION_KEYWORDS } from "../consts.ts";
+
+import CTAHolidayAndNewYear from "../components/CTAHolidayAndNewYear.astro";
 const GHL_ENROLL_FORM_WEBHOOK_URL = import.meta.env.GHL_ENROLL_FORM_WEBHOOK_URL;
 const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
 ---
@@ -84,7 +86,7 @@ const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
   </section>
 
   <TryFlyingCTA />
-
+  <CTAHolidayAndNewYear/>
   <UnderHeaderVideo
     title="Why Become a Pilot?"
     description="If you've thought about becoming a pilot, now is the perfect time to get started. Summit Flight Academy is your place to start training and get your pilot certificate and ratings. "

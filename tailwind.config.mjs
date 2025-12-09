@@ -12,6 +12,8 @@ export default {
         home: "url('/img/summit-flight-academy-pilot-student-shaking-hand-with-flight-instructor-in-font-of-Piper-PA-28-Cherokee-home-header.webp')",
         "new-to-flying":
           "url('/img/summit-flight-academy-pilot-student-in-font-of-Piper-PA-28-Cherokee-new-to-flying.webp')",
+        "multi-engine":
+          "url('/img/ME-Training-Twin-Comanche.jpg')",
         404: "url('https://source.unsplash.com/random/?clouds,sky,skies/720x480')",
         "private-pilot":
           "url('/img/summit-flight-academy-pilot-student-shaking-hands-with-flight-instructor-in-front-of-Piper-PA-28-Cherokee-private-pilot-header.webp')",

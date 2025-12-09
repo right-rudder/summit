@@ -39,18 +39,18 @@ export const team = [
     paragrah2:
       "Shane is available to fly Monday through Saturday. He is currently accepting new instrument students.",
   },
-  {
-    id: 3,
-    name: "Katia Van Horn",
-    role: "CFI, CFII",
-    imageUrl: "/img/our-team/katiavanhorn-simplifly-arizona-private-pilot.webp",
-    imageAlt:
-      "headshot of Katia Van Horn at Summit Flight Academy kansas city flight instructor",
-    paragrah1:
-      "Katia is a Certificated Flight Instructor (CFI/CFII) and teaches private, commercial and instrument students. She has been flying since she was 16 and joined Summit Flight Academy in January of 2023 after completing her CFI, CFII and multi-engine ratings. Katia has had many students successfully complete solo flights and check rides. Other than instructing, Katia's passion in aviation is gliding. Last season she completed several cross-country soaring flights and earned her commercial glider rating. Katia available for private, instrument, commercial and add-on CFI-I training.",
-    paragrah2:
-      "Katia is currently accepting new students. Please contact Summit office for scheduling availability.",
-  },
+  // {
+  //   id: 3,
+  //   name: "Katia Van Horn",
+  //   role: "CFI, CFII",
+  //   imageUrl: "/img/our-team/KatiaVanHorn.webp",
+  //   imageAlt:
+  //     "headshot of Katia Van Horn at Summit Flight Academy kansas city flight instructor",
+  //   paragrah1:
+  //     "Katia is a Certificated Flight Instructor (CFI/CFII) and teaches private, commercial and instrument students. She has been flying since she was 16 and joined Summit Flight Academy in January of 2023 after completing her CFI, CFII and multi-engine ratings. Katia has had many students successfully complete solo flights and check rides. Other than instructing, Katia's passion in aviation is gliding. Last season she completed several cross-country soaring flights and earned her commercial glider rating. Katia available for private, instrument, commercial and add-on CFI-I training.",
+  //   paragrah2:
+  //     "Katia is currently accepting new students. Please contact Summit office for scheduling availability.",
+  // },
   {
     id: 4,
     name: "Chris Gilstrap",
@@ -71,7 +71,7 @@ export const team = [
     paragrah1:
       "Chris teaches private, commercial, and instrument students, guiding many through successful check rides.  He also has his seaplane rating.",
     paragrah2:
-      "He is available for private, instrument, commercial, and add-on CFI-I training.",
+      "He is available for private, instrument, commercial, multi-engine and add-on CFI-I training.",
   },
   {
     id: 6,
@@ -117,8 +117,7 @@ export const team = [
       "headshot of Matt Haselhorst at Summit Flight Academy kansas city flight instructor",
     paragrah1:
       "Matt is a Certified Flight Instructor (CFI/CFII/MEI) originally from Dodge City, Kansas. He began his aviation journey at the age of 22 while in his senior year at Fort Hays State University. Working as a Line Service Technician for 4 years, he studied and eventually achieved Multi-Engine Instructor in December of 2024! Matt’s favorite topic to teach is weather, where he might give you a short ‘Tornados 101’ lecture. His future goals are to instruct out of his own plane and work as a contract pilot in the corporate realm.",
-    paragrah2:
-      "",
+    paragrah2: "",
   },
   {
     id: 10,
@@ -132,7 +131,7 @@ export const team = [
     paragrah2:
       "He is available for instruction and is currently accepting new students.",
   },
-    {
+  {
     id: 11,
     name: "Jami Heckman",
     role: "Dispatcher and Administrator",

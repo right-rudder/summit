@@ -45,14 +45,19 @@ import ImageComp from "./ImageComp.astro";
       </div>
 
       <div>
-        {
-          content.map((step, index) =>
-            (index + 1) % 2 === 0 ? (
-              <div class="my-8 flex flex-wrap justify-start gap-8 lg:gap-0">
-                <div class="relative pt-32 lg:pt-16 flex flex-col justify-start items-center w-full lg:w-1/2">
-                  <h3 class="absolute top-0 left-0 text-9xl font-light text-main-red">
-                    {step.step && step.step}
-                    {!step.step && index + 1}
+        {content.map((step, index) => {
+          const isEven = (index + 1) % 2 === 0
+          return (
+            <div class={`my-16 flex flex-col ${isEven ? "lg:flex-row-reverse" : "lg:flex-row"} gap-8 lg:items-stretch`}>
+              {/* TEXT COLUMN */}
+              <div class="relative flex-1 pt-32 lg:pt-16 flex flex-col justify-start">
+                <h3 class={`absolute top-0 ${isEven ? "left-0" : "right-0"} text-9xl font-light text-main-red`}>
+                  {step.step ?? index + 1}
+                </h3>
+
+                <div class={`${isEven ? "lg:pr-6" : "lg:pl-12"} text-center lg:text-justify`}>
+                  <h3 class={`text-3xl font-bold tracking-tight text-main-red py-12 ${isEven ? "lg:text-right" : ""}`}>
+                    {step.title}
                   </h3>
                   <div class="text-center lg:text-justify pr-6">
                     <h3 class="text-3xl font-bold tracking-tight text-main-red py-12 lg:text-right">
@@ -103,9 +108,9 @@ import ImageComp from "./ImageComp.astro";
                   />
                 </div>
               </div>
-            ),
+            </div>
           )
-        }
+        })}
       </div>
     </div>
   </div>
