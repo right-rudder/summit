@@ -1,5 +1,12 @@
 ---
-import { SITE_TITLE, SITE_DESCRIPTION } from "../../consts";
+import {
+  SITE_TITLE,
+  SITE_DESCRIPTION,
+  CAREER_PATH_KEYWORDS,
+  CORE_PROGRAM_KEYWORDS,
+  LOCATION_KEYWORDS,
+  GENERAL_AVIATION_KEYWORDS,
+} from "../../consts";
 import { getCollection } from "astro:content";
 import FormattedDate from "../../components/FormattedDate.astro";
 import BaseLayout from "../../layouts/BaseLayout.astro";
@@ -8,7 +15,7 @@ import { Icon } from "astro-icon/components";
 import PageHeader from "../../components/PageHeader.astro";
 
 const posts = (await getCollection("blog")).sort(
-  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
 );
 
 // Breadcrumb items
@@ -21,7 +28,7 @@ const breadcrumbItems = [
 <BaseLayout
   pageTitle="Blog | Summit Flight Academy"
   pageDescription="Explore the latest happenings in the world of flight training at Summit Flight Academy. Gain valuable insights and tips to ease pre-flight jitters and prepare effectively for your important milestones."
-  pageKeywords="blog, private pilot's license, written exam, pilot resources, flight training, kansas city flight school, exam preparation, pilot licensing, aviation blog, pilot tips"
+  pageKeywords=`blog, private pilot's license, written exam, pilot resources, flight training, ${CAREER_PATH_KEYWORDS}, ${CORE_PROGRAM_KEYWORDS}, ${LOCATION_KEYWORDS}, ${GENERAL_AVIATION_KEYWORDS}, kansas city flight school, exam preparation, pilot licensing, aviation blog, pilot tips`
 >
   <!-- <PageHeader
     title="Blog"
@@ -81,11 +88,11 @@ const breadcrumbItems = [
                         {post.data.author}
                       </p>
                     </div>
-                    <h4
+                    <h3
                       class={`font-semibold leading-5 text-gray-600 ${index === 0 ? "text-2xl lg:text-4xl" : "text-xl"}`}
                     >
                       {post.data.title}
-                    </h4>
+                    </h3>
                     <p
                       class={`${index === 0 ? "hidden lg:text-lg md:block" : "hidden"} pr-8`}
                     >

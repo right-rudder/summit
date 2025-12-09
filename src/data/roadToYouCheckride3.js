@@ -24,7 +24,7 @@ export const CHECKRIDE_GUIDE = {
       ` An examiner is required to include in their test plan any topics you miss on your written. This is one of the reasons we want students to do well on the knowledge test. Getting a barely passing score makes your oral exam more complicated than it needs to be and opens you up to first impressions that may be less favorable if you "barely passed" your written.`,
     ],
     imagePath:
-      "/src/assets/summit-flight-academy-pilot-training-ground-school-instrument-rating.webp",
+      "/src/assets/summit-flight-academy-ground-school-instrument-rating-simplifly-mesa-pilot-training.webp",
     imageAlt: "Pilot training ground school",
   },
 
@@ -40,7 +40,7 @@ export const CHECKRIDE_GUIDE = {
       "One recommendation we give students for their checkride is to take the ACS/PTS and use it to create blueprint to your checkride. First, go through each task and sub-item/code and attempt to document where the source of this topic come from. For example, if you are looking at the line item on the Private ACS about BasicMed, the ACS code is PA.I.A.K5 and the regulations are found in part 68 of the FAR. This line item already tells you it is in part 68, so no extra note pointing to the reg is needed. Then on the page, you might make a few key notes to jog your memory about BasicMed that should expect to be able to explain…the privileges and limitations of BasicMed, how to obtain it and how to retain it. If the DPE wants more than you have in your head or notes, you know exactly where to dig in the FARs to answer his or her question.",
     ],
     imagePath:
-      "/src/assets/summit-flight-academy-two-students-in-front-of-plane.webp",
+      "/src/assets/summit-flight-academy-two-students-in-front-of-plane-simplifly-arizona-private-pilot.webp",
     imageAlt: "Summit FLight Academy inside office",
   },
 
@@ -60,7 +60,7 @@ export const CHECKRIDE_GUIDE = {
       "Forgetting to bring a view limiting device.",
       `<strong>Not carefully reviewing that all requirements are met. </strong> <br> ( Did you do 9 night takeoffs and 10 night landings? <br> If so, you are not qualified for the private checkride. )`,
     ],
-    imagePath: "/src/assets/CFI-and-student-pilot.webp",
+    imagePath: "/src/assets/cfi-and-student-pilot-simplifly-mesa-private-pilot.webp",
     imageAlt: "CFI and Student Pilot inside plane",
   },
 
@@ -79,7 +79,7 @@ export const CHECKRIDE_GUIDE = {
           "For commercial applicants, there are a lot of nuances to the regulations around when it is appropriate to be paid, when you are crossing the line into a regulated charter operation and the responsibilities of the operator vs. the pilot. There are many resources on navigating these scenarios online, FAA interpretation letters, and commercial training resources. Is a common error to not be able to talk through a hypothetical scenario and be able to defend your answer using appropriate FAA resources.",
         ],
         imagePath:
-          "/src/assets/summit-flight-academy-pilot-student-in-front-of-Piper-PA-28-Cherokee-lees-summit-missoury.webp",
+          "/src/assets/summit-flight-academy-pilot-student-in-front-of-piper-pa-28-cherokee-lees-summit-missoury-simplifly-arizona-pilot-training.webp",
         imageAlt: "",
       },
       {
@@ -91,7 +91,7 @@ export const CHECKRIDE_GUIDE = {
           "A lot of applicants also miss what to do if something is found inop. They know they need to placard it, but often forget about the required aircraft logbook entry and who can make that entry. This is a critical step, deactivating and placarding isn't enough without the proper documentation to keep the aircraft's maintenance records accurate and the next pilot informed.",
         ],
         imagePath:
-          "/src/assets/summit-flight-academy-missoury-kansas-city-piper-back-view-amazing-sunset-whats-next.webp",
+          "/src/assets/summit-flight-academy-missoury-kansas-city-piper-back-view-amazing-sunset-whats-next-simplifly-mesa-discovery-flight.webp",
         imageAlt: "",
       },
       {
@@ -106,7 +106,7 @@ export const CHECKRIDE_GUIDE = {
           "Finally, another common error is not being able to explain all the various ways to get weather information and the best use cases and limitations of each (e.g., EFB, aviationweather.gov, Flight Service). A common issue with contacting flight service is not knowing how to use the sectional to obtain the radio frequency information and the name of the service you are speaking to.",
         ],
         imagePath:
-          "/src/assets/summit-plane-preparing-take-flight-clouds-mountain.webp",
+          "/src/assets/summit-plane-preparing-take-flight-clouds-mountain-simplifly-arizona-become-a-pilot.webp",
         imageAlt: "",
       },
       {
@@ -122,7 +122,7 @@ export const CHECKRIDE_GUIDE = {
           "Altitude selection is a struggle for many applicants when they fixate on one data point like winds. However, airspace, obstacles, terrain, endurance, clouds, and turbulence should all be well accounted for.",
           "A common challenge is for an applicant to not be able to explain how to file, open, and close a VFR flight plan, as it's not as common in the world of ADS-B and flight following.",
         ],
-        imagePath: "/src/assets/summit-flight-academy-pilot-training-ground-school-instrument-rating.webp",
+        imagePath: "/src/assets/red-arrow-fleet-simplifly-mesa-flight-training.webp",
         imageAlt: "",
       },
       {
@@ -133,8 +133,8 @@ export const CHECKRIDE_GUIDE = {
           "A common error on this topic is not having down cold the A-G airspace definitions, their weather mins, and entry requirements. You do not have time to look this up while flying. It's expected you know these 'cold' just like your aircraft V speeds.",
           "With the ease of EFBs, a DPE may take you for a virtual trip out to visit airspace you are not familiar with. A common error is not being able to identify the requirements for special use airspace, warning areas, Class Charlie airspace, TRSAs, etc. Don't just know your local airspace; be prepared to interpret any airspace on the sectional.",
         ],
-        imagePath: "/src/assets/discovery-flight-banner.webp",
-        imageAlt: "",
+        imagePath: "/src/assets/lees-summit-discovery-flights-aerial-tours-kansas-city-simplifly-arizona-certified-flight-instructor.webp",
+        imageAlt: "Summit Flight Academy offers Discovery Flights out of Lee's Summit in Kansas City",
       },
       {
         step: "F",
@@ -146,7 +146,7 @@ export const CHECKRIDE_GUIDE = {
           "Aerodynamics is included in this task. The DPE is not going to expect you to fill out the lift equation, but they will expect you to explain aerodynamic principles to the standard found in the Pilot's Handbook of Aeronautical Knowledge.",
         ],
         imagePath:
-          "/src/assets/summit-flight-academy-missoury-kansas-city-insurance-header.webp",
+          "/src/assets/summit-flight-academy-missoury-kansas-city-insurance-header-simplifly-mesa-instrument-rating.webp",
         imageAlt: "",
       },
       {
@@ -159,7 +159,7 @@ export const CHECKRIDE_GUIDE = {
           "During your flight, the DPE may 'fail' a piece of equipment. A common error is not being able to work through a logical flow of what to do. For example, can you explain how an electrical failure does or does not impact engine operation and how you would handle it?",
           "Another common error is not having basic mastery of the avionics. If you have a GPS like a Garmin 650/750, you need to be able to use its functions. Study the manuals and use simulator apps. Applicants have failed for not knowing how to switch from GPS to VLOC mode and tune a VOR.",
         ],
-        imagePath: "/src/assets/instrument-panel.webp",
+        imagePath: "/src/assets/kansas-city-instruments-aircraft-instrument-rating-simplifly-arizona-pilot-training.webp",
         imageAlt: "",
       },
       {

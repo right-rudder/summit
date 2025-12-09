@@ -1,7 +1,7 @@
 ---
 description: "Understanding flight instruments is essential for any aspiring pilot. This guide explains the core and additional flight instruments in our aicraft, helping future and current pilots in the Kansas City area navigate their flight training comfortably. Reading an instrument panel is a fundamental that every pilot should know concretely, whether just starting flight lessons or well on the track toward the airlines."
 pubDate: "May 16, 2024"
-heroImage: "/img/our-fleet/summit-flight-academy-instrument-panel-of-N7664Y-Piper-Twin-Comanche-summit-flight-academy.webp"
+heroImage: "/img/our-fleet/summit-flight-academy_kansas-city-missouri_flying-lessons_pilot-academy_fleet-piper-twin-comanche-n7664y-instrument-panel-simplifly-arizona-multi-engine-rating.webp"
 imgAlt: "flight instruments"
 author: Jami Heckman
 title: Breaking Down an Instrument Panel
@@ -23,7 +23,7 @@ tags:
 
 Flying an aircraft is a marvel of modern engineering, combining technology and skill to navigate the skies safely. One of the fundamental aspects of becoming a proficient pilot is understanding the flight instruments. These tools provide critical information about the aircraft's performance and position, allowing pilots to make informed decisions during flight. In this comprehensive guide, we'll delve into the essential flight instruments and their functions, helping aspiring pilots from across the Kansas City area like Overland Park, Prairie Village, Leawood, and Lee's Summit gain the knowledge needed to soar confidently.
 
-### The Six-Pack: Core Flight Instruments
+## The Six-Pack: Core Flight Instruments
 
 At the heart of every cockpit is the "six-pack," a set of six primary flight instruments that provide crucial data about the aircraft's status. These instruments are typically arranged in two rows of three:
 
@@ -34,7 +34,7 @@ At the heart of every cockpit is the "six-pack," a set of six primary flight ins
 5. **Heading Indicator (HI)**
 6. **Turn Coordinator**
 
-#### Airspeed Indicator (ASI)
+### Airspeed Indicator (ASI)
 
 The Airspeed Indicator measures the aircraft's speed relative to the surrounding air. It is calibrated in knots and indicates various speed ranges, including:
 
@@ -44,26 +44,26 @@ The Airspeed Indicator measures the aircraft's speed relative to the surrounding
 
 Understanding and monitoring airspeed is crucial for maintaining control and ensuring safe operation, especially during takeoff, landing, and turbulent conditions.
 
-![Student passing a checkride at Summit Flight Academy in Overland Park, KS](/img/Checkride-Photo-preview.jpg)
+![Student passing a checkride at Summit Flight Academy in Overland Park, KS](/img/checkride-photo-preview-simplifly-mesa-flight-training.jpg)
 _Another successful instrument checkride at Summit!_
 
-#### Attitude Indicator (AI)
+### Attitude Indicator (AI)
 
 The Attitude Indicator displays the aircraft's orientation relative to the horizon, indicating whether the wings are level and if the aircraft is climbing, descending, or in a banked turn. This instrument is vital for maintaining spatial awareness, especially in conditions of low visibility, where visual references outside the cockpit are limited.
 
-#### Altimeter
+### Altimeter
 
 The Altimeter measures the aircraft's altitude above mean sea level (MSL). It works by comparing the atmospheric pressure outside the aircraft with a standard pressure value. Pilots use the altimeter to maintain desired altitudes during flight, follow air traffic control instructions, and ensure terrain clearance.
 
-#### Vertical Speed Indicator (VSI)
+### Vertical Speed Indicator (VSI)
 
 The Vertical Speed Indicator shows the rate at which the aircraft is climbing or descending, typically in feet per minute (fpm). This information helps pilots manage smooth climbs and descents, maintaining passenger comfort and adhering to air traffic control requirements.
 
-#### Heading Indicator (HI)
+### Heading Indicator (HI)
 
 The Heading Indicator provides the aircraft's heading relative to magnetic north. Unlike the magnetic compass, which can be affected by magnetic fields and aircraft movement, the heading indicator offers a stable and accurate reference for navigation. Regularly cross-checking this instrument with the magnetic compass ensures accurate course-keeping.
 
-#### Turn Coordinator
+### Turn Coordinator
 
 The Turn Coordinator indicates the rate of turn and the coordination of the turn (whether the aircraft is slipping or skidding). It helps pilots execute standard-rate turns (3 degrees per second) and maintain coordinated flight, which is essential for passenger comfort and efficient aerodynamics.
 
@@ -105,7 +105,7 @@ Summit Flight Academy and other local flight schools in Overland Park, Prairie V
 
 Even if you start with visual flight rules (VFR) training, consider pursuing an [instrument rating (IFR)](https://www.summitflightacademy.com/flight-programs/instrument-rating/) to enhance your skills and increase your versatility as a pilot. Instrument training deepens your understanding of flight instruments and prepares you for flying in a wider range of weather conditions. If you're interested in a professional aviation career, explore our [career track options](https://www.summitflightacademy.com/career/career-track/) for a structured pathway to becoming a commercial pilot.
 
-![Excited pilot flying an aircraft over Leawood, Kansas](/img/ME-Training-Twin-Comanche.jpg)
+![Excited pilot flying an aircraft over Leawood, Kansas](/img/me-training-twin-comanche-simplifly-mesa-become-a-pilot.jpg)
 _Take flight with Summit Flight Academy today_
 
 Mastering flight instruments is a cornerstone of becoming a competent and confident pilot. By understanding the function and operation of each instrument, aspiring aviators from Overland Park to Lee's Summit can build a solid foundation for safe and efficient flight operations. Whether you're just starting your journey or looking to advance your skills, Summit Flight Academy is here to support you every step of the way. Embrace the challenge, invest in your education, and take to the skies with confidence.

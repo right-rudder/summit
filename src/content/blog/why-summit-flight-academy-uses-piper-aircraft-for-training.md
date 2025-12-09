@@ -2,7 +2,7 @@
 author: "Jami Heckman"
 title: "Why Summit Flight Academy Uses Piper Aircraft for Training"
 description: "Summit Flight Academy trains pilots with its Piper fleet, including Archer, Warrior, Cherokee, and Twin Comanche models. Learn more about why these aircraft are ideal for training pilots at every level."
-heroImage: "/img/blog/summit-flight-academy-fleet-at-lees-summit-airport.webp"
+heroImage: "/img/blog/planes-ground_summit-flight-academy_kansas-city-missouri_flight-training_flight-training_summit-flight-academy-fleet-at-lees-summit-airport-simplifly-arizona-private-pilot.webp"
 imgAlt: "The Summit Flight Academy fleet lined-up at Lee's Summit Airport in Kansas City for flight lessons."
 pubDate: "Sept 10, 2024"
 category: "Flight Training"
@@ -19,7 +19,7 @@ tags:
 
 At Summit Flight Academy, we pride ourselves on the consistency and quality of our training fleet. Every aircraft in our lineup is chosen with a specific purpose in mind, ensuring that each student experiences a high level of safety, comfort, and versatility during their training. Our entire fleet consists of Piper Aircraft models, which have been a cornerstone of aviation training for decades.
 
-**Piper Aircraft: A Tradition in Flight Training**
+## Piper Aircraft: A Tradition in Flight Training
 
 Piper Aircraft continues to build some of the most reliable and easy-to-fly aircraft designed for training. From the Piper Archer to the Cherokee, each aircraft model brings something unique to the table, making them ideal for pilots learning to fly or advancing their certification.
 
@@ -45,21 +45,21 @@ The Piper Cherokee N15283 is another critical player in our fleet, contributing 
 
 With an upgraded Garmin avionics stack, including the GTN 650Xi and GTX 345 ADS-B in/out transponder, this aircraft offers an excellent platform for learning advanced navigation and communication procedures, providing students with modern training capabilities in a reliable aircraft.
 
-![Piper N15283 at Summit Flight Academy](/img/blog/piper-n15283-summit-flight.webp)
+![Piper N15283 at Summit Flight Academy](/img/blog/plane-ground_summit-flight-academy_kansas-city-missouri_flight-training_flying-lessons_piper-n15283-summit-flight-simplifly-mesa-flying-lessons.webp)
 _Piper N15283, ready for flight training_
 
 ### N15044 and N6894W: More Piper Cherokee Models
 
 Both N15044 and N6894W are additional Piper Cherokees in our fleet that share the same qualities of reliability and ease of operation. These aircraft are used for a variety of flight training lessons, including solo and dual training sessions, offering students flexibility in their learning process. Their advanced Garmin panels make transitioning between aircraft easy, ensuring that students gain consistency throughout their training experience.
 
-![Piper N6894W at Summit Flight Academy](/img/blog/piper-aircraft-at-summit-flight-academy-kansas-city-mo.webp)
+![Piper N6894W at Summit Flight Academy](/img/blog/planes-hangar_summit-flight-academy_kansas-city-missouri_flight-school_piper-aircraft-at-summit-flight-academy-kansas-city-mo-simplifly-arizona-discovery-flight.webp)
 _N6894W in the hangar at Lee's Summit Airport (KLXT)_
 
 ### N7664Y: Piper Twin Comanche
 
 Summit Flight Academy is also proud to offer multi-engine training with the [Piper Twin Comanche (N7664Y)](https://www.summitflightacademy.com/flight-programs/multi-engine-rating/). This versatile twin-engine aircraft is used exclusively for multi-engine training, offering students the opportunity to develop skills for more complex aircraft operations.
 
-![Piper Twin Comanche at Summit Flight Academy](/img/blog/front-shot-of-N7664Y-Piper-Twin-Comanche-SFA.webp)
+![Piper Twin Comanche at Summit Flight Academy](/img/blog/plane-ground_summit-flight-academy_kansas-city-missouri_flight-school_front-shot-of-n7664y-piper-twin-comanche-sfa-simplifly-mesa-become-a-pilot.webp)
 _Summit Flight Academy's Piper Twin Comanche, the newest addition to the fleet for multi-engine training_
 
 **Why the Piper Twin Comanche?**

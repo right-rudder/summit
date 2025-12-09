@@ -10,6 +10,11 @@ import EnrollmentModalButton from "../../components/enrollmentModalButtom";
 import ProgramSuggester from "../../components/ProgramSuggester";
 import privatePackages from "../../data/privatePackages";
 import UnderHeaderVideo from "../../components/UnderHeaderVideo.astro";
+import {
+  CAREER_PATH_KEYWORDS,
+  CORE_PROGRAM_KEYWORDS,
+  LOCATION_KEYWORDS,
+} from "../../consts";
 import CTAHolidayAndNewYear from "../../components/CTAHolidayAndNewYear.astro";
 const GHL_ENROLL_FORM_WEBHOOK_URL = import.meta.env.GHL_ENROLL_FORM_WEBHOOK_URL;
 const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
@@ -19,7 +24,7 @@ const packages = privatePackages;
 <BaseLayout
   pageTitle="Private Pilot | Summit Flight Academy"
   pageDescription="Embark on your aviation journey with Summit Flight Academy's private pilot training program. Discover the path to obtaining a coveted private pilot certificate, from medical exams and written tests to practical flight training. Our experienced instructors guide you through each step, ensuring you gain the knowledge and skills to safely operate aircraft for personal or recreational purposes. Start your flight training today and unlock the freedom of the skies."
-  pageKeywords="private pilot training, private pilot certificate, how to become a private pilot, flight training program, pilot medical exam, private pilot written exam, private pilot practical exam, pilot certification requirements, aviation training, learn to fly"
+  pageKeywords=`${CAREER_PATH_KEYWORDS}, ${CORE_PROGRAM_KEYWORDS}, ${LOCATION_KEYWORDS}, private pilot training, private pilot certificate, how to become a private pilot, flight training program, pilot medical exam, private pilot written exam, private pilot practical exam, pilot certification requirements, aviation training, learn to fly`
 >
   <!-- <PageHeader
     title="How to Become a Private Pilot"

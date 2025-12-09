@@ -3,12 +3,19 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import UnderHeader from "../../components/UnderHeader.astro";
 import Fleet from "../../components/Fleet";
 import WhatsNext from "../../components/WhatsNext.astro";
+import {
+  AIRCRAFT_FLEET_KEYWORDS,
+  DISCOVERY_EXPERIENCE_KEYWORDS,
+  CORE_PROGRAM_KEYWORDS,
+  LOCATION_KEYWORDS,
+  RENTAL_GROUND_KEYWORDS,
+} from "../../consts";
 ---
 
 <BaseLayout
   pageTitle="Our Fleet | Summit Flight Academy"
   pageDescription="Explore Summit Flight's diverse fleet of Piper aircraft for flight training and rentals. Learn about the reliability and ease of flying offered by Piper models like the Cherokee, Warrior, and Archer. Inquire today for rental availability."
-  pageKeywords="Summit Flight, flight training, rentals, Piper Aircraft, PA-28, Cherokee, Warrior, Archer, Garmin avionics suite"
+  pageKeywords=`${AIRCRAFT_FLEET_KEYWORDS}, ${RENTAL_GROUND_KEYWORDS}, ${CORE_PROGRAM_KEYWORDS}, ${LOCATION_KEYWORDS},${DISCOVERY_EXPERIENCE_KEYWORDS}, Summit Flight, flight training, rentals, Piper Aircraft, PA-28, Cherokee, Warrior, Archer, Garmin avionics suite`
 >
   <header
     class="relative h-screen-3/4 bg-our-fleet bg-cover bg-center bg-black flex flex-col items-center justify-center"
@@ -39,7 +46,5 @@ import WhatsNext from "../../components/WhatsNext.astro";
   <WhatsNext
     title="Interested in Flying?"
     body="Reach out to us and let Summit Flight Academy get you up in the air shortly."
-    <
-    BaseLayout
-  /></BaseLayout
->
+  />
+</BaseLayout>

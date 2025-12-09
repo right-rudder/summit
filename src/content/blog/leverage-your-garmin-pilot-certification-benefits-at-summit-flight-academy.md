@@ -2,7 +2,7 @@
 author: "Jami Heckman"
 title: "Leverage Your Garmin Pilot Certification Benefits at Summit Flight Academy"
 description: "Learn how Garmin employees can take advantage of their $3,000 per rating stipend and $45 per flight hour reimbursement for flight training at Summit Flight Academy to achieve their pilot certification."
-heroImage: "/img/summit-flight-academy-missoury-kansas-city-forms-header.webp"
+heroImage: "/img/summit-flight-academy-missoury-kansas-city-forms-header-simplifly-mesa-become-a-pilot.webp"
 imgAlt: "Garmin pilot certification benefits for employees at Summit Flight Academy"
 pubDate: "Sept 27, 2024"
 category: "Flight Training"
@@ -60,6 +60,4 @@ The SFA Private Pilot Program is the ideal starting point for Garmin employees l
 
 Garmin’s pilot certification benefit is a fantastic opportunity for employees to pursue flight lessons at a subsidized rate. With up to $3,000 in reimbursements per rating and $45 per flight hour, Garmin makes it easier to start or continue flight training, and Summit Flight Academy is here to support you in whichever way we can.
 
-If you’re a Garmin employee and ready to take advantage of these benefits, [contact Summit Flight Academy](https://www.summitflightacademy.com/contact) today to learn how we can help you begin your flight training.
-
-For more information about the [Private Pilot Training Program](/flight-programs/private-pilot-training), visit our program details page.
+If you’re a Garmin employee and ready to take advantage of these benefits, visit our [program details page](/flight-programs/private-pilot-training) today to learn how we can help you begin your flight training.

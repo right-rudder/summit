@@ -1,7 +1,7 @@
 ---
 description: Summit Flight Academy's new hangar groundbreaking celebration at Lee's Summit Airport was unforgettable! Join us as we recap the live music, free ice cream, prize raffles, and incredible aviation community that made May 30th a day to remember. Construction has begun on our expanded facility!"
 pubDate: "June 16, 2025"
-heroImage: "/img/blog/Summit-Flight-Academy-Hangar-Groundbreaking-2025.webp"
+heroImage: "/img/blog/plane-ground_summit-flight-academy_kansas-city-missouri_pilot-training_flying-lessons_summit-flight-academy-hangar-groundbreaking-2025-simplifly-mesa-multi-engine-rating.webp"
 imgAlt: "Summit Flight Academy's new hangar groundbreaking ceremony at Lee's Summit Airport, featuring a group of people with shovels and aircraft in the background."
 author: Jami Heckman
 title: "Summit Flight Academy's Hangar Groundbreaking: A Celebration to Remember"
@@ -72,7 +72,7 @@ As we stood there at 5:30 PM, surrounded by the faces of people who have become 
 
 ---
 
-![Summit Flight Academy's new hangar groundbreaking ceremony at Lee's Summit Airport, featuring a group of people with shovels and aircraft in the background.](/img/blog/Summit-Flight-Academy-Hangar-Groundbreaking-2025-2.webp)
+![Summit Flight Academy's new hangar groundbreaking ceremony at Lee's Summit Airport, featuring a group of people with shovels and aircraft in the background.](/img/blog/staff-plane_summit-flight-academy_kansas-city-missouri_flight-training_summit-flight-academy-hangar-groundbreaking-2025-2-simplifly-arizona-multi-engine-rating.webp)
 _Summit Flight Academy co-founders at the groundbreaking ceremony for our new hangar at Lee’s Summit Airport on May 30, 2025. The excitement was palpable as we celebrated this significant milestone in our journey together!_
 
 ---
@@ -93,7 +93,7 @@ There's something magical about ice cream that breaks down barriers and brings p
 
 ---
 
-![Summit Flight Academy's new hangar groundbreaking ceremony at Lee's Summit Airport, featuring a group of people with shovels and aircraft in the background.](/img/blog/Summit-Flight-Academy-Hangar-Groundbreaking-2025-5.webp)
+![Summit Flight Academy's new hangar groundbreaking ceremony at Lee's Summit Airport, featuring a group of people with shovels and aircraft in the background.](/img/blog/event_summit-flight-academy_kansas-city-missouri_flight-academy_hangar-groundbreaking-2025-5-simplifly-arizona-certified-flight-instructor.webp)
 _Aviation supporters gathered at the groundbreaking ceremony for Summit Flight Academy's new hangar at Lee's Summit Airport._
 
 ---
@@ -112,7 +112,7 @@ We watched as children gazed up at aircraft with wonder, their imaginations alre
 
 ---
 
-![Summit Flight Academy's new hangar groundbreaking ceremony at Lee's Summit Airport, featuring a group of people with shovels and aircraft in the background.](/img/blog/Summit-Flight-Academy-Hangar-Groundbreaking-2025-3.webp)
+![Summit Flight Academy's new hangar groundbreaking ceremony at Lee's Summit Airport, featuring a group of people with shovels and aircraft in the background.](/img/blog/student-baby-oldman-wing_summit-flight-academy_kansas-city-missouri_pilot-academy_summit-flight-academy-hangar-groundbreaking-2025-3-simplifly-arizona-private-pilot.webp)
 _Aviation enthusiasts from a range of generations gathered at the groundbreaking ceremony for Summit Flight Academy's new hangar at Lee's Summit Airport, celebrating the future of aviation training and community spirit._
 
 ---
@@ -131,7 +131,7 @@ The ceremony wasn't just about breaking ground, it was about breaking through to
 
 ---
 
-![Summit Flight Academy's new hangar groundbreaking ceremony at Lee's Summit Airport, featuring a group of people with shovels and aircraft in the background.](/img/blog/Summit-Flight-Academy-Hangar-Groundbreaking-2025-4.webp)
+![Summit Flight Academy's new hangar groundbreaking ceremony at Lee's Summit Airport, featuring a group of people with shovels and aircraft in the background.](/img/blog/pilots-ground-plane_summit-flight-academy_kansas-city-missouri_flight-training_summit-flight-academy-hangar-groundbreaking-2025-4-simplifly-mesa-private-pilot.webp)
 _This image captures the moment of the groundbreaking ceremony for Summit Flight Academy's new hangar at Lee's Summit Airport, where community members gathered to celebrate the future of aviation training._
 
 ---

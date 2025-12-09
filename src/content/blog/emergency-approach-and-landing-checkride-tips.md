@@ -1,7 +1,7 @@
 ---
 description: "Emergency approach and landing is one of the most critical FAA checkride tasks. Learn how Summit Flight Academy prepares Kansas City student pilots to handle simulated engine failures with confidence."
 pubDate: "Oct 15, 2025"
-heroImage: "/img/blog/red-arrow-fleet.webp"
+heroImage: "/img/blog/planes-hangars_summit-flight-academy_kansas-city-missouri_flight-training_pilot-training_red-arrow-fleet-simplifly-mesa-become-a-pilot.webp"
 imgAlt: "Cessna 172 practicing simulated engine-out approach"
 author: "Jami Heckman"
 title: "Emergency Approach and Landing: Checkride Tips Every Student Pilot Needs"

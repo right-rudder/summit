@@ -8,7 +8,13 @@
     "build": "astro build",
     "preview": "astro preview",
     "bpreview": "astro build && astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "img:improve-img-seo": "node ./scripts/imgNewNameCSV.js && node ./scripts/imgReplaceReferences.js",
+    "img:csv": "node ./scripts/imgNewNameCSV.js",
+    "img:replace": "node ./scripts/imgReplaceReferences.js",
+    "img:fix-name-references": "node ./scripts/imgCheckOldReferences.js && node ./scripts/imgFixRemainingReferences.js",
+    "img:check": "node ./scripts/imgCheckOldReferences.js",
+    "img:fix": "node ./scripts/imgFixRemainingReferences.js"
   },
   "dependencies": {
     "@astrojs/alpinejs": "^0.4.8",

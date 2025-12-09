@@ -10,6 +10,8 @@ import EnrollmentModalButton from "../components/enrollmentModalButtom";
 import GuideDownload from "../components/GuideDownload.astro";
 import ImageComp from "../components/ImageComp.astro";
 import UnderHeaderVideo from "../components/UnderHeaderVideo.astro";
+import { SITE_KEYWORDS, CORE_PROGRAM_KEYWORDS, AIRCRAFT_FLEET_KEYWORDS, DISCOVERY_EXPERIENCE_KEYWORDS, CAREER_PATH_KEYWORDS, LOCATION_KEYWORDS, RENTAL_GROUND_KEYWORDS, GENERAL_AVIATION_KEYWORDS } from "../consts.ts";
+
 import CTAHolidayAndNewYear from "../components/CTAHolidayAndNewYear.astro";
 const GHL_ENROLL_FORM_WEBHOOK_URL = import.meta.env.GHL_ENROLL_FORM_WEBHOOK_URL;
 const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
@@ -18,7 +20,7 @@ const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
 <HomeLayout
   pageTitle="Kansas City Leading Flight School | Summit Flight Academy"
   pageDescription="Summit Flight Academy is a leading flight school in Kansas City, offering a range of pilot training programs including private pilot, instrument rating, commercial pilot, and multi-engine rating. With well-maintained aircraft, experienced instructors, and a supportive environment, they provide quality aviation education for aspiring pilots."
-  pageKeywords="flight school kansas city, pilot training kansas city, private pilot training, instrument rating, commercial pilot training, multi-engine rating, aviation education, learn to fly, discovery flight, career pilot program"
+  pageKeywords=`${SITE_KEYWORDS}, ${CORE_PROGRAM_KEYWORDS}, ${AIRCRAFT_FLEET_KEYWORDS}, ${DISCOVERY_EXPERIENCE_KEYWORDS}, ${CAREER_PATH_KEYWORDS}, ${LOCATION_KEYWORDS}, ${RENTAL_GROUND_KEYWORDS}, ${GENERAL_AVIATION_KEYWORDS}`
 >
   <!-- <PageHeader
     title="Become a Pilot with Summit"
@@ -76,7 +78,7 @@ const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
       target="_blank"
     >
       <ImageComp
-        imagePath="/src/assets/skywest-logo.png"
+        imagePath="/src/assets/skywest-logo-simplifly-mesa-become-a-pilot.png"
         imageAlt="Skywest airlines logo"
         styles="h-24 w-auto md:pl-5 md:border-l-2 border-slate-300"
       />

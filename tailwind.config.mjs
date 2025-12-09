@@ -9,50 +9,53 @@ export default {
         "main-red": "#C70009",
       },
       backgroundImage: {
-        home: "url('/img/summit-flight-academy-pilot-student-shaking-hand-with-flight-instructor-in-font-of-Piper-PA-28-Cherokee-home-header.webp')",
+        home: "url('/img/summit-flight-academy-pilot-student-shaking-hand-with-flight-instructor-in-font-of-piper-pa-28-cherokee-home-header-simplifly-arizona-flight-school.webp')",
         "new-to-flying":
-          "url('/img/summit-flight-academy-pilot-student-in-font-of-Piper-PA-28-Cherokee-new-to-flying.webp')",
+          "url('/img/summit-flight-academy-pilot-student-in-font-of-piper-pa-28-cherokee-new-to-flying-simplifly-mesa-certified-flight-instructor.webp')",
         "multi-engine":
-          "url('/img/ME-Training-Twin-Comanche.jpg')",
+          "url('/img/me-training-twin-comanche-simplifly-mesa-become-a-pilot.jpg')",
         404: "url('https://source.unsplash.com/random/?clouds,sky,skies/720x480')",
         "private-pilot":
-          "url('/img/summit-flight-academy-pilot-student-shaking-hands-with-flight-instructor-in-front-of-Piper-PA-28-Cherokee-private-pilot-header.webp')",
+          "url('/img/summit-flight-academy-pilot-student-shaking-hands-with-flight-instructor-in-front-of-piper-pa-28-cherokee-header-simplifly-mesa-multi-engine-rating.webp')",
         "instrument-rating":
-          "url('/img/summit-flight-academy-pilot-student-and-flight-instructor-inside-a-flight-simulator-instrument-rating.webp')",
+          "url('/img/summit-flight-academy-pilot-student-and-flight-instructor-inside-a-flight-simulator-instrument-rating-simplifly-mesa-commercial-pilot.webp')",
         "pilot-bundle":
-          "url('/img/summit-flight-academy-very-happy-pilot-stanging-next-to-piper-cherokee-bundle-header.webp')",
+          "url('/img/summit-flight-academy-very-happy-pilot-stanging-next-to-piper-cherokee-bundle-header-simplifly-mesa-commercial-pilot.webp')",
         "commercial-pilot":
-          "url('/img/summit-flight-academy-missoury-very-happy-pilot-standing-on-left-wing-of-piper-cherokee-commercial-pilot.webp')",
+          "url('/img/summit-flight-academy-missoury-very-happy-pilot-standing-on-left-wing-of-piper-cherokee-commercial-pilot-simplifly-arizona-flight-training.webp')",
         "multi-engine":
-          "url('/img/summit-flight-academy-missoury-kansas-city-multi-engine-pilot-student-flying-twin-comanche-at-summit-flight-academy.webp')",
-        blog: "url('/img/summit-flight-academy-missoury-kansas-city-blog-header.webp')",
+          "url('/img/summit-flight-academy-missoury-kansas-city-multi-engine-pilot-student-flying-twin-comanche-at-summit-flight-academy-simplifly-mesa-private-pilot.webp')",
+        blog: "url('/img/summit-flight-academy-missoury-kansas-city-blog-header-simplifly-mesa-pilot-training.webp')",
         "instructor-training":
-          "url('/img/summit-flight-academy-missoury-kansas-city-cfi-instructor-training-pilot-student-and-instructor-next-to-piper-cherokee.webp')",
+          "url('/img/summit-flight-academy-missoury-kansas-city-cfi-instructor-training-pilot-student-and-instructor-next-to-piper-cherokee-simplifly-arizona-certified-flight-instructor.webp')",
         "career-track":
-          "url('/img/summit-flight-academy-missoury-kansas-city-career-track-zero-to-hero-pilot-student-and-instructor-next-to-piper-cherokee.webp')",
+          "url('/img/summit-flight-academy-missoury-kansas-city-career-track-zero-to-hero-pilot-student-and-instructor-next-to-piper-cherokee-simplifly-arizona-flight-training.webp')",
         "teach-at":
-          "url('/img/summit-flight-academy-missoury-kansas-city-cfi-instructor-teach-at-summit-header.webp')",
+          "url('/img/summit-flight-academy-missoury-kansas-city-cfi-instructor-teach-at-summit-header-simplifly-arizona-instrument-rating.webp')",
         "our-team":
-          "url('/img/our-team/summit-flight-academy-missoury-kansas-city-our-team-header.webp')",
-        "our-fleet": "url('/img/our-fleet/our-fleet-header.webp')",
+          "url('/img/our-team/summit-flight-academy-missoury-kansas-city-our-team-header-simplifly-arizona-discovery-flight.webp')",
+        "our-fleet":
+          "url('/img/our-fleet/summit-flight-academy_kansas-city-missouri_flight-school_flight-school_fleet-piper-warrior-pa-28-151-n425cb-instrument-panel-simplifly-arizona-multi-engine-rating.webp')",
         "forms-library":
-          "url('/img/summit-flight-academy-missoury-kansas-city-forms-header.webp')",
-        "faa-exam-center": "url('/img/faa-exam-center/banner.webp')",
+          "url('/img/summit-flight-academy-missoury-kansas-city-forms-header-simplifly-mesa-become-a-pilot.webp')",
+        "faa-exam-center":
+          "url('/img/faa-exam-center/banner-simplifly-arizona-flying-lessons.webp')",
         financing:
-          "url('/img/summit-flight-academy-missoury-kansas-city-financing-header.webp')",
+          "url('/img/summit-flight-academy-missoury-kansas-city-financing-header-simplifly-mesa-discovery-flight.webp')",
         "insurance-header":
-          "url('/img/summit-flight-academy-missoury-kansas-city-insurance-header.webp')",
+          "url('/img/summit-flight-academy-missoury-kansas-city-insurance-header-simplifly-mesa-flying-lessons.webp')",
         "faqs-header":
-          "url('/img/summit-flight-academy-missoury-kansas-city-faqs-header.webp')",
+          "url('/img/summit-flight-academy-missoury-kansas-city-faqs-header-simplifly-mesa-flight-training.webp')",
         "visit-us":
-          "url('/img/summit-flight-academy-missoury-kansas-city-visit-us-header.webp')",
+          "url('/img/summit-flight-academy-missoury-kansas-city-visit-us-header-simplifly-arizona-discovery-flight.webp')",
         "training-courses": "url('/img/training-courses/banner.webp')",
         "discovery-flight":
-          "url('/img/summit-flight-academy-front-view-of-piper-cherokee-park-on-runway-discovery-flight.webp')",
-        "cfi-and-student": "url('/img/discovery-flight/cfi-and-student.webp')",
+          "url('/img/summit-flight-academy-front-view-of-piper-cherokee-park-on-runway-discovery-flight-simplifly-arizona-commercial-pilot.webp')",
+        "cfi-and-student":
+          "url('/img/discovery-flight/cfi-and-student-simplifly-arizona-private-pilot.webp')",
         store: "url('/img/CFI-and-student-pilot.webp')",
         resources:
-          "url('/img/our-fleet/summit-flight-academy-front-shot-of-N7664Y-Piper-Twin-Comanche-SFA.webp')",
+          "url('/img/our-fleet/summit-flight-academy_kansas-city-missouri_flight-school_front-shot-of-n7664y-piper-twin-comanche-sfa-simplifly-mesa-become-a-pilot.webp')",
       },
       height: (theme) => ({
         "screen-1/2": "50vh",

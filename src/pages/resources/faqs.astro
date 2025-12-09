@@ -3,6 +3,7 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import FAQsTabs from "../../components/FAQsTabs";
 import ContactUsModalButton from "../../components/ContactUsModalButton";
 import UnderHeaderVideo from "../../components/UnderHeaderVideo.astro";
+import TryFlyingCTA from "../../components/TryFlyingCTA.astro";
 const GHL_CONTACT_FORM_WEBHOOK_URL = import.meta.env
   .GHL_CONTACT_FORM_WEBHOOK_URL;
 const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
@@ -49,4 +50,12 @@ const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
   />
 
   <FAQsTabs client:load />
+
+  <UnderHeaderVideo
+    title="Why Become a Pilot?"
+    description="If you've thought about becoming a pilot, now is the perfect time to get started. Summit Flight Academy is your place to start training and get your pilot certificate and ratings. "
+    videoId="rYngYS6eBeg"
+  />
+
+  <TryFlyingCTA />
 </BaseLayout>

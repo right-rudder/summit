@@ -1,17 +1,20 @@
 ---
 import ContactUs from "../../components/ContactUs.astro";
 import BaseLayout from "../../layouts/BaseLayout.astro";
-import DiscoveryFlightImage from "../../../public/img/discovery-flight/discovery-flight-image-2.webp";
 import FlightOption from "../../components/FlightOption.astro";
-import SimulatorTestImage from "../../../public/img/discovery-flight/cfi.webp";
-import RecreationalFlight from "../../../public/img/discovery-flight/recreational-flight.webp";
 import EnrollNowCTA from "../../components/EnrollNowCTA.astro";
+import { DISCOVERY_EXPERIENCE_KEYWORDS, LOCATION_KEYWORDS } from "../../consts";
+const DiscoveryFlightImage =
+  "/public/img/discovery-flight/image-2-simplifly-arizona-pilot-training.webp";
+const SimulatorTestImage = "/public/img/discovery-flight/cfi-simplifly-mesa-commercial-pilot.webp";
+const RecreationalFlight =
+  "/public/img/discovery-flight/recreational-flight-simplifly-arizona-flight-school.webp";
 ---
 
 <BaseLayout
   pageTitle="Discovery Flight | Summit Flight Academy"
-  pageDescription="Learn the ropes of flying with Summit Flight Academy through our Discovery Flight. Discover the joy of aviation as you take control of a flight simulator with our skilled instructors. Explore the skies above Texas and New Mexico, unveiling local landmarks and igniting your passion for flight. Book now for an unforgettable experience and an introduction to the world of flight!"
-  pageKeywords="Discovery Flight, aviation experience, flight training introduction, pilot experience, learn to fly, introductory flight, aviation passion, flight simulator test, recreational flight, Summit Flight Academy, book aviation experience, Cessna 172 flight"
+  pageDescription="Learn the ropes of flying with Summit Flight Academy through our Discovery Flight. Discover the joy of aviation as you take control of a flight simulator with our skilled instructors. Explore the skies above Missouri and Kansas, unveiling local landmarks and igniting your passion for flight. Book now for an unforgettable experience and an introduction to the world of flight!"
+  pageKeywords=`${DISCOVERY_EXPERIENCE_KEYWORDS}, ${LOCATION_KEYWORDS}, Discovery Flight, aviation experience, flight training introduction, pilot experience, learn to fly, introductory flight, aviation passion, flight simulator test, recreational flight, Summit Flight Academy, book aviation experience, Cessna 172 flight `
 >
   <header
     class="relative h-screen-3/4 bg-discovery-flight bg-cover bg-center bg-black flex flex-col items-center justify-center"
@@ -50,9 +53,9 @@ import EnrollNowCTA from "../../components/EnrollNowCTA.astro";
           resonates with you.
         </p>
         <p class="pt-5">
-          As you soar through the Texas skies with a Summit instructor, you’ll
-          get the chance to see our local points of interest like the El Paso
-          Mountain Star, the volcanic crater known as the Kilbourne Hole,
+          As you soar through the Missouri skies with a Summit instructor,
+          you’ll get the chance to see our local points of interest like the El
+          Paso Mountain Star, the volcanic crater known as the Kilbourne Hole,
           Downtown El Paso from above, the expansive landscapes of West El Paso,
           and even the distinctive landmarks like Canutillo High School's blue
           football field. If you book during the fall, you can also enjoy the
@@ -81,7 +84,7 @@ import EnrollNowCTA from "../../components/EnrollNowCTA.astro";
           rates for our discovery and recreational flight options. These prices
           are tied to the fuel and maintenance costs required to take you up. It
           is our goal to make flight as accessible as possible to our
-          communities in Texas and New Mexico.
+          communities in Missouri and Kansas.
         </p>
       </div>
     </div>

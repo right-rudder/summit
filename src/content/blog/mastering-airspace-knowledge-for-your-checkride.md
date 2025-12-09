@@ -1,7 +1,7 @@
 ---
 description: "Learn how to master FAA airspace rules for your checkride. Summit Flight Academy trains Kansas City pilots to avoid common mistakes and fly with confidence."
 pubDate: "September 15, 2025"
-heroImage: "/img/blog/summit-flight-academy-missoury-kansas-city-cfi-instructor-training-pilot-student-and-instructor2.webp"
+heroImage: "/img/blog/pilots-flying_summit-flight-academy_kansas-city-missouri_become-a-pilot_summit-flight-academy-missoury-kansas-city-cfi-instructor-training-pilot-student-simplifly-mesa-flight-school.webp"
 imgAlt: "Student pilot reviewing sectional chart during ground school"
 author: Jami Heckman
 title: Mastering Airspace Knowledge for Your Checkride

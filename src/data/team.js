@@ -3,7 +3,7 @@ export const team = [
     id: 0,
     name: "Jeremy Davis",
     role: "Founder, Managing Partner, CFI, CFII, MEI",
-    imageUrl: "/img/our-team/JeremyDavis.webp",
+    imageUrl: "/img/our-team/jeremydavis-simplifly-mesa-instrument-rating.webp",
     imageAlt:
       "headshot of Jeremy Davis at Summit Flight Academy kansas city flight instructor",
     paragrah1:
@@ -17,7 +17,7 @@ export const team = [
     id: 1,
     name: "Levi Self",
     role: "Founder, CFI,CFII, MEI, A&P",
-    imageUrl: "/img/our-team/LeviSelf.webp",
+    imageUrl: "/img/our-team/leviself-simplifly-arizona-flight-school.webp",
     imageAlt:
       "headshot of Levi Self at Summit Flight Academy kansas city flight instructor",
     paragrah1:
@@ -31,7 +31,7 @@ export const team = [
     id: 2,
     name: "Shane Griffin",
     role: "CFI, CFII, MEI",
-    imageUrl: "/img/our-team/ShaneGriffin.webp",
+    imageUrl: "/img/our-team/shanegriffin-simplifly-arizona-multi-engine-rating.webp",
     imageAlt:
       "headshot of Shane Griffin at Summit Flight Academy kansas city flight instructor",
     paragrah1:
@@ -43,7 +43,7 @@ export const team = [
   //   id: 3,
   //   name: "Katia Van Horn",
   //   role: "CFI, CFII",
-  //   imageUrl: "/img/our-team/KatiaVanHorn.webp",
+  //   imageUrl: "/img/our-team/katiavanhorn-simplifly-arizona-private-pilot.webp",
   //   imageAlt:
   //     "headshot of Katia Van Horn at Summit Flight Academy kansas city flight instructor",
   //   paragrah1:
@@ -57,15 +57,15 @@ export const team = [
     role: "CFI, CFII",
     paragrah1:
       "Chris is a Certificated Flight Instructor (CFI/CFII) and teaches private, commercial and instrument students and has seen many successful students pass their check rides under his wing. Chris is available for private, instrument, commercial and add-on CFI-I training.",
-    imageUrl: "/img/our-team/summit-flight-academy-cfi-chris-g.webp",
+    imageUrl: "/img/our-team/summit-flight-academy-cfi-chris-g-simplifly-arizona-flying-lessons.webp",
     imageAlt:
       "headshot of Chris Gilstrap at Summit Flight Academy kansas city flight instructor",
   },
   {
     id: 5,
     name: "Chris Knoernschild",
-    role: "CFI, CFII, MEI",
-    imageUrl: "/img/our-team/Chris-Knoernschild(CFI-CFII).webp",
+    role: "CFI, CFII",
+    imageUrl: "/img/our-team/chris-knoernschild(cfi-cfii)-simplifly-mesa-flight-training.webp",
     imageAlt:
       "headshot of Chris Knoernschild at Summit Flight Academy kansas city flight instructor",
     paragrah1:
@@ -77,7 +77,7 @@ export const team = [
     id: 6,
     name: "Trent Lyman",
     role: "CFI",
-    imageUrl: "/img/our-team/Trent-Lyman(CFI).webp",
+    imageUrl: "/img/our-team/trent-lyman(cfi)-simplifly-mesa-flying-lessons.webp",
     imageAlt:
       "headshot of Trent Lyman at Summit Flight Academy kansas city flight instructor",
     paragrah1:
@@ -88,7 +88,7 @@ export const team = [
     id: 7,
     name: "Josh Keller",
     role: "CFI, CFII",
-    imageUrl: "/img/our-team/Josh-Keller-CFI-CFII.webp",
+    imageUrl: "/img/our-team/josh-keller-cfi-cfii-simplifly-arizona-certified-flight-instructor.webp",
     imageAlt:
       "headshot of Josh Keller at Summit Flight Academy kansas city flight instructor",
     paragrah1:
@@ -100,7 +100,7 @@ export const team = [
     id: 8,
     name: "Josh Gordon",
     role: "CFI, CFII, MEI",
-    imageUrl: "/img/our-team/Josh-Gordon-CFII-MEI.jpeg",
+    imageUrl: "/img/our-team/josh-gordon-cfii-mei-simplifly-arizona-discovery-flight.jpeg",
     imageAlt:
       "headshot of Josh Gordon at Summit Flight Academy kansas city flight CFII, MEI",
     paragrah1:
@@ -112,7 +112,7 @@ export const team = [
     id: 9,
     name: "Matt Haselhorst",
     role: "CFI, CFII",
-    imageUrl: "/img/our-team/Matt-Haselhorst-CFII.jpeg",
+    imageUrl: "/img/our-team/matt-haselhorst-cfii-simplifly-mesa-multi-engine-rating.jpeg",
     imageAlt:
       "headshot of Matt Haselhorst at Summit Flight Academy kansas city flight instructor",
     paragrah1:
@@ -123,7 +123,7 @@ export const team = [
     id: 10,
     name: "Pete Langworthy",
     role: "CFI, CFII",
-    imageUrl: "/img/our-team/pete-langworthy-cfii.jpeg",
+    imageUrl: "/img/our-team/pete-langworthy-cfii-simplifly-mesa-flight-training.jpeg",
     imageAlt:
       "headshot of Pete Langworthy at Summit Flight Academy kansas city flight instructor",
     paragrah1:
@@ -135,7 +135,7 @@ export const team = [
     id: 11,
     name: "Jami Heckman",
     role: "Dispatcher and Administrator",
-    imageUrl: "/img/our-team/summit-flight-academy-admin-jami-heckman.webp",
+    imageUrl: "/img/our-team/summit-flight-academy-admin-jami-heckman-simplifly-arizona-flying-lessons.webp",
     imageAlt:
       "headshot of Jami Heckman at Summit Flight Academy kansas city flight dispatcher and administrator",
     paragrah1:
@@ -143,16 +143,16 @@ export const team = [
     paragrah2:
       "Prior to joining Summit Flight, Jami and her husband were long term missionaries in Taiwan. She speaks fluent mandarin and outside of Summit often performs translation services.",
   },
-  // {
-  //   id: 12,
-  //   name: "Brielle Barton",
-  //   role: "Weekend Dispatcher and Administrator",
-  //   imageUrl:
-  //     "/img/our-team/Brielle-Barton-Weekend-Dispatcher-Administrator.webp",
-  //   imageAlt:
-  //     "headshot of Brielle Barton at Summit Flight Academy kansas city flight dispatcher and administrator",
-  //   paragrah1:
-  //     "Brielle is our dispatcher and office administrator on weekends. On weekends, Brielle runs our office, helps onboard new students, maintains our student records, and ensure operations are running smoothly.",
-  //   paragrah2: "",
-  // },
+  {
+    id: 12,
+    name: "Brielle Barton",
+    role: "Weekend Dispatcher and Administrator",
+    imageUrl:
+      "/img/our-team/brielle-barton-weekend-dispatcher-administrator-simplifly-arizona-certified-flight-instructor.webp",
+    imageAlt:
+      "headshot of Brielle Barton at Summit Flight Academy kansas city flight dispatcher and administrator",
+    paragrah1:
+      "Brielle is our dispatcher and office administrator on weekends. On weekends, Brielle runs our office, helps onboard new students, maintains our student records, and ensure operations are running smoothly.",
+    paragrah2: "",
+  },
 ];

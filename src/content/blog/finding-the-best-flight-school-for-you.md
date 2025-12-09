@@ -1,7 +1,7 @@
 ---
 description: "Explore how Summit Flight Academy stands out as a top flight school, focusing on quality instruction, a diverse curriculum, and a supportive learning environment that caters to both aspiring professional pilots and aviation enthusiasts."
 pubDate: "Apr 17, 2024"
-heroImage: "/img/summit-flight-academy-very-happy-pilot-in-piper-cherokee-cockpit-giving-thumbs-up-instrument-rating.webp"
+heroImage: "/img/summit-flight-academy-very-happy-pilot-in-piper-cherokee-cockpit-giving-thumbs-up-instrument-rating-simplifly-arizona-become-a-pilot.webp"
 imgAlt: "happy pilot in the cockpit giving thumbs up"
 author: Jeremy Davis
 title: Finding the Best Flight School for You

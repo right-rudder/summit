@@ -1,7 +1,7 @@
 ---
 description: "Summit Flight Academy offers a comprehensive pilot training program that takes you from zero experience to a professional pilot, with a focus on multi-engine training. This guide explains the benefits of our zero-to-hero training pathway and highlights the importance of multi-engine training for aspiring pilots in Kansas City and Overland Park."
 pubDate: "July 16, 2024"
-heroImage: "/img/summit-flight-academy-missoury-kansas-city-cfi-instructor-training-pilot-student-and-instructor-next-to-piper-cherokee.webp"
+heroImage: "/img/summit-flight-academy-missoury-kansas-city-cfi-instructor-training-pilot-student-and-instructor-next-to-piper-cherokee-simplifly-arizona-certified-flight-instructor.webp"
 imgAlt: "multi-engine training"
 author: Summit Flight Academy Staff
 title: "From Zero to Hero: Why Pursue Career Track Flight Training at Summit Flight Academy"
