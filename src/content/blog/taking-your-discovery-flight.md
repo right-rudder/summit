@@ -1,7 +1,7 @@
 ---
 description: "Taking your Discovery Flight at Summit Flight Academy is an exciting first step in your aviation journey. This guide outlines what to expect during your Discovery Flight, from the pre-flight briefing to the in-flight experience and post-flight debriefing."
 pubDate: "July 29, 2025"
-heroImage: "/img/Lightspeed_Zulu-V_Shot2_1060-5.jpg"
+heroImage: "/img/lightspeed_zulu-v_shot2_1060-5-simplifly-mesa-pilot-training.jpg"
 imgAlt: "multi-engine training"
 author: Summit Flight Academy Staff
 title: "Taking Your Discovery Flight at Summit Flight Academy: What to Expect"

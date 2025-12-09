@@ -2,7 +2,7 @@
 author: "Jami Heckman"
 title: "Leverage Your Garmin Pilot Certification Benefits at Summit Flight Academy"
 description: "Learn how Garmin employees can take advantage of their $3,000 per rating stipend and $45 per flight hour reimbursement for flight training at Summit Flight Academy to achieve their pilot certification."
-heroImage: "/img/summit-flight-academy-missoury-kansas-city-forms-header.webp"
+heroImage: "/img/summit-flight-academy-missoury-kansas-city-forms-header-simplifly-mesa-become-a-pilot.webp"
 imgAlt: "Garmin pilot certification benefits for employees at Summit Flight Academy"
 pubDate: "Sept 27, 2024"
 category: "Flight Training"

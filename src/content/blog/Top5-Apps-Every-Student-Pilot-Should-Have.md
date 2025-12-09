@@ -1,7 +1,7 @@
 ---
 description: "Discover the top apps that every student pilot should have to excel in their aviation training. This guide highlights essential tools for navigation, planning, and exam preparation, tailored for students training in the Kansas City area at Summit Flight Academy."
 pubDate: "November 26, 2024"
-heroImage: "/img/blog/cockpit-ipad-pilot_summit-flight-academy_kansas-city-missouri_pilot-training_flight-school_fly-with-the-precision-of-garmin-navigation.webp"
+heroImage: "/img/blog/cockpit-ipad-pilot_summit-flight-academy_kansas-city-missouri_pilot-training_flight-school_fly-with-the-precision-of-garmin-navigation-simplifly-arizona-instrument-rating.webp"
 imgAlt: "A student pilot using ForeFlight app on an iPad in a Piper Cherokee cockpit"
 author: Jami Heckman
 title: Top 5 Apps Every Student Pilot Should Have

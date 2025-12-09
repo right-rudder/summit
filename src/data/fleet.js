@@ -5,15 +5,15 @@ export const fleet = [
     name: "Piper Archer II",
     images: [
       {
-        src: "/img/our-fleet/summit-flight-academy_kansas-city-missouri_pilot-academy_fleet-piper-archer-ii-pa-28-181-N4353L-back-view.webp",
+        src: "/img/our-fleet/summit-flight-academy_kansas-city-missouri_pilot-academy_fleet-piper-archer-ii-pa-28-181-n4353l-back-view-simplifly-mesa-become-a-pilot.webp",
         alt: "Piper Archer II at Summit Flight Academy",
       },
       {
-        src: "/img/our-fleet/summit-flight-academy_kansas-city-missouri_flying-lessons_pilot-academy_fleet-piper-archer-ii-pa-28-181-N4353L-instrument-panel.webp",
+        src: "/img/our-fleet/summit-flight-academy_kansas-city-missouri_flying-lessons_pilot-academy_fleet-piper-archer-ii-pa-28-181-n4353l-instrument-panel-simplifly-arizona-instrument-rating.webp",
         alt: "Piper Archer II interior control panel",
       },
       {
-        src: "/img/our-fleet/summit-flight-academy_kansas-city-missouri_flying-lessons_fleet-piper-archer-ii-pa-28-181-N4353L-cockpit-seats.webp",
+        src: "/img/our-fleet/summit-flight-academy_kansas-city-missouri_flying-lessons_fleet-piper-archer-ii-pa-28-181-n4353l-cockpit-seats-simplifly-mesa-certified-flight-instructor.webp",
         alt: "Piper Archer II interior seats",
       },
     ],
@@ -69,15 +69,15 @@ export const fleet = [
     name: "Piper Warrior",
     images: [
       {
-        src: "/img/our-fleet/summit-flight-academy_kansas-city-missouri_flying-lessons_fleet-piper-warrior-pa-28-151-N425CB-side-view.webp",
+        src: "/img/our-fleet/summit-flight-academy_kansas-city-missouri_flying-lessons_fleet-piper-warrior-pa-28-151-n425cb-side-view-simplifly-arizona-flight-school.webp",
         alt: "Piper Warrior at Summit Flight Academy",
       },
       {
-        src: "/img/our-fleet/summit-flight-academy_kansas-city-missouri_flight-school_flight-school_fleet-piper-warrior-pa-28-151-N425CB-instrument-panel.webp",
+        src: "/img/our-fleet/summit-flight-academy_kansas-city-missouri_flight-school_flight-school_fleet-piper-warrior-pa-28-151-n425cb-instrument-panel-simplifly-arizona-multi-engine-rating.webp",
         alt: "Piper Warrior interior control panel",
       },
       {
-        src: "/img/our-fleet/summit-flight-academy_kansas-city-missouri_pilot-training_become-a-pilot_fleet-piper-warrior-pa-28-151-N425CB-cockpit-seats.webp",
+        src: "/img/our-fleet/summit-flight-academy_kansas-city-missouri_pilot-training_become-a-pilot_fleet-piper-warrior-pa-28-151-n425cb-cockpit-seats-simplifly-mesa-commercial-pilot.webp",
         alt: "Piper Warrior interior seats",
       },
     ],
@@ -132,19 +132,19 @@ export const fleet = [
     name: "Piper Cherokee",
     images: [
       {
-        src: "/img/our-fleet/summit-flight-academy_kansas-city-missouri_pilot-academy_flight-academy_fleet-piper-cherokee-pa-28-140-N15283-front-view-2.webp",
+        src: "/img/our-fleet/summit-flight-academy_kansas-city-missouri_pilot-academy_flight-academy_fleet-piper-cherokee-pa-28-140-n15283-front-view-2-simplifly-mesa-instrument-rating.webp",
         alt: "Piper Cherokee at Summit Flight Academy",
       },
       {
-        src: "/img/our-fleet/summit-flight-academy_kansas-city-missouri_flight-training_flight-school_fleet-piper-cherokee-pa-28-140-N15283-side-view.webp",
+        src: "/img/our-fleet/summit-flight-academy_kansas-city-missouri_flight-training_flight-school_fleet-piper-cherokee-pa-28-140-n15283-side-view-simplifly-arizona-discovery-flight.webp",
         alt: "Piper Cherokee at Summit Flight Academy runway",
       },
       {
-        src: "/img/our-fleet/summit-flight-academy_kansas-city-missouri_flight-training_become-a-pilot_fleet-piper-cherokee-pa-28-140-N15283-cockpit-seats.webp",
+        src: "/img/our-fleet/summit-flight-academy_kansas-city-missouri_flight-training_become-a-pilot_fleet-piper-cherokee-pa-28-140-n15283-cockpit-seats-simplifly-arizona-discovery-flight.webp",
         alt: "Piper Cherokee interior seats",
       },
       {
-        src: "/img/our-fleet/summit-flight-academy_kansas-city-missouri_pilot-academy_fleet-piper-cherokee-pa-28-140-N15283-instrument-panel-2.webp",
+        src: "/img/our-fleet/summit-flight-academy_kansas-city-missouri_pilot-academy_fleet-piper-cherokee-pa-28-140-n15283-instrument-panel-2-simplifly-arizona-become-a-pilot.webp",
         alt: "Piper Cherokee interior seats",
       },
     ],
@@ -199,15 +199,15 @@ export const fleet = [
     name: "Piper Cherokee",
     images: [
       {
-        src: "/img/our-fleet/summit-flight-academy_kansas-city-missouri_pilot-academy_fleet-piper-cherokee-pa-28-140-N15044-side-view.webp",
+        src: "/img/our-fleet/summit-flight-academy_kansas-city-missouri_pilot-academy_fleet-piper-cherokee-pa-28-140-n15044-side-view-simplifly-mesa-certified-flight-instructor.webp",
         alt: "Piper Cherokee at Summit Flight Academy",
       },
       {
-        src: "/img/our-fleet/summit-flight-academy_kansas-city-missouri_flying-lessons_fleet-piper-cherokee-pa-28-140-N15044-instrument-panel.webp",
+        src: "/img/our-fleet/summit-flight-academy_kansas-city-missouri_flying-lessons_fleet-piper-cherokee-pa-28-140-n15044-instrument-panel-simplifly-arizona-become-a-pilot.webp",
         alt: "Piper Cherokee interior control panel",
       },
       {
-        src: "/img/our-fleet/summit-flight-academy_kansas-city-missouri_become-a-pilot_fleet-piper-cherokee-pa-28-140-N15044-cockpit-seats.webp",
+        src: "/img/our-fleet/summit-flight-academy_kansas-city-missouri_become-a-pilot_fleet-piper-cherokee-pa-28-140-n15044-cockpit-seats-simplifly-arizona-instrument-rating.webp",
         alt: "Piper Cherokee interior seats",
       },
     ],
@@ -263,15 +263,15 @@ export const fleet = [
     name: "Piper Cherokee",
     images: [
       {
-        src: "/img/our-fleet/summit-flight-academy_kansas-city-missouri_flight-training_fleet-piper-cherokee-pa-28-140-N6894W-front-view.webp",
+        src: "/img/our-fleet/summit-flight-academy_kansas-city-missouri_flight-training_fleet-piper-cherokee-pa-28-140-n6894w-front-view-simplifly-mesa-commercial-pilot.webp",
         alt: "Piper Cherokee at Summit Flight Academy",
       },
       {
-        src: "/img/our-fleet/summit-flight-academy_kansas-city-missouri_flying-lessons_fleet-piper-cherokee-pa-28-140-N6894W-instrument-panel.webp",
+        src: "/img/our-fleet/summit-flight-academy_kansas-city-missouri_flying-lessons_fleet-piper-cherokee-pa-28-140-n6894w-instrument-panel-simplifly-arizona-flying-lessons.webp",
         alt: "Piper Cherokee interior control panel",
       },
       {
-        src: "/img/our-fleet/summit-flight-academy_kansas-city-missouri_flying-lessons_fleet-piper-cherokee-pa-28-140-N6894W-cockpit-seats.webp",
+        src: "/img/our-fleet/summit-flight-academy_kansas-city-missouri_flying-lessons_fleet-piper-cherokee-pa-28-140-n6894w-cockpit-seats-simplifly-arizona-discovery-flight.webp",
         alt: "Piper Cherokee interior seats",
       },
     ],
@@ -327,15 +327,15 @@ export const fleet = [
     name: "Piper Twin Comanche",
     images: [
       {
-        src: "/img/our-fleet/summit-flight-academy_kansas-city-missouri_become-a-pilot_flying-lessons_fleet-piper-twin-comanche-N7664Y-front-right-view.webp",
+        src: "/img/our-fleet/summit-flight-academy_kansas-city-missouri_become-a-pilot_flying-lessons_fleet-piper-twin-comanche-n7664y-front-right-view-simplifly-arizona-certified-flight-instructor.webp",
         alt: "Summit Flight Academy front shot of N7664Y Piper Twin Comanche SFA",
       },
       {
-        src: "/img/our-fleet/summit-flight-academy_kansas-city-missouri_flying-lessons_pilot-academy_fleet-piper-twin-comanche-N7664Y-instrument-panel.webp",
+        src: "/img/our-fleet/summit-flight-academy_kansas-city-missouri_flying-lessons_pilot-academy_fleet-piper-twin-comanche-n7664y-instrument-panel-simplifly-arizona-multi-engine-rating.webp",
         alt: "Summit Flight Academy instrument panel of N7664Y Piper Twin Comanche",
       },
       {
-        src: "/img/our-fleet/summit-flight-academy_kansas-city-missouri_flight-academy_pilot-academy_fleet-piper-twin-comanche-N7664Y-cockpit-seats.webp",
+        src: "/img/our-fleet/summit-flight-academy_kansas-city-missouri_flight-academy_pilot-academy_fleet-piper-twin-comanche-n7664y-cockpit-seats-simplifly-arizona-private-pilot.webp",
         alt: "Summit Flight Academy pilot cockpit of N7664Y Piper Twin Comanche",
       },
     ],

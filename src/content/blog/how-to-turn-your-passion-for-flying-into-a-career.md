@@ -1,7 +1,7 @@
 ---
 description: "Have you ever caught yourself staring up at the sky every time a plane flies overhead? If you’ve felt the pull of the cockpit and wondered what it would be like to turn that fascination into a full-time career, you’re not alone. Thousands of aspiring aviators are looking to make that leap, and at Summit Flight Academy, we specialize in helping students turn their passion into a purpose-driven aviation career."
 pubDate: "Aug 29, 2025"
-heroImage: "/img/summit-flight-academy-missoury-happy-pilot-shaking-hands-with-flight-instructor-receiving-certificate.webp"
+heroImage: "/img/summit-flight-academy-missoury-happy-pilot-shaking-hands-with-flight-instructor-receiving-certificate-simplifly-mesa-become-a-pilot.webp"
 imgAlt: "flight instruments"
 author: Jami Heckman
 title: How to Turn Your Passion for Flying into a Career

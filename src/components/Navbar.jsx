@@ -54,7 +54,7 @@ const Navbar = ({ pathname }) => {
               <a href="/" className="flex flex-shrink items-center">
                 <img
                   loading="eager"
-                  src="/img/fromWIX/SFA-logo.webp"
+                  src="/img/fromWIX/sfa-logo-simplifly-arizona-instrument-rating.webp"
                   alt="Summit Flight Academy Logo"
                   className={`${navBar ? "lg:h-14" : "lg:h-20 h-16"} object-contain h-14 w-auto duration-300`}
                   id="navbar-image"
