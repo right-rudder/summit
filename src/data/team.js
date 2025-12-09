@@ -43,7 +43,7 @@ export const team = [
   //   id: 3,
   //   name: "Katia Van Horn",
   //   role: "CFI, CFII",
-  //   imageUrl: "/img/our-team/KatiaVanHorn.webp",
+  //   imageUrl: "/img/our-team/katiavanhorn-simplifly-arizona-private-pilot.webp",
   //   imageAlt:
   //     "headshot of Katia Van Horn at Summit Flight Academy kansas city flight instructor",
   //   paragrah1:

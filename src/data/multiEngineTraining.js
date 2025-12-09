@@ -54,7 +54,7 @@ export const MULTI_ENGINE_TRAINING = {
       "Current FAR/AIM and multi-engine study materials",
       "Knowledge test results (if already completed)",
     ],
-    imagePath: "/src/assets/placeholder-img.webp",
+    imagePath: "/src/assets/placeholder-img-simplifly-mesa-pilot-training.webp",
     imageAlt: "Multi-engine aircraft preflight inspection",
   },
   //Training RoadMap
@@ -106,7 +106,7 @@ export const MULTI_ENGINE_TRAINING = {
           "<strong>Performance Assessment:</strong> Detailed evaluation against ACS standards to develop targeted training plan for remaining lessons.",
         ],
         imagePath:
-          "/src/assets/summit-flight-academy-very-happy-pilot-in-piper-cherokee-cockpit-giving-thumbs-up-instrument-rating.webp",
+          "/src/assets/summit-flight-academy-very-happy-pilot-in-piper-cherokee-cockpit-giving-thumbs-up-instrument-rating-simplifly-arizona-flight-training.webp",
         imageAlt: "ACS maneuvers practice in multi-engine aircraft",
       },
       {
@@ -129,7 +129,7 @@ export const MULTI_ENGINE_TRAINING = {
           "<strong>Administrative Completion:</strong> IACRA submission, final endorsements, and checkride briefing to ensure all paperwork and requirements are complete.",
         ],
         imagePath:
-          "/src/assets/summit-flight-academy-missoury-kansas-city-cfi-instructor-training-pilot-student-and-instructor2.webp",
+          "/src/assets/summit-flight-academy-missoury-kansas-city-cfi-instructor-training-pilot-student-and-instructor2-simplifly-mesa-become-a-pilot.webp",
         imageAlt: "Mock checkride preparation session",
       },
       {
