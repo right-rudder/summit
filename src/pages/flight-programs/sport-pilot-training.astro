@@ -1,0 +1,74 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import EnrollNowCTA from "../../components/EnrollNowCTA.astro";
+import FAQs from "../../components/FAQs";
+import { data, sportPilotFAQs } from "../../data/sportPilot";
+import EnrollmentModalButton from "../../components/enrollmentModalButtom";
+import BecomeAPilotRoadmap from "../../components/BecomeAPilotRoadmap.astro";
+import CTAHolidayAndNewYear from "../../components/CTAHolidayAndNewYear.astro";
+import { FaCheck } from "react-icons/fa";
+
+const GHL_ENROLL_FORM_WEBHOOK_URL = import.meta.env.GHL_ENROLL_FORM_WEBHOOK_URL;
+const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
+---
+
+<BaseLayout pageTitle={data.page.title} pageDescription={data.page.description} pageKeywords={data.page.keywords}>
+  <header
+    class="relative h-screen-3/4 bg-private-pilot bg-cover bg-center bg-black flex flex-col items-center justify-center"
+  >
+    <div class="absolute bg-gradient-to-b from-black/60 to-black/20 w-full h-full z-0"></div>
+
+    <div
+      class="text-white text-center lg:text-left z-10 flex flex-col items-center gap-4 px-5 h-full lg:pt-28 justify-center"
+    >
+      <h1 class="text-5xl font-bold tracking-tighter">{data.header.title}</h1>
+      <h2 class="text-3xl tracking-wide">The starting point in all pilot journeys</h2>
+      <EnrollmentModalButton
+        client:visible
+        btnStyle={"btn-red"}
+        btnText={"Apply Today"}
+        webhookUrl={GHL_ENROLL_FORM_WEBHOOK_URL}
+        apiKey={PORTAL_API_KEY}
+      />
+    </div>
+  </header>
+
+  <section class="bg-white py-16 lg:py-24">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <h2 class="text-5xl font-bold tracking-tight text-main-red text-center xl:text-6xl">
+        {data.aboutSection.title}
+      </h2>
+      <p class="my-12 text-lg leading-8 text-black text-center">
+        {data.aboutSection.description}
+      </p>
+    </div>
+  </section>
+
+  <section class="bg-slate-900 py-16 lg:py-24">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <h2 class="text-5xl mb-8 font-bold tracking-tight text-white text-center xl:text-6xl">
+        {data.advantagesSection.title}
+      </h2>
+      <hr class="bg-main-red rounded-lg w-2/3 mx-auto h-1 border-0 mb-12" />
+      <div class="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+        {data.advantagesSection.bulletPoints.map((item) => (
+          <div class="p-6 rounded-lg bg-gray-700 flex flex-col gap-4 justify-between shadow-main-red/20 shadow-lg text-white transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-main-red/20">
+            <p class="flex gap-4 items-center">
+              <FaCheck className="size-6 shrink-0 text-main-red" />
+              <span class="text-lg font-bold">{item.title}</span>
+            </p>
+            <p>{item.description}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <CTAHolidayAndNewYear />
+
+  <BecomeAPilotRoadmap data={data.roadMap} />
+
+  <EnrollNowCTA title={data.ctaSection.title} subtitle={data.ctaSection.subTitle} />
+
+  <FAQs faqs={sportPilotFAQs.questions} type={sportPilotFAQs.type} client:visible />
+</BaseLayout>
