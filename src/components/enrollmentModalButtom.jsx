@@ -206,6 +206,18 @@ const EnrollmentModalButton = ({
                         <input
                           type="radio"
                           className="mx-2"
+                          id="sport-pilot"
+                          name="interest"
+                          value="sport-pilot"
+                          required
+                        />
+                        <label htmlFor="sport-pilot">Sport Pilot</label>
+                      </div>
+
+                      <div>
+                        <input
+                          type="radio"
+                          className="mx-2"
                           id="private-pilot"
                           name="interest"
                           value="private-pilot"
@@ -286,7 +298,7 @@ const EnrollmentModalButton = ({
                       id="goal"
                       name="goal"
                       placeholder="What is your goal?"
-                      maxlength="500"
+                      maxLength="500"
                       rows={4}
                       className="w-full p-2 border text-black bg-gray-100 border-gray-400 rounded"
                       required

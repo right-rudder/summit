@@ -123,6 +123,10 @@ export const flightPrograms = {
   mobileClassName: "flight-programs-mobile",
   submenu: [
     {
+      name: "Sport Pilot Training",
+      link: "/flight-programs/sport-pilot-training",
+    },
+    {
       name: "Private Pilot Training",
       link: "/flight-programs/private-pilot-training",
     },
