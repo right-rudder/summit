@@ -185,7 +185,7 @@ const ContactUsModalButton = ({
                       id="message"
                       name="message"
                       placeholder="How can we help?"
-                      maxlength="500"
+                      maxLength="500"
                       rows={4}
                       className="w-full p-2 border text-black bg-gray-100 border-gray-400 rounded"
                       required
