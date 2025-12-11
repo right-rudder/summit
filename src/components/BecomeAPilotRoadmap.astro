@@ -21,39 +21,40 @@ const { data } = Astro.props;
           data.steps.map((step, index) =>
             index % 2 === 0 ? (
               <div class="my-8 flex flex-wrap justify-center gap-8 lg:gap-0">
-                <div class="relative pt-32 lg:pt-16 flex flex-col justify-center items-center w-full lg:w-1/2">
-                  <h3 class="absolute top-0 left-0 text-9xl font-light text-main-red">{(index+1).toString().padStart(2, '0')}</h3>
-                  <div class="text-center lg:text-right pr-6">
-                    <h3 class="text-3xl font-bold tracking-tight text-main-red">{step.title}</h3>
-                    <p class="text-xl leading-8 text-gray-800">
-                      {step.description}
-                    </p>
+                <div class="flex flex-col items-center w-full gap-8 lg:w-1/2 lg:pr-6">
+                  <h3 class="text-9xl font-light text-main-red text-center w-full lg:text-left">
+                    {(index + 1).toString().padStart(2, "0")}
+                  </h3>
+
+                  <div class="text-center lg:text-right">
+                    <h3 class="text-3xl font-bold tracking-tight text-main-red mb-2">{step.title}</h3>
+                    <p class="text-xl leading-8 text-gray-800" set:html={step.description} />
                   </div>
                 </div>
                 <div class="flex flex-col justify-center items-center w-full lg:w-1/2">
                   <ImageComp
                     imagePath={step.img.src}
                     imageAlt={step.img.alt}
-                    styles="object-cover rounded"
+                    styles={`object-cover rounded w-full max-h-[60vh] lg:h-[576px] ${step.img.objectPosition ? step.img.objectPosition : "object-center"}`}
                   />
                 </div>
               </div>
             ) : (
               <div class="my-8 flex flex-wrap justify-center lg:flex-row-reverse gap-8 lg:gap-0">
-                <div class="relative pt-32 lg:pt-16 flex flex-col justify-center items-center w-full lg:w-1/2">
-                  <h3 class="absolute top-0 right-0 text-9xl font-light text-main-red">{(index+1).toString().padStart(2, '0')}</h3>
-                  <div class="text-center lg:text-left pl-6">
-                    <h3 class="text-3xl font-bold tracking-tight text-main-red">{step.title}</h3>
-                    <p class="text-xl leading-8 text-gray-800">
-                      {step.description}
-                    </p>
+                <div class="flex flex-col items-center w-full gap-8 lg:w-1/2 lg:pl-6">
+                  <h3 class="text-9xl font-light text-main-red text-center w-full lg:text-right">
+                    {(index + 1).toString().padStart(2, "0")}
+                  </h3>
+                  <div class="text-center lg:text-left">
+                    <h3 class="text-3xl font-bold tracking-tight text-main-red mb-2">{step.title}</h3>
+                    <p class="text-xl leading-8 text-gray-800" set:html={step.description} />
                   </div>
                 </div>
                 <div class="flex flex-col justify-center items-center w-full lg:w-1/2">
                   <ImageComp
                     imagePath={step.img.src}
                     imageAlt={step.img.alt}
-                    styles="object-cover rounded"
+                    styles={`object-cover rounded w-full max-h-[60vh] lg:h-[576px] ${step.img.objectPosition ? step.img.objectPosition : "object-center"}`}
                   />
                 </div>
               </div>
