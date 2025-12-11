@@ -38,6 +38,12 @@ export const flightPrograms = {
   mobileClassName: "flight-programs-mobile",
   submenu: [
     {
+      name: "Sport Pilot Training",
+      link: "/flight-programs/sport-pilot-training",
+      description:
+        "The fastest, most affordable path to becoming a pilot",
+    },
+    {
       name: "Private Pilot Training",
       link: "/flight-programs/private-pilot-training",
       description:

@@ -1,5 +1,16 @@
 export const pplProcess = [
   {
+    title: "Sport Pilot Certificate",
+    linkTo: {
+      title: "Learn More",
+      url: "/flight-programs/sport-pilot-training",
+    },
+    content:
+      "The Sport Pilot Certificate offers an efficient and cost-effective entry into aviation. Designed for recreational flyers, this training pathway minimizes time and expense while still providing the essential skills needed to fly safely and confidently. Students train without the requirements of traditional medical certification or higher-hour programs.",
+    content2:
+      "You'll train for at least 20 hours of FAA-required flight time, learn through ground school lessons and complete your flight hours with instructor led aircraft training, solo flights, and cross-country flights.",
+  },
+  {
     title: "Private Pilot Certificate (PPL)",
     linkTo: {
       title: "Learn More",

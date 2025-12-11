@@ -58,6 +58,11 @@ export const GET: APIRoute = async ({ site }) => {
 
     // Flight programs (high priority)
     {
+      url: "flight-programs/sport-pilot-training",
+      priority: PRIORITY_LEVELS.programs,
+      changefreq: CHANGE_FREQ.programs,
+    },
+    {
       url: "flight-programs/private-pilot-training",
       priority: PRIORITY_LEVELS.programs,
       changefreq: CHANGE_FREQ.programs,
