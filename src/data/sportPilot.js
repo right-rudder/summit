@@ -69,7 +69,7 @@ export const data = {
         description:
           "Start with an introductory flight to experience the sensation of controlling an aircraft, observe how to handle aircraft in flight, and confirm that aviation is the right path for you. During this session, your instructor will walk you through aircraft basics, safety procedures, and what to expect throughout your training. After your intro flight, you'll enroll in the Sport Pilot program, receive your training materials, and set up your personalized training schedule so you can begin progressing right away.",
         img: {
-          src: "/src/assets/multi-engine-pilot-student-flying-twin-comanche-at-summit-flight-academy.jpg",
+          src: "/src/assets/multi-engine-pilot-student-flying-twin-comanche-at-summit-flight-academy-sport-pilot.jpg",
           alt: "Profile view of a pilot smiling while flying a plane",
         },
       },
