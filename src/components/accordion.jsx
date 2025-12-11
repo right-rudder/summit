@@ -50,6 +50,26 @@ const Accordion = ({ faq, toggled, onShow, index }) => {
             dangerouslySetInnerHTML={{ __html: faq.paragraph2 }}
           ></p>
         )}
+
+        {faq.lists && (
+          <ul className="mt-4 pl-5 list-disc flex flex-col gap-3">
+            {faq.lists.map((item, index) => (
+              <li key={index} className="text-justify">
+                {item.text}
+                {item.list && (
+                  <ul className="pl-5 list-disc flex flex-col gap-3 py-2">
+                    {item.list.map((subItem, subIndex) => (
+                      <li key={subIndex} className="text-justify">
+                        {subItem}
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </li>
+            ))}
+          </ul>
+        )}
+
         {faq.paragraph3 && (
           <p
             className="mt-4 text-lg text-justify"
