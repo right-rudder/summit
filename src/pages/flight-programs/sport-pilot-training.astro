@@ -7,6 +7,7 @@ import EnrollmentModalButton from "../../components/enrollmentModalButtom";
 import BecomeAPilotRoadmap from "../../components/BecomeAPilotRoadmap.astro";
 import CTAHolidayAndNewYear from "../../components/CTAHolidayAndNewYear.astro";
 import { FaCheck } from "react-icons/fa";
+import ImageComp from "../../components/ImageComp.astro";
 
 const GHL_ENROLL_FORM_WEBHOOK_URL = import.meta.env.GHL_ENROLL_FORM_WEBHOOK_URL;
 const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
@@ -14,15 +15,20 @@ const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
 
 <BaseLayout pageTitle={data.page.title} pageDescription={data.page.description} pageKeywords={data.page.keywords}>
   <header
-    class="relative h-screen-3/4 bg-private-pilot bg-cover bg-center bg-black flex flex-col items-center justify-center"
+    class="relative h-screen-3/4 bg-black flex flex-col items-center justify-center"
   >
+    <ImageComp
+      imagePath={data.header.img.src}
+      imageAlt={data.header.img.alt}
+      styles="object-cover absolute top-0 left-0 right-0 h-screen-3/4"
+      />
     <div class="absolute bg-gradient-to-b from-black/60 to-black/20 w-full h-full z-0"></div>
 
     <div
       class="text-white text-center lg:text-left z-10 flex flex-col items-center gap-4 px-5 h-full lg:pt-28 justify-center"
     >
       <h1 class="text-5xl font-bold tracking-tighter">{data.header.title}</h1>
-      <h2 class="text-3xl tracking-wide">The starting point in all pilot journeys</h2>
+      <h2 class="text-3xl tracking-wide">{data.header.subTitle}</h2>
       <EnrollmentModalButton
         client:visible
         btnStyle={"btn-red"}
@@ -38,9 +44,22 @@ const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
       <h2 class="text-5xl font-bold tracking-tight text-main-red text-center xl:text-6xl">
         {data.aboutSection.title}
       </h2>
+
       <p class="my-12 text-lg leading-8 text-black text-center">
         {data.aboutSection.description}
       </p>
+      
+      {data.aboutSection.cta && (
+        <div class="mx-auto w-fit">
+          <EnrollmentModalButton
+            client:visible
+            btnStyle={"btn-red"}
+            btnText={data.aboutSection.cta}
+            webhookUrl={GHL_ENROLL_FORM_WEBHOOK_URL}
+            apiKey={PORTAL_API_KEY}
+          />
+        </div>
+      )}
     </div>
   </section>
 
@@ -67,6 +86,8 @@ const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
   <CTAHolidayAndNewYear />
 
   <BecomeAPilotRoadmap data={data.roadMap} />
+
+  <!-- TODO : Add packages / pricing -->
 
   <EnrollNowCTA title={data.ctaSection.title} subtitle={data.ctaSection.subTitle} />
 

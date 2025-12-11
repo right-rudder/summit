@@ -13,12 +13,17 @@ export const data = {
   },
   header: {
     title: "Sport Pilot Training",
-    subTitle: "Your Fastest, Most Affordable Path to Becoming a Pilot",
+    subTitle: "The fastest, most affordable path to becoming a pilot",
+    img: {
+      src: "/src/assets/student-pilot-and-cfi-at-sunset-at-lees-summit-airport.webp",
+      alt: "Student pilot and CFI standing side by side in front of a plane at sunset",
+    },
   },
   aboutSection: {
     title: "What is a Sport Pilot?",
     description:
-      "The Sport Pilot Certificate offers an efficient and cost-effective entry into aviation. Designed for recreational flyers, this training pathway minimizes time and expense while still providing the essential skills needed to fly safely and confidently. Students train in modern Light Sport Aircraft with experienced instructors, gaining hands-on proficiency, strong aeronautical decision-making abilities, and the confidence to fly, without the requirements of traditional medical certification or higher-hour programs. Whether you are pursuing aviation for fun or planning to continue through Private Pilot training in the future, this is the ideal starting point.",
+      "The Sport Pilot Certificate offers an efficient and cost-effective entry into aviation. Designed for recreational flyers, this training pathway minimizes time and expense while still providing the essential skills needed to fly safely and confidently. Students train in modern aircraft with experienced instructors, gaining hands-on proficiency, strong aeronautical decision-making abilities, and the confidence to fly, without the requirements of traditional medical certification or higher-hour programs. Whether you are pursuing aviation for fun or planning to continue through Private Pilot training in the future, this is the ideal starting point.",
+    cta: "Enroll Now",
   },
   advantagesSection: {
     title: "Key Points",
@@ -36,7 +41,7 @@ export const data = {
       {
         title: "Lower Cost Compared to Private Pilot Training",
         description:
-          "Reduced training hours and efficient Light Sport Aircraft significantly decrease overall training investment.",
+          "Reduced training hours and no medical exam requirement significantly decrease overall training investment.",
       },
       {
         title: "Fly for Fun and Build Experience",
@@ -49,9 +54,9 @@ export const data = {
           "All flight time counts toward future certificates if you choose to upgrade to Private Pilot later.",
       },
       {
-        title: "Modern, Lightweight Aircraft",
+        title: "Modern and varied Aircraft",
         description:
-          "Train in LSAs known for efficiency, visibility, and advanced avionics, ideal for new pilots.",
+          "Train in a diverse range of aircraft, known for efficiency, visibility, and advanced avionics, ideal for new pilots.",
       },
     ],
   },
@@ -62,46 +67,47 @@ export const data = {
       {
         title: "Intro Flight & Enrollment",
         description:
-          "Start with an introductory flight to experience the feel of Light Sport Aircraft and confirm your training goals. From there, you’ll enroll in the sport pilot program and receive your training materials.",
+          "Start with an introductory flight to experience the sensation of controlling an aircraft, observe how to handle aircraft in flight, and confirm that aviation is the right path for you. During this session, your instructor will walk you through aircraft basics, safety procedures, and what to expect throughout your training. After your intro flight, you'll enroll in the Sport Pilot program, receive your training materials, and set up your personalized training schedule so you can begin progressing right away.",
         img: {
-          src: "/src/assets/summit-flight-academy-missoury-kansas-city-visit-us-header-simplifly-arizona-discovery-flight.webp",
-          alt: "Summit Flight Academy office",
+          src: "/src/assets/multi-engine-pilot-student-flying-twin-comanche-at-summit-flight-academy.jpg",
+          alt: "Profile view of a pilot smiling while flying a plane",
         },
       },
       {
         title: "Ground Knowledge & Online Study",
         description:
-          "Complete your foundational aeronautical knowledge through instructor-led sessions and online coursework, covering weather, navigation, regulations, aircraft systems, and decision-making.",
+          "Build a strong foundation in aeronautical knowledge through instructor-led ground lessons combined with flexible online coursework. You will study key topics such as weather theory, aerodynamics, FAA regulations, navigation techniques, aircraft systems, weight and balance, and aeronautical decision-making. This blended approach ensures that you understand the principles behind safe, confident flying before advancing into more complex flight operations. Your instructor will monitor your progress and help you prepare for the FAA Knowledge Test.",
         img: {
-          src: "/src/assets/summit-flight-academy-missoury-kansas-city-visit-us-header-simplifly-arizona-discovery-flight.webp",
-          alt: "Summit Flight Academy office",
+          src: "/src/assets/summit-flight-academy-ground-school-instrument-rating-simplifly-mesa-pilot-training.webp",
+          alt: "CFI and student in office during ground school lesson",
         },
       },
       {
         title: "Flight Training",
         description:
-          "Begin hands-on training with your instructor, you'll master takeoffs, landings, slow flight, stalls, emergency procedures, and basic navigation while preparing for solo flight. After demonstrating proficiency and safety, you will complete supervised solo flights and cross-country requirements.",
+          "Your hands-on training begins in the cockpit with your certified instructor guiding you through essential flight maneuvers and operational skills. You will practice takeoffs, landings, slow flight, stalls, steep turns, and emergency procedures while developing strong situational awareness and aircraft control. As your skills grow, you'll transition into solo operations, performing supervised solo flights and cross-country missions that reinforce your independence and readiness. This phase combines both structured lessons and real-world flying scenarios to prepare you for the demands of the checkride.",
         img: {
-          src: "/src/assets/summit-flight-academy-missoury-kansas-city-visit-us-header-simplifly-arizona-discovery-flight.webp",
-          alt: "Summit Flight Academy office",
+          src: "/src/assets/kansas-city-instruments-aircraft-instrument-rating-simplifly-arizona-pilot-training.webp",
+          alt: "View of the instrument panel and window from inside an aircraft flying over fields",
         },
       },
       {
         title: "FAA Knowledge Test",
         description:
-          "Take the written exam covering essential ground knowledge. Your instructor will guide your preparation and endorse you when ready.",
+          "Once your instructor confirms your readiness, you will take the FAA Knowledge Test, a written exam that evaluates your understanding of aviation fundamentals. The exam covers meteorology, navigation, flight planning, airspace, aircraft performance, and regulations relevant to Sport Pilots. Leading up to the test, your instructor will provide targeted study guidance, practice tests, and review sessions to ensure you are confident and fully prepared.",
         img: {
-          src: "/src/assets/summit-flight-academy-missoury-kansas-city-visit-us-header-simplifly-arizona-discovery-flight.webp",
-          alt: "Summit Flight Academy office",
+          src: "/src/assets/stock/man-writing-on-paper-summit-flight-academy-sport-pilot-writen-exam.jpg",
+          alt: "Man writing on a piece of paper",
         },
       },
       {
-        title: "Practical Test (Checkride)",
+        title: "Practical Test - Checkride",
         description:
-          "Your instructor sharpens your skills through scenario-based training and mock evaluations to prepare you for the practical test. After that, the final step includes an oral exam and flight test with an FAA examiner. Upon completion, you earn your Sport Pilot Certificate and can begin flying immediately.",
+          `The final step is the FAA Practical Test, commonly known as the checkride. Your instructor will conduct scenario-based training, mock orals, and comprehensive flight reviews to help you refine your skills and remove any uncertainties. On test day, you will complete an oral exam followed by a flight test with an FAA examiner, demonstrating your ability to safely plan, manage, and execute a full flight. Upon successful completion, you will earn your Sport Pilot Certificate and immediately gain the privileges to operate aircraft as pilot in command with some limitations. <a class="link" href="#faqs">You can read more about the limitations in the FAQ section.</a>`,
         img: {
-          src: "/src/assets/summit-flight-academy-missoury-kansas-city-visit-us-header-simplifly-arizona-discovery-flight.webp",
-          alt: "Summit Flight Academy office",
+          src: "/src/assets/summit-flight-academy-missoury-happy-pilot-shaking-hands-with-flight-instructor-receiving-certificate.webp",
+          alt: "CFI and student holding certificate while they shake hands and smile",
+          objectPosition: "object-[50%_20%]",
         },
       },
     ],
@@ -120,43 +126,51 @@ export const sportPilotFAQs = {
     {
       title: "What are the sport pilot eligibility requirements?",
       content: "For the sport pilot certificate, you must:",
-      list: [
-        "Be at least 17 years old.",
-        "Be able to read, speak, write, and understand English.",
-        "Hold at least a third class medical, or hold a current and valid U.S. driver's license.",
+      lists: [
+        { text: "Be at least 17 years old." },
+        { text: "Be able to read, speak, write, and understand English." },
+        {
+          text: "Hold at least a third class medical, or hold a current and valid U.S. driver's license.",
+        },
       ],
     },
     {
       title: "What are the training requirements for becoming a sport pilot?",
-      content:
-        "Training requirements for a sport pilot certificate with airplane category:",
-      paragraph1: "A minimum of 20 hours flight time including:",
-      oList: [
-        "15 hours of flight training from an authorized instructor.",
-        "5 hours of solo flight.",
-      ],
-      paragraph4: "Flight training must include at least:",
-      list: [
-        "2 hours cross-country flight training.",
-        "10 takeoffs and landings to a full stop.",
-        "One solo cross-country flight of at least 75 nautical miles total distance with a full-stop landing at a minimum of two points and one segment of the flight consisting of a straight-line distance of at least 25 nautical miles between takeoff and landing locations.",
-        "2 hours flight training in preparation for the practical test.",
-        "Ground training from an instructor or home-study course.",
-      ],
-      list2: [
-        "FAA knowledge test on applicable aeronautical knowledge areas.",
-        "FAA practical test for the applicable light-sport aircraft privilege.",
+      lists: [
+        {
+          text: "A minimum of 20 hours flight time including:",
+          list: [
+            "15 hours of flight training from an authorized instructor.",
+            "5 hours of solo flight.",
+          ],
+        },
+        {
+          text: "Flight training must include at least:",
+          list: [
+            "2 hours cross-country flight training.",
+            "10 takeoffs and landings to a full stop.",
+            "One solo cross-country flight of at least 75 nautical miles total distance with a full-stop landing at a minimum of two points and one segment of the flight consisting of a straight-line distance of at least 25 nautical miles between takeoff and landing locations.",
+            "2 hours flight training in preparation for the practical test.",
+            "Ground training from an instructor or home-study course.",
+          ],
+        },
+        {
+          text: "FAA knowledge test on applicable aeronautical knowledge areas.",
+        },
+        {
+          text: "FAA practical test for the applicable aircraft privilege.",
+        },
       ],
     },
     {
       title: "What types of airplanes can I fly?",
       content:
         "There are many types of airplanes that Sport Pilots can fly, however the limitations are:",
-      list: [
-        "Maximum aircraft speed: 250 knots.",
-        "Stall speed: 59 knots clean stall speed (Vs1).",
-        "Maximum of 4 seats",
-        "Limited to 1 passenger",
+      lists: [
+        { text: "Maximum aircraft speed of 250 knots." },
+        { text: "Maximum stall speed of 59 knots clean stall speed (Vs1)." },
+        { text: "Maximum of 4 seats." },
+        { text: "Limited to 1 passenger." },
       ],
       note: "There are no weight limitations.",
     },
