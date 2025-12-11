@@ -36,7 +36,7 @@ export const data = {
       {
         title: "No FAA Medical Required",
         description:
-          "Fly using your valid U.S. driver’s license as your medical qualification, simplifying the approval process.",
+          "Fly using your valid U.S. driver's license as your medical qualification, simplifying the approval process.",
       },
       {
         title: "Lower Cost Compared to Private Pilot Training",
