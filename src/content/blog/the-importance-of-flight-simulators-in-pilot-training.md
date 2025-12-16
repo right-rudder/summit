@@ -1,7 +1,7 @@
 ---
 description: "Discover how flight simulators play a crucial role in pilot training at Summit Flight Academy. Learn about the benefits of using simulators and their impact on the training process as students prepare for zer to hero training and a pilot career track."
 pubDate: "August 14, 2024"
-heroImage: "/img/summit-flight-academy-pilot-student-and-flight-instructor-inside-a-flight-simulator-instrument-rating-simplifly-mesa-commercial-pilot.webp"
+heroImage: "/img/pilot-student-and-flight-instructor-inside-a-flight-simulator-commercial-pilot-summit-flight-academy-missouri-certified-flight-instructor-instrument.webp"
 imgAlt: "A student trains in the Redbird flight simulator to learn the basics of flight training before a flight."
 author: Jami Heckman
 title: The Importance of Flight Simulators in Pilot Training
@@ -45,7 +45,7 @@ Obtaining an instrument rating is a critical step for any pilot looking to advan
 **3. Advanced Training and Scenario-Based Learning**  
 As students progress in their training, flight simulators continue to play a vital role. Advanced training modules and scenario-based learning allow students to practice complex flight operations and decision-making processes. Simulators can recreate various flight scenarios, such as cross-country flights, night operations, and flights in adverse weather conditions. This diverse training helps students build a well-rounded skill set and prepares them for the challenges of real-world flying.
 
-![Student and CFI together after a sunset flight at Lee's Summit Airport near Kansas City, MO](/img/student-pilot-and-cfi-at-sunset-at-lees-summit-airport-simplifly-mesa-commercial-pilot.webp)
+![Student and CFI together after a sunset flight at Lee's Summit Airport near Kansas City, MO](/img/student-pilot-and-cfi-at-sunset-at-airport-commercial-pilot-summit-flight-academy-kansas-city-certified-flight-instructor-instrument.webp)
 _Training in the simulator is an essential step on your way to flying_
 
 ## Benefits of Flight Simulators at Summit Flight Academy
@@ -63,7 +63,7 @@ Flight simulators at Summit Flight Academy are not just for initial training; th
 
 Flight simulators are an indispensable part of pilot training at Summit Flight Academy. They offer a safe, cost-effective, and diverse training solution that prepares students for the demands of real-world flying. By incorporating advanced technology and expert instruction, our simulators ensure that students develop the skills and confidence needed to succeed in their aviation careers.
 
-![Student pilot passes a private pilot checkride with Summit Flight Academy](/img/summit-flight-academy-happy-pilot-receiving-certificate-from-flight-instructor-instrument-rating-simplifly-arizona-private-pilot.webp)
+![Student pilot passes a private pilot checkride with Summit Flight Academy](/img/happy-pilot-receiving-certificate-from-flight-instructor-private-pilot-summit-flight-academy-missouri-discovery-flight.webp)
 _Just another day at the office!_
 
 Ready to take your pilot training to the next level? Contact [Summit Flight Academy](https://www.summitflightacademy.com/) today to learn more about our programs and how flight simulators can enhance your training experience.

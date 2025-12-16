@@ -165,7 +165,7 @@ const OpenModalButton = ({ webhookUrl, apiKey }) => {
                   from us.
                 </p>
                 <img
-                  src="/summit-simplifly-mesa-certified-flight-instructor.webp"
+                  src="/summit-certified-flight-instructor-summit-flight-academy-kansas-city-certified-flight-instructor-instrument.webp"
                   alt="Summit Flight Academy Quick Start Guide"
                   className="mx-auto w-64 h-auto mt-6"
                 />

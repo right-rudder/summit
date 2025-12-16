@@ -6,7 +6,7 @@ export const SITE_TITLE = "Kansas City Leading Flight School | Summit Flight Aca
 export const SITE_DESCRIPTION =
   "Summit Flight Academy is a leading flight school in Kansas City, offering a range of pilot training programs including private pilot, instrument rating, commercial pilot, and multi-engine rating. With well-maintained aircraft, experienced instructors, and a supportive environment, they provide quality aviation education for aspiring pilots.";
 export const OG_IMAGE =
-  "/img/summit-flight-academy-missoury-kansas-city-piper-back-view-amazing-sunset-whats-next-simplifly-arizona-pilot-training.webp";
+  "/img/piper-back-view-amazing-sunset-whats-next-pilot-training-summit-flight-academy-lees-summit-pilot-training.webp";
 export const SITE_KEYWORDS =
   "flight school Lee's Summit, Kansas City pilot training, private pilot license, multi-engine rating, flight lessons Missouri, instrument rating training, flight academy Kansas City, discovery flights, commercial pilot certification, Lee's Summit Airport flight school";
 

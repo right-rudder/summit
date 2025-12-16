@@ -2,7 +2,7 @@
 author: "Jami Heckman"
 title: "Understanding R-ATP and ATP Certification at Summit Flight Academy"
 description: "Learn the differences between R-ATP and ATP certification and how Summit Flight Academy prepares pilots for a successful aviation career through structured training programs."
-heroImage: "/img/blog/student-pilot_summit-flight-academy_kansas-city-missouri_flight-training_flight-school_passing-a-checkride-at-lees-summit-airport-simplifly-mesa-flight-training.webp"
+heroImage: "/img/blog/student-pilot_summit-flight-academy_missouri_flight-training_flight-school_passing-a-checkride-at-airport-flight-training-summit-flight-academy-lees-summit-flight-training.webp"
 imgAlt: "Passing a checkride at Lee's Summit Airport"
 pubDate: "Oct 11, 2024"
 category: "Pilot Training"

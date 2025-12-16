@@ -30,7 +30,7 @@ const FinancingTabs = () => {
             </div>
             <div className="bg-white h-full p-6 rounded">
               <img
-                src="/img/financing/stratuslogo-simplifly-mesa-multi-engine-rating.webp"
+                src="/img/financing/stratuslogo-multi-engine-rating-summit-flight-academy-lees-summit-multi-engine-rating.webp"
                 alt="Stratus Financial logo"
                 className="w-full h-full object-contain"
               />
@@ -112,7 +112,7 @@ const FinancingTabs = () => {
             </div>
             <div className="bg-white p-8 rounded">
               <img
-                src="/img/financing/flighttrainingfinancelogo-simplifly-arizona-certified-flight-instructor.webp"
+                src="/img/financing/flighttrainingfinancelogo-certified-flight-instructor-summit-flight-academy-kansas-city-multi-engine-rating.webp"
                 alt="Flight Training Finance logo"
                 className="h-12 sm:h-16 md:h-20"
               />
@@ -203,7 +203,7 @@ const FinancingTabs = () => {
             </div>
             <div className="bg-white p-8 rounded">
               <img
-                src="/img/financing/aopalogo-simplifly-arizona-flight-training.webp"
+                src="/img/financing/aopalogo-flight-training-summit-flight-academy-kansas-city-flight-school.webp"
                 alt="AOPA logo"
                 className="h-auto w-48 md:w-64 object-cover"
               />

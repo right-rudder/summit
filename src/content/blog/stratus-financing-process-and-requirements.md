@@ -1,7 +1,7 @@
 ---
 description: "A clear, student-friendly guide to the Stratus Financial application process for Summit Flight Academy career-track students."
 pubDate: "December 3, 2025"
-heroImage: "/img/blog/stratus-financing-process-and-requirements.webp"
+heroImage: "/img/blog/stratus-financing-process-and-requirements-summit-flight-academy-kansas-city-discovery-flight.webp"
 imgAlt: "Stratus logo over the Summit Flight Academy's aircraft"
 author: "Jami Heckman"
 title: "Stratus Financing Process & Requirements"

@@ -1,7 +1,7 @@
 ---
 description: "Wondering if you're too old or too young to become a pilot? Discover why age is just a number in aviation, and how Summit Flight Academy helps students of all ages take flight, starting with a Discovery Flight."
 pubDate: "March 21, 2025"
-heroImage: "/img/summit-flight-academy-missoury-kansas-city-runway-simplifly-arizona-commercial-pilot.webp"
+heroImage: "/img/runway-commercial-pilot-summit-flight-academy-missouri-certified-flight-instructor.webp"
 imgAlt: "flight instruments"
 author: Jami Heckman
 title: Am I Too Old (or Too Young) to Learn to Fly? Common Myths Debunked

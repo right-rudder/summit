@@ -1,7 +1,7 @@
 ---
 description: "Discover the differences between Part 61 and Part 141 flight schools, and learn how Summit Flight Academy's Part 61 training offers flexibility, personalized programs, and career track training for aspiring pilots. Whether your goal is to become a professional pilot or enjoy flying as a hobby, understanding the differences between Part 61 and Part 141 flight schools will help you make an informed decision."
 pubDate: "June 18, 2024"
-heroImage: "/img/blog/pilot-cockpit_summit-flight-academy_kansas-city-missouri_flight-academy_passing-a-multi-engine-check-ride-over-kansas-city-simplifly-arizona-flight-training.webp"
+heroImage: "/img/blog/pilot-cockpit_summit-flight-academy_missouri_flight-academy_passing-a-multi-engine-check-ride-over-flight-training-summit-flight-academy-missouri-flying-lessons.webp"
 imgAlt: "multi-engine checkride"
 author: Jami Heckman
 title: What is the Difference Between Part 61 and Part 141 Flight Schools?
@@ -37,7 +37,7 @@ Part 61 and Part 141 refer to sections of the Federal Aviation Regulations (FARs
 
 Summit Flight Academy offers training under Part 61, providing a personalized and flexible approach that can be beneficial for students balancing other commitments.
 
-![Checkride Passed at Summit Flight Academy](/img/blog/plane-student-ground_summit-flight-academy_kansas-city-missouri_flight-school_pilot-training_checkride-passed-at-summit-simplifly-arizona-discovery-flight.webp)
+![Checkride Passed at Summit Flight Academy](/img/blog/plane-student-ground_summit-flight-academy_missouri_flight-school_pilot-training_checkride-passed-at-summit-discovery-flight-summit-flight-academy-kansas-city-pilot-career-track.webp)
 
 <p style="text-align: center;">Come fly with us!</p>
 
@@ -99,7 +99,7 @@ Part 61 schools offer the opportunity to gain experience at a comfortable pace, 
 
 **Experience:** Accumulating more flight hours can translate to better experience and readiness for advanced certifications and ratings. For those interested in building advanced skills, our [Instrument Rating](https://www.summitflightacademy.com/flight-programs/instrument-rating/) program provides rigorous training to enhance your flying capabilities.
 
-![Passing a Commercial Pilot License Checkride](/img/blog/pilot-plane-ground_summit-flight-academy_kansas-city-missouri_pilot-academy_pilot-training_passing-a-license-checkride-at-summit-flight-academy-simplifly-arizona-private-pilot.webp)
+![Passing a Commercial Pilot License Checkride](/img/blog/pilot-plane-ground_summit-flight-academy_missouri_pilot-academy_pilot-training_passing-a-license-checkride-at-private-pilot-summit-flight-academy-missouri-multi-engine-rating.webp)
 
 <p style="text-align: center;">Another checkride passed!</p>
 
@@ -118,7 +118,3 @@ If you need a more adaptable schedule and prefer a personalized training approac
 At Summit Flight Academy, we are committed to providing high-quality, flexible flight training tailored to your needs. We hope you choose to train with our experienced team of CFIs in Lee's Summit, MO.
 
 For more information about our programs and how we can help you achieve your flight training goals, visit [Summit Flight Academy](https://www.summitflightacademy.com/).
-
-```
-
-```

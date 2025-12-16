@@ -15,7 +15,7 @@ export const data = {
     title: "Sport Pilot Training",
     subTitle: "The fastest, most affordable path to becoming a pilot",
     img: {
-      src: "/src/assets/student-pilot-and-cfi-at-sunset-at-lees-summit-airport.webp",
+      src: "/src/assets/student-pilot-and-cfi-at-sunset-at-airport-summit-flight-academy-missouri-pilot-training.webp",
       alt: "Student pilot and CFI standing side by side in front of a plane at sunset",
     },
   },
@@ -69,7 +69,7 @@ export const data = {
         description:
           "Start with an introductory flight to experience the sensation of controlling an aircraft, observe how to handle aircraft in flight, and confirm that aviation is the right path for you. During this session, your instructor will walk you through aircraft basics, safety procedures, and what to expect throughout your training. After your intro flight, you'll enroll in the Sport Pilot program, receive your training materials, and set up your personalized training schedule so you can begin progressing right away.",
         img: {
-          src: "/src/assets/multi-engine-pilot-student-flying-twin-comanche-at-summit-flight-academy-sport-pilot.jpg",
+          src: "/src/assets/multi-engine-pilot-student-flying-twin-comanche-at-sport-pilot-summit-flight-academy-lees-summit-multi-engine-rating.jpg",
           alt: "Profile view of a pilot smiling while flying a plane",
         },
       },
@@ -78,7 +78,7 @@ export const data = {
         description:
           "Build a strong foundation in aeronautical knowledge through instructor-led ground lessons combined with flexible online coursework. You will study key topics such as weather theory, aerodynamics, FAA regulations, navigation techniques, aircraft systems, weight and balance, and aeronautical decision-making. This blended approach ensures that you understand the principles behind safe, confident flying before advancing into more complex flight operations. Your instructor will monitor your progress and help you prepare for the FAA Knowledge Test.",
         img: {
-          src: "/src/assets/summit-flight-academy-ground-school-instrument-rating-simplifly-mesa-pilot-training.webp",
+          src: "/src/assets/ground-school-pilot-training-summit-flight-academy-missouri-become-a-pilot.webp",
           alt: "CFI and student in office during ground school lesson",
         },
       },
@@ -87,7 +87,7 @@ export const data = {
         description:
           "Your hands-on training begins in the cockpit with your certified instructor guiding you through essential flight maneuvers and operational skills. You will practice takeoffs, landings, slow flight, stalls, steep turns, and emergency procedures while developing strong situational awareness and aircraft control. As your skills grow, you'll transition into solo operations, performing supervised solo flights and cross-country missions that reinforce your independence and readiness. This phase combines both structured lessons and real-world flying scenarios to prepare you for the demands of the checkride.",
         img: {
-          src: "/src/assets/kansas-city-instruments-aircraft-instrument-rating-simplifly-arizona-pilot-training.webp",
+          src: "/src/assets/instruments-aircraft-pilot-training-summit-flight-academy-lees-summit-discovery-flight.webp",
           alt: "View of the instrument panel and window from inside an aircraft flying over fields",
         },
       },
@@ -96,7 +96,7 @@ export const data = {
         description:
           "Once your instructor confirms your readiness, you will take the FAA Knowledge Test, a written exam that evaluates your understanding of aviation fundamentals. The exam covers meteorology, navigation, flight planning, airspace, aircraft performance, and regulations relevant to Sport Pilots. Leading up to the test, your instructor will provide targeted study guidance, practice tests, and review sessions to ensure you are confident and fully prepared.",
         img: {
-          src: "/src/assets/stock/man-writing-on-paper-summit-flight-academy-sport-pilot-writen-exam.jpg",
+          src: "/src/assets/stock/man-writing-on-paper-writen-exam-summit-flight-academy-kansas-city-certified-flight-instructor-instrument.jpg",
           alt: "Man writing on a piece of paper",
         },
       },
@@ -105,7 +105,7 @@ export const data = {
         description:
           `The final step is the FAA Practical Test, commonly known as the checkride. Your instructor will conduct scenario-based training, mock orals, and comprehensive flight reviews to help you refine your skills and remove any uncertainties. On test day, you will complete an oral exam followed by a flight test with an FAA examiner, demonstrating your ability to safely plan, manage, and execute a full flight. Upon successful completion, you will earn your Sport Pilot Certificate and immediately gain the privileges to operate aircraft as pilot in command with some limitations. <a class="link" href="#faqs">You can read more about the limitations in the FAQ section.</a>`,
         img: {
-          src: "/src/assets/summit-flight-academy-missoury-happy-pilot-shaking-hands-with-flight-instructor-receiving-certificate.webp",
+          src: "/src/assets/happy-pilot-shaking-hands-with-flight-instructor-receiving-certificate-summit-flight-academy-missouri-discovery-flight.webp",
           alt: "CFI and student holding certificate while they shake hands and smile",
           objectPosition: "object-[50%_20%]",
         },

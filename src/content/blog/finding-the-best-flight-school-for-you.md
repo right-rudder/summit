@@ -1,7 +1,7 @@
 ---
 description: "Explore how Summit Flight Academy stands out as a top flight school, focusing on quality instruction, a diverse curriculum, and a supportive learning environment that caters to both aspiring professional pilots and aviation enthusiasts."
 pubDate: "Apr 17, 2024"
-heroImage: "/img/summit-flight-academy-very-happy-pilot-in-piper-cherokee-cockpit-giving-thumbs-up-instrument-rating-simplifly-arizona-become-a-pilot.webp"
+heroImage: "/img/very-happy-pilot-in-piper-cherokee-cockpit-giving-thumbs-up-become-a-pilot-summit-flight-academy-kansas-city-flying-lessons.webp"
 imgAlt: "happy pilot in the cockpit giving thumbs up"
 author: Jeremy Davis
 title: Finding the Best Flight School for You
@@ -27,7 +27,7 @@ Enter Summit Flight Academy - the premier choice for pilot training in the Lee's
 
 ## From First Responder to Instructor Pilot | Summit Flight Academy KS
 
-[![From First Responder to Instructor Pilot | Summit Flight Academy KS](https://img.youtube.com/vi/HkUJ5JOp_u4/0.jpg)](https://www.youtube.com/watch?v=HkUJ5JOp_u4)
+<iframe class="w-full aspect-video" src="https://www.youtube.com/embed/HkUJ5JOp_u4?si=vynHNdP9ql4pl11Z" title="YouTube video | From First Responder to Instructor Pilot | Summit Flight Academy KS" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Diverse Training Programs to Suit Every Aspiration
 
