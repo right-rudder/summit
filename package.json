@@ -36,6 +36,7 @@
     "astro-embed": "^0.9.0",
     "astro-icon": "^1.1.2",
     "caniuse-lite": "^1.0.30001718",
+    "csv-parse": "^6.1.0",
     "framer-motion": "^11.11.17",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
