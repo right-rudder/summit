@@ -335,7 +335,7 @@ export const fleet = [
         alt: "Summit Flight Academy instrument panel of N7664Y Piper Twin Comanche",
       },
       {
-        src: "/img/our-fleet/summit-flight-academy_missouri_flight-academy_pilot-academy_fleet-piper-twin-comanche-n7664y-cockpit-seats-private-pilot-summit-flight-academy-lees-summit-certified-flight-instructor-instrument.webp",
+        src: "/img/our-fleet/summit-flight-academy_missouri_flight-academy_pilot-academy_fleet-piper-twin-comanche-n7664y-cockpit-seats-private-pilot.webp",
         alt: "Summit Flight Academy pilot cockpit of N7664Y Piper Twin Comanche",
       },
     ],
