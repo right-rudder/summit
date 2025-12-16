@@ -1,5 +1,6 @@
 const NavLink = ({ menuItem, pathname, toggled, onShow }) => {
-  const isActive = menuItem.submenu.some((item) => item.link === pathname);
+  const isActive = menuItem.submenu.some((item) => [item.link, item.link + "/"].includes(pathname));
+  console.log(menuItem.link, pathname);
   return (
     <div className="relative">
       <a
@@ -22,7 +23,7 @@ const NavLink = ({ menuItem, pathname, toggled, onShow }) => {
           <a
             key={item.name}
             href={item.link}
-            className={`${item.link === pathname ? "bg-main-red" : ""} px-5 py-3 hover:bg-main-red`}
+            className={`${[item.link, item.link + "/"].includes(pathname) ? "bg-main-red" : ""} px-5 py-3 hover:bg-main-red`}
           >
             {item.name}
           </a>

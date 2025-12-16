@@ -54,7 +54,7 @@ const Navbar = ({ pathname }) => {
               <a href="/" className="flex flex-shrink items-center">
                 <img
                   loading="eager"
-                  src="/img/fromWIX/sfa-logo-simplifly-arizona-instrument-rating.webp"
+                  src="/img/fromWIX/sfa-logo-instrument-rating-summit-flight-academy-kansas-city-flying-lessons.webp"
                   alt="Summit Flight Academy Logo"
                   className={`${navBar ? "lg:h-14" : "lg:h-20 h-16"} object-contain h-14 w-auto duration-300`}
                   id="navbar-image"
@@ -68,7 +68,7 @@ const Navbar = ({ pathname }) => {
                     <a
                       href="/new-to-flying"
                       className={`cursor-pointer text-lg text-white py-2 hover:border-b-2 border-main-red whitespace-nowrap ${
-                        pathname === "/new-to-flying" ? "border-b-2" : ""
+                        ["/new-to-flying", "/new-to-flying/"].includes(pathname) ? "border-b-2" : ""
                       }`}
                     >
                       New to Flying?
@@ -102,7 +102,7 @@ const Navbar = ({ pathname }) => {
                     <a
                       href="/store"
                       className={`cursor-pointer text-lg text-white py-2 hover:border-b-2 border-main-red whitespace-nowrap ${
-                        pathname === "/new-to-flying" ? "border-b-2" : ""
+                        ["/store", "/store/"].includes(pathname) ? "border-b-2" : ""
                       }`}
                     >
                       Shop
