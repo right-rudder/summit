@@ -2,30 +2,21 @@
 const StepsExample = [
   {
     title: "Title 1",
-    descriptions: [
-      "Lorem ipsum dolor sit amet.",
-      "Lorem ipsum dolor sit amet.",
-    ],
-    imagePath: "/src/assets/placeholder-img-pilot-training-summit-flight-academy-missouri-certified-flight-instructor-instrument.webp",
+    descriptions: ["Lorem ipsum dolor sit amet.", "Lorem ipsum dolor sit amet."],
+    imagePath:
+      "/src/assets/placeholder-img-pilot-training-summit-flight-academy-missouri-certified-flight-instructor-instrument.webp",
     imageAlt: "Placeholder Image",
   },
   {
     title: "Title 2",
-    descriptions: [
-      "Lorem ipsum dolor sit amet.",
-      "Lorem ipsum dolor sit amet.",
-    ],
-    imagePath: "/src/assets/placeholder-img-pilot-training-summit-flight-academy-missouri-certified-flight-instructor-instrument.webp",
+    descriptions: ["Lorem ipsum dolor sit amet.", "Lorem ipsum dolor sit amet."],
+    imagePath:
+      "/src/assets/placeholder-img-pilot-training-summit-flight-academy-missouri-certified-flight-instructor-instrument.webp",
     imageAlt: "Placeholder Image",
   },
 ];
 
-const {
-  title = "Section Title",
-  id = "check-ride-steps",
-  description,
-  content = StepsExample,
-} = Astro.props;
+const { title = "Section Title", id = "check-ride-steps", description, content = StepsExample } = Astro.props;
 
 import ImageComp from "./ImageComp.astro";
 ---
@@ -34,9 +25,7 @@ import ImageComp from "./ImageComp.astro";
   <div class="bg-white py-16 sm:py-32">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
       <div class="mx-auto w-full lg:mx-0">
-        <h2
-          class="lg:text-6xl text-3xl font-bold tracking-tight text-main-red text-center"
-        >
+        <h2 class="lg:text-6xl text-3xl font-bold tracking-tight text-main-red text-center">
           {title}
         </h2>
         <p class="mt-4 text-lg leading-8 text-black text-center">
@@ -45,72 +34,79 @@ import ImageComp from "./ImageComp.astro";
       </div>
 
       <div>
-        {content.map((step, index) => {
-          const isEven = (index + 1) % 2 === 0
-          return (
-            <div class={`my-16 flex flex-col ${isEven ? "lg:flex-row-reverse" : "lg:flex-row"} gap-8 lg:items-stretch`}>
-              {/* TEXT COLUMN */}
-              <div class="relative flex-1 pt-32 lg:pt-16 flex flex-col justify-start">
-                <h3 class={`absolute top-0 ${isEven ? "left-0" : "right-0"} text-9xl font-light text-main-red`}>
-                  {step.step ?? index + 1}
-                </h3>
+        {
+          content.map((step, index) => {
+            const isEven = (index + 1) % 2 === 0;
 
-                <div class={`${isEven ? "lg:pr-6" : "lg:pl-12"} text-center lg:text-justify`}>
-                  <h3 class={`text-3xl font-bold tracking-tight text-main-red py-12 ${isEven ? "lg:text-right" : ""}`}>
-                    {step.title}
-                  </h3>
-                  <div class="text-center lg:text-justify pr-6">
-                    <h3 class="text-3xl font-bold tracking-tight text-main-red py-12 lg:text-right">
-                      {step.title}
-                    </h3>
-                    {step.descriptions.map((desc) => (
-                      <p class="text-xl leading-8 py-2 text-gray-800 text-pretty">
-                        <Fragment set:html={desc} />
-                      </p>
-                    ))}
+            if (isEven) {
+              return (
+                <div class={`my-16 flex flex-col lg:flex-row-reverse gap-8 lg:items-stretch`}>
+                  <div class="my-8 flex flex-wrap justify-start lg:flex-row gap-8 lg:gap-0">
+                    <div class="relative flex flex-col justify-start items-center w-full lg:w-1/2">
+                      <h3 class={`text-9xl font-light text-main-red w-full text-center lg:text-right pr-6 lg:pr-12`}>
+                        {step.step ? step.step : index + 1}
+                      </h3>
+
+                      <div class="text-center lg:text-justify pr-6 lg:pr-12">
+                        <h3 class="text-3xl font-bold tracking-tight text-main-red py-12 lg:text-right">
+                          {step.title}
+                        </h3>
+                        {step.descriptions.map((desc) => (
+                          <p class="text-xl leading-8 py-2 text-gray-800 text-pretty lg:text-right">
+                            <Fragment set:html={desc} />
+                          </p>
+                        ))}
+                      </div>
+                    </div>
+
+                    <div class="flex flex-col justify-center items-center lg:h-full w-full lg:w-1/2">
+                      <ImageComp
+                        styles="rounded aspect-[9/16] max-h-[60vh] lg:max-h-[90vh] lg:h-full lg:w-full object-cover"
+                        imagePath={
+                          step.imagePath ||
+                          "/src/assets/placeholder-img-pilot-training-summit-flight-academy-missouri-certified-flight-instructor-instrument.webp"
+                        }
+                        imageAlt={step.imageAlt || "Image Placeholder"}
+                      />
+                    </div>
                   </div>
                 </div>
-                <div class="flex flex-col justify-center items-center lg:h-full w-full lg:w-1/2">
-                  <ImageComp
-                    styles=" rounded aspect-[9/16] lg:h-full lg:w-full object-cover"
-                    imagePath={
-                      step.imagePath || "/src/assets/placeholder-img-pilot-training-summit-flight-academy-missouri-certified-flight-instructor-instrument.webp"
-                    }
-                    imageAlt={step.imageAlt || "Image Placeholder"}
-                  />
-                </div>
-              </div>
-            ) : (
-              <div class="my-8 flex flex-wrap justify-start lg:flex-row-reverse gap-8 lg:gap-0">
-                <div class="relative pt-32 lg:pt-16 flex flex-col justify-start items-center w-full lg:w-1/2">
-                  <h3 class="absolute top-0 right-0 text-9xl font-light text-main-red">
-                    {step.step && step.step}
-                    {!step.step && index + 1}
-                  </h3>
-                  <div class="text-center lg:text-justify pl-6 lg:pl-12">
-                    <h3 class="text-3xl font-bold tracking-tight text-main-red py-12">
-                      {step.title}
-                    </h3>
-                    {step.descriptions.map((desc) => (
-                      <p class="text-xl leading-8 py-2 text-gray-800 text-pretty">
-                        <Fragment set:html={desc} />
-                      </p>
-                    ))}
+              );
+            } else {
+              return (
+                <div class={`my-16 flex flex-col lg:flex-row gap-8 lg:items-stretch`}>
+                  <div class="my-8 flex flex-wrap justify-start lg:flex-row-reverse gap-8 lg:gap-0">
+                    <div class="relative flex flex-col justify-start items-center w-full lg:w-1/2">
+                      <h3 class="text-9xl font-light text-main-red w-full text-center pl-6 lg:pl-12 lg:text-left">
+                        {step.step ? step.step : index + 1}
+                      </h3>
+
+                      <div class="text-center lg:text-justify pl-6 lg:pl-12">
+                        <h3 class="text-3xl font-bold tracking-tight text-main-red py-12">{step.title}</h3>
+                        {step.descriptions.map((desc) => (
+                          <p class="text-xl leading-8 py-2 text-gray-800 text-pretty">
+                            <Fragment set:html={desc} />
+                          </p>
+                        ))}
+                      </div>
+                    </div>
+
+                    <div class="flex flex-col justify-center items-center w-full lg:w-1/2 lg:h-full">
+                      <ImageComp
+                        styles="object-cover rounded aspect-[9/16] max-h-[60vh] lg:max-h-[90vh] lg:h-full"
+                        imagePath={
+                          step.imagePath ||
+                          "/src/assets/placeholder-img-pilot-training-summit-flight-academy-missouri-certified-flight-instructor-instrument.webp"
+                        }
+                        imageAlt={step.imageAlt || "Image Placeholder"}
+                      />
+                    </div>
                   </div>
                 </div>
-                <div class="flex flex-col justify-center items-center w-full lg:w-1/2 lg:h-full">
-                  <ImageComp
-                    styles="object-cover rounded aspect-[9/16]  lg:h-full"
-                    imagePath={
-                      step.imagePath || "/src/assets/placeholder-img-pilot-training-summit-flight-academy-missouri-certified-flight-instructor-instrument.webp"
-                    }
-                    imageAlt={step.imageAlt || "Image Placeholder"}
-                  />
-                </div>
-              </div>
-            </div>
-          )
-        })}
+              );
+            }
+          })
+        }
       </div>
     </div>
   </div>

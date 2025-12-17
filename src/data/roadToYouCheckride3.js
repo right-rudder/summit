@@ -122,7 +122,7 @@ export const CHECKRIDE_GUIDE = {
           "Altitude selection is a struggle for many applicants when they fixate on one data point like winds. However, airspace, obstacles, terrain, endurance, clouds, and turbulence should all be well accounted for.",
           "A common challenge is for an applicant to not be able to explain how to file, open, and close a VFR flight plan, as it's not as common in the world of ADS-B and flight following.",
         ],
-        imagePath: "/src/assets/red-arrow-fleet-flight-training-summit-flight-academy-missouri-multi-engine-rating.webp",
+        imagePath: "/src/assets/c1b522_f0fbb299a0ec4ed8835fa00fd7603091~mv2-summit-flight-academy-lees-summit-commercial-pilot.webp",
         imageAlt: "",
       },
       {
