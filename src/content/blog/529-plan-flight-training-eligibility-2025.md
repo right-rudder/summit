@@ -1,8 +1,8 @@
 ---
 description: "529 plan funds can be used for flight training at eligible Part 61 and Part 141 schools. This guide explains what the new law covers, how to use your 529 funds for aviation education, and what steps aspiring pilots should take to benefit from this opportunity."
 pubDate: "October 23, 2025"
-heroImage: "/img/blog/passing-a-multi-engine-check-ride-over-kansas-city-flight-lessons-lees-summit-summit-flight-academy.webp"
-imgAlt: "student pilot studying with headset and flight manuals"
+heroImage: "/img/stock/man-writing-on-paper-writen-exam-summit-flight-academy-kansas-city-certified-flight-instructor-instrument.jpg"
+imgAlt: "Man writing on a piece of paper"
 author: "Summit Flight Academy Team"
 title: "New Law Expands 529 Plans to Cover Flight Training Costs"
 readingTime: "7 min"
@@ -85,7 +85,7 @@ Whether you’re starting your **private pilot license (PPL)**, advancing to an 
 
 ---
 
-![student pilot walking toward aircraft](/img/blog/passing-a-checkride-at-lees-summit-airport.webp)
+![Profile view of a pilot smiling while flying a plane](/img/multi-engine-pilot-student-flying-twin-comanche-at-private-pilot-summit-flight-academy-missouri-pilot-career-track.webp)
 _Training for your dreams just got more accessible with the 2025 529 expansion._
 
 If you’d like help understanding whether your flight training program qualifies, contact your 529 plan administrator or reach out to **Summit Flight Academy**. Our team can guide you through enrollment and connect you with resources to make your aviation journey smoother and more affordable.

@@ -1,7 +1,7 @@
 ---
 description: "Getting your private pilot's license opens up a new world of freedom and adventure in the skies. But before you can take to the air solo, there are important steps including one major milestone. We know exams can cause pre-flight jitters, so we wanted to give you the full rundown on what to expect."
 pubDate: "Mar 22, 2024"
-heroImage: "/img/424955041_306482792417156_6883559221992042565_n-simplifly-arizona-certified-flight-instructor.webp"
+heroImage: "/img/424955041_306482792417156_6883559221992042565_n-certified-flight-instructor-summit-flight-academy-missouri-multi-engine-instructor.webp"
 imgAlt: "Teacher and student"
 author: Jami Heckman
 title: Demystifying the Written Exam

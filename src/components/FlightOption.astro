@@ -6,7 +6,7 @@ const { image, alt, title, description, reverse = false } = Astro.props;
   class={`flex justify-center flex-col ${reverse ? "lg:flex-row-reverse" : "lg:flex-row"} items-center w-fit mx-auto p-5 max-w-4xl`}
 >
   <img
-    src={image.src}
+    src={image}
     alt={alt}
     class="h-56 lg:h-72 rounded-full aspect-square object-cover shadow-lg shadow-black"
   />

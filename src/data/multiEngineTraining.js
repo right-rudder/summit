@@ -11,7 +11,7 @@ export const MULTI_ENGINE_TRAINING = {
       "The course follows a structured syllabus that builds from fundamental multi-engine aerodynamics to advanced single-engine emergency procedures. Each day is carefully planned to maximize learning while ensuring safety and proficiency.",
       "Upon completion, you'll be prepared for the multi-engine practical test and have the confidence to safely operate multi-engine aircraft in various conditions.",
     ],
-    imagePath: "/src/assets/CFI-and-student-holding-certificate.jpg"
+    imagePath: "/src/assets/CFI-and-student-holding-certificate-summit-flight-academy-lees-summit-pilot-career-track.jpg"
   },
   //cardblue
   aircraftFeatures: {
@@ -23,7 +23,7 @@ export const MULTI_ENGINE_TRAINING = {
       "Our Twin Comanche is meticulously maintained and equipped with modern avionics including GPS navigation and advanced instrumentation to prepare you for today's aviation environment.",
     ],
     imagePath:
-      "/src/assets/summit-flight-academy-front-shot-of-N7664Y-Piper-Twin-Comanche-SFA.webp",
+      "/src/assets/front-shot-of-N7664Y-Piper-Twin-Comanche-SFA-summit-flight-academy-lees-summit-discovery-flight.webp",
     imageAlt: "Piper PA-30 Twin Comanche multi-engine training aircraft",
   },
   //cardwhite
@@ -36,7 +36,7 @@ export const MULTI_ENGINE_TRAINING = {
       "For students traveling to the Kansas City area, we have arranged hotel discounts near the airport. The Hampton Inn and Fairfield Inn both offer special rates for our training students.",
     ],
     imagePath:
-      "/src/assets/N7664Y-2.webp",
+      "/src/assets/N7664Y-2-summit-flight-academy-kansas-city-multi-engine-rating.webp",
     imageAlt: "Multi-engine aircraft cockpit during training",
   },
   //Card blue
@@ -54,7 +54,7 @@ export const MULTI_ENGINE_TRAINING = {
       "Current FAR/AIM and multi-engine study materials",
       "Knowledge test results (if already completed)",
     ],
-    imagePath: "/src/assets/placeholder-img-simplifly-mesa-pilot-training.webp",
+    imagePath: "/src/assets/placeholder-img-pilot-training-summit-flight-academy-missouri-certified-flight-instructor-instrument.webp",
     imageAlt: "Multi-engine aircraft preflight inspection",
   },
   //Training RoadMap
@@ -71,7 +71,7 @@ export const MULTI_ENGINE_TRAINING = {
           "<strong>Ground Lesson 2: PA-30 Systems & Performance</strong><br>Detailed review of Twin Comanche systems, weight and balance, performance calculations, and limitations specific to the PA-30.",
           "<strong>Sim Session 1: Emergency Procedures</strong><br>Practice engine failure drills, single-engine operations, and emergency procedures in a safe, controlled simulator environment before your first flight.",
         ],
-        imagePath: "/src/assets/N7664Y-1.webp",
+        imagePath: "/src/assets/N7664Y-1-summit-flight-academy-missouri-discovery-flight.webp",
         imageAlt: "Multi-engine ground school instruction",
       },
       {
@@ -83,7 +83,7 @@ export const MULTI_ENGINE_TRAINING = {
           "<strong>Focus Areas:</strong> Aircraft control and coordination while managing two powerplants. Introduction to the engine failure 'drill' and basic single-engine maneuvering.",
         ],
         imagePath:
-          "/src/assets/summit-flight-academy-missoury-kansas-city-multi-engine-pilot-student-flying-twin-comanche-at-summit-flight-academy.webp",
+          "/src/assets/multi-engine-pilot-student-flying-twin-comanche-at-summit-flight-academy-summit-flight-academy-lees-summit-certified-flight-instructor-instrument.webp",
         imageAlt: "First multi-engine flight training",
       },
       {
@@ -94,7 +94,7 @@ export const MULTI_ENGINE_TRAINING = {
           "<strong>Key Skills:</strong> Engine failure on takeoff, engine failure after liftoff, single-engine go-arounds, and engine restart procedures. Practice VMC demonstrations and drag demonstrations.",
           "<strong>Advanced Techniques:</strong> Crosswind and short-field operations with emphasis on single-engine performance limitations and safety considerations.",
         ],
-        imagePath: "/src/assets/N7664Y-2.webp",
+        imagePath: "/src/assets/N7664Y-2-summit-flight-academy-kansas-city-multi-engine-rating.webp",
         imageAlt: "Multi-engine emergency procedures training",
       },
       {
@@ -106,7 +106,7 @@ export const MULTI_ENGINE_TRAINING = {
           "<strong>Performance Assessment:</strong> Detailed evaluation against ACS standards to develop targeted training plan for remaining lessons.",
         ],
         imagePath:
-          "/src/assets/summit-flight-academy-very-happy-pilot-in-piper-cherokee-cockpit-giving-thumbs-up-instrument-rating-simplifly-arizona-flight-training.webp",
+          "/src/assets/very-happy-pilot-in-piper-cherokee-cockpit-giving-thumbs-up-flight-training-summit-flight-academy-missouri-flight-school.webp",
         imageAlt: "ACS maneuvers practice in multi-engine aircraft",
       },
       {
@@ -117,7 +117,7 @@ export const MULTI_ENGINE_TRAINING = {
           "<strong>Customized Training:</strong> Lesson plan developed by instructor with student input to address specific challenge areas and build confidence.",
           "<strong>Mastery Focus:</strong> Repeated practice of high-risk operations and maneuvers that typically challenge students during the checkride.",
         ],
-        imagePath: "/src/assets/multi-engine-pilot-flying-piper-over-kansas-city-flight-lessons-lees-summit-summit-flight-academy.webp",
+        imagePath: "/src/assets/multi-engine-pilot-flying-piper-over-flight-lessons-summit-flight-academy-summit-flight-academy-lees-summit-multi-engine-instructor.webp",
         imageAlt: "Multi-engine skill refinement training",
       },
       {
@@ -129,7 +129,7 @@ export const MULTI_ENGINE_TRAINING = {
           "<strong>Administrative Completion:</strong> IACRA submission, final endorsements, and checkride briefing to ensure all paperwork and requirements are complete.",
         ],
         imagePath:
-          "/src/assets/summit-flight-academy-missoury-kansas-city-cfi-instructor-training-pilot-student-and-instructor2-simplifly-mesa-become-a-pilot.webp",
+          "/src/assets/cfi-instructor-training-pilot-student-and-instructor2-become-a-pilot-summit-flight-academy-lees-summit-discovery-flight.webp",
         imageAlt: "Mock checkride preparation session",
       },
       {
@@ -140,7 +140,7 @@ export const MULTI_ENGINE_TRAINING = {
           "<strong>Oral Examination:</strong> Demonstration of multi-engine knowledge, systems understanding, and risk management decision-making.",
           "<strong>Flight Test:</strong> Performance of all required maneuvers to ACS standards, with emphasis on safe single-engine operations and emergency procedures.",
         ],
-        imagePath: "/src/assets/passing-a-multi-engine-check-ride-over-kansas-city-flight-lessons-lees-summit-summit-flight-academy.webp",
+        imagePath: "/src/assets/passing-a-multi-engine-check-ride-over-flight-lessons-summit-flight-academy-summit-flight-academy-lees-summit-certified-flight-instructor-instrument.webp",
         imageAlt: "Multi-engine checkride with DPE",
       },
     ],
@@ -159,60 +159,60 @@ export const MULTI_ENGINE_TRAINING = {
           "X.B.S3: Gradually increase power on operating engine while maintaining heading with rudder until full rudder is required.",
         ],
         commonErrors: [
-          "Allowing excessive yaw development before reducing power",
-          "Failure to maintain safe altitude during demonstration",
-          "Incorrect identification of VMC symptoms and recovery timing",
+          "Allowing excessive yaw development before reducing power.",
+          "Failure to maintain safe altitude during demonstration.",
+          "Incorrect identification of VMC symptoms and recovery timing.",
         ],
       },
       {
         title: "Single-Engine Operations",
         standards: [
-          "X.A.S1: Recognize engine failure and execute immediate memory items",
-          "X.A.S2: Identify, verify, and feather failed engine",
-          "X.A.S3: Establish and maintain single-engine best rate of climb speed (Vyse)",
+          "X.A.S1: Recognize engine failure and execute immediate memory items.",
+          "X.A.S2: Identify, verify, and feather failed engine.",
+          "X.A.S3: Establish and maintain single-engine best rate of climb speed (Vyse).",
         ],
         commonErrors: [
-          "Delayed reaction to engine failure indication",
-          "Incorrect engine identification during failure scenario",
-          "Failure to maintain Vyse resulting in poor climb performance",
+          "Delayed reaction to engine failure indication.",
+          "Incorrect engine identification during failure scenario.",
+          "Failure to maintain Vyse resulting in poor climb performance.",
         ],
       },
       {
         title: "Engine Failure on Takeoff",
         standards: [
-          "IX.E.S1: Recognize engine failure and take immediate appropriate action",
-          "IX.E.S2: Maintain directional control and proper pitch attitude",
-          "IX.E.S3: Execute appropriate procedure based on altitude and situation",
+          "IX.E.S1: Recognize engine failure and take immediate appropriate action.",
+          "IX.E.S2: Maintain directional control and proper pitch attitude.",
+          "IX.E.S3: Execute appropriate procedure based on altitude and situation.",
         ],
         commonErrors: [
-          "Attempting to continue takeoff when below safe single-engine climb speed",
-          "Failure to maintain directional control during critical phase",
-          "Incorrect decision-making regarding continue/reject takeoff",
+          "Attempting to continue takeoff when below safe single-engine climb speed.",
+          "Failure to maintain directional control during critical phase.",
+          "Incorrect decision-making regarding continue/reject takeoff.",
         ],
       },
       {
         title: "Single-Engine Approach and Landing",
         standards: [
-          "X.D.S1: Maintain Vyse until landing is assured",
-          "X.D.S2: Use appropriate flaps and landing configuration",
-          "X.D.S3: Maintain centerline and proper touchdown point",
+          "X.D.S1: Maintain Vyse until landing is assured.",
+          "X.D.S2: Use appropriate flaps and landing configuration.",
+          "X.D.S3: Maintain centerline and proper touchdown point.",
         ],
         commonErrors: [
-          "Reducing airspeed below Vyse too early in pattern",
-          "Poor energy management on final approach",
-          "Failure to account for increased drag and reduced performance",
+          "Reducing airspeed below Vyse too early in pattern.",
+          "Poor energy management on final approach.",
+          "Failure to account for increased drag and reduced performance.",
         ],
       },
       {
         title: "Emergency Descent",
         standards: [
-          "IX.A.S4: Use 30-45° bank angle to maintain positive load factors",
-          "IX.A.S5: Maintain appropriate airspeed and level off at specified altitude",
+          "IX.A.S4: Use 30-45° bank angle to maintain positive load factors.",
+          "IX.A.S5: Maintain appropriate airspeed and level off at specified altitude.",
         ],
         commonErrors: [
-          "Excessive speed buildup during descent",
-          "Failure to maintain specified bank angle",
-          "Descending below assigned altitude",
+          "Excessive speed buildup during descent.",
+          "Failure to maintain specified bank angle.",
+          "Descending below assigned altitude.",
         ],
       },
     ],

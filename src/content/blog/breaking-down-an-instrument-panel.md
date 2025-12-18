@@ -1,7 +1,7 @@
 ---
 description: "Understanding flight instruments is essential for any aspiring pilot. This guide explains the core and additional flight instruments in our aicraft, helping future and current pilots in the Kansas City area navigate their flight training comfortably. Reading an instrument panel is a fundamental that every pilot should know concretely, whether just starting flight lessons or well on the track toward the airlines."
 pubDate: "May 16, 2024"
-heroImage: "/img/our-fleet/summit-flight-academy_kansas-city-missouri_flying-lessons_pilot-academy_fleet-piper-twin-comanche-n7664y-instrument-panel-simplifly-arizona-multi-engine-rating.webp"
+heroImage: "/img/our-fleet/summit-flight-academy_missouri_flying-lessons_pilot-academy_fleet-piper-twin-comanche-n7664y-instrument-panel-multi-engine-rating-summit-flight-academy-kansas-city-discovery-flight.webp"
 imgAlt: "flight instruments"
 author: Jami Heckman
 title: Breaking Down an Instrument Panel
@@ -44,8 +44,8 @@ The Airspeed Indicator measures the aircraft's speed relative to the surrounding
 
 Understanding and monitoring airspeed is crucial for maintaining control and ensuring safe operation, especially during takeoff, landing, and turbulent conditions.
 
-![Student passing a checkride at Summit Flight Academy in Overland Park, KS](/img/checkride-photo-preview-simplifly-mesa-flight-training.jpg)
-_Another successful instrument checkride at Summit!_
+<img src="/img/checkride-photo-preview-flight-training-summit-flight-academy-lees-summit-flight-school.jpg" alt="Student passing a checkride at Summit F1light Academy in Overland Park, KS" class="mx-auto">
+<p class="italic text-center">Another successful instrument checkride at Summit!</p>
 
 ### Attitude Indicator (AI)
 
@@ -105,7 +105,7 @@ Summit Flight Academy and other local flight schools in Overland Park, Prairie V
 
 Even if you start with visual flight rules (VFR) training, consider pursuing an [instrument rating (IFR)](https://www.summitflightacademy.com/flight-programs/instrument-rating/) to enhance your skills and increase your versatility as a pilot. Instrument training deepens your understanding of flight instruments and prepares you for flying in a wider range of weather conditions. If you're interested in a professional aviation career, explore our [career track options](https://www.summitflightacademy.com/career/career-track/) for a structured pathway to becoming a commercial pilot.
 
-![Excited pilot flying an aircraft over Leawood, Kansas](/img/me-training-twin-comanche-simplifly-mesa-become-a-pilot.jpg)
+![Excited pilot flying an aircraft over Leawood, Kansas](/img/me-training-twin-comanche-become-a-pilot-summit-flight-academy-lees-summit-flying-lessons.jpg)
 _Take flight with Summit Flight Academy today_
 
 Mastering flight instruments is a cornerstone of becoming a competent and confident pilot. By understanding the function and operation of each instrument, aspiring aviators from Overland Park to Lee's Summit can build a solid foundation for safe and efficient flight operations. Whether you're just starting your journey or looking to advance your skills, Summit Flight Academy is here to support you every step of the way. Embrace the challenge, invest in your education, and take to the skies with confidence.

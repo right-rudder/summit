@@ -1,7 +1,7 @@
 ---
 description: "Explore the unique challenges and benefits of flying in different regions across the U.S. and beyond. Learn how Summit Flight Academy in Lee’s Summit, Missouri, prepares pilots to adapt to diverse environments."
 pubDate: "January 6, 2025"
-heroImage: "/img/blog/stock_summit-flight-academy_kansas-city-missouri_flight-training_matt-phillips-n61b2hdztam-unsplash-simplifly-arizona-pilot-training.jpg"
+heroImage: "/img/blog/stock_summit-flight-academy_missouri_flight-training_matt-phillips-n61b2hdztam-unsplash-pilot-training-summit-flight-academy-lees-summit-pilot-career-track.jpg"
 imgAlt: "A pilot flying over mountainous terrain during sunset"
 author: Jami Heckman
 title: "Flying in Different Regions: Challenges and Benefits"

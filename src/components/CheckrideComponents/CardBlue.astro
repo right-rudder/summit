@@ -9,9 +9,9 @@ const example = {
     "Begin your path to becoming a pilot with our brief quiz. Our quiz is designed to look at your aviation-related knowledge and aptitude, alongside your unique personality traits and interests, to provide insights into whether a future in aviation aligns with your aspirations.",
   ],
   imagePath:
-    "/src/assets/summit-flight-academy-lees-summit-kansas-city-missoury-flight-students-on-the-runway-pre-flight-checks-simplifly-arizona-certified-flight-instructor.webp",
+    "/src/assets/flight-students-on-the-runway-pre-flight-checks-certified-flight-instructor-summit-flight-academy-missouri-instrument-rating.webp",
   imageAlt:
-    "summit-flight-academy-lees-summit-kansas-city-missoury-pilot-training-flight-students-on-the-runway-pre-flight-checks",
+    "summit-flight-academy-lees-summit-kansas-city-missouri-pilot-training-flight-students-on-the-runway-pre-flight-checks",
 };
 
 const { city, text1, content = example } = Astro.props;
@@ -39,7 +39,7 @@ const { city, text1, content = example } = Astro.props;
 
       {
         content.descriptions.map((description) => (
-          <article class="flex justify-start md:justify-end items-start py-3 gap-4">
+          <article class="flex justify-start items-center md:flex-row-reverse py-3 gap-4">
             {content.haveIcon && (
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -54,7 +54,7 @@ const { city, text1, content = example } = Astro.props;
               </svg>
             )}
 
-            <p class="text-base lg:text-lg text-gray-200 md:text-justify">
+            <p class={`text-base lg:text-lg text-gray-200 ${content.haveIcon ? "text-left md:text-right" : "text-justify"}`}>
               <Fragment set:html={description} />
             </p>
           </article>

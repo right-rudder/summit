@@ -58,9 +58,15 @@ const CSV_ERRORS = {
 
 const IMG_EXT = [".jpg", ".jpeg", ".png", ".gif", ".webp", ".avif"];
 
+/* TODO : Use more relevant keywords */
+
 const keywords = {
-  company: "simplifly",
-  location: ["mesa", "arizona"],
+  company: "summit-flight-academy",
+  location: [
+    "lees-summit",
+    "kansas-city",
+    "missouri",
+  ],
   generic: [
     "flight-school",
     "flight-training",
@@ -70,11 +76,16 @@ const keywords = {
     "discovery-flight",
   ],
   programs: [
+    "sport-pilot",
     "private-pilot",
     "instrument-rating",
     "commercial-pilot",
     "multi-engine-rating",
     "certified-flight-instructor",
+    "certified-flight-instructor-instrument",
+    "multi-engine-rating",
+    "multi-engine-instructor",
+    "pilot-career-track",
   ],
 };
 
@@ -88,16 +99,12 @@ const fullKeywordList = [
 const generalKeywords = [...keywords.generic, ...keywords.programs];
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-
-// For linux users :
-const importFilePath = "/" + import.meta.url.replace("file:///", "");
-
-// For windows users:
-// const importFilePath = import.meta.url
-//   .replace("file:///", "")
-//   .replaceAll("/", "\\");
-
+const importFilePath = process.argv[1].includes("\\")
+  ? import.meta.url.replace("file:///", "").replaceAll("/", "\\")
+  : import.meta.url.replace("file://", "");
 const isCommandLineExecution = importFilePath === process.argv[1];
+
+/* TODO : Add weight to more important keywords? */
 
 function randomFromArray(array) {
   return array[Math.floor(Math.random() * array.length)];
@@ -127,13 +134,20 @@ async function scanDirectory(dir, extensions) {
   return files;
 }
 
+/* TODO : Add some sort of protection or warning to duplicate names?
+OBS: The imgRenaming.js script already checks if a file with the new name exists before running the renaming operation, and skips it if that is the case. 
+Maybe a proper treatment could be done in that step, like generating a new csv file for the images that weren't renamed due to any given circumstance. */
+
 function generateNewImagePath(filePath) {
   const parsedPath = path.parse(filePath);
+  const special_cases = [];
 
-  let newName = parsedPath.name.toLowerCase();
+  let newName = parsedPath.name;
+  newName = newName.replaceAll(" ", "-");
+  newName = newName.replaceAll(",", "-");
 
-  // Remove keywords from the name
-  for (const keyword of fullKeywordList) {
+  // Remove keywords and special cases from the name
+  for (const keyword of [...fullKeywordList, ...special_cases]) {
     if (newName.includes(keyword + "-")) {
       newName = newName.replaceAll(keyword + "-", "");
     }
@@ -146,7 +160,7 @@ function generateNewImagePath(filePath) {
   return path.join(
     parsedPath.dir,
     `${newName}-${keywords.company}-${randomFromArray(keywords.location)}-${randomFromArray(generalKeywords)}` +
-      parsedPath.ext,
+      parsedPath.ext.toLowerCase(),
   );
 }
 
@@ -190,7 +204,7 @@ async function generateCSV() {
 
   try {
     await fs.promises.writeFile(
-      path.join(__dirname, "output.csv"),
+      path.join(__dirname, "images-to-rename.csv"),
       csvString,
       "utf-8",
     );
