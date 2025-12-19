@@ -145,14 +145,14 @@ export const team = [
   },
   {
     id: 12,
-    name: "Brielle Barton",
+    name: "Rachel",
     role: "Weekend Dispatcher and Administrator",
     imageUrl:
-      "/img/our-team/brielle-barton-weekend-dispatcher-administrator-certified-flight-instructor-summit-flight-academy-kansas-city-instrument-rating.webp",
+      "/img/fromWIX/adobestock_497264187_edited-commercial-pilot-summit-flight-academy-missouri-certified-flight-instructor.png",
     imageAlt:
-      "headshot of Brielle Barton at Summit Flight Academy kansas city flight dispatcher and administrator",
+      "headshot of Rachel at Summit Flight Academy kansas city flight dispatcher and administrator",
     paragrah1:
-      "Brielle is our dispatcher and office administrator on weekends. On weekends, Brielle runs our office, helps onboard new students, maintains our student records, and ensure operations are running smoothly.",
+      "",
     paragrah2: "",
   },
 ];
