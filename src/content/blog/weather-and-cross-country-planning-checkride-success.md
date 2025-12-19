@@ -1,8 +1,8 @@
 ---
 description: "Weather knowledge and cross-country planning are critical for passing your FAA checkride. Learn how Summit Flight Academy prepares Kansas City student pilots to master these tasks with confidence."
-pubDate: "November 30, 2025"
-heroImage: "/img/blog/weather-flight-planning.avif"
-imgAlt: "Student pilot reviewing aviation weather charts and flight plan"
+pubDate: "December 15, 2025"
+heroImage: "/img/stock/cockpit-instrument-panel-plane-flying-above-city-summit-flight-academy-kansas-city-private-pilot.jpg"
+imgAlt: "Back view of two pilots in the cockpit flying above a city"
 author: "Jami Heckman"
 title: "Weather and Cross-Country Planning: Keys to Checkride Success"
 readingTime: "7 min"
