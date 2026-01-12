@@ -393,4 +393,65 @@ export const fleet = [
       },
     }, */
   },
+  {
+    id: 6,
+    tailNumber: "N7820C",
+    name: "Piper Archer",
+    images: [
+      {
+        src: "/img/our-fleet/summit-flight-academy-piper-archer-n7820c-01.webp",
+        alt: "Piper Archer N7820C at Summit Flight Academy",
+      },
+      {
+        src: "/img/our-fleet/summit-flight-academy-piper-archer-n7820c-02.webp",
+        alt: "Piper Archer N7820C interior control panel",
+      },
+      {
+        src: "/img/our-fleet/summit-flight-academy-piper-archer-n7820c-03.webp",
+        alt: "Piper Archer N7820C cockpit seats",
+      },
+    ],
+    alt: "Piper Archer N7820C at Summit Flight Academy",
+    desc: `The Piper Archer N7820C is a versatile and reliable member of the Summit Flight Academy fleet. As a PA-28-181, it offers a perfect balance of performance and stability, making it an excellent choice for students and pilots alike. Whether you are working on your private pilot certificate or building hours, this Archer provides a comfortable and capable platform for all your flight training needs.`,
+    rentalPrice: null,
+    model: "PA-28-181",
+    flightRules: "VFR/IFR",
+    avionics: "Standard IFR, ADS-B In/Out",
+    specifications: {
+      exterior: {
+        exteriorHeight: "7 ft 3 in",
+        wingSpan: "35 ft 5 in",
+        length: "24 ft 0 in",
+      },
+      occupancy: {
+        crew: 1,
+        pax: 3,
+      },
+      weights: {
+        maxTakeoffWeight: "2,550 lb",
+        emptyWeight: "1,416 lb",
+        fuelCapacity: "48 gal",
+        usefulPayload: "1,134 lb",
+      },
+      range: {
+        maxRange: "600 nm",
+        serviceCeiling: "13,236 ft",
+      },
+      distances: {
+        takeoffDistance: "870 ft",
+        landingDistance: "925 ft",
+      },
+      performance: {
+        maxSpeed: "125 kts",
+        normalCruiseSpeed: "105 mph",
+        rateOfClimb: "667 fpm",
+      },
+      powerplant: {
+        engines: 1,
+        engineManufacturer: "Lycoming",
+        engineModel: "O-360-A4M",
+        horsepower: "180 hp",
+      },
+    },
+  },
 ];
