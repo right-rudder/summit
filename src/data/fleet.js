@@ -1,6 +1,70 @@
 export const fleet = [
   {
     id: 0,
+    tailNumber: "N70565",
+    name: "Cessna 182 Skylane",
+    images: [
+      {
+        src: "/img/our-fleet/fleet-cessna-182-n70565-back.webp",
+        alt: "Cessna 182 Skylane at Summit Flight Academy",
+      },
+      {
+        src: "/img/our-fleet/fleet-cessna-182-n70565-side.webp",
+        alt: "Cessna 182 Skylane G3X glass cockpit",
+      },
+      {
+        src: "/img/our-fleet/fleet-cessna-182-n70565-interior.webp",
+        alt: "Cessna 182 Skylane cabin interior",
+      },
+    ],
+    alt: "Cessna 182 Skylane at Summit Flight Academy",
+    desc: `Cessna 182M Skylane N70565 is a powerful, stable, and highly versatile aircraft that brings serious capability to Summit Flight Academy’s training fleet. Known for its excellent useful load, strong climb performance, and forgiving handling characteristics, the 182 is an outstanding platform for advanced training, long cross-country flights, and real-world IFR operations. This aircraft is equipped with a modern Garmin G3X glass panel, giving students exposure to contemporary avionics while benefiting from the proven reliability of the Skylane airframe. With its spacious four-seat cabin and 230-horsepower Lycoming engine, N70565 is ideal for pilots building confidence, proficiency, and experience beyond basic trainer aircraft.`,
+    rentalPrice: null,
+    model: "182M",
+    flightRules: "VFR/IFR",
+    avionics: "Garmin G3X Glass Panel, GPS/NAV/COM, ADS-B IN/OUT",
+    specifications: {
+      exterior: {
+        exteriorHeight: "9 ft 4 in",
+        wingSpan: "36 ft 0 in",
+        length: "29 ft 0 in",
+      },
+      occupancy: {
+        crew: 1,
+        pax: 3,
+      },
+      weights: {
+        maxTakeoffWeight: "2,950 lb",
+        maxLandingWeight: "2,950 lb",
+        emptyWeight: "1,650 lb",
+        fuelCapacity: "88 gal",
+        usefulPayload: "1,300 lb",
+        fullFuelPayload: "770 lb",
+      },
+      range: {
+        maxRange: "930 nm",
+        serviceCeiling: "18,100 ft",
+      },
+      distances: {
+        takeoffDistance: "795 ft",
+        landingDistance: "590 ft",
+      },
+      performance: {
+        maxSpeed: "119 mph",
+        normalCruiseSpeed: "115 mph",
+        economyCruiseSpeed: "110 mph",
+        rateOfClimb: "924 fpm",
+      },
+      powerplant: {
+        engines: 1,
+        engineManufacturer: "Continental",
+        engineModel: "O-470 Series",
+        horsepower: "230 hp",
+      },
+    },
+  },
+  {
+    id: 1,
     tailNumber: "N4353L",
     name: "Piper Archer II",
     images: [
@@ -64,7 +128,7 @@ export const fleet = [
     },
   },
   {
-    id: 1,
+    id: 2,
     tailNumber: "N7820C",
     name: "Piper Archer",
     images: [
@@ -125,7 +189,7 @@ export const fleet = [
     },
   },
   {
-    id: 2,
+    id: 3,
     tailNumber: "N425CB",
     name: "Piper Warrior",
     images: [
@@ -188,7 +252,7 @@ export const fleet = [
     },
   },
   {
-    id: 3,
+    id: 4,
     tailNumber: "N15283",
     name: "Piper Cherokee",
     images: [
@@ -255,7 +319,7 @@ export const fleet = [
     },
   },
   {
-    id: 4,
+    id: 5,
     tailNumber: "N15044",
     name: "Piper Cherokee",
     images: [
@@ -319,7 +383,7 @@ export const fleet = [
     },
   },
   {
-    id: 5,
+    id: 6,
     tailNumber: "N6894W",
     name: "Piper Cherokee",
     images: [
@@ -383,7 +447,7 @@ export const fleet = [
     },
   },
   {
-    id: 6,
+    id: 7,
     tailNumber: "N7664Y",
     name: "Piper Twin Comanche",
     images: [
